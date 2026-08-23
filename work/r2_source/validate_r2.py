@@ -223,6 +223,18 @@ def is_identity_matrix(matrix: list[list[float]], tol: float = 1.0e-10) -> bool:
     return all(abs(matrix[i][j] - ref[i][j]) <= tol for i in range(3) for j in range(4))
 
 
+def matrix_max_abs_delta(a: Any, b: Any) -> float:
+    """Return the largest element delta between two valid rigid 3x4 matrices."""
+    if not (
+        isinstance(a, list) and isinstance(b, list)
+        and len(a) == len(b) == 3
+        and all(isinstance(row, list) and len(row) == 4 for row in a)
+        and all(isinstance(row, list) and len(row) == 4 for row in b)
+    ):
+        raise ValueError("expected two 3x4 transform matrices")
+    return max(abs(float(a[i][j]) - float(b[i][j])) for i in range(3) for j in range(4))
+
+
 def bbox_raw(shape: Any) -> tuple[float, float, float, float, float, float]:
     box = Bnd_Box()
     BRepBndLib.AddOptimal_s(shape, box, True, False)
@@ -2193,6 +2205,21 @@ def state_parity(stowed: EndpointData, deployed: EndpointData, inventories: dict
         }
         for state, inv in inventories.items()
     }
+    part_auth = {
+        state: {
+            str(part.get("part_number", "")).strip(): part
+            for part in inv.get("parts", [])
+            if isinstance(part, dict) and str(part.get("part_number", "")).strip()
+        }
+        for state, inv in inventories.items()
+    }
+    part_quantities = {
+        state: Counter(
+            str(occurrence.get("part_number", "")).strip()
+            for occurrence in inv.get("occurrences", [])
+        )
+        for state, inv in inventories.items()
+    }
     endpoints = {"STOWED": stowed, "DEPLOYED": deployed}
     identity_audits = {
         state: imported_leaf_identity_audit(endpoint)
@@ -2222,12 +2249,79 @@ def state_parity(stowed: EndpointData, deployed: EndpointData, inventories: dict
         d = leaf["DEPLOYED"].get(occurrence_id)
         so = auth["STOWED"].get(occurrence_id, {})
         do = auth["DEPLOYED"].get(occurrence_id, {})
+        stowed_part_number = str(so.get("part_number", "")).strip()
+        deployed_part_number = str(do.get("part_number", "")).strip()
+        sp = part_auth["STOWED"].get(stowed_part_number, {})
+        dp = part_auth["DEPLOYED"].get(deployed_part_number, {})
         flexible = bool(
             so and do
             and str(so.get("classification", "")).strip().upper() in {"FLEXIBLE", "SOFTGOOD"}
             and str(do.get("classification", "")).strip().upper() in {"FLEXIBLE", "SOFTGOOD"}
         )
-        same_part = bool(s and d and s.get("part_number") == d.get("part_number") == so.get("part_number") == do.get("part_number"))
+        same_part = bool(
+            s and d
+            and s.get("part_number") == d.get("part_number")
+            == stowed_part_number == deployed_part_number
+        )
+        # Computed mass follows the exact modeled state geometry and therefore
+        # may vary by kernel precision for explicitly flexible occurrences.
+        # Identity is the controlled semantic definition; rigid geometry and
+        # mass consequences are evaluated independently by their exact gates.
+        stable_part_definition_fields = (
+            "revision", "description", "material", "make_buy"
+        )
+        stable_part_definition_match = bool(
+            sp and dp
+            and all(sp.get(field) == dp.get(field) for field in stable_part_definition_fields)
+        )
+        parent_path_match = bool(
+            so and do and str(so.get("parent_path", "")) == str(do.get("parent_path", ""))
+        )
+        part_quantity_match = bool(
+            stowed_part_number and stowed_part_number == deployed_part_number
+            and part_quantities["STOWED"][stowed_part_number]
+            == part_quantities["DEPLOYED"][deployed_part_number]
+        )
+        state_membership_match = bool(
+            so and do
+            and str(so.get("state_membership", "")).strip().upper() in {"BOTH", "ALL"}
+            and str(do.get("state_membership", "")).strip().upper() in {"BOTH", "ALL"}
+        )
+        stowed_transform_error: float | None = None
+        deployed_transform_error: float | None = None
+        state_transform_delta: float | None = None
+        transform_error = ""
+        try:
+            if s and so:
+                stowed_transform_error = matrix_max_abs_delta(
+                    s.get("absolute_transform_3x4"), so.get("transform_matrix_3x4")
+                )
+            if d and do:
+                deployed_transform_error = matrix_max_abs_delta(
+                    d.get("absolute_transform_3x4"), do.get("transform_matrix_3x4")
+                )
+            if s and d:
+                state_transform_delta = matrix_max_abs_delta(
+                    s.get("absolute_transform_3x4"), d.get("absolute_transform_3x4")
+                )
+        except (TypeError, ValueError) as exc:
+            transform_error = f"{type(exc).__name__}: {exc}"
+        transform_authority_match = bool(
+            stowed_transform_error is not None and stowed_transform_error <= 1.0e-8
+            and deployed_transform_error is not None and deployed_transform_error <= 1.0e-8
+            and not transform_error
+        )
+        classification = str(so.get("classification", "")).strip().upper()
+        fixed_transform_stable = bool(
+            classification != "FIXED"
+            or (state_transform_delta is not None and state_transform_delta <= 1.0e-8)
+        )
+        transform_state_behavior = (
+            "FIXED_UNCHANGED" if classification == "FIXED" and fixed_transform_stable
+            else "FIXED_CHANGED_UNEXPECTED" if classification == "FIXED"
+            else "MOVING_STATE_TRANSFORM_CHANGED" if state_transform_delta is not None and state_transform_delta > 1.0e-8
+            else "MOVING_RETAINED_SAME_TRANSFORM"
+        )
         topology_match = bool(s and d and s.get("solid_count") == d.get("solid_count") and s.get("face_count") == d.get("face_count"))
         volume_delta = None if not s or not d else float(d["volume_mm3"] - s["volume_mm3"])
         stowed_fingerprint: dict[str, Any] | None = None
@@ -2280,10 +2374,26 @@ def state_parity(stowed: EndpointData, deployed: EndpointData, inventories: dict
             and exact_geometry_equivalent
             and not fingerprint_error
         )
-        status = "PASS" if s and d and same_part and rigid_geometry_match else "FAIL"
+        status = "PASS" if (
+            s and d and same_part and stable_part_definition_match
+            and parent_path_match and part_quantity_match and state_membership_match
+            and transform_authority_match and fixed_transform_stable
+            and rigid_geometry_match
+        ) else "FAIL"
         row = {
             "occurrence_id": occurrence_id, "classification": so.get("classification", ""),
             "present_stowed": bool(s), "present_deployed": bool(d), "same_part_number": same_part,
+            "stable_part_definition_match": stable_part_definition_match,
+            "parent_assembly_path_match": parent_path_match,
+            "part_occurrence_quantity_match": part_quantity_match,
+            "state_membership_match": state_membership_match,
+            "stowed_transform_authority_max_error": "" if stowed_transform_error is None else repr(stowed_transform_error),
+            "deployed_transform_authority_max_error": "" if deployed_transform_error is None else repr(deployed_transform_error),
+            "state_transform_max_abs_delta": "" if state_transform_delta is None else repr(state_transform_delta),
+            "transform_authority_match": transform_authority_match,
+            "fixed_transform_stable": fixed_transform_stable,
+            "transform_state_behavior": transform_state_behavior,
+            "transform_error": transform_error,
             "stowed_solid_count": "" if not s else s.get("solid_count"),
             "deployed_solid_count": "" if not d else d.get("solid_count"),
             "stowed_face_count": "" if not s else s.get("face_count"),
@@ -3935,7 +4045,7 @@ def compute_gates(
                 })
                 continue
             try:
-                error = max(abs(float(expected[i][j]) - float(measured[i][j])) for i in range(3) for j in range(4))
+                error = matrix_max_abs_delta(expected, measured)
             except (TypeError, ValueError, IndexError):
                 transform_mismatches.append({
                     "state": state, "occurrence_id": occurrence_id, "reason": "invalid authoring transform matrix",

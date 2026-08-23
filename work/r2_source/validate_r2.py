@@ -643,6 +643,35 @@ def exact_common(a: Any, b: Any) -> tuple[str, float | None, str]:
         return "ERROR", None, f"{type(exc).__name__}: {exc}"
 
 
+def exact_common_full_volume_equivalence(
+    a: Any, b: Any, volume_tolerance_mm3: float = 1.0e-5,
+) -> dict[str, Any]:
+    """Prove two exact BREP shapes occupy the same full local volume."""
+    volume_a = volume_raw(a)
+    volume_b = volume_raw(b)
+    common_status, common_volume, common_error = exact_common(a, b)
+    a_minus_common = None if common_volume is None else volume_a - common_volume
+    b_minus_common = None if common_volume is None else volume_b - common_volume
+    equivalent = bool(
+        common_status == "DONE"
+        and common_volume is not None
+        and abs(volume_a - volume_b) <= volume_tolerance_mm3
+        and abs(a_minus_common) <= volume_tolerance_mm3
+        and abs(b_minus_common) <= volume_tolerance_mm3
+    )
+    return {
+        "status": common_status,
+        "volume_a_mm3": volume_a,
+        "volume_b_mm3": volume_b,
+        "common_volume_mm3": common_volume,
+        "a_minus_common_mm3": a_minus_common,
+        "b_minus_common_mm3": b_minus_common,
+        "volume_tolerance_mm3": volume_tolerance_mm3,
+        "equivalent": equivalent,
+        "error": common_error,
+    }
+
+
 def exact_distance(a: Any, b: Any) -> tuple[str, float | None, str]:
     try:
         distance = BRepExtrema_DistShapeShape(a, b)
@@ -2205,7 +2234,9 @@ def state_parity(stowed: EndpointData, deployed: EndpointData, inventories: dict
         deployed_fingerprint: dict[str, Any] | None = None
         fingerprint_error = ""
         bbox_max_abs_delta_mm: float | None = None
-        exact_brep_match = False
+        serialized_brep_match = False
+        exact_common_equivalence: dict[str, Any] | None = None
+        surface_types_match = False
         if s and d:
             try:
                 stowed_fingerprint = exact_local_brep_fingerprint(stowed.local_shapes[occurrence_id])
@@ -2216,17 +2247,37 @@ def state_parity(stowed: EndpointData, deployed: EndpointData, inventories: dict
                         stowed_fingerprint["bbox_mm"], deployed_fingerprint["bbox_mm"]
                     )
                 )
-                exact_brep_match = bool(
+                surface_types_match = bool(
+                    stowed_fingerprint["surface_types"]
+                    == deployed_fingerprint["surface_types"]
+                )
+                serialized_brep_match = bool(
                     stowed_fingerprint["sha256"] == deployed_fingerprint["sha256"]
-                    and stowed_fingerprint["surface_types"] == deployed_fingerprint["surface_types"]
+                    and surface_types_match
                     and bbox_max_abs_delta_mm <= 1.0e-9
                 )
+                if (
+                    not flexible
+                    and topology_match
+                    and volume_delta is not None and abs(volume_delta) <= 1.0e-5
+                    and surface_types_match
+                    and bbox_max_abs_delta_mm <= 1.0e-9
+                    and not serialized_brep_match
+                ):
+                    exact_common_equivalence = exact_common_full_volume_equivalence(
+                        stowed.local_shapes[occurrence_id].wrapped,
+                        deployed.local_shapes[occurrence_id].wrapped,
+                    )
             except Exception as exc:  # pragma: no cover - kernel failure is evidence, not a pass
                 fingerprint_error = f"{type(exc).__name__}: {exc}"
+        exact_geometry_equivalent = bool(
+            serialized_brep_match
+            or (exact_common_equivalence and exact_common_equivalence["equivalent"])
+        )
         rigid_geometry_match = flexible or bool(
             topology_match
             and volume_delta is not None and abs(volume_delta) <= 1.0e-5
-            and exact_brep_match
+            and exact_geometry_equivalent
             and not fingerprint_error
         )
         status = "PASS" if s and d and same_part and rigid_geometry_match else "FAIL"
@@ -2241,11 +2292,24 @@ def state_parity(stowed: EndpointData, deployed: EndpointData, inventories: dict
             "stowed_local_brep_sha256": "" if not stowed_fingerprint else stowed_fingerprint["sha256"],
             "deployed_local_brep_sha256": "" if not deployed_fingerprint else deployed_fingerprint["sha256"],
             "local_bbox_max_abs_delta_mm": "" if bbox_max_abs_delta_mm is None else repr(bbox_max_abs_delta_mm),
-            "surface_type_counts_match": bool(
-                stowed_fingerprint and deployed_fingerprint
-                and stowed_fingerprint["surface_types"] == deployed_fingerprint["surface_types"]
+            "surface_type_counts_match": surface_types_match,
+            "serialized_local_brep_match": serialized_brep_match,
+            "exact_common_status": "" if not exact_common_equivalence else exact_common_equivalence["status"],
+            "exact_common_volume_mm3": "" if not exact_common_equivalence else exact_common_equivalence["common_volume_mm3"],
+            "stowed_minus_common_mm3": "" if not exact_common_equivalence else exact_common_equivalence["a_minus_common_mm3"],
+            "deployed_minus_common_mm3": "" if not exact_common_equivalence else exact_common_equivalence["b_minus_common_mm3"],
+            "exact_common_volume_tolerance_mm3": "" if not exact_common_equivalence else exact_common_equivalence["volume_tolerance_mm3"],
+            "exact_common_full_volume_equivalent": bool(
+                exact_common_equivalence and exact_common_equivalence["equivalent"]
             ),
-            "exact_local_brep_match": exact_brep_match,
+            "exact_geometry_equivalent": exact_geometry_equivalent,
+            "geometry_equivalence_basis": (
+                "FLEXIBLE_STATE_GEOMETRY_EXCEPTION" if flexible
+                else "SERIALIZED_LOCAL_BREP_SHA256" if serialized_brep_match
+                else "EXACT_COMMON_FULL_VOLUME" if exact_geometry_equivalent
+                else "NOT_EQUIVALENT"
+            ),
+            "exact_common_error": "" if not exact_common_equivalence else exact_common_equivalence["error"],
             "fingerprint_error": fingerprint_error,
             "flexible_state_geometry_exception": flexible, "status": status,
         }
@@ -3626,7 +3690,11 @@ def motion_audit(
                     f"Motion angle {angle} must emit exactly one kinematics row; actual={len(rows)}"
                 )
             row = rows[0]
-            if int(row["sample_index"]) != angle + 1 or int(float(row["angle_deg"])) != angle:
+            if "arm_angle_deg" not in row:
+                raise RuntimeError(
+                    f"Motion angle {angle} kinematics row lacks arm_angle_deg"
+                )
+            if int(row["sample_index"]) != angle + 1 or int(float(row["arm_angle_deg"])) != angle:
                 raise RuntimeError(f"Motion angle {angle} kinematics row identity mismatch")
             kinematics_rows.append(row)
 

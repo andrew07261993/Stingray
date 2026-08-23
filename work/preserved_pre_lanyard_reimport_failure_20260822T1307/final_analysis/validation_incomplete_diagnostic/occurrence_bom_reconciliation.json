@@ -1,0 +1,117 @@
+{
+  "row_count": 558,
+  "issue_count": 0,
+  "issues": [],
+  "imported_leaf_identity_audits": {
+    "STOWED": {
+      "leaf_row_count": 279,
+      "blank_occurrence_id_count": 0,
+      "blank_occurrence_id_rows": [],
+      "duplicate_occurrence_ids": [],
+      "duplicate_occurrence_id_count": 0,
+      "accepted": true
+    },
+    "DEPLOYED": {
+      "leaf_row_count": 279,
+      "blank_occurrence_id_count": 0,
+      "blank_occurrence_id_rows": [],
+      "duplicate_occurrence_ids": [],
+      "duplicate_occurrence_id_count": 0,
+      "accepted": true
+    }
+  },
+  "hierarchy_audits": {
+    "STOWED": {
+      "state": "STOWED",
+      "expected_root_name": "STINGRAY_I5S_DF8_FINAL_STOWED_MASTER_ASSY",
+      "actual_root_name": "STINGRAY_I5S_DF8_FINAL_STOWED_MASTER_ASSY",
+      "expected_top_level_assembly_names": [
+        "100_FORWARD_PENETRATOR_WAI_AND_PRIMARY_STRUCTURE_ASSY",
+        "300_TRUE_TRANSFORM_ARM_AND_POWERTRAIN_ASSY",
+        "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY"
+      ],
+      "actual_top_level_assembly_names": [
+        "100_FORWARD_PENETRATOR_WAI_AND_PRIMARY_STRUCTURE_ASSY",
+        "300_TRUE_TRANSFORM_ARM_AND_POWERTRAIN_ASSY",
+        "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY"
+      ],
+      "expected_assembly_paths": [
+        "100_FORWARD_PENETRATOR_WAI_AND_PRIMARY_STRUCTURE_ASSY",
+        "100_FORWARD_PENETRATOR_WAI_AND_PRIMARY_STRUCTURE_ASSY/190_MANDATORY_HARDWARE_ASSY",
+        "300_TRUE_TRANSFORM_ARM_AND_POWERTRAIN_ASSY",
+        "300_TRUE_TRANSFORM_ARM_AND_POWERTRAIN_ASSY/331_ARM_1_ASSY",
+        "300_TRUE_TRANSFORM_ARM_AND_POWERTRAIN_ASSY/332_ARM_2_ASSY",
+        "300_TRUE_TRANSFORM_ARM_AND_POWERTRAIN_ASSY/333_ARM_3_ASSY",
+        "300_TRUE_TRANSFORM_ARM_AND_POWERTRAIN_ASSY/390_MANDATORY_HARDWARE_ASSY",
+        "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY",
+        "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY/590_MANDATORY_HARDWARE_ASSY"
+      ],
+      "actual_assembly_paths": [
+        "100_FORWARD_PENETRATOR_WAI_AND_PRIMARY_STRUCTURE_ASSY",
+        "100_FORWARD_PENETRATOR_WAI_AND_PRIMARY_STRUCTURE_ASSY/190_MANDATORY_HARDWARE_ASSY",
+        "300_TRUE_TRANSFORM_ARM_AND_POWERTRAIN_ASSY",
+        "300_TRUE_TRANSFORM_ARM_AND_POWERTRAIN_ASSY/331_ARM_1_ASSY",
+        "300_TRUE_TRANSFORM_ARM_AND_POWERTRAIN_ASSY/332_ARM_2_ASSY",
+        "300_TRUE_TRANSFORM_ARM_AND_POWERTRAIN_ASSY/333_ARM_3_ASSY",
+        "300_TRUE_TRANSFORM_ARM_AND_POWERTRAIN_ASSY/390_MANDATORY_HARDWARE_ASSY",
+        "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY",
+        "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY/590_MANDATORY_HARDWARE_ASSY"
+      ],
+      "missing_assembly_paths": [],
+      "unexpected_assembly_paths": [],
+      "leaf_parent_path_mismatch_count": 0,
+      "leaf_parent_path_mismatches": [],
+      "flattened_or_missing_named_subassembly_tree": false,
+      "issue_count": 0,
+      "issues": [],
+      "accepted": true
+    },
+    "DEPLOYED": {
+      "state": "DEPLOYED",
+      "expected_root_name": "STINGRAY_I5S_DF8_FINAL_DEPLOYED_MASTER_ASSY",
+      "actual_root_name": "STINGRAY_I5S_DF8_FINAL_DEPLOYED_MASTER_ASSY",
+      "expected_top_level_assembly_names": [
+        "100_FORWARD_PENETRATOR_WAI_AND_PRIMARY_STRUCTURE_ASSY",
+        "300_TRUE_TRANSFORM_ARM_AND_POWERTRAIN_ASSY",
+        "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY"
+      ],
+      "actual_top_level_assembly_names": [
+        "100_FORWARD_PENETRATOR_WAI_AND_PRIMARY_STRUCTURE_ASSY",
+        "300_TRUE_TRANSFORM_ARM_AND_POWERTRAIN_ASSY",
+        "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY"
+      ],
+      "expected_assembly_paths": [
+        "100_FORWARD_PENETRATOR_WAI_AND_PRIMARY_STRUCTURE_ASSY",
+        "100_FORWARD_PENETRATOR_WAI_AND_PRIMARY_STRUCTURE_ASSY/190_MANDATORY_HARDWARE_ASSY",
+        "300_TRUE_TRANSFORM_ARM_AND_POWERTRAIN_ASSY",
+        "300_TRUE_TRANSFORM_ARM_AND_POWERTRAIN_ASSY/331_ARM_1_ASSY",
+        "300_TRUE_TRANSFORM_ARM_AND_POWERTRAIN_ASSY/332_ARM_2_ASSY",
+        "300_TRUE_TRANSFORM_ARM_AND_POWERTRAIN_ASSY/333_ARM_3_ASSY",
+        "300_TRUE_TRANSFORM_ARM_AND_POWERTRAIN_ASSY/390_MANDATORY_HARDWARE_ASSY",
+        "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY",
+        "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY/590_MANDATORY_HARDWARE_ASSY"
+      ],
+      "actual_assembly_paths": [
+        "100_FORWARD_PENETRATOR_WAI_AND_PRIMARY_STRUCTURE_ASSY",
+        "100_FORWARD_PENETRATOR_WAI_AND_PRIMARY_STRUCTURE_ASSY/190_MANDATORY_HARDWARE_ASSY",
+        "300_TRUE_TRANSFORM_ARM_AND_POWERTRAIN_ASSY",
+        "300_TRUE_TRANSFORM_ARM_AND_POWERTRAIN_ASSY/331_ARM_1_ASSY",
+        "300_TRUE_TRANSFORM_ARM_AND_POWERTRAIN_ASSY/332_ARM_2_ASSY",
+        "300_TRUE_TRANSFORM_ARM_AND_POWERTRAIN_ASSY/333_ARM_3_ASSY",
+        "300_TRUE_TRANSFORM_ARM_AND_POWERTRAIN_ASSY/390_MANDATORY_HARDWARE_ASSY",
+        "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY",
+        "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY/590_MANDATORY_HARDWARE_ASSY"
+      ],
+      "missing_assembly_paths": [],
+      "unexpected_assembly_paths": [],
+      "leaf_parent_path_mismatch_count": 0,
+      "leaf_parent_path_mismatches": [],
+      "flattened_or_missing_named_subassembly_tree": false,
+      "issue_count": 0,
+      "issues": [],
+      "accepted": true
+    }
+  },
+  "stowed_occurrence_count": 279,
+  "deployed_occurrence_count": 279
+}

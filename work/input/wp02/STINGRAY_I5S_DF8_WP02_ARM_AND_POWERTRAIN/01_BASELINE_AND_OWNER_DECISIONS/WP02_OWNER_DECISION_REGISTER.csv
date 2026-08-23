@@ -1,0 +1,19 @@
+decision_id,selection,implementation
+ARM-Q01,A,Accepted WP01 package is controlling body/envelope authority.
+ARM-Q02,A,Three arms at 0/120/240 degrees; 1 degree stowed and 80 degrees deployed from one solver.
+ARM-Q03,A,Full stowed containment; no unintended protrusion.
+ARM-Q04,A,Use WP01 body-owned covers and cover-before-arm sequence.
+ARM-Q05,A,Retain exact COTS identities unless configuration analysis proves deficiency.
+ARM-Q06,B,Drawing-derived COTS fallback authorized when primary dimensions are adequate.
+ARM-Q07,A,Zero-GS backup spring must deploy to stops and positive locks with HBD installed.
+ARM-Q08,A_WITH_B_FALLBACK_IMPLEMENTED_AS_B,Inherited fragmenting fuse rejected; nonfragmenting captive bypass implemented.
+ARM-Q09,A,Positive mechanical deployed locks; no reliance on residual drive force.
+ARM-Q10,A,Derive controlled low-impact deployment target.
+ARM-Q11,A,Use provisional 300/500/750 lbf plus 150/1000 lbf sensitivity; not approved loads.
+ARM-Q12,A,No more than 1.0 mm documented internal-only WP01 relief; none used in this build.
+ARM-Q13,A,"GS, HBD and backup spring replaceable through arm-module service access."
+ARM-Q14,A_WITH_B_FALLBACK,Exact sourced retainers where supported; captive custom headed-pin fallback allowed.
+ARM-Q15,A,Deliver exactly STOWED and DEPLOYED top-level state assemblies.
+ARM-Q16,A,Controlled manual reset only.
+ARM-Q17,B,Derive new controlled GS extension-force specification.
+ARM-Q18,A_IF_FEASIBLE_ELSE_B; PROTECTED_CARTRIDGE_BOUNDARY_REQUIRED,HBD requires protected/drained cartridge boundary; exposure qualification remains external.

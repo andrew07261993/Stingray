@@ -1,0 +1,17 @@
+{
+  "scope": "Three principal arm bodies versus all endpoint FIXED rigid solids at 0..80 degrees in 1-degree increments",
+  "scope_limit": "Links, crosshead, rods, springs, locks, and state-changing flexible/softgood geometry are not swept; full mechanism sweep remains BLOCKED",
+  "sample_count": 81,
+  "angle_increment_deg": 1,
+  "pair_register": "/workspace/scratch/6f4e7892e9f1/work/r2_analysis/validation/motion_arm_clearance_audit.csv.gz",
+  "kinematics_register": "/workspace/scratch/6f4e7892e9f1/work/r2_analysis/validation/motion_kinematics_1deg.csv",
+  "pair_row_count": 30861,
+  "broadphase_candidate_count": 3232,
+  "positive_volume_pair_count": 0,
+  "boolean_blocked_pair_count": 0,
+  "positive_rows": [],
+  "blocked_rows": [],
+  "maximum_closure_residual_abs_mm": 4.973799150320701e-14,
+  "crosshead_travel_0_to_80_mm": 15.05503437113498,
+  "elapsed_seconds": 133.3796350955963
+}

@@ -1,0 +1,512 @@
+{
+  "state": "STOWED",
+  "method": "Per-constituent-solid BRepAlgoAPI_Common; no occurrence-compound Boolean",
+  "source_files_sha256_at_import": {
+    "build_r2.py": "5d8fdecdf2062b39b77c7d1f902f0efdd9d51ef4133385a413d40e8870966657",
+    "r2_geometry.py": "261b20be29681cf048202a3aa9f8458e9d474655f50e01ab72ce9f9e23bcbee5"
+  },
+  "summary": {
+    "occurrences": 172,
+    "solid_records": 203,
+    "expected_solid_pairs": 20503,
+    "broadphase_solid_pairs": 734,
+    "invalid_solid_records": 0,
+    "positive_solid_pairs": 25,
+    "documented_positive_solid_pairs": 4,
+    "unauthorized_positive_solid_pairs": 21,
+    "blocked_solid_pairs": 0,
+    "register_error_count": 0,
+    "unused_valid_exception_count": 0,
+    "elapsed_seconds": 37.476819062001596
+  },
+  "invalid_solid_records": [],
+  "all_positive_solid_pairs": [
+    {
+      "occurrence_a": "HARNESS-BAND-2",
+      "solid_index_a": 1,
+      "occurrence_b": "HARNESS-LEG-YP",
+      "solid_index_b": 1,
+      "common_volume_mm3": 50.72687624712722,
+      "matching_exception_ids": [
+        "FIT-STITCH-YP"
+      ],
+      "accepted_exception_ids": [
+        "FIT-STITCH-YP"
+      ],
+      "documented": true
+    },
+    {
+      "occurrence_a": "HARNESS-BAND-2",
+      "solid_index_a": 1,
+      "occurrence_b": "HARNESS-LEG-YN",
+      "solid_index_b": 1,
+      "common_volume_mm3": 50.72687624712542,
+      "matching_exception_ids": [
+        "FIT-STITCH-YN"
+      ],
+      "accepted_exception_ids": [
+        "FIT-STITCH-YN"
+      ],
+      "documented": true
+    },
+    {
+      "occurrence_a": "HARNESS-BAND-1",
+      "solid_index_a": 1,
+      "occurrence_b": "HARNESS-LEG-XP",
+      "solid_index_b": 1,
+      "common_volume_mm3": 35.89826092479655,
+      "matching_exception_ids": [
+        "FIT-STITCH-XP"
+      ],
+      "accepted_exception_ids": [
+        "FIT-STITCH-XP"
+      ],
+      "documented": true
+    },
+    {
+      "occurrence_a": "HARNESS-BAND-1",
+      "solid_index_a": 1,
+      "occurrence_b": "HARNESS-LEG-XN",
+      "solid_index_b": 1,
+      "common_volume_mm3": 35.89826081264574,
+      "matching_exception_ids": [
+        "FIT-STITCH-XN"
+      ],
+      "accepted_exception_ids": [
+        "FIT-STITCH-XN"
+      ],
+      "documented": true
+    },
+    {
+      "occurrence_a": "RECOVERY-TETHER-001",
+      "solid_index_a": 1,
+      "occurrence_b": "TETHER-THIMBLE-HARNESS",
+      "solid_index_b": 1,
+      "common_volume_mm3": 2.6144001792673275,
+      "matching_exception_ids": [],
+      "accepted_exception_ids": [],
+      "documented": false
+    },
+    {
+      "occurrence_a": "DOOR-DETENT-2",
+      "solid_index_a": 1,
+      "occurrence_b": "WP05-SERVICE-THROAT",
+      "solid_index_b": 1,
+      "common_volume_mm3": 2.528513630621478,
+      "matching_exception_ids": [],
+      "accepted_exception_ids": [],
+      "documented": false
+    },
+    {
+      "occurrence_a": "DOOR-DETENT-4",
+      "solid_index_a": 1,
+      "occurrence_b": "WP05-SERVICE-THROAT",
+      "solid_index_b": 1,
+      "common_volume_mm3": 2.5285136305424167,
+      "matching_exception_ids": [],
+      "accepted_exception_ids": [],
+      "documented": false
+    },
+    {
+      "occurrence_a": "DOOR-DETENT-3",
+      "solid_index_a": 1,
+      "occurrence_b": "WP05-SERVICE-THROAT",
+      "solid_index_b": 1,
+      "common_volume_mm3": 2.52850449159064,
+      "matching_exception_ids": [],
+      "accepted_exception_ids": [],
+      "documented": false
+    },
+    {
+      "occurrence_a": "DOOR-DETENT-1",
+      "solid_index_a": 1,
+      "occurrence_b": "WP05-SERVICE-THROAT",
+      "solid_index_b": 1,
+      "common_volume_mm3": 2.528504491509576,
+      "matching_exception_ids": [],
+      "accepted_exception_ids": [],
+      "documented": false
+    },
+    {
+      "occurrence_a": "RECOVERY-TETHER-001",
+      "solid_index_a": 1,
+      "occurrence_b": "TETHER-THIMBLE-BODY",
+      "solid_index_b": 1,
+      "common_volume_mm3": 2.0451638383823743,
+      "matching_exception_ids": [],
+      "accepted_exception_ids": [],
+      "documented": false
+    },
+    {
+      "occurrence_a": "PIVOT-CLIP-3",
+      "solid_index_a": 1,
+      "occurrence_b": "PIVOT-PIN-3",
+      "solid_index_b": 1,
+      "common_volume_mm3": 0.27930206922406176,
+      "matching_exception_ids": [],
+      "accepted_exception_ids": [],
+      "documented": false
+    },
+    {
+      "occurrence_a": "PIVOT-CLIP-1",
+      "solid_index_a": 1,
+      "occurrence_b": "PIVOT-PIN-1",
+      "solid_index_b": 1,
+      "common_volume_mm3": 0.27930206921926803,
+      "matching_exception_ids": [],
+      "accepted_exception_ids": [],
+      "documented": false
+    },
+    {
+      "occurrence_a": "PIVOT-CLIP-2",
+      "solid_index_a": 1,
+      "occurrence_b": "PIVOT-PIN-2",
+      "solid_index_b": 1,
+      "common_volume_mm3": 0.2793020692171546,
+      "matching_exception_ids": [],
+      "accepted_exception_ids": [],
+      "documented": false
+    },
+    {
+      "occurrence_a": "RECOVERY-PIN-BODY",
+      "solid_index_a": 1,
+      "occurrence_b": "RECOVERY-PIN-CLIP-BODY",
+      "solid_index_b": 1,
+      "common_volume_mm3": 0.18993000381493508,
+      "matching_exception_ids": [],
+      "accepted_exception_ids": [],
+      "documented": false
+    },
+    {
+      "occurrence_a": "RECOVERY-PIN-CLIP-HARNESS",
+      "solid_index_a": 1,
+      "occurrence_b": "RECOVERY-PIN-HARNESS",
+      "solid_index_b": 1,
+      "common_volume_mm3": 0.18993000380764413,
+      "matching_exception_ids": [],
+      "accepted_exception_ids": [],
+      "documented": false
+    },
+    {
+      "occurrence_a": "GS19-CLIP-MOVING",
+      "solid_index_a": 1,
+      "occurrence_b": "GS19-PIN-MOVING",
+      "solid_index_b": 1,
+      "common_volume_mm3": 0.11335389202881532,
+      "matching_exception_ids": [],
+      "accepted_exception_ids": [],
+      "documented": false
+    },
+    {
+      "occurrence_a": "HBD-CLIP-MOVING",
+      "solid_index_a": 1,
+      "occurrence_b": "HBD-PIN-MOVING",
+      "solid_index_b": 1,
+      "common_volume_mm3": 0.11335389202716048,
+      "matching_exception_ids": [],
+      "accepted_exception_ids": [],
+      "documented": false
+    },
+    {
+      "occurrence_a": "HBD-CLIP-FIXED",
+      "solid_index_a": 1,
+      "occurrence_b": "HBD-PIN-FIXED",
+      "solid_index_b": 1,
+      "common_volume_mm3": 0.11335389202390922,
+      "matching_exception_ids": [],
+      "accepted_exception_ids": [],
+      "documented": false
+    },
+    {
+      "occurrence_a": "GS19-CLIP-FIXED",
+      "solid_index_a": 1,
+      "occurrence_b": "GS19-PIN-FIXED",
+      "solid_index_b": 1,
+      "common_volume_mm3": 0.11335389201589932,
+      "matching_exception_ids": [],
+      "accepted_exception_ids": [],
+      "documented": false
+    },
+    {
+      "occurrence_a": "WP05-HINGE-CLIP",
+      "solid_index_a": 1,
+      "occurrence_b": "WP05-HINGE-PIN",
+      "solid_index_b": 1,
+      "common_volume_mm3": 0.0751663016303719,
+      "matching_exception_ids": [],
+      "accepted_exception_ids": [],
+      "documented": false
+    },
+    {
+      "occurrence_a": "AFT-SHELL-001",
+      "solid_index_a": 1,
+      "occurrence_b": "WP04-MANIFOLD-BRACKET",
+      "solid_index_b": 1,
+      "common_volume_mm3": 0.05271327920410775,
+      "matching_exception_ids": [],
+      "accepted_exception_ids": [],
+      "documented": false
+    },
+    {
+      "occurrence_a": "ROUTE-PILOT-LINE-001",
+      "solid_index_a": 1,
+      "occurrence_b": "WP04-LATCH-001",
+      "solid_index_b": 1,
+      "common_volume_mm3": 0.03241992548671135,
+      "matching_exception_ids": [],
+      "accepted_exception_ids": [],
+      "documented": false
+    },
+    {
+      "occurrence_a": "GLAND-GAS-MAIN-AFT",
+      "solid_index_a": 1,
+      "occurrence_b": "ROUTE-GAS-MAIN-001",
+      "solid_index_b": 1,
+      "common_volume_mm3": 0.0006317453033052971,
+      "matching_exception_ids": [],
+      "accepted_exception_ids": [],
+      "documented": false
+    },
+    {
+      "occurrence_a": "GLAND-BOWDEN-SHEATH-AFT",
+      "solid_index_a": 1,
+      "occurrence_b": "ROUTE-BOWDEN-SHEATH-001",
+      "solid_index_b": 1,
+      "common_volume_mm3": 0.0003977706378889514,
+      "matching_exception_ids": [],
+      "accepted_exception_ids": [],
+      "documented": false
+    },
+    {
+      "occurrence_a": "GLAND-PILOT-LINE-AFT",
+      "solid_index_a": 1,
+      "occurrence_b": "ROUTE-PILOT-LINE-001",
+      "solid_index_b": 1,
+      "common_volume_mm3": 0.00034994188412250425,
+      "matching_exception_ids": [],
+      "accepted_exception_ids": [],
+      "documented": false
+    }
+  ],
+  "unauthorized_positive_solid_pairs": [
+    {
+      "occurrence_a": "RECOVERY-TETHER-001",
+      "solid_index_a": 1,
+      "occurrence_b": "TETHER-THIMBLE-HARNESS",
+      "solid_index_b": 1,
+      "common_volume_mm3": 2.6144001792673275,
+      "matching_exception_ids": [],
+      "accepted_exception_ids": [],
+      "documented": false
+    },
+    {
+      "occurrence_a": "DOOR-DETENT-2",
+      "solid_index_a": 1,
+      "occurrence_b": "WP05-SERVICE-THROAT",
+      "solid_index_b": 1,
+      "common_volume_mm3": 2.528513630621478,
+      "matching_exception_ids": [],
+      "accepted_exception_ids": [],
+      "documented": false
+    },
+    {
+      "occurrence_a": "DOOR-DETENT-4",
+      "solid_index_a": 1,
+      "occurrence_b": "WP05-SERVICE-THROAT",
+      "solid_index_b": 1,
+      "common_volume_mm3": 2.5285136305424167,
+      "matching_exception_ids": [],
+      "accepted_exception_ids": [],
+      "documented": false
+    },
+    {
+      "occurrence_a": "DOOR-DETENT-3",
+      "solid_index_a": 1,
+      "occurrence_b": "WP05-SERVICE-THROAT",
+      "solid_index_b": 1,
+      "common_volume_mm3": 2.52850449159064,
+      "matching_exception_ids": [],
+      "accepted_exception_ids": [],
+      "documented": false
+    },
+    {
+      "occurrence_a": "DOOR-DETENT-1",
+      "solid_index_a": 1,
+      "occurrence_b": "WP05-SERVICE-THROAT",
+      "solid_index_b": 1,
+      "common_volume_mm3": 2.528504491509576,
+      "matching_exception_ids": [],
+      "accepted_exception_ids": [],
+      "documented": false
+    },
+    {
+      "occurrence_a": "RECOVERY-TETHER-001",
+      "solid_index_a": 1,
+      "occurrence_b": "TETHER-THIMBLE-BODY",
+      "solid_index_b": 1,
+      "common_volume_mm3": 2.0451638383823743,
+      "matching_exception_ids": [],
+      "accepted_exception_ids": [],
+      "documented": false
+    },
+    {
+      "occurrence_a": "PIVOT-CLIP-3",
+      "solid_index_a": 1,
+      "occurrence_b": "PIVOT-PIN-3",
+      "solid_index_b": 1,
+      "common_volume_mm3": 0.27930206922406176,
+      "matching_exception_ids": [],
+      "accepted_exception_ids": [],
+      "documented": false
+    },
+    {
+      "occurrence_a": "PIVOT-CLIP-1",
+      "solid_index_a": 1,
+      "occurrence_b": "PIVOT-PIN-1",
+      "solid_index_b": 1,
+      "common_volume_mm3": 0.27930206921926803,
+      "matching_exception_ids": [],
+      "accepted_exception_ids": [],
+      "documented": false
+    },
+    {
+      "occurrence_a": "PIVOT-CLIP-2",
+      "solid_index_a": 1,
+      "occurrence_b": "PIVOT-PIN-2",
+      "solid_index_b": 1,
+      "common_volume_mm3": 0.2793020692171546,
+      "matching_exception_ids": [],
+      "accepted_exception_ids": [],
+      "documented": false
+    },
+    {
+      "occurrence_a": "RECOVERY-PIN-BODY",
+      "solid_index_a": 1,
+      "occurrence_b": "RECOVERY-PIN-CLIP-BODY",
+      "solid_index_b": 1,
+      "common_volume_mm3": 0.18993000381493508,
+      "matching_exception_ids": [],
+      "accepted_exception_ids": [],
+      "documented": false
+    },
+    {
+      "occurrence_a": "RECOVERY-PIN-CLIP-HARNESS",
+      "solid_index_a": 1,
+      "occurrence_b": "RECOVERY-PIN-HARNESS",
+      "solid_index_b": 1,
+      "common_volume_mm3": 0.18993000380764413,
+      "matching_exception_ids": [],
+      "accepted_exception_ids": [],
+      "documented": false
+    },
+    {
+      "occurrence_a": "GS19-CLIP-MOVING",
+      "solid_index_a": 1,
+      "occurrence_b": "GS19-PIN-MOVING",
+      "solid_index_b": 1,
+      "common_volume_mm3": 0.11335389202881532,
+      "matching_exception_ids": [],
+      "accepted_exception_ids": [],
+      "documented": false
+    },
+    {
+      "occurrence_a": "HBD-CLIP-MOVING",
+      "solid_index_a": 1,
+      "occurrence_b": "HBD-PIN-MOVING",
+      "solid_index_b": 1,
+      "common_volume_mm3": 0.11335389202716048,
+      "matching_exception_ids": [],
+      "accepted_exception_ids": [],
+      "documented": false
+    },
+    {
+      "occurrence_a": "HBD-CLIP-FIXED",
+      "solid_index_a": 1,
+      "occurrence_b": "HBD-PIN-FIXED",
+      "solid_index_b": 1,
+      "common_volume_mm3": 0.11335389202390922,
+      "matching_exception_ids": [],
+      "accepted_exception_ids": [],
+      "documented": false
+    },
+    {
+      "occurrence_a": "GS19-CLIP-FIXED",
+      "solid_index_a": 1,
+      "occurrence_b": "GS19-PIN-FIXED",
+      "solid_index_b": 1,
+      "common_volume_mm3": 0.11335389201589932,
+      "matching_exception_ids": [],
+      "accepted_exception_ids": [],
+      "documented": false
+    },
+    {
+      "occurrence_a": "WP05-HINGE-CLIP",
+      "solid_index_a": 1,
+      "occurrence_b": "WP05-HINGE-PIN",
+      "solid_index_b": 1,
+      "common_volume_mm3": 0.0751663016303719,
+      "matching_exception_ids": [],
+      "accepted_exception_ids": [],
+      "documented": false
+    },
+    {
+      "occurrence_a": "AFT-SHELL-001",
+      "solid_index_a": 1,
+      "occurrence_b": "WP04-MANIFOLD-BRACKET",
+      "solid_index_b": 1,
+      "common_volume_mm3": 0.05271327920410775,
+      "matching_exception_ids": [],
+      "accepted_exception_ids": [],
+      "documented": false
+    },
+    {
+      "occurrence_a": "ROUTE-PILOT-LINE-001",
+      "solid_index_a": 1,
+      "occurrence_b": "WP04-LATCH-001",
+      "solid_index_b": 1,
+      "common_volume_mm3": 0.03241992548671135,
+      "matching_exception_ids": [],
+      "accepted_exception_ids": [],
+      "documented": false
+    },
+    {
+      "occurrence_a": "GLAND-GAS-MAIN-AFT",
+      "solid_index_a": 1,
+      "occurrence_b": "ROUTE-GAS-MAIN-001",
+      "solid_index_b": 1,
+      "common_volume_mm3": 0.0006317453033052971,
+      "matching_exception_ids": [],
+      "accepted_exception_ids": [],
+      "documented": false
+    },
+    {
+      "occurrence_a": "GLAND-BOWDEN-SHEATH-AFT",
+      "solid_index_a": 1,
+      "occurrence_b": "ROUTE-BOWDEN-SHEATH-001",
+      "solid_index_b": 1,
+      "common_volume_mm3": 0.0003977706378889514,
+      "matching_exception_ids": [],
+      "accepted_exception_ids": [],
+      "documented": false
+    },
+    {
+      "occurrence_a": "GLAND-PILOT-LINE-AFT",
+      "solid_index_a": 1,
+      "occurrence_b": "ROUTE-PILOT-LINE-001",
+      "solid_index_b": 1,
+      "common_volume_mm3": 0.00034994188412250425,
+      "matching_exception_ids": [],
+      "accepted_exception_ids": [],
+      "documented": false
+    }
+  ],
+  "blocked_solid_pairs": [],
+  "intentional_fit_register_errors": [],
+  "used_intentional_fit_exception_ids": [
+    "FIT-STITCH-XN",
+    "FIT-STITCH-XP",
+    "FIT-STITCH-YN",
+    "FIT-STITCH-YP"
+  ],
+  "unused_valid_intentional_fit_exception_ids": []
+}

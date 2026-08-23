@@ -1,0 +1,147 @@
+{
+  "accepted_wp01_archive_sha256": "b55f23fb76b01bb8d6d17b6a6f7969f00f835199f762be1b53f80021cfff1685",
+  "authentic_vendor_gs_original_sha256": "10b1433e1ef8b302d4e40ea77bcead9b329b7460207d39345847fc8a7085a808",
+  "configuration_id": "STINGRAY-I5S-DF8-WP02-ARM-POWERTRAIN-2026-08-18-R1",
+  "crosshead_stroke_mm": 23.074390560079223,
+  "different_kernel_reimport": "UNAVAILABLE_AND_NOT_CLAIMED",
+  "full_solid_pair_audit": [
+    {
+      "accepted_internal_cots_representation_pairs": 2,
+      "broad_phase_occurrence_pairs_checked": 85,
+      "positive_common_volume_pairs": 2,
+      "state": "STOWED",
+      "status": "PASS_WITH_DECLARED_COTS_REPRESENTATION_LIMITATIONS",
+      "unresolved_or_boolean_error_pairs": 0,
+      "zero_common_volume_pairs": 83
+    },
+    {
+      "accepted_internal_cots_representation_pairs": 2,
+      "broad_phase_occurrence_pairs_checked": 78,
+      "positive_common_volume_pairs": 2,
+      "state": "DEPLOYED",
+      "status": "PASS_WITH_DECLARED_COTS_REPRESENTATION_LIMITATIONS",
+      "unresolved_or_boolean_error_pairs": 0,
+      "zero_common_volume_pairs": 76
+    }
+  ],
+  "kinematic_endpoints": {
+    "deployed": {
+      "attach_r_mm": 70.46827135542728,
+      "attach_z_mm": 631.0776862183426,
+      "crosshead_z_mm": 567.1280378531345,
+      "joint_mismatch_mm": 1.4210854715202004e-14,
+      "link_length_mm": 70.00000000000001,
+      "theta_deg": 80.0
+    },
+    "stowed": {
+      "attach_r_mm": 36.61083422530492,
+      "attach_z_mm": 659.9946693304737,
+      "crosshead_z_mm": 590.2024284132137,
+      "joint_mismatch_mm": 0.0,
+      "link_length_mm": 70.0,
+      "theta_deg": 1.0
+    }
+  },
+  "mass_summary": {
+    "integrated_wp01_plus_wp02_nominal_mass_kg": 17.330175014794566,
+    "limitation": "Mixed-material subsystem mass uses nominal densities and vendor/drawing mass overrides; fastener and lubricant micro-masses are screening values.",
+    "wp01_reported_body_mass_kg": 13.837336,
+    "wp02_nominal_mass_kg": 3.4928390147945643
+  },
+  "native_creo_validation": "UNAVAILABLE_AND_NOT_CLAIMED",
+  "owner_response": "USE ALL RECOMMENDED DEFAULTS",
+  "parent_df8_archive_sha256": "6da4deb5e920ab819ffc1ce720ef7934c792a539416b51f7b78acf18f76bed60",
+  "release_classification": "CONTROLLED DIGITAL SUBSYSTEM DEVELOPMENT DEFINITION; DIGITAL GEOMETRY AND ANALYTICAL BASELINE COMPLETE FOR THE TWO DELIVERED STATES. NOT PROCUREMENT RELEASED, NOT FABRICATION RELEASED, NOT TEST-ENTRY READY, NOT QUALIFIED, AND NOT OPERATIONALLY READY. HBD DRAWING-DERIVED GEOMETRY, GS CHARGE SPECIFICATION, SPRING PROCUREMENT IDENTITY, DAMPING ADJUSTMENT, BYPASS DETENT SETTING, SALTWATER BOUNDARY, AND REPRESENTATIVE PHYSICAL TESTS REQUIRE EXTERNAL VERIFICATION.",
+  "revision": "DF8-WP02-R1",
+  "selected_cots": [
+    "ACE GS-19-50-V4A-B8-B8; development force specification F1 300 +/- 30 N at 20 C; authentic vendor BREP present",
+    "ACE HBD-15-25-AA-P; drawing-derived geometry pending authentic configured CAD and force-speed evidence",
+    "Lee Spring LHL 625D 12; catalog-derived geometry and configuration calculation",
+    "Smalley VSM-6-S16-PA; drawing-derived retaining-ring envelope"
+  ],
+  "top_level_step_count": 2,
+  "top_level_step_files": {
+    "DEPLOYED": {
+      "relative_path": "05_SUBSYSTEM_CAD/STINGRAY_I5S_DF8_WP02_ARM_AND_POWERTRAIN_DEPLOYED_AP242.step",
+      "sha256": "e31679aa039e74dce4b036ac22197e2693970d538424ab859b24834865d1e2f0"
+    },
+    "STOWED": {
+      "relative_path": "05_SUBSYSTEM_CAD/STINGRAY_I5S_DF8_WP02_ARM_AND_POWERTRAIN_STOWED_AP242.step",
+      "sha256": "501218c1bb83df8ed05e72fc1bf91dc9f412c5a28d3a586b4852d20853918f58"
+    }
+  },
+  "top_level_step_reimport_validation": [
+    {
+      "ap242_header_present": true,
+      "expected_bbox_mm": [
+        -43.548345,
+        52.455674,
+        -55.427946,
+        50.916472,
+        532.0,
+        1095.129119
+      ],
+      "expected_solid_count": 117,
+      "expected_volume_mm3": 410720.564548429,
+      "file": "STINGRAY_I5S_DF8_WP02_ARM_AND_POWERTRAIN_STOWED_AP242.step",
+      "kernel_note": "Independent post-export process using OCCT 7.9 STEPControl; not a different CAD kernel and not native Creo.",
+      "maximum_bbox_delta_mm": 5.231563591223676e-07,
+      "named_product_count": 35,
+      "read_status": "IFSelect_RetDone",
+      "reimport_bbox_mm": [
+        -43.54834502765255,
+        52.45567377877233,
+        -55.4279460818071,
+        50.916472410838516,
+        531.9999998748436,
+        1095.1291195231563
+      ],
+      "reimport_seconds": 1.1836113929748535,
+      "reimport_solid_count": 117,
+      "reimport_volume_mm3": 410720.56363361684,
+      "sha256": "501218c1bb83df8ed05e72fc1bf91dc9f412c5a28d3a586b4852d20853918f58",
+      "state": "STOWED",
+      "status": "PASS",
+      "transferred_roots": 1,
+      "units_mm": true,
+      "valid_solid_count": 117,
+      "volume_difference_mm3": -0.0009148121462203562
+    },
+    {
+      "ap242_header_present": true,
+      "expected_bbox_mm": [
+        -259.216574,
+        499.380588,
+        -437.976276,
+        437.976276,
+        532.0,
+        1079.733747
+      ],
+      "expected_solid_count": 117,
+      "expected_volume_mm3": 412945.03012257896,
+      "file": "STINGRAY_I5S_DF8_WP02_ARM_AND_POWERTRAIN_DEPLOYED_AP242.step",
+      "kernel_note": "Independent post-export process using OCCT 7.9 STEPControl; not a different CAD kernel and not native Creo.",
+      "maximum_bbox_delta_mm": 5.738871209359786e-07,
+      "named_product_count": 35,
+      "read_status": "IFSelect_RetDone",
+      "reimport_bbox_mm": [
+        -259.2165737911731,
+        499.3805885738871,
+        -437.97627587856573,
+        437.97627587857636,
+        531.9999998748436,
+        1079.7337475181562
+      ],
+      "reimport_seconds": 1.146017074584961,
+      "reimport_solid_count": 117,
+      "reimport_volume_mm3": 412945.02921546815,
+      "sha256": "e31679aa039e74dce4b036ac22197e2693970d538424ab859b24834865d1e2f0",
+      "state": "DEPLOYED",
+      "status": "PASS",
+      "transferred_roots": 1,
+      "units_mm": true,
+      "valid_solid_count": 117,
+      "volume_difference_mm3": -0.0009071108070202172
+    }
+  ]
+}

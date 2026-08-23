@@ -1,0 +1,20 @@
+[
+  {
+    "accepted_internal_cots_representation_pairs": 2,
+    "broad_phase_occurrence_pairs_checked": 85,
+    "positive_common_volume_pairs": 2,
+    "state": "STOWED",
+    "status": "PASS_WITH_DECLARED_COTS_REPRESENTATION_LIMITATIONS",
+    "unresolved_or_boolean_error_pairs": 0,
+    "zero_common_volume_pairs": 83
+  },
+  {
+    "accepted_internal_cots_representation_pairs": 2,
+    "broad_phase_occurrence_pairs_checked": 78,
+    "positive_common_volume_pairs": 2,
+    "state": "DEPLOYED",
+    "status": "PASS_WITH_DECLARED_COTS_REPRESENTATION_LIMITATIONS",
+    "unresolved_or_boolean_error_pairs": 0,
+    "zero_common_volume_pairs": 76
+  }
+]

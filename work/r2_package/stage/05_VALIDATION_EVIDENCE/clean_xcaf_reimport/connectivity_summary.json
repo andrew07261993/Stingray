@@ -1,0 +1,46 @@
+{
+  "STOWED": {
+    "state": "STOWED",
+    "occurrence_count": 181,
+    "connection_count": 194,
+    "floating_rigid_occurrences": [],
+    "floating_rigid_count": 0,
+    "dangling_connections": [],
+    "dangling_connection_count": 0,
+    "self_connections": [],
+    "self_connection_count": 0,
+    "generic_or_blanket_evidence_connection_ids": [],
+    "generic_or_blanket_evidence_count": 0,
+    "graph_component_count_including_flexible_and_consumed": 4,
+    "body_hardpoint_to_harness_terminal_path": [
+      "BODY-HARDPOINT-001",
+      "TETHER-THIMBLE-BODY",
+      "RECOVERY-TETHER-001",
+      "TETHER-THIMBLE-HARNESS",
+      "HARNESS-TERMINAL-001"
+    ],
+    "continuous_recovery_load_path_found": true
+  },
+  "DEPLOYED": {
+    "state": "DEPLOYED",
+    "occurrence_count": 181,
+    "connection_count": 194,
+    "floating_rigid_occurrences": [],
+    "floating_rigid_count": 0,
+    "dangling_connections": [],
+    "dangling_connection_count": 0,
+    "self_connections": [],
+    "self_connection_count": 0,
+    "generic_or_blanket_evidence_connection_ids": [],
+    "generic_or_blanket_evidence_count": 0,
+    "graph_component_count_including_flexible_and_consumed": 4,
+    "body_hardpoint_to_harness_terminal_path": [
+      "BODY-HARDPOINT-001",
+      "TETHER-THIMBLE-BODY",
+      "RECOVERY-TETHER-001",
+      "TETHER-THIMBLE-HARNESS",
+      "HARNESS-TERMINAL-001"
+    ],
+    "continuous_recovery_load_path_found": true
+  }
+}

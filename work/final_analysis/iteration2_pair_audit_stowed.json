@@ -1,0 +1,3533 @@
+{
+  "audit_snapshot": "FINAL_CORRECTIVE_ITERATION2_PER_SOLID_EXACT_AUTHORING_PAIR_AUDIT",
+  "generated_utc": "2026-08-22T12:08:08.062120+00:00",
+  "state": "STOWED",
+  "source_files_sha256_at_import": {
+    "work/r2_source/build_r2.py": "a64b5dd5b9c0d34aa484c67204d2d7c035cebb88c7a68530faba6e129076be43",
+    "work/r2_source/r2_geometry.py": "d537048e91f2c5f26629bc91755c8a2e60ed4d616caa8803b50f05ec5ba158cb",
+    "work/r2_source/authoring_pair_audit.py": "4543423974d08f24c2c9578fbcc0d2488d9694e75b2fbc5a52b29dc7614646f5"
+  },
+  "method": {
+    "unit_of_boolean": "individual closed BREP solid",
+    "aabb_tolerance_mm": 1e-07,
+    "common_volume_epsilon_mm3": 1e-05,
+    "operand_checks": [
+      "BRepCheck_Analyzer",
+      "strictly positive signed solid volume"
+    ],
+    "boolean_result_checks": [
+      "IsDone",
+      "BRepCheck_Analyzer",
+      "absolute common volume <= minimum positive operand volume"
+    ],
+    "occurrence_pair_aggregation": "sum of valid positive solid-pair common volumes"
+  },
+  "summary": {
+    "occurrences": 172,
+    "solid_records": 204,
+    "expected_solid_pairs": 20706,
+    "broadphase_solid_pairs": 830,
+    "invalid_solid_records": 0,
+    "positive_solid_pairs": 70,
+    "documented_positive_solid_pairs": 4,
+    "unauthorized_positive_solid_pairs": 66,
+    "unauthorized_positive_occurrence_pairs": 63,
+    "blocked_solid_pairs": 0,
+    "blocked_occurrence_pairs": 0,
+    "register_error_count": 0,
+    "unused_valid_exception_count": 0,
+    "multi_solid_occurrence_count": 17,
+    "elapsed_seconds": 44.11
+  },
+  "invalid_solid_records": [],
+  "multi_solid_occurrences": [
+    {
+      "occurrence_id": "BODY-HARDPOINT-001",
+      "solid_count": 3,
+      "parent_path": "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY",
+      "occurrence_abs_volume_mm3": 5741.398714645307
+    },
+    {
+      "occurrence_id": "CARTRIDGE-CARRIER-AFT",
+      "solid_count": 5,
+      "parent_path": "100_FORWARD_PENETRATOR_WAI_AND_PRIMARY_STRUCTURE_ASSY",
+      "occurrence_abs_volume_mm3": 1144.0015910570773
+    },
+    {
+      "occurrence_id": "CARTRIDGE-CARRIER-FWD",
+      "solid_count": 5,
+      "parent_path": "100_FORWARD_PENETRATOR_WAI_AND_PRIMARY_STRUCTURE_ASSY",
+      "occurrence_abs_volume_mm3": 1144.0015910570773
+    },
+    {
+      "occurrence_id": "CROSSHEAD-001",
+      "solid_count": 5,
+      "parent_path": "300_TRUE_TRANSFORM_ARM_AND_POWERTRAIN_ASSY",
+      "occurrence_abs_volume_mm3": 1572.668206160992
+    },
+    {
+      "occurrence_id": "FULLFLOW-VALVE-001",
+      "solid_count": 4,
+      "parent_path": "100_FORWARD_PENETRATOR_WAI_AND_PRIMARY_STRUCTURE_ASSY",
+      "occurrence_abs_volume_mm3": 2120.168621909593
+    },
+    {
+      "occurrence_id": "GS19-BODY-001",
+      "solid_count": 2,
+      "parent_path": "300_TRUE_TRANSFORM_ARM_AND_POWERTRAIN_ASSY",
+      "occurrence_abs_volume_mm3": 21267.14522123635
+    },
+    {
+      "occurrence_id": "HBD-BODY-001",
+      "solid_count": 2,
+      "parent_path": "300_TRUE_TRANSFORM_ARM_AND_POWERTRAIN_ASSY",
+      "occurrence_abs_volume_mm3": 12366.992123374155
+    },
+    {
+      "occurrence_id": "PIVOT-CARRIER-1",
+      "solid_count": 2,
+      "parent_path": "300_TRUE_TRANSFORM_ARM_AND_POWERTRAIN_ASSY/331_ARM_1_ASSY",
+      "occurrence_abs_volume_mm3": 688.6238635886182
+    },
+    {
+      "occurrence_id": "PIVOT-CARRIER-2",
+      "solid_count": 2,
+      "parent_path": "300_TRUE_TRANSFORM_ARM_AND_POWERTRAIN_ASSY/332_ARM_2_ASSY",
+      "occurrence_abs_volume_mm3": 688.6238635886183
+    },
+    {
+      "occurrence_id": "PIVOT-CARRIER-3",
+      "solid_count": 2,
+      "parent_path": "300_TRUE_TRANSFORM_ARM_AND_POWERTRAIN_ASSY/333_ARM_3_ASSY",
+      "occurrence_abs_volume_mm3": 688.6238635886184
+    },
+    {
+      "occurrence_id": "PUNCTURE-HEAD-1",
+      "solid_count": 2,
+      "parent_path": "100_FORWARD_PENETRATOR_WAI_AND_PRIMARY_STRUCTURE_ASSY",
+      "occurrence_abs_volume_mm3": 456.9957023452565
+    },
+    {
+      "occurrence_id": "PUNCTURE-HEAD-2",
+      "solid_count": 2,
+      "parent_path": "100_FORWARD_PENETRATOR_WAI_AND_PRIMARY_STRUCTURE_ASSY",
+      "occurrence_abs_volume_mm3": 456.9957023452565
+    },
+    {
+      "occurrence_id": "PUNCTURE-HEAD-3",
+      "solid_count": 2,
+      "parent_path": "100_FORWARD_PENETRATOR_WAI_AND_PRIMARY_STRUCTURE_ASSY",
+      "occurrence_abs_volume_mm3": 456.9957023452565
+    },
+    {
+      "occurrence_id": "PUNCTURE-HEAD-4",
+      "solid_count": 2,
+      "parent_path": "100_FORWARD_PENETRATOR_WAI_AND_PRIMARY_STRUCTURE_ASSY",
+      "occurrence_abs_volume_mm3": 456.9957023452565
+    },
+    {
+      "occurrence_id": "WATER-INLET-001",
+      "solid_count": 3,
+      "parent_path": "100_FORWARD_PENETRATOR_WAI_AND_PRIMARY_STRUCTURE_ASSY",
+      "occurrence_abs_volume_mm3": 191.04653245010235
+    },
+    {
+      "occurrence_id": "WATER-TRIGGER-HSG-001",
+      "solid_count": 4,
+      "parent_path": "100_FORWARD_PENETRATOR_WAI_AND_PRIMARY_STRUCTURE_ASSY",
+      "occurrence_abs_volume_mm3": 3963.0439156877674
+    },
+    {
+      "occurrence_id": "WP05-DOOR-001",
+      "solid_count": 2,
+      "parent_path": "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY",
+      "occurrence_abs_volume_mm3": 5305.330542895755
+    }
+  ],
+  "intentional_fit_register": [
+    {
+      "exception_id": "FIT-STITCH-XP",
+      "state": "STOWED",
+      "occurrence_a": "HARNESS-LEG-XP",
+      "occurrence_b": "HARNESS-BAND-1",
+      "fit_type": "CONTROLLED_STITCHED_WEB_LAP",
+      "minimum_common_volume_mm3": 0.01,
+      "maximum_common_volume_mm3": 150.0,
+      "process_basis": "Occurrence-matched folded web lap inside the controlled bar-tack envelope; finished assembly proof loaded."
+    },
+    {
+      "exception_id": "FIT-STITCH-XN",
+      "state": "STOWED",
+      "occurrence_a": "HARNESS-LEG-XN",
+      "occurrence_b": "HARNESS-BAND-1",
+      "fit_type": "CONTROLLED_STITCHED_WEB_LAP",
+      "minimum_common_volume_mm3": 0.01,
+      "maximum_common_volume_mm3": 150.0,
+      "process_basis": "Occurrence-matched folded web lap inside the controlled bar-tack envelope; finished assembly proof loaded."
+    },
+    {
+      "exception_id": "FIT-STITCH-YP",
+      "state": "STOWED",
+      "occurrence_a": "HARNESS-LEG-YP",
+      "occurrence_b": "HARNESS-BAND-2",
+      "fit_type": "CONTROLLED_STITCHED_WEB_LAP",
+      "minimum_common_volume_mm3": 0.01,
+      "maximum_common_volume_mm3": 150.0,
+      "process_basis": "Occurrence-matched folded web lap inside the controlled bar-tack envelope; finished assembly proof loaded."
+    },
+    {
+      "exception_id": "FIT-STITCH-YN",
+      "state": "STOWED",
+      "occurrence_a": "HARNESS-LEG-YN",
+      "occurrence_b": "HARNESS-BAND-2",
+      "fit_type": "CONTROLLED_STITCHED_WEB_LAP",
+      "minimum_common_volume_mm3": 0.01,
+      "maximum_common_volume_mm3": 150.0,
+      "process_basis": "Occurrence-matched folded web lap inside the controlled bar-tack envelope; finished assembly proof loaded."
+    }
+  ],
+  "intentional_fit_register_errors": [],
+  "used_intentional_fit_exception_ids": [
+    "FIT-STITCH-XN",
+    "FIT-STITCH-XP",
+    "FIT-STITCH-YN",
+    "FIT-STITCH-YP"
+  ],
+  "unused_valid_intentional_fit_exception_ids": [],
+  "blocked_occurrence_pairs": [],
+  "blocked_solid_pairs": [],
+  "unauthorized_positive_occurrence_pairs": [
+    {
+      "occurrence_a": "HARNESS-LEG-XP",
+      "occurrence_b": "WP04-GUIDE-RAIL-1",
+      "parent_path_a": "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY",
+      "parent_path_b": "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY",
+      "positive_solid_pair_count": 1,
+      "total_common_volume_mm3": 337.0535322397831,
+      "maximum_single_solid_common_volume_mm3": 337.0535322397831,
+      "solid_pairs": [
+        {
+          "solid_index_a": 1,
+          "solid_index_b": 1,
+          "common_volume_mm3": 337.0535322397831,
+          "authorization_reason": "NO_APPLICABLE_BOUNDED_EXCEPTION"
+        }
+      ],
+      "rank_by_total_common_volume": 1
+    },
+    {
+      "occurrence_a": "BODY-HARDPOINT-001",
+      "occurrence_b": "HARNESS-LEG-XP",
+      "parent_path_a": "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY",
+      "parent_path_b": "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY",
+      "positive_solid_pair_count": 2,
+      "total_common_volume_mm3": 46.199999999999896,
+      "maximum_single_solid_common_volume_mm3": 23.099999999999998,
+      "solid_pairs": [
+        {
+          "solid_index_a": 1,
+          "solid_index_b": 1,
+          "common_volume_mm3": 23.099999999999998,
+          "authorization_reason": "NO_APPLICABLE_BOUNDED_EXCEPTION"
+        },
+        {
+          "solid_index_a": 2,
+          "solid_index_b": 1,
+          "common_volume_mm3": 23.0999999999999,
+          "authorization_reason": "NO_APPLICABLE_BOUNDED_EXCEPTION"
+        }
+      ],
+      "rank_by_total_common_volume": 2
+    },
+    {
+      "occurrence_a": "BODY-HARDPOINT-001",
+      "occurrence_b": "HARNESS-LEG-XN",
+      "parent_path_a": "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY",
+      "parent_path_b": "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY",
+      "positive_solid_pair_count": 1,
+      "total_common_volume_mm3": 43.78527931844844,
+      "maximum_single_solid_common_volume_mm3": 43.78527931844844,
+      "solid_pairs": [
+        {
+          "solid_index_a": 3,
+          "solid_index_b": 1,
+          "common_volume_mm3": 43.78527931844844,
+          "authorization_reason": "NO_APPLICABLE_BOUNDED_EXCEPTION"
+        }
+      ],
+      "rank_by_total_common_volume": 3
+    },
+    {
+      "occurrence_a": "HARNESS-LEG-XP",
+      "occurrence_b": "TETHER-THIMBLE-BODY",
+      "parent_path_a": "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY",
+      "parent_path_b": "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY",
+      "positive_solid_pair_count": 1,
+      "total_common_volume_mm3": 42.52449539116395,
+      "maximum_single_solid_common_volume_mm3": 42.52449539116395,
+      "solid_pairs": [
+        {
+          "solid_index_a": 1,
+          "solid_index_b": 1,
+          "common_volume_mm3": 42.52449539116395,
+          "authorization_reason": "NO_APPLICABLE_BOUNDED_EXCEPTION"
+        }
+      ],
+      "rank_by_total_common_volume": 4
+    },
+    {
+      "occurrence_a": "BODY-HARDPOINT-001",
+      "occurrence_b": "HARNESS-LEG-YP",
+      "parent_path_a": "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY",
+      "parent_path_b": "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY",
+      "positive_solid_pair_count": 1,
+      "total_common_volume_mm3": 35.22218585043508,
+      "maximum_single_solid_common_volume_mm3": 35.22218585043508,
+      "solid_pairs": [
+        {
+          "solid_index_a": 3,
+          "solid_index_b": 1,
+          "common_volume_mm3": 35.22218585043508,
+          "authorization_reason": "NO_APPLICABLE_BOUNDED_EXCEPTION"
+        }
+      ],
+      "rank_by_total_common_volume": 5
+    },
+    {
+      "occurrence_a": "BODY-HARDPOINT-001",
+      "occurrence_b": "HARNESS-LEG-YN",
+      "parent_path_a": "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY",
+      "parent_path_b": "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY",
+      "positive_solid_pair_count": 1,
+      "total_common_volume_mm3": 35.222185850435004,
+      "maximum_single_solid_common_volume_mm3": 35.222185850435004,
+      "solid_pairs": [
+        {
+          "solid_index_a": 3,
+          "solid_index_b": 1,
+          "common_volume_mm3": 35.222185850435004,
+          "authorization_reason": "NO_APPLICABLE_BOUNDED_EXCEPTION"
+        }
+      ],
+      "rank_by_total_common_volume": 6
+    },
+    {
+      "occurrence_a": "FWD-SHELL-001",
+      "occurrence_b": "ROUTE-BOWDEN-SHEATH-001",
+      "parent_path_a": "100_FORWARD_PENETRATOR_WAI_AND_PRIMARY_STRUCTURE_ASSY",
+      "parent_path_b": "300_TRUE_TRANSFORM_ARM_AND_POWERTRAIN_ASSY",
+      "positive_solid_pair_count": 1,
+      "total_common_volume_mm3": 23.88112926532537,
+      "maximum_single_solid_common_volume_mm3": 23.88112926532537,
+      "solid_pairs": [
+        {
+          "solid_index_a": 1,
+          "solid_index_b": 1,
+          "common_volume_mm3": 23.88112926532537,
+          "authorization_reason": "NO_APPLICABLE_BOUNDED_EXCEPTION"
+        }
+      ],
+      "rank_by_total_common_volume": 7
+    },
+    {
+      "occurrence_a": "WP05-DOOR-001",
+      "occurrence_b": "WP05-DOOR-LANYARD",
+      "parent_path_a": "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY",
+      "parent_path_b": "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY",
+      "positive_solid_pair_count": 1,
+      "total_common_volume_mm3": 22.89141327283281,
+      "maximum_single_solid_common_volume_mm3": 22.89141327283281,
+      "solid_pairs": [
+        {
+          "solid_index_a": 1,
+          "solid_index_b": 1,
+          "common_volume_mm3": 22.89141327283281,
+          "authorization_reason": "NO_APPLICABLE_BOUNDED_EXCEPTION"
+        }
+      ],
+      "rank_by_total_common_volume": 8
+    },
+    {
+      "occurrence_a": "HARNESS-LEG-XP",
+      "occurrence_b": "RECOVERY-TETHER-001",
+      "parent_path_a": "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY",
+      "parent_path_b": "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY",
+      "positive_solid_pair_count": 1,
+      "total_common_volume_mm3": 18.40712043645503,
+      "maximum_single_solid_common_volume_mm3": 18.40712043645503,
+      "solid_pairs": [
+        {
+          "solid_index_a": 1,
+          "solid_index_b": 1,
+          "common_volume_mm3": 18.40712043645503,
+          "authorization_reason": "NO_APPLICABLE_BOUNDED_EXCEPTION"
+        }
+      ],
+      "rank_by_total_common_volume": 9
+    },
+    {
+      "occurrence_a": "HARNESS-LEG-YN",
+      "occurrence_b": "HARNESS-TERMINAL-001",
+      "parent_path_a": "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY",
+      "parent_path_b": "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY",
+      "positive_solid_pair_count": 1,
+      "total_common_volume_mm3": 11.987770411543341,
+      "maximum_single_solid_common_volume_mm3": 11.987770411543341,
+      "solid_pairs": [
+        {
+          "solid_index_a": 1,
+          "solid_index_b": 1,
+          "common_volume_mm3": 11.987770411543341,
+          "authorization_reason": "NO_APPLICABLE_BOUNDED_EXCEPTION"
+        }
+      ],
+      "rank_by_total_common_volume": 10
+    },
+    {
+      "occurrence_a": "HARNESS-LEG-YP",
+      "occurrence_b": "HARNESS-TERMINAL-001",
+      "parent_path_a": "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY",
+      "parent_path_b": "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY",
+      "positive_solid_pair_count": 1,
+      "total_common_volume_mm3": 11.987770411543316,
+      "maximum_single_solid_common_volume_mm3": 11.987770411543316,
+      "solid_pairs": [
+        {
+          "solid_index_a": 1,
+          "solid_index_b": 1,
+          "common_volume_mm3": 11.987770411543316,
+          "authorization_reason": "NO_APPLICABLE_BOUNDED_EXCEPTION"
+        }
+      ],
+      "rank_by_total_common_volume": 11
+    },
+    {
+      "occurrence_a": "RECOVERY-TETHER-001",
+      "occurrence_b": "TETHER-THIMBLE-HARNESS",
+      "parent_path_a": "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY",
+      "parent_path_b": "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY",
+      "positive_solid_pair_count": 1,
+      "total_common_volume_mm3": 7.399647835333414,
+      "maximum_single_solid_common_volume_mm3": 7.399647835333414,
+      "solid_pairs": [
+        {
+          "solid_index_a": 1,
+          "solid_index_b": 1,
+          "common_volume_mm3": 7.399647835333414,
+          "authorization_reason": "NO_APPLICABLE_BOUNDED_EXCEPTION"
+        }
+      ],
+      "rank_by_total_common_volume": 12
+    },
+    {
+      "occurrence_a": "AFT-SHELL-001",
+      "occurrence_b": "RECOVERY-TETHER-001",
+      "parent_path_a": "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY",
+      "parent_path_b": "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY",
+      "positive_solid_pair_count": 1,
+      "total_common_volume_mm3": 6.201943985940134,
+      "maximum_single_solid_common_volume_mm3": 6.201943985940134,
+      "solid_pairs": [
+        {
+          "solid_index_a": 1,
+          "solid_index_b": 1,
+          "common_volume_mm3": 6.201943985940134,
+          "authorization_reason": "NO_APPLICABLE_BOUNDED_EXCEPTION"
+        }
+      ],
+      "rank_by_total_common_volume": 13
+    },
+    {
+      "occurrence_a": "AFT-SHELL-001",
+      "occurrence_b": "ROUTE-BOWDEN-SHEATH-001",
+      "parent_path_a": "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY",
+      "parent_path_b": "300_TRUE_TRANSFORM_ARM_AND_POWERTRAIN_ASSY",
+      "positive_solid_pair_count": 1,
+      "total_common_volume_mm3": 6.103066212034036,
+      "maximum_single_solid_common_volume_mm3": 6.103066212034036,
+      "solid_pairs": [
+        {
+          "solid_index_a": 1,
+          "solid_index_b": 1,
+          "common_volume_mm3": 6.103066212034036,
+          "authorization_reason": "NO_APPLICABLE_BOUNDED_EXCEPTION"
+        }
+      ],
+      "rank_by_total_common_volume": 14
+    },
+    {
+      "occurrence_a": "BOOSTER-1",
+      "occurrence_b": "ROUTE-PILOT-LINE-001",
+      "parent_path_a": "100_FORWARD_PENETRATOR_WAI_AND_PRIMARY_STRUCTURE_ASSY",
+      "parent_path_b": "300_TRUE_TRANSFORM_ARM_AND_POWERTRAIN_ASSY",
+      "positive_solid_pair_count": 1,
+      "total_common_volume_mm3": 5.909338414353819,
+      "maximum_single_solid_common_volume_mm3": 5.909338414353819,
+      "solid_pairs": [
+        {
+          "solid_index_a": 1,
+          "solid_index_b": 1,
+          "common_volume_mm3": 5.909338414353819,
+          "authorization_reason": "NO_APPLICABLE_BOUNDED_EXCEPTION"
+        }
+      ],
+      "rank_by_total_common_volume": 15
+    },
+    {
+      "occurrence_a": "FWD-SHELL-001",
+      "occurrence_b": "ROUTE-GAS-MAIN-001",
+      "parent_path_a": "100_FORWARD_PENETRATOR_WAI_AND_PRIMARY_STRUCTURE_ASSY",
+      "parent_path_b": "300_TRUE_TRANSFORM_ARM_AND_POWERTRAIN_ASSY",
+      "positive_solid_pair_count": 1,
+      "total_common_volume_mm3": 5.862683950516743,
+      "maximum_single_solid_common_volume_mm3": 5.862683950516743,
+      "solid_pairs": [
+        {
+          "solid_index_a": 1,
+          "solid_index_b": 1,
+          "common_volume_mm3": 5.862683950516743,
+          "authorization_reason": "NO_APPLICABLE_BOUNDED_EXCEPTION"
+        }
+      ],
+      "rank_by_total_common_volume": 16
+    },
+    {
+      "occurrence_a": "FULLFLOW-VALVE-001",
+      "occurrence_b": "ROUTE-PILOT-LINE-001",
+      "parent_path_a": "100_FORWARD_PENETRATOR_WAI_AND_PRIMARY_STRUCTURE_ASSY",
+      "parent_path_b": "300_TRUE_TRANSFORM_ARM_AND_POWERTRAIN_ASSY",
+      "positive_solid_pair_count": 1,
+      "total_common_volume_mm3": 4.676517645695009,
+      "maximum_single_solid_common_volume_mm3": 4.676517645695009,
+      "solid_pairs": [
+        {
+          "solid_index_a": 1,
+          "solid_index_b": 1,
+          "common_volume_mm3": 4.676517645695009,
+          "authorization_reason": "NO_APPLICABLE_BOUNDED_EXCEPTION"
+        }
+      ],
+      "rank_by_total_common_volume": 17
+    },
+    {
+      "occurrence_a": "ROUTE-BOWDEN-SHEATH-001",
+      "occurrence_b": "ROUTE-PILOT-LINE-001",
+      "parent_path_a": "300_TRUE_TRANSFORM_ARM_AND_POWERTRAIN_ASSY",
+      "parent_path_b": "300_TRUE_TRANSFORM_ARM_AND_POWERTRAIN_ASSY",
+      "positive_solid_pair_count": 1,
+      "total_common_volume_mm3": 4.2991320257106205,
+      "maximum_single_solid_common_volume_mm3": 4.2991320257106205,
+      "solid_pairs": [
+        {
+          "solid_index_a": 1,
+          "solid_index_b": 1,
+          "common_volume_mm3": 4.2991320257106205,
+          "authorization_reason": "NO_APPLICABLE_BOUNDED_EXCEPTION"
+        }
+      ],
+      "rank_by_total_common_volume": 18
+    },
+    {
+      "occurrence_a": "ROUTE-BOWDEN-SHEATH-001",
+      "occurrence_b": "WP04-SEAR-001",
+      "parent_path_a": "300_TRUE_TRANSFORM_ARM_AND_POWERTRAIN_ASSY",
+      "parent_path_b": "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY",
+      "positive_solid_pair_count": 1,
+      "total_common_volume_mm3": 4.223682827192136,
+      "maximum_single_solid_common_volume_mm3": 4.223682827192136,
+      "solid_pairs": [
+        {
+          "solid_index_a": 1,
+          "solid_index_b": 1,
+          "common_volume_mm3": 4.223682827192136,
+          "authorization_reason": "NO_APPLICABLE_BOUNDED_EXCEPTION"
+        }
+      ],
+      "rank_by_total_common_volume": 19
+    },
+    {
+      "occurrence_a": "HARNESS-LEG-YN",
+      "occurrence_b": "RECOVERY-TETHER-001",
+      "parent_path_a": "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY",
+      "parent_path_b": "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY",
+      "positive_solid_pair_count": 1,
+      "total_common_volume_mm3": 4.174329584853912,
+      "maximum_single_solid_common_volume_mm3": 4.174329584853912,
+      "solid_pairs": [
+        {
+          "solid_index_a": 1,
+          "solid_index_b": 1,
+          "common_volume_mm3": 4.174329584853912,
+          "authorization_reason": "NO_APPLICABLE_BOUNDED_EXCEPTION"
+        }
+      ],
+      "rank_by_total_common_volume": 20
+    },
+    {
+      "occurrence_a": "AFT-SHELL-001",
+      "occurrence_b": "ROUTE-GAS-MAIN-001",
+      "parent_path_a": "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY",
+      "parent_path_b": "300_TRUE_TRANSFORM_ARM_AND_POWERTRAIN_ASSY",
+      "positive_solid_pair_count": 1,
+      "total_common_volume_mm3": 3.9302488948981003,
+      "maximum_single_solid_common_volume_mm3": 3.9302488948981003,
+      "solid_pairs": [
+        {
+          "solid_index_a": 1,
+          "solid_index_b": 1,
+          "common_volume_mm3": 3.9302488948981003,
+          "authorization_reason": "NO_APPLICABLE_BOUNDED_EXCEPTION"
+        }
+      ],
+      "rank_by_total_common_volume": 21
+    },
+    {
+      "occurrence_a": "ROUTE-BOWDEN-SHEATH-001",
+      "occurrence_b": "WP04-EJECTOR-SPRING",
+      "parent_path_a": "300_TRUE_TRANSFORM_ARM_AND_POWERTRAIN_ASSY",
+      "parent_path_b": "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY",
+      "positive_solid_pair_count": 1,
+      "total_common_volume_mm3": 2.7495382037070746,
+      "maximum_single_solid_common_volume_mm3": 2.7495382037070746,
+      "solid_pairs": [
+        {
+          "solid_index_a": 1,
+          "solid_index_b": 1,
+          "common_volume_mm3": 2.7495382037070746,
+          "authorization_reason": "NO_APPLICABLE_BOUNDED_EXCEPTION"
+        }
+      ],
+      "rank_by_total_common_volume": 22
+    },
+    {
+      "occurrence_a": "DOOR-DETENT-2",
+      "occurrence_b": "WP05-SERVICE-THROAT",
+      "parent_path_a": "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY",
+      "parent_path_b": "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY",
+      "positive_solid_pair_count": 1,
+      "total_common_volume_mm3": 2.528513630621478,
+      "maximum_single_solid_common_volume_mm3": 2.528513630621478,
+      "solid_pairs": [
+        {
+          "solid_index_a": 1,
+          "solid_index_b": 1,
+          "common_volume_mm3": 2.528513630621478,
+          "authorization_reason": "NO_APPLICABLE_BOUNDED_EXCEPTION"
+        }
+      ],
+      "rank_by_total_common_volume": 23
+    },
+    {
+      "occurrence_a": "DOOR-DETENT-4",
+      "occurrence_b": "WP05-SERVICE-THROAT",
+      "parent_path_a": "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY",
+      "parent_path_b": "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY",
+      "positive_solid_pair_count": 1,
+      "total_common_volume_mm3": 2.5285136305424167,
+      "maximum_single_solid_common_volume_mm3": 2.5285136305424167,
+      "solid_pairs": [
+        {
+          "solid_index_a": 1,
+          "solid_index_b": 1,
+          "common_volume_mm3": 2.5285136305424167,
+          "authorization_reason": "NO_APPLICABLE_BOUNDED_EXCEPTION"
+        }
+      ],
+      "rank_by_total_common_volume": 24
+    },
+    {
+      "occurrence_a": "DOOR-DETENT-3",
+      "occurrence_b": "WP05-SERVICE-THROAT",
+      "parent_path_a": "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY",
+      "parent_path_b": "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY",
+      "positive_solid_pair_count": 1,
+      "total_common_volume_mm3": 2.52850449159064,
+      "maximum_single_solid_common_volume_mm3": 2.52850449159064,
+      "solid_pairs": [
+        {
+          "solid_index_a": 1,
+          "solid_index_b": 1,
+          "common_volume_mm3": 2.52850449159064,
+          "authorization_reason": "NO_APPLICABLE_BOUNDED_EXCEPTION"
+        }
+      ],
+      "rank_by_total_common_volume": 25
+    },
+    {
+      "occurrence_a": "DOOR-DETENT-1",
+      "occurrence_b": "WP05-SERVICE-THROAT",
+      "parent_path_a": "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY",
+      "parent_path_b": "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY",
+      "positive_solid_pair_count": 1,
+      "total_common_volume_mm3": 2.528504491509576,
+      "maximum_single_solid_common_volume_mm3": 2.528504491509576,
+      "solid_pairs": [
+        {
+          "solid_index_a": 1,
+          "solid_index_b": 1,
+          "common_volume_mm3": 2.528504491509576,
+          "authorization_reason": "NO_APPLICABLE_BOUNDED_EXCEPTION"
+        }
+      ],
+      "rank_by_total_common_volume": 26
+    },
+    {
+      "occurrence_a": "HARNESS-TERMINAL-001",
+      "occurrence_b": "RECOVERY-TETHER-001",
+      "parent_path_a": "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY",
+      "parent_path_b": "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY",
+      "positive_solid_pair_count": 1,
+      "total_common_volume_mm3": 2.50987843804997,
+      "maximum_single_solid_common_volume_mm3": 2.50987843804997,
+      "solid_pairs": [
+        {
+          "solid_index_a": 1,
+          "solid_index_b": 1,
+          "common_volume_mm3": 2.50987843804997,
+          "authorization_reason": "NO_APPLICABLE_BOUNDED_EXCEPTION"
+        }
+      ],
+      "rank_by_total_common_volume": 27
+    },
+    {
+      "occurrence_a": "RECOVERY-TETHER-001",
+      "occurrence_b": "TETHER-THIMBLE-BODY",
+      "parent_path_a": "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY",
+      "parent_path_b": "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY",
+      "positive_solid_pair_count": 1,
+      "total_common_volume_mm3": 2.1480069888996702,
+      "maximum_single_solid_common_volume_mm3": 2.1480069888996702,
+      "solid_pairs": [
+        {
+          "solid_index_a": 1,
+          "solid_index_b": 1,
+          "common_volume_mm3": 2.1480069888996702,
+          "authorization_reason": "NO_APPLICABLE_BOUNDED_EXCEPTION"
+        }
+      ],
+      "rank_by_total_common_volume": 28
+    },
+    {
+      "occurrence_a": "ROUTE-PILOT-LINE-001",
+      "occurrence_b": "WP04-EJECTOR-SPRING",
+      "parent_path_a": "300_TRUE_TRANSFORM_ARM_AND_POWERTRAIN_ASSY",
+      "parent_path_b": "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY",
+      "positive_solid_pair_count": 1,
+      "total_common_volume_mm3": 2.053810079923539,
+      "maximum_single_solid_common_volume_mm3": 2.053810079923539,
+      "solid_pairs": [
+        {
+          "solid_index_a": 1,
+          "solid_index_b": 1,
+          "common_volume_mm3": 2.053810079923539,
+          "authorization_reason": "NO_APPLICABLE_BOUNDED_EXCEPTION"
+        }
+      ],
+      "rank_by_total_common_volume": 29
+    },
+    {
+      "occurrence_a": "FIXED-SECTOR-1",
+      "occurrence_b": "GLAND-GAS-MAIN-FWD",
+      "parent_path_a": "300_TRUE_TRANSFORM_ARM_AND_POWERTRAIN_ASSY",
+      "parent_path_b": "300_TRUE_TRANSFORM_ARM_AND_POWERTRAIN_ASSY",
+      "positive_solid_pair_count": 1,
+      "total_common_volume_mm3": 1.9697335244309147,
+      "maximum_single_solid_common_volume_mm3": 1.9697335244309147,
+      "solid_pairs": [
+        {
+          "solid_index_a": 1,
+          "solid_index_b": 1,
+          "common_volume_mm3": 1.9697335244309147,
+          "authorization_reason": "NO_APPLICABLE_BOUNDED_EXCEPTION"
+        }
+      ],
+      "rank_by_total_common_volume": 30
+    },
+    {
+      "occurrence_a": "FIXED-SECTOR-1",
+      "occurrence_b": "GLAND-GAS-MAIN-AFT",
+      "parent_path_a": "300_TRUE_TRANSFORM_ARM_AND_POWERTRAIN_ASSY",
+      "parent_path_b": "300_TRUE_TRANSFORM_ARM_AND_POWERTRAIN_ASSY",
+      "positive_solid_pair_count": 1,
+      "total_common_volume_mm3": 1.969733524430568,
+      "maximum_single_solid_common_volume_mm3": 1.969733524430568,
+      "solid_pairs": [
+        {
+          "solid_index_a": 1,
+          "solid_index_b": 1,
+          "common_volume_mm3": 1.969733524430568,
+          "authorization_reason": "NO_APPLICABLE_BOUNDED_EXCEPTION"
+        }
+      ],
+      "rank_by_total_common_volume": 31
+    },
+    {
+      "occurrence_a": "BOOSTER-3",
+      "occurrence_b": "ROUTE-PILOT-LINE-001",
+      "parent_path_a": "100_FORWARD_PENETRATOR_WAI_AND_PRIMARY_STRUCTURE_ASSY",
+      "parent_path_b": "300_TRUE_TRANSFORM_ARM_AND_POWERTRAIN_ASSY",
+      "positive_solid_pair_count": 1,
+      "total_common_volume_mm3": 1.835398047173097,
+      "maximum_single_solid_common_volume_mm3": 1.835398047173097,
+      "solid_pairs": [
+        {
+          "solid_index_a": 1,
+          "solid_index_b": 1,
+          "common_volume_mm3": 1.835398047173097,
+          "authorization_reason": "NO_APPLICABLE_BOUNDED_EXCEPTION"
+        }
+      ],
+      "rank_by_total_common_volume": 32
+    },
+    {
+      "occurrence_a": "FWD-SHELL-001",
+      "occurrence_b": "ROUTE-PILOT-LINE-001",
+      "parent_path_a": "100_FORWARD_PENETRATOR_WAI_AND_PRIMARY_STRUCTURE_ASSY",
+      "parent_path_b": "300_TRUE_TRANSFORM_ARM_AND_POWERTRAIN_ASSY",
+      "positive_solid_pair_count": 1,
+      "total_common_volume_mm3": 1.4064981703724837,
+      "maximum_single_solid_common_volume_mm3": 1.4064981703724837,
+      "solid_pairs": [
+        {
+          "solid_index_a": 1,
+          "solid_index_b": 1,
+          "common_volume_mm3": 1.4064981703724837,
+          "authorization_reason": "NO_APPLICABLE_BOUNDED_EXCEPTION"
+        }
+      ],
+      "rank_by_total_common_volume": 33
+    },
+    {
+      "occurrence_a": "ROUTE-GAS-MAIN-001",
+      "occurrence_b": "WP04-REACTION-BULKHEAD",
+      "parent_path_a": "300_TRUE_TRANSFORM_ARM_AND_POWERTRAIN_ASSY",
+      "parent_path_b": "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY",
+      "positive_solid_pair_count": 1,
+      "total_common_volume_mm3": 1.2823859647948566,
+      "maximum_single_solid_common_volume_mm3": 1.2823859647948566,
+      "solid_pairs": [
+        {
+          "solid_index_a": 1,
+          "solid_index_b": 1,
+          "common_volume_mm3": 1.2823859647948566,
+          "authorization_reason": "NO_APPLICABLE_BOUNDED_EXCEPTION"
+        }
+      ],
+      "rank_by_total_common_volume": 34
+    },
+    {
+      "occurrence_a": "ROUTE-BOWDEN-WIRE-001",
+      "occurrence_b": "WP04-SEAR-001",
+      "parent_path_a": "300_TRUE_TRANSFORM_ARM_AND_POWERTRAIN_ASSY",
+      "parent_path_b": "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY",
+      "positive_solid_pair_count": 1,
+      "total_common_volume_mm3": 0.8482300164692557,
+      "maximum_single_solid_common_volume_mm3": 0.8482300164692557,
+      "solid_pairs": [
+        {
+          "solid_index_a": 1,
+          "solid_index_b": 1,
+          "common_volume_mm3": 0.8482300164692557,
+          "authorization_reason": "NO_APPLICABLE_BOUNDED_EXCEPTION"
+        }
+      ],
+      "rank_by_total_common_volume": 35
+    },
+    {
+      "occurrence_a": "ROUTE-BOWDEN-WIRE-001",
+      "occurrence_b": "ROUTE-PILOT-LINE-001",
+      "parent_path_a": "300_TRUE_TRANSFORM_ARM_AND_POWERTRAIN_ASSY",
+      "parent_path_b": "300_TRUE_TRANSFORM_ARM_AND_POWERTRAIN_ASSY",
+      "positive_solid_pair_count": 1,
+      "total_common_volume_mm3": 0.7390624512927404,
+      "maximum_single_solid_common_volume_mm3": 0.7390624512927404,
+      "solid_pairs": [
+        {
+          "solid_index_a": 1,
+          "solid_index_b": 1,
+          "common_volume_mm3": 0.7390624512927404,
+          "authorization_reason": "NO_APPLICABLE_BOUNDED_EXCEPTION"
+        }
+      ],
+      "rank_by_total_common_volume": 36
+    },
+    {
+      "occurrence_a": "ROUTE-BOWDEN-WIRE-001",
+      "occurrence_b": "WP04-EJECTOR-SPRING",
+      "parent_path_a": "300_TRUE_TRANSFORM_ARM_AND_POWERTRAIN_ASSY",
+      "parent_path_b": "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY",
+      "positive_solid_pair_count": 1,
+      "total_common_volume_mm3": 0.5950349250463618,
+      "maximum_single_solid_common_volume_mm3": 0.5950349250463618,
+      "solid_pairs": [
+        {
+          "solid_index_a": 1,
+          "solid_index_b": 1,
+          "common_volume_mm3": 0.5950349250463618,
+          "authorization_reason": "NO_APPLICABLE_BOUNDED_EXCEPTION"
+        }
+      ],
+      "rank_by_total_common_volume": 37
+    },
+    {
+      "occurrence_a": "ROUTE-BOWDEN-SHEATH-001",
+      "occurrence_b": "WP04-REACTION-BULKHEAD",
+      "parent_path_a": "300_TRUE_TRANSFORM_ARM_AND_POWERTRAIN_ASSY",
+      "parent_path_b": "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY",
+      "positive_solid_pair_count": 1,
+      "total_common_volume_mm3": 0.5523356637447256,
+      "maximum_single_solid_common_volume_mm3": 0.5523356637447256,
+      "solid_pairs": [
+        {
+          "solid_index_a": 1,
+          "solid_index_b": 1,
+          "common_volume_mm3": 0.5523356637447256,
+          "authorization_reason": "NO_APPLICABLE_BOUNDED_EXCEPTION"
+        }
+      ],
+      "rank_by_total_common_volume": 38
+    },
+    {
+      "occurrence_a": "AFT-SHELL-001",
+      "occurrence_b": "GLAND-GAS-MAIN-AFT",
+      "parent_path_a": "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY",
+      "parent_path_b": "300_TRUE_TRANSFORM_ARM_AND_POWERTRAIN_ASSY",
+      "positive_solid_pair_count": 1,
+      "total_common_volume_mm3": 0.4384435715279309,
+      "maximum_single_solid_common_volume_mm3": 0.4384435715279309,
+      "solid_pairs": [
+        {
+          "solid_index_a": 1,
+          "solid_index_b": 1,
+          "common_volume_mm3": 0.4384435715279309,
+          "authorization_reason": "NO_APPLICABLE_BOUNDED_EXCEPTION"
+        }
+      ],
+      "rank_by_total_common_volume": 39
+    },
+    {
+      "occurrence_a": "FWD-SHELL-001",
+      "occurrence_b": "GLAND-GAS-MAIN-FWD",
+      "parent_path_a": "100_FORWARD_PENETRATOR_WAI_AND_PRIMARY_STRUCTURE_ASSY",
+      "parent_path_b": "300_TRUE_TRANSFORM_ARM_AND_POWERTRAIN_ASSY",
+      "positive_solid_pair_count": 1,
+      "total_common_volume_mm3": 0.41938786942622447,
+      "maximum_single_solid_common_volume_mm3": 0.41938786942622447,
+      "solid_pairs": [
+        {
+          "solid_index_a": 1,
+          "solid_index_b": 1,
+          "common_volume_mm3": 0.41938786942622447,
+          "authorization_reason": "NO_APPLICABLE_BOUNDED_EXCEPTION"
+        }
+      ],
+      "rank_by_total_common_volume": 40
+    },
+    {
+      "occurrence_a": "ROUTE-PILOT-LINE-001",
+      "occurrence_b": "WP04-REACTION-BULKHEAD",
+      "parent_path_a": "300_TRUE_TRANSFORM_ARM_AND_POWERTRAIN_ASSY",
+      "parent_path_b": "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY",
+      "positive_solid_pair_count": 1,
+      "total_common_volume_mm3": 0.39854231265842205,
+      "maximum_single_solid_common_volume_mm3": 0.39854231265842205,
+      "solid_pairs": [
+        {
+          "solid_index_a": 1,
+          "solid_index_b": 1,
+          "common_volume_mm3": 0.39854231265842205,
+          "authorization_reason": "NO_APPLICABLE_BOUNDED_EXCEPTION"
+        }
+      ],
+      "rank_by_total_common_volume": 41
+    },
+    {
+      "occurrence_a": "FWD-SHELL-001",
+      "occurrence_b": "ROUTE-BOWDEN-WIRE-001",
+      "parent_path_a": "100_FORWARD_PENETRATOR_WAI_AND_PRIMARY_STRUCTURE_ASSY",
+      "parent_path_b": "300_TRUE_TRANSFORM_ARM_AND_POWERTRAIN_ASSY",
+      "positive_solid_pair_count": 1,
+      "total_common_volume_mm3": 0.37893202665437786,
+      "maximum_single_solid_common_volume_mm3": 0.37893202665437786,
+      "solid_pairs": [
+        {
+          "solid_index_a": 1,
+          "solid_index_b": 1,
+          "common_volume_mm3": 0.37893202665437786,
+          "authorization_reason": "NO_APPLICABLE_BOUNDED_EXCEPTION"
+        }
+      ],
+      "rank_by_total_common_volume": 42
+    },
+    {
+      "occurrence_a": "AFT-SHELL-001",
+      "occurrence_b": "GLAND-PILOT-LINE-AFT",
+      "parent_path_a": "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY",
+      "parent_path_b": "300_TRUE_TRANSFORM_ARM_AND_POWERTRAIN_ASSY",
+      "positive_solid_pair_count": 1,
+      "total_common_volume_mm3": 0.2935945945261178,
+      "maximum_single_solid_common_volume_mm3": 0.2935945945261178,
+      "solid_pairs": [
+        {
+          "solid_index_a": 1,
+          "solid_index_b": 1,
+          "common_volume_mm3": 0.2935945945261178,
+          "authorization_reason": "NO_APPLICABLE_BOUNDED_EXCEPTION"
+        }
+      ],
+      "rank_by_total_common_volume": 43
+    },
+    {
+      "occurrence_a": "AFT-SHELL-001",
+      "occurrence_b": "GLAND-BOWDEN-SHEATH-AFT",
+      "parent_path_a": "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY",
+      "parent_path_b": "300_TRUE_TRANSFORM_ARM_AND_POWERTRAIN_ASSY",
+      "positive_solid_pair_count": 1,
+      "total_common_volume_mm3": 0.29326423565762205,
+      "maximum_single_solid_common_volume_mm3": 0.29326423565762205,
+      "solid_pairs": [
+        {
+          "solid_index_a": 1,
+          "solid_index_b": 1,
+          "common_volume_mm3": 0.29326423565762205,
+          "authorization_reason": "NO_APPLICABLE_BOUNDED_EXCEPTION"
+        }
+      ],
+      "rank_by_total_common_volume": 44
+    },
+    {
+      "occurrence_a": "FWD-SHELL-001",
+      "occurrence_b": "GLAND-PILOT-LINE-FWD",
+      "parent_path_a": "100_FORWARD_PENETRATOR_WAI_AND_PRIMARY_STRUCTURE_ASSY",
+      "parent_path_b": "300_TRUE_TRANSFORM_ARM_AND_POWERTRAIN_ASSY",
+      "positive_solid_pair_count": 1,
+      "total_common_volume_mm3": 0.2806678817422567,
+      "maximum_single_solid_common_volume_mm3": 0.2806678817422567,
+      "solid_pairs": [
+        {
+          "solid_index_a": 1,
+          "solid_index_b": 1,
+          "common_volume_mm3": 0.2806678817422567,
+          "authorization_reason": "NO_APPLICABLE_BOUNDED_EXCEPTION"
+        }
+      ],
+      "rank_by_total_common_volume": 45
+    },
+    {
+      "occurrence_a": "FWD-SHELL-001",
+      "occurrence_b": "GLAND-BOWDEN-SHEATH-FWD",
+      "parent_path_a": "100_FORWARD_PENETRATOR_WAI_AND_PRIMARY_STRUCTURE_ASSY",
+      "parent_path_b": "300_TRUE_TRANSFORM_ARM_AND_POWERTRAIN_ASSY",
+      "positive_solid_pair_count": 1,
+      "total_common_volume_mm3": 0.2803943945771402,
+      "maximum_single_solid_common_volume_mm3": 0.2803943945771402,
+      "solid_pairs": [
+        {
+          "solid_index_a": 1,
+          "solid_index_b": 1,
+          "common_volume_mm3": 0.2803943945771402,
+          "authorization_reason": "NO_APPLICABLE_BOUNDED_EXCEPTION"
+        }
+      ],
+      "rank_by_total_common_volume": 46
+    },
+    {
+      "occurrence_a": "PIVOT-CLIP-3",
+      "occurrence_b": "PIVOT-PIN-3",
+      "parent_path_a": "300_TRUE_TRANSFORM_ARM_AND_POWERTRAIN_ASSY/333_ARM_3_ASSY",
+      "parent_path_b": "300_TRUE_TRANSFORM_ARM_AND_POWERTRAIN_ASSY/333_ARM_3_ASSY",
+      "positive_solid_pair_count": 1,
+      "total_common_volume_mm3": 0.27930206922406176,
+      "maximum_single_solid_common_volume_mm3": 0.27930206922406176,
+      "solid_pairs": [
+        {
+          "solid_index_a": 1,
+          "solid_index_b": 1,
+          "common_volume_mm3": 0.27930206922406176,
+          "authorization_reason": "NO_APPLICABLE_BOUNDED_EXCEPTION"
+        }
+      ],
+      "rank_by_total_common_volume": 47
+    },
+    {
+      "occurrence_a": "PIVOT-CLIP-1",
+      "occurrence_b": "PIVOT-PIN-1",
+      "parent_path_a": "300_TRUE_TRANSFORM_ARM_AND_POWERTRAIN_ASSY/331_ARM_1_ASSY",
+      "parent_path_b": "300_TRUE_TRANSFORM_ARM_AND_POWERTRAIN_ASSY/331_ARM_1_ASSY",
+      "positive_solid_pair_count": 1,
+      "total_common_volume_mm3": 0.27930206921926803,
+      "maximum_single_solid_common_volume_mm3": 0.27930206921926803,
+      "solid_pairs": [
+        {
+          "solid_index_a": 1,
+          "solid_index_b": 1,
+          "common_volume_mm3": 0.27930206921926803,
+          "authorization_reason": "NO_APPLICABLE_BOUNDED_EXCEPTION"
+        }
+      ],
+      "rank_by_total_common_volume": 48
+    },
+    {
+      "occurrence_a": "PIVOT-CLIP-2",
+      "occurrence_b": "PIVOT-PIN-2",
+      "parent_path_a": "300_TRUE_TRANSFORM_ARM_AND_POWERTRAIN_ASSY/332_ARM_2_ASSY",
+      "parent_path_b": "300_TRUE_TRANSFORM_ARM_AND_POWERTRAIN_ASSY/332_ARM_2_ASSY",
+      "positive_solid_pair_count": 1,
+      "total_common_volume_mm3": 0.2793020692171546,
+      "maximum_single_solid_common_volume_mm3": 0.2793020692171546,
+      "solid_pairs": [
+        {
+          "solid_index_a": 1,
+          "solid_index_b": 1,
+          "common_volume_mm3": 0.2793020692171546,
+          "authorization_reason": "NO_APPLICABLE_BOUNDED_EXCEPTION"
+        }
+      ],
+      "rank_by_total_common_volume": 49
+    },
+    {
+      "occurrence_a": "RECOVERY-PIN-BODY",
+      "occurrence_b": "RECOVERY-PIN-CLIP-BODY",
+      "parent_path_a": "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY",
+      "parent_path_b": "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY",
+      "positive_solid_pair_count": 1,
+      "total_common_volume_mm3": 0.18993000381493508,
+      "maximum_single_solid_common_volume_mm3": 0.18993000381493508,
+      "solid_pairs": [
+        {
+          "solid_index_a": 1,
+          "solid_index_b": 1,
+          "common_volume_mm3": 0.18993000381493508,
+          "authorization_reason": "NO_APPLICABLE_BOUNDED_EXCEPTION"
+        }
+      ],
+      "rank_by_total_common_volume": 50
+    },
+    {
+      "occurrence_a": "RECOVERY-PIN-CLIP-HARNESS",
+      "occurrence_b": "RECOVERY-PIN-HARNESS",
+      "parent_path_a": "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY",
+      "parent_path_b": "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY",
+      "positive_solid_pair_count": 1,
+      "total_common_volume_mm3": 0.18993000380764413,
+      "maximum_single_solid_common_volume_mm3": 0.18993000380764413,
+      "solid_pairs": [
+        {
+          "solid_index_a": 1,
+          "solid_index_b": 1,
+          "common_volume_mm3": 0.18993000380764413,
+          "authorization_reason": "NO_APPLICABLE_BOUNDED_EXCEPTION"
+        }
+      ],
+      "rank_by_total_common_volume": 51
+    },
+    {
+      "occurrence_a": "GS19-CLIP-MOVING",
+      "occurrence_b": "GS19-PIN-MOVING",
+      "parent_path_a": "300_TRUE_TRANSFORM_ARM_AND_POWERTRAIN_ASSY",
+      "parent_path_b": "300_TRUE_TRANSFORM_ARM_AND_POWERTRAIN_ASSY",
+      "positive_solid_pair_count": 1,
+      "total_common_volume_mm3": 0.11335389202881532,
+      "maximum_single_solid_common_volume_mm3": 0.11335389202881532,
+      "solid_pairs": [
+        {
+          "solid_index_a": 1,
+          "solid_index_b": 1,
+          "common_volume_mm3": 0.11335389202881532,
+          "authorization_reason": "NO_APPLICABLE_BOUNDED_EXCEPTION"
+        }
+      ],
+      "rank_by_total_common_volume": 52
+    },
+    {
+      "occurrence_a": "HBD-CLIP-MOVING",
+      "occurrence_b": "HBD-PIN-MOVING",
+      "parent_path_a": "300_TRUE_TRANSFORM_ARM_AND_POWERTRAIN_ASSY",
+      "parent_path_b": "300_TRUE_TRANSFORM_ARM_AND_POWERTRAIN_ASSY",
+      "positive_solid_pair_count": 1,
+      "total_common_volume_mm3": 0.11335389202716048,
+      "maximum_single_solid_common_volume_mm3": 0.11335389202716048,
+      "solid_pairs": [
+        {
+          "solid_index_a": 1,
+          "solid_index_b": 1,
+          "common_volume_mm3": 0.11335389202716048,
+          "authorization_reason": "NO_APPLICABLE_BOUNDED_EXCEPTION"
+        }
+      ],
+      "rank_by_total_common_volume": 53
+    },
+    {
+      "occurrence_a": "HBD-CLIP-FIXED",
+      "occurrence_b": "HBD-PIN-FIXED",
+      "parent_path_a": "300_TRUE_TRANSFORM_ARM_AND_POWERTRAIN_ASSY",
+      "parent_path_b": "300_TRUE_TRANSFORM_ARM_AND_POWERTRAIN_ASSY",
+      "positive_solid_pair_count": 1,
+      "total_common_volume_mm3": 0.11335389202390922,
+      "maximum_single_solid_common_volume_mm3": 0.11335389202390922,
+      "solid_pairs": [
+        {
+          "solid_index_a": 1,
+          "solid_index_b": 1,
+          "common_volume_mm3": 0.11335389202390922,
+          "authorization_reason": "NO_APPLICABLE_BOUNDED_EXCEPTION"
+        }
+      ],
+      "rank_by_total_common_volume": 54
+    },
+    {
+      "occurrence_a": "GS19-CLIP-FIXED",
+      "occurrence_b": "GS19-PIN-FIXED",
+      "parent_path_a": "300_TRUE_TRANSFORM_ARM_AND_POWERTRAIN_ASSY",
+      "parent_path_b": "300_TRUE_TRANSFORM_ARM_AND_POWERTRAIN_ASSY",
+      "positive_solid_pair_count": 1,
+      "total_common_volume_mm3": 0.11335389201589932,
+      "maximum_single_solid_common_volume_mm3": 0.11335389201589932,
+      "solid_pairs": [
+        {
+          "solid_index_a": 1,
+          "solid_index_b": 1,
+          "common_volume_mm3": 0.11335389201589932,
+          "authorization_reason": "NO_APPLICABLE_BOUNDED_EXCEPTION"
+        }
+      ],
+      "rank_by_total_common_volume": 55
+    },
+    {
+      "occurrence_a": "WP05-HINGE-CLIP",
+      "occurrence_b": "WP05-HINGE-PIN",
+      "parent_path_a": "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY",
+      "parent_path_b": "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY",
+      "positive_solid_pair_count": 1,
+      "total_common_volume_mm3": 0.0751663016303719,
+      "maximum_single_solid_common_volume_mm3": 0.0751663016303719,
+      "solid_pairs": [
+        {
+          "solid_index_a": 1,
+          "solid_index_b": 1,
+          "common_volume_mm3": 0.0751663016303719,
+          "authorization_reason": "NO_APPLICABLE_BOUNDED_EXCEPTION"
+        }
+      ],
+      "rank_by_total_common_volume": 56
+    },
+    {
+      "occurrence_a": "AFT-SHELL-001",
+      "occurrence_b": "WP04-MANIFOLD-BRACKET",
+      "parent_path_a": "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY",
+      "parent_path_b": "300_TRUE_TRANSFORM_ARM_AND_POWERTRAIN_ASSY",
+      "positive_solid_pair_count": 1,
+      "total_common_volume_mm3": 0.05271327920410775,
+      "maximum_single_solid_common_volume_mm3": 0.05271327920410775,
+      "solid_pairs": [
+        {
+          "solid_index_a": 1,
+          "solid_index_b": 1,
+          "common_volume_mm3": 0.05271327920410775,
+          "authorization_reason": "NO_APPLICABLE_BOUNDED_EXCEPTION"
+        }
+      ],
+      "rank_by_total_common_volume": 57
+    },
+    {
+      "occurrence_a": "FWD-SHELL-001",
+      "occurrence_b": "WATER-TRIGGER-HSG-001",
+      "parent_path_a": "100_FORWARD_PENETRATOR_WAI_AND_PRIMARY_STRUCTURE_ASSY",
+      "parent_path_b": "100_FORWARD_PENETRATOR_WAI_AND_PRIMARY_STRUCTURE_ASSY",
+      "positive_solid_pair_count": 3,
+      "total_common_volume_mm3": 0.03049640534286807,
+      "maximum_single_solid_common_volume_mm3": 0.010165791507069118,
+      "solid_pairs": [
+        {
+          "solid_index_a": 1,
+          "solid_index_b": 2,
+          "common_volume_mm3": 0.01016530691789611,
+          "authorization_reason": "NO_APPLICABLE_BOUNDED_EXCEPTION"
+        },
+        {
+          "solid_index_a": 1,
+          "solid_index_b": 3,
+          "common_volume_mm3": 0.010165306917902846,
+          "authorization_reason": "NO_APPLICABLE_BOUNDED_EXCEPTION"
+        },
+        {
+          "solid_index_a": 1,
+          "solid_index_b": 4,
+          "common_volume_mm3": 0.010165791507069118,
+          "authorization_reason": "NO_APPLICABLE_BOUNDED_EXCEPTION"
+        }
+      ],
+      "rank_by_total_common_volume": 58
+    },
+    {
+      "occurrence_a": "AFT-SHELL-001",
+      "occurrence_b": "ROUTE-BOWDEN-WIRE-001",
+      "parent_path_a": "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY",
+      "parent_path_b": "300_TRUE_TRANSFORM_ARM_AND_POWERTRAIN_ASSY",
+      "positive_solid_pair_count": 1,
+      "total_common_volume_mm3": 0.004822677993276957,
+      "maximum_single_solid_common_volume_mm3": 0.004822677993276957,
+      "solid_pairs": [
+        {
+          "solid_index_a": 1,
+          "solid_index_b": 1,
+          "common_volume_mm3": 0.004822677993276957,
+          "authorization_reason": "NO_APPLICABLE_BOUNDED_EXCEPTION"
+        }
+      ],
+      "rank_by_total_common_volume": 59
+    },
+    {
+      "occurrence_a": "ROUTE-BOWDEN-WIRE-001",
+      "occurrence_b": "WP04-REACTION-BULKHEAD",
+      "parent_path_a": "300_TRUE_TRANSFORM_ARM_AND_POWERTRAIN_ASSY",
+      "parent_path_b": "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY",
+      "positive_solid_pair_count": 1,
+      "total_common_volume_mm3": 0.002923907636160991,
+      "maximum_single_solid_common_volume_mm3": 0.002923907636160991,
+      "solid_pairs": [
+        {
+          "solid_index_a": 1,
+          "solid_index_b": 1,
+          "common_volume_mm3": 0.002923907636160991,
+          "authorization_reason": "NO_APPLICABLE_BOUNDED_EXCEPTION"
+        }
+      ],
+      "rank_by_total_common_volume": 60
+    },
+    {
+      "occurrence_a": "GLAND-GAS-MAIN-AFT",
+      "occurrence_b": "ROUTE-GAS-MAIN-001",
+      "parent_path_a": "300_TRUE_TRANSFORM_ARM_AND_POWERTRAIN_ASSY",
+      "parent_path_b": "300_TRUE_TRANSFORM_ARM_AND_POWERTRAIN_ASSY",
+      "positive_solid_pair_count": 1,
+      "total_common_volume_mm3": 0.0006317453033052971,
+      "maximum_single_solid_common_volume_mm3": 0.0006317453033052971,
+      "solid_pairs": [
+        {
+          "solid_index_a": 1,
+          "solid_index_b": 1,
+          "common_volume_mm3": 0.0006317453033052971,
+          "authorization_reason": "NO_APPLICABLE_BOUNDED_EXCEPTION"
+        }
+      ],
+      "rank_by_total_common_volume": 61
+    },
+    {
+      "occurrence_a": "GLAND-BOWDEN-SHEATH-AFT",
+      "occurrence_b": "ROUTE-BOWDEN-SHEATH-001",
+      "parent_path_a": "300_TRUE_TRANSFORM_ARM_AND_POWERTRAIN_ASSY",
+      "parent_path_b": "300_TRUE_TRANSFORM_ARM_AND_POWERTRAIN_ASSY",
+      "positive_solid_pair_count": 1,
+      "total_common_volume_mm3": 0.0003977706378889514,
+      "maximum_single_solid_common_volume_mm3": 0.0003977706378889514,
+      "solid_pairs": [
+        {
+          "solid_index_a": 1,
+          "solid_index_b": 1,
+          "common_volume_mm3": 0.0003977706378889514,
+          "authorization_reason": "NO_APPLICABLE_BOUNDED_EXCEPTION"
+        }
+      ],
+      "rank_by_total_common_volume": 62
+    },
+    {
+      "occurrence_a": "GLAND-PILOT-LINE-AFT",
+      "occurrence_b": "ROUTE-PILOT-LINE-001",
+      "parent_path_a": "300_TRUE_TRANSFORM_ARM_AND_POWERTRAIN_ASSY",
+      "parent_path_b": "300_TRUE_TRANSFORM_ARM_AND_POWERTRAIN_ASSY",
+      "positive_solid_pair_count": 1,
+      "total_common_volume_mm3": 0.00034994702293392665,
+      "maximum_single_solid_common_volume_mm3": 0.00034994702293392665,
+      "solid_pairs": [
+        {
+          "solid_index_a": 1,
+          "solid_index_b": 1,
+          "common_volume_mm3": 0.00034994702293392665,
+          "authorization_reason": "NO_APPLICABLE_BOUNDED_EXCEPTION"
+        }
+      ],
+      "rank_by_total_common_volume": 63
+    }
+  ],
+  "unauthorized_positive_solid_pairs": [
+    {
+      "occurrence_a": "AFT-SHELL-001",
+      "solid_index_a": 1,
+      "occurrence_b": "GLAND-BOWDEN-SHEATH-AFT",
+      "solid_index_b": 1,
+      "same_occurrence": false,
+      "common_volume_mm3": 0.29326423565762205,
+      "operand_volume_a_mm3": 55108.79596408332,
+      "operand_volume_b_mm3": 85.50233964233712,
+      "parent_path_a": "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY",
+      "parent_path_b": "300_TRUE_TRANSFORM_ARM_AND_POWERTRAIN_ASSY",
+      "authorization_status": "UNAUTHORIZED_POSITIVE_VOLUME",
+      "intentional_fit_exception_id": "",
+      "authorization_reason": "NO_APPLICABLE_BOUNDED_EXCEPTION"
+    },
+    {
+      "occurrence_a": "AFT-SHELL-001",
+      "solid_index_a": 1,
+      "occurrence_b": "GLAND-GAS-MAIN-AFT",
+      "solid_index_b": 1,
+      "same_occurrence": false,
+      "common_volume_mm3": 0.4384435715279309,
+      "operand_volume_a_mm3": 55108.79596408332,
+      "operand_volume_b_mm3": 97.87770142335803,
+      "parent_path_a": "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY",
+      "parent_path_b": "300_TRUE_TRANSFORM_ARM_AND_POWERTRAIN_ASSY",
+      "authorization_status": "UNAUTHORIZED_POSITIVE_VOLUME",
+      "intentional_fit_exception_id": "",
+      "authorization_reason": "NO_APPLICABLE_BOUNDED_EXCEPTION"
+    },
+    {
+      "occurrence_a": "AFT-SHELL-001",
+      "solid_index_a": 1,
+      "occurrence_b": "GLAND-PILOT-LINE-AFT",
+      "solid_index_b": 1,
+      "same_occurrence": false,
+      "common_volume_mm3": 0.2935945945261178,
+      "operand_volume_a_mm3": 55108.79596408332,
+      "operand_volume_b_mm3": 82.40849919708184,
+      "parent_path_a": "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY",
+      "parent_path_b": "300_TRUE_TRANSFORM_ARM_AND_POWERTRAIN_ASSY",
+      "authorization_status": "UNAUTHORIZED_POSITIVE_VOLUME",
+      "intentional_fit_exception_id": "",
+      "authorization_reason": "NO_APPLICABLE_BOUNDED_EXCEPTION"
+    },
+    {
+      "occurrence_a": "AFT-SHELL-001",
+      "solid_index_a": 1,
+      "occurrence_b": "RECOVERY-TETHER-001",
+      "solid_index_b": 1,
+      "same_occurrence": false,
+      "common_volume_mm3": 6.201943985940134,
+      "operand_volume_a_mm3": 55108.79596408332,
+      "operand_volume_b_mm3": 940.6706340204921,
+      "parent_path_a": "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY",
+      "parent_path_b": "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY",
+      "authorization_status": "UNAUTHORIZED_POSITIVE_VOLUME",
+      "intentional_fit_exception_id": "",
+      "authorization_reason": "NO_APPLICABLE_BOUNDED_EXCEPTION"
+    },
+    {
+      "occurrence_a": "AFT-SHELL-001",
+      "solid_index_a": 1,
+      "occurrence_b": "ROUTE-BOWDEN-SHEATH-001",
+      "solid_index_b": 1,
+      "same_occurrence": false,
+      "common_volume_mm3": 6.103066212034036,
+      "operand_volume_a_mm3": 55108.79596408332,
+      "operand_volume_b_mm3": 1778.4713244121258,
+      "parent_path_a": "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY",
+      "parent_path_b": "300_TRUE_TRANSFORM_ARM_AND_POWERTRAIN_ASSY",
+      "authorization_status": "UNAUTHORIZED_POSITIVE_VOLUME",
+      "intentional_fit_exception_id": "",
+      "authorization_reason": "NO_APPLICABLE_BOUNDED_EXCEPTION"
+    },
+    {
+      "occurrence_a": "AFT-SHELL-001",
+      "solid_index_a": 1,
+      "occurrence_b": "ROUTE-BOWDEN-WIRE-001",
+      "solid_index_b": 1,
+      "same_occurrence": false,
+      "common_volume_mm3": 0.004822677993276957,
+      "operand_volume_a_mm3": 55108.79596408332,
+      "operand_volume_b_mm3": 345.4441188981762,
+      "parent_path_a": "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY",
+      "parent_path_b": "300_TRUE_TRANSFORM_ARM_AND_POWERTRAIN_ASSY",
+      "authorization_status": "UNAUTHORIZED_POSITIVE_VOLUME",
+      "intentional_fit_exception_id": "",
+      "authorization_reason": "NO_APPLICABLE_BOUNDED_EXCEPTION"
+    },
+    {
+      "occurrence_a": "AFT-SHELL-001",
+      "solid_index_a": 1,
+      "occurrence_b": "ROUTE-GAS-MAIN-001",
+      "solid_index_b": 1,
+      "same_occurrence": false,
+      "common_volume_mm3": 3.9302488948981003,
+      "operand_volume_a_mm3": 55108.79596408332,
+      "operand_volume_b_mm3": 1690.2808804933827,
+      "parent_path_a": "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY",
+      "parent_path_b": "300_TRUE_TRANSFORM_ARM_AND_POWERTRAIN_ASSY",
+      "authorization_status": "UNAUTHORIZED_POSITIVE_VOLUME",
+      "intentional_fit_exception_id": "",
+      "authorization_reason": "NO_APPLICABLE_BOUNDED_EXCEPTION"
+    },
+    {
+      "occurrence_a": "AFT-SHELL-001",
+      "solid_index_a": 1,
+      "occurrence_b": "WP04-MANIFOLD-BRACKET",
+      "solid_index_b": 1,
+      "same_occurrence": false,
+      "common_volume_mm3": 0.05271327920410775,
+      "operand_volume_a_mm3": 55108.79596408332,
+      "operand_volume_b_mm3": 4.799999999999999,
+      "parent_path_a": "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY",
+      "parent_path_b": "300_TRUE_TRANSFORM_ARM_AND_POWERTRAIN_ASSY",
+      "authorization_status": "UNAUTHORIZED_POSITIVE_VOLUME",
+      "intentional_fit_exception_id": "",
+      "authorization_reason": "NO_APPLICABLE_BOUNDED_EXCEPTION"
+    },
+    {
+      "occurrence_a": "BODY-HARDPOINT-001",
+      "solid_index_a": 1,
+      "occurrence_b": "HARNESS-LEG-XP",
+      "solid_index_b": 1,
+      "same_occurrence": false,
+      "common_volume_mm3": 23.099999999999998,
+      "operand_volume_a_mm3": 200.4400390953754,
+      "operand_volume_b_mm3": 1447.337062127263,
+      "parent_path_a": "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY",
+      "parent_path_b": "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY",
+      "authorization_status": "UNAUTHORIZED_POSITIVE_VOLUME",
+      "intentional_fit_exception_id": "",
+      "authorization_reason": "NO_APPLICABLE_BOUNDED_EXCEPTION"
+    },
+    {
+      "occurrence_a": "BODY-HARDPOINT-001",
+      "solid_index_a": 2,
+      "occurrence_b": "HARNESS-LEG-XP",
+      "solid_index_b": 1,
+      "same_occurrence": false,
+      "common_volume_mm3": 23.0999999999999,
+      "operand_volume_a_mm3": 200.4400390953754,
+      "operand_volume_b_mm3": 1447.337062127263,
+      "parent_path_a": "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY",
+      "parent_path_b": "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY",
+      "authorization_status": "UNAUTHORIZED_POSITIVE_VOLUME",
+      "intentional_fit_exception_id": "",
+      "authorization_reason": "NO_APPLICABLE_BOUNDED_EXCEPTION"
+    },
+    {
+      "occurrence_a": "BODY-HARDPOINT-001",
+      "solid_index_a": 3,
+      "occurrence_b": "HARNESS-LEG-XN",
+      "solid_index_b": 1,
+      "same_occurrence": false,
+      "common_volume_mm3": 43.78527931844844,
+      "operand_volume_a_mm3": 5340.518636454557,
+      "operand_volume_b_mm3": 1447.3370621272618,
+      "parent_path_a": "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY",
+      "parent_path_b": "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY",
+      "authorization_status": "UNAUTHORIZED_POSITIVE_VOLUME",
+      "intentional_fit_exception_id": "",
+      "authorization_reason": "NO_APPLICABLE_BOUNDED_EXCEPTION"
+    },
+    {
+      "occurrence_a": "BODY-HARDPOINT-001",
+      "solid_index_a": 3,
+      "occurrence_b": "HARNESS-LEG-YN",
+      "solid_index_b": 1,
+      "same_occurrence": false,
+      "common_volume_mm3": 35.222185850435004,
+      "operand_volume_a_mm3": 5340.518636454557,
+      "operand_volume_b_mm3": 1169.112109073792,
+      "parent_path_a": "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY",
+      "parent_path_b": "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY",
+      "authorization_status": "UNAUTHORIZED_POSITIVE_VOLUME",
+      "intentional_fit_exception_id": "",
+      "authorization_reason": "NO_APPLICABLE_BOUNDED_EXCEPTION"
+    },
+    {
+      "occurrence_a": "BODY-HARDPOINT-001",
+      "solid_index_a": 3,
+      "occurrence_b": "HARNESS-LEG-YP",
+      "solid_index_b": 1,
+      "same_occurrence": false,
+      "common_volume_mm3": 35.22218585043508,
+      "operand_volume_a_mm3": 5340.518636454557,
+      "operand_volume_b_mm3": 1169.1121090737918,
+      "parent_path_a": "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY",
+      "parent_path_b": "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY",
+      "authorization_status": "UNAUTHORIZED_POSITIVE_VOLUME",
+      "intentional_fit_exception_id": "",
+      "authorization_reason": "NO_APPLICABLE_BOUNDED_EXCEPTION"
+    },
+    {
+      "occurrence_a": "BOOSTER-1",
+      "solid_index_a": 1,
+      "occurrence_b": "ROUTE-PILOT-LINE-001",
+      "solid_index_b": 1,
+      "same_occurrence": false,
+      "common_volume_mm3": 5.909338414353819,
+      "operand_volume_a_mm3": 17200.21977840411,
+      "operand_volume_b_mm3": 1156.3341319967067,
+      "parent_path_a": "100_FORWARD_PENETRATOR_WAI_AND_PRIMARY_STRUCTURE_ASSY",
+      "parent_path_b": "300_TRUE_TRANSFORM_ARM_AND_POWERTRAIN_ASSY",
+      "authorization_status": "UNAUTHORIZED_POSITIVE_VOLUME",
+      "intentional_fit_exception_id": "",
+      "authorization_reason": "NO_APPLICABLE_BOUNDED_EXCEPTION"
+    },
+    {
+      "occurrence_a": "BOOSTER-3",
+      "solid_index_a": 1,
+      "occurrence_b": "ROUTE-PILOT-LINE-001",
+      "solid_index_b": 1,
+      "same_occurrence": false,
+      "common_volume_mm3": 1.835398047173097,
+      "operand_volume_a_mm3": 17200.219778404124,
+      "operand_volume_b_mm3": 1156.3341319967067,
+      "parent_path_a": "100_FORWARD_PENETRATOR_WAI_AND_PRIMARY_STRUCTURE_ASSY",
+      "parent_path_b": "300_TRUE_TRANSFORM_ARM_AND_POWERTRAIN_ASSY",
+      "authorization_status": "UNAUTHORIZED_POSITIVE_VOLUME",
+      "intentional_fit_exception_id": "",
+      "authorization_reason": "NO_APPLICABLE_BOUNDED_EXCEPTION"
+    },
+    {
+      "occurrence_a": "DOOR-DETENT-1",
+      "solid_index_a": 1,
+      "occurrence_b": "WP05-SERVICE-THROAT",
+      "solid_index_b": 1,
+      "same_occurrence": false,
+      "common_volume_mm3": 2.528504491509576,
+      "operand_volume_a_mm3": 61.12525039706843,
+      "operand_volume_b_mm3": 40516.1905727398,
+      "parent_path_a": "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY",
+      "parent_path_b": "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY",
+      "authorization_status": "UNAUTHORIZED_POSITIVE_VOLUME",
+      "intentional_fit_exception_id": "",
+      "authorization_reason": "NO_APPLICABLE_BOUNDED_EXCEPTION"
+    },
+    {
+      "occurrence_a": "DOOR-DETENT-2",
+      "solid_index_a": 1,
+      "occurrence_b": "WP05-SERVICE-THROAT",
+      "solid_index_b": 1,
+      "same_occurrence": false,
+      "common_volume_mm3": 2.528513630621478,
+      "operand_volume_a_mm3": 61.12525039706843,
+      "operand_volume_b_mm3": 40516.1905727398,
+      "parent_path_a": "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY",
+      "parent_path_b": "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY",
+      "authorization_status": "UNAUTHORIZED_POSITIVE_VOLUME",
+      "intentional_fit_exception_id": "",
+      "authorization_reason": "NO_APPLICABLE_BOUNDED_EXCEPTION"
+    },
+    {
+      "occurrence_a": "DOOR-DETENT-3",
+      "solid_index_a": 1,
+      "occurrence_b": "WP05-SERVICE-THROAT",
+      "solid_index_b": 1,
+      "same_occurrence": false,
+      "common_volume_mm3": 2.52850449159064,
+      "operand_volume_a_mm3": 61.125250397068434,
+      "operand_volume_b_mm3": 40516.1905727398,
+      "parent_path_a": "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY",
+      "parent_path_b": "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY",
+      "authorization_status": "UNAUTHORIZED_POSITIVE_VOLUME",
+      "intentional_fit_exception_id": "",
+      "authorization_reason": "NO_APPLICABLE_BOUNDED_EXCEPTION"
+    },
+    {
+      "occurrence_a": "DOOR-DETENT-4",
+      "solid_index_a": 1,
+      "occurrence_b": "WP05-SERVICE-THROAT",
+      "solid_index_b": 1,
+      "same_occurrence": false,
+      "common_volume_mm3": 2.5285136305424167,
+      "operand_volume_a_mm3": 61.12525039706843,
+      "operand_volume_b_mm3": 40516.1905727398,
+      "parent_path_a": "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY",
+      "parent_path_b": "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY",
+      "authorization_status": "UNAUTHORIZED_POSITIVE_VOLUME",
+      "intentional_fit_exception_id": "",
+      "authorization_reason": "NO_APPLICABLE_BOUNDED_EXCEPTION"
+    },
+    {
+      "occurrence_a": "FIXED-SECTOR-1",
+      "solid_index_a": 1,
+      "occurrence_b": "GLAND-GAS-MAIN-AFT",
+      "solid_index_b": 1,
+      "same_occurrence": false,
+      "common_volume_mm3": 1.969733524430568,
+      "operand_volume_a_mm3": 76875.02171323614,
+      "operand_volume_b_mm3": 97.87770142335803,
+      "parent_path_a": "300_TRUE_TRANSFORM_ARM_AND_POWERTRAIN_ASSY",
+      "parent_path_b": "300_TRUE_TRANSFORM_ARM_AND_POWERTRAIN_ASSY",
+      "authorization_status": "UNAUTHORIZED_POSITIVE_VOLUME",
+      "intentional_fit_exception_id": "",
+      "authorization_reason": "NO_APPLICABLE_BOUNDED_EXCEPTION"
+    },
+    {
+      "occurrence_a": "FIXED-SECTOR-1",
+      "solid_index_a": 1,
+      "occurrence_b": "GLAND-GAS-MAIN-FWD",
+      "solid_index_b": 1,
+      "same_occurrence": false,
+      "common_volume_mm3": 1.9697335244309147,
+      "operand_volume_a_mm3": 76875.02171323614,
+      "operand_volume_b_mm3": 97.87770142335802,
+      "parent_path_a": "300_TRUE_TRANSFORM_ARM_AND_POWERTRAIN_ASSY",
+      "parent_path_b": "300_TRUE_TRANSFORM_ARM_AND_POWERTRAIN_ASSY",
+      "authorization_status": "UNAUTHORIZED_POSITIVE_VOLUME",
+      "intentional_fit_exception_id": "",
+      "authorization_reason": "NO_APPLICABLE_BOUNDED_EXCEPTION"
+    },
+    {
+      "occurrence_a": "FULLFLOW-VALVE-001",
+      "solid_index_a": 1,
+      "occurrence_b": "ROUTE-PILOT-LINE-001",
+      "solid_index_b": 1,
+      "same_occurrence": false,
+      "common_volume_mm3": 4.676517645695009,
+      "operand_volume_a_mm3": 1952.1686568643763,
+      "operand_volume_b_mm3": 1156.3341319967067,
+      "parent_path_a": "100_FORWARD_PENETRATOR_WAI_AND_PRIMARY_STRUCTURE_ASSY",
+      "parent_path_b": "300_TRUE_TRANSFORM_ARM_AND_POWERTRAIN_ASSY",
+      "authorization_status": "UNAUTHORIZED_POSITIVE_VOLUME",
+      "intentional_fit_exception_id": "",
+      "authorization_reason": "NO_APPLICABLE_BOUNDED_EXCEPTION"
+    },
+    {
+      "occurrence_a": "FWD-SHELL-001",
+      "solid_index_a": 1,
+      "occurrence_b": "GLAND-BOWDEN-SHEATH-FWD",
+      "solid_index_b": 1,
+      "same_occurrence": false,
+      "common_volume_mm3": 0.2803943945771402,
+      "operand_volume_a_mm3": 100309.04735926526,
+      "operand_volume_b_mm3": 85.50233964233712,
+      "parent_path_a": "100_FORWARD_PENETRATOR_WAI_AND_PRIMARY_STRUCTURE_ASSY",
+      "parent_path_b": "300_TRUE_TRANSFORM_ARM_AND_POWERTRAIN_ASSY",
+      "authorization_status": "UNAUTHORIZED_POSITIVE_VOLUME",
+      "intentional_fit_exception_id": "",
+      "authorization_reason": "NO_APPLICABLE_BOUNDED_EXCEPTION"
+    },
+    {
+      "occurrence_a": "FWD-SHELL-001",
+      "solid_index_a": 1,
+      "occurrence_b": "GLAND-GAS-MAIN-FWD",
+      "solid_index_b": 1,
+      "same_occurrence": false,
+      "common_volume_mm3": 0.41938786942622447,
+      "operand_volume_a_mm3": 100309.04735926526,
+      "operand_volume_b_mm3": 97.87770142335802,
+      "parent_path_a": "100_FORWARD_PENETRATOR_WAI_AND_PRIMARY_STRUCTURE_ASSY",
+      "parent_path_b": "300_TRUE_TRANSFORM_ARM_AND_POWERTRAIN_ASSY",
+      "authorization_status": "UNAUTHORIZED_POSITIVE_VOLUME",
+      "intentional_fit_exception_id": "",
+      "authorization_reason": "NO_APPLICABLE_BOUNDED_EXCEPTION"
+    },
+    {
+      "occurrence_a": "FWD-SHELL-001",
+      "solid_index_a": 1,
+      "occurrence_b": "GLAND-PILOT-LINE-FWD",
+      "solid_index_b": 1,
+      "same_occurrence": false,
+      "common_volume_mm3": 0.2806678817422567,
+      "operand_volume_a_mm3": 100309.04735926526,
+      "operand_volume_b_mm3": 82.40849919708184,
+      "parent_path_a": "100_FORWARD_PENETRATOR_WAI_AND_PRIMARY_STRUCTURE_ASSY",
+      "parent_path_b": "300_TRUE_TRANSFORM_ARM_AND_POWERTRAIN_ASSY",
+      "authorization_status": "UNAUTHORIZED_POSITIVE_VOLUME",
+      "intentional_fit_exception_id": "",
+      "authorization_reason": "NO_APPLICABLE_BOUNDED_EXCEPTION"
+    },
+    {
+      "occurrence_a": "FWD-SHELL-001",
+      "solid_index_a": 1,
+      "occurrence_b": "ROUTE-BOWDEN-SHEATH-001",
+      "solid_index_b": 1,
+      "same_occurrence": false,
+      "common_volume_mm3": 23.88112926532537,
+      "operand_volume_a_mm3": 100309.04735926526,
+      "operand_volume_b_mm3": 1778.4713244121258,
+      "parent_path_a": "100_FORWARD_PENETRATOR_WAI_AND_PRIMARY_STRUCTURE_ASSY",
+      "parent_path_b": "300_TRUE_TRANSFORM_ARM_AND_POWERTRAIN_ASSY",
+      "authorization_status": "UNAUTHORIZED_POSITIVE_VOLUME",
+      "intentional_fit_exception_id": "",
+      "authorization_reason": "NO_APPLICABLE_BOUNDED_EXCEPTION"
+    },
+    {
+      "occurrence_a": "FWD-SHELL-001",
+      "solid_index_a": 1,
+      "occurrence_b": "ROUTE-BOWDEN-WIRE-001",
+      "solid_index_b": 1,
+      "same_occurrence": false,
+      "common_volume_mm3": 0.37893202665437786,
+      "operand_volume_a_mm3": 100309.04735926526,
+      "operand_volume_b_mm3": 345.4441188981762,
+      "parent_path_a": "100_FORWARD_PENETRATOR_WAI_AND_PRIMARY_STRUCTURE_ASSY",
+      "parent_path_b": "300_TRUE_TRANSFORM_ARM_AND_POWERTRAIN_ASSY",
+      "authorization_status": "UNAUTHORIZED_POSITIVE_VOLUME",
+      "intentional_fit_exception_id": "",
+      "authorization_reason": "NO_APPLICABLE_BOUNDED_EXCEPTION"
+    },
+    {
+      "occurrence_a": "FWD-SHELL-001",
+      "solid_index_a": 1,
+      "occurrence_b": "ROUTE-GAS-MAIN-001",
+      "solid_index_b": 1,
+      "same_occurrence": false,
+      "common_volume_mm3": 5.862683950516743,
+      "operand_volume_a_mm3": 100309.04735926526,
+      "operand_volume_b_mm3": 1690.2808804933827,
+      "parent_path_a": "100_FORWARD_PENETRATOR_WAI_AND_PRIMARY_STRUCTURE_ASSY",
+      "parent_path_b": "300_TRUE_TRANSFORM_ARM_AND_POWERTRAIN_ASSY",
+      "authorization_status": "UNAUTHORIZED_POSITIVE_VOLUME",
+      "intentional_fit_exception_id": "",
+      "authorization_reason": "NO_APPLICABLE_BOUNDED_EXCEPTION"
+    },
+    {
+      "occurrence_a": "FWD-SHELL-001",
+      "solid_index_a": 1,
+      "occurrence_b": "ROUTE-PILOT-LINE-001",
+      "solid_index_b": 1,
+      "same_occurrence": false,
+      "common_volume_mm3": 1.4064981703724837,
+      "operand_volume_a_mm3": 100309.04735926526,
+      "operand_volume_b_mm3": 1156.3341319967067,
+      "parent_path_a": "100_FORWARD_PENETRATOR_WAI_AND_PRIMARY_STRUCTURE_ASSY",
+      "parent_path_b": "300_TRUE_TRANSFORM_ARM_AND_POWERTRAIN_ASSY",
+      "authorization_status": "UNAUTHORIZED_POSITIVE_VOLUME",
+      "intentional_fit_exception_id": "",
+      "authorization_reason": "NO_APPLICABLE_BOUNDED_EXCEPTION"
+    },
+    {
+      "occurrence_a": "FWD-SHELL-001",
+      "solid_index_a": 1,
+      "occurrence_b": "WATER-TRIGGER-HSG-001",
+      "solid_index_b": 2,
+      "same_occurrence": false,
+      "common_volume_mm3": 0.01016530691789611,
+      "operand_volume_a_mm3": 100309.04735926526,
+      "operand_volume_b_mm3": 46.695062406632,
+      "parent_path_a": "100_FORWARD_PENETRATOR_WAI_AND_PRIMARY_STRUCTURE_ASSY",
+      "parent_path_b": "100_FORWARD_PENETRATOR_WAI_AND_PRIMARY_STRUCTURE_ASSY",
+      "authorization_status": "UNAUTHORIZED_POSITIVE_VOLUME",
+      "intentional_fit_exception_id": "",
+      "authorization_reason": "NO_APPLICABLE_BOUNDED_EXCEPTION"
+    },
+    {
+      "occurrence_a": "FWD-SHELL-001",
+      "solid_index_a": 1,
+      "occurrence_b": "WATER-TRIGGER-HSG-001",
+      "solid_index_b": 3,
+      "same_occurrence": false,
+      "common_volume_mm3": 0.010165306917902846,
+      "operand_volume_a_mm3": 100309.04735926526,
+      "operand_volume_b_mm3": 46.695062406632005,
+      "parent_path_a": "100_FORWARD_PENETRATOR_WAI_AND_PRIMARY_STRUCTURE_ASSY",
+      "parent_path_b": "100_FORWARD_PENETRATOR_WAI_AND_PRIMARY_STRUCTURE_ASSY",
+      "authorization_status": "UNAUTHORIZED_POSITIVE_VOLUME",
+      "intentional_fit_exception_id": "",
+      "authorization_reason": "NO_APPLICABLE_BOUNDED_EXCEPTION"
+    },
+    {
+      "occurrence_a": "FWD-SHELL-001",
+      "solid_index_a": 1,
+      "occurrence_b": "WATER-TRIGGER-HSG-001",
+      "solid_index_b": 4,
+      "same_occurrence": false,
+      "common_volume_mm3": 0.010165791507069118,
+      "operand_volume_a_mm3": 100309.04735926526,
+      "operand_volume_b_mm3": 46.69506240663199,
+      "parent_path_a": "100_FORWARD_PENETRATOR_WAI_AND_PRIMARY_STRUCTURE_ASSY",
+      "parent_path_b": "100_FORWARD_PENETRATOR_WAI_AND_PRIMARY_STRUCTURE_ASSY",
+      "authorization_status": "UNAUTHORIZED_POSITIVE_VOLUME",
+      "intentional_fit_exception_id": "",
+      "authorization_reason": "NO_APPLICABLE_BOUNDED_EXCEPTION"
+    },
+    {
+      "occurrence_a": "GLAND-BOWDEN-SHEATH-AFT",
+      "solid_index_a": 1,
+      "occurrence_b": "ROUTE-BOWDEN-SHEATH-001",
+      "solid_index_b": 1,
+      "same_occurrence": false,
+      "common_volume_mm3": 0.0003977706378889514,
+      "operand_volume_a_mm3": 85.50233964233712,
+      "operand_volume_b_mm3": 1778.4713244121258,
+      "parent_path_a": "300_TRUE_TRANSFORM_ARM_AND_POWERTRAIN_ASSY",
+      "parent_path_b": "300_TRUE_TRANSFORM_ARM_AND_POWERTRAIN_ASSY",
+      "authorization_status": "UNAUTHORIZED_POSITIVE_VOLUME",
+      "intentional_fit_exception_id": "",
+      "authorization_reason": "NO_APPLICABLE_BOUNDED_EXCEPTION"
+    },
+    {
+      "occurrence_a": "GLAND-GAS-MAIN-AFT",
+      "solid_index_a": 1,
+      "occurrence_b": "ROUTE-GAS-MAIN-001",
+      "solid_index_b": 1,
+      "same_occurrence": false,
+      "common_volume_mm3": 0.0006317453033052971,
+      "operand_volume_a_mm3": 97.87770142335803,
+      "operand_volume_b_mm3": 1690.2808804933827,
+      "parent_path_a": "300_TRUE_TRANSFORM_ARM_AND_POWERTRAIN_ASSY",
+      "parent_path_b": "300_TRUE_TRANSFORM_ARM_AND_POWERTRAIN_ASSY",
+      "authorization_status": "UNAUTHORIZED_POSITIVE_VOLUME",
+      "intentional_fit_exception_id": "",
+      "authorization_reason": "NO_APPLICABLE_BOUNDED_EXCEPTION"
+    },
+    {
+      "occurrence_a": "GLAND-PILOT-LINE-AFT",
+      "solid_index_a": 1,
+      "occurrence_b": "ROUTE-PILOT-LINE-001",
+      "solid_index_b": 1,
+      "same_occurrence": false,
+      "common_volume_mm3": 0.00034994702293392665,
+      "operand_volume_a_mm3": 82.40849919708184,
+      "operand_volume_b_mm3": 1156.3341319967067,
+      "parent_path_a": "300_TRUE_TRANSFORM_ARM_AND_POWERTRAIN_ASSY",
+      "parent_path_b": "300_TRUE_TRANSFORM_ARM_AND_POWERTRAIN_ASSY",
+      "authorization_status": "UNAUTHORIZED_POSITIVE_VOLUME",
+      "intentional_fit_exception_id": "",
+      "authorization_reason": "NO_APPLICABLE_BOUNDED_EXCEPTION"
+    },
+    {
+      "occurrence_a": "GS19-CLIP-FIXED",
+      "solid_index_a": 1,
+      "occurrence_b": "GS19-PIN-FIXED",
+      "solid_index_b": 1,
+      "same_occurrence": false,
+      "common_volume_mm3": 0.11335389201589932,
+      "operand_volume_a_mm3": 5.535679809607216,
+      "operand_volume_b_mm3": 165.1790512395268,
+      "parent_path_a": "300_TRUE_TRANSFORM_ARM_AND_POWERTRAIN_ASSY",
+      "parent_path_b": "300_TRUE_TRANSFORM_ARM_AND_POWERTRAIN_ASSY",
+      "authorization_status": "UNAUTHORIZED_POSITIVE_VOLUME",
+      "intentional_fit_exception_id": "",
+      "authorization_reason": "NO_APPLICABLE_BOUNDED_EXCEPTION"
+    },
+    {
+      "occurrence_a": "GS19-CLIP-MOVING",
+      "solid_index_a": 1,
+      "occurrence_b": "GS19-PIN-MOVING",
+      "solid_index_b": 1,
+      "same_occurrence": false,
+      "common_volume_mm3": 0.11335389202881532,
+      "operand_volume_a_mm3": 5.535679809607141,
+      "operand_volume_b_mm3": 165.1790512395256,
+      "parent_path_a": "300_TRUE_TRANSFORM_ARM_AND_POWERTRAIN_ASSY",
+      "parent_path_b": "300_TRUE_TRANSFORM_ARM_AND_POWERTRAIN_ASSY",
+      "authorization_status": "UNAUTHORIZED_POSITIVE_VOLUME",
+      "intentional_fit_exception_id": "",
+      "authorization_reason": "NO_APPLICABLE_BOUNDED_EXCEPTION"
+    },
+    {
+      "occurrence_a": "HARNESS-LEG-XP",
+      "solid_index_a": 1,
+      "occurrence_b": "RECOVERY-TETHER-001",
+      "solid_index_b": 1,
+      "same_occurrence": false,
+      "common_volume_mm3": 18.40712043645503,
+      "operand_volume_a_mm3": 1447.337062127263,
+      "operand_volume_b_mm3": 940.6706340204921,
+      "parent_path_a": "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY",
+      "parent_path_b": "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY",
+      "authorization_status": "UNAUTHORIZED_POSITIVE_VOLUME",
+      "intentional_fit_exception_id": "",
+      "authorization_reason": "NO_APPLICABLE_BOUNDED_EXCEPTION"
+    },
+    {
+      "occurrence_a": "HARNESS-LEG-XP",
+      "solid_index_a": 1,
+      "occurrence_b": "TETHER-THIMBLE-BODY",
+      "solid_index_b": 1,
+      "same_occurrence": false,
+      "common_volume_mm3": 42.52449539116395,
+      "operand_volume_a_mm3": 1447.337062127263,
+      "operand_volume_b_mm3": 362.0893719287221,
+      "parent_path_a": "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY",
+      "parent_path_b": "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY",
+      "authorization_status": "UNAUTHORIZED_POSITIVE_VOLUME",
+      "intentional_fit_exception_id": "",
+      "authorization_reason": "NO_APPLICABLE_BOUNDED_EXCEPTION"
+    },
+    {
+      "occurrence_a": "HARNESS-LEG-XP",
+      "solid_index_a": 1,
+      "occurrence_b": "WP04-GUIDE-RAIL-1",
+      "solid_index_b": 1,
+      "same_occurrence": false,
+      "common_volume_mm3": 337.0535322397831,
+      "operand_volume_a_mm3": 1447.337062127263,
+      "operand_volume_b_mm3": 2850.0,
+      "parent_path_a": "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY",
+      "parent_path_b": "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY",
+      "authorization_status": "UNAUTHORIZED_POSITIVE_VOLUME",
+      "intentional_fit_exception_id": "",
+      "authorization_reason": "NO_APPLICABLE_BOUNDED_EXCEPTION"
+    },
+    {
+      "occurrence_a": "HARNESS-LEG-YN",
+      "solid_index_a": 1,
+      "occurrence_b": "HARNESS-TERMINAL-001",
+      "solid_index_b": 1,
+      "same_occurrence": false,
+      "common_volume_mm3": 11.987770411543341,
+      "operand_volume_a_mm3": 1169.112109073792,
+      "operand_volume_b_mm3": 2014.0933992416703,
+      "parent_path_a": "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY",
+      "parent_path_b": "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY",
+      "authorization_status": "UNAUTHORIZED_POSITIVE_VOLUME",
+      "intentional_fit_exception_id": "",
+      "authorization_reason": "NO_APPLICABLE_BOUNDED_EXCEPTION"
+    },
+    {
+      "occurrence_a": "HARNESS-LEG-YN",
+      "solid_index_a": 1,
+      "occurrence_b": "RECOVERY-TETHER-001",
+      "solid_index_b": 1,
+      "same_occurrence": false,
+      "common_volume_mm3": 4.174329584853912,
+      "operand_volume_a_mm3": 1169.112109073792,
+      "operand_volume_b_mm3": 940.6706340204921,
+      "parent_path_a": "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY",
+      "parent_path_b": "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY",
+      "authorization_status": "UNAUTHORIZED_POSITIVE_VOLUME",
+      "intentional_fit_exception_id": "",
+      "authorization_reason": "NO_APPLICABLE_BOUNDED_EXCEPTION"
+    },
+    {
+      "occurrence_a": "HARNESS-LEG-YP",
+      "solid_index_a": 1,
+      "occurrence_b": "HARNESS-TERMINAL-001",
+      "solid_index_b": 1,
+      "same_occurrence": false,
+      "common_volume_mm3": 11.987770411543316,
+      "operand_volume_a_mm3": 1169.1121090737918,
+      "operand_volume_b_mm3": 2014.0933992416703,
+      "parent_path_a": "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY",
+      "parent_path_b": "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY",
+      "authorization_status": "UNAUTHORIZED_POSITIVE_VOLUME",
+      "intentional_fit_exception_id": "",
+      "authorization_reason": "NO_APPLICABLE_BOUNDED_EXCEPTION"
+    },
+    {
+      "occurrence_a": "HARNESS-TERMINAL-001",
+      "solid_index_a": 1,
+      "occurrence_b": "RECOVERY-TETHER-001",
+      "solid_index_b": 1,
+      "same_occurrence": false,
+      "common_volume_mm3": 2.50987843804997,
+      "operand_volume_a_mm3": 2014.0933992416703,
+      "operand_volume_b_mm3": 940.6706340204921,
+      "parent_path_a": "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY",
+      "parent_path_b": "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY",
+      "authorization_status": "UNAUTHORIZED_POSITIVE_VOLUME",
+      "intentional_fit_exception_id": "",
+      "authorization_reason": "NO_APPLICABLE_BOUNDED_EXCEPTION"
+    },
+    {
+      "occurrence_a": "HBD-CLIP-FIXED",
+      "solid_index_a": 1,
+      "occurrence_b": "HBD-PIN-FIXED",
+      "solid_index_b": 1,
+      "same_occurrence": false,
+      "common_volume_mm3": 0.11335389202390922,
+      "operand_volume_a_mm3": 5.535679809607212,
+      "operand_volume_b_mm3": 165.1790512395268,
+      "parent_path_a": "300_TRUE_TRANSFORM_ARM_AND_POWERTRAIN_ASSY",
+      "parent_path_b": "300_TRUE_TRANSFORM_ARM_AND_POWERTRAIN_ASSY",
+      "authorization_status": "UNAUTHORIZED_POSITIVE_VOLUME",
+      "intentional_fit_exception_id": "",
+      "authorization_reason": "NO_APPLICABLE_BOUNDED_EXCEPTION"
+    },
+    {
+      "occurrence_a": "HBD-CLIP-MOVING",
+      "solid_index_a": 1,
+      "occurrence_b": "HBD-PIN-MOVING",
+      "solid_index_b": 1,
+      "same_occurrence": false,
+      "common_volume_mm3": 0.11335389202716048,
+      "operand_volume_a_mm3": 5.535679809607137,
+      "operand_volume_b_mm3": 165.1790512395256,
+      "parent_path_a": "300_TRUE_TRANSFORM_ARM_AND_POWERTRAIN_ASSY",
+      "parent_path_b": "300_TRUE_TRANSFORM_ARM_AND_POWERTRAIN_ASSY",
+      "authorization_status": "UNAUTHORIZED_POSITIVE_VOLUME",
+      "intentional_fit_exception_id": "",
+      "authorization_reason": "NO_APPLICABLE_BOUNDED_EXCEPTION"
+    },
+    {
+      "occurrence_a": "PIVOT-CLIP-1",
+      "solid_index_a": 1,
+      "occurrence_b": "PIVOT-PIN-1",
+      "solid_index_b": 1,
+      "same_occurrence": false,
+      "common_volume_mm3": 0.27930206921926803,
+      "operand_volume_a_mm3": 12.119297289131268,
+      "operand_volume_b_mm3": 1118.935164942853,
+      "parent_path_a": "300_TRUE_TRANSFORM_ARM_AND_POWERTRAIN_ASSY/331_ARM_1_ASSY",
+      "parent_path_b": "300_TRUE_TRANSFORM_ARM_AND_POWERTRAIN_ASSY/331_ARM_1_ASSY",
+      "authorization_status": "UNAUTHORIZED_POSITIVE_VOLUME",
+      "intentional_fit_exception_id": "",
+      "authorization_reason": "NO_APPLICABLE_BOUNDED_EXCEPTION"
+    },
+    {
+      "occurrence_a": "PIVOT-CLIP-2",
+      "solid_index_a": 1,
+      "occurrence_b": "PIVOT-PIN-2",
+      "solid_index_b": 1,
+      "same_occurrence": false,
+      "common_volume_mm3": 0.2793020692171546,
+      "operand_volume_a_mm3": 12.119297289131262,
+      "operand_volume_b_mm3": 1118.9351649428527,
+      "parent_path_a": "300_TRUE_TRANSFORM_ARM_AND_POWERTRAIN_ASSY/332_ARM_2_ASSY",
+      "parent_path_b": "300_TRUE_TRANSFORM_ARM_AND_POWERTRAIN_ASSY/332_ARM_2_ASSY",
+      "authorization_status": "UNAUTHORIZED_POSITIVE_VOLUME",
+      "intentional_fit_exception_id": "",
+      "authorization_reason": "NO_APPLICABLE_BOUNDED_EXCEPTION"
+    },
+    {
+      "occurrence_a": "PIVOT-CLIP-3",
+      "solid_index_a": 1,
+      "occurrence_b": "PIVOT-PIN-3",
+      "solid_index_b": 1,
+      "same_occurrence": false,
+      "common_volume_mm3": 0.27930206922406176,
+      "operand_volume_a_mm3": 12.119297289131266,
+      "operand_volume_b_mm3": 1118.935164942853,
+      "parent_path_a": "300_TRUE_TRANSFORM_ARM_AND_POWERTRAIN_ASSY/333_ARM_3_ASSY",
+      "parent_path_b": "300_TRUE_TRANSFORM_ARM_AND_POWERTRAIN_ASSY/333_ARM_3_ASSY",
+      "authorization_status": "UNAUTHORIZED_POSITIVE_VOLUME",
+      "intentional_fit_exception_id": "",
+      "authorization_reason": "NO_APPLICABLE_BOUNDED_EXCEPTION"
+    },
+    {
+      "occurrence_a": "RECOVERY-PIN-BODY",
+      "solid_index_a": 1,
+      "occurrence_b": "RECOVERY-PIN-CLIP-BODY",
+      "solid_index_b": 1,
+      "same_occurrence": false,
+      "common_volume_mm3": 0.18993000381493508,
+      "operand_volume_a_mm3": 404.4113318103889,
+      "operand_volume_b_mm3": 8.584663678507283,
+      "parent_path_a": "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY",
+      "parent_path_b": "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY",
+      "authorization_status": "UNAUTHORIZED_POSITIVE_VOLUME",
+      "intentional_fit_exception_id": "",
+      "authorization_reason": "NO_APPLICABLE_BOUNDED_EXCEPTION"
+    },
+    {
+      "occurrence_a": "RECOVERY-PIN-CLIP-HARNESS",
+      "solid_index_a": 1,
+      "occurrence_b": "RECOVERY-PIN-HARNESS",
+      "solid_index_b": 1,
+      "same_occurrence": false,
+      "common_volume_mm3": 0.18993000380764413,
+      "operand_volume_a_mm3": 8.584663678507283,
+      "operand_volume_b_mm3": 404.4113318103889,
+      "parent_path_a": "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY",
+      "parent_path_b": "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY",
+      "authorization_status": "UNAUTHORIZED_POSITIVE_VOLUME",
+      "intentional_fit_exception_id": "",
+      "authorization_reason": "NO_APPLICABLE_BOUNDED_EXCEPTION"
+    },
+    {
+      "occurrence_a": "RECOVERY-TETHER-001",
+      "solid_index_a": 1,
+      "occurrence_b": "TETHER-THIMBLE-BODY",
+      "solid_index_b": 1,
+      "same_occurrence": false,
+      "common_volume_mm3": 2.1480069888996702,
+      "operand_volume_a_mm3": 940.6706340204921,
+      "operand_volume_b_mm3": 362.0893719287221,
+      "parent_path_a": "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY",
+      "parent_path_b": "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY",
+      "authorization_status": "UNAUTHORIZED_POSITIVE_VOLUME",
+      "intentional_fit_exception_id": "",
+      "authorization_reason": "NO_APPLICABLE_BOUNDED_EXCEPTION"
+    },
+    {
+      "occurrence_a": "RECOVERY-TETHER-001",
+      "solid_index_a": 1,
+      "occurrence_b": "TETHER-THIMBLE-HARNESS",
+      "solid_index_b": 1,
+      "same_occurrence": false,
+      "common_volume_mm3": 7.399647835333414,
+      "operand_volume_a_mm3": 940.6706340204921,
+      "operand_volume_b_mm3": 362.0893719287221,
+      "parent_path_a": "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY",
+      "parent_path_b": "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY",
+      "authorization_status": "UNAUTHORIZED_POSITIVE_VOLUME",
+      "intentional_fit_exception_id": "",
+      "authorization_reason": "NO_APPLICABLE_BOUNDED_EXCEPTION"
+    },
+    {
+      "occurrence_a": "ROUTE-BOWDEN-SHEATH-001",
+      "solid_index_a": 1,
+      "occurrence_b": "ROUTE-PILOT-LINE-001",
+      "solid_index_b": 1,
+      "same_occurrence": false,
+      "common_volume_mm3": 4.2991320257106205,
+      "operand_volume_a_mm3": 1778.4713244121258,
+      "operand_volume_b_mm3": 1156.3341319967067,
+      "parent_path_a": "300_TRUE_TRANSFORM_ARM_AND_POWERTRAIN_ASSY",
+      "parent_path_b": "300_TRUE_TRANSFORM_ARM_AND_POWERTRAIN_ASSY",
+      "authorization_status": "UNAUTHORIZED_POSITIVE_VOLUME",
+      "intentional_fit_exception_id": "",
+      "authorization_reason": "NO_APPLICABLE_BOUNDED_EXCEPTION"
+    },
+    {
+      "occurrence_a": "ROUTE-BOWDEN-SHEATH-001",
+      "solid_index_a": 1,
+      "occurrence_b": "WP04-EJECTOR-SPRING",
+      "solid_index_b": 1,
+      "same_occurrence": false,
+      "common_volume_mm3": 2.7495382037070746,
+      "operand_volume_a_mm3": 1778.4713244121258,
+      "operand_volume_b_mm3": 3454.356943500423,
+      "parent_path_a": "300_TRUE_TRANSFORM_ARM_AND_POWERTRAIN_ASSY",
+      "parent_path_b": "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY",
+      "authorization_status": "UNAUTHORIZED_POSITIVE_VOLUME",
+      "intentional_fit_exception_id": "",
+      "authorization_reason": "NO_APPLICABLE_BOUNDED_EXCEPTION"
+    },
+    {
+      "occurrence_a": "ROUTE-BOWDEN-SHEATH-001",
+      "solid_index_a": 1,
+      "occurrence_b": "WP04-REACTION-BULKHEAD",
+      "solid_index_b": 1,
+      "same_occurrence": false,
+      "common_volume_mm3": 0.5523356637447256,
+      "operand_volume_a_mm3": 1778.4713244121258,
+      "operand_volume_b_mm3": 9055.511154735801,
+      "parent_path_a": "300_TRUE_TRANSFORM_ARM_AND_POWERTRAIN_ASSY",
+      "parent_path_b": "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY",
+      "authorization_status": "UNAUTHORIZED_POSITIVE_VOLUME",
+      "intentional_fit_exception_id": "",
+      "authorization_reason": "NO_APPLICABLE_BOUNDED_EXCEPTION"
+    },
+    {
+      "occurrence_a": "ROUTE-BOWDEN-SHEATH-001",
+      "solid_index_a": 1,
+      "occurrence_b": "WP04-SEAR-001",
+      "solid_index_b": 1,
+      "same_occurrence": false,
+      "common_volume_mm3": 4.223682827192136,
+      "operand_volume_a_mm3": 1778.4713244121258,
+      "operand_volume_b_mm3": 118.90967463745596,
+      "parent_path_a": "300_TRUE_TRANSFORM_ARM_AND_POWERTRAIN_ASSY",
+      "parent_path_b": "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY",
+      "authorization_status": "UNAUTHORIZED_POSITIVE_VOLUME",
+      "intentional_fit_exception_id": "",
+      "authorization_reason": "NO_APPLICABLE_BOUNDED_EXCEPTION"
+    },
+    {
+      "occurrence_a": "ROUTE-BOWDEN-WIRE-001",
+      "solid_index_a": 1,
+      "occurrence_b": "ROUTE-PILOT-LINE-001",
+      "solid_index_b": 1,
+      "same_occurrence": false,
+      "common_volume_mm3": 0.7390624512927404,
+      "operand_volume_a_mm3": 345.4441188981762,
+      "operand_volume_b_mm3": 1156.3341319967067,
+      "parent_path_a": "300_TRUE_TRANSFORM_ARM_AND_POWERTRAIN_ASSY",
+      "parent_path_b": "300_TRUE_TRANSFORM_ARM_AND_POWERTRAIN_ASSY",
+      "authorization_status": "UNAUTHORIZED_POSITIVE_VOLUME",
+      "intentional_fit_exception_id": "",
+      "authorization_reason": "NO_APPLICABLE_BOUNDED_EXCEPTION"
+    },
+    {
+      "occurrence_a": "ROUTE-BOWDEN-WIRE-001",
+      "solid_index_a": 1,
+      "occurrence_b": "WP04-EJECTOR-SPRING",
+      "solid_index_b": 1,
+      "same_occurrence": false,
+      "common_volume_mm3": 0.5950349250463618,
+      "operand_volume_a_mm3": 345.4441188981762,
+      "operand_volume_b_mm3": 3454.356943500423,
+      "parent_path_a": "300_TRUE_TRANSFORM_ARM_AND_POWERTRAIN_ASSY",
+      "parent_path_b": "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY",
+      "authorization_status": "UNAUTHORIZED_POSITIVE_VOLUME",
+      "intentional_fit_exception_id": "",
+      "authorization_reason": "NO_APPLICABLE_BOUNDED_EXCEPTION"
+    },
+    {
+      "occurrence_a": "ROUTE-BOWDEN-WIRE-001",
+      "solid_index_a": 1,
+      "occurrence_b": "WP04-REACTION-BULKHEAD",
+      "solid_index_b": 1,
+      "same_occurrence": false,
+      "common_volume_mm3": 0.002923907636160991,
+      "operand_volume_a_mm3": 345.4441188981762,
+      "operand_volume_b_mm3": 9055.511154735801,
+      "parent_path_a": "300_TRUE_TRANSFORM_ARM_AND_POWERTRAIN_ASSY",
+      "parent_path_b": "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY",
+      "authorization_status": "UNAUTHORIZED_POSITIVE_VOLUME",
+      "intentional_fit_exception_id": "",
+      "authorization_reason": "NO_APPLICABLE_BOUNDED_EXCEPTION"
+    },
+    {
+      "occurrence_a": "ROUTE-BOWDEN-WIRE-001",
+      "solid_index_a": 1,
+      "occurrence_b": "WP04-SEAR-001",
+      "solid_index_b": 1,
+      "same_occurrence": false,
+      "common_volume_mm3": 0.8482300164692557,
+      "operand_volume_a_mm3": 345.4441188981762,
+      "operand_volume_b_mm3": 118.90967463745596,
+      "parent_path_a": "300_TRUE_TRANSFORM_ARM_AND_POWERTRAIN_ASSY",
+      "parent_path_b": "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY",
+      "authorization_status": "UNAUTHORIZED_POSITIVE_VOLUME",
+      "intentional_fit_exception_id": "",
+      "authorization_reason": "NO_APPLICABLE_BOUNDED_EXCEPTION"
+    },
+    {
+      "occurrence_a": "ROUTE-GAS-MAIN-001",
+      "solid_index_a": 1,
+      "occurrence_b": "WP04-REACTION-BULKHEAD",
+      "solid_index_b": 1,
+      "same_occurrence": false,
+      "common_volume_mm3": 1.2823859647948566,
+      "operand_volume_a_mm3": 1690.2808804933827,
+      "operand_volume_b_mm3": 9055.511154735801,
+      "parent_path_a": "300_TRUE_TRANSFORM_ARM_AND_POWERTRAIN_ASSY",
+      "parent_path_b": "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY",
+      "authorization_status": "UNAUTHORIZED_POSITIVE_VOLUME",
+      "intentional_fit_exception_id": "",
+      "authorization_reason": "NO_APPLICABLE_BOUNDED_EXCEPTION"
+    },
+    {
+      "occurrence_a": "ROUTE-PILOT-LINE-001",
+      "solid_index_a": 1,
+      "occurrence_b": "WP04-EJECTOR-SPRING",
+      "solid_index_b": 1,
+      "same_occurrence": false,
+      "common_volume_mm3": 2.053810079923539,
+      "operand_volume_a_mm3": 1156.3341319967067,
+      "operand_volume_b_mm3": 3454.356943500423,
+      "parent_path_a": "300_TRUE_TRANSFORM_ARM_AND_POWERTRAIN_ASSY",
+      "parent_path_b": "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY",
+      "authorization_status": "UNAUTHORIZED_POSITIVE_VOLUME",
+      "intentional_fit_exception_id": "",
+      "authorization_reason": "NO_APPLICABLE_BOUNDED_EXCEPTION"
+    },
+    {
+      "occurrence_a": "ROUTE-PILOT-LINE-001",
+      "solid_index_a": 1,
+      "occurrence_b": "WP04-REACTION-BULKHEAD",
+      "solid_index_b": 1,
+      "same_occurrence": false,
+      "common_volume_mm3": 0.39854231265842205,
+      "operand_volume_a_mm3": 1156.3341319967067,
+      "operand_volume_b_mm3": 9055.511154735801,
+      "parent_path_a": "300_TRUE_TRANSFORM_ARM_AND_POWERTRAIN_ASSY",
+      "parent_path_b": "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY",
+      "authorization_status": "UNAUTHORIZED_POSITIVE_VOLUME",
+      "intentional_fit_exception_id": "",
+      "authorization_reason": "NO_APPLICABLE_BOUNDED_EXCEPTION"
+    },
+    {
+      "occurrence_a": "WP05-DOOR-001",
+      "solid_index_a": 1,
+      "occurrence_b": "WP05-DOOR-LANYARD",
+      "solid_index_b": 1,
+      "same_occurrence": false,
+      "common_volume_mm3": 22.89141327283281,
+      "operand_volume_a_mm3": 5224.905768975357,
+      "operand_volume_b_mm3": 125.52575621620309,
+      "parent_path_a": "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY",
+      "parent_path_b": "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY",
+      "authorization_status": "UNAUTHORIZED_POSITIVE_VOLUME",
+      "intentional_fit_exception_id": "",
+      "authorization_reason": "NO_APPLICABLE_BOUNDED_EXCEPTION"
+    },
+    {
+      "occurrence_a": "WP05-HINGE-CLIP",
+      "solid_index_a": 1,
+      "occurrence_b": "WP05-HINGE-PIN",
+      "solid_index_b": 1,
+      "same_occurrence": false,
+      "common_volume_mm3": 0.0751663016303719,
+      "operand_volume_a_mm3": 3.946436016810096,
+      "operand_volume_b_mm3": 124.69177591638554,
+      "parent_path_a": "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY",
+      "parent_path_b": "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY",
+      "authorization_status": "UNAUTHORIZED_POSITIVE_VOLUME",
+      "intentional_fit_exception_id": "",
+      "authorization_reason": "NO_APPLICABLE_BOUNDED_EXCEPTION"
+    }
+  ],
+  "documented_positive_occurrence_pairs": [
+    {
+      "occurrence_a": "HARNESS-BAND-2",
+      "occurrence_b": "HARNESS-LEG-YP",
+      "parent_path_a": "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY",
+      "parent_path_b": "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY",
+      "positive_solid_pair_count": 1,
+      "total_common_volume_mm3": 24.785980362795815,
+      "maximum_single_solid_common_volume_mm3": 24.785980362795815,
+      "solid_pairs": [
+        {
+          "solid_index_a": 1,
+          "solid_index_b": 1,
+          "common_volume_mm3": 24.785980362795815,
+          "authorization_reason": "VALID_UNIQUE_BOUNDED_MATCH"
+        }
+      ],
+      "rank_by_total_common_volume": 1
+    },
+    {
+      "occurrence_a": "HARNESS-BAND-2",
+      "occurrence_b": "HARNESS-LEG-YN",
+      "parent_path_a": "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY",
+      "parent_path_b": "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY",
+      "positive_solid_pair_count": 1,
+      "total_common_volume_mm3": 24.78598036279572,
+      "maximum_single_solid_common_volume_mm3": 24.78598036279572,
+      "solid_pairs": [
+        {
+          "solid_index_a": 1,
+          "solid_index_b": 1,
+          "common_volume_mm3": 24.78598036279572,
+          "authorization_reason": "VALID_UNIQUE_BOUNDED_MATCH"
+        }
+      ],
+      "rank_by_total_common_volume": 2
+    },
+    {
+      "occurrence_a": "HARNESS-BAND-1",
+      "occurrence_b": "HARNESS-LEG-XN",
+      "parent_path_a": "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY",
+      "parent_path_b": "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY",
+      "positive_solid_pair_count": 1,
+      "total_common_volume_mm3": 3.1845116708366876,
+      "maximum_single_solid_common_volume_mm3": 3.1845116708366876,
+      "solid_pairs": [
+        {
+          "solid_index_a": 1,
+          "solid_index_b": 1,
+          "common_volume_mm3": 3.1845116708366876,
+          "authorization_reason": "VALID_UNIQUE_BOUNDED_MATCH"
+        }
+      ],
+      "rank_by_total_common_volume": 3
+    },
+    {
+      "occurrence_a": "HARNESS-BAND-1",
+      "occurrence_b": "HARNESS-LEG-XP",
+      "parent_path_a": "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY",
+      "parent_path_b": "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY",
+      "positive_solid_pair_count": 1,
+      "total_common_volume_mm3": 3.184511664923312,
+      "maximum_single_solid_common_volume_mm3": 3.184511664923312,
+      "solid_pairs": [
+        {
+          "solid_index_a": 1,
+          "solid_index_b": 1,
+          "common_volume_mm3": 3.184511664923312,
+          "authorization_reason": "VALID_UNIQUE_BOUNDED_MATCH"
+        }
+      ],
+      "rank_by_total_common_volume": 4
+    }
+  ],
+  "documented_positive_solid_pairs": [
+    {
+      "occurrence_a": "HARNESS-BAND-1",
+      "solid_index_a": 1,
+      "occurrence_b": "HARNESS-LEG-XN",
+      "solid_index_b": 1,
+      "same_occurrence": false,
+      "common_volume_mm3": 3.1845116708366876,
+      "operand_volume_a_mm3": 4358.640000000001,
+      "operand_volume_b_mm3": 1447.3370621272618,
+      "parent_path_a": "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY",
+      "parent_path_b": "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY",
+      "authorization_status": "DOCUMENTED_POSITIVE_VOLUME",
+      "intentional_fit_exception_id": "FIT-STITCH-XN",
+      "authorization_reason": "VALID_UNIQUE_BOUNDED_MATCH"
+    },
+    {
+      "occurrence_a": "HARNESS-BAND-1",
+      "solid_index_a": 1,
+      "occurrence_b": "HARNESS-LEG-XP",
+      "solid_index_b": 1,
+      "same_occurrence": false,
+      "common_volume_mm3": 3.184511664923312,
+      "operand_volume_a_mm3": 4358.640000000001,
+      "operand_volume_b_mm3": 1447.337062127263,
+      "parent_path_a": "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY",
+      "parent_path_b": "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY",
+      "authorization_status": "DOCUMENTED_POSITIVE_VOLUME",
+      "intentional_fit_exception_id": "FIT-STITCH-XP",
+      "authorization_reason": "VALID_UNIQUE_BOUNDED_MATCH"
+    },
+    {
+      "occurrence_a": "HARNESS-BAND-2",
+      "solid_index_a": 1,
+      "occurrence_b": "HARNESS-LEG-YN",
+      "solid_index_b": 1,
+      "same_occurrence": false,
+      "common_volume_mm3": 24.78598036279572,
+      "operand_volume_a_mm3": 4358.640000000001,
+      "operand_volume_b_mm3": 1169.112109073792,
+      "parent_path_a": "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY",
+      "parent_path_b": "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY",
+      "authorization_status": "DOCUMENTED_POSITIVE_VOLUME",
+      "intentional_fit_exception_id": "FIT-STITCH-YN",
+      "authorization_reason": "VALID_UNIQUE_BOUNDED_MATCH"
+    },
+    {
+      "occurrence_a": "HARNESS-BAND-2",
+      "solid_index_a": 1,
+      "occurrence_b": "HARNESS-LEG-YP",
+      "solid_index_b": 1,
+      "same_occurrence": false,
+      "common_volume_mm3": 24.785980362795815,
+      "operand_volume_a_mm3": 4358.640000000001,
+      "operand_volume_b_mm3": 1169.1121090737918,
+      "parent_path_a": "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY",
+      "parent_path_b": "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY",
+      "authorization_status": "DOCUMENTED_POSITIVE_VOLUME",
+      "intentional_fit_exception_id": "FIT-STITCH-YP",
+      "authorization_reason": "VALID_UNIQUE_BOUNDED_MATCH"
+    }
+  ],
+  "all_positive_solid_pairs": [
+    {
+      "occurrence_a": "AFT-SHELL-001",
+      "solid_index_a": 1,
+      "occurrence_b": "GLAND-BOWDEN-SHEATH-AFT",
+      "solid_index_b": 1,
+      "same_occurrence": false,
+      "common_volume_mm3": 0.29326423565762205,
+      "operand_volume_a_mm3": 55108.79596408332,
+      "operand_volume_b_mm3": 85.50233964233712,
+      "parent_path_a": "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY",
+      "parent_path_b": "300_TRUE_TRANSFORM_ARM_AND_POWERTRAIN_ASSY",
+      "authorization_status": "UNAUTHORIZED_POSITIVE_VOLUME",
+      "intentional_fit_exception_id": "",
+      "authorization_reason": "NO_APPLICABLE_BOUNDED_EXCEPTION"
+    },
+    {
+      "occurrence_a": "AFT-SHELL-001",
+      "solid_index_a": 1,
+      "occurrence_b": "GLAND-GAS-MAIN-AFT",
+      "solid_index_b": 1,
+      "same_occurrence": false,
+      "common_volume_mm3": 0.4384435715279309,
+      "operand_volume_a_mm3": 55108.79596408332,
+      "operand_volume_b_mm3": 97.87770142335803,
+      "parent_path_a": "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY",
+      "parent_path_b": "300_TRUE_TRANSFORM_ARM_AND_POWERTRAIN_ASSY",
+      "authorization_status": "UNAUTHORIZED_POSITIVE_VOLUME",
+      "intentional_fit_exception_id": "",
+      "authorization_reason": "NO_APPLICABLE_BOUNDED_EXCEPTION"
+    },
+    {
+      "occurrence_a": "AFT-SHELL-001",
+      "solid_index_a": 1,
+      "occurrence_b": "GLAND-PILOT-LINE-AFT",
+      "solid_index_b": 1,
+      "same_occurrence": false,
+      "common_volume_mm3": 0.2935945945261178,
+      "operand_volume_a_mm3": 55108.79596408332,
+      "operand_volume_b_mm3": 82.40849919708184,
+      "parent_path_a": "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY",
+      "parent_path_b": "300_TRUE_TRANSFORM_ARM_AND_POWERTRAIN_ASSY",
+      "authorization_status": "UNAUTHORIZED_POSITIVE_VOLUME",
+      "intentional_fit_exception_id": "",
+      "authorization_reason": "NO_APPLICABLE_BOUNDED_EXCEPTION"
+    },
+    {
+      "occurrence_a": "AFT-SHELL-001",
+      "solid_index_a": 1,
+      "occurrence_b": "RECOVERY-TETHER-001",
+      "solid_index_b": 1,
+      "same_occurrence": false,
+      "common_volume_mm3": 6.201943985940134,
+      "operand_volume_a_mm3": 55108.79596408332,
+      "operand_volume_b_mm3": 940.6706340204921,
+      "parent_path_a": "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY",
+      "parent_path_b": "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY",
+      "authorization_status": "UNAUTHORIZED_POSITIVE_VOLUME",
+      "intentional_fit_exception_id": "",
+      "authorization_reason": "NO_APPLICABLE_BOUNDED_EXCEPTION"
+    },
+    {
+      "occurrence_a": "AFT-SHELL-001",
+      "solid_index_a": 1,
+      "occurrence_b": "ROUTE-BOWDEN-SHEATH-001",
+      "solid_index_b": 1,
+      "same_occurrence": false,
+      "common_volume_mm3": 6.103066212034036,
+      "operand_volume_a_mm3": 55108.79596408332,
+      "operand_volume_b_mm3": 1778.4713244121258,
+      "parent_path_a": "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY",
+      "parent_path_b": "300_TRUE_TRANSFORM_ARM_AND_POWERTRAIN_ASSY",
+      "authorization_status": "UNAUTHORIZED_POSITIVE_VOLUME",
+      "intentional_fit_exception_id": "",
+      "authorization_reason": "NO_APPLICABLE_BOUNDED_EXCEPTION"
+    },
+    {
+      "occurrence_a": "AFT-SHELL-001",
+      "solid_index_a": 1,
+      "occurrence_b": "ROUTE-BOWDEN-WIRE-001",
+      "solid_index_b": 1,
+      "same_occurrence": false,
+      "common_volume_mm3": 0.004822677993276957,
+      "operand_volume_a_mm3": 55108.79596408332,
+      "operand_volume_b_mm3": 345.4441188981762,
+      "parent_path_a": "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY",
+      "parent_path_b": "300_TRUE_TRANSFORM_ARM_AND_POWERTRAIN_ASSY",
+      "authorization_status": "UNAUTHORIZED_POSITIVE_VOLUME",
+      "intentional_fit_exception_id": "",
+      "authorization_reason": "NO_APPLICABLE_BOUNDED_EXCEPTION"
+    },
+    {
+      "occurrence_a": "AFT-SHELL-001",
+      "solid_index_a": 1,
+      "occurrence_b": "ROUTE-GAS-MAIN-001",
+      "solid_index_b": 1,
+      "same_occurrence": false,
+      "common_volume_mm3": 3.9302488948981003,
+      "operand_volume_a_mm3": 55108.79596408332,
+      "operand_volume_b_mm3": 1690.2808804933827,
+      "parent_path_a": "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY",
+      "parent_path_b": "300_TRUE_TRANSFORM_ARM_AND_POWERTRAIN_ASSY",
+      "authorization_status": "UNAUTHORIZED_POSITIVE_VOLUME",
+      "intentional_fit_exception_id": "",
+      "authorization_reason": "NO_APPLICABLE_BOUNDED_EXCEPTION"
+    },
+    {
+      "occurrence_a": "AFT-SHELL-001",
+      "solid_index_a": 1,
+      "occurrence_b": "WP04-MANIFOLD-BRACKET",
+      "solid_index_b": 1,
+      "same_occurrence": false,
+      "common_volume_mm3": 0.05271327920410775,
+      "operand_volume_a_mm3": 55108.79596408332,
+      "operand_volume_b_mm3": 4.799999999999999,
+      "parent_path_a": "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY",
+      "parent_path_b": "300_TRUE_TRANSFORM_ARM_AND_POWERTRAIN_ASSY",
+      "authorization_status": "UNAUTHORIZED_POSITIVE_VOLUME",
+      "intentional_fit_exception_id": "",
+      "authorization_reason": "NO_APPLICABLE_BOUNDED_EXCEPTION"
+    },
+    {
+      "occurrence_a": "BODY-HARDPOINT-001",
+      "solid_index_a": 1,
+      "occurrence_b": "HARNESS-LEG-XP",
+      "solid_index_b": 1,
+      "same_occurrence": false,
+      "common_volume_mm3": 23.099999999999998,
+      "operand_volume_a_mm3": 200.4400390953754,
+      "operand_volume_b_mm3": 1447.337062127263,
+      "parent_path_a": "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY",
+      "parent_path_b": "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY",
+      "authorization_status": "UNAUTHORIZED_POSITIVE_VOLUME",
+      "intentional_fit_exception_id": "",
+      "authorization_reason": "NO_APPLICABLE_BOUNDED_EXCEPTION"
+    },
+    {
+      "occurrence_a": "BODY-HARDPOINT-001",
+      "solid_index_a": 2,
+      "occurrence_b": "HARNESS-LEG-XP",
+      "solid_index_b": 1,
+      "same_occurrence": false,
+      "common_volume_mm3": 23.0999999999999,
+      "operand_volume_a_mm3": 200.4400390953754,
+      "operand_volume_b_mm3": 1447.337062127263,
+      "parent_path_a": "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY",
+      "parent_path_b": "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY",
+      "authorization_status": "UNAUTHORIZED_POSITIVE_VOLUME",
+      "intentional_fit_exception_id": "",
+      "authorization_reason": "NO_APPLICABLE_BOUNDED_EXCEPTION"
+    },
+    {
+      "occurrence_a": "BODY-HARDPOINT-001",
+      "solid_index_a": 3,
+      "occurrence_b": "HARNESS-LEG-XN",
+      "solid_index_b": 1,
+      "same_occurrence": false,
+      "common_volume_mm3": 43.78527931844844,
+      "operand_volume_a_mm3": 5340.518636454557,
+      "operand_volume_b_mm3": 1447.3370621272618,
+      "parent_path_a": "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY",
+      "parent_path_b": "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY",
+      "authorization_status": "UNAUTHORIZED_POSITIVE_VOLUME",
+      "intentional_fit_exception_id": "",
+      "authorization_reason": "NO_APPLICABLE_BOUNDED_EXCEPTION"
+    },
+    {
+      "occurrence_a": "BODY-HARDPOINT-001",
+      "solid_index_a": 3,
+      "occurrence_b": "HARNESS-LEG-YN",
+      "solid_index_b": 1,
+      "same_occurrence": false,
+      "common_volume_mm3": 35.222185850435004,
+      "operand_volume_a_mm3": 5340.518636454557,
+      "operand_volume_b_mm3": 1169.112109073792,
+      "parent_path_a": "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY",
+      "parent_path_b": "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY",
+      "authorization_status": "UNAUTHORIZED_POSITIVE_VOLUME",
+      "intentional_fit_exception_id": "",
+      "authorization_reason": "NO_APPLICABLE_BOUNDED_EXCEPTION"
+    },
+    {
+      "occurrence_a": "BODY-HARDPOINT-001",
+      "solid_index_a": 3,
+      "occurrence_b": "HARNESS-LEG-YP",
+      "solid_index_b": 1,
+      "same_occurrence": false,
+      "common_volume_mm3": 35.22218585043508,
+      "operand_volume_a_mm3": 5340.518636454557,
+      "operand_volume_b_mm3": 1169.1121090737918,
+      "parent_path_a": "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY",
+      "parent_path_b": "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY",
+      "authorization_status": "UNAUTHORIZED_POSITIVE_VOLUME",
+      "intentional_fit_exception_id": "",
+      "authorization_reason": "NO_APPLICABLE_BOUNDED_EXCEPTION"
+    },
+    {
+      "occurrence_a": "BOOSTER-1",
+      "solid_index_a": 1,
+      "occurrence_b": "ROUTE-PILOT-LINE-001",
+      "solid_index_b": 1,
+      "same_occurrence": false,
+      "common_volume_mm3": 5.909338414353819,
+      "operand_volume_a_mm3": 17200.21977840411,
+      "operand_volume_b_mm3": 1156.3341319967067,
+      "parent_path_a": "100_FORWARD_PENETRATOR_WAI_AND_PRIMARY_STRUCTURE_ASSY",
+      "parent_path_b": "300_TRUE_TRANSFORM_ARM_AND_POWERTRAIN_ASSY",
+      "authorization_status": "UNAUTHORIZED_POSITIVE_VOLUME",
+      "intentional_fit_exception_id": "",
+      "authorization_reason": "NO_APPLICABLE_BOUNDED_EXCEPTION"
+    },
+    {
+      "occurrence_a": "BOOSTER-3",
+      "solid_index_a": 1,
+      "occurrence_b": "ROUTE-PILOT-LINE-001",
+      "solid_index_b": 1,
+      "same_occurrence": false,
+      "common_volume_mm3": 1.835398047173097,
+      "operand_volume_a_mm3": 17200.219778404124,
+      "operand_volume_b_mm3": 1156.3341319967067,
+      "parent_path_a": "100_FORWARD_PENETRATOR_WAI_AND_PRIMARY_STRUCTURE_ASSY",
+      "parent_path_b": "300_TRUE_TRANSFORM_ARM_AND_POWERTRAIN_ASSY",
+      "authorization_status": "UNAUTHORIZED_POSITIVE_VOLUME",
+      "intentional_fit_exception_id": "",
+      "authorization_reason": "NO_APPLICABLE_BOUNDED_EXCEPTION"
+    },
+    {
+      "occurrence_a": "DOOR-DETENT-1",
+      "solid_index_a": 1,
+      "occurrence_b": "WP05-SERVICE-THROAT",
+      "solid_index_b": 1,
+      "same_occurrence": false,
+      "common_volume_mm3": 2.528504491509576,
+      "operand_volume_a_mm3": 61.12525039706843,
+      "operand_volume_b_mm3": 40516.1905727398,
+      "parent_path_a": "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY",
+      "parent_path_b": "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY",
+      "authorization_status": "UNAUTHORIZED_POSITIVE_VOLUME",
+      "intentional_fit_exception_id": "",
+      "authorization_reason": "NO_APPLICABLE_BOUNDED_EXCEPTION"
+    },
+    {
+      "occurrence_a": "DOOR-DETENT-2",
+      "solid_index_a": 1,
+      "occurrence_b": "WP05-SERVICE-THROAT",
+      "solid_index_b": 1,
+      "same_occurrence": false,
+      "common_volume_mm3": 2.528513630621478,
+      "operand_volume_a_mm3": 61.12525039706843,
+      "operand_volume_b_mm3": 40516.1905727398,
+      "parent_path_a": "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY",
+      "parent_path_b": "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY",
+      "authorization_status": "UNAUTHORIZED_POSITIVE_VOLUME",
+      "intentional_fit_exception_id": "",
+      "authorization_reason": "NO_APPLICABLE_BOUNDED_EXCEPTION"
+    },
+    {
+      "occurrence_a": "DOOR-DETENT-3",
+      "solid_index_a": 1,
+      "occurrence_b": "WP05-SERVICE-THROAT",
+      "solid_index_b": 1,
+      "same_occurrence": false,
+      "common_volume_mm3": 2.52850449159064,
+      "operand_volume_a_mm3": 61.125250397068434,
+      "operand_volume_b_mm3": 40516.1905727398,
+      "parent_path_a": "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY",
+      "parent_path_b": "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY",
+      "authorization_status": "UNAUTHORIZED_POSITIVE_VOLUME",
+      "intentional_fit_exception_id": "",
+      "authorization_reason": "NO_APPLICABLE_BOUNDED_EXCEPTION"
+    },
+    {
+      "occurrence_a": "DOOR-DETENT-4",
+      "solid_index_a": 1,
+      "occurrence_b": "WP05-SERVICE-THROAT",
+      "solid_index_b": 1,
+      "same_occurrence": false,
+      "common_volume_mm3": 2.5285136305424167,
+      "operand_volume_a_mm3": 61.12525039706843,
+      "operand_volume_b_mm3": 40516.1905727398,
+      "parent_path_a": "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY",
+      "parent_path_b": "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY",
+      "authorization_status": "UNAUTHORIZED_POSITIVE_VOLUME",
+      "intentional_fit_exception_id": "",
+      "authorization_reason": "NO_APPLICABLE_BOUNDED_EXCEPTION"
+    },
+    {
+      "occurrence_a": "FIXED-SECTOR-1",
+      "solid_index_a": 1,
+      "occurrence_b": "GLAND-GAS-MAIN-AFT",
+      "solid_index_b": 1,
+      "same_occurrence": false,
+      "common_volume_mm3": 1.969733524430568,
+      "operand_volume_a_mm3": 76875.02171323614,
+      "operand_volume_b_mm3": 97.87770142335803,
+      "parent_path_a": "300_TRUE_TRANSFORM_ARM_AND_POWERTRAIN_ASSY",
+      "parent_path_b": "300_TRUE_TRANSFORM_ARM_AND_POWERTRAIN_ASSY",
+      "authorization_status": "UNAUTHORIZED_POSITIVE_VOLUME",
+      "intentional_fit_exception_id": "",
+      "authorization_reason": "NO_APPLICABLE_BOUNDED_EXCEPTION"
+    },
+    {
+      "occurrence_a": "FIXED-SECTOR-1",
+      "solid_index_a": 1,
+      "occurrence_b": "GLAND-GAS-MAIN-FWD",
+      "solid_index_b": 1,
+      "same_occurrence": false,
+      "common_volume_mm3": 1.9697335244309147,
+      "operand_volume_a_mm3": 76875.02171323614,
+      "operand_volume_b_mm3": 97.87770142335802,
+      "parent_path_a": "300_TRUE_TRANSFORM_ARM_AND_POWERTRAIN_ASSY",
+      "parent_path_b": "300_TRUE_TRANSFORM_ARM_AND_POWERTRAIN_ASSY",
+      "authorization_status": "UNAUTHORIZED_POSITIVE_VOLUME",
+      "intentional_fit_exception_id": "",
+      "authorization_reason": "NO_APPLICABLE_BOUNDED_EXCEPTION"
+    },
+    {
+      "occurrence_a": "FULLFLOW-VALVE-001",
+      "solid_index_a": 1,
+      "occurrence_b": "ROUTE-PILOT-LINE-001",
+      "solid_index_b": 1,
+      "same_occurrence": false,
+      "common_volume_mm3": 4.676517645695009,
+      "operand_volume_a_mm3": 1952.1686568643763,
+      "operand_volume_b_mm3": 1156.3341319967067,
+      "parent_path_a": "100_FORWARD_PENETRATOR_WAI_AND_PRIMARY_STRUCTURE_ASSY",
+      "parent_path_b": "300_TRUE_TRANSFORM_ARM_AND_POWERTRAIN_ASSY",
+      "authorization_status": "UNAUTHORIZED_POSITIVE_VOLUME",
+      "intentional_fit_exception_id": "",
+      "authorization_reason": "NO_APPLICABLE_BOUNDED_EXCEPTION"
+    },
+    {
+      "occurrence_a": "FWD-SHELL-001",
+      "solid_index_a": 1,
+      "occurrence_b": "GLAND-BOWDEN-SHEATH-FWD",
+      "solid_index_b": 1,
+      "same_occurrence": false,
+      "common_volume_mm3": 0.2803943945771402,
+      "operand_volume_a_mm3": 100309.04735926526,
+      "operand_volume_b_mm3": 85.50233964233712,
+      "parent_path_a": "100_FORWARD_PENETRATOR_WAI_AND_PRIMARY_STRUCTURE_ASSY",
+      "parent_path_b": "300_TRUE_TRANSFORM_ARM_AND_POWERTRAIN_ASSY",
+      "authorization_status": "UNAUTHORIZED_POSITIVE_VOLUME",
+      "intentional_fit_exception_id": "",
+      "authorization_reason": "NO_APPLICABLE_BOUNDED_EXCEPTION"
+    },
+    {
+      "occurrence_a": "FWD-SHELL-001",
+      "solid_index_a": 1,
+      "occurrence_b": "GLAND-GAS-MAIN-FWD",
+      "solid_index_b": 1,
+      "same_occurrence": false,
+      "common_volume_mm3": 0.41938786942622447,
+      "operand_volume_a_mm3": 100309.04735926526,
+      "operand_volume_b_mm3": 97.87770142335802,
+      "parent_path_a": "100_FORWARD_PENETRATOR_WAI_AND_PRIMARY_STRUCTURE_ASSY",
+      "parent_path_b": "300_TRUE_TRANSFORM_ARM_AND_POWERTRAIN_ASSY",
+      "authorization_status": "UNAUTHORIZED_POSITIVE_VOLUME",
+      "intentional_fit_exception_id": "",
+      "authorization_reason": "NO_APPLICABLE_BOUNDED_EXCEPTION"
+    },
+    {
+      "occurrence_a": "FWD-SHELL-001",
+      "solid_index_a": 1,
+      "occurrence_b": "GLAND-PILOT-LINE-FWD",
+      "solid_index_b": 1,
+      "same_occurrence": false,
+      "common_volume_mm3": 0.2806678817422567,
+      "operand_volume_a_mm3": 100309.04735926526,
+      "operand_volume_b_mm3": 82.40849919708184,
+      "parent_path_a": "100_FORWARD_PENETRATOR_WAI_AND_PRIMARY_STRUCTURE_ASSY",
+      "parent_path_b": "300_TRUE_TRANSFORM_ARM_AND_POWERTRAIN_ASSY",
+      "authorization_status": "UNAUTHORIZED_POSITIVE_VOLUME",
+      "intentional_fit_exception_id": "",
+      "authorization_reason": "NO_APPLICABLE_BOUNDED_EXCEPTION"
+    },
+    {
+      "occurrence_a": "FWD-SHELL-001",
+      "solid_index_a": 1,
+      "occurrence_b": "ROUTE-BOWDEN-SHEATH-001",
+      "solid_index_b": 1,
+      "same_occurrence": false,
+      "common_volume_mm3": 23.88112926532537,
+      "operand_volume_a_mm3": 100309.04735926526,
+      "operand_volume_b_mm3": 1778.4713244121258,
+      "parent_path_a": "100_FORWARD_PENETRATOR_WAI_AND_PRIMARY_STRUCTURE_ASSY",
+      "parent_path_b": "300_TRUE_TRANSFORM_ARM_AND_POWERTRAIN_ASSY",
+      "authorization_status": "UNAUTHORIZED_POSITIVE_VOLUME",
+      "intentional_fit_exception_id": "",
+      "authorization_reason": "NO_APPLICABLE_BOUNDED_EXCEPTION"
+    },
+    {
+      "occurrence_a": "FWD-SHELL-001",
+      "solid_index_a": 1,
+      "occurrence_b": "ROUTE-BOWDEN-WIRE-001",
+      "solid_index_b": 1,
+      "same_occurrence": false,
+      "common_volume_mm3": 0.37893202665437786,
+      "operand_volume_a_mm3": 100309.04735926526,
+      "operand_volume_b_mm3": 345.4441188981762,
+      "parent_path_a": "100_FORWARD_PENETRATOR_WAI_AND_PRIMARY_STRUCTURE_ASSY",
+      "parent_path_b": "300_TRUE_TRANSFORM_ARM_AND_POWERTRAIN_ASSY",
+      "authorization_status": "UNAUTHORIZED_POSITIVE_VOLUME",
+      "intentional_fit_exception_id": "",
+      "authorization_reason": "NO_APPLICABLE_BOUNDED_EXCEPTION"
+    },
+    {
+      "occurrence_a": "FWD-SHELL-001",
+      "solid_index_a": 1,
+      "occurrence_b": "ROUTE-GAS-MAIN-001",
+      "solid_index_b": 1,
+      "same_occurrence": false,
+      "common_volume_mm3": 5.862683950516743,
+      "operand_volume_a_mm3": 100309.04735926526,
+      "operand_volume_b_mm3": 1690.2808804933827,
+      "parent_path_a": "100_FORWARD_PENETRATOR_WAI_AND_PRIMARY_STRUCTURE_ASSY",
+      "parent_path_b": "300_TRUE_TRANSFORM_ARM_AND_POWERTRAIN_ASSY",
+      "authorization_status": "UNAUTHORIZED_POSITIVE_VOLUME",
+      "intentional_fit_exception_id": "",
+      "authorization_reason": "NO_APPLICABLE_BOUNDED_EXCEPTION"
+    },
+    {
+      "occurrence_a": "FWD-SHELL-001",
+      "solid_index_a": 1,
+      "occurrence_b": "ROUTE-PILOT-LINE-001",
+      "solid_index_b": 1,
+      "same_occurrence": false,
+      "common_volume_mm3": 1.4064981703724837,
+      "operand_volume_a_mm3": 100309.04735926526,
+      "operand_volume_b_mm3": 1156.3341319967067,
+      "parent_path_a": "100_FORWARD_PENETRATOR_WAI_AND_PRIMARY_STRUCTURE_ASSY",
+      "parent_path_b": "300_TRUE_TRANSFORM_ARM_AND_POWERTRAIN_ASSY",
+      "authorization_status": "UNAUTHORIZED_POSITIVE_VOLUME",
+      "intentional_fit_exception_id": "",
+      "authorization_reason": "NO_APPLICABLE_BOUNDED_EXCEPTION"
+    },
+    {
+      "occurrence_a": "FWD-SHELL-001",
+      "solid_index_a": 1,
+      "occurrence_b": "WATER-TRIGGER-HSG-001",
+      "solid_index_b": 2,
+      "same_occurrence": false,
+      "common_volume_mm3": 0.01016530691789611,
+      "operand_volume_a_mm3": 100309.04735926526,
+      "operand_volume_b_mm3": 46.695062406632,
+      "parent_path_a": "100_FORWARD_PENETRATOR_WAI_AND_PRIMARY_STRUCTURE_ASSY",
+      "parent_path_b": "100_FORWARD_PENETRATOR_WAI_AND_PRIMARY_STRUCTURE_ASSY",
+      "authorization_status": "UNAUTHORIZED_POSITIVE_VOLUME",
+      "intentional_fit_exception_id": "",
+      "authorization_reason": "NO_APPLICABLE_BOUNDED_EXCEPTION"
+    },
+    {
+      "occurrence_a": "FWD-SHELL-001",
+      "solid_index_a": 1,
+      "occurrence_b": "WATER-TRIGGER-HSG-001",
+      "solid_index_b": 3,
+      "same_occurrence": false,
+      "common_volume_mm3": 0.010165306917902846,
+      "operand_volume_a_mm3": 100309.04735926526,
+      "operand_volume_b_mm3": 46.695062406632005,
+      "parent_path_a": "100_FORWARD_PENETRATOR_WAI_AND_PRIMARY_STRUCTURE_ASSY",
+      "parent_path_b": "100_FORWARD_PENETRATOR_WAI_AND_PRIMARY_STRUCTURE_ASSY",
+      "authorization_status": "UNAUTHORIZED_POSITIVE_VOLUME",
+      "intentional_fit_exception_id": "",
+      "authorization_reason": "NO_APPLICABLE_BOUNDED_EXCEPTION"
+    },
+    {
+      "occurrence_a": "FWD-SHELL-001",
+      "solid_index_a": 1,
+      "occurrence_b": "WATER-TRIGGER-HSG-001",
+      "solid_index_b": 4,
+      "same_occurrence": false,
+      "common_volume_mm3": 0.010165791507069118,
+      "operand_volume_a_mm3": 100309.04735926526,
+      "operand_volume_b_mm3": 46.69506240663199,
+      "parent_path_a": "100_FORWARD_PENETRATOR_WAI_AND_PRIMARY_STRUCTURE_ASSY",
+      "parent_path_b": "100_FORWARD_PENETRATOR_WAI_AND_PRIMARY_STRUCTURE_ASSY",
+      "authorization_status": "UNAUTHORIZED_POSITIVE_VOLUME",
+      "intentional_fit_exception_id": "",
+      "authorization_reason": "NO_APPLICABLE_BOUNDED_EXCEPTION"
+    },
+    {
+      "occurrence_a": "GLAND-BOWDEN-SHEATH-AFT",
+      "solid_index_a": 1,
+      "occurrence_b": "ROUTE-BOWDEN-SHEATH-001",
+      "solid_index_b": 1,
+      "same_occurrence": false,
+      "common_volume_mm3": 0.0003977706378889514,
+      "operand_volume_a_mm3": 85.50233964233712,
+      "operand_volume_b_mm3": 1778.4713244121258,
+      "parent_path_a": "300_TRUE_TRANSFORM_ARM_AND_POWERTRAIN_ASSY",
+      "parent_path_b": "300_TRUE_TRANSFORM_ARM_AND_POWERTRAIN_ASSY",
+      "authorization_status": "UNAUTHORIZED_POSITIVE_VOLUME",
+      "intentional_fit_exception_id": "",
+      "authorization_reason": "NO_APPLICABLE_BOUNDED_EXCEPTION"
+    },
+    {
+      "occurrence_a": "GLAND-GAS-MAIN-AFT",
+      "solid_index_a": 1,
+      "occurrence_b": "ROUTE-GAS-MAIN-001",
+      "solid_index_b": 1,
+      "same_occurrence": false,
+      "common_volume_mm3": 0.0006317453033052971,
+      "operand_volume_a_mm3": 97.87770142335803,
+      "operand_volume_b_mm3": 1690.2808804933827,
+      "parent_path_a": "300_TRUE_TRANSFORM_ARM_AND_POWERTRAIN_ASSY",
+      "parent_path_b": "300_TRUE_TRANSFORM_ARM_AND_POWERTRAIN_ASSY",
+      "authorization_status": "UNAUTHORIZED_POSITIVE_VOLUME",
+      "intentional_fit_exception_id": "",
+      "authorization_reason": "NO_APPLICABLE_BOUNDED_EXCEPTION"
+    },
+    {
+      "occurrence_a": "GLAND-PILOT-LINE-AFT",
+      "solid_index_a": 1,
+      "occurrence_b": "ROUTE-PILOT-LINE-001",
+      "solid_index_b": 1,
+      "same_occurrence": false,
+      "common_volume_mm3": 0.00034994702293392665,
+      "operand_volume_a_mm3": 82.40849919708184,
+      "operand_volume_b_mm3": 1156.3341319967067,
+      "parent_path_a": "300_TRUE_TRANSFORM_ARM_AND_POWERTRAIN_ASSY",
+      "parent_path_b": "300_TRUE_TRANSFORM_ARM_AND_POWERTRAIN_ASSY",
+      "authorization_status": "UNAUTHORIZED_POSITIVE_VOLUME",
+      "intentional_fit_exception_id": "",
+      "authorization_reason": "NO_APPLICABLE_BOUNDED_EXCEPTION"
+    },
+    {
+      "occurrence_a": "GS19-CLIP-FIXED",
+      "solid_index_a": 1,
+      "occurrence_b": "GS19-PIN-FIXED",
+      "solid_index_b": 1,
+      "same_occurrence": false,
+      "common_volume_mm3": 0.11335389201589932,
+      "operand_volume_a_mm3": 5.535679809607216,
+      "operand_volume_b_mm3": 165.1790512395268,
+      "parent_path_a": "300_TRUE_TRANSFORM_ARM_AND_POWERTRAIN_ASSY",
+      "parent_path_b": "300_TRUE_TRANSFORM_ARM_AND_POWERTRAIN_ASSY",
+      "authorization_status": "UNAUTHORIZED_POSITIVE_VOLUME",
+      "intentional_fit_exception_id": "",
+      "authorization_reason": "NO_APPLICABLE_BOUNDED_EXCEPTION"
+    },
+    {
+      "occurrence_a": "GS19-CLIP-MOVING",
+      "solid_index_a": 1,
+      "occurrence_b": "GS19-PIN-MOVING",
+      "solid_index_b": 1,
+      "same_occurrence": false,
+      "common_volume_mm3": 0.11335389202881532,
+      "operand_volume_a_mm3": 5.535679809607141,
+      "operand_volume_b_mm3": 165.1790512395256,
+      "parent_path_a": "300_TRUE_TRANSFORM_ARM_AND_POWERTRAIN_ASSY",
+      "parent_path_b": "300_TRUE_TRANSFORM_ARM_AND_POWERTRAIN_ASSY",
+      "authorization_status": "UNAUTHORIZED_POSITIVE_VOLUME",
+      "intentional_fit_exception_id": "",
+      "authorization_reason": "NO_APPLICABLE_BOUNDED_EXCEPTION"
+    },
+    {
+      "occurrence_a": "HARNESS-BAND-1",
+      "solid_index_a": 1,
+      "occurrence_b": "HARNESS-LEG-XN",
+      "solid_index_b": 1,
+      "same_occurrence": false,
+      "common_volume_mm3": 3.1845116708366876,
+      "operand_volume_a_mm3": 4358.640000000001,
+      "operand_volume_b_mm3": 1447.3370621272618,
+      "parent_path_a": "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY",
+      "parent_path_b": "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY",
+      "authorization_status": "DOCUMENTED_POSITIVE_VOLUME",
+      "intentional_fit_exception_id": "FIT-STITCH-XN",
+      "authorization_reason": "VALID_UNIQUE_BOUNDED_MATCH"
+    },
+    {
+      "occurrence_a": "HARNESS-BAND-1",
+      "solid_index_a": 1,
+      "occurrence_b": "HARNESS-LEG-XP",
+      "solid_index_b": 1,
+      "same_occurrence": false,
+      "common_volume_mm3": 3.184511664923312,
+      "operand_volume_a_mm3": 4358.640000000001,
+      "operand_volume_b_mm3": 1447.337062127263,
+      "parent_path_a": "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY",
+      "parent_path_b": "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY",
+      "authorization_status": "DOCUMENTED_POSITIVE_VOLUME",
+      "intentional_fit_exception_id": "FIT-STITCH-XP",
+      "authorization_reason": "VALID_UNIQUE_BOUNDED_MATCH"
+    },
+    {
+      "occurrence_a": "HARNESS-BAND-2",
+      "solid_index_a": 1,
+      "occurrence_b": "HARNESS-LEG-YN",
+      "solid_index_b": 1,
+      "same_occurrence": false,
+      "common_volume_mm3": 24.78598036279572,
+      "operand_volume_a_mm3": 4358.640000000001,
+      "operand_volume_b_mm3": 1169.112109073792,
+      "parent_path_a": "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY",
+      "parent_path_b": "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY",
+      "authorization_status": "DOCUMENTED_POSITIVE_VOLUME",
+      "intentional_fit_exception_id": "FIT-STITCH-YN",
+      "authorization_reason": "VALID_UNIQUE_BOUNDED_MATCH"
+    },
+    {
+      "occurrence_a": "HARNESS-BAND-2",
+      "solid_index_a": 1,
+      "occurrence_b": "HARNESS-LEG-YP",
+      "solid_index_b": 1,
+      "same_occurrence": false,
+      "common_volume_mm3": 24.785980362795815,
+      "operand_volume_a_mm3": 4358.640000000001,
+      "operand_volume_b_mm3": 1169.1121090737918,
+      "parent_path_a": "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY",
+      "parent_path_b": "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY",
+      "authorization_status": "DOCUMENTED_POSITIVE_VOLUME",
+      "intentional_fit_exception_id": "FIT-STITCH-YP",
+      "authorization_reason": "VALID_UNIQUE_BOUNDED_MATCH"
+    },
+    {
+      "occurrence_a": "HARNESS-LEG-XP",
+      "solid_index_a": 1,
+      "occurrence_b": "RECOVERY-TETHER-001",
+      "solid_index_b": 1,
+      "same_occurrence": false,
+      "common_volume_mm3": 18.40712043645503,
+      "operand_volume_a_mm3": 1447.337062127263,
+      "operand_volume_b_mm3": 940.6706340204921,
+      "parent_path_a": "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY",
+      "parent_path_b": "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY",
+      "authorization_status": "UNAUTHORIZED_POSITIVE_VOLUME",
+      "intentional_fit_exception_id": "",
+      "authorization_reason": "NO_APPLICABLE_BOUNDED_EXCEPTION"
+    },
+    {
+      "occurrence_a": "HARNESS-LEG-XP",
+      "solid_index_a": 1,
+      "occurrence_b": "TETHER-THIMBLE-BODY",
+      "solid_index_b": 1,
+      "same_occurrence": false,
+      "common_volume_mm3": 42.52449539116395,
+      "operand_volume_a_mm3": 1447.337062127263,
+      "operand_volume_b_mm3": 362.0893719287221,
+      "parent_path_a": "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY",
+      "parent_path_b": "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY",
+      "authorization_status": "UNAUTHORIZED_POSITIVE_VOLUME",
+      "intentional_fit_exception_id": "",
+      "authorization_reason": "NO_APPLICABLE_BOUNDED_EXCEPTION"
+    },
+    {
+      "occurrence_a": "HARNESS-LEG-XP",
+      "solid_index_a": 1,
+      "occurrence_b": "WP04-GUIDE-RAIL-1",
+      "solid_index_b": 1,
+      "same_occurrence": false,
+      "common_volume_mm3": 337.0535322397831,
+      "operand_volume_a_mm3": 1447.337062127263,
+      "operand_volume_b_mm3": 2850.0,
+      "parent_path_a": "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY",
+      "parent_path_b": "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY",
+      "authorization_status": "UNAUTHORIZED_POSITIVE_VOLUME",
+      "intentional_fit_exception_id": "",
+      "authorization_reason": "NO_APPLICABLE_BOUNDED_EXCEPTION"
+    },
+    {
+      "occurrence_a": "HARNESS-LEG-YN",
+      "solid_index_a": 1,
+      "occurrence_b": "HARNESS-TERMINAL-001",
+      "solid_index_b": 1,
+      "same_occurrence": false,
+      "common_volume_mm3": 11.987770411543341,
+      "operand_volume_a_mm3": 1169.112109073792,
+      "operand_volume_b_mm3": 2014.0933992416703,
+      "parent_path_a": "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY",
+      "parent_path_b": "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY",
+      "authorization_status": "UNAUTHORIZED_POSITIVE_VOLUME",
+      "intentional_fit_exception_id": "",
+      "authorization_reason": "NO_APPLICABLE_BOUNDED_EXCEPTION"
+    },
+    {
+      "occurrence_a": "HARNESS-LEG-YN",
+      "solid_index_a": 1,
+      "occurrence_b": "RECOVERY-TETHER-001",
+      "solid_index_b": 1,
+      "same_occurrence": false,
+      "common_volume_mm3": 4.174329584853912,
+      "operand_volume_a_mm3": 1169.112109073792,
+      "operand_volume_b_mm3": 940.6706340204921,
+      "parent_path_a": "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY",
+      "parent_path_b": "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY",
+      "authorization_status": "UNAUTHORIZED_POSITIVE_VOLUME",
+      "intentional_fit_exception_id": "",
+      "authorization_reason": "NO_APPLICABLE_BOUNDED_EXCEPTION"
+    },
+    {
+      "occurrence_a": "HARNESS-LEG-YP",
+      "solid_index_a": 1,
+      "occurrence_b": "HARNESS-TERMINAL-001",
+      "solid_index_b": 1,
+      "same_occurrence": false,
+      "common_volume_mm3": 11.987770411543316,
+      "operand_volume_a_mm3": 1169.1121090737918,
+      "operand_volume_b_mm3": 2014.0933992416703,
+      "parent_path_a": "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY",
+      "parent_path_b": "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY",
+      "authorization_status": "UNAUTHORIZED_POSITIVE_VOLUME",
+      "intentional_fit_exception_id": "",
+      "authorization_reason": "NO_APPLICABLE_BOUNDED_EXCEPTION"
+    },
+    {
+      "occurrence_a": "HARNESS-TERMINAL-001",
+      "solid_index_a": 1,
+      "occurrence_b": "RECOVERY-TETHER-001",
+      "solid_index_b": 1,
+      "same_occurrence": false,
+      "common_volume_mm3": 2.50987843804997,
+      "operand_volume_a_mm3": 2014.0933992416703,
+      "operand_volume_b_mm3": 940.6706340204921,
+      "parent_path_a": "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY",
+      "parent_path_b": "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY",
+      "authorization_status": "UNAUTHORIZED_POSITIVE_VOLUME",
+      "intentional_fit_exception_id": "",
+      "authorization_reason": "NO_APPLICABLE_BOUNDED_EXCEPTION"
+    },
+    {
+      "occurrence_a": "HBD-CLIP-FIXED",
+      "solid_index_a": 1,
+      "occurrence_b": "HBD-PIN-FIXED",
+      "solid_index_b": 1,
+      "same_occurrence": false,
+      "common_volume_mm3": 0.11335389202390922,
+      "operand_volume_a_mm3": 5.535679809607212,
+      "operand_volume_b_mm3": 165.1790512395268,
+      "parent_path_a": "300_TRUE_TRANSFORM_ARM_AND_POWERTRAIN_ASSY",
+      "parent_path_b": "300_TRUE_TRANSFORM_ARM_AND_POWERTRAIN_ASSY",
+      "authorization_status": "UNAUTHORIZED_POSITIVE_VOLUME",
+      "intentional_fit_exception_id": "",
+      "authorization_reason": "NO_APPLICABLE_BOUNDED_EXCEPTION"
+    },
+    {
+      "occurrence_a": "HBD-CLIP-MOVING",
+      "solid_index_a": 1,
+      "occurrence_b": "HBD-PIN-MOVING",
+      "solid_index_b": 1,
+      "same_occurrence": false,
+      "common_volume_mm3": 0.11335389202716048,
+      "operand_volume_a_mm3": 5.535679809607137,
+      "operand_volume_b_mm3": 165.1790512395256,
+      "parent_path_a": "300_TRUE_TRANSFORM_ARM_AND_POWERTRAIN_ASSY",
+      "parent_path_b": "300_TRUE_TRANSFORM_ARM_AND_POWERTRAIN_ASSY",
+      "authorization_status": "UNAUTHORIZED_POSITIVE_VOLUME",
+      "intentional_fit_exception_id": "",
+      "authorization_reason": "NO_APPLICABLE_BOUNDED_EXCEPTION"
+    },
+    {
+      "occurrence_a": "PIVOT-CLIP-1",
+      "solid_index_a": 1,
+      "occurrence_b": "PIVOT-PIN-1",
+      "solid_index_b": 1,
+      "same_occurrence": false,
+      "common_volume_mm3": 0.27930206921926803,
+      "operand_volume_a_mm3": 12.119297289131268,
+      "operand_volume_b_mm3": 1118.935164942853,
+      "parent_path_a": "300_TRUE_TRANSFORM_ARM_AND_POWERTRAIN_ASSY/331_ARM_1_ASSY",
+      "parent_path_b": "300_TRUE_TRANSFORM_ARM_AND_POWERTRAIN_ASSY/331_ARM_1_ASSY",
+      "authorization_status": "UNAUTHORIZED_POSITIVE_VOLUME",
+      "intentional_fit_exception_id": "",
+      "authorization_reason": "NO_APPLICABLE_BOUNDED_EXCEPTION"
+    },
+    {
+      "occurrence_a": "PIVOT-CLIP-2",
+      "solid_index_a": 1,
+      "occurrence_b": "PIVOT-PIN-2",
+      "solid_index_b": 1,
+      "same_occurrence": false,
+      "common_volume_mm3": 0.2793020692171546,
+      "operand_volume_a_mm3": 12.119297289131262,
+      "operand_volume_b_mm3": 1118.9351649428527,
+      "parent_path_a": "300_TRUE_TRANSFORM_ARM_AND_POWERTRAIN_ASSY/332_ARM_2_ASSY",
+      "parent_path_b": "300_TRUE_TRANSFORM_ARM_AND_POWERTRAIN_ASSY/332_ARM_2_ASSY",
+      "authorization_status": "UNAUTHORIZED_POSITIVE_VOLUME",
+      "intentional_fit_exception_id": "",
+      "authorization_reason": "NO_APPLICABLE_BOUNDED_EXCEPTION"
+    },
+    {
+      "occurrence_a": "PIVOT-CLIP-3",
+      "solid_index_a": 1,
+      "occurrence_b": "PIVOT-PIN-3",
+      "solid_index_b": 1,
+      "same_occurrence": false,
+      "common_volume_mm3": 0.27930206922406176,
+      "operand_volume_a_mm3": 12.119297289131266,
+      "operand_volume_b_mm3": 1118.935164942853,
+      "parent_path_a": "300_TRUE_TRANSFORM_ARM_AND_POWERTRAIN_ASSY/333_ARM_3_ASSY",
+      "parent_path_b": "300_TRUE_TRANSFORM_ARM_AND_POWERTRAIN_ASSY/333_ARM_3_ASSY",
+      "authorization_status": "UNAUTHORIZED_POSITIVE_VOLUME",
+      "intentional_fit_exception_id": "",
+      "authorization_reason": "NO_APPLICABLE_BOUNDED_EXCEPTION"
+    },
+    {
+      "occurrence_a": "RECOVERY-PIN-BODY",
+      "solid_index_a": 1,
+      "occurrence_b": "RECOVERY-PIN-CLIP-BODY",
+      "solid_index_b": 1,
+      "same_occurrence": false,
+      "common_volume_mm3": 0.18993000381493508,
+      "operand_volume_a_mm3": 404.4113318103889,
+      "operand_volume_b_mm3": 8.584663678507283,
+      "parent_path_a": "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY",
+      "parent_path_b": "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY",
+      "authorization_status": "UNAUTHORIZED_POSITIVE_VOLUME",
+      "intentional_fit_exception_id": "",
+      "authorization_reason": "NO_APPLICABLE_BOUNDED_EXCEPTION"
+    },
+    {
+      "occurrence_a": "RECOVERY-PIN-CLIP-HARNESS",
+      "solid_index_a": 1,
+      "occurrence_b": "RECOVERY-PIN-HARNESS",
+      "solid_index_b": 1,
+      "same_occurrence": false,
+      "common_volume_mm3": 0.18993000380764413,
+      "operand_volume_a_mm3": 8.584663678507283,
+      "operand_volume_b_mm3": 404.4113318103889,
+      "parent_path_a": "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY",
+      "parent_path_b": "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY",
+      "authorization_status": "UNAUTHORIZED_POSITIVE_VOLUME",
+      "intentional_fit_exception_id": "",
+      "authorization_reason": "NO_APPLICABLE_BOUNDED_EXCEPTION"
+    },
+    {
+      "occurrence_a": "RECOVERY-TETHER-001",
+      "solid_index_a": 1,
+      "occurrence_b": "TETHER-THIMBLE-BODY",
+      "solid_index_b": 1,
+      "same_occurrence": false,
+      "common_volume_mm3": 2.1480069888996702,
+      "operand_volume_a_mm3": 940.6706340204921,
+      "operand_volume_b_mm3": 362.0893719287221,
+      "parent_path_a": "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY",
+      "parent_path_b": "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY",
+      "authorization_status": "UNAUTHORIZED_POSITIVE_VOLUME",
+      "intentional_fit_exception_id": "",
+      "authorization_reason": "NO_APPLICABLE_BOUNDED_EXCEPTION"
+    },
+    {
+      "occurrence_a": "RECOVERY-TETHER-001",
+      "solid_index_a": 1,
+      "occurrence_b": "TETHER-THIMBLE-HARNESS",
+      "solid_index_b": 1,
+      "same_occurrence": false,
+      "common_volume_mm3": 7.399647835333414,
+      "operand_volume_a_mm3": 940.6706340204921,
+      "operand_volume_b_mm3": 362.0893719287221,
+      "parent_path_a": "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY",
+      "parent_path_b": "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY",
+      "authorization_status": "UNAUTHORIZED_POSITIVE_VOLUME",
+      "intentional_fit_exception_id": "",
+      "authorization_reason": "NO_APPLICABLE_BOUNDED_EXCEPTION"
+    },
+    {
+      "occurrence_a": "ROUTE-BOWDEN-SHEATH-001",
+      "solid_index_a": 1,
+      "occurrence_b": "ROUTE-PILOT-LINE-001",
+      "solid_index_b": 1,
+      "same_occurrence": false,
+      "common_volume_mm3": 4.2991320257106205,
+      "operand_volume_a_mm3": 1778.4713244121258,
+      "operand_volume_b_mm3": 1156.3341319967067,
+      "parent_path_a": "300_TRUE_TRANSFORM_ARM_AND_POWERTRAIN_ASSY",
+      "parent_path_b": "300_TRUE_TRANSFORM_ARM_AND_POWERTRAIN_ASSY",
+      "authorization_status": "UNAUTHORIZED_POSITIVE_VOLUME",
+      "intentional_fit_exception_id": "",
+      "authorization_reason": "NO_APPLICABLE_BOUNDED_EXCEPTION"
+    },
+    {
+      "occurrence_a": "ROUTE-BOWDEN-SHEATH-001",
+      "solid_index_a": 1,
+      "occurrence_b": "WP04-EJECTOR-SPRING",
+      "solid_index_b": 1,
+      "same_occurrence": false,
+      "common_volume_mm3": 2.7495382037070746,
+      "operand_volume_a_mm3": 1778.4713244121258,
+      "operand_volume_b_mm3": 3454.356943500423,
+      "parent_path_a": "300_TRUE_TRANSFORM_ARM_AND_POWERTRAIN_ASSY",
+      "parent_path_b": "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY",
+      "authorization_status": "UNAUTHORIZED_POSITIVE_VOLUME",
+      "intentional_fit_exception_id": "",
+      "authorization_reason": "NO_APPLICABLE_BOUNDED_EXCEPTION"
+    },
+    {
+      "occurrence_a": "ROUTE-BOWDEN-SHEATH-001",
+      "solid_index_a": 1,
+      "occurrence_b": "WP04-REACTION-BULKHEAD",
+      "solid_index_b": 1,
+      "same_occurrence": false,
+      "common_volume_mm3": 0.5523356637447256,
+      "operand_volume_a_mm3": 1778.4713244121258,
+      "operand_volume_b_mm3": 9055.511154735801,
+      "parent_path_a": "300_TRUE_TRANSFORM_ARM_AND_POWERTRAIN_ASSY",
+      "parent_path_b": "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY",
+      "authorization_status": "UNAUTHORIZED_POSITIVE_VOLUME",
+      "intentional_fit_exception_id": "",
+      "authorization_reason": "NO_APPLICABLE_BOUNDED_EXCEPTION"
+    },
+    {
+      "occurrence_a": "ROUTE-BOWDEN-SHEATH-001",
+      "solid_index_a": 1,
+      "occurrence_b": "WP04-SEAR-001",
+      "solid_index_b": 1,
+      "same_occurrence": false,
+      "common_volume_mm3": 4.223682827192136,
+      "operand_volume_a_mm3": 1778.4713244121258,
+      "operand_volume_b_mm3": 118.90967463745596,
+      "parent_path_a": "300_TRUE_TRANSFORM_ARM_AND_POWERTRAIN_ASSY",
+      "parent_path_b": "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY",
+      "authorization_status": "UNAUTHORIZED_POSITIVE_VOLUME",
+      "intentional_fit_exception_id": "",
+      "authorization_reason": "NO_APPLICABLE_BOUNDED_EXCEPTION"
+    },
+    {
+      "occurrence_a": "ROUTE-BOWDEN-WIRE-001",
+      "solid_index_a": 1,
+      "occurrence_b": "ROUTE-PILOT-LINE-001",
+      "solid_index_b": 1,
+      "same_occurrence": false,
+      "common_volume_mm3": 0.7390624512927404,
+      "operand_volume_a_mm3": 345.4441188981762,
+      "operand_volume_b_mm3": 1156.3341319967067,
+      "parent_path_a": "300_TRUE_TRANSFORM_ARM_AND_POWERTRAIN_ASSY",
+      "parent_path_b": "300_TRUE_TRANSFORM_ARM_AND_POWERTRAIN_ASSY",
+      "authorization_status": "UNAUTHORIZED_POSITIVE_VOLUME",
+      "intentional_fit_exception_id": "",
+      "authorization_reason": "NO_APPLICABLE_BOUNDED_EXCEPTION"
+    },
+    {
+      "occurrence_a": "ROUTE-BOWDEN-WIRE-001",
+      "solid_index_a": 1,
+      "occurrence_b": "WP04-EJECTOR-SPRING",
+      "solid_index_b": 1,
+      "same_occurrence": false,
+      "common_volume_mm3": 0.5950349250463618,
+      "operand_volume_a_mm3": 345.4441188981762,
+      "operand_volume_b_mm3": 3454.356943500423,
+      "parent_path_a": "300_TRUE_TRANSFORM_ARM_AND_POWERTRAIN_ASSY",
+      "parent_path_b": "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY",
+      "authorization_status": "UNAUTHORIZED_POSITIVE_VOLUME",
+      "intentional_fit_exception_id": "",
+      "authorization_reason": "NO_APPLICABLE_BOUNDED_EXCEPTION"
+    },
+    {
+      "occurrence_a": "ROUTE-BOWDEN-WIRE-001",
+      "solid_index_a": 1,
+      "occurrence_b": "WP04-REACTION-BULKHEAD",
+      "solid_index_b": 1,
+      "same_occurrence": false,
+      "common_volume_mm3": 0.002923907636160991,
+      "operand_volume_a_mm3": 345.4441188981762,
+      "operand_volume_b_mm3": 9055.511154735801,
+      "parent_path_a": "300_TRUE_TRANSFORM_ARM_AND_POWERTRAIN_ASSY",
+      "parent_path_b": "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY",
+      "authorization_status": "UNAUTHORIZED_POSITIVE_VOLUME",
+      "intentional_fit_exception_id": "",
+      "authorization_reason": "NO_APPLICABLE_BOUNDED_EXCEPTION"
+    },
+    {
+      "occurrence_a": "ROUTE-BOWDEN-WIRE-001",
+      "solid_index_a": 1,
+      "occurrence_b": "WP04-SEAR-001",
+      "solid_index_b": 1,
+      "same_occurrence": false,
+      "common_volume_mm3": 0.8482300164692557,
+      "operand_volume_a_mm3": 345.4441188981762,
+      "operand_volume_b_mm3": 118.90967463745596,
+      "parent_path_a": "300_TRUE_TRANSFORM_ARM_AND_POWERTRAIN_ASSY",
+      "parent_path_b": "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY",
+      "authorization_status": "UNAUTHORIZED_POSITIVE_VOLUME",
+      "intentional_fit_exception_id": "",
+      "authorization_reason": "NO_APPLICABLE_BOUNDED_EXCEPTION"
+    },
+    {
+      "occurrence_a": "ROUTE-GAS-MAIN-001",
+      "solid_index_a": 1,
+      "occurrence_b": "WP04-REACTION-BULKHEAD",
+      "solid_index_b": 1,
+      "same_occurrence": false,
+      "common_volume_mm3": 1.2823859647948566,
+      "operand_volume_a_mm3": 1690.2808804933827,
+      "operand_volume_b_mm3": 9055.511154735801,
+      "parent_path_a": "300_TRUE_TRANSFORM_ARM_AND_POWERTRAIN_ASSY",
+      "parent_path_b": "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY",
+      "authorization_status": "UNAUTHORIZED_POSITIVE_VOLUME",
+      "intentional_fit_exception_id": "",
+      "authorization_reason": "NO_APPLICABLE_BOUNDED_EXCEPTION"
+    },
+    {
+      "occurrence_a": "ROUTE-PILOT-LINE-001",
+      "solid_index_a": 1,
+      "occurrence_b": "WP04-EJECTOR-SPRING",
+      "solid_index_b": 1,
+      "same_occurrence": false,
+      "common_volume_mm3": 2.053810079923539,
+      "operand_volume_a_mm3": 1156.3341319967067,
+      "operand_volume_b_mm3": 3454.356943500423,
+      "parent_path_a": "300_TRUE_TRANSFORM_ARM_AND_POWERTRAIN_ASSY",
+      "parent_path_b": "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY",
+      "authorization_status": "UNAUTHORIZED_POSITIVE_VOLUME",
+      "intentional_fit_exception_id": "",
+      "authorization_reason": "NO_APPLICABLE_BOUNDED_EXCEPTION"
+    },
+    {
+      "occurrence_a": "ROUTE-PILOT-LINE-001",
+      "solid_index_a": 1,
+      "occurrence_b": "WP04-REACTION-BULKHEAD",
+      "solid_index_b": 1,
+      "same_occurrence": false,
+      "common_volume_mm3": 0.39854231265842205,
+      "operand_volume_a_mm3": 1156.3341319967067,
+      "operand_volume_b_mm3": 9055.511154735801,
+      "parent_path_a": "300_TRUE_TRANSFORM_ARM_AND_POWERTRAIN_ASSY",
+      "parent_path_b": "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY",
+      "authorization_status": "UNAUTHORIZED_POSITIVE_VOLUME",
+      "intentional_fit_exception_id": "",
+      "authorization_reason": "NO_APPLICABLE_BOUNDED_EXCEPTION"
+    },
+    {
+      "occurrence_a": "WP05-DOOR-001",
+      "solid_index_a": 1,
+      "occurrence_b": "WP05-DOOR-LANYARD",
+      "solid_index_b": 1,
+      "same_occurrence": false,
+      "common_volume_mm3": 22.89141327283281,
+      "operand_volume_a_mm3": 5224.905768975357,
+      "operand_volume_b_mm3": 125.52575621620309,
+      "parent_path_a": "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY",
+      "parent_path_b": "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY",
+      "authorization_status": "UNAUTHORIZED_POSITIVE_VOLUME",
+      "intentional_fit_exception_id": "",
+      "authorization_reason": "NO_APPLICABLE_BOUNDED_EXCEPTION"
+    },
+    {
+      "occurrence_a": "WP05-HINGE-CLIP",
+      "solid_index_a": 1,
+      "occurrence_b": "WP05-HINGE-PIN",
+      "solid_index_b": 1,
+      "same_occurrence": false,
+      "common_volume_mm3": 0.0751663016303719,
+      "operand_volume_a_mm3": 3.946436016810096,
+      "operand_volume_b_mm3": 124.69177591638554,
+      "parent_path_a": "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY",
+      "parent_path_b": "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY",
+      "authorization_status": "UNAUTHORIZED_POSITIVE_VOLUME",
+      "intentional_fit_exception_id": "",
+      "authorization_reason": "NO_APPLICABLE_BOUNDED_EXCEPTION"
+    }
+  ]
+}

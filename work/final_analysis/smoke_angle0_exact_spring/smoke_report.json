@@ -1,0 +1,109 @@
+{
+  "input_hashes": {
+    "validator": "b4fee2762c39371d525f448ebaf2016502cae395cbb531a6c1b0aabc78261fd1",
+    "step_stowed": "0cb1f05d0882a84959ba56b2eedcf3fac53dfb3bd59ef13488de056e871cd5ba",
+    "step_deployed": "7c78f3c08ec5cf3d39a1e9e59b9f4256886ac12dbb6c29524cae2eacc1af431f",
+    "inventory_stowed": "3b052a4dae1823dd8ffdcf2d1f8dc70a8834db394b9323713e36026146918940",
+    "inventory_deployed": "5d56618cf2aa1875d8146a049898b745f426df7f234c3829b4385a434c77bacc"
+  },
+  "runtime": {
+    "clean_reimport_seconds": 25.34298801422119,
+    "exact_motion_angle0_seconds": 753.5395278930664,
+    "total_seconds": 780.8959259986877
+  },
+  "spring_endpoint_equivalence": {
+    "occurrence_id": "BACKUP-SPRING-001",
+    "mode": "AXIAL_COMPRESSION_SPRING_KINEMATIC",
+    "endpoint_state": "STOWED",
+    "installed_length_mm": 145.00000000014006,
+    "seat_lateral_residual_mm": 0.0,
+    "seat_axis_alignment_dot": 1.0,
+    "generated_valid": true,
+    "endpoint_valid": true,
+    "generated_volume_mm3": 6907.1430526211625,
+    "endpoint_volume_mm3": 6907.14331397687,
+    "volume_delta_mm3": 0.0002613557071526884,
+    "generated_bbox_mm": [
+      -7.900004989115952,
+      -7.900005046095044,
+      -9.999999644944976e-08,
+      7.900004861407317,
+      7.900004858518104,
+      145.00000010014006
+    ],
+    "endpoint_bbox_mm": [
+      -7.900004989116743,
+      -7.900005051549228,
+      -1.0000034834842613e-07,
+      7.900004892168146,
+      7.900004858517977,
+      145.00000009999528
+    ],
+    "bbox_max_delta_mm": 3.076082855102413e-08,
+    "generated_surface_types": {
+      "BSplineSurface": 1,
+      "Plane": 2
+    },
+    "endpoint_surface_types": {
+      "BSplineSurface": 1,
+      "Plane": 2
+    },
+    "surface_types_equal": true,
+    "placement_max_matrix_delta": 0.0,
+    "validator_thresholds": {
+      "volume_delta_mm3_max": 1e-05,
+      "bbox_delta_mm_max": 1e-07,
+      "placement_matrix_delta_max": 1e-09
+    },
+    "measured_endpoint_equivalence_pass": false
+  },
+  "motion_angle0_summary": {
+    "scope": "Every inventory MOVING/FLEXIBLE/SOFTGOOD occurrence explicitly tracked; every pair with at least one active dynamic occurrence audited",
+    "scope_missing_occurrence_ids": [],
+    "scope_missing": [],
+    "track_validation_errors": [
+      "BACKUP-SPRING-001@0: analytic B-rep generation/equivalence failed: ValueError: STOWED analytic B-rep/placement does not match the clean-reimported endpoint; common_status=DONE, common_volume=6907.1430526211625, common_error="
+    ],
+    "track_validation_error_count": 1,
+    "required_scope_occurrence_count": 93,
+    "tracked_scope_occurrence_count": 93,
+    "active_dynamic_occurrence_count": 61,
+    "sample_count": 1,
+    "angle_increment_deg": 1,
+    "pair_register": "/workspace/scratch/6f4e7892e9f1/work/final_analysis/smoke_angle0_exact_spring/motion_full_mechanism_audit.csv.gz",
+    "kinematics_register": "/workspace/scratch/6f4e7892e9f1/work/final_analysis/smoke_angle0_exact_spring/motion_kinematics_1deg.csv",
+    "pair_row_count": 19419,
+    "broadphase_candidate_count": 393,
+    "positive_volume_pair_count": 0,
+    "unauthorized_positive_volume_pair_count": 0,
+    "documented_positive_volume_pair_count": 15,
+    "boolean_blocked_pair_count": 0,
+    "distance_blocked_pair_count": 0,
+    "minimum_exact_noninterfering_clearance_mm": 0.0,
+    "intentional_fit_register_errors": [],
+    "intentional_fit_register_error_count": 0,
+    "used_intentional_fit_exception_ids": [
+      "FIT-ACTUATOR-RETAINER-GS19-MOVING",
+      "FIT-ACTUATOR-RETAINER-HBD-MOVING",
+      "FIT-CIRCLIP-FULLFLOW",
+      "FIT-STOW-INHIBIT-KEEPER-1",
+      "FIT-STOW-INHIBIT-KEEPER-2",
+      "FIT-STOW-INHIBIT-KEEPER-3",
+      "FIT-THREAD-ARM-STOP-1-1",
+      "FIT-THREAD-ARM-STOP-1-2",
+      "FIT-THREAD-ARM-STOP-2-1",
+      "FIT-THREAD-ARM-STOP-2-2",
+      "FIT-THREAD-ARM-STOP-3-1",
+      "FIT-THREAD-ARM-STOP-3-2",
+      "FIT-THREAD-WP04-MOVING-SLEEVE-1",
+      "FIT-THREAD-WP04-MOVING-SLEEVE-2",
+      "FIT-THREAD-WP04-MOVING-SLEEVE-3"
+    ],
+    "unused_intentional_fit_exception_ids": [],
+    "positive_rows": [],
+    "blocked_rows": [],
+    "maximum_closure_residual_abs_mm": 3.552713678800501e-15,
+    "crosshead_travel_0_to_80_mm": 0.0,
+    "elapsed_seconds": 753.5380251407623
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "schema": "DF8_CODEX_LAST_AUDIT_FAILURE_V1",
+  "recorded_at_utc": "2026-08-22T23:15:05Z",
+  "command": "PYTHONPATH=work/r2_source work/cadenv/bin/python work/r2_source/validate_r2.py --out work/final_analysis/validation --motion-workers 8",
+  "exit_code": 1,
+  "exception_type": "KeyError",
+  "exception_message": "'angle_deg'",
+  "failure_stage": "POST_MERGE_MOTION_KINEMATICS_SCHEMA_CHECK",
+  "completed_motion_sample_count": 81,
+  "present_validation_files": [
+    "attachment_connectivity_deployed.csv",
+    "attachment_connectivity_stowed.csv",
+    "attachment_geometry_deployed.csv",
+    "attachment_geometry_stowed.csv",
+    "connectivity_summary.json",
+    "definition_of_done_audit.json",
+    "endpoint_interference_register.csv",
+    "endpoint_pair_audit_deployed.csv.gz",
+    "endpoint_pair_audit_stowed.csv.gz",
+    "endpoint_pair_summary.json",
+    "key_dimensions.json",
+    "leaf_solids_deployed.csv",
+    "leaf_solids_stowed.csv",
+    "minimum_clearance_register.csv",
+    "motion_full_mechanism_audit.csv.gz",
+    "occurrence_bom_reconciliation.csv",
+    "occurrence_bom_reconciliation.json",
+    "route_termination_audit_deployed.csv",
+    "route_termination_audit_stowed.csv",
+    "state_parity.csv",
+    "step_text_inspection.json",
+    "xcaf_occurrences_deployed.csv",
+    "xcaf_occurrences_stowed.csv"
+  ],
+  "missing_validation_files": [
+    "gate_results.json",
+    "motion_audit_summary.json",
+    "motion_kinematics_1deg.csv",
+    "validation_manifest.json",
+    "validation_summary.json"
+  ],
+  "merged_motion_audit": {
+    "path": "work/final_analysis/validation/motion_full_mechanism_audit.csv.gz",
+    "size_bytes": 22925903,
+    "sha256": "4da00e87fd63199a29c0f4e97e9f9502da604ed48cf3f8875a9300778828fee6"
+  },
+  "release_authorized": false
+}

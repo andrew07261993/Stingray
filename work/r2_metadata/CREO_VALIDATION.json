@@ -1,0 +1,13 @@
+{
+  "package_status": "CREO_VALIDATION_PENDING — WIP — NOT RELEASED",
+  "gate_id": "G18",
+  "gate_result": "BLOCKED — REQUIRED CREO REIMPORT/REGENERATION GATE NOT COMPLETED",
+  "target_cad": "PTC Creo",
+  "clean_creo_session_available": false,
+  "reimport_performed": false,
+  "regeneration_performed": false,
+  "clean_creo_passed": false,
+  "evidence_files": [],
+  "release_effect": "BLOCKS FINAL RELEASE"
+}
+

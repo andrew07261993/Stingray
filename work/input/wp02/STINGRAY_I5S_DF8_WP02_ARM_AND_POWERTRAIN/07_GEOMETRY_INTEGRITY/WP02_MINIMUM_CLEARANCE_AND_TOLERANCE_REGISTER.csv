@@ -1,0 +1,10 @@
+interface,nominal_minimum_clearance_mm,tolerance_and_environment_allowance_mm,residual_margin_mm,status
+arm-to-WP01 shell at controlled endpoints; intermediate samples zero-volume,0.8708806024674232,0.45,0.42088060246742315,PASS
+arm-to-corresponding WP01 cover at controlled endpoints; intermediate samples zero-volume,0.833050015454408,0.45,0.38305001545440803,PASS
+GS fixed body to HBD body,0.5000000000000036,0.4,0.10000000000000353,PASS
+GS fixed body to spring guide pushrod,0.49576854210631094,0.35,0.14576854210631096,PASS
+HBD body to spring guide pushrod,3.088230201170422,0.35,2.738230201170422,PASS
+backup spring wire to guide pushrod,1.9941831438557271,0.5,1.4941831438557271,PASS
+GS radial envelope to WP01 core r=18.0,0.1999999999999993,0.15,0.049999999999999295,PASS
+selected spring radial envelope to WP01 core r=18.0,0.379999999999999,0.25,0.129999999999999,PASS
+HBD used stroke to 25 mm nominal stroke after lost motion,3.125609439920776,1.5,1.6256094399207761,PASS

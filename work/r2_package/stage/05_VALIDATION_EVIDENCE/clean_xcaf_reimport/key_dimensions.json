@@ -1,0 +1,153 @@
+{
+  "stowed": {
+    "all_geometry_bbox_mm": {
+      "xmin": -28.5,
+      "ymin": -29.3,
+      "zmin": 0.0,
+      "xmax": 33.25,
+      "ymax": 28.5,
+      "zmax": 2031.0000001
+    },
+    "rigid_geometry_bbox_mm": {
+      "xmin": -28.5,
+      "ymin": -29.3,
+      "zmin": 0.0,
+      "xmax": 31.631513711336,
+      "ymax": 28.5,
+      "zmax": 2031.0000001
+    },
+    "rigid_length_mm": 2031.0000001,
+    "all_geometry_length_mm": 2031.0000001,
+    "solid_count": 233,
+    "invalid_solid_count": 0,
+    "face_count": 2677,
+    "surface_type_counts": {
+      "BSplineSurface": 5,
+      "Cone": 5,
+      "Cylinder": 875,
+      "Plane": 1732,
+      "Sphere": 44,
+      "Torus": 16
+    }
+  },
+  "deployed": {
+    "all_geometry_bbox_mm": {
+      "xmin": -376.92833709596425,
+      "ymin": -646.00032596723,
+      "zmin": 0.0,
+      "xmax": 742.1338475170329,
+      "ymax": 646.0003259672354,
+      "zmax": 2520.25
+    },
+    "rigid_geometry_bbox_mm": {
+      "xmin": -376.92833709596425,
+      "ymin": -646.00032596723,
+      "zmin": 0.0,
+      "xmax": 742.1338475170329,
+      "ymax": 646.0003259672354,
+      "zmax": 2031.0000001
+    },
+    "rigid_length_mm": 2031.0000001,
+    "all_geometry_length_mm": 2520.25,
+    "solid_count": 223,
+    "invalid_solid_count": 0,
+    "face_count": 2649,
+    "surface_type_counts": {
+      "BSplineSurface": 5,
+      "Cone": 5,
+      "Cylinder": 880,
+      "Plane": 1683,
+      "Sphere": 60,
+      "Torus": 16
+    }
+  },
+  "arm_module_stowed_bbox_mm": {
+    "xmin": -28.5,
+    "ymin": -28.500000000000004,
+    "zmin": 850.0,
+    "xmax": 28.5,
+    "ymax": 28.5,
+    "zmax": 1745.0
+  },
+  "arm_module_stowed_xy_span_mm": 57.0,
+  "normal_body_oml_xy_spans_mm": {
+    "FWD-SHELL-001": 53.00000020118784,
+    "AFT-SHELL-001": 53.0000002,
+    "FIXED-SECTOR-1": 30.39117323251205,
+    "FIXED-SECTOR-2": 35.09270409356451,
+    "FIXED-SECTOR-3": 30.391173232514298
+  },
+  "arms": [
+    {
+      "state": "STOWED",
+      "arm_index": 1,
+      "required_clock_deg": 0.0,
+      "measured_axis_clock_deg": 0.0,
+      "measured_axis_angle_deg": 0.0,
+      "local_geometry_min_from_pivot_mm": -10.0,
+      "local_pivot_to_tip_extent_mm": 733.806
+    },
+    {
+      "state": "STOWED",
+      "arm_index": 2,
+      "required_clock_deg": 120.0,
+      "measured_axis_clock_deg": 120.0,
+      "measured_axis_angle_deg": 0.0,
+      "local_geometry_min_from_pivot_mm": -10.0,
+      "local_pivot_to_tip_extent_mm": 733.806
+    },
+    {
+      "state": "STOWED",
+      "arm_index": 3,
+      "required_clock_deg": 240.0,
+      "measured_axis_clock_deg": 240.0,
+      "measured_axis_angle_deg": 0.0,
+      "local_geometry_min_from_pivot_mm": -10.0,
+      "local_pivot_to_tip_extent_mm": 733.806
+    },
+    {
+      "state": "DEPLOYED",
+      "arm_index": 1,
+      "required_clock_deg": 0.0,
+      "measured_axis_clock_deg": 0.0,
+      "measured_axis_angle_deg": 79.999999999994,
+      "local_geometry_min_from_pivot_mm": -10.0,
+      "local_pivot_to_tip_extent_mm": 733.806
+    },
+    {
+      "state": "DEPLOYED",
+      "arm_index": 2,
+      "required_clock_deg": 120.0,
+      "measured_axis_clock_deg": 120.00000000000765,
+      "measured_axis_angle_deg": 79.99999999999174,
+      "local_geometry_min_from_pivot_mm": -10.0,
+      "local_pivot_to_tip_extent_mm": 733.806
+    },
+    {
+      "state": "DEPLOYED",
+      "arm_index": 3,
+      "required_clock_deg": 240.0,
+      "measured_axis_clock_deg": 239.99999999999235,
+      "measured_axis_angle_deg": 79.99999999999174,
+      "local_geometry_min_from_pivot_mm": -10.0,
+      "local_pivot_to_tip_extent_mm": 733.806
+    }
+  ],
+  "crosshead_z_mm": {
+    "STOWED": 928.02636328886,
+    "DEPLOYED": 912.97132891773
+  },
+  "crosshead_travel_from_reimported_transforms_mm": 15.055034371129977,
+  "crosshead_travel_from_independent_closure_equation_mm": 15.05503437113498,
+  "mass_rollup_from_authoring_inventory_kg": 11.844640713435926,
+  "mass_unresolved_occurrence_ids": [
+    "WATER-BOBBIN-001",
+    "HARNESS-BAND-1",
+    "HARNESS-BAND-2",
+    "HARNESS-LEG-XP",
+    "HARNESS-LEG-XN",
+    "HARNESS-LEG-YP",
+    "HARNESS-LEG-YN"
+  ],
+  "mass_reserve_using_resolved_mass_only_kg": 6.295359286564075
+}

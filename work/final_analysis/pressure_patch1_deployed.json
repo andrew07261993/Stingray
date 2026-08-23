@@ -1,0 +1,617 @@
+{
+  "state": "DEPLOYED",
+  "method": "Per-constituent-solid BRepAlgoAPI_Common; no occurrence-compound Boolean",
+  "source_files_sha256_at_import": {
+    "build_r2.py": "b2e946e355b3e42e385a9a0054cfaaa806db666e33b7401d062565c5277c3def",
+    "r2_geometry.py": "37c7b7f7188013b3efb422c23bfd42820a4713fb34fb175c4b028590948474a7"
+  },
+  "summary": {
+    "occurrences": 206,
+    "solid_records": 238,
+    "expected_solid_pairs": 28203,
+    "broadphase_solid_pairs": 961,
+    "invalid_solid_records": 0,
+    "positive_solid_pairs": 38,
+    "documented_positive_solid_pairs": 35,
+    "unauthorized_positive_solid_pairs": 3,
+    "blocked_solid_pairs": 0,
+    "register_error_count": 0,
+    "unused_valid_exception_count": 0,
+    "elapsed_seconds": 43.58756647800328
+  },
+  "invalid_solid_records": [],
+  "all_positive_solid_pairs": [
+    {
+      "occurrence_a": "BUOY-GORE-01",
+      "solid_index_a": 1,
+      "occurrence_b": "BUOY-GORE-08",
+      "solid_index_b": 1,
+      "common_volume_mm3": 371.27246432355605,
+      "matching_exception_ids": [
+        "FIT-RF-SEAM-08-01"
+      ],
+      "accepted_exception_ids": [
+        "FIT-RF-SEAM-08-01"
+      ],
+      "documented": true
+    },
+    {
+      "occurrence_a": "BUOY-GORE-01",
+      "solid_index_a": 1,
+      "occurrence_b": "BUOY-GORE-02",
+      "solid_index_b": 1,
+      "common_volume_mm3": 371.2724643235415,
+      "matching_exception_ids": [
+        "FIT-RF-SEAM-01-02"
+      ],
+      "accepted_exception_ids": [
+        "FIT-RF-SEAM-01-02"
+      ],
+      "documented": true
+    },
+    {
+      "occurrence_a": "BUOY-GORE-04",
+      "solid_index_a": 1,
+      "occurrence_b": "BUOY-GORE-05",
+      "solid_index_b": 1,
+      "common_volume_mm3": 371.2724643235415,
+      "matching_exception_ids": [
+        "FIT-RF-SEAM-04-05"
+      ],
+      "accepted_exception_ids": [
+        "FIT-RF-SEAM-04-05"
+      ],
+      "documented": true
+    },
+    {
+      "occurrence_a": "BUOY-GORE-02",
+      "solid_index_a": 1,
+      "occurrence_b": "BUOY-GORE-03",
+      "solid_index_b": 1,
+      "common_volume_mm3": 371.2724643235124,
+      "matching_exception_ids": [
+        "FIT-RF-SEAM-02-03"
+      ],
+      "accepted_exception_ids": [
+        "FIT-RF-SEAM-02-03"
+      ],
+      "documented": true
+    },
+    {
+      "occurrence_a": "BUOY-GORE-06",
+      "solid_index_a": 1,
+      "occurrence_b": "BUOY-GORE-07",
+      "solid_index_b": 1,
+      "common_volume_mm3": 371.2724643235124,
+      "matching_exception_ids": [
+        "FIT-RF-SEAM-06-07"
+      ],
+      "accepted_exception_ids": [
+        "FIT-RF-SEAM-06-07"
+      ],
+      "documented": true
+    },
+    {
+      "occurrence_a": "BUOY-GORE-07",
+      "solid_index_a": 1,
+      "occurrence_b": "BUOY-GORE-08",
+      "solid_index_b": 1,
+      "common_volume_mm3": 371.2724643235124,
+      "matching_exception_ids": [
+        "FIT-RF-SEAM-07-08"
+      ],
+      "accepted_exception_ids": [
+        "FIT-RF-SEAM-07-08"
+      ],
+      "documented": true
+    },
+    {
+      "occurrence_a": "BUOY-GORE-03",
+      "solid_index_a": 1,
+      "occurrence_b": "BUOY-GORE-04",
+      "solid_index_b": 1,
+      "common_volume_mm3": 371.2724643234833,
+      "matching_exception_ids": [
+        "FIT-RF-SEAM-03-04"
+      ],
+      "accepted_exception_ids": [
+        "FIT-RF-SEAM-03-04"
+      ],
+      "documented": true
+    },
+    {
+      "occurrence_a": "BUOY-GORE-05",
+      "solid_index_a": 1,
+      "occurrence_b": "BUOY-GORE-06",
+      "solid_index_b": 1,
+      "common_volume_mm3": 371.27246432343964,
+      "matching_exception_ids": [
+        "FIT-RF-SEAM-05-06"
+      ],
+      "accepted_exception_ids": [
+        "FIT-RF-SEAM-05-06"
+      ],
+      "documented": true
+    },
+    {
+      "occurrence_a": "HARNESS-BAND-2",
+      "solid_index_a": 1,
+      "occurrence_b": "HARNESS-LEG-YN",
+      "solid_index_b": 1,
+      "common_volume_mm3": 74.70104091578796,
+      "matching_exception_ids": [
+        "FIT-STITCH-YN"
+      ],
+      "accepted_exception_ids": [
+        "FIT-STITCH-YN"
+      ],
+      "documented": true
+    },
+    {
+      "occurrence_a": "HARNESS-BAND-2",
+      "solid_index_a": 1,
+      "occurrence_b": "HARNESS-LEG-YP",
+      "solid_index_b": 1,
+      "common_volume_mm3": 74.70104091570002,
+      "matching_exception_ids": [
+        "FIT-STITCH-YP"
+      ],
+      "accepted_exception_ids": [
+        "FIT-STITCH-YP"
+      ],
+      "documented": true
+    },
+    {
+      "occurrence_a": "HARNESS-LEG-XN",
+      "solid_index_a": 1,
+      "occurrence_b": "HARNESS-TERMINAL-001",
+      "solid_index_b": 1,
+      "common_volume_mm3": 25.159801498887674,
+      "matching_exception_ids": [
+        "FIT-TERMINAL-LOOP-XN"
+      ],
+      "accepted_exception_ids": [
+        "FIT-TERMINAL-LOOP-XN"
+      ],
+      "documented": true
+    },
+    {
+      "occurrence_a": "HARNESS-LEG-XP",
+      "solid_index_a": 1,
+      "occurrence_b": "HARNESS-TERMINAL-001",
+      "solid_index_b": 1,
+      "common_volume_mm3": 25.159801498887642,
+      "matching_exception_ids": [
+        "FIT-TERMINAL-LOOP-XP"
+      ],
+      "accepted_exception_ids": [
+        "FIT-TERMINAL-LOOP-XP"
+      ],
+      "documented": true
+    },
+    {
+      "occurrence_a": "HARNESS-BAND-1",
+      "solid_index_a": 1,
+      "occurrence_b": "HARNESS-LEG-XN",
+      "solid_index_b": 1,
+      "common_volume_mm3": 17.859141227071536,
+      "matching_exception_ids": [
+        "FIT-STITCH-XN"
+      ],
+      "accepted_exception_ids": [
+        "FIT-STITCH-XN"
+      ],
+      "documented": true
+    },
+    {
+      "occurrence_a": "HARNESS-BAND-1",
+      "solid_index_a": 1,
+      "occurrence_b": "HARNESS-LEG-XP",
+      "solid_index_b": 1,
+      "common_volume_mm3": 17.859141227049086,
+      "matching_exception_ids": [
+        "FIT-STITCH-XP"
+      ],
+      "accepted_exception_ids": [
+        "FIT-STITCH-XP"
+      ],
+      "documented": true
+    },
+    {
+      "occurrence_a": "BOOSTER-AFT-CLOSURE-3",
+      "solid_index_a": 1,
+      "occurrence_b": "FWD-RING-02",
+      "solid_index_b": 1,
+      "common_volume_mm3": 4.752237482285941,
+      "matching_exception_ids": [],
+      "accepted_exception_ids": [],
+      "documented": false
+    },
+    {
+      "occurrence_a": "BOOSTER-AFT-CLOSURE-1",
+      "solid_index_a": 1,
+      "occurrence_b": "FWD-RING-02",
+      "solid_index_b": 1,
+      "common_volume_mm3": 4.752237482285849,
+      "matching_exception_ids": [],
+      "accepted_exception_ids": [],
+      "documented": false
+    },
+    {
+      "occurrence_a": "BOOSTER-AFT-CLOSURE-2",
+      "solid_index_a": 1,
+      "occurrence_b": "FWD-RING-02",
+      "solid_index_b": 1,
+      "common_volume_mm3": 4.752237482285751,
+      "matching_exception_ids": [],
+      "accepted_exception_ids": [],
+      "documented": false
+    },
+    {
+      "occurrence_a": "DOOR-DETENT-2",
+      "solid_index_a": 1,
+      "occurrence_b": "WP05-SERVICE-THROAT",
+      "solid_index_b": 1,
+      "common_volume_mm3": 2.528513630621478,
+      "matching_exception_ids": [
+        "FIT-DETENT-THREAD-2"
+      ],
+      "accepted_exception_ids": [
+        "FIT-DETENT-THREAD-2"
+      ],
+      "documented": true
+    },
+    {
+      "occurrence_a": "DOOR-DETENT-4",
+      "solid_index_a": 1,
+      "occurrence_b": "WP05-SERVICE-THROAT",
+      "solid_index_b": 1,
+      "common_volume_mm3": 2.5285136305424167,
+      "matching_exception_ids": [
+        "FIT-DETENT-THREAD-4"
+      ],
+      "accepted_exception_ids": [
+        "FIT-DETENT-THREAD-4"
+      ],
+      "documented": true
+    },
+    {
+      "occurrence_a": "DOOR-DETENT-3",
+      "solid_index_a": 1,
+      "occurrence_b": "WP05-SERVICE-THROAT",
+      "solid_index_b": 1,
+      "common_volume_mm3": 2.52850449159064,
+      "matching_exception_ids": [
+        "FIT-DETENT-THREAD-3"
+      ],
+      "accepted_exception_ids": [
+        "FIT-DETENT-THREAD-3"
+      ],
+      "documented": true
+    },
+    {
+      "occurrence_a": "DOOR-DETENT-1",
+      "solid_index_a": 1,
+      "occurrence_b": "WP05-SERVICE-THROAT",
+      "solid_index_b": 1,
+      "common_volume_mm3": 2.528504491509576,
+      "matching_exception_ids": [
+        "FIT-DETENT-THREAD-1"
+      ],
+      "accepted_exception_ids": [
+        "FIT-DETENT-THREAD-1"
+      ],
+      "documented": true
+    },
+    {
+      "occurrence_a": "PIVOT-CLIP-3",
+      "solid_index_a": 1,
+      "occurrence_b": "PIVOT-PIN-3",
+      "solid_index_b": 1,
+      "common_volume_mm3": 0.27930206922406176,
+      "matching_exception_ids": [
+        "FIT-PIVOT-RETAINER-3"
+      ],
+      "accepted_exception_ids": [
+        "FIT-PIVOT-RETAINER-3"
+      ],
+      "documented": true
+    },
+    {
+      "occurrence_a": "PIVOT-CLIP-1",
+      "solid_index_a": 1,
+      "occurrence_b": "PIVOT-PIN-1",
+      "solid_index_b": 1,
+      "common_volume_mm3": 0.27930206921926803,
+      "matching_exception_ids": [
+        "FIT-PIVOT-RETAINER-1"
+      ],
+      "accepted_exception_ids": [
+        "FIT-PIVOT-RETAINER-1"
+      ],
+      "documented": true
+    },
+    {
+      "occurrence_a": "PIVOT-CLIP-2",
+      "solid_index_a": 1,
+      "occurrence_b": "PIVOT-PIN-2",
+      "solid_index_b": 1,
+      "common_volume_mm3": 0.2793020692171546,
+      "matching_exception_ids": [
+        "FIT-PIVOT-RETAINER-2"
+      ],
+      "accepted_exception_ids": [
+        "FIT-PIVOT-RETAINER-2"
+      ],
+      "documented": true
+    },
+    {
+      "occurrence_a": "RECOVERY-PIN-BODY",
+      "solid_index_a": 1,
+      "occurrence_b": "RECOVERY-PIN-CLIP-BODY",
+      "solid_index_b": 1,
+      "common_volume_mm3": 0.18993000381493508,
+      "matching_exception_ids": [
+        "FIT-RECOVERY-RETAINER-BODY"
+      ],
+      "accepted_exception_ids": [
+        "FIT-RECOVERY-RETAINER-BODY"
+      ],
+      "documented": true
+    },
+    {
+      "occurrence_a": "RECOVERY-PIN-CLIP-HARNESS",
+      "solid_index_a": 1,
+      "occurrence_b": "RECOVERY-PIN-HARNESS",
+      "solid_index_b": 1,
+      "common_volume_mm3": 0.18993000380764413,
+      "matching_exception_ids": [
+        "FIT-RECOVERY-RETAINER-HARNESS"
+      ],
+      "accepted_exception_ids": [
+        "FIT-RECOVERY-RETAINER-HARNESS"
+      ],
+      "documented": true
+    },
+    {
+      "occurrence_a": "HBD-CLIP-FIXED",
+      "solid_index_a": 1,
+      "occurrence_b": "HBD-PIN-FIXED",
+      "solid_index_b": 1,
+      "common_volume_mm3": 0.11335389202390922,
+      "matching_exception_ids": [
+        "FIT-ACTUATOR-RETAINER-HBD-FIXED"
+      ],
+      "accepted_exception_ids": [
+        "FIT-ACTUATOR-RETAINER-HBD-FIXED"
+      ],
+      "documented": true
+    },
+    {
+      "occurrence_a": "GS19-CLIP-MOVING",
+      "solid_index_a": 1,
+      "occurrence_b": "GS19-PIN-MOVING",
+      "solid_index_b": 1,
+      "common_volume_mm3": 0.11335389202152094,
+      "matching_exception_ids": [
+        "FIT-ACTUATOR-RETAINER-GS19-MOVING"
+      ],
+      "accepted_exception_ids": [
+        "FIT-ACTUATOR-RETAINER-GS19-MOVING"
+      ],
+      "documented": true
+    },
+    {
+      "occurrence_a": "HBD-CLIP-MOVING",
+      "solid_index_a": 1,
+      "occurrence_b": "HBD-PIN-MOVING",
+      "solid_index_b": 1,
+      "common_volume_mm3": 0.11335389202150878,
+      "matching_exception_ids": [
+        "FIT-ACTUATOR-RETAINER-HBD-MOVING"
+      ],
+      "accepted_exception_ids": [
+        "FIT-ACTUATOR-RETAINER-HBD-MOVING"
+      ],
+      "documented": true
+    },
+    {
+      "occurrence_a": "GS19-CLIP-FIXED",
+      "solid_index_a": 1,
+      "occurrence_b": "GS19-PIN-FIXED",
+      "solid_index_b": 1,
+      "common_volume_mm3": 0.11335389201589932,
+      "matching_exception_ids": [
+        "FIT-ACTUATOR-RETAINER-GS19-FIXED"
+      ],
+      "accepted_exception_ids": [
+        "FIT-ACTUATOR-RETAINER-GS19-FIXED"
+      ],
+      "documented": true
+    },
+    {
+      "occurrence_a": "WP05-HINGE-CLIP",
+      "solid_index_a": 1,
+      "occurrence_b": "WP05-HINGE-PIN",
+      "solid_index_b": 1,
+      "common_volume_mm3": 0.0751663016303719,
+      "matching_exception_ids": [
+        "FIT-HINGE-RETAINER"
+      ],
+      "accepted_exception_ids": [
+        "FIT-HINGE-RETAINER"
+      ],
+      "documented": true
+    },
+    {
+      "occurrence_a": "AFT-SHELL-001",
+      "solid_index_a": 1,
+      "occurrence_b": "WP04-MANIFOLD-BRACKET",
+      "solid_index_b": 1,
+      "common_volume_mm3": 0.05271327920410775,
+      "matching_exception_ids": [
+        "FIT-MANIFOLD-BRACKET-WELD"
+      ],
+      "accepted_exception_ids": [
+        "FIT-MANIFOLD-BRACKET-WELD"
+      ],
+      "documented": true
+    },
+    {
+      "occurrence_a": "ROUTE-PILOT-LINE-001",
+      "solid_index_a": 1,
+      "occurrence_b": "WP04-LATCH-001",
+      "solid_index_b": 1,
+      "common_volume_mm3": 0.03241992548671135,
+      "matching_exception_ids": [
+        "FIT-PILOT-LATCH-PORT"
+      ],
+      "accepted_exception_ids": [
+        "FIT-PILOT-LATCH-PORT"
+      ],
+      "documented": true
+    },
+    {
+      "occurrence_a": "RECOVERY-TETHER-001",
+      "solid_index_a": 1,
+      "occurrence_b": "TETHER-THIMBLE-BODY",
+      "solid_index_b": 1,
+      "common_volume_mm3": 0.002356560762665758,
+      "matching_exception_ids": [
+        "FIT-TETHER-SPLICE-BODY"
+      ],
+      "accepted_exception_ids": [
+        "FIT-TETHER-SPLICE-BODY"
+      ],
+      "documented": true
+    },
+    {
+      "occurrence_a": "RECOVERY-TETHER-001",
+      "solid_index_a": 1,
+      "occurrence_b": "TETHER-THIMBLE-HARNESS",
+      "solid_index_b": 1,
+      "common_volume_mm3": 0.002298583021998967,
+      "matching_exception_ids": [
+        "FIT-TETHER-SPLICE-HARNESS"
+      ],
+      "accepted_exception_ids": [
+        "FIT-TETHER-SPLICE-HARNESS"
+      ],
+      "documented": true
+    },
+    {
+      "occurrence_a": "GLAND-GAS-MAIN-AFT",
+      "solid_index_a": 1,
+      "occurrence_b": "ROUTE-GAS-MAIN-001",
+      "solid_index_b": 1,
+      "common_volume_mm3": 0.0006317453033052971,
+      "matching_exception_ids": [
+        "FIT-GLAND-GAS-MAIN-AFT-ROUTE"
+      ],
+      "accepted_exception_ids": [
+        "FIT-GLAND-GAS-MAIN-AFT-ROUTE"
+      ],
+      "documented": true
+    },
+    {
+      "occurrence_a": "GLAND-BOWDEN-SHEATH-AFT",
+      "solid_index_a": 1,
+      "occurrence_b": "ROUTE-BOWDEN-SHEATH-001",
+      "solid_index_b": 1,
+      "common_volume_mm3": 0.0003977706378889514,
+      "matching_exception_ids": [
+        "FIT-GLAND-BOWDEN-SHEATH-AFT-ROUTE"
+      ],
+      "accepted_exception_ids": [
+        "FIT-GLAND-BOWDEN-SHEATH-AFT-ROUTE"
+      ],
+      "documented": true
+    },
+    {
+      "occurrence_a": "GLAND-PILOT-LINE-AFT",
+      "solid_index_a": 1,
+      "occurrence_b": "ROUTE-PILOT-LINE-001",
+      "solid_index_b": 1,
+      "common_volume_mm3": 0.00034994188412250425,
+      "matching_exception_ids": [
+        "FIT-GLAND-PILOT-LINE-AFT-ROUTE"
+      ],
+      "accepted_exception_ids": [
+        "FIT-GLAND-PILOT-LINE-AFT-ROUTE"
+      ],
+      "documented": true
+    }
+  ],
+  "unauthorized_positive_solid_pairs": [
+    {
+      "occurrence_a": "BOOSTER-AFT-CLOSURE-3",
+      "solid_index_a": 1,
+      "occurrence_b": "FWD-RING-02",
+      "solid_index_b": 1,
+      "common_volume_mm3": 4.752237482285941,
+      "matching_exception_ids": [],
+      "accepted_exception_ids": [],
+      "documented": false
+    },
+    {
+      "occurrence_a": "BOOSTER-AFT-CLOSURE-1",
+      "solid_index_a": 1,
+      "occurrence_b": "FWD-RING-02",
+      "solid_index_b": 1,
+      "common_volume_mm3": 4.752237482285849,
+      "matching_exception_ids": [],
+      "accepted_exception_ids": [],
+      "documented": false
+    },
+    {
+      "occurrence_a": "BOOSTER-AFT-CLOSURE-2",
+      "solid_index_a": 1,
+      "occurrence_b": "FWD-RING-02",
+      "solid_index_b": 1,
+      "common_volume_mm3": 4.752237482285751,
+      "matching_exception_ids": [],
+      "accepted_exception_ids": [],
+      "documented": false
+    }
+  ],
+  "blocked_solid_pairs": [],
+  "intentional_fit_register_errors": [],
+  "used_intentional_fit_exception_ids": [
+    "FIT-ACTUATOR-RETAINER-GS19-FIXED",
+    "FIT-ACTUATOR-RETAINER-GS19-MOVING",
+    "FIT-ACTUATOR-RETAINER-HBD-FIXED",
+    "FIT-ACTUATOR-RETAINER-HBD-MOVING",
+    "FIT-DETENT-THREAD-1",
+    "FIT-DETENT-THREAD-2",
+    "FIT-DETENT-THREAD-3",
+    "FIT-DETENT-THREAD-4",
+    "FIT-GLAND-BOWDEN-SHEATH-AFT-ROUTE",
+    "FIT-GLAND-GAS-MAIN-AFT-ROUTE",
+    "FIT-GLAND-PILOT-LINE-AFT-ROUTE",
+    "FIT-HINGE-RETAINER",
+    "FIT-MANIFOLD-BRACKET-WELD",
+    "FIT-PILOT-LATCH-PORT",
+    "FIT-PIVOT-RETAINER-1",
+    "FIT-PIVOT-RETAINER-2",
+    "FIT-PIVOT-RETAINER-3",
+    "FIT-RECOVERY-RETAINER-BODY",
+    "FIT-RECOVERY-RETAINER-HARNESS",
+    "FIT-RF-SEAM-01-02",
+    "FIT-RF-SEAM-02-03",
+    "FIT-RF-SEAM-03-04",
+    "FIT-RF-SEAM-04-05",
+    "FIT-RF-SEAM-05-06",
+    "FIT-RF-SEAM-06-07",
+    "FIT-RF-SEAM-07-08",
+    "FIT-RF-SEAM-08-01",
+    "FIT-STITCH-XN",
+    "FIT-STITCH-XP",
+    "FIT-STITCH-YN",
+    "FIT-STITCH-YP",
+    "FIT-TERMINAL-LOOP-XN",
+    "FIT-TERMINAL-LOOP-XP",
+    "FIT-TETHER-SPLICE-BODY",
+    "FIT-TETHER-SPLICE-HARNESS"
+  ],
+  "unused_valid_intentional_fit_exception_ids": []
+}

@@ -1,0 +1,185 @@
+{
+  "packages": [
+    {
+      "name": "aiohappyeyeballs",
+      "version": "2.7.1"
+    },
+    {
+      "name": "aiohttp",
+      "version": "3.14.3"
+    },
+    {
+      "name": "aiosignal",
+      "version": "1.4.0"
+    },
+    {
+      "name": "attrs",
+      "version": "26.1.0"
+    },
+    {
+      "name": "cadquery",
+      "version": "2.8.0"
+    },
+    {
+      "name": "cadquery-ocp",
+      "version": "7.9.3.1.1"
+    },
+    {
+      "name": "cadquery-ocp-proxy",
+      "version": "7.9.3.1.1"
+    },
+    {
+      "name": "casadi",
+      "version": "3.7.2"
+    },
+    {
+      "name": "contourpy",
+      "version": "1.3.3"
+    },
+    {
+      "name": "cycler",
+      "version": "0.12.1"
+    },
+    {
+      "name": "ezdxf",
+      "version": "1.4.4"
+    },
+    {
+      "name": "fonttools",
+      "version": "4.63.0"
+    },
+    {
+      "name": "frozenlist",
+      "version": "1.8.0"
+    },
+    {
+      "name": "idna",
+      "version": "3.19"
+    },
+    {
+      "name": "kiwisolver",
+      "version": "1.5.0"
+    },
+    {
+      "name": "llvmlite",
+      "version": "0.49.0"
+    },
+    {
+      "name": "matplotlib",
+      "version": "3.11.1"
+    },
+    {
+      "name": "more-itertools",
+      "version": "11.1.0"
+    },
+    {
+      "name": "msgpack",
+      "version": "1.2.1"
+    },
+    {
+      "name": "multidict",
+      "version": "6.7.1"
+    },
+    {
+      "name": "multimethod",
+      "version": "1.12"
+    },
+    {
+      "name": "nlopt",
+      "version": "2.11.0"
+    },
+    {
+      "name": "numba",
+      "version": "0.67.0"
+    },
+    {
+      "name": "numpy",
+      "version": "2.5.2"
+    },
+    {
+      "name": "packaging",
+      "version": "26.3"
+    },
+    {
+      "name": "pillow",
+      "version": "12.3.0"
+    },
+    {
+      "name": "pip",
+      "version": "25.0.1"
+    },
+    {
+      "name": "propcache",
+      "version": "0.5.2"
+    },
+    {
+      "name": "pyparsing",
+      "version": "3.3.2"
+    },
+    {
+      "name": "python-dateutil",
+      "version": "2.9.0.post0"
+    },
+    {
+      "name": "PyYAML",
+      "version": "6.0.3"
+    },
+    {
+      "name": "runtype",
+      "version": "0.5.3"
+    },
+    {
+      "name": "scipy",
+      "version": "1.18.0"
+    },
+    {
+      "name": "six",
+      "version": "1.17.0"
+    },
+    {
+      "name": "trame",
+      "version": "3.13.2"
+    },
+    {
+      "name": "trame-client",
+      "version": "3.13.6"
+    },
+    {
+      "name": "trame-common",
+      "version": "1.2.7"
+    },
+    {
+      "name": "trame-components",
+      "version": "2.5.0"
+    },
+    {
+      "name": "trame-server",
+      "version": "3.14.0"
+    },
+    {
+      "name": "trame-vtk",
+      "version": "2.11.16"
+    },
+    {
+      "name": "trame-vuetify",
+      "version": "3.2.5"
+    },
+    {
+      "name": "typing_extensions",
+      "version": "4.16.0"
+    },
+    {
+      "name": "vtk",
+      "version": "9.6.2"
+    },
+    {
+      "name": "wslink",
+      "version": "2.5.7"
+    },
+    {
+      "name": "yarl",
+      "version": "1.24.5"
+    }
+  ],
+  "schema": "DF8_HANDOFF_PINNED_PYTHON_PACKAGES_V1"
+}

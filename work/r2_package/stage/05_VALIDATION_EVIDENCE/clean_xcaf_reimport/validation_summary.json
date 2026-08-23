@@ -1,0 +1,33 @@
+{
+  "validation_status": "NOT_RELEASED",
+  "required_package_label": "CREO_VALIDATION_PENDING \u2014 WIP \u2014 NOT RELEASED",
+  "validator_scope": "Clean-process OCCT/XCAF AP242 endpoint reimport plus exhaustive endpoint pair audit; partial principal-arm motion sweep",
+  "validator_limit": "No Creo installation/session was available. Full-mechanism motion reconstruction is not completed by this validator.",
+  "authoring_manifest_release_status": "CREO_VALIDATION_PENDING \u2014 WIP \u2014 NOT RELEASED",
+  "endpoint_pair_counts": {
+    "STOWED": {
+      "solid_count": 233,
+      "unordered_pairs": 27028,
+      "positive_volume_pairs": 213,
+      "boolean_blocked_pairs": 0
+    },
+    "DEPLOYED": {
+      "solid_count": 223,
+      "unordered_pairs": 24753,
+      "positive_volume_pairs": 147,
+      "boolean_blocked_pairs": 0
+    }
+  },
+  "motion": {
+    "sample_count": 81,
+    "positive_volume_pairs": 0,
+    "boolean_blocked_pairs": 0
+  },
+  "gate_counts": {
+    "PASS": 15,
+    "FAIL": 3,
+    "BLOCKED": 5
+  },
+  "elapsed_seconds": 539.3087267875671,
+  "evidence_directory": "/workspace/scratch/6f4e7892e9f1/work/r2_analysis/validation"
+}

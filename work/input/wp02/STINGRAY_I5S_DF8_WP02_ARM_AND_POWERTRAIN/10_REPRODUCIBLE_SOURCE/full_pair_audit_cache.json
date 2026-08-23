@@ -1,0 +1,3009 @@
+{
+  "audit_source_sha256": "c62ba9a7fb72a7d598ebc72a692d667461eb080b54c07841737774eaa73224aa",
+  "geometry_signatures": {
+    "DEPLOYED": {
+      "WP02-001": {
+        "bbox_mm": [
+          26.0,
+          499.380588,
+          -11.0,
+          11.0,
+          615.0,
+          717.939933
+        ],
+        "edge_count": 172,
+        "face_count": 64,
+        "name": "ARM_1",
+        "solid_count": 1,
+        "volume_mm3": 98016.852773493
+      },
+      "WP02-002": {
+        "bbox_mm": [
+          -259.216574,
+          -3.473721,
+          17.01666,
+          437.976276,
+          615.0,
+          717.939933
+        ],
+        "edge_count": 172,
+        "face_count": 64,
+        "name": "ARM_2",
+        "solid_count": 1,
+        "volume_mm3": 98016.852773493
+      },
+      "WP02-003": {
+        "bbox_mm": [
+          -259.216574,
+          -3.473721,
+          -437.976276,
+          -17.01666,
+          615.0,
+          717.939933
+        ],
+        "edge_count": 172,
+        "face_count": 64,
+        "name": "ARM_3",
+        "solid_count": 1,
+        "volume_mm3": 98016.852773493
+      },
+      "WP02-004": {
+        "bbox_mm": [
+          35.5,
+          76.968271,
+          -4.0,
+          4.0,
+          560.628038,
+          637.577686
+        ],
+        "edge_count": 36,
+        "face_count": 17,
+        "name": "LINK_1",
+        "solid_count": 1,
+        "volume_mm3": 3165.32890271
+      },
+      "WP02-005": {
+        "bbox_mm": [
+          -41.948237,
+          -14.285898,
+          28.743902,
+          68.656478,
+          560.628038,
+          637.577686
+        ],
+        "edge_count": 36,
+        "face_count": 17,
+        "name": "LINK_2",
+        "solid_count": 1,
+        "volume_mm3": 3165.32890271
+      },
+      "WP02-006": {
+        "bbox_mm": [
+          -41.948237,
+          -14.285898,
+          -68.656478,
+          -28.743902,
+          560.628038,
+          637.577686
+        ],
+        "edge_count": 36,
+        "face_count": 17,
+        "name": "LINK_3",
+        "solid_count": 1,
+        "volume_mm3": 3165.32890271
+      },
+      "WP02-007": {
+        "bbox_mm": [
+          -32.910254,
+          48.5,
+          -47.002232,
+          47.002232,
+          551.128038,
+          592.128038
+        ],
+        "edge_count": 379,
+        "face_count": 156,
+        "name": "COMMON_CROSSHEAD",
+        "solid_count": 10,
+        "volume_mm3": 8197.345327115
+      },
+      "WP02-008": {
+        "bbox_mm": [
+          -33.856406,
+          40.0,
+          -42.641016,
+          42.641016,
+          621.0,
+          629.0
+        ],
+        "edge_count": 36,
+        "face_count": 24,
+        "name": "PIVOT_BUSHING_SET",
+        "solid_count": 6,
+        "volume_mm3": 332.935936331
+      },
+      "WP02-009": {
+        "bbox_mm": [
+          -36.27147,
+          40.5,
+          -42.274991,
+          44.324029,
+          620.5,
+          629.5
+        ],
+        "edge_count": 36,
+        "face_count": 27,
+        "name": "ARM_PIVOT_PIN_SET",
+        "solid_count": 3,
+        "volume_mm3": 3165.226176539
+      },
+      "WP02-010": {
+        "bbox_mm": [
+          -49.175479,
+          74.968271,
+          -69.625389,
+          71.674427,
+          626.577686,
+          635.577686
+        ],
+        "edge_count": 36,
+        "face_count": 27,
+        "name": "ARM_LINK_PIN_SET",
+        "solid_count": 3,
+        "volume_mm3": 2316.996160069
+      },
+      "WP02-011": {
+        "bbox_mm": [
+          -34.941343,
+          46.5,
+          -44.971143,
+          47.020181,
+          562.628038,
+          571.628038
+        ],
+        "edge_count": 36,
+        "face_count": 27,
+        "name": "CROSSHEAD_LINK_PIN_SET",
+        "solid_count": 3,
+        "volume_mm3": 2316.996160069
+      },
+      "WP02-012": {
+        "bbox_mm": [
+          -46.77443,
+          73.509033,
+          -69.44569,
+          58.02569,
+          563.853038,
+          634.352686
+        ],
+        "edge_count": 108,
+        "face_count": 54,
+        "name": "VSM6_RETENTION_RING_SET",
+        "solid_count": 9,
+        "volume_mm3": 18.553277997
+      },
+      "WP02-013": {
+        "bbox_mm": [
+          -17.75,
+          14.45497,
+          -17.75,
+          17.553125,
+          538.0,
+          970.0
+        ],
+        "edge_count": 135,
+        "face_count": 69,
+        "name": "POWERTRAIN_CARTRIDGE_SPINE",
+        "solid_count": 12,
+        "volume_mm3": 8384.873063587
+      },
+      "WP02-014": {
+        "bbox_mm": [
+          -10.378708,
+          6.844272,
+          -17.116904,
+          15.46877,
+          532.0,
+          618.0
+        ],
+        "edge_count": 18,
+        "face_count": 18,
+        "name": "CROSSHEAD_GUIDE_ROD_SET",
+        "solid_count": 6,
+        "volume_mm3": 1267.067149046
+      },
+      "WP02-015": {
+        "bbox_mm": [
+          -1.2,
+          17.8,
+          -9.5,
+          9.5,
+          616.0,
+          740.0
+        ],
+        "edge_count": 42,
+        "face_count": 22,
+        "name": "GS19_FIXED_BODY_EXACT_VENDOR_BREP",
+        "solid_count": 1,
+        "volume_mm3": 32771.591105632
+      },
+      "WP02-016": {
+        "bbox_mm": [
+          4.3,
+          12.3,
+          -4.0,
+          4.0,
+          577.128038,
+          637.128038
+        ],
+        "edge_count": 12,
+        "face_count": 6,
+        "name": "GS19_MOVING_ROD_EXACT_VENDOR_BREP",
+        "solid_count": 1,
+        "volume_mm3": 3008.422635399
+      },
+      "WP02-017": {
+        "bbox_mm": [
+          1.1,
+          15.5,
+          -7.2,
+          7.2,
+          730.2,
+          741.9
+        ],
+        "edge_count": 11,
+        "face_count": 7,
+        "name": "GS19_FIXED_ANCHOR",
+        "solid_count": 1,
+        "volume_mm3": 710.102826871
+      },
+      "WP02-018": {
+        "bbox_mm": [
+          2.8,
+          13.8,
+          -5.5,
+          5.5,
+          562.128038,
+          588.628038
+        ],
+        "edge_count": 35,
+        "face_count": 15,
+        "name": "GS19_MOVING_ADAPTER",
+        "solid_count": 2,
+        "volume_mm3": 1005.148243075
+      },
+      "WP02-019": {
+        "bbox_mm": [
+          -16.7,
+          -1.7,
+          -7.5,
+          7.5,
+          637.628038,
+          732.628038
+        ],
+        "edge_count": 22,
+        "face_count": 11,
+        "name": "HBD15_BODY_DRAWING_DERIVED",
+        "solid_count": 1,
+        "volume_mm3": 14872.355109129
+      },
+      "WP02-020": {
+        "bbox_mm": [
+          -15.2,
+          -3.2,
+          -4.5,
+          4.5,
+          577.128038,
+          642.628038
+        ],
+        "edge_count": 15,
+        "face_count": 8,
+        "name": "HBD15_ROD_DRAWING_DERIVED",
+        "solid_count": 1,
+        "volume_mm3": 2347.114743746
+      },
+      "WP02-021": {
+        "bbox_mm": [
+          -16.6,
+          -3.7,
+          -8.0,
+          8.0,
+          575.128038,
+          593.628038
+        ],
+        "edge_count": 69,
+        "face_count": 31,
+        "name": "HBD_MOVING_LOST_MOTION_COUPLER",
+        "solid_count": 4,
+        "volume_mm3": 1030.036800465
+      },
+      "WP02-022": {
+        "bbox_mm": [
+          -14.6,
+          -3.8,
+          -12.0,
+          12.0,
+          717.628038,
+          738.128038
+        ],
+        "edge_count": 48,
+        "face_count": 24,
+        "name": "HBD_CAPTIVE_BYPASS_CARRIAGE",
+        "solid_count": 4,
+        "volume_mm3": 1159.468844171
+      },
+      "WP02-023": {
+        "bbox_mm": [
+          -15.7,
+          -2.7,
+          -10.0,
+          10.0,
+          631.628038,
+          740.628038
+        ],
+        "edge_count": 18,
+        "face_count": 18,
+        "name": "HBD_BYPASS_RAIL_AND_SHOULDER_SET",
+        "solid_count": 6,
+        "volume_mm3": 1621.061809252
+      },
+      "WP02-024": {
+        "bbox_mm": [
+          -17.2,
+          -14.65,
+          -5.25,
+          5.25,
+          735.128038,
+          738.628038
+        ],
+        "edge_count": 18,
+        "face_count": 12,
+        "name": "HBD_BYPASS_DETENT_SET",
+        "solid_count": 2,
+        "volume_mm3": 48.114538687
+      },
+      "WP02-025": {
+        "bbox_mm": [
+          -7.620006,
+          7.620006,
+          2.379988,
+          17.619995,
+          789.075609,
+          964.85
+        ],
+        "edge_count": 3,
+        "face_count": 3,
+        "name": "BACKUP_SPRING_LHL625D12",
+        "solid_count": 1,
+        "volume_mm3": 13047.350874395
+      },
+      "WP02-026": {
+        "bbox_mm": [
+          -8.949207,
+          7.55,
+          -11.910829,
+          17.55,
+          940.0,
+          969.7
+        ],
+        "edge_count": 21,
+        "face_count": 11,
+        "name": "BACKUP_SPRING_FIXED_REACTION_SEAT",
+        "solid_count": 2,
+        "volume_mm3": 1178.024731708
+      },
+      "WP02-027": {
+        "bbox_mm": [
+          -7.55,
+          7.55,
+          2.45,
+          17.55,
+          763.925609,
+          788.925609
+        ],
+        "edge_count": 12,
+        "face_count": 8,
+        "name": "BACKUP_SPRING_MOVING_SEAT",
+        "solid_count": 2,
+        "volume_mm3": 983.105657671
+      },
+      "WP02-028": {
+        "bbox_mm": [
+          -4.5,
+          4.5,
+          5.5,
+          14.5,
+          587.128038,
+          788.925609
+        ],
+        "edge_count": 9,
+        "face_count": 7,
+        "name": "BACKUP_SPRING_GUIDE_PUSHROD",
+        "solid_count": 2,
+        "volume_mm3": 5832.712789854
+      },
+      "WP02-029": {
+        "bbox_mm": [
+          -31.509983,
+          45.266445,
+          -44.326892,
+          35.826892,
+          609.011144,
+          612.833808
+        ],
+        "edge_count": 36,
+        "face_count": 18,
+        "name": "DEPLOYED_STOP_PAD_SET",
+        "solid_count": 3,
+        "volume_mm3": 157.5
+      },
+      "WP02-030": {
+        "bbox_mm": [
+          -38.634243,
+          49.555674,
+          -50.916472,
+          50.916472,
+          621.649658,
+          631.649658
+        ],
+        "edge_count": 72,
+        "face_count": 42,
+        "name": "POSITIVE_LOCK_HOUSING_SET",
+        "solid_count": 9,
+        "volume_mm3": 494.576050748
+      },
+      "WP02-031": {
+        "bbox_mm": [
+          -42.682319,
+          52.455674,
+          -54.927946,
+          48.877242,
+          623.649658,
+          629.649658
+        ],
+        "edge_count": 18,
+        "face_count": 18,
+        "name": "POSITIVE_LOCK_PLUNGER_AND_WITNESS_SET",
+        "solid_count": 6,
+        "volume_mm3": 2470.611294636
+      },
+      "WP02-032": {
+        "bbox_mm": [
+          -2.4,
+          2.4,
+          -17.0,
+          -12.5,
+          556.728038,
+          561.528038
+        ],
+        "edge_count": 3,
+        "face_count": 3,
+        "name": "CROSSHEAD_SEAR",
+        "solid_count": 1,
+        "volume_mm3": 81.430081581
+      },
+      "WP02-033": {
+        "bbox_mm": [
+          -4.2,
+          7.248107,
+          -17.2,
+          -10.5,
+          578.002428,
+          586.402428
+        ],
+        "edge_count": 172,
+        "face_count": 74,
+        "name": "CROSSHEAD_SEAR_HOUSING",
+        "solid_count": 7,
+        "volume_mm3": 135.222534971
+      },
+      "WP02-034": {
+        "bbox_mm": [
+          -27.565064,
+          50.8,
+          -45.244091,
+          45.244091,
+          1067.433747,
+          1079.733747
+        ],
+        "edge_count": 105,
+        "face_count": 48,
+        "name": "COVER_SEQUENCED_ARM_STOW_LATCH_SET",
+        "solid_count": 3,
+        "volume_mm3": 444.541171226
+      }
+    },
+    "STOWED": {
+      "WP02-001": {
+        "bbox_mm": [
+          24.501752,
+          47.202174,
+          -11.0,
+          11.0,
+          615.0,
+          1095.129119
+        ],
+        "edge_count": 172,
+        "face_count": 64,
+        "name": "ARM_1",
+        "solid_count": 1,
+        "volume_mm3": 98016.852773493
+      },
+      "WP02-002": {
+        "bbox_mm": [
+          -33.127366,
+          -2.724596,
+          15.719139,
+          46.378282,
+          615.0,
+          1095.129119
+        ],
+        "edge_count": 172,
+        "face_count": 64,
+        "name": "ARM_2",
+        "solid_count": 1,
+        "volume_mm3": 98016.852773493
+      },
+      "WP02-003": {
+        "bbox_mm": [
+          -33.127366,
+          -2.724596,
+          -46.378282,
+          -15.719139,
+          615.0,
+          1095.129119
+        ],
+        "edge_count": 172,
+        "face_count": 64,
+        "name": "ARM_3",
+        "solid_count": 1,
+        "volume_mm3": 98016.852773493
+      },
+      "WP02-004": {
+        "bbox_mm": [
+          21.019331,
+          48.5,
+          -4.0,
+          4.0,
+          583.702428,
+          666.494669
+        ],
+        "edge_count": 36,
+        "face_count": 17,
+        "name": "LINK_1",
+        "solid_count": 1,
+        "volume_mm3": 3165.32890271
+      },
+      "WP02-005": {
+        "bbox_mm": [
+          -27.714102,
+          -9.107585,
+          17.827179,
+          44.002232,
+          583.702428,
+          666.494669
+        ],
+        "edge_count": 36,
+        "face_count": 17,
+        "name": "LINK_2",
+        "solid_count": 1,
+        "volume_mm3": 3165.32890271
+      },
+      "WP02-006": {
+        "bbox_mm": [
+          -27.714102,
+          -9.107585,
+          -44.002232,
+          -17.827179,
+          583.702428,
+          666.494669
+        ],
+        "edge_count": 36,
+        "face_count": 17,
+        "name": "LINK_3",
+        "solid_count": 1,
+        "volume_mm3": 3165.32890271
+      },
+      "WP02-007": {
+        "bbox_mm": [
+          -32.910254,
+          48.5,
+          -47.002232,
+          47.002232,
+          574.202428,
+          615.202428
+        ],
+        "edge_count": 379,
+        "face_count": 156,
+        "name": "COMMON_CROSSHEAD",
+        "solid_count": 10,
+        "volume_mm3": 8197.345327115
+      },
+      "WP02-008": {
+        "bbox_mm": [
+          -33.856406,
+          40.0,
+          -42.641016,
+          42.641016,
+          621.0,
+          629.0
+        ],
+        "edge_count": 36,
+        "face_count": 24,
+        "name": "PIVOT_BUSHING_SET",
+        "solid_count": 6,
+        "volume_mm3": 332.935936331
+      },
+      "WP02-009": {
+        "bbox_mm": [
+          -36.27147,
+          40.5,
+          -42.274991,
+          44.324029,
+          620.5,
+          629.5
+        ],
+        "edge_count": 36,
+        "face_count": 27,
+        "name": "ARM_PIVOT_PIN_SET",
+        "solid_count": 3,
+        "volume_mm3": 3165.226176539
+      },
+      "WP02-010": {
+        "bbox_mm": [
+          -32.24676,
+          41.110834,
+          -40.303989,
+          42.353027,
+          655.494669,
+          664.494669
+        ],
+        "edge_count": 36,
+        "face_count": 27,
+        "name": "ARM_LINK_PIN_SET",
+        "solid_count": 3,
+        "volume_mm3": 2316.996160069
+      },
+      "WP02-011": {
+        "bbox_mm": [
+          -34.941343,
+          46.5,
+          -44.971143,
+          47.020181,
+          585.702428,
+          594.702428
+        ],
+        "edge_count": 36,
+        "face_count": 27,
+        "name": "CROSSHEAD_LINK_PIN_SET",
+        "solid_count": 3,
+        "volume_mm3": 2316.996160069
+      },
+      "WP02-012": {
+        "bbox_mm": [
+          -33.870422,
+          45.040761,
+          -44.791443,
+          33.371443,
+          586.927428,
+          663.269669
+        ],
+        "edge_count": 108,
+        "face_count": 54,
+        "name": "VSM6_RETENTION_RING_SET",
+        "solid_count": 9,
+        "volume_mm3": 18.553277997
+      },
+      "WP02-013": {
+        "bbox_mm": [
+          -17.75,
+          14.45497,
+          -17.75,
+          17.553125,
+          538.0,
+          970.0
+        ],
+        "edge_count": 135,
+        "face_count": 69,
+        "name": "POWERTRAIN_CARTRIDGE_SPINE",
+        "solid_count": 12,
+        "volume_mm3": 8384.873063587
+      },
+      "WP02-014": {
+        "bbox_mm": [
+          -10.378708,
+          6.844272,
+          -17.116904,
+          15.46877,
+          532.0,
+          618.0
+        ],
+        "edge_count": 18,
+        "face_count": 18,
+        "name": "CROSSHEAD_GUIDE_ROD_SET",
+        "solid_count": 6,
+        "volume_mm3": 1267.067149046
+      },
+      "WP02-015": {
+        "bbox_mm": [
+          -1.2,
+          17.8,
+          -9.5,
+          9.5,
+          616.0,
+          740.0
+        ],
+        "edge_count": 42,
+        "face_count": 22,
+        "name": "GS19_FIXED_BODY_EXACT_VENDOR_BREP",
+        "solid_count": 1,
+        "volume_mm3": 32771.591105632
+      },
+      "WP02-016": {
+        "bbox_mm": [
+          4.3,
+          12.3,
+          -4.0,
+          4.0,
+          600.202428,
+          660.202428
+        ],
+        "edge_count": 12,
+        "face_count": 6,
+        "name": "GS19_MOVING_ROD_EXACT_VENDOR_BREP",
+        "solid_count": 1,
+        "volume_mm3": 3008.422635399
+      },
+      "WP02-017": {
+        "bbox_mm": [
+          1.1,
+          15.5,
+          -7.2,
+          7.2,
+          730.2,
+          741.9
+        ],
+        "edge_count": 11,
+        "face_count": 7,
+        "name": "GS19_FIXED_ANCHOR",
+        "solid_count": 1,
+        "volume_mm3": 710.102826871
+      },
+      "WP02-018": {
+        "bbox_mm": [
+          2.8,
+          13.8,
+          -5.5,
+          5.5,
+          585.202428,
+          611.702428
+        ],
+        "edge_count": 35,
+        "face_count": 15,
+        "name": "GS19_MOVING_ADAPTER",
+        "solid_count": 2,
+        "volume_mm3": 1005.148243075
+      },
+      "WP02-019": {
+        "bbox_mm": [
+          -16.7,
+          -1.7,
+          -7.5,
+          7.5,
+          637.628038,
+          732.628038
+        ],
+        "edge_count": 22,
+        "face_count": 11,
+        "name": "HBD15_BODY_DRAWING_DERIVED",
+        "solid_count": 1,
+        "volume_mm3": 14872.355109129
+      },
+      "WP02-020": {
+        "bbox_mm": [
+          -15.2,
+          -3.2,
+          -4.5,
+          4.5,
+          599.002428,
+          642.628038
+        ],
+        "edge_count": 15,
+        "face_count": 8,
+        "name": "HBD15_ROD_DRAWING_DERIVED",
+        "solid_count": 1,
+        "volume_mm3": 1728.630812036
+      },
+      "WP02-021": {
+        "bbox_mm": [
+          -16.6,
+          -3.7,
+          -8.0,
+          8.0,
+          598.202428,
+          616.702428
+        ],
+        "edge_count": 69,
+        "face_count": 31,
+        "name": "HBD_MOVING_LOST_MOTION_COUPLER",
+        "solid_count": 4,
+        "volume_mm3": 1030.036800465
+      },
+      "WP02-022": {
+        "bbox_mm": [
+          -14.6,
+          -3.8,
+          -12.0,
+          12.0,
+          717.628038,
+          738.128038
+        ],
+        "edge_count": 48,
+        "face_count": 24,
+        "name": "HBD_CAPTIVE_BYPASS_CARRIAGE",
+        "solid_count": 4,
+        "volume_mm3": 1159.468844171
+      },
+      "WP02-023": {
+        "bbox_mm": [
+          -15.7,
+          -2.7,
+          -10.0,
+          10.0,
+          631.628038,
+          740.628038
+        ],
+        "edge_count": 18,
+        "face_count": 18,
+        "name": "HBD_BYPASS_RAIL_AND_SHOULDER_SET",
+        "solid_count": 6,
+        "volume_mm3": 1621.061809252
+      },
+      "WP02-024": {
+        "bbox_mm": [
+          -17.2,
+          -14.65,
+          -5.25,
+          5.25,
+          735.128038,
+          738.628038
+        ],
+        "edge_count": 18,
+        "face_count": 12,
+        "name": "HBD_BYPASS_DETENT_SET",
+        "solid_count": 2,
+        "volume_mm3": 48.114538687
+      },
+      "WP02-025": {
+        "bbox_mm": [
+          -7.620006,
+          7.620006,
+          2.379988,
+          17.619995,
+          812.15,
+          964.85
+        ],
+        "edge_count": 3,
+        "face_count": 3,
+        "name": "BACKUP_SPRING_LHL625D12",
+        "solid_count": 1,
+        "volume_mm3": 13047.35139647
+      },
+      "WP02-026": {
+        "bbox_mm": [
+          -8.949207,
+          7.55,
+          -11.910829,
+          17.55,
+          940.0,
+          969.7
+        ],
+        "edge_count": 21,
+        "face_count": 11,
+        "name": "BACKUP_SPRING_FIXED_REACTION_SEAT",
+        "solid_count": 2,
+        "volume_mm3": 1178.024731708
+      },
+      "WP02-027": {
+        "bbox_mm": [
+          -7.55,
+          7.55,
+          2.45,
+          17.55,
+          787.0,
+          812.0
+        ],
+        "edge_count": 12,
+        "face_count": 8,
+        "name": "BACKUP_SPRING_MOVING_SEAT",
+        "solid_count": 2,
+        "volume_mm3": 983.105657671
+      },
+      "WP02-028": {
+        "bbox_mm": [
+          -4.5,
+          4.5,
+          5.5,
+          14.5,
+          610.202428,
+          812.0
+        ],
+        "edge_count": 9,
+        "face_count": 7,
+        "name": "BACKUP_SPRING_GUIDE_PUSHROD",
+        "solid_count": 2,
+        "volume_mm3": 5832.712789854
+      },
+      "WP02-029": {
+        "bbox_mm": [
+          -31.509983,
+          45.266445,
+          -44.326892,
+          35.826892,
+          609.011144,
+          612.833808
+        ],
+        "edge_count": 36,
+        "face_count": 18,
+        "name": "DEPLOYED_STOP_PAD_SET",
+        "solid_count": 3,
+        "volume_mm3": 157.5
+      },
+      "WP02-030": {
+        "bbox_mm": [
+          -38.634243,
+          49.555674,
+          -50.916472,
+          50.916472,
+          621.649658,
+          631.649658
+        ],
+        "edge_count": 72,
+        "face_count": 42,
+        "name": "POSITIVE_LOCK_HOUSING_SET",
+        "solid_count": 9,
+        "volume_mm3": 494.576050748
+      },
+      "WP02-031": {
+        "bbox_mm": [
+          -43.548345,
+          52.455674,
+          -55.427946,
+          38.427946,
+          623.649658,
+          629.649658
+        ],
+        "edge_count": 18,
+        "face_count": 18,
+        "name": "POSITIVE_LOCK_PLUNGER_AND_WITNESS_SET",
+        "solid_count": 6,
+        "volume_mm3": 774.151261698
+      },
+      "WP02-032": {
+        "bbox_mm": [
+          -2.4,
+          2.4,
+          -17.0,
+          -7.5,
+          579.802428,
+          584.602428
+        ],
+        "edge_count": 3,
+        "face_count": 3,
+        "name": "CROSSHEAD_SEAR",
+        "solid_count": 1,
+        "volume_mm3": 171.907950004
+      },
+      "WP02-033": {
+        "bbox_mm": [
+          -4.2,
+          7.248107,
+          -17.2,
+          -10.5,
+          578.002428,
+          586.402428
+        ],
+        "edge_count": 172,
+        "face_count": 74,
+        "name": "CROSSHEAD_SEAR_HOUSING",
+        "solid_count": 7,
+        "volume_mm3": 135.222534971
+      },
+      "WP02-034": {
+        "bbox_mm": [
+          -27.565064,
+          50.8,
+          -45.244091,
+          45.244091,
+          1056.433747,
+          1068.733747
+        ],
+        "edge_count": 105,
+        "face_count": 48,
+        "name": "COVER_SEQUENCED_ARM_STOW_LATCH_SET",
+        "solid_count": 3,
+        "volume_mm3": 444.541171226
+      }
+    }
+  },
+  "raw_log_sha256": "75ceeb7289c0c6946c90cb193759bf0432a29914d9b0ce88548f732d99d34570",
+  "rows": [
+    {
+      "audit_elapsed_seconds": "0.007101",
+      "broad_phase_solid_candidates": 1,
+      "classification": "NO_POSITIVE_COMMON_VOLUME",
+      "exact_common_volume_mm3": "0.000000000",
+      "name_a": "ARM_1",
+      "name_b": "LINK_1",
+      "occurrence_a": "WP02-001",
+      "occurrence_b": "WP02-004",
+      "state": "STOWED",
+      "status": "PASS"
+    },
+    {
+      "audit_elapsed_seconds": "0.006425",
+      "broad_phase_solid_candidates": 1,
+      "classification": "NO_POSITIVE_COMMON_VOLUME",
+      "exact_common_volume_mm3": "0.000000000",
+      "name_a": "ARM_1",
+      "name_b": "ARM_PIVOT_PIN_SET",
+      "occurrence_a": "WP02-001",
+      "occurrence_b": "WP02-009",
+      "state": "STOWED",
+      "status": "PASS"
+    },
+    {
+      "audit_elapsed_seconds": "0.006815",
+      "broad_phase_solid_candidates": 1,
+      "classification": "NO_POSITIVE_COMMON_VOLUME",
+      "exact_common_volume_mm3": "0.000000000",
+      "name_a": "ARM_1",
+      "name_b": "ARM_LINK_PIN_SET",
+      "occurrence_a": "WP02-001",
+      "occurrence_b": "WP02-010",
+      "state": "STOWED",
+      "status": "PASS"
+    },
+    {
+      "audit_elapsed_seconds": "0.004141",
+      "broad_phase_solid_candidates": 1,
+      "classification": "NO_POSITIVE_COMMON_VOLUME",
+      "exact_common_volume_mm3": "0.000000000",
+      "name_a": "ARM_1",
+      "name_b": "COVER_SEQUENCED_ARM_STOW_LATCH_SET",
+      "occurrence_a": "WP02-001",
+      "occurrence_b": "WP02-034",
+      "state": "STOWED",
+      "status": "PASS"
+    },
+    {
+      "audit_elapsed_seconds": "0.001602",
+      "broad_phase_solid_candidates": 1,
+      "classification": "NO_POSITIVE_COMMON_VOLUME",
+      "exact_common_volume_mm3": "0.000000000",
+      "name_a": "LINK_1",
+      "name_b": "ARM_PIVOT_PIN_SET",
+      "occurrence_a": "WP02-004",
+      "occurrence_b": "WP02-009",
+      "state": "STOWED",
+      "status": "PASS"
+    },
+    {
+      "audit_elapsed_seconds": "0.003056",
+      "broad_phase_solid_candidates": 1,
+      "classification": "NO_POSITIVE_COMMON_VOLUME",
+      "exact_common_volume_mm3": "0.000000000",
+      "name_a": "LINK_1",
+      "name_b": "ARM_LINK_PIN_SET",
+      "occurrence_a": "WP02-004",
+      "occurrence_b": "WP02-010",
+      "state": "STOWED",
+      "status": "PASS"
+    },
+    {
+      "audit_elapsed_seconds": "0.003717",
+      "broad_phase_solid_candidates": 1,
+      "classification": "NO_POSITIVE_COMMON_VOLUME",
+      "exact_common_volume_mm3": "0.000000000",
+      "name_a": "LINK_1",
+      "name_b": "CROSSHEAD_LINK_PIN_SET",
+      "occurrence_a": "WP02-004",
+      "occurrence_b": "WP02-011",
+      "state": "STOWED",
+      "status": "PASS"
+    },
+    {
+      "audit_elapsed_seconds": "0.011204",
+      "broad_phase_solid_candidates": 1,
+      "classification": "NO_POSITIVE_COMMON_VOLUME",
+      "exact_common_volume_mm3": "0.000000000",
+      "name_a": "ARM_2",
+      "name_b": "LINK_2",
+      "occurrence_a": "WP02-002",
+      "occurrence_b": "WP02-005",
+      "state": "STOWED",
+      "status": "PASS"
+    },
+    {
+      "audit_elapsed_seconds": "0.014670",
+      "broad_phase_solid_candidates": 2,
+      "classification": "NO_POSITIVE_COMMON_VOLUME",
+      "exact_common_volume_mm3": "0.000000000",
+      "name_a": "ARM_2",
+      "name_b": "PIVOT_BUSHING_SET",
+      "occurrence_a": "WP02-002",
+      "occurrence_b": "WP02-008",
+      "state": "STOWED",
+      "status": "PASS"
+    },
+    {
+      "audit_elapsed_seconds": "0.008133",
+      "broad_phase_solid_candidates": 1,
+      "classification": "NO_POSITIVE_COMMON_VOLUME",
+      "exact_common_volume_mm3": "0.000000000",
+      "name_a": "ARM_2",
+      "name_b": "ARM_PIVOT_PIN_SET",
+      "occurrence_a": "WP02-002",
+      "occurrence_b": "WP02-009",
+      "state": "STOWED",
+      "status": "PASS"
+    },
+    {
+      "audit_elapsed_seconds": "0.009928",
+      "broad_phase_solid_candidates": 1,
+      "classification": "NO_POSITIVE_COMMON_VOLUME",
+      "exact_common_volume_mm3": "0.000000000",
+      "name_a": "ARM_2",
+      "name_b": "ARM_LINK_PIN_SET",
+      "occurrence_a": "WP02-002",
+      "occurrence_b": "WP02-010",
+      "state": "STOWED",
+      "status": "PASS"
+    },
+    {
+      "audit_elapsed_seconds": "0.011626",
+      "broad_phase_solid_candidates": 2,
+      "classification": "NO_POSITIVE_COMMON_VOLUME",
+      "exact_common_volume_mm3": "0.000000000",
+      "name_a": "ARM_2",
+      "name_b": "VSM6_RETENTION_RING_SET",
+      "occurrence_a": "WP02-002",
+      "occurrence_b": "WP02-012",
+      "state": "STOWED",
+      "status": "PASS"
+    },
+    {
+      "audit_elapsed_seconds": "0.007778",
+      "broad_phase_solid_candidates": 2,
+      "classification": "NO_POSITIVE_COMMON_VOLUME",
+      "exact_common_volume_mm3": "0.000000000",
+      "name_a": "ARM_2",
+      "name_b": "POWERTRAIN_CARTRIDGE_SPINE",
+      "occurrence_a": "WP02-002",
+      "occurrence_b": "WP02-013",
+      "state": "STOWED",
+      "status": "PASS"
+    },
+    {
+      "audit_elapsed_seconds": "0.233576",
+      "broad_phase_solid_candidates": 1,
+      "classification": "NO_POSITIVE_COMMON_VOLUME",
+      "exact_common_volume_mm3": "0.000000000",
+      "name_a": "ARM_2",
+      "name_b": "BACKUP_SPRING_LHL625D12",
+      "occurrence_a": "WP02-002",
+      "occurrence_b": "WP02-025",
+      "state": "STOWED",
+      "status": "PASS"
+    },
+    {
+      "audit_elapsed_seconds": "0.004706",
+      "broad_phase_solid_candidates": 1,
+      "classification": "NO_POSITIVE_COMMON_VOLUME",
+      "exact_common_volume_mm3": "0.000000000",
+      "name_a": "ARM_2",
+      "name_b": "BACKUP_SPRING_FIXED_REACTION_SEAT",
+      "occurrence_a": "WP02-002",
+      "occurrence_b": "WP02-026",
+      "state": "STOWED",
+      "status": "PASS"
+    },
+    {
+      "audit_elapsed_seconds": "0.003622",
+      "broad_phase_solid_candidates": 1,
+      "classification": "NO_POSITIVE_COMMON_VOLUME",
+      "exact_common_volume_mm3": "0.000000000",
+      "name_a": "ARM_2",
+      "name_b": "BACKUP_SPRING_MOVING_SEAT",
+      "occurrence_a": "WP02-002",
+      "occurrence_b": "WP02-027",
+      "state": "STOWED",
+      "status": "PASS"
+    },
+    {
+      "audit_elapsed_seconds": "0.012592",
+      "broad_phase_solid_candidates": 3,
+      "classification": "NO_POSITIVE_COMMON_VOLUME",
+      "exact_common_volume_mm3": "0.000000000",
+      "name_a": "ARM_2",
+      "name_b": "POSITIVE_LOCK_HOUSING_SET",
+      "occurrence_a": "WP02-002",
+      "occurrence_b": "WP02-030",
+      "state": "STOWED",
+      "status": "PASS"
+    },
+    {
+      "audit_elapsed_seconds": "0.003573",
+      "broad_phase_solid_candidates": 1,
+      "classification": "NO_POSITIVE_COMMON_VOLUME",
+      "exact_common_volume_mm3": "0.000000000",
+      "name_a": "ARM_2",
+      "name_b": "POSITIVE_LOCK_PLUNGER_AND_WITNESS_SET",
+      "occurrence_a": "WP02-002",
+      "occurrence_b": "WP02-031",
+      "state": "STOWED",
+      "status": "PASS"
+    },
+    {
+      "audit_elapsed_seconds": "0.005916",
+      "broad_phase_solid_candidates": 1,
+      "classification": "NO_POSITIVE_COMMON_VOLUME",
+      "exact_common_volume_mm3": "0.000000000",
+      "name_a": "ARM_2",
+      "name_b": "COVER_SEQUENCED_ARM_STOW_LATCH_SET",
+      "occurrence_a": "WP02-002",
+      "occurrence_b": "WP02-034",
+      "state": "STOWED",
+      "status": "PASS"
+    },
+    {
+      "audit_elapsed_seconds": "0.009056",
+      "broad_phase_solid_candidates": 2,
+      "classification": "NO_POSITIVE_COMMON_VOLUME",
+      "exact_common_volume_mm3": "0.000000000",
+      "name_a": "LINK_2",
+      "name_b": "COMMON_CROSSHEAD",
+      "occurrence_a": "WP02-005",
+      "occurrence_b": "WP02-007",
+      "state": "STOWED",
+      "status": "PASS"
+    },
+    {
+      "audit_elapsed_seconds": "0.001940",
+      "broad_phase_solid_candidates": 1,
+      "classification": "NO_POSITIVE_COMMON_VOLUME",
+      "exact_common_volume_mm3": "0.000000000",
+      "name_a": "LINK_2",
+      "name_b": "PIVOT_BUSHING_SET",
+      "occurrence_a": "WP02-005",
+      "occurrence_b": "WP02-008",
+      "state": "STOWED",
+      "status": "PASS"
+    },
+    {
+      "audit_elapsed_seconds": "0.001964",
+      "broad_phase_solid_candidates": 1,
+      "classification": "NO_POSITIVE_COMMON_VOLUME",
+      "exact_common_volume_mm3": "0.000000000",
+      "name_a": "LINK_2",
+      "name_b": "ARM_PIVOT_PIN_SET",
+      "occurrence_a": "WP02-005",
+      "occurrence_b": "WP02-009",
+      "state": "STOWED",
+      "status": "PASS"
+    },
+    {
+      "audit_elapsed_seconds": "0.003393",
+      "broad_phase_solid_candidates": 1,
+      "classification": "NO_POSITIVE_COMMON_VOLUME",
+      "exact_common_volume_mm3": "0.000000000",
+      "name_a": "LINK_2",
+      "name_b": "ARM_LINK_PIN_SET",
+      "occurrence_a": "WP02-005",
+      "occurrence_b": "WP02-010",
+      "state": "STOWED",
+      "status": "PASS"
+    },
+    {
+      "audit_elapsed_seconds": "0.002903",
+      "broad_phase_solid_candidates": 1,
+      "classification": "NO_POSITIVE_COMMON_VOLUME",
+      "exact_common_volume_mm3": "0.000000000",
+      "name_a": "LINK_2",
+      "name_b": "CROSSHEAD_LINK_PIN_SET",
+      "occurrence_a": "WP02-005",
+      "occurrence_b": "WP02-011",
+      "state": "STOWED",
+      "status": "PASS"
+    },
+    {
+      "audit_elapsed_seconds": "0.001515",
+      "broad_phase_solid_candidates": 1,
+      "classification": "NO_POSITIVE_COMMON_VOLUME",
+      "exact_common_volume_mm3": "0.000000000",
+      "name_a": "LINK_2",
+      "name_b": "VSM6_RETENTION_RING_SET",
+      "occurrence_a": "WP02-005",
+      "occurrence_b": "WP02-012",
+      "state": "STOWED",
+      "status": "PASS"
+    },
+    {
+      "audit_elapsed_seconds": "0.001991",
+      "broad_phase_solid_candidates": 1,
+      "classification": "NO_POSITIVE_COMMON_VOLUME",
+      "exact_common_volume_mm3": "0.000000000",
+      "name_a": "LINK_2",
+      "name_b": "DEPLOYED_STOP_PAD_SET",
+      "occurrence_a": "WP02-005",
+      "occurrence_b": "WP02-029",
+      "state": "STOWED",
+      "status": "PASS"
+    },
+    {
+      "audit_elapsed_seconds": "0.004151",
+      "broad_phase_solid_candidates": 2,
+      "classification": "NO_POSITIVE_COMMON_VOLUME",
+      "exact_common_volume_mm3": "0.000000000",
+      "name_a": "LINK_2",
+      "name_b": "POSITIVE_LOCK_HOUSING_SET",
+      "occurrence_a": "WP02-005",
+      "occurrence_b": "WP02-030",
+      "state": "STOWED",
+      "status": "PASS"
+    },
+    {
+      "audit_elapsed_seconds": "0.010235",
+      "broad_phase_solid_candidates": 1,
+      "classification": "NO_POSITIVE_COMMON_VOLUME",
+      "exact_common_volume_mm3": "0.000000000",
+      "name_a": "ARM_3",
+      "name_b": "LINK_3",
+      "occurrence_a": "WP02-003",
+      "occurrence_b": "WP02-006",
+      "state": "STOWED",
+      "status": "PASS"
+    },
+    {
+      "audit_elapsed_seconds": "0.012350",
+      "broad_phase_solid_candidates": 2,
+      "classification": "NO_POSITIVE_COMMON_VOLUME",
+      "exact_common_volume_mm3": "0.000000000",
+      "name_a": "ARM_3",
+      "name_b": "PIVOT_BUSHING_SET",
+      "occurrence_a": "WP02-003",
+      "occurrence_b": "WP02-008",
+      "state": "STOWED",
+      "status": "PASS"
+    },
+    {
+      "audit_elapsed_seconds": "0.007725",
+      "broad_phase_solid_candidates": 1,
+      "classification": "NO_POSITIVE_COMMON_VOLUME",
+      "exact_common_volume_mm3": "0.000000000",
+      "name_a": "ARM_3",
+      "name_b": "ARM_PIVOT_PIN_SET",
+      "occurrence_a": "WP02-003",
+      "occurrence_b": "WP02-009",
+      "state": "STOWED",
+      "status": "PASS"
+    },
+    {
+      "audit_elapsed_seconds": "0.009004",
+      "broad_phase_solid_candidates": 1,
+      "classification": "NO_POSITIVE_COMMON_VOLUME",
+      "exact_common_volume_mm3": "0.000000000",
+      "name_a": "ARM_3",
+      "name_b": "ARM_LINK_PIN_SET",
+      "occurrence_a": "WP02-003",
+      "occurrence_b": "WP02-010",
+      "state": "STOWED",
+      "status": "PASS"
+    },
+    {
+      "audit_elapsed_seconds": "0.012209",
+      "broad_phase_solid_candidates": 2,
+      "classification": "NO_POSITIVE_COMMON_VOLUME",
+      "exact_common_volume_mm3": "0.000000000",
+      "name_a": "ARM_3",
+      "name_b": "VSM6_RETENTION_RING_SET",
+      "occurrence_a": "WP02-003",
+      "occurrence_b": "WP02-012",
+      "state": "STOWED",
+      "status": "PASS"
+    },
+    {
+      "audit_elapsed_seconds": "0.007740",
+      "broad_phase_solid_candidates": 2,
+      "classification": "NO_POSITIVE_COMMON_VOLUME",
+      "exact_common_volume_mm3": "0.000000000",
+      "name_a": "ARM_3",
+      "name_b": "POWERTRAIN_CARTRIDGE_SPINE",
+      "occurrence_a": "WP02-003",
+      "occurrence_b": "WP02-013",
+      "state": "STOWED",
+      "status": "PASS"
+    },
+    {
+      "audit_elapsed_seconds": "0.012743",
+      "broad_phase_solid_candidates": 3,
+      "classification": "NO_POSITIVE_COMMON_VOLUME",
+      "exact_common_volume_mm3": "0.000000000",
+      "name_a": "ARM_3",
+      "name_b": "POSITIVE_LOCK_HOUSING_SET",
+      "occurrence_a": "WP02-003",
+      "occurrence_b": "WP02-030",
+      "state": "STOWED",
+      "status": "PASS"
+    },
+    {
+      "audit_elapsed_seconds": "0.003752",
+      "broad_phase_solid_candidates": 1,
+      "classification": "NO_POSITIVE_COMMON_VOLUME",
+      "exact_common_volume_mm3": "0.000000000",
+      "name_a": "ARM_3",
+      "name_b": "POSITIVE_LOCK_PLUNGER_AND_WITNESS_SET",
+      "occurrence_a": "WP02-003",
+      "occurrence_b": "WP02-031",
+      "state": "STOWED",
+      "status": "PASS"
+    },
+    {
+      "audit_elapsed_seconds": "0.006367",
+      "broad_phase_solid_candidates": 1,
+      "classification": "NO_POSITIVE_COMMON_VOLUME",
+      "exact_common_volume_mm3": "0.000000000",
+      "name_a": "ARM_3",
+      "name_b": "COVER_SEQUENCED_ARM_STOW_LATCH_SET",
+      "occurrence_a": "WP02-003",
+      "occurrence_b": "WP02-034",
+      "state": "STOWED",
+      "status": "PASS"
+    },
+    {
+      "audit_elapsed_seconds": "0.010543",
+      "broad_phase_solid_candidates": 2,
+      "classification": "NO_POSITIVE_COMMON_VOLUME",
+      "exact_common_volume_mm3": "0.000000000",
+      "name_a": "LINK_3",
+      "name_b": "COMMON_CROSSHEAD",
+      "occurrence_a": "WP02-006",
+      "occurrence_b": "WP02-007",
+      "state": "STOWED",
+      "status": "PASS"
+    },
+    {
+      "audit_elapsed_seconds": "0.002478",
+      "broad_phase_solid_candidates": 1,
+      "classification": "NO_POSITIVE_COMMON_VOLUME",
+      "exact_common_volume_mm3": "0.000000000",
+      "name_a": "LINK_3",
+      "name_b": "PIVOT_BUSHING_SET",
+      "occurrence_a": "WP02-006",
+      "occurrence_b": "WP02-008",
+      "state": "STOWED",
+      "status": "PASS"
+    },
+    {
+      "audit_elapsed_seconds": "0.002893",
+      "broad_phase_solid_candidates": 1,
+      "classification": "NO_POSITIVE_COMMON_VOLUME",
+      "exact_common_volume_mm3": "0.000000000",
+      "name_a": "LINK_3",
+      "name_b": "ARM_PIVOT_PIN_SET",
+      "occurrence_a": "WP02-006",
+      "occurrence_b": "WP02-009",
+      "state": "STOWED",
+      "status": "PASS"
+    },
+    {
+      "audit_elapsed_seconds": "0.002864",
+      "broad_phase_solid_candidates": 1,
+      "classification": "NO_POSITIVE_COMMON_VOLUME",
+      "exact_common_volume_mm3": "0.000000000",
+      "name_a": "LINK_3",
+      "name_b": "ARM_LINK_PIN_SET",
+      "occurrence_a": "WP02-006",
+      "occurrence_b": "WP02-010",
+      "state": "STOWED",
+      "status": "PASS"
+    },
+    {
+      "audit_elapsed_seconds": "0.002936",
+      "broad_phase_solid_candidates": 1,
+      "classification": "NO_POSITIVE_COMMON_VOLUME",
+      "exact_common_volume_mm3": "0.000000000",
+      "name_a": "LINK_3",
+      "name_b": "CROSSHEAD_LINK_PIN_SET",
+      "occurrence_a": "WP02-006",
+      "occurrence_b": "WP02-011",
+      "state": "STOWED",
+      "status": "PASS"
+    },
+    {
+      "audit_elapsed_seconds": "0.003855",
+      "broad_phase_solid_candidates": 2,
+      "classification": "NO_POSITIVE_COMMON_VOLUME",
+      "exact_common_volume_mm3": "0.000000000",
+      "name_a": "LINK_3",
+      "name_b": "VSM6_RETENTION_RING_SET",
+      "occurrence_a": "WP02-006",
+      "occurrence_b": "WP02-012",
+      "state": "STOWED",
+      "status": "PASS"
+    },
+    {
+      "audit_elapsed_seconds": "0.002408",
+      "broad_phase_solid_candidates": 1,
+      "classification": "NO_POSITIVE_COMMON_VOLUME",
+      "exact_common_volume_mm3": "0.000000000",
+      "name_a": "LINK_3",
+      "name_b": "DEPLOYED_STOP_PAD_SET",
+      "occurrence_a": "WP02-006",
+      "occurrence_b": "WP02-029",
+      "state": "STOWED",
+      "status": "PASS"
+    },
+    {
+      "audit_elapsed_seconds": "0.003047",
+      "broad_phase_solid_candidates": 2,
+      "classification": "NO_POSITIVE_COMMON_VOLUME",
+      "exact_common_volume_mm3": "0.000000000",
+      "name_a": "LINK_3",
+      "name_b": "POSITIVE_LOCK_HOUSING_SET",
+      "occurrence_a": "WP02-006",
+      "occurrence_b": "WP02-030",
+      "state": "STOWED",
+      "status": "PASS"
+    },
+    {
+      "audit_elapsed_seconds": "0.001467",
+      "broad_phase_solid_candidates": 1,
+      "classification": "NO_POSITIVE_COMMON_VOLUME",
+      "exact_common_volume_mm3": "0.000000000",
+      "name_a": "LINK_3",
+      "name_b": "POSITIVE_LOCK_PLUNGER_AND_WITNESS_SET",
+      "occurrence_a": "WP02-006",
+      "occurrence_b": "WP02-031",
+      "state": "STOWED",
+      "status": "PASS"
+    },
+    {
+      "audit_elapsed_seconds": "0.024858",
+      "broad_phase_solid_candidates": 6,
+      "classification": "NO_POSITIVE_COMMON_VOLUME",
+      "exact_common_volume_mm3": "0.000000000",
+      "name_a": "COMMON_CROSSHEAD",
+      "name_b": "CROSSHEAD_LINK_PIN_SET",
+      "occurrence_a": "WP02-007",
+      "occurrence_b": "WP02-011",
+      "state": "STOWED",
+      "status": "PASS"
+    },
+    {
+      "audit_elapsed_seconds": "0.009061",
+      "broad_phase_solid_candidates": 2,
+      "classification": "NO_POSITIVE_COMMON_VOLUME",
+      "exact_common_volume_mm3": "0.000000000",
+      "name_a": "COMMON_CROSSHEAD",
+      "name_b": "VSM6_RETENTION_RING_SET",
+      "occurrence_a": "WP02-007",
+      "occurrence_b": "WP02-012",
+      "state": "STOWED",
+      "status": "PASS"
+    },
+    {
+      "audit_elapsed_seconds": "0.030079",
+      "broad_phase_solid_candidates": 3,
+      "classification": "NO_POSITIVE_COMMON_VOLUME",
+      "exact_common_volume_mm3": "0.000000000",
+      "name_a": "COMMON_CROSSHEAD",
+      "name_b": "POWERTRAIN_CARTRIDGE_SPINE",
+      "occurrence_a": "WP02-007",
+      "occurrence_b": "WP02-013",
+      "state": "STOWED",
+      "status": "PASS"
+    },
+    {
+      "audit_elapsed_seconds": "0.043924",
+      "broad_phase_solid_candidates": 4,
+      "classification": "NO_POSITIVE_COMMON_VOLUME",
+      "exact_common_volume_mm3": "0.000000000",
+      "name_a": "COMMON_CROSSHEAD",
+      "name_b": "CROSSHEAD_GUIDE_ROD_SET",
+      "occurrence_a": "WP02-007",
+      "occurrence_b": "WP02-014",
+      "state": "STOWED",
+      "status": "PASS"
+    },
+    {
+      "audit_elapsed_seconds": "0.030958",
+      "broad_phase_solid_candidates": 1,
+      "classification": "NO_POSITIVE_COMMON_VOLUME",
+      "exact_common_volume_mm3": "0.000000000",
+      "name_a": "COMMON_CROSSHEAD",
+      "name_b": "GS19_MOVING_ADAPTER",
+      "occurrence_a": "WP02-007",
+      "occurrence_b": "WP02-018",
+      "state": "STOWED",
+      "status": "PASS"
+    },
+    {
+      "audit_elapsed_seconds": "0.004050",
+      "broad_phase_solid_candidates": 2,
+      "classification": "NO_POSITIVE_COMMON_VOLUME",
+      "exact_common_volume_mm3": "0.000000000",
+      "name_a": "COMMON_CROSSHEAD",
+      "name_b": "HBD15_ROD_DRAWING_DERIVED",
+      "occurrence_a": "WP02-007",
+      "occurrence_b": "WP02-020",
+      "state": "STOWED",
+      "status": "PASS"
+    },
+    {
+      "audit_elapsed_seconds": "0.034508",
+      "broad_phase_solid_candidates": 11,
+      "classification": "NO_POSITIVE_COMMON_VOLUME",
+      "exact_common_volume_mm3": "0.000000000",
+      "name_a": "COMMON_CROSSHEAD",
+      "name_b": "HBD_MOVING_LOST_MOTION_COUPLER",
+      "occurrence_a": "WP02-007",
+      "occurrence_b": "WP02-021",
+      "state": "STOWED",
+      "status": "PASS"
+    },
+    {
+      "audit_elapsed_seconds": "0.001709",
+      "broad_phase_solid_candidates": 1,
+      "classification": "NO_POSITIVE_COMMON_VOLUME",
+      "exact_common_volume_mm3": "0.000000000",
+      "name_a": "COMMON_CROSSHEAD",
+      "name_b": "BACKUP_SPRING_GUIDE_PUSHROD",
+      "occurrence_a": "WP02-007",
+      "occurrence_b": "WP02-028",
+      "state": "STOWED",
+      "status": "PASS"
+    },
+    {
+      "audit_elapsed_seconds": "0.004568",
+      "broad_phase_solid_candidates": 1,
+      "classification": "NO_POSITIVE_COMMON_VOLUME",
+      "exact_common_volume_mm3": "0.000000000",
+      "name_a": "COMMON_CROSSHEAD",
+      "name_b": "CROSSHEAD_SEAR",
+      "occurrence_a": "WP02-007",
+      "occurrence_b": "WP02-032",
+      "state": "STOWED",
+      "status": "PASS"
+    },
+    {
+      "audit_elapsed_seconds": "0.148120",
+      "broad_phase_solid_candidates": 7,
+      "classification": "NO_POSITIVE_COMMON_VOLUME",
+      "exact_common_volume_mm3": "0.000000000",
+      "name_a": "COMMON_CROSSHEAD",
+      "name_b": "CROSSHEAD_SEAR_HOUSING",
+      "occurrence_a": "WP02-007",
+      "occurrence_b": "WP02-033",
+      "state": "STOWED",
+      "status": "PASS"
+    },
+    {
+      "audit_elapsed_seconds": "0.013729",
+      "broad_phase_solid_candidates": 6,
+      "classification": "NO_POSITIVE_COMMON_VOLUME",
+      "exact_common_volume_mm3": "0.000000000",
+      "name_a": "PIVOT_BUSHING_SET",
+      "name_b": "ARM_PIVOT_PIN_SET",
+      "occurrence_a": "WP02-008",
+      "occurrence_b": "WP02-009",
+      "state": "STOWED",
+      "status": "PASS"
+    },
+    {
+      "audit_elapsed_seconds": "0.004371",
+      "broad_phase_solid_candidates": 2,
+      "classification": "NO_POSITIVE_COMMON_VOLUME",
+      "exact_common_volume_mm3": "0.000000000",
+      "name_a": "PIVOT_BUSHING_SET",
+      "name_b": "VSM6_RETENTION_RING_SET",
+      "occurrence_a": "WP02-008",
+      "occurrence_b": "WP02-012",
+      "state": "STOWED",
+      "status": "PASS"
+    },
+    {
+      "audit_elapsed_seconds": "0.002799",
+      "broad_phase_solid_candidates": 4,
+      "classification": "NO_POSITIVE_COMMON_VOLUME",
+      "exact_common_volume_mm3": "0.000000000",
+      "name_a": "PIVOT_BUSHING_SET",
+      "name_b": "POSITIVE_LOCK_HOUSING_SET",
+      "occurrence_a": "WP02-008",
+      "occurrence_b": "WP02-030",
+      "state": "STOWED",
+      "status": "PASS"
+    },
+    {
+      "audit_elapsed_seconds": "0.000568",
+      "broad_phase_solid_candidates": 1,
+      "classification": "NO_POSITIVE_COMMON_VOLUME",
+      "exact_common_volume_mm3": "0.000000000",
+      "name_a": "PIVOT_BUSHING_SET",
+      "name_b": "POSITIVE_LOCK_PLUNGER_AND_WITNESS_SET",
+      "occurrence_a": "WP02-008",
+      "occurrence_b": "WP02-031",
+      "state": "STOWED",
+      "status": "PASS"
+    },
+    {
+      "audit_elapsed_seconds": "0.009346",
+      "broad_phase_solid_candidates": 3,
+      "classification": "NO_POSITIVE_COMMON_VOLUME",
+      "exact_common_volume_mm3": "0.000000000",
+      "name_a": "ARM_PIVOT_PIN_SET",
+      "name_b": "VSM6_RETENTION_RING_SET",
+      "occurrence_a": "WP02-009",
+      "occurrence_b": "WP02-012",
+      "state": "STOWED",
+      "status": "PASS"
+    },
+    {
+      "audit_elapsed_seconds": "0.006021",
+      "broad_phase_solid_candidates": 6,
+      "classification": "NO_POSITIVE_COMMON_VOLUME",
+      "exact_common_volume_mm3": "0.000000000",
+      "name_a": "ARM_PIVOT_PIN_SET",
+      "name_b": "POSITIVE_LOCK_HOUSING_SET",
+      "occurrence_a": "WP02-009",
+      "occurrence_b": "WP02-030",
+      "state": "STOWED",
+      "status": "PASS"
+    },
+    {
+      "audit_elapsed_seconds": "0.000890",
+      "broad_phase_solid_candidates": 1,
+      "classification": "NO_POSITIVE_COMMON_VOLUME",
+      "exact_common_volume_mm3": "0.000000000",
+      "name_a": "ARM_PIVOT_PIN_SET",
+      "name_b": "POSITIVE_LOCK_PLUNGER_AND_WITNESS_SET",
+      "occurrence_a": "WP02-009",
+      "occurrence_b": "WP02-031",
+      "state": "STOWED",
+      "status": "PASS"
+    },
+    {
+      "audit_elapsed_seconds": "0.009173",
+      "broad_phase_solid_candidates": 3,
+      "classification": "NO_POSITIVE_COMMON_VOLUME",
+      "exact_common_volume_mm3": "0.000000000",
+      "name_a": "ARM_LINK_PIN_SET",
+      "name_b": "VSM6_RETENTION_RING_SET",
+      "occurrence_a": "WP02-010",
+      "occurrence_b": "WP02-012",
+      "state": "STOWED",
+      "status": "PASS"
+    },
+    {
+      "audit_elapsed_seconds": "0.009035",
+      "broad_phase_solid_candidates": 3,
+      "classification": "NO_POSITIVE_COMMON_VOLUME",
+      "exact_common_volume_mm3": "0.000000000",
+      "name_a": "CROSSHEAD_LINK_PIN_SET",
+      "name_b": "VSM6_RETENTION_RING_SET",
+      "occurrence_a": "WP02-011",
+      "occurrence_b": "WP02-012",
+      "state": "STOWED",
+      "status": "PASS"
+    },
+    {
+      "audit_elapsed_seconds": "0.004745",
+      "broad_phase_solid_candidates": 3,
+      "classification": "NO_POSITIVE_COMMON_VOLUME",
+      "exact_common_volume_mm3": "0.000000000",
+      "name_a": "POWERTRAIN_CARTRIDGE_SPINE",
+      "name_b": "CROSSHEAD_GUIDE_ROD_SET",
+      "occurrence_a": "WP02-013",
+      "occurrence_b": "WP02-014",
+      "state": "STOWED",
+      "status": "PASS"
+    },
+    {
+      "audit_elapsed_seconds": "2.049732",
+      "broad_phase_solid_candidates": 3,
+      "classification": "NO_POSITIVE_COMMON_VOLUME",
+      "exact_common_volume_mm3": "0.000000000",
+      "name_a": "POWERTRAIN_CARTRIDGE_SPINE",
+      "name_b": "BACKUP_SPRING_LHL625D12",
+      "occurrence_a": "WP02-013",
+      "occurrence_b": "WP02-025",
+      "state": "STOWED",
+      "status": "PASS"
+    },
+    {
+      "audit_elapsed_seconds": "0.013906",
+      "broad_phase_solid_candidates": 6,
+      "classification": "NO_POSITIVE_COMMON_VOLUME",
+      "exact_common_volume_mm3": "0.000000000",
+      "name_a": "POWERTRAIN_CARTRIDGE_SPINE",
+      "name_b": "BACKUP_SPRING_FIXED_REACTION_SEAT",
+      "occurrence_a": "WP02-013",
+      "occurrence_b": "WP02-026",
+      "state": "STOWED",
+      "status": "PASS"
+    },
+    {
+      "audit_elapsed_seconds": "0.002810",
+      "broad_phase_solid_candidates": 2,
+      "classification": "NO_POSITIVE_COMMON_VOLUME",
+      "exact_common_volume_mm3": "0.000000000",
+      "name_a": "POWERTRAIN_CARTRIDGE_SPINE",
+      "name_b": "BACKUP_SPRING_GUIDE_PUSHROD",
+      "occurrence_a": "WP02-013",
+      "occurrence_b": "WP02-028",
+      "state": "STOWED",
+      "status": "PASS"
+    },
+    {
+      "audit_elapsed_seconds": "0.045350",
+      "broad_phase_solid_candidates": 4,
+      "classification": "NO_POSITIVE_COMMON_VOLUME",
+      "exact_common_volume_mm3": "0.000000000",
+      "name_a": "CROSSHEAD_GUIDE_ROD_SET",
+      "name_b": "CROSSHEAD_SEAR_HOUSING",
+      "occurrence_a": "WP02-014",
+      "occurrence_b": "WP02-033",
+      "state": "STOWED",
+      "status": "PASS"
+    },
+    {
+      "audit_elapsed_seconds": "0.006236",
+      "broad_phase_solid_candidates": 1,
+      "classification": "INTENTIONAL_INTERNAL_COTS_TELESCOPING_REPRESENTATION",
+      "exact_common_volume_mm3": "2221.856389980",
+      "name_a": "GS19_FIXED_BODY_EXACT_VENDOR_BREP",
+      "name_b": "GS19_MOVING_ROD_EXACT_VENDOR_BREP",
+      "occurrence_a": "WP02-015",
+      "occurrence_b": "WP02-016",
+      "state": "STOWED",
+      "status": "ACCEPTED_REPRESENTATION_LIMITATION"
+    },
+    {
+      "audit_elapsed_seconds": "0.007711",
+      "broad_phase_solid_candidates": 1,
+      "classification": "NO_POSITIVE_COMMON_VOLUME",
+      "exact_common_volume_mm3": "0.000000000",
+      "name_a": "GS19_FIXED_BODY_EXACT_VENDOR_BREP",
+      "name_b": "GS19_FIXED_ANCHOR",
+      "occurrence_a": "WP02-015",
+      "occurrence_b": "WP02-017",
+      "state": "STOWED",
+      "status": "PASS"
+    },
+    {
+      "audit_elapsed_seconds": "0.002691",
+      "broad_phase_solid_candidates": 1,
+      "classification": "NO_POSITIVE_COMMON_VOLUME",
+      "exact_common_volume_mm3": "0.000000000",
+      "name_a": "GS19_FIXED_BODY_EXACT_VENDOR_BREP",
+      "name_b": "BACKUP_SPRING_GUIDE_PUSHROD",
+      "occurrence_a": "WP02-015",
+      "occurrence_b": "WP02-028",
+      "state": "STOWED",
+      "status": "PASS"
+    },
+    {
+      "audit_elapsed_seconds": "0.002273",
+      "broad_phase_solid_candidates": 1,
+      "classification": "NO_POSITIVE_COMMON_VOLUME",
+      "exact_common_volume_mm3": "0.000000000",
+      "name_a": "GS19_MOVING_ROD_EXACT_VENDOR_BREP",
+      "name_b": "GS19_MOVING_ADAPTER",
+      "occurrence_a": "WP02-016",
+      "occurrence_b": "WP02-018",
+      "state": "STOWED",
+      "status": "PASS"
+    },
+    {
+      "audit_elapsed_seconds": "0.000950",
+      "broad_phase_solid_candidates": 1,
+      "classification": "NO_POSITIVE_COMMON_VOLUME",
+      "exact_common_volume_mm3": "0.000000000",
+      "name_a": "GS19_FIXED_ANCHOR",
+      "name_b": "BACKUP_SPRING_GUIDE_PUSHROD",
+      "occurrence_a": "WP02-017",
+      "occurrence_b": "WP02-028",
+      "state": "STOWED",
+      "status": "PASS"
+    },
+    {
+      "audit_elapsed_seconds": "0.012670",
+      "broad_phase_solid_candidates": 1,
+      "classification": "INTENTIONAL_INTERNAL_COTS_TELESCOPING_REPRESENTATION",
+      "exact_common_volume_mm3": "318.086256176",
+      "name_a": "HBD15_BODY_DRAWING_DERIVED",
+      "name_b": "HBD15_ROD_DRAWING_DERIVED",
+      "occurrence_a": "WP02-019",
+      "occurrence_b": "WP02-020",
+      "state": "STOWED",
+      "status": "ACCEPTED_REPRESENTATION_LIMITATION"
+    },
+    {
+      "audit_elapsed_seconds": "0.003551",
+      "broad_phase_solid_candidates": 3,
+      "classification": "NO_POSITIVE_COMMON_VOLUME",
+      "exact_common_volume_mm3": "0.000000000",
+      "name_a": "HBD15_BODY_DRAWING_DERIVED",
+      "name_b": "HBD_CAPTIVE_BYPASS_CARRIAGE",
+      "occurrence_a": "WP02-019",
+      "occurrence_b": "WP02-022",
+      "state": "STOWED",
+      "status": "PASS"
+    },
+    {
+      "audit_elapsed_seconds": "0.003398",
+      "broad_phase_solid_candidates": 2,
+      "classification": "NO_POSITIVE_COMMON_VOLUME",
+      "exact_common_volume_mm3": "0.000000000",
+      "name_a": "HBD15_BODY_DRAWING_DERIVED",
+      "name_b": "HBD_BYPASS_RAIL_AND_SHOULDER_SET",
+      "occurrence_a": "WP02-019",
+      "occurrence_b": "WP02-023",
+      "state": "STOWED",
+      "status": "PASS"
+    },
+    {
+      "audit_elapsed_seconds": "0.001302",
+      "broad_phase_solid_candidates": 1,
+      "classification": "NO_POSITIVE_COMMON_VOLUME",
+      "exact_common_volume_mm3": "0.000000000",
+      "name_a": "HBD15_BODY_DRAWING_DERIVED",
+      "name_b": "BACKUP_SPRING_GUIDE_PUSHROD",
+      "occurrence_a": "WP02-019",
+      "occurrence_b": "WP02-028",
+      "state": "STOWED",
+      "status": "PASS"
+    },
+    {
+      "audit_elapsed_seconds": "0.005604",
+      "broad_phase_solid_candidates": 4,
+      "classification": "NO_POSITIVE_COMMON_VOLUME",
+      "exact_common_volume_mm3": "0.000000000",
+      "name_a": "HBD15_ROD_DRAWING_DERIVED",
+      "name_b": "HBD_MOVING_LOST_MOTION_COUPLER",
+      "occurrence_a": "WP02-020",
+      "occurrence_b": "WP02-021",
+      "state": "STOWED",
+      "status": "PASS"
+    },
+    {
+      "audit_elapsed_seconds": "0.003601",
+      "broad_phase_solid_candidates": 2,
+      "classification": "NO_POSITIVE_COMMON_VOLUME",
+      "exact_common_volume_mm3": "0.000000000",
+      "name_a": "HBD_CAPTIVE_BYPASS_CARRIAGE",
+      "name_b": "HBD_BYPASS_RAIL_AND_SHOULDER_SET",
+      "occurrence_a": "WP02-022",
+      "occurrence_b": "WP02-023",
+      "state": "STOWED",
+      "status": "PASS"
+    },
+    {
+      "audit_elapsed_seconds": "0.001880",
+      "broad_phase_solid_candidates": 2,
+      "classification": "NO_POSITIVE_COMMON_VOLUME",
+      "exact_common_volume_mm3": "0.000000000",
+      "name_a": "HBD_BYPASS_RAIL_AND_SHOULDER_SET",
+      "name_b": "BACKUP_SPRING_GUIDE_PUSHROD",
+      "occurrence_a": "WP02-023",
+      "occurrence_b": "WP02-028",
+      "state": "STOWED",
+      "status": "PASS"
+    },
+    {
+      "audit_elapsed_seconds": "0.613931",
+      "broad_phase_solid_candidates": 1,
+      "classification": "NO_POSITIVE_COMMON_VOLUME",
+      "exact_common_volume_mm3": "0.000000000",
+      "name_a": "BACKUP_SPRING_LHL625D12",
+      "name_b": "BACKUP_SPRING_FIXED_REACTION_SEAT",
+      "occurrence_a": "WP02-025",
+      "occurrence_b": "WP02-026",
+      "state": "STOWED",
+      "status": "PASS"
+    },
+    {
+      "audit_elapsed_seconds": "0.003407",
+      "broad_phase_solid_candidates": 2,
+      "classification": "NO_POSITIVE_COMMON_VOLUME",
+      "exact_common_volume_mm3": "0.000000000",
+      "name_a": "BACKUP_SPRING_MOVING_SEAT",
+      "name_b": "BACKUP_SPRING_GUIDE_PUSHROD",
+      "occurrence_a": "WP02-027",
+      "occurrence_b": "WP02-028",
+      "state": "STOWED",
+      "status": "PASS"
+    },
+    {
+      "audit_elapsed_seconds": "0.007182",
+      "broad_phase_solid_candidates": 5,
+      "classification": "NO_POSITIVE_COMMON_VOLUME",
+      "exact_common_volume_mm3": "0.000000000",
+      "name_a": "POSITIVE_LOCK_HOUSING_SET",
+      "name_b": "POSITIVE_LOCK_PLUNGER_AND_WITNESS_SET",
+      "occurrence_a": "WP02-030",
+      "occurrence_b": "WP02-031",
+      "state": "STOWED",
+      "status": "PASS"
+    },
+    {
+      "audit_elapsed_seconds": "0.012420",
+      "broad_phase_solid_candidates": 2,
+      "classification": "NO_POSITIVE_COMMON_VOLUME",
+      "exact_common_volume_mm3": "0.000000000",
+      "name_a": "CROSSHEAD_SEAR",
+      "name_b": "CROSSHEAD_SEAR_HOUSING",
+      "occurrence_a": "WP02-032",
+      "occurrence_b": "WP02-033",
+      "state": "STOWED",
+      "status": "PASS"
+    },
+    {
+      "audit_elapsed_seconds": "0.006775",
+      "broad_phase_solid_candidates": 1,
+      "classification": "NO_POSITIVE_COMMON_VOLUME",
+      "exact_common_volume_mm3": "0.000000000",
+      "name_a": "ARM_1",
+      "name_b": "LINK_1",
+      "occurrence_a": "WP02-001",
+      "occurrence_b": "WP02-004",
+      "state": "DEPLOYED",
+      "status": "PASS"
+    },
+    {
+      "audit_elapsed_seconds": "0.006377",
+      "broad_phase_solid_candidates": 1,
+      "classification": "NO_POSITIVE_COMMON_VOLUME",
+      "exact_common_volume_mm3": "0.000000000",
+      "name_a": "ARM_1",
+      "name_b": "ARM_PIVOT_PIN_SET",
+      "occurrence_a": "WP02-001",
+      "occurrence_b": "WP02-009",
+      "state": "DEPLOYED",
+      "status": "PASS"
+    },
+    {
+      "audit_elapsed_seconds": "0.006681",
+      "broad_phase_solid_candidates": 1,
+      "classification": "NO_POSITIVE_COMMON_VOLUME",
+      "exact_common_volume_mm3": "0.000000000",
+      "name_a": "ARM_1",
+      "name_b": "ARM_LINK_PIN_SET",
+      "occurrence_a": "WP02-001",
+      "occurrence_b": "WP02-010",
+      "state": "DEPLOYED",
+      "status": "PASS"
+    },
+    {
+      "audit_elapsed_seconds": "0.004740",
+      "broad_phase_solid_candidates": 1,
+      "classification": "NO_POSITIVE_COMMON_VOLUME",
+      "exact_common_volume_mm3": "0.000000000",
+      "name_a": "ARM_1",
+      "name_b": "POSITIVE_LOCK_HOUSING_SET",
+      "occurrence_a": "WP02-001",
+      "occurrence_b": "WP02-030",
+      "state": "DEPLOYED",
+      "status": "PASS"
+    },
+    {
+      "audit_elapsed_seconds": "0.007136",
+      "broad_phase_solid_candidates": 1,
+      "classification": "NO_POSITIVE_COMMON_VOLUME",
+      "exact_common_volume_mm3": "0.000000000",
+      "name_a": "ARM_1",
+      "name_b": "POSITIVE_LOCK_PLUNGER_AND_WITNESS_SET",
+      "occurrence_a": "WP02-001",
+      "occurrence_b": "WP02-031",
+      "state": "DEPLOYED",
+      "status": "PASS"
+    },
+    {
+      "audit_elapsed_seconds": "0.001620",
+      "broad_phase_solid_candidates": 1,
+      "classification": "NO_POSITIVE_COMMON_VOLUME",
+      "exact_common_volume_mm3": "0.000000000",
+      "name_a": "LINK_1",
+      "name_b": "ARM_PIVOT_PIN_SET",
+      "occurrence_a": "WP02-004",
+      "occurrence_b": "WP02-009",
+      "state": "DEPLOYED",
+      "status": "PASS"
+    },
+    {
+      "audit_elapsed_seconds": "0.002532",
+      "broad_phase_solid_candidates": 1,
+      "classification": "NO_POSITIVE_COMMON_VOLUME",
+      "exact_common_volume_mm3": "0.000000000",
+      "name_a": "LINK_1",
+      "name_b": "ARM_LINK_PIN_SET",
+      "occurrence_a": "WP02-004",
+      "occurrence_b": "WP02-010",
+      "state": "DEPLOYED",
+      "status": "PASS"
+    },
+    {
+      "audit_elapsed_seconds": "0.002512",
+      "broad_phase_solid_candidates": 1,
+      "classification": "NO_POSITIVE_COMMON_VOLUME",
+      "exact_common_volume_mm3": "0.000000000",
+      "name_a": "LINK_1",
+      "name_b": "CROSSHEAD_LINK_PIN_SET",
+      "occurrence_a": "WP02-004",
+      "occurrence_b": "WP02-011",
+      "state": "DEPLOYED",
+      "status": "PASS"
+    },
+    {
+      "audit_elapsed_seconds": "0.002458",
+      "broad_phase_solid_candidates": 1,
+      "classification": "NO_POSITIVE_COMMON_VOLUME",
+      "exact_common_volume_mm3": "0.000000000",
+      "name_a": "LINK_1",
+      "name_b": "POSITIVE_LOCK_HOUSING_SET",
+      "occurrence_a": "WP02-004",
+      "occurrence_b": "WP02-030",
+      "state": "DEPLOYED",
+      "status": "PASS"
+    },
+    {
+      "audit_elapsed_seconds": "0.001444",
+      "broad_phase_solid_candidates": 1,
+      "classification": "NO_POSITIVE_COMMON_VOLUME",
+      "exact_common_volume_mm3": "0.000000000",
+      "name_a": "LINK_1",
+      "name_b": "POSITIVE_LOCK_PLUNGER_AND_WITNESS_SET",
+      "occurrence_a": "WP02-004",
+      "occurrence_b": "WP02-031",
+      "state": "DEPLOYED",
+      "status": "PASS"
+    },
+    {
+      "audit_elapsed_seconds": "0.009457",
+      "broad_phase_solid_candidates": 1,
+      "classification": "NO_POSITIVE_COMMON_VOLUME",
+      "exact_common_volume_mm3": "0.000000000",
+      "name_a": "ARM_2",
+      "name_b": "LINK_2",
+      "occurrence_a": "WP02-002",
+      "occurrence_b": "WP02-005",
+      "state": "DEPLOYED",
+      "status": "PASS"
+    },
+    {
+      "audit_elapsed_seconds": "0.011729",
+      "broad_phase_solid_candidates": 2,
+      "classification": "NO_POSITIVE_COMMON_VOLUME",
+      "exact_common_volume_mm3": "0.000000000",
+      "name_a": "ARM_2",
+      "name_b": "PIVOT_BUSHING_SET",
+      "occurrence_a": "WP02-002",
+      "occurrence_b": "WP02-008",
+      "state": "DEPLOYED",
+      "status": "PASS"
+    },
+    {
+      "audit_elapsed_seconds": "0.007076",
+      "broad_phase_solid_candidates": 1,
+      "classification": "NO_POSITIVE_COMMON_VOLUME",
+      "exact_common_volume_mm3": "0.000000000",
+      "name_a": "ARM_2",
+      "name_b": "ARM_PIVOT_PIN_SET",
+      "occurrence_a": "WP02-002",
+      "occurrence_b": "WP02-009",
+      "state": "DEPLOYED",
+      "status": "PASS"
+    },
+    {
+      "audit_elapsed_seconds": "0.009352",
+      "broad_phase_solid_candidates": 1,
+      "classification": "NO_POSITIVE_COMMON_VOLUME",
+      "exact_common_volume_mm3": "0.000000000",
+      "name_a": "ARM_2",
+      "name_b": "ARM_LINK_PIN_SET",
+      "occurrence_a": "WP02-002",
+      "occurrence_b": "WP02-010",
+      "state": "DEPLOYED",
+      "status": "PASS"
+    },
+    {
+      "audit_elapsed_seconds": "0.012633",
+      "broad_phase_solid_candidates": 2,
+      "classification": "NO_POSITIVE_COMMON_VOLUME",
+      "exact_common_volume_mm3": "0.000000000",
+      "name_a": "ARM_2",
+      "name_b": "VSM6_RETENTION_RING_SET",
+      "occurrence_a": "WP02-002",
+      "occurrence_b": "WP02-012",
+      "state": "DEPLOYED",
+      "status": "PASS"
+    },
+    {
+      "audit_elapsed_seconds": "0.018739",
+      "broad_phase_solid_candidates": 3,
+      "classification": "NO_POSITIVE_COMMON_VOLUME",
+      "exact_common_volume_mm3": "0.000000000",
+      "name_a": "ARM_2",
+      "name_b": "POSITIVE_LOCK_HOUSING_SET",
+      "occurrence_a": "WP02-002",
+      "occurrence_b": "WP02-030",
+      "state": "DEPLOYED",
+      "status": "PASS"
+    },
+    {
+      "audit_elapsed_seconds": "0.013275",
+      "broad_phase_solid_candidates": 2,
+      "classification": "NO_POSITIVE_COMMON_VOLUME",
+      "exact_common_volume_mm3": "0.000000000",
+      "name_a": "ARM_2",
+      "name_b": "POSITIVE_LOCK_PLUNGER_AND_WITNESS_SET",
+      "occurrence_a": "WP02-002",
+      "occurrence_b": "WP02-031",
+      "state": "DEPLOYED",
+      "status": "PASS"
+    },
+    {
+      "audit_elapsed_seconds": "0.007253",
+      "broad_phase_solid_candidates": 2,
+      "classification": "NO_POSITIVE_COMMON_VOLUME",
+      "exact_common_volume_mm3": "0.000000000",
+      "name_a": "LINK_2",
+      "name_b": "COMMON_CROSSHEAD",
+      "occurrence_a": "WP02-005",
+      "occurrence_b": "WP02-007",
+      "state": "DEPLOYED",
+      "status": "PASS"
+    },
+    {
+      "audit_elapsed_seconds": "0.001777",
+      "broad_phase_solid_candidates": 1,
+      "classification": "NO_POSITIVE_COMMON_VOLUME",
+      "exact_common_volume_mm3": "0.000000000",
+      "name_a": "LINK_2",
+      "name_b": "ARM_PIVOT_PIN_SET",
+      "occurrence_a": "WP02-005",
+      "occurrence_b": "WP02-009",
+      "state": "DEPLOYED",
+      "status": "PASS"
+    },
+    {
+      "audit_elapsed_seconds": "0.002596",
+      "broad_phase_solid_candidates": 1,
+      "classification": "NO_POSITIVE_COMMON_VOLUME",
+      "exact_common_volume_mm3": "0.000000000",
+      "name_a": "LINK_2",
+      "name_b": "ARM_LINK_PIN_SET",
+      "occurrence_a": "WP02-005",
+      "occurrence_b": "WP02-010",
+      "state": "DEPLOYED",
+      "status": "PASS"
+    },
+    {
+      "audit_elapsed_seconds": "0.002465",
+      "broad_phase_solid_candidates": 1,
+      "classification": "NO_POSITIVE_COMMON_VOLUME",
+      "exact_common_volume_mm3": "0.000000000",
+      "name_a": "LINK_2",
+      "name_b": "CROSSHEAD_LINK_PIN_SET",
+      "occurrence_a": "WP02-005",
+      "occurrence_b": "WP02-011",
+      "state": "DEPLOYED",
+      "status": "PASS"
+    },
+    {
+      "audit_elapsed_seconds": "0.002030",
+      "broad_phase_solid_candidates": 1,
+      "classification": "NO_POSITIVE_COMMON_VOLUME",
+      "exact_common_volume_mm3": "0.000000000",
+      "name_a": "LINK_2",
+      "name_b": "VSM6_RETENTION_RING_SET",
+      "occurrence_a": "WP02-005",
+      "occurrence_b": "WP02-012",
+      "state": "DEPLOYED",
+      "status": "PASS"
+    },
+    {
+      "audit_elapsed_seconds": "0.002063",
+      "broad_phase_solid_candidates": 1,
+      "classification": "NO_POSITIVE_COMMON_VOLUME",
+      "exact_common_volume_mm3": "0.000000000",
+      "name_a": "LINK_2",
+      "name_b": "DEPLOYED_STOP_PAD_SET",
+      "occurrence_a": "WP02-005",
+      "occurrence_b": "WP02-029",
+      "state": "DEPLOYED",
+      "status": "PASS"
+    },
+    {
+      "audit_elapsed_seconds": "0.005855",
+      "broad_phase_solid_candidates": 3,
+      "classification": "NO_POSITIVE_COMMON_VOLUME",
+      "exact_common_volume_mm3": "0.000000000",
+      "name_a": "LINK_2",
+      "name_b": "POSITIVE_LOCK_HOUSING_SET",
+      "occurrence_a": "WP02-005",
+      "occurrence_b": "WP02-030",
+      "state": "DEPLOYED",
+      "status": "PASS"
+    },
+    {
+      "audit_elapsed_seconds": "0.002913",
+      "broad_phase_solid_candidates": 2,
+      "classification": "NO_POSITIVE_COMMON_VOLUME",
+      "exact_common_volume_mm3": "0.000000000",
+      "name_a": "LINK_2",
+      "name_b": "POSITIVE_LOCK_PLUNGER_AND_WITNESS_SET",
+      "occurrence_a": "WP02-005",
+      "occurrence_b": "WP02-031",
+      "state": "DEPLOYED",
+      "status": "PASS"
+    },
+    {
+      "audit_elapsed_seconds": "0.009534",
+      "broad_phase_solid_candidates": 1,
+      "classification": "NO_POSITIVE_COMMON_VOLUME",
+      "exact_common_volume_mm3": "0.000000000",
+      "name_a": "ARM_3",
+      "name_b": "LINK_3",
+      "occurrence_a": "WP02-003",
+      "occurrence_b": "WP02-006",
+      "state": "DEPLOYED",
+      "status": "PASS"
+    },
+    {
+      "audit_elapsed_seconds": "0.011486",
+      "broad_phase_solid_candidates": 2,
+      "classification": "NO_POSITIVE_COMMON_VOLUME",
+      "exact_common_volume_mm3": "0.000000000",
+      "name_a": "ARM_3",
+      "name_b": "PIVOT_BUSHING_SET",
+      "occurrence_a": "WP02-003",
+      "occurrence_b": "WP02-008",
+      "state": "DEPLOYED",
+      "status": "PASS"
+    },
+    {
+      "audit_elapsed_seconds": "0.006997",
+      "broad_phase_solid_candidates": 1,
+      "classification": "NO_POSITIVE_COMMON_VOLUME",
+      "exact_common_volume_mm3": "0.000000000",
+      "name_a": "ARM_3",
+      "name_b": "ARM_PIVOT_PIN_SET",
+      "occurrence_a": "WP02-003",
+      "occurrence_b": "WP02-009",
+      "state": "DEPLOYED",
+      "status": "PASS"
+    },
+    {
+      "audit_elapsed_seconds": "0.009198",
+      "broad_phase_solid_candidates": 1,
+      "classification": "NO_POSITIVE_COMMON_VOLUME",
+      "exact_common_volume_mm3": "0.000000000",
+      "name_a": "ARM_3",
+      "name_b": "ARM_LINK_PIN_SET",
+      "occurrence_a": "WP02-003",
+      "occurrence_b": "WP02-010",
+      "state": "DEPLOYED",
+      "status": "PASS"
+    },
+    {
+      "audit_elapsed_seconds": "0.012644",
+      "broad_phase_solid_candidates": 2,
+      "classification": "NO_POSITIVE_COMMON_VOLUME",
+      "exact_common_volume_mm3": "0.000000000",
+      "name_a": "ARM_3",
+      "name_b": "VSM6_RETENTION_RING_SET",
+      "occurrence_a": "WP02-003",
+      "occurrence_b": "WP02-012",
+      "state": "DEPLOYED",
+      "status": "PASS"
+    },
+    {
+      "audit_elapsed_seconds": "0.017576",
+      "broad_phase_solid_candidates": 3,
+      "classification": "NO_POSITIVE_COMMON_VOLUME",
+      "exact_common_volume_mm3": "0.000000000",
+      "name_a": "ARM_3",
+      "name_b": "POSITIVE_LOCK_HOUSING_SET",
+      "occurrence_a": "WP02-003",
+      "occurrence_b": "WP02-030",
+      "state": "DEPLOYED",
+      "status": "PASS"
+    },
+    {
+      "audit_elapsed_seconds": "0.013411",
+      "broad_phase_solid_candidates": 2,
+      "classification": "NO_POSITIVE_COMMON_VOLUME",
+      "exact_common_volume_mm3": "0.000000000",
+      "name_a": "ARM_3",
+      "name_b": "POSITIVE_LOCK_PLUNGER_AND_WITNESS_SET",
+      "occurrence_a": "WP02-003",
+      "occurrence_b": "WP02-031",
+      "state": "DEPLOYED",
+      "status": "PASS"
+    },
+    {
+      "audit_elapsed_seconds": "0.009401",
+      "broad_phase_solid_candidates": 2,
+      "classification": "NO_POSITIVE_COMMON_VOLUME",
+      "exact_common_volume_mm3": "0.000000000",
+      "name_a": "LINK_3",
+      "name_b": "COMMON_CROSSHEAD",
+      "occurrence_a": "WP02-006",
+      "occurrence_b": "WP02-007",
+      "state": "DEPLOYED",
+      "status": "PASS"
+    },
+    {
+      "audit_elapsed_seconds": "0.001662",
+      "broad_phase_solid_candidates": 1,
+      "classification": "NO_POSITIVE_COMMON_VOLUME",
+      "exact_common_volume_mm3": "0.000000000",
+      "name_a": "LINK_3",
+      "name_b": "ARM_PIVOT_PIN_SET",
+      "occurrence_a": "WP02-006",
+      "occurrence_b": "WP02-009",
+      "state": "DEPLOYED",
+      "status": "PASS"
+    },
+    {
+      "audit_elapsed_seconds": "0.002420",
+      "broad_phase_solid_candidates": 1,
+      "classification": "NO_POSITIVE_COMMON_VOLUME",
+      "exact_common_volume_mm3": "0.000000000",
+      "name_a": "LINK_3",
+      "name_b": "ARM_LINK_PIN_SET",
+      "occurrence_a": "WP02-006",
+      "occurrence_b": "WP02-010",
+      "state": "DEPLOYED",
+      "status": "PASS"
+    },
+    {
+      "audit_elapsed_seconds": "0.002493",
+      "broad_phase_solid_candidates": 1,
+      "classification": "NO_POSITIVE_COMMON_VOLUME",
+      "exact_common_volume_mm3": "0.000000000",
+      "name_a": "LINK_3",
+      "name_b": "CROSSHEAD_LINK_PIN_SET",
+      "occurrence_a": "WP02-006",
+      "occurrence_b": "WP02-011",
+      "state": "DEPLOYED",
+      "status": "PASS"
+    },
+    {
+      "audit_elapsed_seconds": "0.001468",
+      "broad_phase_solid_candidates": 1,
+      "classification": "NO_POSITIVE_COMMON_VOLUME",
+      "exact_common_volume_mm3": "0.000000000",
+      "name_a": "LINK_3",
+      "name_b": "VSM6_RETENTION_RING_SET",
+      "occurrence_a": "WP02-006",
+      "occurrence_b": "WP02-012",
+      "state": "DEPLOYED",
+      "status": "PASS"
+    },
+    {
+      "audit_elapsed_seconds": "0.001524",
+      "broad_phase_solid_candidates": 1,
+      "classification": "NO_POSITIVE_COMMON_VOLUME",
+      "exact_common_volume_mm3": "0.000000000",
+      "name_a": "LINK_3",
+      "name_b": "DEPLOYED_STOP_PAD_SET",
+      "occurrence_a": "WP02-006",
+      "occurrence_b": "WP02-029",
+      "state": "DEPLOYED",
+      "status": "PASS"
+    },
+    {
+      "audit_elapsed_seconds": "0.012518",
+      "broad_phase_solid_candidates": 3,
+      "classification": "NO_POSITIVE_COMMON_VOLUME",
+      "exact_common_volume_mm3": "0.000000000",
+      "name_a": "LINK_3",
+      "name_b": "POSITIVE_LOCK_HOUSING_SET",
+      "occurrence_a": "WP02-006",
+      "occurrence_b": "WP02-030",
+      "state": "DEPLOYED",
+      "status": "PASS"
+    },
+    {
+      "audit_elapsed_seconds": "0.002758",
+      "broad_phase_solid_candidates": 2,
+      "classification": "NO_POSITIVE_COMMON_VOLUME",
+      "exact_common_volume_mm3": "0.000000000",
+      "name_a": "LINK_3",
+      "name_b": "POSITIVE_LOCK_PLUNGER_AND_WITNESS_SET",
+      "occurrence_a": "WP02-006",
+      "occurrence_b": "WP02-031",
+      "state": "DEPLOYED",
+      "status": "PASS"
+    },
+    {
+      "audit_elapsed_seconds": "0.021560",
+      "broad_phase_solid_candidates": 6,
+      "classification": "NO_POSITIVE_COMMON_VOLUME",
+      "exact_common_volume_mm3": "0.000000000",
+      "name_a": "COMMON_CROSSHEAD",
+      "name_b": "CROSSHEAD_LINK_PIN_SET",
+      "occurrence_a": "WP02-007",
+      "occurrence_b": "WP02-011",
+      "state": "DEPLOYED",
+      "status": "PASS"
+    },
+    {
+      "audit_elapsed_seconds": "0.007958",
+      "broad_phase_solid_candidates": 2,
+      "classification": "NO_POSITIVE_COMMON_VOLUME",
+      "exact_common_volume_mm3": "0.000000000",
+      "name_a": "COMMON_CROSSHEAD",
+      "name_b": "VSM6_RETENTION_RING_SET",
+      "occurrence_a": "WP02-007",
+      "occurrence_b": "WP02-012",
+      "state": "DEPLOYED",
+      "status": "PASS"
+    },
+    {
+      "audit_elapsed_seconds": "0.032672",
+      "broad_phase_solid_candidates": 3,
+      "classification": "NO_POSITIVE_COMMON_VOLUME",
+      "exact_common_volume_mm3": "0.000000000",
+      "name_a": "COMMON_CROSSHEAD",
+      "name_b": "POWERTRAIN_CARTRIDGE_SPINE",
+      "occurrence_a": "WP02-007",
+      "occurrence_b": "WP02-013",
+      "state": "DEPLOYED",
+      "status": "PASS"
+    },
+    {
+      "audit_elapsed_seconds": "0.028223",
+      "broad_phase_solid_candidates": 4,
+      "classification": "NO_POSITIVE_COMMON_VOLUME",
+      "exact_common_volume_mm3": "0.000000000",
+      "name_a": "COMMON_CROSSHEAD",
+      "name_b": "CROSSHEAD_GUIDE_ROD_SET",
+      "occurrence_a": "WP02-007",
+      "occurrence_b": "WP02-014",
+      "state": "DEPLOYED",
+      "status": "PASS"
+    },
+    {
+      "audit_elapsed_seconds": "0.031405",
+      "broad_phase_solid_candidates": 1,
+      "classification": "NO_POSITIVE_COMMON_VOLUME",
+      "exact_common_volume_mm3": "0.000000000",
+      "name_a": "COMMON_CROSSHEAD",
+      "name_b": "GS19_MOVING_ADAPTER",
+      "occurrence_a": "WP02-007",
+      "occurrence_b": "WP02-018",
+      "state": "DEPLOYED",
+      "status": "PASS"
+    },
+    {
+      "audit_elapsed_seconds": "0.003790",
+      "broad_phase_solid_candidates": 2,
+      "classification": "NO_POSITIVE_COMMON_VOLUME",
+      "exact_common_volume_mm3": "0.000000000",
+      "name_a": "COMMON_CROSSHEAD",
+      "name_b": "HBD15_ROD_DRAWING_DERIVED",
+      "occurrence_a": "WP02-007",
+      "occurrence_b": "WP02-020",
+      "state": "DEPLOYED",
+      "status": "PASS"
+    },
+    {
+      "audit_elapsed_seconds": "0.030925",
+      "broad_phase_solid_candidates": 9,
+      "classification": "NO_POSITIVE_COMMON_VOLUME",
+      "exact_common_volume_mm3": "0.000000000",
+      "name_a": "COMMON_CROSSHEAD",
+      "name_b": "HBD_MOVING_LOST_MOTION_COUPLER",
+      "occurrence_a": "WP02-007",
+      "occurrence_b": "WP02-021",
+      "state": "DEPLOYED",
+      "status": "PASS"
+    },
+    {
+      "audit_elapsed_seconds": "0.002088",
+      "broad_phase_solid_candidates": 1,
+      "classification": "NO_POSITIVE_COMMON_VOLUME",
+      "exact_common_volume_mm3": "0.000000000",
+      "name_a": "COMMON_CROSSHEAD",
+      "name_b": "BACKUP_SPRING_GUIDE_PUSHROD",
+      "occurrence_a": "WP02-007",
+      "occurrence_b": "WP02-028",
+      "state": "DEPLOYED",
+      "status": "PASS"
+    },
+    {
+      "audit_elapsed_seconds": "0.005069",
+      "broad_phase_solid_candidates": 1,
+      "classification": "NO_POSITIVE_COMMON_VOLUME",
+      "exact_common_volume_mm3": "0.000000000",
+      "name_a": "COMMON_CROSSHEAD",
+      "name_b": "CROSSHEAD_SEAR",
+      "occurrence_a": "WP02-007",
+      "occurrence_b": "WP02-032",
+      "state": "DEPLOYED",
+      "status": "PASS"
+    },
+    {
+      "audit_elapsed_seconds": "0.078982",
+      "broad_phase_solid_candidates": 6,
+      "classification": "NO_POSITIVE_COMMON_VOLUME",
+      "exact_common_volume_mm3": "0.000000000",
+      "name_a": "COMMON_CROSSHEAD",
+      "name_b": "CROSSHEAD_SEAR_HOUSING",
+      "occurrence_a": "WP02-007",
+      "occurrence_b": "WP02-033",
+      "state": "DEPLOYED",
+      "status": "PASS"
+    },
+    {
+      "audit_elapsed_seconds": "0.012655",
+      "broad_phase_solid_candidates": 6,
+      "classification": "NO_POSITIVE_COMMON_VOLUME",
+      "exact_common_volume_mm3": "0.000000000",
+      "name_a": "PIVOT_BUSHING_SET",
+      "name_b": "ARM_PIVOT_PIN_SET",
+      "occurrence_a": "WP02-008",
+      "occurrence_b": "WP02-009",
+      "state": "DEPLOYED",
+      "status": "PASS"
+    },
+    {
+      "audit_elapsed_seconds": "0.003817",
+      "broad_phase_solid_candidates": 2,
+      "classification": "NO_POSITIVE_COMMON_VOLUME",
+      "exact_common_volume_mm3": "0.000000000",
+      "name_a": "PIVOT_BUSHING_SET",
+      "name_b": "VSM6_RETENTION_RING_SET",
+      "occurrence_a": "WP02-008",
+      "occurrence_b": "WP02-012",
+      "state": "DEPLOYED",
+      "status": "PASS"
+    },
+    {
+      "audit_elapsed_seconds": "0.002198",
+      "broad_phase_solid_candidates": 4,
+      "classification": "NO_POSITIVE_COMMON_VOLUME",
+      "exact_common_volume_mm3": "0.000000000",
+      "name_a": "PIVOT_BUSHING_SET",
+      "name_b": "POSITIVE_LOCK_HOUSING_SET",
+      "occurrence_a": "WP02-008",
+      "occurrence_b": "WP02-030",
+      "state": "DEPLOYED",
+      "status": "PASS"
+    },
+    {
+      "audit_elapsed_seconds": "0.007962",
+      "broad_phase_solid_candidates": 3,
+      "classification": "NO_POSITIVE_COMMON_VOLUME",
+      "exact_common_volume_mm3": "0.000000000",
+      "name_a": "ARM_PIVOT_PIN_SET",
+      "name_b": "VSM6_RETENTION_RING_SET",
+      "occurrence_a": "WP02-009",
+      "occurrence_b": "WP02-012",
+      "state": "DEPLOYED",
+      "status": "PASS"
+    },
+    {
+      "audit_elapsed_seconds": "0.006239",
+      "broad_phase_solid_candidates": 6,
+      "classification": "NO_POSITIVE_COMMON_VOLUME",
+      "exact_common_volume_mm3": "0.000000000",
+      "name_a": "ARM_PIVOT_PIN_SET",
+      "name_b": "POSITIVE_LOCK_HOUSING_SET",
+      "occurrence_a": "WP02-009",
+      "occurrence_b": "WP02-030",
+      "state": "DEPLOYED",
+      "status": "PASS"
+    },
+    {
+      "audit_elapsed_seconds": "0.001702",
+      "broad_phase_solid_candidates": 2,
+      "classification": "NO_POSITIVE_COMMON_VOLUME",
+      "exact_common_volume_mm3": "0.000000000",
+      "name_a": "ARM_PIVOT_PIN_SET",
+      "name_b": "POSITIVE_LOCK_PLUNGER_AND_WITNESS_SET",
+      "occurrence_a": "WP02-009",
+      "occurrence_b": "WP02-031",
+      "state": "DEPLOYED",
+      "status": "PASS"
+    },
+    {
+      "audit_elapsed_seconds": "0.008704",
+      "broad_phase_solid_candidates": 3,
+      "classification": "NO_POSITIVE_COMMON_VOLUME",
+      "exact_common_volume_mm3": "0.000000000",
+      "name_a": "ARM_LINK_PIN_SET",
+      "name_b": "VSM6_RETENTION_RING_SET",
+      "occurrence_a": "WP02-010",
+      "occurrence_b": "WP02-012",
+      "state": "DEPLOYED",
+      "status": "PASS"
+    },
+    {
+      "audit_elapsed_seconds": "0.008703",
+      "broad_phase_solid_candidates": 3,
+      "classification": "NO_POSITIVE_COMMON_VOLUME",
+      "exact_common_volume_mm3": "0.000000000",
+      "name_a": "CROSSHEAD_LINK_PIN_SET",
+      "name_b": "VSM6_RETENTION_RING_SET",
+      "occurrence_a": "WP02-011",
+      "occurrence_b": "WP02-012",
+      "state": "DEPLOYED",
+      "status": "PASS"
+    },
+    {
+      "audit_elapsed_seconds": "0.004672",
+      "broad_phase_solid_candidates": 3,
+      "classification": "NO_POSITIVE_COMMON_VOLUME",
+      "exact_common_volume_mm3": "0.000000000",
+      "name_a": "POWERTRAIN_CARTRIDGE_SPINE",
+      "name_b": "CROSSHEAD_GUIDE_ROD_SET",
+      "occurrence_a": "WP02-013",
+      "occurrence_b": "WP02-014",
+      "state": "DEPLOYED",
+      "status": "PASS"
+    },
+    {
+      "audit_elapsed_seconds": "1.921348",
+      "broad_phase_solid_candidates": 3,
+      "classification": "NO_POSITIVE_COMMON_VOLUME",
+      "exact_common_volume_mm3": "0.000000000",
+      "name_a": "POWERTRAIN_CARTRIDGE_SPINE",
+      "name_b": "BACKUP_SPRING_LHL625D12",
+      "occurrence_a": "WP02-013",
+      "occurrence_b": "WP02-025",
+      "state": "DEPLOYED",
+      "status": "PASS"
+    },
+    {
+      "audit_elapsed_seconds": "0.020227",
+      "broad_phase_solid_candidates": 6,
+      "classification": "NO_POSITIVE_COMMON_VOLUME",
+      "exact_common_volume_mm3": "0.000000000",
+      "name_a": "POWERTRAIN_CARTRIDGE_SPINE",
+      "name_b": "BACKUP_SPRING_FIXED_REACTION_SEAT",
+      "occurrence_a": "WP02-013",
+      "occurrence_b": "WP02-026",
+      "state": "DEPLOYED",
+      "status": "PASS"
+    },
+    {
+      "audit_elapsed_seconds": "0.003262",
+      "broad_phase_solid_candidates": 2,
+      "classification": "NO_POSITIVE_COMMON_VOLUME",
+      "exact_common_volume_mm3": "0.000000000",
+      "name_a": "POWERTRAIN_CARTRIDGE_SPINE",
+      "name_b": "BACKUP_SPRING_GUIDE_PUSHROD",
+      "occurrence_a": "WP02-013",
+      "occurrence_b": "WP02-028",
+      "state": "DEPLOYED",
+      "status": "PASS"
+    },
+    {
+      "audit_elapsed_seconds": "0.037684",
+      "broad_phase_solid_candidates": 4,
+      "classification": "NO_POSITIVE_COMMON_VOLUME",
+      "exact_common_volume_mm3": "0.000000000",
+      "name_a": "CROSSHEAD_GUIDE_ROD_SET",
+      "name_b": "CROSSHEAD_SEAR_HOUSING",
+      "occurrence_a": "WP02-014",
+      "occurrence_b": "WP02-033",
+      "state": "DEPLOYED",
+      "status": "PASS"
+    },
+    {
+      "audit_elapsed_seconds": "0.006089",
+      "broad_phase_solid_candidates": 1,
+      "classification": "INTENTIONAL_INTERNAL_COTS_TELESCOPING_REPRESENTATION",
+      "exact_common_volume_mm3": "1062.011016067",
+      "name_a": "GS19_FIXED_BODY_EXACT_VENDOR_BREP",
+      "name_b": "GS19_MOVING_ROD_EXACT_VENDOR_BREP",
+      "occurrence_a": "WP02-015",
+      "occurrence_b": "WP02-016",
+      "state": "DEPLOYED",
+      "status": "ACCEPTED_REPRESENTATION_LIMITATION"
+    },
+    {
+      "audit_elapsed_seconds": "0.007900",
+      "broad_phase_solid_candidates": 1,
+      "classification": "NO_POSITIVE_COMMON_VOLUME",
+      "exact_common_volume_mm3": "0.000000000",
+      "name_a": "GS19_FIXED_BODY_EXACT_VENDOR_BREP",
+      "name_b": "GS19_FIXED_ANCHOR",
+      "occurrence_a": "WP02-015",
+      "occurrence_b": "WP02-017",
+      "state": "DEPLOYED",
+      "status": "PASS"
+    },
+    {
+      "audit_elapsed_seconds": "0.003333",
+      "broad_phase_solid_candidates": 1,
+      "classification": "NO_POSITIVE_COMMON_VOLUME",
+      "exact_common_volume_mm3": "0.000000000",
+      "name_a": "GS19_FIXED_BODY_EXACT_VENDOR_BREP",
+      "name_b": "BACKUP_SPRING_GUIDE_PUSHROD",
+      "occurrence_a": "WP02-015",
+      "occurrence_b": "WP02-028",
+      "state": "DEPLOYED",
+      "status": "PASS"
+    },
+    {
+      "audit_elapsed_seconds": "0.002431",
+      "broad_phase_solid_candidates": 1,
+      "classification": "NO_POSITIVE_COMMON_VOLUME",
+      "exact_common_volume_mm3": "0.000000000",
+      "name_a": "GS19_MOVING_ROD_EXACT_VENDOR_BREP",
+      "name_b": "GS19_MOVING_ADAPTER",
+      "occurrence_a": "WP02-016",
+      "occurrence_b": "WP02-018",
+      "state": "DEPLOYED",
+      "status": "PASS"
+    },
+    {
+      "audit_elapsed_seconds": "0.000978",
+      "broad_phase_solid_candidates": 1,
+      "classification": "NO_POSITIVE_COMMON_VOLUME",
+      "exact_common_volume_mm3": "0.000000000",
+      "name_a": "GS19_FIXED_ANCHOR",
+      "name_b": "BACKUP_SPRING_GUIDE_PUSHROD",
+      "occurrence_a": "WP02-017",
+      "occurrence_b": "WP02-028",
+      "state": "DEPLOYED",
+      "status": "PASS"
+    },
+    {
+      "audit_elapsed_seconds": "0.006127",
+      "broad_phase_solid_candidates": 1,
+      "classification": "INTENTIONAL_INTERNAL_COTS_TELESCOPING_REPRESENTATION",
+      "exact_common_volume_mm3": "318.086256176",
+      "name_a": "HBD15_BODY_DRAWING_DERIVED",
+      "name_b": "HBD15_ROD_DRAWING_DERIVED",
+      "occurrence_a": "WP02-019",
+      "occurrence_b": "WP02-020",
+      "state": "DEPLOYED",
+      "status": "ACCEPTED_REPRESENTATION_LIMITATION"
+    },
+    {
+      "audit_elapsed_seconds": "0.003628",
+      "broad_phase_solid_candidates": 3,
+      "classification": "NO_POSITIVE_COMMON_VOLUME",
+      "exact_common_volume_mm3": "0.000000000",
+      "name_a": "HBD15_BODY_DRAWING_DERIVED",
+      "name_b": "HBD_CAPTIVE_BYPASS_CARRIAGE",
+      "occurrence_a": "WP02-019",
+      "occurrence_b": "WP02-022",
+      "state": "DEPLOYED",
+      "status": "PASS"
+    },
+    {
+      "audit_elapsed_seconds": "0.002677",
+      "broad_phase_solid_candidates": 2,
+      "classification": "NO_POSITIVE_COMMON_VOLUME",
+      "exact_common_volume_mm3": "0.000000000",
+      "name_a": "HBD15_BODY_DRAWING_DERIVED",
+      "name_b": "HBD_BYPASS_RAIL_AND_SHOULDER_SET",
+      "occurrence_a": "WP02-019",
+      "occurrence_b": "WP02-023",
+      "state": "DEPLOYED",
+      "status": "PASS"
+    },
+    {
+      "audit_elapsed_seconds": "0.001278",
+      "broad_phase_solid_candidates": 1,
+      "classification": "NO_POSITIVE_COMMON_VOLUME",
+      "exact_common_volume_mm3": "0.000000000",
+      "name_a": "HBD15_BODY_DRAWING_DERIVED",
+      "name_b": "BACKUP_SPRING_GUIDE_PUSHROD",
+      "occurrence_a": "WP02-019",
+      "occurrence_b": "WP02-028",
+      "state": "DEPLOYED",
+      "status": "PASS"
+    },
+    {
+      "audit_elapsed_seconds": "0.005680",
+      "broad_phase_solid_candidates": 4,
+      "classification": "NO_POSITIVE_COMMON_VOLUME",
+      "exact_common_volume_mm3": "0.000000000",
+      "name_a": "HBD15_ROD_DRAWING_DERIVED",
+      "name_b": "HBD_MOVING_LOST_MOTION_COUPLER",
+      "occurrence_a": "WP02-020",
+      "occurrence_b": "WP02-021",
+      "state": "DEPLOYED",
+      "status": "PASS"
+    },
+    {
+      "audit_elapsed_seconds": "0.003805",
+      "broad_phase_solid_candidates": 2,
+      "classification": "NO_POSITIVE_COMMON_VOLUME",
+      "exact_common_volume_mm3": "0.000000000",
+      "name_a": "HBD_CAPTIVE_BYPASS_CARRIAGE",
+      "name_b": "HBD_BYPASS_RAIL_AND_SHOULDER_SET",
+      "occurrence_a": "WP02-022",
+      "occurrence_b": "WP02-023",
+      "state": "DEPLOYED",
+      "status": "PASS"
+    },
+    {
+      "audit_elapsed_seconds": "0.002057",
+      "broad_phase_solid_candidates": 2,
+      "classification": "NO_POSITIVE_COMMON_VOLUME",
+      "exact_common_volume_mm3": "0.000000000",
+      "name_a": "HBD_BYPASS_RAIL_AND_SHOULDER_SET",
+      "name_b": "BACKUP_SPRING_GUIDE_PUSHROD",
+      "occurrence_a": "WP02-023",
+      "occurrence_b": "WP02-028",
+      "state": "DEPLOYED",
+      "status": "PASS"
+    },
+    {
+      "audit_elapsed_seconds": "0.515949",
+      "broad_phase_solid_candidates": 1,
+      "classification": "NO_POSITIVE_COMMON_VOLUME",
+      "exact_common_volume_mm3": "0.000000000",
+      "name_a": "BACKUP_SPRING_LHL625D12",
+      "name_b": "BACKUP_SPRING_FIXED_REACTION_SEAT",
+      "occurrence_a": "WP02-025",
+      "occurrence_b": "WP02-026",
+      "state": "DEPLOYED",
+      "status": "PASS"
+    },
+    {
+      "audit_elapsed_seconds": "0.004088",
+      "broad_phase_solid_candidates": 2,
+      "classification": "NO_POSITIVE_COMMON_VOLUME",
+      "exact_common_volume_mm3": "0.000000000",
+      "name_a": "BACKUP_SPRING_MOVING_SEAT",
+      "name_b": "BACKUP_SPRING_GUIDE_PUSHROD",
+      "occurrence_a": "WP02-027",
+      "occurrence_b": "WP02-028",
+      "state": "DEPLOYED",
+      "status": "PASS"
+    },
+    {
+      "audit_elapsed_seconds": "0.016886",
+      "broad_phase_solid_candidates": 10,
+      "classification": "NO_POSITIVE_COMMON_VOLUME",
+      "exact_common_volume_mm3": "0.000000000",
+      "name_a": "POSITIVE_LOCK_HOUSING_SET",
+      "name_b": "POSITIVE_LOCK_PLUNGER_AND_WITNESS_SET",
+      "occurrence_a": "WP02-030",
+      "occurrence_b": "WP02-031",
+      "state": "DEPLOYED",
+      "status": "PASS"
+    }
+  ],
+  "schema": "WP02_FULL_SOLID_PAIR_AUDIT_CACHE_V1",
+  "summaries": [
+    {
+      "accepted_internal_cots_representation_pairs": 2,
+      "broad_phase_occurrence_pairs_checked": 85,
+      "positive_common_volume_pairs": 2,
+      "state": "STOWED",
+      "status": "PASS_WITH_DECLARED_COTS_REPRESENTATION_LIMITATIONS",
+      "unresolved_or_boolean_error_pairs": 0,
+      "zero_common_volume_pairs": 83
+    },
+    {
+      "accepted_internal_cots_representation_pairs": 2,
+      "broad_phase_occurrence_pairs_checked": 78,
+      "positive_common_volume_pairs": 2,
+      "state": "DEPLOYED",
+      "status": "PASS_WITH_DECLARED_COTS_REPRESENTATION_LIMITATIONS",
+      "unresolved_or_boolean_error_pairs": 0,
+      "zero_common_volume_pairs": 76
+    }
+  ]
+}

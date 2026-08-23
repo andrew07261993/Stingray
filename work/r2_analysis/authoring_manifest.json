@@ -1,0 +1,34 @@
+{
+  "release_status": "CREO_VALIDATION_PENDING \u2014 WIP \u2014 NOT RELEASED",
+  "authoring_kernel": "CadQuery 2.8.0 / OCCT 7.9",
+  "schema": "AP242",
+  "crosshead_travel_mm": 15.05503437113498,
+  "hard_requirements": {
+    "arm_module_od_max_mm": 57.15,
+    "normal_body_target_mm": 53.0,
+    "arm_clocking_deg": [
+      0.0,
+      120.0,
+      240.0
+    ],
+    "arm_deployed_angle_deg": 80.0,
+    "arm_pivot_to_tip_mm": 733.806,
+    "rigid_length_max_mm": 2032.0,
+    "mass_max_kg": 18.14,
+    "crosshead_travel_min_mm": 15.05
+  },
+  "files": {
+    "STINGRAY_I5S_DF8_R2_CANDIDATE_WIP_STOWED_AP242.step": {
+      "sha256": "b30239ef0c50e0960b17d2d85a7e2e1ccd353de322c7966fe6a347c1b35206e4",
+      "size_bytes": 6211040
+    },
+    "STINGRAY_I5S_DF8_R2_CANDIDATE_WIP_DEPLOYED_AP242.step": {
+      "sha256": "1ccd27a4e979126ff224120ee4b022443a6dd28f0644fbb3967daf0b7bc74314",
+      "size_bytes": 6118826
+    },
+    "STINGRAY_I5S_DF8_R2_EXTERNAL_TEST_CONTEXT_PROVISIONAL_AP242.step": {
+      "sha256": "5d990dd937dad4b3d1de8966536104ea1ab1eff5f9be67d765544158fa121901",
+      "size_bytes": 81642
+    }
+  }
+}

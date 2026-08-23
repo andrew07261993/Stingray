@@ -1,0 +1,35 @@
+{
+  "schema": "DF8_HANDOFF_COMMISSION_PROVENANCE_V1",
+  "records": [
+    {
+      "role": "Original controlling commission",
+      "source_kind": "uploaded controlling record",
+      "uploaded_filename": "Pasted markdown(20260821-031917).md",
+      "workspace_source": "upload/Pasted markdown(20260821-031917).md",
+      "staged_path": "commission/ORIGINAL_COMMISSION_20260821-031917.md",
+      "size_bytes": 22327,
+      "sha256": "72f3bf0f8a2dce5a8b5a93d643f34380f6e38ec99e50648a8a6594b0af4473c3",
+      "mtime_utc": "2026-08-21T03:19:20Z"
+    },
+    {
+      "role": "R1 rejection and R2 corrective direction",
+      "source_kind": "uploaded controlling record",
+      "uploaded_filename": "Pasted markdown(20260821-171406).md",
+      "workspace_source": "upload/Pasted markdown(20260821-171406).md",
+      "staged_path": "commission/R1_REJECTION_R2_CORRECTION_20260821-171406.md",
+      "size_bytes": 26493,
+      "sha256": "5debd6dfcb15bba3cb16152d8ab7c1d26014b3d11794c57ebdba188f93ddf6de",
+      "mtime_utc": "2026-08-21T17:14:11Z"
+    },
+    {
+      "role": "Latest safe-termination/runtime directive; runtime-only and non-engineering",
+      "source_kind": "workspace runtime directive",
+      "uploaded_filename": "SAFE_CODEX_HANDOFF_RUNTIME_DIRECTIVE.md",
+      "workspace_source": "work/handoff_tools/SAFE_CODEX_HANDOFF_RUNTIME_DIRECTIVE.md",
+      "staged_path": "commission/SAFE_CODEX_HANDOFF_RUNTIME_DIRECTIVE.md",
+      "size_bytes": 5036,
+      "sha256": "738e305140fd213fe63b792a68d89ac1d94bc1117e4c2c5ff31a8a1e2a96202b",
+      "mtime_utc": "2026-08-22T21:11:29Z"
+    }
+  ]
+}

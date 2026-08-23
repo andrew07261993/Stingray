@@ -1,0 +1,22 @@
+Command:
+PYTHONPATH=work/r2_source work/cadenv/bin/python work/r2_source/validate_r2.py --out work/final_analysis/validation --motion-workers 8
+
+Exit code: 1
+
+Traceback (most recent call last):
+  File "/workspace/scratch/6f4e7892e9f1/work/r2_source/validate_r2.py", line 4440, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "/workspace/scratch/6f4e7892e9f1/work/r2_source/validate_r2.py", line 4383, in main
+    motion = motion_audit(endpoints, inventories, out_dir, worker_count=args.motion_workers)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/6f4e7892e9f1/work/r2_source/validate_r2.py", line 3629, in motion_audit
+    if int(row["sample_index"]) != angle + 1 or int(float(row["angle_deg"])) != angle:
+                                                          ~~~^^^^^^^^^^^^^
+KeyError: 'angle_deg'
+
+Observed disposition:
+- All 81 exact-BREP motion pair shards completed and were merged before the exception.
+- The merged motion pair register passed gzip integrity and contains 1,447,875 data rows covering angles 0 through 80 exactly.
+- The exception occurred during post-merge kinematics shard identity validation.
+- No geometry correction or audit rerun was started after this failure.

@@ -1,0 +1,110 @@
+{
+  "task": "clean-process exact motion smoke at angle 80",
+  "angle_deg": 80,
+  "validator_path": "/workspace/scratch/6f4e7892e9f1/work/r2_source/validate_r2.py",
+  "validator_sha256": "b4fee2762c39371d525f448ebaf2016502cae395cbb531a6c1b0aabc78261fd1",
+  "input_files": {
+    "STOWED": {
+      "step_path": "/workspace/scratch/6f4e7892e9f1/work/final_release/STINGRAY_I5S_DF8_FINAL_STOWED_MASTER_AP242.step",
+      "step_sha256": "0cb1f05d0882a84959ba56b2eedcf3fac53dfb3bd59ef13488de056e871cd5ba",
+      "step_size_bytes": 13785070,
+      "inventory_path": "/workspace/scratch/6f4e7892e9f1/work/final_analysis/authoring_inventory_stowed.json",
+      "inventory_sha256": "3b052a4dae1823dd8ffdcf2d1f8dc70a8834db394b9323713e36026146918940",
+      "inventory_size_bytes": 1610702
+    },
+    "DEPLOYED": {
+      "step_path": "/workspace/scratch/6f4e7892e9f1/work/final_release/STINGRAY_I5S_DF8_FINAL_DEPLOYED_MASTER_AP242.step",
+      "step_sha256": "7c78f3c08ec5cf3d39a1e9e59b9f4256886ac12dbb6c29524cae2eacc1af431f",
+      "step_size_bytes": 15424087,
+      "inventory_path": "/workspace/scratch/6f4e7892e9f1/work/final_analysis/authoring_inventory_deployed.json",
+      "inventory_sha256": "5d56618cf2aa1875d8146a049898b745f426df7f234c3829b4385a434c77bacc",
+      "inventory_size_bytes": 1617135
+    }
+  },
+  "load_endpoint_seconds": {
+    "STOWED": 12.129251852995367,
+    "DEPLOYED": 13.49772013099573
+  },
+  "motion_wall_seconds": 617.867464873998,
+  "total_wall_seconds": 643.5489735603333,
+  "summary": {
+    "scope": "Every inventory MOVING/FLEXIBLE/SOFTGOOD occurrence explicitly tracked; every pair with at least one active dynamic occurrence audited",
+    "scope_missing_occurrence_ids": [],
+    "scope_missing": [],
+    "track_validation_errors": [
+      "BACKUP-SPRING-001@80: analytic B-rep generation/equivalence failed: ValueError: DEPLOYED analytic B-rep/placement does not match the clean-reimported endpoint; common_status=DONE, common_volume=6907.143223443226, common_error="
+    ],
+    "track_validation_error_count": 1,
+    "required_scope_occurrence_count": 93,
+    "tracked_scope_occurrence_count": 93,
+    "active_dynamic_occurrence_count": 61,
+    "sample_count": 1,
+    "angle_increment_deg": 1,
+    "pair_register": "/workspace/scratch/6f4e7892e9f1/work/final_analysis/smoke_angle80_exact_spring/motion_full_mechanism_audit.csv.gz",
+    "kinematics_register": "/workspace/scratch/6f4e7892e9f1/work/final_analysis/smoke_angle80_exact_spring/motion_kinematics_1deg.csv",
+    "pair_row_count": 19419,
+    "broadphase_candidate_count": 465,
+    "positive_volume_pair_count": 3,
+    "unauthorized_positive_volume_pair_count": 3,
+    "documented_positive_volume_pair_count": 15,
+    "boolean_blocked_pair_count": 0,
+    "distance_blocked_pair_count": 0,
+    "minimum_exact_noninterfering_clearance_mm": 0.0,
+    "intentional_fit_register_errors": [],
+    "intentional_fit_register_error_count": 0,
+    "used_intentional_fit_exception_ids": [
+      "FIT-ACTUATOR-RETAINER-GS19-MOVING",
+      "FIT-ACTUATOR-RETAINER-HBD-MOVING",
+      "FIT-CIRCLIP-FULLFLOW",
+      "FIT-STOW-INHIBIT-KEEPER-1",
+      "FIT-STOW-INHIBIT-KEEPER-2",
+      "FIT-STOW-INHIBIT-KEEPER-3",
+      "FIT-THREAD-ARM-STOP-1-1",
+      "FIT-THREAD-ARM-STOP-1-2",
+      "FIT-THREAD-ARM-STOP-2-1",
+      "FIT-THREAD-ARM-STOP-2-2",
+      "FIT-THREAD-ARM-STOP-3-1",
+      "FIT-THREAD-ARM-STOP-3-2",
+      "FIT-THREAD-WP04-MOVING-SLEEVE-1",
+      "FIT-THREAD-WP04-MOVING-SLEEVE-2",
+      "FIT-THREAD-WP04-MOVING-SLEEVE-3"
+    ],
+    "unused_intentional_fit_exception_ids": [],
+    "positive_rows": [
+      {
+        "angle_deg": 80,
+        "occurrence_a": "STOW-DOG-1",
+        "solid_index_a": 1,
+        "variant_a": "STOWED",
+        "occurrence_b": "STOW-DOG-SPRING-1",
+        "solid_index_b": 1,
+        "variant_b": "STOWED",
+        "common_volume_mm3": 0.02433779957332001
+      },
+      {
+        "angle_deg": 80,
+        "occurrence_a": "STOW-DOG-2",
+        "solid_index_a": 1,
+        "variant_a": "STOWED",
+        "occurrence_b": "STOW-DOG-SPRING-2",
+        "solid_index_b": 1,
+        "variant_b": "STOWED",
+        "common_volume_mm3": 0.024337799783095387
+      },
+      {
+        "angle_deg": 80,
+        "occurrence_a": "STOW-DOG-3",
+        "solid_index_a": 1,
+        "variant_a": "STOWED",
+        "occurrence_b": "STOW-DOG-SPRING-3",
+        "solid_index_b": 1,
+        "variant_b": "STOWED",
+        "common_volume_mm3": 0.024337799684263153
+      }
+    ],
+    "blocked_rows": [],
+    "maximum_closure_residual_abs_mm": 4.618527782440651e-14,
+    "crosshead_travel_0_to_80_mm": 0.0,
+    "elapsed_seconds": 617.8646340370178
+  }
+}

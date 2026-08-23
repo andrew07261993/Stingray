@@ -1,0 +1,6 @@
+total_external_load_lbf,total_external_load_n,load_distribution,per_arm_load_n,lever_arm_mm,section_inertia_mm4,section_modulus_mm3,nominal_root_bending_stress_mpa,assumed_17_4ph_h900_yield_mpa,yield_margin_ratio,classification
+150.0,667.233,equal three-arm provisional,222.411,435.0,5154.323,710.941,136.086,1170 (screening assumption; certification required),8.598,DEVELOPMENT SCREEN; NOT APPROVED LOAD BASIS OR FEA
+300.0,1334.466,equal three-arm provisional,444.822,435.0,5154.323,710.941,272.171,1170 (screening assumption; certification required),4.299,DEVELOPMENT SCREEN; NOT APPROVED LOAD BASIS OR FEA
+500.0,2224.111,equal three-arm provisional,741.370,435.0,5154.323,710.941,453.619,1170 (screening assumption; certification required),2.579,DEVELOPMENT SCREEN; NOT APPROVED LOAD BASIS OR FEA
+750.0,3336.166,equal three-arm provisional,1112.055,435.0,5154.323,710.941,680.428,1170 (screening assumption; certification required),1.720,DEVELOPMENT SCREEN; NOT APPROVED LOAD BASIS OR FEA
+1000.0,4448.222,equal three-arm provisional,1482.741,435.0,5154.323,710.941,907.237,1170 (screening assumption; certification required),1.290,DEVELOPMENT SCREEN; NOT APPROVED LOAD BASIS OR FEA

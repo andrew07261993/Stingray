@@ -1,0 +1,41 @@
+{
+  "release_status": "AUTHORING_COMPLETE \u2014 RELEASE DISPOSITION CALCULATED BY INDEPENDENT NEUTRAL-CAD VALIDATOR",
+  "creo_environment": "N/A \u2014 NOT REQUIRED BY THE CONTROLLING COMMISSION; OWNER CREO IMPORT OCCURS AFTER DELIVERY.",
+  "authoring_kernel": "CadQuery 2.8.0 / OCCT 7.9",
+  "schema": "AP242",
+  "crosshead_travel_mm": 15.05503437113498,
+  "hard_requirements": {
+    "arm_module_od_max_mm": 57.15,
+    "normal_body_target_mm": 53.0,
+    "arm_clocking_deg": [
+      0.0,
+      120.0,
+      240.0
+    ],
+    "arm_deployed_angle_deg": 80.0,
+    "arm_pivot_to_tip_mm": 733.806,
+    "rigid_length_max_mm": 2032.0,
+    "mass_max_kg": 18.14,
+    "crosshead_travel_min_mm": 15.05
+  },
+  "files": {
+    "STINGRAY_I5S_DF8_FINAL_STOWED_MASTER_AP242.step": {
+      "sha256": "77c62e1432290b5030083d451d5c6d6cfb9d910c01052921dabebd65d49eac6d",
+      "size_bytes": 14034341
+    },
+    "STINGRAY_I5S_DF8_FINAL_DEPLOYED_MASTER_AP242.step": {
+      "sha256": "34381cfb728534fb13267b800c70de7bbc6e1c5981f763e76e41b8d32c021205",
+      "size_bytes": 15684569
+    }
+  },
+  "inventories": {
+    "authoring_inventory_stowed.json": {
+      "sha256": "d2f48ac60adaf0d28493298383a628060594d97ee94270b06fe27732d910631a",
+      "size_bytes": 1609844
+    },
+    "authoring_inventory_deployed.json": {
+      "sha256": "c3b7b5073d850dd65e8ec3c1fe815a598fed758cc54d1563dfdac2ca1501477e",
+      "size_bytes": 1616302
+    }
+  }
+}

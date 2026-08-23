@@ -1,0 +1,1112 @@
+{
+  "state": "STOWED",
+  "method": "Per-constituent-solid BRepAlgoAPI_Common; no occurrence-compound Boolean",
+  "source_files_sha256_at_import": {
+    "build_r2.py": "2efab47b24ea72cd0fa26b483600d67ba85711248a81c3195c9bc09ae1210abf",
+    "r2_geometry.py": "4ed8af0e6ffcf7adaff3d88ba64eff4dc7d1ed8dfa755329ef64e5d5310942cb"
+  },
+  "summary": {
+    "occurrences": 172,
+    "solid_records": 204,
+    "expected_solid_pairs": 20706,
+    "broadphase_solid_pairs": 742,
+    "invalid_solid_records": 0,
+    "positive_solid_pairs": 55,
+    "documented_positive_solid_pairs": 4,
+    "unauthorized_positive_solid_pairs": 51,
+    "blocked_solid_pairs": 0,
+    "register_error_count": 0,
+    "unused_valid_exception_count": 0,
+    "elapsed_seconds": 34.964709801002755
+  },
+  "invalid_solid_records": [],
+  "all_positive_solid_pairs": [
+    {
+      "occurrence_a": "BUOY-GORE-08",
+      "solid_index_a": 1,
+      "occurrence_b": "HARNESS-LEG-XP",
+      "solid_index_b": 1,
+      "common_volume_mm3": 235.72667801301122,
+      "matching_exception_ids": [],
+      "accepted_exception_ids": [],
+      "documented": false
+    },
+    {
+      "occurrence_a": "HARNESS-BAND-2",
+      "solid_index_a": 1,
+      "occurrence_b": "HARNESS-LEG-XN",
+      "solid_index_b": 1,
+      "common_volume_mm3": 143.54075161149206,
+      "matching_exception_ids": [],
+      "accepted_exception_ids": [],
+      "documented": false
+    },
+    {
+      "occurrence_a": "HARNESS-BAND-2",
+      "solid_index_a": 1,
+      "occurrence_b": "HARNESS-LEG-XP",
+      "solid_index_b": 1,
+      "common_volume_mm3": 116.4049389225499,
+      "matching_exception_ids": [],
+      "accepted_exception_ids": [],
+      "documented": false
+    },
+    {
+      "occurrence_a": "HARNESS-BAND-1",
+      "solid_index_a": 1,
+      "occurrence_b": "HARNESS-LEG-XP",
+      "solid_index_b": 1,
+      "common_volume_mm3": 59.4622261650175,
+      "matching_exception_ids": [
+        "FIT-STITCH-XP"
+      ],
+      "accepted_exception_ids": [
+        "FIT-STITCH-XP"
+      ],
+      "documented": true
+    },
+    {
+      "occurrence_a": "HARNESS-BAND-2",
+      "solid_index_a": 1,
+      "occurrence_b": "HARNESS-LEG-YP",
+      "solid_index_b": 1,
+      "common_volume_mm3": 49.30436135992369,
+      "matching_exception_ids": [
+        "FIT-STITCH-YP"
+      ],
+      "accepted_exception_ids": [
+        "FIT-STITCH-YP"
+      ],
+      "documented": true
+    },
+    {
+      "occurrence_a": "HARNESS-BAND-1",
+      "solid_index_a": 1,
+      "occurrence_b": "HARNESS-LEG-XN",
+      "solid_index_b": 1,
+      "common_volume_mm3": 49.30436135992293,
+      "matching_exception_ids": [
+        "FIT-STITCH-XN"
+      ],
+      "accepted_exception_ids": [
+        "FIT-STITCH-XN"
+      ],
+      "documented": true
+    },
+    {
+      "occurrence_a": "HARNESS-BAND-2",
+      "solid_index_a": 1,
+      "occurrence_b": "HARNESS-LEG-YN",
+      "solid_index_b": 1,
+      "common_volume_mm3": 49.304361359922765,
+      "matching_exception_ids": [
+        "FIT-STITCH-YN"
+      ],
+      "accepted_exception_ids": [
+        "FIT-STITCH-YN"
+      ],
+      "documented": true
+    },
+    {
+      "occurrence_a": "WP05-DOOR-001",
+      "solid_index_a": 1,
+      "occurrence_b": "WP05-SERVICE-THROAT",
+      "solid_index_b": 1,
+      "common_volume_mm3": 31.297701327348044,
+      "matching_exception_ids": [],
+      "accepted_exception_ids": [],
+      "documented": false
+    },
+    {
+      "occurrence_a": "HARNESS-TERMINAL-001",
+      "solid_index_a": 1,
+      "occurrence_b": "RECOVERY-TETHER-001",
+      "solid_index_b": 1,
+      "common_volume_mm3": 10.03710172898192,
+      "matching_exception_ids": [],
+      "accepted_exception_ids": [],
+      "documented": false
+    },
+    {
+      "occurrence_a": "HARNESS-LEG-XP",
+      "solid_index_a": 1,
+      "occurrence_b": "HARNESS-TERMINAL-001",
+      "solid_index_b": 1,
+      "common_volume_mm3": 7.186188276997435,
+      "matching_exception_ids": [],
+      "accepted_exception_ids": [],
+      "documented": false
+    },
+    {
+      "occurrence_a": "ROUTE-PILOT-LINE-001",
+      "solid_index_a": 1,
+      "occurrence_b": "WP04-FOLLOWER-001",
+      "solid_index_b": 1,
+      "common_volume_mm3": 5.81723906949382,
+      "matching_exception_ids": [],
+      "accepted_exception_ids": [],
+      "documented": false
+    },
+    {
+      "occurrence_a": "ROUTE-BOWDEN-SHEATH-001",
+      "solid_index_a": 1,
+      "occurrence_b": "WP04-FOLLOWER-001",
+      "solid_index_b": 1,
+      "common_volume_mm3": 4.905794381956754,
+      "matching_exception_ids": [],
+      "accepted_exception_ids": [],
+      "documented": false
+    },
+    {
+      "occurrence_a": "HARNESS-LEG-YP",
+      "solid_index_a": 1,
+      "occurrence_b": "RECOVERY-TETHER-001",
+      "solid_index_b": 1,
+      "common_volume_mm3": 4.399531430446665,
+      "matching_exception_ids": [],
+      "accepted_exception_ids": [],
+      "documented": false
+    },
+    {
+      "occurrence_a": "RECOVERY-TETHER-001",
+      "solid_index_a": 1,
+      "occurrence_b": "TETHER-THIMBLE-BODY",
+      "solid_index_b": 1,
+      "common_volume_mm3": 3.0936569346686533,
+      "matching_exception_ids": [],
+      "accepted_exception_ids": [],
+      "documented": false
+    },
+    {
+      "occurrence_a": "RECOVERY-TETHER-001",
+      "solid_index_a": 1,
+      "occurrence_b": "TETHER-THIMBLE-HARNESS",
+      "solid_index_b": 1,
+      "common_volume_mm3": 2.9107512876533574,
+      "matching_exception_ids": [],
+      "accepted_exception_ids": [],
+      "documented": false
+    },
+    {
+      "occurrence_a": "DOOR-DETENT-2",
+      "solid_index_a": 1,
+      "occurrence_b": "WP05-SERVICE-THROAT",
+      "solid_index_b": 1,
+      "common_volume_mm3": 2.528513630621478,
+      "matching_exception_ids": [],
+      "accepted_exception_ids": [],
+      "documented": false
+    },
+    {
+      "occurrence_a": "DOOR-DETENT-4",
+      "solid_index_a": 1,
+      "occurrence_b": "WP05-SERVICE-THROAT",
+      "solid_index_b": 1,
+      "common_volume_mm3": 2.5285136305424167,
+      "matching_exception_ids": [],
+      "accepted_exception_ids": [],
+      "documented": false
+    },
+    {
+      "occurrence_a": "DOOR-DETENT-3",
+      "solid_index_a": 1,
+      "occurrence_b": "WP05-SERVICE-THROAT",
+      "solid_index_b": 1,
+      "common_volume_mm3": 2.52850449159064,
+      "matching_exception_ids": [],
+      "accepted_exception_ids": [],
+      "documented": false
+    },
+    {
+      "occurrence_a": "DOOR-DETENT-1",
+      "solid_index_a": 1,
+      "occurrence_b": "WP05-SERVICE-THROAT",
+      "solid_index_b": 1,
+      "common_volume_mm3": 2.528504491509576,
+      "matching_exception_ids": [],
+      "accepted_exception_ids": [],
+      "documented": false
+    },
+    {
+      "occurrence_a": "FWD-SHELL-001",
+      "solid_index_a": 1,
+      "occurrence_b": "ROUTE-GAS-MAIN-001",
+      "solid_index_b": 1,
+      "common_volume_mm3": 2.151547192261285,
+      "matching_exception_ids": [],
+      "accepted_exception_ids": [],
+      "documented": false
+    },
+    {
+      "occurrence_a": "FWD-SHELL-001",
+      "solid_index_a": 1,
+      "occurrence_b": "ROUTE-BOWDEN-SHEATH-001",
+      "solid_index_b": 1,
+      "common_volume_mm3": 1.8054102238745253,
+      "matching_exception_ids": [],
+      "accepted_exception_ids": [],
+      "documented": false
+    },
+    {
+      "occurrence_a": "BUOY-GORE-04",
+      "solid_index_a": 1,
+      "occurrence_b": "HARNESS-LEG-XN",
+      "solid_index_b": 1,
+      "common_volume_mm3": 1.3439994547626573,
+      "matching_exception_ids": [],
+      "accepted_exception_ids": [],
+      "documented": false
+    },
+    {
+      "occurrence_a": "BUOY-GORE-06",
+      "solid_index_a": 1,
+      "occurrence_b": "HARNESS-LEG-YN",
+      "solid_index_b": 1,
+      "common_volume_mm3": 1.3439994547626404,
+      "matching_exception_ids": [],
+      "accepted_exception_ids": [],
+      "documented": false
+    },
+    {
+      "occurrence_a": "BUOY-GORE-03",
+      "solid_index_a": 1,
+      "occurrence_b": "HARNESS-LEG-YP",
+      "solid_index_b": 1,
+      "common_volume_mm3": 1.3439994547626293,
+      "matching_exception_ids": [],
+      "accepted_exception_ids": [],
+      "documented": false
+    },
+    {
+      "occurrence_a": "BUOY-GORE-02",
+      "solid_index_a": 1,
+      "occurrence_b": "HARNESS-LEG-YP",
+      "solid_index_b": 1,
+      "common_volume_mm3": 1.3439994547626144,
+      "matching_exception_ids": [],
+      "accepted_exception_ids": [],
+      "documented": false
+    },
+    {
+      "occurrence_a": "BUOY-GORE-05",
+      "solid_index_a": 1,
+      "occurrence_b": "HARNESS-LEG-XN",
+      "solid_index_b": 1,
+      "common_volume_mm3": 1.3439994547625524,
+      "matching_exception_ids": [],
+      "accepted_exception_ids": [],
+      "documented": false
+    },
+    {
+      "occurrence_a": "BUOY-GORE-07",
+      "solid_index_a": 1,
+      "occurrence_b": "HARNESS-LEG-YN",
+      "solid_index_b": 1,
+      "common_volume_mm3": 1.3439994547624494,
+      "matching_exception_ids": [],
+      "accepted_exception_ids": [],
+      "documented": false
+    },
+    {
+      "occurrence_a": "WP05-DOOR-LANYARD",
+      "solid_index_a": 1,
+      "occurrence_b": "WP05-SERVICE-THROAT",
+      "solid_index_b": 1,
+      "common_volume_mm3": 1.3419206802656363,
+      "matching_exception_ids": [],
+      "accepted_exception_ids": [],
+      "documented": false
+    },
+    {
+      "occurrence_a": "ROUTE-BOWDEN-WIRE-001",
+      "solid_index_a": 1,
+      "occurrence_b": "WP04-FOLLOWER-001",
+      "solid_index_b": 1,
+      "common_volume_mm3": 0.9509748722962007,
+      "matching_exception_ids": [],
+      "accepted_exception_ids": [],
+      "documented": false
+    },
+    {
+      "occurrence_a": "FULLFLOW-VALVE-001",
+      "solid_index_a": 1,
+      "occurrence_b": "ROUTE-PILOT-LINE-001",
+      "solid_index_b": 1,
+      "common_volume_mm3": 0.8100013653362603,
+      "matching_exception_ids": [],
+      "accepted_exception_ids": [],
+      "documented": false
+    },
+    {
+      "occurrence_a": "BODY-HARDPOINT-001",
+      "solid_index_a": 1,
+      "occurrence_b": "RECOVERY-TETHER-001",
+      "solid_index_b": 1,
+      "common_volume_mm3": 0.638676208935256,
+      "matching_exception_ids": [],
+      "accepted_exception_ids": [],
+      "documented": false
+    },
+    {
+      "occurrence_a": "ROUTE-BOWDEN-SHEATH-001",
+      "solid_index_a": 1,
+      "occurrence_b": "WP04-SEAR-001",
+      "solid_index_b": 1,
+      "common_volume_mm3": 0.6344964632663295,
+      "matching_exception_ids": [],
+      "accepted_exception_ids": [],
+      "documented": false
+    },
+    {
+      "occurrence_a": "FWD-SHELL-001",
+      "solid_index_a": 1,
+      "occurrence_b": "ROUTE-PILOT-LINE-001",
+      "solid_index_b": 1,
+      "common_volume_mm3": 0.4191621154516131,
+      "matching_exception_ids": [],
+      "accepted_exception_ids": [],
+      "documented": false
+    },
+    {
+      "occurrence_a": "FWD-SHELL-001",
+      "solid_index_a": 1,
+      "occurrence_b": "ROUTE-BOWDEN-WIRE-001",
+      "solid_index_b": 1,
+      "common_volume_mm3": 0.37893202665437786,
+      "matching_exception_ids": [],
+      "accepted_exception_ids": [],
+      "documented": false
+    },
+    {
+      "occurrence_a": "PIVOT-CLIP-3",
+      "solid_index_a": 1,
+      "occurrence_b": "PIVOT-PIN-3",
+      "solid_index_b": 1,
+      "common_volume_mm3": 0.27930206922406176,
+      "matching_exception_ids": [],
+      "accepted_exception_ids": [],
+      "documented": false
+    },
+    {
+      "occurrence_a": "PIVOT-CLIP-1",
+      "solid_index_a": 1,
+      "occurrence_b": "PIVOT-PIN-1",
+      "solid_index_b": 1,
+      "common_volume_mm3": 0.27930206921926803,
+      "matching_exception_ids": [],
+      "accepted_exception_ids": [],
+      "documented": false
+    },
+    {
+      "occurrence_a": "PIVOT-CLIP-2",
+      "solid_index_a": 1,
+      "occurrence_b": "PIVOT-PIN-2",
+      "solid_index_b": 1,
+      "common_volume_mm3": 0.2793020692171546,
+      "matching_exception_ids": [],
+      "accepted_exception_ids": [],
+      "documented": false
+    },
+    {
+      "occurrence_a": "RECOVERY-PIN-BODY",
+      "solid_index_a": 1,
+      "occurrence_b": "RECOVERY-PIN-CLIP-BODY",
+      "solid_index_b": 1,
+      "common_volume_mm3": 0.18993000381493508,
+      "matching_exception_ids": [],
+      "accepted_exception_ids": [],
+      "documented": false
+    },
+    {
+      "occurrence_a": "RECOVERY-PIN-CLIP-HARNESS",
+      "solid_index_a": 1,
+      "occurrence_b": "RECOVERY-PIN-HARNESS",
+      "solid_index_b": 1,
+      "common_volume_mm3": 0.18993000380764413,
+      "matching_exception_ids": [],
+      "accepted_exception_ids": [],
+      "documented": false
+    },
+    {
+      "occurrence_a": "GS19-CLIP-MOVING",
+      "solid_index_a": 1,
+      "occurrence_b": "GS19-PIN-MOVING",
+      "solid_index_b": 1,
+      "common_volume_mm3": 0.11335389202881532,
+      "matching_exception_ids": [],
+      "accepted_exception_ids": [],
+      "documented": false
+    },
+    {
+      "occurrence_a": "HBD-CLIP-MOVING",
+      "solid_index_a": 1,
+      "occurrence_b": "HBD-PIN-MOVING",
+      "solid_index_b": 1,
+      "common_volume_mm3": 0.11335389202716048,
+      "matching_exception_ids": [],
+      "accepted_exception_ids": [],
+      "documented": false
+    },
+    {
+      "occurrence_a": "HBD-CLIP-FIXED",
+      "solid_index_a": 1,
+      "occurrence_b": "HBD-PIN-FIXED",
+      "solid_index_b": 1,
+      "common_volume_mm3": 0.11335389202390922,
+      "matching_exception_ids": [],
+      "accepted_exception_ids": [],
+      "documented": false
+    },
+    {
+      "occurrence_a": "GS19-CLIP-FIXED",
+      "solid_index_a": 1,
+      "occurrence_b": "GS19-PIN-FIXED",
+      "solid_index_b": 1,
+      "common_volume_mm3": 0.11335389201589932,
+      "matching_exception_ids": [],
+      "accepted_exception_ids": [],
+      "documented": false
+    },
+    {
+      "occurrence_a": "WP05-HINGE-CLIP",
+      "solid_index_a": 1,
+      "occurrence_b": "WP05-HINGE-PIN",
+      "solid_index_b": 1,
+      "common_volume_mm3": 0.0751663016303719,
+      "matching_exception_ids": [],
+      "accepted_exception_ids": [],
+      "documented": false
+    },
+    {
+      "occurrence_a": "AFT-SHELL-001",
+      "solid_index_a": 1,
+      "occurrence_b": "WP04-MANIFOLD-BRACKET",
+      "solid_index_b": 1,
+      "common_volume_mm3": 0.05271327920410775,
+      "matching_exception_ids": [],
+      "accepted_exception_ids": [],
+      "documented": false
+    },
+    {
+      "occurrence_a": "ROUTE-BOWDEN-WIRE-001",
+      "solid_index_a": 1,
+      "occurrence_b": "WP04-SEAR-001",
+      "solid_index_b": 1,
+      "common_volume_mm3": 0.039120655571769504,
+      "matching_exception_ids": [],
+      "accepted_exception_ids": [],
+      "documented": false
+    },
+    {
+      "occurrence_a": "ROUTE-PILOT-LINE-001",
+      "solid_index_a": 1,
+      "occurrence_b": "WP04-LATCH-001",
+      "solid_index_b": 1,
+      "common_volume_mm3": 0.038870100469668885,
+      "matching_exception_ids": [],
+      "accepted_exception_ids": [],
+      "documented": false
+    },
+    {
+      "occurrence_a": "FWD-SHELL-001",
+      "solid_index_a": 1,
+      "occurrence_b": "WATER-TRIGGER-HSG-001",
+      "solid_index_b": 4,
+      "common_volume_mm3": 0.010165791507069118,
+      "matching_exception_ids": [],
+      "accepted_exception_ids": [],
+      "documented": false
+    },
+    {
+      "occurrence_a": "FWD-SHELL-001",
+      "solid_index_a": 1,
+      "occurrence_b": "WATER-TRIGGER-HSG-001",
+      "solid_index_b": 3,
+      "common_volume_mm3": 0.010165306917902846,
+      "matching_exception_ids": [],
+      "accepted_exception_ids": [],
+      "documented": false
+    },
+    {
+      "occurrence_a": "FWD-SHELL-001",
+      "solid_index_a": 1,
+      "occurrence_b": "WATER-TRIGGER-HSG-001",
+      "solid_index_b": 2,
+      "common_volume_mm3": 0.01016530691789611,
+      "matching_exception_ids": [],
+      "accepted_exception_ids": [],
+      "documented": false
+    },
+    {
+      "occurrence_a": "AFT-SHELL-001",
+      "solid_index_a": 1,
+      "occurrence_b": "ROUTE-PILOT-LINE-001",
+      "solid_index_b": 1,
+      "common_volume_mm3": 0.006206948199289058,
+      "matching_exception_ids": [],
+      "accepted_exception_ids": [],
+      "documented": false
+    },
+    {
+      "occurrence_a": "AFT-SHELL-001",
+      "solid_index_a": 1,
+      "occurrence_b": "ROUTE-BOWDEN-SHEATH-001",
+      "solid_index_b": 1,
+      "common_volume_mm3": 0.002504994102623906,
+      "matching_exception_ids": [],
+      "accepted_exception_ids": [],
+      "documented": false
+    },
+    {
+      "occurrence_a": "GLAND-GAS-MAIN-AFT",
+      "solid_index_a": 1,
+      "occurrence_b": "ROUTE-GAS-MAIN-001",
+      "solid_index_b": 1,
+      "common_volume_mm3": 0.0006317453033052971,
+      "matching_exception_ids": [],
+      "accepted_exception_ids": [],
+      "documented": false
+    },
+    {
+      "occurrence_a": "GLAND-BOWDEN-SHEATH-AFT",
+      "solid_index_a": 1,
+      "occurrence_b": "ROUTE-BOWDEN-SHEATH-001",
+      "solid_index_b": 1,
+      "common_volume_mm3": 0.0003977706378889514,
+      "matching_exception_ids": [],
+      "accepted_exception_ids": [],
+      "documented": false
+    },
+    {
+      "occurrence_a": "GLAND-PILOT-LINE-AFT",
+      "solid_index_a": 1,
+      "occurrence_b": "ROUTE-PILOT-LINE-001",
+      "solid_index_b": 1,
+      "common_volume_mm3": 0.0003499418841224908,
+      "matching_exception_ids": [],
+      "accepted_exception_ids": [],
+      "documented": false
+    }
+  ],
+  "unauthorized_positive_solid_pairs": [
+    {
+      "occurrence_a": "BUOY-GORE-08",
+      "solid_index_a": 1,
+      "occurrence_b": "HARNESS-LEG-XP",
+      "solid_index_b": 1,
+      "common_volume_mm3": 235.72667801301122,
+      "matching_exception_ids": [],
+      "accepted_exception_ids": [],
+      "documented": false
+    },
+    {
+      "occurrence_a": "HARNESS-BAND-2",
+      "solid_index_a": 1,
+      "occurrence_b": "HARNESS-LEG-XN",
+      "solid_index_b": 1,
+      "common_volume_mm3": 143.54075161149206,
+      "matching_exception_ids": [],
+      "accepted_exception_ids": [],
+      "documented": false
+    },
+    {
+      "occurrence_a": "HARNESS-BAND-2",
+      "solid_index_a": 1,
+      "occurrence_b": "HARNESS-LEG-XP",
+      "solid_index_b": 1,
+      "common_volume_mm3": 116.4049389225499,
+      "matching_exception_ids": [],
+      "accepted_exception_ids": [],
+      "documented": false
+    },
+    {
+      "occurrence_a": "WP05-DOOR-001",
+      "solid_index_a": 1,
+      "occurrence_b": "WP05-SERVICE-THROAT",
+      "solid_index_b": 1,
+      "common_volume_mm3": 31.297701327348044,
+      "matching_exception_ids": [],
+      "accepted_exception_ids": [],
+      "documented": false
+    },
+    {
+      "occurrence_a": "HARNESS-TERMINAL-001",
+      "solid_index_a": 1,
+      "occurrence_b": "RECOVERY-TETHER-001",
+      "solid_index_b": 1,
+      "common_volume_mm3": 10.03710172898192,
+      "matching_exception_ids": [],
+      "accepted_exception_ids": [],
+      "documented": false
+    },
+    {
+      "occurrence_a": "HARNESS-LEG-XP",
+      "solid_index_a": 1,
+      "occurrence_b": "HARNESS-TERMINAL-001",
+      "solid_index_b": 1,
+      "common_volume_mm3": 7.186188276997435,
+      "matching_exception_ids": [],
+      "accepted_exception_ids": [],
+      "documented": false
+    },
+    {
+      "occurrence_a": "ROUTE-PILOT-LINE-001",
+      "solid_index_a": 1,
+      "occurrence_b": "WP04-FOLLOWER-001",
+      "solid_index_b": 1,
+      "common_volume_mm3": 5.81723906949382,
+      "matching_exception_ids": [],
+      "accepted_exception_ids": [],
+      "documented": false
+    },
+    {
+      "occurrence_a": "ROUTE-BOWDEN-SHEATH-001",
+      "solid_index_a": 1,
+      "occurrence_b": "WP04-FOLLOWER-001",
+      "solid_index_b": 1,
+      "common_volume_mm3": 4.905794381956754,
+      "matching_exception_ids": [],
+      "accepted_exception_ids": [],
+      "documented": false
+    },
+    {
+      "occurrence_a": "HARNESS-LEG-YP",
+      "solid_index_a": 1,
+      "occurrence_b": "RECOVERY-TETHER-001",
+      "solid_index_b": 1,
+      "common_volume_mm3": 4.399531430446665,
+      "matching_exception_ids": [],
+      "accepted_exception_ids": [],
+      "documented": false
+    },
+    {
+      "occurrence_a": "RECOVERY-TETHER-001",
+      "solid_index_a": 1,
+      "occurrence_b": "TETHER-THIMBLE-BODY",
+      "solid_index_b": 1,
+      "common_volume_mm3": 3.0936569346686533,
+      "matching_exception_ids": [],
+      "accepted_exception_ids": [],
+      "documented": false
+    },
+    {
+      "occurrence_a": "RECOVERY-TETHER-001",
+      "solid_index_a": 1,
+      "occurrence_b": "TETHER-THIMBLE-HARNESS",
+      "solid_index_b": 1,
+      "common_volume_mm3": 2.9107512876533574,
+      "matching_exception_ids": [],
+      "accepted_exception_ids": [],
+      "documented": false
+    },
+    {
+      "occurrence_a": "DOOR-DETENT-2",
+      "solid_index_a": 1,
+      "occurrence_b": "WP05-SERVICE-THROAT",
+      "solid_index_b": 1,
+      "common_volume_mm3": 2.528513630621478,
+      "matching_exception_ids": [],
+      "accepted_exception_ids": [],
+      "documented": false
+    },
+    {
+      "occurrence_a": "DOOR-DETENT-4",
+      "solid_index_a": 1,
+      "occurrence_b": "WP05-SERVICE-THROAT",
+      "solid_index_b": 1,
+      "common_volume_mm3": 2.5285136305424167,
+      "matching_exception_ids": [],
+      "accepted_exception_ids": [],
+      "documented": false
+    },
+    {
+      "occurrence_a": "DOOR-DETENT-3",
+      "solid_index_a": 1,
+      "occurrence_b": "WP05-SERVICE-THROAT",
+      "solid_index_b": 1,
+      "common_volume_mm3": 2.52850449159064,
+      "matching_exception_ids": [],
+      "accepted_exception_ids": [],
+      "documented": false
+    },
+    {
+      "occurrence_a": "DOOR-DETENT-1",
+      "solid_index_a": 1,
+      "occurrence_b": "WP05-SERVICE-THROAT",
+      "solid_index_b": 1,
+      "common_volume_mm3": 2.528504491509576,
+      "matching_exception_ids": [],
+      "accepted_exception_ids": [],
+      "documented": false
+    },
+    {
+      "occurrence_a": "FWD-SHELL-001",
+      "solid_index_a": 1,
+      "occurrence_b": "ROUTE-GAS-MAIN-001",
+      "solid_index_b": 1,
+      "common_volume_mm3": 2.151547192261285,
+      "matching_exception_ids": [],
+      "accepted_exception_ids": [],
+      "documented": false
+    },
+    {
+      "occurrence_a": "FWD-SHELL-001",
+      "solid_index_a": 1,
+      "occurrence_b": "ROUTE-BOWDEN-SHEATH-001",
+      "solid_index_b": 1,
+      "common_volume_mm3": 1.8054102238745253,
+      "matching_exception_ids": [],
+      "accepted_exception_ids": [],
+      "documented": false
+    },
+    {
+      "occurrence_a": "BUOY-GORE-04",
+      "solid_index_a": 1,
+      "occurrence_b": "HARNESS-LEG-XN",
+      "solid_index_b": 1,
+      "common_volume_mm3": 1.3439994547626573,
+      "matching_exception_ids": [],
+      "accepted_exception_ids": [],
+      "documented": false
+    },
+    {
+      "occurrence_a": "BUOY-GORE-06",
+      "solid_index_a": 1,
+      "occurrence_b": "HARNESS-LEG-YN",
+      "solid_index_b": 1,
+      "common_volume_mm3": 1.3439994547626404,
+      "matching_exception_ids": [],
+      "accepted_exception_ids": [],
+      "documented": false
+    },
+    {
+      "occurrence_a": "BUOY-GORE-03",
+      "solid_index_a": 1,
+      "occurrence_b": "HARNESS-LEG-YP",
+      "solid_index_b": 1,
+      "common_volume_mm3": 1.3439994547626293,
+      "matching_exception_ids": [],
+      "accepted_exception_ids": [],
+      "documented": false
+    },
+    {
+      "occurrence_a": "BUOY-GORE-02",
+      "solid_index_a": 1,
+      "occurrence_b": "HARNESS-LEG-YP",
+      "solid_index_b": 1,
+      "common_volume_mm3": 1.3439994547626144,
+      "matching_exception_ids": [],
+      "accepted_exception_ids": [],
+      "documented": false
+    },
+    {
+      "occurrence_a": "BUOY-GORE-05",
+      "solid_index_a": 1,
+      "occurrence_b": "HARNESS-LEG-XN",
+      "solid_index_b": 1,
+      "common_volume_mm3": 1.3439994547625524,
+      "matching_exception_ids": [],
+      "accepted_exception_ids": [],
+      "documented": false
+    },
+    {
+      "occurrence_a": "BUOY-GORE-07",
+      "solid_index_a": 1,
+      "occurrence_b": "HARNESS-LEG-YN",
+      "solid_index_b": 1,
+      "common_volume_mm3": 1.3439994547624494,
+      "matching_exception_ids": [],
+      "accepted_exception_ids": [],
+      "documented": false
+    },
+    {
+      "occurrence_a": "WP05-DOOR-LANYARD",
+      "solid_index_a": 1,
+      "occurrence_b": "WP05-SERVICE-THROAT",
+      "solid_index_b": 1,
+      "common_volume_mm3": 1.3419206802656363,
+      "matching_exception_ids": [],
+      "accepted_exception_ids": [],
+      "documented": false
+    },
+    {
+      "occurrence_a": "ROUTE-BOWDEN-WIRE-001",
+      "solid_index_a": 1,
+      "occurrence_b": "WP04-FOLLOWER-001",
+      "solid_index_b": 1,
+      "common_volume_mm3": 0.9509748722962007,
+      "matching_exception_ids": [],
+      "accepted_exception_ids": [],
+      "documented": false
+    },
+    {
+      "occurrence_a": "FULLFLOW-VALVE-001",
+      "solid_index_a": 1,
+      "occurrence_b": "ROUTE-PILOT-LINE-001",
+      "solid_index_b": 1,
+      "common_volume_mm3": 0.8100013653362603,
+      "matching_exception_ids": [],
+      "accepted_exception_ids": [],
+      "documented": false
+    },
+    {
+      "occurrence_a": "BODY-HARDPOINT-001",
+      "solid_index_a": 1,
+      "occurrence_b": "RECOVERY-TETHER-001",
+      "solid_index_b": 1,
+      "common_volume_mm3": 0.638676208935256,
+      "matching_exception_ids": [],
+      "accepted_exception_ids": [],
+      "documented": false
+    },
+    {
+      "occurrence_a": "ROUTE-BOWDEN-SHEATH-001",
+      "solid_index_a": 1,
+      "occurrence_b": "WP04-SEAR-001",
+      "solid_index_b": 1,
+      "common_volume_mm3": 0.6344964632663295,
+      "matching_exception_ids": [],
+      "accepted_exception_ids": [],
+      "documented": false
+    },
+    {
+      "occurrence_a": "FWD-SHELL-001",
+      "solid_index_a": 1,
+      "occurrence_b": "ROUTE-PILOT-LINE-001",
+      "solid_index_b": 1,
+      "common_volume_mm3": 0.4191621154516131,
+      "matching_exception_ids": [],
+      "accepted_exception_ids": [],
+      "documented": false
+    },
+    {
+      "occurrence_a": "FWD-SHELL-001",
+      "solid_index_a": 1,
+      "occurrence_b": "ROUTE-BOWDEN-WIRE-001",
+      "solid_index_b": 1,
+      "common_volume_mm3": 0.37893202665437786,
+      "matching_exception_ids": [],
+      "accepted_exception_ids": [],
+      "documented": false
+    },
+    {
+      "occurrence_a": "PIVOT-CLIP-3",
+      "solid_index_a": 1,
+      "occurrence_b": "PIVOT-PIN-3",
+      "solid_index_b": 1,
+      "common_volume_mm3": 0.27930206922406176,
+      "matching_exception_ids": [],
+      "accepted_exception_ids": [],
+      "documented": false
+    },
+    {
+      "occurrence_a": "PIVOT-CLIP-1",
+      "solid_index_a": 1,
+      "occurrence_b": "PIVOT-PIN-1",
+      "solid_index_b": 1,
+      "common_volume_mm3": 0.27930206921926803,
+      "matching_exception_ids": [],
+      "accepted_exception_ids": [],
+      "documented": false
+    },
+    {
+      "occurrence_a": "PIVOT-CLIP-2",
+      "solid_index_a": 1,
+      "occurrence_b": "PIVOT-PIN-2",
+      "solid_index_b": 1,
+      "common_volume_mm3": 0.2793020692171546,
+      "matching_exception_ids": [],
+      "accepted_exception_ids": [],
+      "documented": false
+    },
+    {
+      "occurrence_a": "RECOVERY-PIN-BODY",
+      "solid_index_a": 1,
+      "occurrence_b": "RECOVERY-PIN-CLIP-BODY",
+      "solid_index_b": 1,
+      "common_volume_mm3": 0.18993000381493508,
+      "matching_exception_ids": [],
+      "accepted_exception_ids": [],
+      "documented": false
+    },
+    {
+      "occurrence_a": "RECOVERY-PIN-CLIP-HARNESS",
+      "solid_index_a": 1,
+      "occurrence_b": "RECOVERY-PIN-HARNESS",
+      "solid_index_b": 1,
+      "common_volume_mm3": 0.18993000380764413,
+      "matching_exception_ids": [],
+      "accepted_exception_ids": [],
+      "documented": false
+    },
+    {
+      "occurrence_a": "GS19-CLIP-MOVING",
+      "solid_index_a": 1,
+      "occurrence_b": "GS19-PIN-MOVING",
+      "solid_index_b": 1,
+      "common_volume_mm3": 0.11335389202881532,
+      "matching_exception_ids": [],
+      "accepted_exception_ids": [],
+      "documented": false
+    },
+    {
+      "occurrence_a": "HBD-CLIP-MOVING",
+      "solid_index_a": 1,
+      "occurrence_b": "HBD-PIN-MOVING",
+      "solid_index_b": 1,
+      "common_volume_mm3": 0.11335389202716048,
+      "matching_exception_ids": [],
+      "accepted_exception_ids": [],
+      "documented": false
+    },
+    {
+      "occurrence_a": "HBD-CLIP-FIXED",
+      "solid_index_a": 1,
+      "occurrence_b": "HBD-PIN-FIXED",
+      "solid_index_b": 1,
+      "common_volume_mm3": 0.11335389202390922,
+      "matching_exception_ids": [],
+      "accepted_exception_ids": [],
+      "documented": false
+    },
+    {
+      "occurrence_a": "GS19-CLIP-FIXED",
+      "solid_index_a": 1,
+      "occurrence_b": "GS19-PIN-FIXED",
+      "solid_index_b": 1,
+      "common_volume_mm3": 0.11335389201589932,
+      "matching_exception_ids": [],
+      "accepted_exception_ids": [],
+      "documented": false
+    },
+    {
+      "occurrence_a": "WP05-HINGE-CLIP",
+      "solid_index_a": 1,
+      "occurrence_b": "WP05-HINGE-PIN",
+      "solid_index_b": 1,
+      "common_volume_mm3": 0.0751663016303719,
+      "matching_exception_ids": [],
+      "accepted_exception_ids": [],
+      "documented": false
+    },
+    {
+      "occurrence_a": "AFT-SHELL-001",
+      "solid_index_a": 1,
+      "occurrence_b": "WP04-MANIFOLD-BRACKET",
+      "solid_index_b": 1,
+      "common_volume_mm3": 0.05271327920410775,
+      "matching_exception_ids": [],
+      "accepted_exception_ids": [],
+      "documented": false
+    },
+    {
+      "occurrence_a": "ROUTE-BOWDEN-WIRE-001",
+      "solid_index_a": 1,
+      "occurrence_b": "WP04-SEAR-001",
+      "solid_index_b": 1,
+      "common_volume_mm3": 0.039120655571769504,
+      "matching_exception_ids": [],
+      "accepted_exception_ids": [],
+      "documented": false
+    },
+    {
+      "occurrence_a": "ROUTE-PILOT-LINE-001",
+      "solid_index_a": 1,
+      "occurrence_b": "WP04-LATCH-001",
+      "solid_index_b": 1,
+      "common_volume_mm3": 0.038870100469668885,
+      "matching_exception_ids": [],
+      "accepted_exception_ids": [],
+      "documented": false
+    },
+    {
+      "occurrence_a": "FWD-SHELL-001",
+      "solid_index_a": 1,
+      "occurrence_b": "WATER-TRIGGER-HSG-001",
+      "solid_index_b": 4,
+      "common_volume_mm3": 0.010165791507069118,
+      "matching_exception_ids": [],
+      "accepted_exception_ids": [],
+      "documented": false
+    },
+    {
+      "occurrence_a": "FWD-SHELL-001",
+      "solid_index_a": 1,
+      "occurrence_b": "WATER-TRIGGER-HSG-001",
+      "solid_index_b": 3,
+      "common_volume_mm3": 0.010165306917902846,
+      "matching_exception_ids": [],
+      "accepted_exception_ids": [],
+      "documented": false
+    },
+    {
+      "occurrence_a": "FWD-SHELL-001",
+      "solid_index_a": 1,
+      "occurrence_b": "WATER-TRIGGER-HSG-001",
+      "solid_index_b": 2,
+      "common_volume_mm3": 0.01016530691789611,
+      "matching_exception_ids": [],
+      "accepted_exception_ids": [],
+      "documented": false
+    },
+    {
+      "occurrence_a": "AFT-SHELL-001",
+      "solid_index_a": 1,
+      "occurrence_b": "ROUTE-PILOT-LINE-001",
+      "solid_index_b": 1,
+      "common_volume_mm3": 0.006206948199289058,
+      "matching_exception_ids": [],
+      "accepted_exception_ids": [],
+      "documented": false
+    },
+    {
+      "occurrence_a": "AFT-SHELL-001",
+      "solid_index_a": 1,
+      "occurrence_b": "ROUTE-BOWDEN-SHEATH-001",
+      "solid_index_b": 1,
+      "common_volume_mm3": 0.002504994102623906,
+      "matching_exception_ids": [],
+      "accepted_exception_ids": [],
+      "documented": false
+    },
+    {
+      "occurrence_a": "GLAND-GAS-MAIN-AFT",
+      "solid_index_a": 1,
+      "occurrence_b": "ROUTE-GAS-MAIN-001",
+      "solid_index_b": 1,
+      "common_volume_mm3": 0.0006317453033052971,
+      "matching_exception_ids": [],
+      "accepted_exception_ids": [],
+      "documented": false
+    },
+    {
+      "occurrence_a": "GLAND-BOWDEN-SHEATH-AFT",
+      "solid_index_a": 1,
+      "occurrence_b": "ROUTE-BOWDEN-SHEATH-001",
+      "solid_index_b": 1,
+      "common_volume_mm3": 0.0003977706378889514,
+      "matching_exception_ids": [],
+      "accepted_exception_ids": [],
+      "documented": false
+    },
+    {
+      "occurrence_a": "GLAND-PILOT-LINE-AFT",
+      "solid_index_a": 1,
+      "occurrence_b": "ROUTE-PILOT-LINE-001",
+      "solid_index_b": 1,
+      "common_volume_mm3": 0.0003499418841224908,
+      "matching_exception_ids": [],
+      "accepted_exception_ids": [],
+      "documented": false
+    }
+  ],
+  "blocked_solid_pairs": [],
+  "intentional_fit_register_errors": [],
+  "used_intentional_fit_exception_ids": [
+    "FIT-STITCH-XN",
+    "FIT-STITCH-XP",
+    "FIT-STITCH-YN",
+    "FIT-STITCH-YP"
+  ],
+  "unused_valid_intentional_fit_exception_ids": []
+}

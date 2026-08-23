@@ -1,0 +1,74 @@
+{
+  "step_validation": {
+    "STOWED": {
+      "file": "STINGRAY_I5S_DF8_FINAL_STOWED_MASTER_AP242.step",
+      "sha256": "a04ac8bb18aed07dcf0cedd777cf76404b59cd10b0f3ce77f4e8b21991584762",
+      "size_bytes": 25283306,
+      "ap242_header": true,
+      "faceted_brep_count": 0,
+      "triangulated_face_set_count": 0,
+      "product_count": 222,
+      "tree_node_count": 222,
+      "solid_count": 427,
+      "face_count": 6616,
+      "invalid_solids": [],
+      "unnamed_nodes": [],
+      "bbox_mm": {
+        "xmin": -26.5,
+        "xmax": 26.500000000009415,
+        "ymin": -26.5,
+        "ymax": 26.5,
+        "zmin": 0.0,
+        "zmax": 1979.0000001
+      },
+      "pass": true
+    },
+    "DEPLOYED": {
+      "file": "STINGRAY_I5S_DF8_FINAL_DEPLOYED_MASTER_AP242.step",
+      "sha256": "93b613d17624b0b918b03595d4ab51ec768e39729064f8545faaa0a9dc38602e",
+      "size_bytes": 25339731,
+      "ap242_header": true,
+      "faceted_brep_count": 0,
+      "triangulated_face_set_count": 0,
+      "product_count": 219,
+      "tree_node_count": 219,
+      "solid_count": 411,
+      "face_count": 6554,
+      "invalid_solids": [],
+      "unnamed_nodes": [],
+      "bbox_mm": {
+        "xmin": -384.5623390509845,
+        "xmax": 742.1133243718327,
+        "ymin": -649.94933204484,
+        "ymax": 649.9493320448944,
+        "zmin": 0.0,
+        "zmax": 2383.05900630052
+      },
+      "pass": true
+    }
+  },
+  "motion_audit": {
+    "sample_increment_deg": 1,
+    "angle_min_deg": 0,
+    "angle_max_deg": 80,
+    "pair_evaluations": 5670,
+    "broadphase_rejections": 3095,
+    "exact_boolean_checks": 2575,
+    "intentional_contact_exclusions": [
+      "pivot pin/bushing fits",
+      "link pin/clevis fits",
+      "crosshead/guide sliding fit",
+      "spring/seat end contact",
+      "80-degree hard-stop and lock engagement window",
+      "flexing seam shingles"
+    ],
+    "invalid_rigid_interferences": [],
+    "pass": true
+  },
+  "mass_stowed_kg": 12.207154890593532,
+  "mass_deployed_kg": 12.2049248269841,
+  "rigid_length_stowed_mm": 1979.0000001,
+  "rigid_length_deployed_mm": 2031.0086205694295,
+  "occurrences_stowed": 210,
+  "occurrences_deployed": 207
+}

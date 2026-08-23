@@ -1,0 +1,54 @@
+{
+  "schema": "DF8_CODEX_LAST_EXECUTION_RECORD_V1",
+  "recorded_at_utc": "2026-08-22T23:08:06Z",
+  "last_command": {
+    "command": "PYTHONPATH=work/r2_source work/cadenv/bin/python work/r2_source/validate_r2.py --out work/final_analysis/validation --motion-workers 8",
+    "exit_code": 1,
+    "completed_at_utc": "2026-08-22T23:06:11Z",
+    "result": "FAILED_DURING_POST_MERGE_KINEMATICS_SCHEMA_VALIDATION"
+  },
+  "last_successful_modifying_command": {
+    "command": "PYTHONPATH=work/r2_source work/cadenv/bin/python work/r2_source/build_r2.py",
+    "exit_code": 0,
+    "result": "FINAL_ENDPOINT_MASTERS_AND_AUTHORING_INVENTORIES_WRITTEN"
+  },
+  "last_successful_audit_command": {
+    "command": "gzip -t work/final_analysis/validation/motion_full_mechanism_audit.csv.gz",
+    "exit_code": 0,
+    "completed_at_utc": "2026-08-22T23:06:35Z",
+    "result": "MERGED_MOTION_AUDIT_GZIP_INTEGRITY_PASS"
+  },
+  "last_modified_files": [
+    "work/r2_source/r2_geometry.py",
+    "work/r2_source/build_r2.py",
+    "work/r2_source/validate_r2.py",
+    "work/final_release/STINGRAY_I5S_DF8_FINAL_STOWED_MASTER_AP242.step",
+    "work/final_release/STINGRAY_I5S_DF8_FINAL_DEPLOYED_MASTER_AP242.step",
+    "work/final_analysis/authoring_inventory_stowed.json",
+    "work/final_analysis/authoring_inventory_deployed.json",
+    "work/final_analysis/authoring_manifest.json",
+    "work/final_analysis/validation/xcaf_occurrences_stowed.csv",
+    "work/final_analysis/validation/xcaf_occurrences_deployed.csv",
+    "work/final_analysis/validation/leaf_solids_stowed.csv",
+    "work/final_analysis/validation/leaf_solids_deployed.csv",
+    "work/final_analysis/validation/step_text_inspection.json",
+    "work/final_analysis/validation/endpoint_pair_audit_stowed.csv.gz",
+    "work/final_analysis/validation/endpoint_pair_audit_deployed.csv.gz",
+    "work/final_analysis/validation/endpoint_pair_summary.json",
+    "work/final_analysis/validation/endpoint_interference_register.csv",
+    "work/final_analysis/validation/minimum_clearance_register.csv",
+    "work/final_analysis/validation/state_parity.csv",
+    "work/final_analysis/validation/attachment_geometry_stowed.csv",
+    "work/final_analysis/validation/attachment_geometry_deployed.csv",
+    "work/final_analysis/validation/attachment_connectivity_stowed.csv",
+    "work/final_analysis/validation/attachment_connectivity_deployed.csv",
+    "work/final_analysis/validation/route_termination_audit_stowed.csv",
+    "work/final_analysis/validation/route_termination_audit_deployed.csv",
+    "work/final_analysis/validation/connectivity_summary.json",
+    "work/final_analysis/validation/definition_of_done_audit.json",
+    "work/final_analysis/validation/occurrence_bom_reconciliation.csv",
+    "work/final_analysis/validation/occurrence_bom_reconciliation.json",
+    "work/final_analysis/validation/key_dimensions.json",
+    "work/final_analysis/validation/motion_full_mechanism_audit.csv.gz"
+  ]
+}

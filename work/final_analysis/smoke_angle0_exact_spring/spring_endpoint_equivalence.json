@@ -1,0 +1,46 @@
+{
+  "occurrence_id": "BACKUP-SPRING-001",
+  "mode": "AXIAL_COMPRESSION_SPRING_KINEMATIC",
+  "endpoint_state": "STOWED",
+  "installed_length_mm": 145.00000000014006,
+  "seat_lateral_residual_mm": 0.0,
+  "seat_axis_alignment_dot": 1.0,
+  "generated_valid": true,
+  "endpoint_valid": true,
+  "generated_volume_mm3": 6907.1430526211625,
+  "endpoint_volume_mm3": 6907.14331397687,
+  "volume_delta_mm3": 0.0002613557071526884,
+  "generated_bbox_mm": [
+    -7.900004989115952,
+    -7.900005046095044,
+    -9.999999644944976e-08,
+    7.900004861407317,
+    7.900004858518104,
+    145.00000010014006
+  ],
+  "endpoint_bbox_mm": [
+    -7.900004989116743,
+    -7.900005051549228,
+    -1.0000034834842613e-07,
+    7.900004892168146,
+    7.900004858517977,
+    145.00000009999528
+  ],
+  "bbox_max_delta_mm": 3.076082855102413e-08,
+  "generated_surface_types": {
+    "BSplineSurface": 1,
+    "Plane": 2
+  },
+  "endpoint_surface_types": {
+    "BSplineSurface": 1,
+    "Plane": 2
+  },
+  "surface_types_equal": true,
+  "placement_max_matrix_delta": 0.0,
+  "validator_thresholds": {
+    "volume_delta_mm3_max": 1e-05,
+    "bbox_delta_mm_max": 1e-07,
+    "placement_matrix_delta_max": 1e-09
+  },
+  "measured_endpoint_equivalence_pass": false
+}

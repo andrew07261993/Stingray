@@ -1,0 +1,117 @@
+{
+  "validator": "/workspace/scratch/6f4e7892e9f1/work/r2_source/validate_r2.py",
+  "validation_engine": "CadQuery 2.8.0 / OCCT XCAF and exact BRepAlgoAPI",
+  "determinism": {
+    "solid_order": "occurrence_id, solid_index, part_number",
+    "pair_order": "itertools.combinations of sorted solids",
+    "aabb_tolerance_mm": 1e-09,
+    "common_volume_epsilon_mm3": 1e-06,
+    "near_distance_limit_mm": 2.0
+  },
+  "files": {
+    "authoring_inventory_deployed.json": {
+      "sha256": "603c64ff8ae5db38467af59e91133b802f05493c4d8378bbea51d19796a3dbfa",
+      "size_bytes": 464549
+    },
+    "authoring_inventory_stowed.json": {
+      "sha256": "0749a61bac8f6cd87b878b1cde9f9e74b8906790233041c17a930f85b2f15106",
+      "size_bytes": 462182
+    },
+    "authoring_manifest.json": {
+      "sha256": "c43f8f3890e3f61c55707b5e4459ec3577bff46a1ec596ee86c74a96efa6ca7d",
+      "size_bytes": 1105
+    },
+    "attachment_connectivity_deployed.csv": {
+      "sha256": "047a24d1cf907160b5e2fb112a1ea834d11c8268313b61409a3ad29aa1ac2683",
+      "size_bytes": 31732
+    },
+    "attachment_connectivity_stowed.csv": {
+      "sha256": "eba91d67a68bb712eeb55b24ab4c0762fd86f83fb387c9af1ec943c9bd050a54",
+      "size_bytes": 31370
+    },
+    "connectivity_summary.json": {
+      "sha256": "ba1d13e13fe3c2aa456adda567085baad08461c755f73557505b6cc21f8cbb02",
+      "size_bytes": 1427
+    },
+    "endpoint_interference_register.csv": {
+      "sha256": "18f1d1813789fd42af5e2f76e2814f41a8202768ef8531262996e8974542e177",
+      "size_bytes": 53181
+    },
+    "endpoint_pair_audit_deployed.csv.gz": {
+      "sha256": "c5243cd5d814b167e80b7edca1a02418023e6a2a65468fc7b1d33e3465bb592a",
+      "size_bytes": 1202447
+    },
+    "endpoint_pair_audit_stowed.csv.gz": {
+      "sha256": "6786f4a45cd8e6ff89da040159ab6694ee7086cc0081a66696d0dd6cf7aabb08",
+      "size_bytes": 1282233
+    },
+    "endpoint_pair_summary.json": {
+      "sha256": "752188f73cf04e619517f26e8d109b7f98a0523a1068d6da4881f3b8883fa469",
+      "size_bytes": 1502066
+    },
+    "gate_results.json": {
+      "sha256": "d4045d006dbfc8e1a49a144d0d69b7a549fefd36356465ba6a0283dfb74d7275",
+      "size_bytes": 13539
+    },
+    "key_dimensions.json": {
+      "sha256": "f22827d6706060f6db6a899b4a8478645c825800a22c2e810f46473565aa7bb6",
+      "size_bytes": 4147
+    },
+    "leaf_solids_deployed.csv": {
+      "sha256": "1898c822f1c2c32aec6f655c2e2f21239d0cabbe65fc2d5cb43593e1a23fc2a2",
+      "size_bytes": 61996
+    },
+    "leaf_solids_stowed.csv": {
+      "sha256": "fa425c3f051be6b7cbada30c60fdf73d195e276bc7f96cde7584e96627b191a7",
+      "size_bytes": 63052
+    },
+    "minimum_clearance_register.csv": {
+      "sha256": "3eb52601db61b962fafe6db4871787dab0bd68d09efd964257e3127d55c8f38b",
+      "size_bytes": 357292
+    },
+    "motion_arm_clearance_audit.csv.gz": {
+      "sha256": "be362544828b26ce261fb076a7c6541b49669ad0454540f3a608670ec2aecd96",
+      "size_bytes": 329164
+    },
+    "motion_audit_summary.json": {
+      "sha256": "40bbaef2c65c35c1e862be59a33a294e0b10df360f03e65aad611c1b7f7421cf",
+      "size_bytes": 894
+    },
+    "motion_kinematics_1deg.csv": {
+      "sha256": "83dd4a03671b6aefdb7f38f5a80d67a384c800642b12b4e54cd84e592096ed65",
+      "size_bytes": 9414
+    },
+    "state_parity.csv": {
+      "sha256": "1fd0708bf1dbda9ecdab9c5d594ff953e2aef212ba2a1baed9496a36b06c005c",
+      "size_bytes": 12322
+    },
+    "step_text_inspection.json": {
+      "sha256": "5fbb6b10ec08d79b0d8782dd42466a08814fca9276fc75aac76903b897955846",
+      "size_bytes": 20201
+    },
+    "validation_summary.json": {
+      "sha256": "39215a5571631cf33792a1530e1544f52a8988d1bcce39e04c7b8c5c429fc6a3",
+      "size_bytes": 1149
+    },
+    "xcaf_occurrences_deployed.csv": {
+      "sha256": "e61540f41222574d0d411820ca6ece87fb8329ba0701c2f800b0c41584f13a1e",
+      "size_bytes": 159089
+    },
+    "xcaf_occurrences_stowed.csv": {
+      "sha256": "0eb1aa43fa80d7a2239a78600d68a4dccbd5960fa36a00bab05fa4761d8c462e",
+      "size_bytes": 154883
+    },
+    "STINGRAY_I5S_DF8_R2_CANDIDATE_WIP_DEPLOYED_AP242.step": {
+      "sha256": "1ccd27a4e979126ff224120ee4b022443a6dd28f0644fbb3967daf0b7bc74314",
+      "size_bytes": 6118826
+    },
+    "STINGRAY_I5S_DF8_R2_CANDIDATE_WIP_STOWED_AP242.step": {
+      "sha256": "b30239ef0c50e0960b17d2d85a7e2e1ccd353de322c7966fe6a347c1b35206e4",
+      "size_bytes": 6211040
+    },
+    "validate_r2.py": {
+      "sha256": "82cd233546cc5858eea1a9ace9f11409b0409688afe7b2c111c187e38de0aa8c",
+      "size_bytes": 64404
+    }
+  }
+}

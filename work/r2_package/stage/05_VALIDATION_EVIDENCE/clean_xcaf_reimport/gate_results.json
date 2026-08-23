@@ -1,0 +1,386 @@
+{
+  "computed_release_status": "NOT_RELEASED",
+  "package_required_label": "CREO_VALIDATION_PENDING \u2014 WIP \u2014 NOT RELEASED",
+  "gate_counts": {
+    "PASS": 15,
+    "FAIL": 3,
+    "BLOCKED": 5
+  },
+  "gates": [
+    {
+      "gate_id": "AP242-STOWED",
+      "requirement": "STOWED master is AP242 exact B-rep with named products/occurrences",
+      "status": "PASS",
+      "measured": {
+        "schema": "'AP242_MANAGED_MODEL_BASED_3D_ENGINEERING_MIM_LF {1 0 10303 442 1 1 4 }'",
+        "faceted_or_tessellated_total": 0,
+        "unnamed_products": 0,
+        "unnamed_nauos": 0
+      },
+      "evidence": "step_text_inspection.json",
+      "note": ""
+    },
+    {
+      "gate_id": "BREP-VALID-STOWED",
+      "requirement": "Every reimported STOWED leaf solid passes BRepCheck_Analyzer",
+      "status": "PASS",
+      "measured": {
+        "invalid_solid_count": 0
+      },
+      "evidence": "leaf_solids_stowed.csv",
+      "note": ""
+    },
+    {
+      "gate_id": "INTERFERENCE-STOWED",
+      "requirement": "Zero undocumented positive-volume intersections in STOWED",
+      "status": "FAIL",
+      "measured": {
+        "all_unordered_pairs": 27028,
+        "unauthorized_positive_volume_pairs": 213,
+        "boolean_blocked_pairs": 0
+      },
+      "evidence": "endpoint_interference_register.csv; endpoint_pair_audit_stowed.csv.gz",
+      "note": "No occurrence-pair positive-volume exception register was supplied; attachment rows alone are not exceptions."
+    },
+    {
+      "gate_id": "CLEARANCE-EVIDENCE-STOWED",
+      "requirement": "Near-pair exact clearance evidence completes for STOWED",
+      "status": "BLOCKED",
+      "measured": {
+        "near_limit_mm": 2.0,
+        "minimum_exact_noninterfering_clearance_mm": 0.05000000000006821,
+        "distance_blocked_pairs": 612
+      },
+      "evidence": "minimum_clearance_register.csv; endpoint_pair_audit_stowed.csv.gz",
+      "note": "Pairs outside the near limit retain a conservative positive AABB lower bound in the exhaustive register."
+    },
+    {
+      "gate_id": "AP242-DEPLOYED",
+      "requirement": "DEPLOYED master is AP242 exact B-rep with named products/occurrences",
+      "status": "PASS",
+      "measured": {
+        "schema": "'AP242_MANAGED_MODEL_BASED_3D_ENGINEERING_MIM_LF {1 0 10303 442 1 1 4 }'",
+        "faceted_or_tessellated_total": 0,
+        "unnamed_products": 0,
+        "unnamed_nauos": 0
+      },
+      "evidence": "step_text_inspection.json",
+      "note": ""
+    },
+    {
+      "gate_id": "BREP-VALID-DEPLOYED",
+      "requirement": "Every reimported DEPLOYED leaf solid passes BRepCheck_Analyzer",
+      "status": "PASS",
+      "measured": {
+        "invalid_solid_count": 0
+      },
+      "evidence": "leaf_solids_deployed.csv",
+      "note": ""
+    },
+    {
+      "gate_id": "INTERFERENCE-DEPLOYED",
+      "requirement": "Zero undocumented positive-volume intersections in DEPLOYED",
+      "status": "FAIL",
+      "measured": {
+        "all_unordered_pairs": 24753,
+        "unauthorized_positive_volume_pairs": 147,
+        "boolean_blocked_pairs": 0
+      },
+      "evidence": "endpoint_interference_register.csv; endpoint_pair_audit_deployed.csv.gz",
+      "note": "No occurrence-pair positive-volume exception register was supplied; attachment rows alone are not exceptions."
+    },
+    {
+      "gate_id": "CLEARANCE-EVIDENCE-DEPLOYED",
+      "requirement": "Near-pair exact clearance evidence completes for DEPLOYED",
+      "status": "BLOCKED",
+      "measured": {
+        "near_limit_mm": 2.0,
+        "minimum_exact_noninterfering_clearance_mm": 0.05000000000006821,
+        "distance_blocked_pairs": 623
+      },
+      "evidence": "minimum_clearance_register.csv; endpoint_pair_audit_deployed.csv.gz",
+      "note": "Pairs outside the near limit retain a conservative positive AABB lower bound in the exhaustive register."
+    },
+    {
+      "gate_id": "STATE-PARITY",
+      "requirement": "The two masters contain the same occurrence identities and rigid part definitions",
+      "status": "PASS",
+      "measured": {
+        "union_occurrence_count": 181,
+        "mismatch_count": 0,
+        "mismatch_occurrence_ids": [],
+        "stowed_only": [],
+        "deployed_only": []
+      },
+      "evidence": "state_parity.csv",
+      "note": ""
+    },
+    {
+      "gate_id": "OCCURRENCE-TRANSFORMS",
+      "requirement": "Every XCAF leaf maps to an occurrence and identity placements are justified",
+      "status": "PASS",
+      "measured": {
+        "unmapped_leaf_occurrences": 0,
+        "identity_occurrences_without_justification": 0
+      },
+      "evidence": "xcaf_occurrences_stowed.csv; xcaf_occurrences_deployed.csv",
+      "note": ""
+    },
+    {
+      "gate_id": "ARM-KINEMATICS-ENDPOINTS",
+      "requirement": "Three arms are clocked 0/120/240 degrees and move 0 to 80 degrees",
+      "status": "PASS",
+      "measured": {
+        "maximum_clock_error_deg": 7.645439836778678e-12,
+        "maximum_stowed_angle_error_deg": 0.0,
+        "maximum_deployed_angle_error_deg": 8.256506589532364e-12
+      },
+      "evidence": "key_dimensions.json",
+      "note": ""
+    },
+    {
+      "gate_id": "ARM-LENGTH",
+      "requirement": "Each arm pivot-to-tip extent is 733.806 mm",
+      "status": "PASS",
+      "measured": {
+        "maximum_absolute_error_mm": 0.0,
+        "measurements": [
+          {
+            "state": "STOWED",
+            "arm_index": 1,
+            "required_clock_deg": 0.0,
+            "measured_axis_clock_deg": 0.0,
+            "measured_axis_angle_deg": 0.0,
+            "local_geometry_min_from_pivot_mm": -10.0,
+            "local_pivot_to_tip_extent_mm": 733.806
+          },
+          {
+            "state": "STOWED",
+            "arm_index": 2,
+            "required_clock_deg": 120.0,
+            "measured_axis_clock_deg": 120.0,
+            "measured_axis_angle_deg": 0.0,
+            "local_geometry_min_from_pivot_mm": -10.0,
+            "local_pivot_to_tip_extent_mm": 733.806
+          },
+          {
+            "state": "STOWED",
+            "arm_index": 3,
+            "required_clock_deg": 240.0,
+            "measured_axis_clock_deg": 240.0,
+            "measured_axis_angle_deg": 0.0,
+            "local_geometry_min_from_pivot_mm": -10.0,
+            "local_pivot_to_tip_extent_mm": 733.806
+          },
+          {
+            "state": "DEPLOYED",
+            "arm_index": 1,
+            "required_clock_deg": 0.0,
+            "measured_axis_clock_deg": 0.0,
+            "measured_axis_angle_deg": 79.999999999994,
+            "local_geometry_min_from_pivot_mm": -10.0,
+            "local_pivot_to_tip_extent_mm": 733.806
+          },
+          {
+            "state": "DEPLOYED",
+            "arm_index": 2,
+            "required_clock_deg": 120.0,
+            "measured_axis_clock_deg": 120.00000000000765,
+            "measured_axis_angle_deg": 79.99999999999174,
+            "local_geometry_min_from_pivot_mm": -10.0,
+            "local_pivot_to_tip_extent_mm": 733.806
+          },
+          {
+            "state": "DEPLOYED",
+            "arm_index": 3,
+            "required_clock_deg": 240.0,
+            "measured_axis_clock_deg": 239.99999999999235,
+            "measured_axis_angle_deg": 79.99999999999174,
+            "local_geometry_min_from_pivot_mm": -10.0,
+            "local_pivot_to_tip_extent_mm": 733.806
+          }
+        ]
+      },
+      "evidence": "key_dimensions.json",
+      "note": ""
+    },
+    {
+      "gate_id": "CROSSHEAD-TRAVEL",
+      "requirement": "Crosshead travel is at least 15.050 mm at full precision",
+      "status": "PASS",
+      "measured": {
+        "travel_mm": 15.055034371129977,
+        "minimum_mm": 15.05,
+        "independent_equation_mm": 15.05503437113498
+      },
+      "evidence": "key_dimensions.json; motion_kinematics_1deg.csv",
+      "note": ""
+    },
+    {
+      "gate_id": "NORMAL-BODY-OML",
+      "requirement": "Normal shell/fixed-sector OML does not exceed the 53.0 mm target",
+      "status": "PASS",
+      "measured": {
+        "measured_xy_spans_mm": {
+          "FWD-SHELL-001": 53.00000020118784,
+          "AFT-SHELL-001": 53.0000002,
+          "FIXED-SECTOR-1": 30.39117323251205,
+          "FIXED-SECTOR-2": 35.09270409356451,
+          "FIXED-SECTOR-3": 30.391173232514298
+        },
+        "target_max_mm": 53.0
+      },
+      "evidence": "key_dimensions.json",
+      "note": ""
+    },
+    {
+      "gate_id": "ARM-MODULE-HARD-ENVELOPE",
+      "requirement": "Stowed arm-module hard XY span is no more than 57.150 mm",
+      "status": "PASS",
+      "measured": {
+        "measured_span_mm": 57.0,
+        "limit_mm": 57.15,
+        "normal_target_mm": 53.0
+      },
+      "evidence": "key_dimensions.json",
+      "note": ""
+    },
+    {
+      "gate_id": "RIGID-LENGTH",
+      "requirement": "Complete rigid length is no more than 2032 mm in both endpoint states",
+      "status": "PASS",
+      "measured": {
+        "measured_mm": {
+          "STOWED": 2031.0000001,
+          "DEPLOYED": 2031.0000001
+        },
+        "limit_mm": 2032.0
+      },
+      "evidence": "key_dimensions.json",
+      "note": ""
+    },
+    {
+      "gate_id": "SYSTEM-MASS",
+      "requirement": "System mass is <=18.14 kg with >=1.0 kg reserve and no unresolved occurrence masses",
+      "status": "BLOCKED",
+      "measured": {
+        "resolved_mass_kg": 11.844640713435926,
+        "unresolved_occurrence_ids": [
+          "WATER-BOBBIN-001",
+          "HARNESS-BAND-1",
+          "HARNESS-BAND-2",
+          "HARNESS-LEG-XP",
+          "HARNESS-LEG-XN",
+          "HARNESS-LEG-YP",
+          "HARNESS-LEG-YN"
+        ],
+        "resolved-only-reserve_kg": 6.295359286564075
+      },
+      "evidence": "key_dimensions.json",
+      "note": ""
+    },
+    {
+      "gate_id": "ATTACHMENT-COHESION",
+      "requirement": "Every rigid occurrence has occurrence-specific, non-self attachment evidence",
+      "status": "PASS",
+      "measured": {
+        "floating_rigid_rows_across_states": 0,
+        "dangling_connections_across_states": 0,
+        "self_connections_across_states": 0,
+        "generic_evidence_rows_across_states": 0
+      },
+      "evidence": "connectivity_summary.json; attachment_connectivity_stowed.csv; attachment_connectivity_deployed.csv",
+      "note": ""
+    },
+    {
+      "gate_id": "RECOVERY-LOAD-PATH",
+      "requirement": "A continuous structural graph connects body hardpoint to harness terminal in both states",
+      "status": "PASS",
+      "measured": {
+        "STOWED": [
+          "BODY-HARDPOINT-001",
+          "TETHER-THIMBLE-BODY",
+          "RECOVERY-TETHER-001",
+          "TETHER-THIMBLE-HARNESS",
+          "HARNESS-TERMINAL-001"
+        ],
+        "DEPLOYED": [
+          "BODY-HARDPOINT-001",
+          "TETHER-THIMBLE-BODY",
+          "RECOVERY-TETHER-001",
+          "TETHER-THIMBLE-HARNESS",
+          "HARNESS-TERMINAL-001"
+        ]
+      },
+      "evidence": "connectivity_summary.json",
+      "note": "Flexible/control/inflation routes are not accepted as implicit structural substitutes."
+    },
+    {
+      "gate_id": "PROCUREMENT-DEFINITION",
+      "requirement": "Purchased identities and sourcing records are complete and non-provisional",
+      "status": "FAIL",
+      "measured": {
+        "provisional_part_numbers": [
+          "DF8-R2-LINK-E-RING-004",
+          "DF8-R2-BACKUP-SPRING-16N-001",
+          "HBD-15-25-AA-P",
+          "DF8-R2-GAS-MAIN-UNION-001",
+          "DF8-R2-PILOT-LINE-UNION-001",
+          "DF8-R2-BOWDEN-SHEATH-UNION-001",
+          "DF8-R2-BOWDEN-WIRE-UNION-001",
+          "DF8-R2-HARNESS-BAND-1",
+          "DF8-R2-HARNESS-BAND-2",
+          "DF8-R2-HARNESS-LEG-XP",
+          "DF8-R2-HARNESS-LEG-XN",
+          "DF8-R2-HARNESS-LEG-YP",
+          "DF8-R2-HARNESS-LEG-YN",
+          "AMSTEEL-BLUE-872-7-64-R2"
+        ],
+        "bought_without_purchase_link": [
+          "V80040",
+          "DF8-R2-LINK-E-RING-004",
+          "DF8-R2-GAS-MAIN-UNION-001",
+          "DF8-R2-PILOT-LINE-UNION-001",
+          "DF8-R2-BOWDEN-SHEATH-UNION-001",
+          "DF8-R2-BOWDEN-WIRE-UNION-001"
+        ]
+      },
+      "evidence": "authoring_inventory_stowed.json",
+      "note": ""
+    },
+    {
+      "gate_id": "MOTION-ARM-BODIES-1DEG",
+      "requirement": "Principal arm bodies have zero positive-volume intersections versus fixed geometry at 0..80 degrees / 1 degree",
+      "status": "PASS",
+      "measured": {
+        "samples": 81,
+        "positive_volume_pairs": 0,
+        "boolean_blocked_pairs": 0
+      },
+      "evidence": "motion_arm_clearance_audit.csv.gz; motion_kinematics_1deg.csv",
+      "note": ""
+    },
+    {
+      "gate_id": "MOTION-FULL-MECHANISM",
+      "requirement": "All moving rigid and flexible geometry is collision/clearance checked through 0..80 degrees at <=1 degree",
+      "status": "BLOCKED",
+      "measured": {
+        "completed_scope": "Three principal arm bodies versus all endpoint FIXED rigid solids at 0..80 degrees in 1-degree increments",
+        "missing_scope": "Links, crosshead, rods, springs, locks, and state-changing flexible/softgood geometry are not swept; full mechanism sweep remains BLOCKED"
+      },
+      "evidence": "motion_audit_summary.json",
+      "note": ""
+    },
+    {
+      "gate_id": "CREO-CLEAN-SESSION",
+      "requirement": "Masters reimport, regenerate, and save successfully in a clean Creo session",
+      "status": "BLOCKED",
+      "measured": {
+        "creo_session_available": false,
+        "report": null
+      },
+      "evidence": "No Creo report supplied",
+      "note": "OCCT/XCAF reimport is not target-CAD verification."
+    }
+  ]
+}

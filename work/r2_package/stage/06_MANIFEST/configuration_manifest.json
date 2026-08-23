@@ -1,0 +1,141 @@
+{
+  "package_status": "CREO_VALIDATION_PENDING — WIP — NOT RELEASED",
+  "configuration": "R2_CANDIDATE_WIP",
+  "masters": {
+    "STINGRAY_I5S_DF8_R2_CANDIDATE_WIP_STOWED_AP242.step": {
+      "sha256": "b30239ef0c50e0960b17d2d85a7e2e1ccd353de322c7966fe6a347c1b35206e4",
+      "size_bytes": 6211040
+    },
+    "STINGRAY_I5S_DF8_R2_CANDIDATE_WIP_DEPLOYED_AP242.step": {
+      "sha256": "1ccd27a4e979126ff224120ee4b022443a6dd28f0644fbb3967daf0b7bc74314",
+      "size_bytes": 6118826
+    }
+  },
+  "external_context": {
+    "STINGRAY_I5S_DF8_R2_EXTERNAL_TEST_CONTEXT_PROVISIONAL_AP242.step": {
+      "sha256": "5d990dd937dad4b3d1de8966536104ea1ab1eff5f9be67d765544158fa121901",
+      "size_bytes": 81642
+    }
+  },
+  "validation_gate_counts": {
+    "PASS": 15,
+    "FAIL": 3,
+    "BLOCKED": 5
+  },
+  "remaining_failed_or_blocked_gates": 8,
+  "closed_ncr_count": 4,
+  "controlled_ncr_count": 8,
+  "clean_creo_passed": false,
+  "creo_gate_result": "BLOCKED — REQUIRED CREO REIMPORT/REGENERATION GATE NOT COMPLETED",
+  "validator_scope": "Clean-process OCCT/XCAF AP242 endpoint reimport plus exhaustive endpoint pair audit; partial principal-arm motion sweep",
+  "validator_limit": "No Creo installation/session was available. Full-mechanism motion reconstruction is not completed by this validator.",
+  "source_vs_reimport": {
+    "overall_status": "PASS",
+    "overall_fail_count": 0,
+    "comparison_row_count": 362,
+    "states": {
+      "DEPLOYED": {
+        "source_occurrence_count": 181,
+        "reimport_leaf_occurrence_count": 181,
+        "pass_count": 181,
+        "fail_count": 0,
+        "status": "PASS"
+      },
+      "STOWED": {
+        "source_occurrence_count": 181,
+        "reimport_leaf_occurrence_count": 181,
+        "pass_count": 181,
+        "fail_count": 0,
+        "status": "PASS"
+      }
+    },
+    "summary_sha256": "cea25be27a8a50dd134c7d03ebc55fe107df745644d1e6e831f1943a6b0da26b",
+    "raw_sha256": "cdb631a3336d55a9637d020bcc80de88b1e381aee6508f406e49968d353f4ad9",
+    "explicit_limit": "This comparison is not Creo validation."
+  },
+  "workbook_register_categories": {
+    "sheet_count": 20,
+    "sheet_names": [
+      "00_README",
+      "01_NCR_CLOSURE",
+      "02_UNIQUE_PARTS",
+      "03_PURCHASED_ITEMS",
+      "04_OCCURRENCE_BOM",
+      "05_ATTACHMENT_REGISTER",
+      "06_HARDWARE_FITTINGS",
+      "07_CLEARANCE_REGISTER",
+      "08_INTERFERENCE_REGISTER",
+      "09_MOTION_SWEEP",
+      "10_SOURCE_CAD",
+      "11_STATE_MATRIX",
+      "12_VALIDATION_GATES",
+      "13_MASS_PROPERTIES",
+      "14_COMPLIANCE",
+      "15_EVIDENCE_INDEX",
+      "16_CREO_VALIDATION",
+      "17_ROUTING",
+      "18_CUSTOM_PARTS",
+      "19_CONSUMABLES"
+    ],
+    "commission_category_count": 16,
+    "commission_category_map": {
+      "occurrence_bom": [
+        "04_OCCURRENCE_BOM"
+      ],
+      "unique_part_master": [
+        "02_UNIQUE_PARTS"
+      ],
+      "purchased_items_register": [
+        "03_PURCHASED_ITEMS"
+      ],
+      "custom_parts_register": [
+        "18_CUSTOM_PARTS"
+      ],
+      "attachment_retention_matrix": [
+        "05_ATTACHMENT_REGISTER",
+        "06_HARDWARE_FITTINGS"
+      ],
+      "configuration_matrix": [
+        "11_STATE_MATRIX"
+      ],
+      "consumables_register": [
+        "19_CONSUMABLES"
+      ],
+      "occurrence_transform_register": [
+        "04_OCCURRENCE_BOM"
+      ],
+      "interference_register": [
+        "08_INTERFERENCE_REGISTER"
+      ],
+      "intentional_fit_exception_register": [
+        "08_INTERFERENCE_REGISTER"
+      ],
+      "minimum_clearance_register": [
+        "07_CLEARANCE_REGISTER"
+      ],
+      "mechanism_sweep_register": [
+        "09_MOTION_SWEEP"
+      ],
+      "state_delta_register": [
+        "11_STATE_MATRIX"
+      ],
+      "routing_termination_register": [
+        "17_ROUTING"
+      ],
+      "owner_ncr_closure_register": [
+        "01_NCR_CLOSURE"
+      ],
+      "final_validation": [
+        "12_VALIDATION_GATES",
+        "16_CREO_VALIDATION"
+      ]
+    }
+  },
+  "component_unique_part_count": 90,
+  "component_state_definition_count": 180,
+  "component_state_definition_counts": {
+    "STOWED": 90,
+    "DEPLOYED": 90
+  },
+  "state_dependent_part_count": 18
+}

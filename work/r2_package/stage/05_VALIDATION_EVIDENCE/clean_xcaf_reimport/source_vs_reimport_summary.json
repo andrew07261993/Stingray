@@ -1,0 +1,40 @@
+{
+  "run_timestamp_utc": "2026-08-21T19:30:35.275352+00:00",
+  "comparison_scope": "Frozen scripted-B-rep authoring inventory versus independent clean-process AP242 XCAF reimport",
+  "explicit_limit": "This comparison is not Creo validation.",
+  "tolerances": {
+    "transform_max_abs": 1e-09,
+    "bbox_max_abs_mm": 1e-06,
+    "volume_abs_mm3": 1e-05,
+    "volume_relative": 1e-09,
+    "solid_count_delta": 0,
+    "face_count_delta": 0
+  },
+  "states": [
+    {
+      "state": "STOWED",
+      "source_inventory": "authoring_inventory_stowed.json",
+      "clean_reimport_inventory": "xcaf_occurrences_stowed.csv",
+      "source_occurrence_count": 181,
+      "reimport_leaf_occurrence_count": 181,
+      "comparison_row_count": 181,
+      "pass_count": 181,
+      "fail_count": 0,
+      "status": "PASS"
+    },
+    {
+      "state": "DEPLOYED",
+      "source_inventory": "authoring_inventory_deployed.json",
+      "clean_reimport_inventory": "xcaf_occurrences_deployed.csv",
+      "source_occurrence_count": 181,
+      "reimport_leaf_occurrence_count": 181,
+      "comparison_row_count": 181,
+      "pass_count": 181,
+      "fail_count": 0,
+      "status": "PASS"
+    }
+  ],
+  "overall_status": "PASS",
+  "overall_fail_count": 0,
+  "raw_evidence": "source_vs_reimport.csv"
+}

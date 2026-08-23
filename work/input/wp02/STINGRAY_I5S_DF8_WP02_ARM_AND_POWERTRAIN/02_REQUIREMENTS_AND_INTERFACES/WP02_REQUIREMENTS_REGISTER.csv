@@ -1,0 +1,8 @@
+requirement_id,requirement,verification,status
+WP02-REQ-001,"Three arms clocked 0/120/240 degrees, 1 degree stowed and 80 degrees deployed.",CAD + kinematic register,DIGITAL PASS
+WP02-REQ-002,"Use accepted WP01 body, covers, datums and control volumes without exterior change.",Default-coordinate integration + motion audit,DIGITAL PASS
+WP02-REQ-003,Zero-GS backup spring drives all arms to physical stops and positive locks with HBD installed.,Work/force and dynamic cases + physical test,DIGITAL PASS; PHYSICAL VERIFICATION OPEN
+WP02-REQ-004,GS-only case completes if backup spring is unavailable.,Dynamic case C + physical test,DIGITAL PASS; PHYSICAL VERIFICATION OPEN
+WP02-REQ-005,HBD seizure shall not block both drive paths or eject fragments.,Captive bypass geometry + detent margin + jam test,DIGITAL PASS; CALIBRATION/PHYSICAL TEST OPEN
+WP02-REQ-006,Deployed arms remain positively locked after drive-force loss and reset manually.,CAD lock/witness + proof test,DIGITAL PASS; PROOF TEST OPEN
+WP02-REQ-007,Exactly two top-level AP242 state files and no native Creo claim.,Manifest + reimport report,DIGITAL PASS

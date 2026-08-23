@@ -1,0 +1,1863 @@
+{
+  "stowed": {
+    "all_geometry_bbox_mm": {
+      "xmin": -28.5,
+      "ymin": -28.5,
+      "zmin": 0.0,
+      "xmax": 32.2500001,
+      "ymax": 28.550301090003998,
+      "zmax": 2031.0000001
+    },
+    "rigid_geometry_bbox_mm": {
+      "xmin": -28.5,
+      "ymin": -28.5,
+      "zmin": 0.0,
+      "xmax": 31.631513711336,
+      "ymax": 28.550301090003998,
+      "zmax": 2031.0000001
+    },
+    "rigid_length_mm": 2031.0000001,
+    "all_geometry_length_mm": 2031.0000001,
+    "solid_count": 308,
+    "invalid_solid_count": 1,
+    "face_count": 5623,
+    "surface_type_counts": {
+      "BSplineSurface": 8,
+      "Cone": 70,
+      "Cylinder": 1818,
+      "Plane": 3603,
+      "Sphere": 116,
+      "Torus": 8
+    }
+  },
+  "deployed": {
+    "all_geometry_bbox_mm": {
+      "xmin": -376.92833709596425,
+      "ymin": -646.00032596723,
+      "zmin": 0.0,
+      "xmax": 742.1338475170329,
+      "ymax": 646.0003259672354,
+      "zmax": 2522.25
+    },
+    "rigid_geometry_bbox_mm": {
+      "xmin": -376.92833709596425,
+      "ymin": -646.00032596723,
+      "zmin": 0.0,
+      "xmax": 742.1338475170329,
+      "ymax": 646.0003259672354,
+      "zmax": 2031.0000001
+    },
+    "rigid_length_mm": 2031.0000001,
+    "all_geometry_length_mm": 2522.25,
+    "solid_count": 308,
+    "invalid_solid_count": 0,
+    "face_count": 6069,
+    "surface_type_counts": {
+      "BSplineSurface": 8,
+      "Cone": 70,
+      "Cylinder": 1883,
+      "Plane": 3890,
+      "Sphere": 210,
+      "Torus": 8
+    }
+  },
+  "arm_module_stowed_bbox_mm": {
+    "xmin": -28.5,
+    "ymin": -28.5,
+    "zmin": 829.6837722339836,
+    "xmax": 28.5,
+    "ymax": 28.550301090003998,
+    "zmax": 1754.3135211750873
+  },
+  "arm_module_stowed_xy_span_mm": 57.050301090004,
+  "normal_body_oml_required_occurrence_ids": [
+    "AFT-SHELL-001",
+    "FIXED-SECTOR-1",
+    "FIXED-SECTOR-2",
+    "FIXED-SECTOR-3",
+    "FWD-SHELL-001"
+  ],
+  "normal_body_oml_missing_occurrence_ids": [],
+  "normal_body_oml_xy_spans_mm": {
+    "AFT-SHELL-001": 53.0000002,
+    "FIXED-SECTOR-1": 24.00691983422691,
+    "FIXED-SECTOR-2": 27.634148354041656,
+    "FIXED-SECTOR-3": 24.006919934225674,
+    "FWD-SHELL-001": 53.00000020118784
+  },
+  "arms": [
+    {
+      "state": "STOWED",
+      "arm_index": 1,
+      "required_clock_deg": 0.0,
+      "measured_axis_clock_deg": 0.0,
+      "measured_axis_angle_deg": 0.0,
+      "local_geometry_min_from_pivot_mm": -10.0,
+      "local_pivot_to_tip_extent_mm": 733.806,
+      "face_count": 181,
+      "surface_types": {
+        "Cylinder": 76,
+        "Plane": 105
+      }
+    },
+    {
+      "state": "STOWED",
+      "arm_index": 2,
+      "required_clock_deg": 120.0,
+      "measured_axis_clock_deg": 120.0,
+      "measured_axis_angle_deg": 0.0,
+      "local_geometry_min_from_pivot_mm": -10.0,
+      "local_pivot_to_tip_extent_mm": 733.806,
+      "face_count": 181,
+      "surface_types": {
+        "Cylinder": 76,
+        "Plane": 105
+      }
+    },
+    {
+      "state": "STOWED",
+      "arm_index": 3,
+      "required_clock_deg": 240.0,
+      "measured_axis_clock_deg": 240.0,
+      "measured_axis_angle_deg": 0.0,
+      "local_geometry_min_from_pivot_mm": -10.0,
+      "local_pivot_to_tip_extent_mm": 733.806,
+      "face_count": 181,
+      "surface_types": {
+        "Cylinder": 76,
+        "Plane": 105
+      }
+    },
+    {
+      "state": "DEPLOYED",
+      "arm_index": 1,
+      "required_clock_deg": 0.0,
+      "measured_axis_clock_deg": 0.0,
+      "measured_axis_angle_deg": 79.999999999994,
+      "local_geometry_min_from_pivot_mm": -10.0,
+      "local_pivot_to_tip_extent_mm": 733.806,
+      "face_count": 181,
+      "surface_types": {
+        "Cylinder": 76,
+        "Plane": 105
+      }
+    },
+    {
+      "state": "DEPLOYED",
+      "arm_index": 2,
+      "required_clock_deg": 120.0,
+      "measured_axis_clock_deg": 120.00000000000765,
+      "measured_axis_angle_deg": 79.99999999999174,
+      "local_geometry_min_from_pivot_mm": -10.0,
+      "local_pivot_to_tip_extent_mm": 733.806,
+      "face_count": 181,
+      "surface_types": {
+        "Cylinder": 76,
+        "Plane": 105
+      }
+    },
+    {
+      "state": "DEPLOYED",
+      "arm_index": 3,
+      "required_clock_deg": 240.0,
+      "measured_axis_clock_deg": 239.99999999999235,
+      "measured_axis_angle_deg": 79.99999999999174,
+      "local_geometry_min_from_pivot_mm": -10.0,
+      "local_pivot_to_tip_extent_mm": 733.806,
+      "face_count": 181,
+      "surface_types": {
+        "Cylinder": 76,
+        "Plane": 105
+      }
+    }
+  ],
+  "crosshead_z_mm": {
+    "STOWED": 928.02636328886,
+    "DEPLOYED": 912.97132891773
+  },
+  "crosshead_travel_from_reimported_transforms_mm": 15.055034371129977,
+  "crosshead_travel_from_independent_closure_equation_mm": 15.05503437113498,
+  "mass_rollup_from_authoring_inventory_kg": 11.729054405071585,
+  "mass_unresolved_occurrence_ids": [],
+  "mass_invalid_occurrence_ids": [],
+  "mass_override_state_mismatch_keys": [],
+  "mass_override_invalid_or_unknown_keys": [],
+  "part_mass_state_mismatch_part_numbers": [],
+  "mass_basis_rows": [
+    {
+      "occurrence_id": "NOSE-001",
+      "part_number": "DF8-R2-NOSE-001",
+      "mass_kg": 2.2173158326782247,
+      "basis": "PART_MASTER_MASS"
+    },
+    {
+      "occurrence_id": "BALLAST-001",
+      "part_number": "DF8-R2-BALLAST-001",
+      "mass_kg": 4.884227629259874,
+      "basis": "PART_MASTER_MASS"
+    },
+    {
+      "occurrence_id": "FWD-SHELL-001",
+      "part_number": "DF8-R2-FWD-SHELL-001",
+      "mass_kg": 0.4498686111726822,
+      "basis": "PART_MASTER_MASS"
+    },
+    {
+      "occurrence_id": "FWD-RING-01",
+      "part_number": "DF8-R2-STRUCT-RING-PLAIN-001",
+      "mass_kg": 0.032840797031319716,
+      "basis": "PART_MASTER_MASS"
+    },
+    {
+      "occurrence_id": "FWD-RING-02",
+      "part_number": "DF8-R2-STRUCT-RING-ROUTED-001",
+      "mass_kg": 0.029193973076448457,
+      "basis": "PART_MASTER_MASS"
+    },
+    {
+      "occurrence_id": "FWD-LONGERON-1",
+      "part_number": "DF8-R2-FWD-LONGERON-001",
+      "mass_kg": 0.01611010229626497,
+      "basis": "PART_MASTER_MASS"
+    },
+    {
+      "occurrence_id": "FWD-LONGERON-2",
+      "part_number": "DF8-R2-FWD-LONGERON-001",
+      "mass_kg": 0.01611010229626497,
+      "basis": "PART_MASTER_MASS"
+    },
+    {
+      "occurrence_id": "FWD-LONGERON-3",
+      "part_number": "DF8-R2-FWD-LONGERON-001",
+      "mass_kg": 0.01611010229626497,
+      "basis": "PART_MASTER_MASS"
+    },
+    {
+      "occurrence_id": "CARTRIDGE-CARRIER-FWD",
+      "part_number": "DF8-R2-CARTRIDGE-CARRIER-001",
+      "mass_kg": 0.0026148697966074407,
+      "basis": "PART_MASTER_MASS"
+    },
+    {
+      "occurrence_id": "CARTRIDGE-CARRIER-AFT",
+      "part_number": "DF8-R2-CARTRIDGE-CARRIER-001",
+      "mass_kg": 0.0026148697966074407,
+      "basis": "PART_MASTER_MASS"
+    },
+    {
+      "occurrence_id": "CO2-CARTRIDGE-1",
+      "part_number": "LELAND-81121",
+      "mass_kg": 0.045,
+      "basis": "STATE_INVARIANT_OCCURRENCE_OVERRIDE"
+    },
+    {
+      "occurrence_id": "CO2-CARTRIDGE-2",
+      "part_number": "LELAND-81121",
+      "mass_kg": 0.045,
+      "basis": "STATE_INVARIANT_OCCURRENCE_OVERRIDE"
+    },
+    {
+      "occurrence_id": "CO2-CARTRIDGE-3",
+      "part_number": "LELAND-81121",
+      "mass_kg": 0.045,
+      "basis": "STATE_INVARIANT_OCCURRENCE_OVERRIDE"
+    },
+    {
+      "occurrence_id": "CO2-CARTRIDGE-4",
+      "part_number": "LELAND-81121",
+      "mass_kg": 0.045,
+      "basis": "STATE_INVARIANT_OCCURRENCE_OVERRIDE"
+    },
+    {
+      "occurrence_id": "COLLECTION-MANIFOLD-001",
+      "part_number": "DF8-R2-COLLECTION-MANIFOLD-001",
+      "mass_kg": 0.08077311172532872,
+      "basis": "PART_MASTER_MASS"
+    },
+    {
+      "occurrence_id": "PUNCTURE-HEAD-1",
+      "part_number": "DF8-R2-PUNCTURE-HEAD-001",
+      "mass_kg": 0.005044827355516803,
+      "basis": "PART_MASTER_MASS"
+    },
+    {
+      "occurrence_id": "PUNCTURE-HEAD-2",
+      "part_number": "DF8-R2-PUNCTURE-HEAD-001",
+      "mass_kg": 0.005044827355516803,
+      "basis": "PART_MASTER_MASS"
+    },
+    {
+      "occurrence_id": "PUNCTURE-HEAD-3",
+      "part_number": "DF8-R2-PUNCTURE-HEAD-001",
+      "mass_kg": 0.005044827355516803,
+      "basis": "PART_MASTER_MASS"
+    },
+    {
+      "occurrence_id": "PUNCTURE-HEAD-4",
+      "part_number": "DF8-R2-PUNCTURE-HEAD-001",
+      "mass_kg": 0.005044827355516803,
+      "basis": "PART_MASTER_MASS"
+    },
+    {
+      "occurrence_id": "BOOSTER-1",
+      "part_number": "DF8-R2-BOOSTER-RESERVOIR-001",
+      "mass_kg": 0.1376017582272329,
+      "basis": "PART_MASTER_MASS"
+    },
+    {
+      "occurrence_id": "BOOSTER-FWD-CLOSURE-1",
+      "part_number": "DF8-R2-BOOSTER-FWD-ADAPTER-CLOSURE-001",
+      "mass_kg": 0.0012736644936183737,
+      "basis": "PART_MASTER_MASS"
+    },
+    {
+      "occurrence_id": "BOOSTER-AFT-CLOSURE-1",
+      "part_number": "DF8-R2-BOOSTER-AFT-WELDED-CLOSURE-001",
+      "mass_kg": 0.001006063631385595,
+      "basis": "PART_MASTER_MASS"
+    },
+    {
+      "occurrence_id": "BOOSTER-ISOLATION-VALVE-1",
+      "part_number": "SS-CHS2-1",
+      "mass_kg": 0.025,
+      "basis": "STATE_INVARIANT_OCCURRENCE_OVERRIDE"
+    },
+    {
+      "occurrence_id": "BOOSTER-COLLECTION-LINE-1",
+      "part_number": "DF8-R2-BOOSTER-COLLECTION-LINE-001",
+      "mass_kg": 3.783105873452825e-05,
+      "basis": "PART_MASTER_MASS"
+    },
+    {
+      "occurrence_id": "BOOSTER-BAND-1-1",
+      "part_number": "DF8-R2-BOOSTER-BAND-001",
+      "mass_kg": 0.00031423136719677266,
+      "basis": "PART_MASTER_MASS"
+    },
+    {
+      "occurrence_id": "BOOSTER-BAND-1-2",
+      "part_number": "DF8-R2-BOOSTER-BAND-001",
+      "mass_kg": 0.00031423136719677266,
+      "basis": "PART_MASTER_MASS"
+    },
+    {
+      "occurrence_id": "BOOSTER-BAND-1-3",
+      "part_number": "DF8-R2-BOOSTER-BAND-001",
+      "mass_kg": 0.00031423136719677266,
+      "basis": "PART_MASTER_MASS"
+    },
+    {
+      "occurrence_id": "BOOSTER-2",
+      "part_number": "DF8-R2-BOOSTER-RESERVOIR-001",
+      "mass_kg": 0.1376017582272329,
+      "basis": "PART_MASTER_MASS"
+    },
+    {
+      "occurrence_id": "BOOSTER-FWD-CLOSURE-2",
+      "part_number": "DF8-R2-BOOSTER-FWD-ADAPTER-CLOSURE-001",
+      "mass_kg": 0.0012736644936183737,
+      "basis": "PART_MASTER_MASS"
+    },
+    {
+      "occurrence_id": "BOOSTER-AFT-CLOSURE-2",
+      "part_number": "DF8-R2-BOOSTER-AFT-WELDED-CLOSURE-001",
+      "mass_kg": 0.001006063631385595,
+      "basis": "PART_MASTER_MASS"
+    },
+    {
+      "occurrence_id": "BOOSTER-ISOLATION-VALVE-2",
+      "part_number": "SS-CHS2-1",
+      "mass_kg": 0.025,
+      "basis": "STATE_INVARIANT_OCCURRENCE_OVERRIDE"
+    },
+    {
+      "occurrence_id": "BOOSTER-COLLECTION-LINE-2",
+      "part_number": "DF8-R2-BOOSTER-COLLECTION-LINE-001",
+      "mass_kg": 3.783105873452825e-05,
+      "basis": "PART_MASTER_MASS"
+    },
+    {
+      "occurrence_id": "BOOSTER-BAND-2-1",
+      "part_number": "DF8-R2-BOOSTER-BAND-001",
+      "mass_kg": 0.00031423136719677266,
+      "basis": "PART_MASTER_MASS"
+    },
+    {
+      "occurrence_id": "BOOSTER-BAND-2-2",
+      "part_number": "DF8-R2-BOOSTER-BAND-001",
+      "mass_kg": 0.00031423136719677266,
+      "basis": "PART_MASTER_MASS"
+    },
+    {
+      "occurrence_id": "BOOSTER-BAND-2-3",
+      "part_number": "DF8-R2-BOOSTER-BAND-001",
+      "mass_kg": 0.00031423136719677266,
+      "basis": "PART_MASTER_MASS"
+    },
+    {
+      "occurrence_id": "BOOSTER-3",
+      "part_number": "DF8-R2-BOOSTER-RESERVOIR-001",
+      "mass_kg": 0.1376017582272329,
+      "basis": "PART_MASTER_MASS"
+    },
+    {
+      "occurrence_id": "BOOSTER-FWD-CLOSURE-3",
+      "part_number": "DF8-R2-BOOSTER-FWD-ADAPTER-CLOSURE-001",
+      "mass_kg": 0.0012736644936183737,
+      "basis": "PART_MASTER_MASS"
+    },
+    {
+      "occurrence_id": "BOOSTER-AFT-CLOSURE-3",
+      "part_number": "DF8-R2-BOOSTER-AFT-WELDED-CLOSURE-001",
+      "mass_kg": 0.001006063631385595,
+      "basis": "PART_MASTER_MASS"
+    },
+    {
+      "occurrence_id": "BOOSTER-ISOLATION-VALVE-3",
+      "part_number": "SS-CHS2-1",
+      "mass_kg": 0.025,
+      "basis": "STATE_INVARIANT_OCCURRENCE_OVERRIDE"
+    },
+    {
+      "occurrence_id": "BOOSTER-COLLECTION-LINE-3",
+      "part_number": "DF8-R2-BOOSTER-COLLECTION-LINE-001",
+      "mass_kg": 3.783105873452825e-05,
+      "basis": "PART_MASTER_MASS"
+    },
+    {
+      "occurrence_id": "BOOSTER-BAND-3-1",
+      "part_number": "DF8-R2-BOOSTER-BAND-001",
+      "mass_kg": 0.00031423136719677266,
+      "basis": "PART_MASTER_MASS"
+    },
+    {
+      "occurrence_id": "BOOSTER-BAND-3-2",
+      "part_number": "DF8-R2-BOOSTER-BAND-001",
+      "mass_kg": 0.00031423136719677266,
+      "basis": "PART_MASTER_MASS"
+    },
+    {
+      "occurrence_id": "BOOSTER-BAND-3-3",
+      "part_number": "DF8-R2-BOOSTER-BAND-001",
+      "mass_kg": 0.00031423136719677266,
+      "basis": "PART_MASTER_MASS"
+    },
+    {
+      "occurrence_id": "WATER-TRIGGER-HSG-001",
+      "part_number": "DF8-R2-WATER-TRIGGER-HSG-001",
+      "mass_kg": 0.0060812555057542265,
+      "basis": "PART_MASTER_MASS"
+    },
+    {
+      "occurrence_id": "WATER-BOBBIN-001",
+      "part_number": "V80040",
+      "mass_kg": 0.00169646,
+      "basis": "STATE_INVARIANT_OCCURRENCE_OVERRIDE"
+    },
+    {
+      "occurrence_id": "WATER-INLET-001",
+      "part_number": "DF8-R2-WATER-INLET-001",
+      "mass_kg": 0.0015283722596008199,
+      "basis": "PART_MASTER_MASS"
+    },
+    {
+      "occurrence_id": "FULLFLOW-VALVE-001",
+      "part_number": "DF8-R2-FULLFLOW-VALVE-001",
+      "mass_kg": 0.018513436360094577,
+      "basis": "PART_MASTER_MASS"
+    },
+    {
+      "occurrence_id": "ROUTE-MANIFOLD-FEED-001",
+      "part_number": "DF8-FINAL-MANIFOLD-FULLFLOW-FEED-001",
+      "mass_kg": 0.007,
+      "basis": "STATE_INVARIANT_OCCURRENCE_OVERRIDE"
+    },
+    {
+      "occurrence_id": "MANIFOLD-FEED-CLAMP-1",
+      "part_number": "DF8-FINAL-MANIFOLD-FEED-SPRING-CLIP-001",
+      "mass_kg": 0.000153628,
+      "basis": "STATE_INVARIANT_OCCURRENCE_OVERRIDE"
+    },
+    {
+      "occurrence_id": "MANIFOLD-FEED-CLAMP-2",
+      "part_number": "DF8-FINAL-MANIFOLD-FEED-SPRING-CLIP-001",
+      "mass_kg": 0.000153628,
+      "basis": "STATE_INVARIANT_OCCURRENCE_OVERRIDE"
+    },
+    {
+      "occurrence_id": "MANIFOLD-FEED-CLAMP-3",
+      "part_number": "DF8-FINAL-MANIFOLD-FEED-SPRING-CLIP-001",
+      "mass_kg": 0.000153628,
+      "basis": "STATE_INVARIANT_OCCURRENCE_OVERRIDE"
+    },
+    {
+      "occurrence_id": "FIXED-SECTOR-1",
+      "part_number": "DF8-R2-FIXED-SECTOR-001",
+      "mass_kg": 0.340458772291073,
+      "basis": "PART_MASTER_MASS"
+    },
+    {
+      "occurrence_id": "ARM-LONGERON-1",
+      "part_number": "DF8-R2-ROUTED-LONGERON-001",
+      "mass_kg": 0.04893863708337827,
+      "basis": "PART_MASTER_MASS"
+    },
+    {
+      "occurrence_id": "FIXED-SECTOR-2",
+      "part_number": "DF8-R2-FIXED-SECTOR-001",
+      "mass_kg": 0.340458772291073,
+      "basis": "PART_MASTER_MASS"
+    },
+    {
+      "occurrence_id": "ARM-LONGERON-2",
+      "part_number": "DF8-R2-ROUTED-LONGERON-001",
+      "mass_kg": 0.04893863708337827,
+      "basis": "PART_MASTER_MASS"
+    },
+    {
+      "occurrence_id": "FIXED-SECTOR-3",
+      "part_number": "DF8-R2-BACKUP-ACCESS-FIXED-SECTOR-003",
+      "mass_kg": 0.33972579285849414,
+      "basis": "PART_MASTER_MASS"
+    },
+    {
+      "occurrence_id": "ARM-LONGERON-3",
+      "part_number": "DF8-R2-BACKUP-GUIDE-LONGERON-003",
+      "mass_kg": 0.0487211265814552,
+      "basis": "PART_MASTER_MASS"
+    },
+    {
+      "occurrence_id": "ARM-1",
+      "part_number": "DF8-R2-ARM-BLADE-001",
+      "mass_kg": 0.11652466411098689,
+      "basis": "PART_MASTER_MASS"
+    },
+    {
+      "occurrence_id": "PIVOT-CARRIER-1",
+      "part_number": "DF8-R2-PIVOT-CARRIER-001",
+      "mass_kg": 0.0027239708596307434,
+      "basis": "PART_MASTER_MASS"
+    },
+    {
+      "occurrence_id": "PIVOT-PIN-1",
+      "part_number": "DF8-R2-PIVOT-PIN-008",
+      "mass_kg": 0.008671747528307096,
+      "basis": "PART_MASTER_MASS"
+    },
+    {
+      "occurrence_id": "PIVOT-BUSH-1-1",
+      "part_number": "DF8-R2-PIVOT-BUSH-008",
+      "mass_kg": 8.808849871477256e-06,
+      "basis": "PART_MASTER_MASS"
+    },
+    {
+      "occurrence_id": "PIVOT-BUSH-1-2",
+      "part_number": "DF8-R2-PIVOT-BUSH-008",
+      "mass_kg": 8.808849871477256e-06,
+      "basis": "PART_MASTER_MASS"
+    },
+    {
+      "occurrence_id": "PIVOT-WASHER-1-1",
+      "part_number": "DF8-R2-PIVOT-WASHER-008",
+      "mass_kg": 1.4016322438141084e-05,
+      "basis": "PART_MASTER_MASS"
+    },
+    {
+      "occurrence_id": "PIVOT-WASHER-1-2",
+      "part_number": "DF8-R2-PIVOT-WASHER-008",
+      "mass_kg": 1.4016322438141084e-05,
+      "basis": "PART_MASTER_MASS"
+    },
+    {
+      "occurrence_id": "PIVOT-CLIP-1",
+      "part_number": "DF8-R2-PIVOT-SPIRAL-RING-008",
+      "mass_kg": 9.513648371968049e-05,
+      "basis": "PART_MASTER_MASS"
+    },
+    {
+      "occurrence_id": "LINK-1-1",
+      "part_number": "DF8-R2-SHORT-LINK-001",
+      "mass_kg": 0.0008587191047231816,
+      "basis": "PART_MASTER_MASS"
+    },
+    {
+      "occurrence_id": "LINK-1-2",
+      "part_number": "DF8-R2-SHORT-LINK-001",
+      "mass_kg": 0.0008587191047231816,
+      "basis": "PART_MASTER_MASS"
+    },
+    {
+      "occurrence_id": "LINK-PIN-1-BELL",
+      "part_number": "DF8-R2-LINK-PIN-004",
+      "mass_kg": 0.001443346409243244,
+      "basis": "PART_MASTER_MASS"
+    },
+    {
+      "occurrence_id": "LINK-CLIP-1-BELL",
+      "part_number": "ROTOR-CLIP-DC-4SS",
+      "mass_kg": 2.94216e-05,
+      "basis": "STATE_INVARIANT_OCCURRENCE_OVERRIDE"
+    },
+    {
+      "occurrence_id": "LINK-PIN-1-CROSSHEAD",
+      "part_number": "DF8-R2-LINK-PIN-004",
+      "mass_kg": 0.001443346409243244,
+      "basis": "PART_MASTER_MASS"
+    },
+    {
+      "occurrence_id": "LINK-CLIP-1-CROSSHEAD",
+      "part_number": "ROTOR-CLIP-DC-4SS",
+      "mass_kg": 2.94216e-05,
+      "basis": "STATE_INVARIANT_OCCURRENCE_OVERRIDE"
+    },
+    {
+      "occurrence_id": "ARM-STOP-PAD-1",
+      "part_number": "DF8-R2-ARM-STOP-PAD-001",
+      "mass_kg": 0.0011774163151587191,
+      "basis": "PART_MASTER_MASS"
+    },
+    {
+      "occurrence_id": "FIXED-STOP-1",
+      "part_number": "DF8-R2-FIXED-STOP-001",
+      "mass_kg": 0.002400274420193383,
+      "basis": "PART_MASTER_MASS"
+    },
+    {
+      "occurrence_id": "STOW-DOG-1",
+      "part_number": "DF8-R2-STOW-DOG-001",
+      "mass_kg": 0.0007049382892415685,
+      "basis": "PART_MASTER_MASS"
+    },
+    {
+      "occurrence_id": "STOW-DOG-GUIDE-1",
+      "part_number": "DF8-R2-STOW-DOG-GUIDE-001",
+      "mass_kg": 0.0005306774018234694,
+      "basis": "PART_MASTER_MASS"
+    },
+    {
+      "occurrence_id": "STOW-DOG-SPRING-1",
+      "part_number": "DF8-R2-STOW-DOG-RETURN-SPRING-001",
+      "mass_kg": 3.195904507998956e-07,
+      "basis": "PART_MASTER_MASS"
+    },
+    {
+      "occurrence_id": "STOW-DOG-INHIBIT-PIN-1",
+      "part_number": "DF8-R2-STOW-DOG-INHIBIT-PIN-001",
+      "mass_kg": 5.93375184680702e-05,
+      "basis": "PART_MASTER_MASS"
+    },
+    {
+      "occurrence_id": "STOW-DOG-INHIBIT-KEEPER-1",
+      "part_number": "DF8-R2-STOW-DOG-INHIBIT-KEEPER-001",
+      "mass_kg": 3.948942128413097e-06,
+      "basis": "PART_MASTER_MASS"
+    },
+    {
+      "occurrence_id": "LOCK-DOG-1",
+      "part_number": "DF8-R2-AUTO-LOCK-DOG-001",
+      "mass_kg": 8.408963611185206e-06,
+      "basis": "PART_MASTER_MASS"
+    },
+    {
+      "occurrence_id": "LOCK-SPRING-1",
+      "part_number": "DF8-R2-AUTO-LOCK-SPRING-001",
+      "mass_kg": 2.8560892651638403e-06,
+      "basis": "PART_MASTER_MASS"
+    },
+    {
+      "occurrence_id": "LOCK-BUSHING-1",
+      "part_number": "DF8-R2-AUTO-LOCK-BUSHING-001",
+      "mass_kg": 3.094528181635134e-07,
+      "basis": "PART_MASTER_MASS"
+    },
+    {
+      "occurrence_id": "ARM-2",
+      "part_number": "DF8-R2-ARM-BLADE-001",
+      "mass_kg": 0.11652466411098689,
+      "basis": "PART_MASTER_MASS"
+    },
+    {
+      "occurrence_id": "PIVOT-CARRIER-2",
+      "part_number": "DF8-R2-PIVOT-CARRIER-001",
+      "mass_kg": 0.0027239708596307434,
+      "basis": "PART_MASTER_MASS"
+    },
+    {
+      "occurrence_id": "PIVOT-PIN-2",
+      "part_number": "DF8-R2-PIVOT-PIN-008",
+      "mass_kg": 0.008671747528307096,
+      "basis": "PART_MASTER_MASS"
+    },
+    {
+      "occurrence_id": "PIVOT-BUSH-2-1",
+      "part_number": "DF8-R2-PIVOT-BUSH-008",
+      "mass_kg": 8.808849871477256e-06,
+      "basis": "PART_MASTER_MASS"
+    },
+    {
+      "occurrence_id": "PIVOT-BUSH-2-2",
+      "part_number": "DF8-R2-PIVOT-BUSH-008",
+      "mass_kg": 8.808849871477256e-06,
+      "basis": "PART_MASTER_MASS"
+    },
+    {
+      "occurrence_id": "PIVOT-WASHER-2-1",
+      "part_number": "DF8-R2-PIVOT-WASHER-008",
+      "mass_kg": 1.4016322438141084e-05,
+      "basis": "PART_MASTER_MASS"
+    },
+    {
+      "occurrence_id": "PIVOT-WASHER-2-2",
+      "part_number": "DF8-R2-PIVOT-WASHER-008",
+      "mass_kg": 1.4016322438141084e-05,
+      "basis": "PART_MASTER_MASS"
+    },
+    {
+      "occurrence_id": "PIVOT-CLIP-2",
+      "part_number": "DF8-R2-PIVOT-SPIRAL-RING-008",
+      "mass_kg": 9.513648371968049e-05,
+      "basis": "PART_MASTER_MASS"
+    },
+    {
+      "occurrence_id": "LINK-2-1",
+      "part_number": "DF8-R2-SHORT-LINK-001",
+      "mass_kg": 0.0008587191047231816,
+      "basis": "PART_MASTER_MASS"
+    },
+    {
+      "occurrence_id": "LINK-2-2",
+      "part_number": "DF8-R2-SHORT-LINK-001",
+      "mass_kg": 0.0008587191047231816,
+      "basis": "PART_MASTER_MASS"
+    },
+    {
+      "occurrence_id": "LINK-PIN-2-BELL",
+      "part_number": "DF8-R2-LINK-PIN-004",
+      "mass_kg": 0.001443346409243244,
+      "basis": "PART_MASTER_MASS"
+    },
+    {
+      "occurrence_id": "LINK-CLIP-2-BELL",
+      "part_number": "ROTOR-CLIP-DC-4SS",
+      "mass_kg": 2.94216e-05,
+      "basis": "STATE_INVARIANT_OCCURRENCE_OVERRIDE"
+    },
+    {
+      "occurrence_id": "LINK-PIN-2-CROSSHEAD",
+      "part_number": "DF8-R2-LINK-PIN-004",
+      "mass_kg": 0.001443346409243244,
+      "basis": "PART_MASTER_MASS"
+    },
+    {
+      "occurrence_id": "LINK-CLIP-2-CROSSHEAD",
+      "part_number": "ROTOR-CLIP-DC-4SS",
+      "mass_kg": 2.94216e-05,
+      "basis": "STATE_INVARIANT_OCCURRENCE_OVERRIDE"
+    },
+    {
+      "occurrence_id": "ARM-STOP-PAD-2",
+      "part_number": "DF8-R2-ARM-STOP-PAD-001",
+      "mass_kg": 0.0011774163151587191,
+      "basis": "PART_MASTER_MASS"
+    },
+    {
+      "occurrence_id": "FIXED-STOP-2",
+      "part_number": "DF8-R2-FIXED-STOP-001",
+      "mass_kg": 0.002400274420193383,
+      "basis": "PART_MASTER_MASS"
+    },
+    {
+      "occurrence_id": "STOW-DOG-2",
+      "part_number": "DF8-R2-STOW-DOG-001",
+      "mass_kg": 0.0007049382892415685,
+      "basis": "PART_MASTER_MASS"
+    },
+    {
+      "occurrence_id": "STOW-DOG-GUIDE-2",
+      "part_number": "DF8-R2-STOW-DOG-GUIDE-001",
+      "mass_kg": 0.0005306774018234694,
+      "basis": "PART_MASTER_MASS"
+    },
+    {
+      "occurrence_id": "STOW-DOG-SPRING-2",
+      "part_number": "DF8-R2-STOW-DOG-RETURN-SPRING-001",
+      "mass_kg": 3.195904507998956e-07,
+      "basis": "PART_MASTER_MASS"
+    },
+    {
+      "occurrence_id": "STOW-DOG-INHIBIT-PIN-2",
+      "part_number": "DF8-R2-STOW-DOG-INHIBIT-PIN-001",
+      "mass_kg": 5.93375184680702e-05,
+      "basis": "PART_MASTER_MASS"
+    },
+    {
+      "occurrence_id": "STOW-DOG-INHIBIT-KEEPER-2",
+      "part_number": "DF8-R2-STOW-DOG-INHIBIT-KEEPER-001",
+      "mass_kg": 3.948942128413097e-06,
+      "basis": "PART_MASTER_MASS"
+    },
+    {
+      "occurrence_id": "LOCK-DOG-2",
+      "part_number": "DF8-R2-AUTO-LOCK-DOG-001",
+      "mass_kg": 8.408963611185206e-06,
+      "basis": "PART_MASTER_MASS"
+    },
+    {
+      "occurrence_id": "LOCK-SPRING-2",
+      "part_number": "DF8-R2-AUTO-LOCK-SPRING-001",
+      "mass_kg": 2.8560892651638403e-06,
+      "basis": "PART_MASTER_MASS"
+    },
+    {
+      "occurrence_id": "LOCK-BUSHING-2",
+      "part_number": "DF8-R2-AUTO-LOCK-BUSHING-001",
+      "mass_kg": 3.094528181635134e-07,
+      "basis": "PART_MASTER_MASS"
+    },
+    {
+      "occurrence_id": "ARM-3",
+      "part_number": "DF8-R2-ARM-BLADE-001",
+      "mass_kg": 0.11652466411098689,
+      "basis": "PART_MASTER_MASS"
+    },
+    {
+      "occurrence_id": "PIVOT-CARRIER-3",
+      "part_number": "DF8-R2-PIVOT-CARRIER-001",
+      "mass_kg": 0.0027239708596307434,
+      "basis": "PART_MASTER_MASS"
+    },
+    {
+      "occurrence_id": "PIVOT-PIN-3",
+      "part_number": "DF8-R2-PIVOT-PIN-008",
+      "mass_kg": 0.008671747528307096,
+      "basis": "PART_MASTER_MASS"
+    },
+    {
+      "occurrence_id": "PIVOT-BUSH-3-1",
+      "part_number": "DF8-R2-PIVOT-BUSH-008",
+      "mass_kg": 8.808849871477256e-06,
+      "basis": "PART_MASTER_MASS"
+    },
+    {
+      "occurrence_id": "PIVOT-BUSH-3-2",
+      "part_number": "DF8-R2-PIVOT-BUSH-008",
+      "mass_kg": 8.808849871477256e-06,
+      "basis": "PART_MASTER_MASS"
+    },
+    {
+      "occurrence_id": "PIVOT-WASHER-3-1",
+      "part_number": "DF8-R2-PIVOT-WASHER-008",
+      "mass_kg": 1.4016322438141084e-05,
+      "basis": "PART_MASTER_MASS"
+    },
+    {
+      "occurrence_id": "PIVOT-WASHER-3-2",
+      "part_number": "DF8-R2-PIVOT-WASHER-008",
+      "mass_kg": 1.4016322438141084e-05,
+      "basis": "PART_MASTER_MASS"
+    },
+    {
+      "occurrence_id": "PIVOT-CLIP-3",
+      "part_number": "DF8-R2-PIVOT-SPIRAL-RING-008",
+      "mass_kg": 9.513648371968049e-05,
+      "basis": "PART_MASTER_MASS"
+    },
+    {
+      "occurrence_id": "LINK-3-1",
+      "part_number": "DF8-R2-SHORT-LINK-001",
+      "mass_kg": 0.0008587191047231816,
+      "basis": "PART_MASTER_MASS"
+    },
+    {
+      "occurrence_id": "LINK-3-2",
+      "part_number": "DF8-R2-SHORT-LINK-001",
+      "mass_kg": 0.0008587191047231816,
+      "basis": "PART_MASTER_MASS"
+    },
+    {
+      "occurrence_id": "LINK-PIN-3-BELL",
+      "part_number": "DF8-R2-LINK-PIN-004",
+      "mass_kg": 0.001443346409243244,
+      "basis": "PART_MASTER_MASS"
+    },
+    {
+      "occurrence_id": "LINK-CLIP-3-BELL",
+      "part_number": "ROTOR-CLIP-DC-4SS",
+      "mass_kg": 2.94216e-05,
+      "basis": "STATE_INVARIANT_OCCURRENCE_OVERRIDE"
+    },
+    {
+      "occurrence_id": "LINK-PIN-3-CROSSHEAD",
+      "part_number": "DF8-R2-LINK-PIN-004",
+      "mass_kg": 0.001443346409243244,
+      "basis": "PART_MASTER_MASS"
+    },
+    {
+      "occurrence_id": "LINK-CLIP-3-CROSSHEAD",
+      "part_number": "ROTOR-CLIP-DC-4SS",
+      "mass_kg": 2.94216e-05,
+      "basis": "STATE_INVARIANT_OCCURRENCE_OVERRIDE"
+    },
+    {
+      "occurrence_id": "ARM-STOP-PAD-3",
+      "part_number": "DF8-R2-ARM-STOP-PAD-001",
+      "mass_kg": 0.0011774163151587191,
+      "basis": "PART_MASTER_MASS"
+    },
+    {
+      "occurrence_id": "FIXED-STOP-3",
+      "part_number": "DF8-R2-FIXED-STOP-001",
+      "mass_kg": 0.002400274420193383,
+      "basis": "PART_MASTER_MASS"
+    },
+    {
+      "occurrence_id": "STOW-DOG-3",
+      "part_number": "DF8-R2-STOW-DOG-001",
+      "mass_kg": 0.0007049382892415685,
+      "basis": "PART_MASTER_MASS"
+    },
+    {
+      "occurrence_id": "STOW-DOG-GUIDE-3",
+      "part_number": "DF8-R2-STOW-DOG-GUIDE-001",
+      "mass_kg": 0.0005306774018234694,
+      "basis": "PART_MASTER_MASS"
+    },
+    {
+      "occurrence_id": "STOW-DOG-SPRING-3",
+      "part_number": "DF8-R2-STOW-DOG-RETURN-SPRING-001",
+      "mass_kg": 3.195904507998956e-07,
+      "basis": "PART_MASTER_MASS"
+    },
+    {
+      "occurrence_id": "STOW-DOG-INHIBIT-PIN-3",
+      "part_number": "DF8-R2-STOW-DOG-INHIBIT-PIN-001",
+      "mass_kg": 5.93375184680702e-05,
+      "basis": "PART_MASTER_MASS"
+    },
+    {
+      "occurrence_id": "STOW-DOG-INHIBIT-KEEPER-3",
+      "part_number": "DF8-R2-STOW-DOG-INHIBIT-KEEPER-001",
+      "mass_kg": 3.948942128413097e-06,
+      "basis": "PART_MASTER_MASS"
+    },
+    {
+      "occurrence_id": "LOCK-DOG-3",
+      "part_number": "DF8-R2-AUTO-LOCK-DOG-001",
+      "mass_kg": 8.408963611185206e-06,
+      "basis": "PART_MASTER_MASS"
+    },
+    {
+      "occurrence_id": "LOCK-SPRING-3",
+      "part_number": "DF8-R2-AUTO-LOCK-SPRING-001",
+      "mass_kg": 2.8560892651638403e-06,
+      "basis": "PART_MASTER_MASS"
+    },
+    {
+      "occurrence_id": "LOCK-BUSHING-3",
+      "part_number": "DF8-R2-AUTO-LOCK-BUSHING-001",
+      "mass_kg": 3.094528181635134e-07,
+      "basis": "PART_MASTER_MASS"
+    },
+    {
+      "occurrence_id": "CROSSHEAD-001",
+      "part_number": "DF8-R2-CROSSHEAD-001",
+      "mass_kg": 0.012188178597747729,
+      "basis": "PART_MASTER_MASS"
+    },
+    {
+      "occurrence_id": "CROSSHEAD-GUIDE-001",
+      "part_number": "DF8-R2-CROSSHEAD-GUIDE-001",
+      "mass_kg": 0.01153710148317413,
+      "basis": "PART_MASTER_MASS"
+    },
+    {
+      "occurrence_id": "CROSSHEAD-GUIDE-SPIDER",
+      "part_number": "DF8-R2-CROSSHEAD-GUIDE-SPIDER-001",
+      "mass_kg": 0.0012339130177071314,
+      "basis": "PART_MASTER_MASS"
+    },
+    {
+      "occurrence_id": "BACKUP-SPRING-001",
+      "part_number": "DF8-R2-BACKUP-SPRING-16N-001",
+      "mass_kg": 0.092,
+      "basis": "STATE_INVARIANT_OCCURRENCE_OVERRIDE"
+    },
+    {
+      "occurrence_id": "BACKUP-SPRING-FIXED-SEAT",
+      "part_number": "DF8-R2-BACKUP-SPRING-FIXED-SEAT-001",
+      "mass_kg": 0.004206483557780843,
+      "basis": "PART_MASTER_MASS"
+    },
+    {
+      "occurrence_id": "BACKUP-SPRING-MOVING-SEAT",
+      "part_number": "DF8-R2-BACKUP-SPRING-MOVING-SEAT-001",
+      "mass_kg": 0.0073882012531716265,
+      "basis": "PART_MASTER_MASS"
+    },
+    {
+      "occurrence_id": "BACKUP-SPRING-GUIDE",
+      "part_number": "DF8-R2-BACKUP-SPRING-GUIDE-001",
+      "mass_kg": 0.029068956937629058,
+      "basis": "PART_MASTER_MASS"
+    },
+    {
+      "occurrence_id": "GS19-BODY-001",
+      "part_number": "GS-19-50-V4A-B8-B8",
+      "mass_kg": 0.124,
+      "basis": "STATE_INVARIANT_OCCURRENCE_OVERRIDE"
+    },
+    {
+      "occurrence_id": "GS19-ROD-001",
+      "part_number": "GS-19-50-V4A-B8-B8-ROD-CHILD",
+      "mass_kg": 0.02,
+      "basis": "STATE_INVARIANT_OCCURRENCE_OVERRIDE"
+    },
+    {
+      "occurrence_id": "HBD-BODY-001",
+      "part_number": "HBD-15-25-AA-P",
+      "mass_kg": 0.19,
+      "basis": "STATE_INVARIANT_OCCURRENCE_OVERRIDE"
+    },
+    {
+      "occurrence_id": "HBD-ROD-001",
+      "part_number": "HBD-15-25-AA-P-ROD-CHILD",
+      "mass_kg": 0.03,
+      "basis": "STATE_INVARIANT_OCCURRENCE_OVERRIDE"
+    },
+    {
+      "occurrence_id": "GS19-FIXED-YOKE",
+      "part_number": "DF8-R2-ACTUATOR-FIXED-YOKE-GS19-001",
+      "mass_kg": 0.0031335454005427285,
+      "basis": "PART_MASTER_MASS"
+    },
+    {
+      "occurrence_id": "GS19-PIN-FIXED",
+      "part_number": "DF8-R2-ACTUATOR-PIN-004",
+      "mass_kg": 0.001280137647106325,
+      "basis": "PART_MASTER_MASS"
+    },
+    {
+      "occurrence_id": "GS19-CLIP-FIXED",
+      "part_number": "DF8-R2-ACTUATOR-E-RING-004",
+      "mass_kg": 4.345508650541629e-05,
+      "basis": "PART_MASTER_MASS"
+    },
+    {
+      "occurrence_id": "GS19-PIN-MOVING",
+      "part_number": "DF8-R2-ACTUATOR-PIN-004",
+      "mass_kg": 0.001280137647106325,
+      "basis": "PART_MASTER_MASS"
+    },
+    {
+      "occurrence_id": "GS19-CLIP-MOVING",
+      "part_number": "DF8-R2-ACTUATOR-E-RING-004",
+      "mass_kg": 4.345508650541629e-05,
+      "basis": "PART_MASTER_MASS"
+    },
+    {
+      "occurrence_id": "HBD-FIXED-YOKE",
+      "part_number": "DF8-R2-ACTUATOR-FIXED-YOKE-HBD-001",
+      "mass_kg": 0.003098105400542728,
+      "basis": "PART_MASTER_MASS"
+    },
+    {
+      "occurrence_id": "HBD-PIN-FIXED",
+      "part_number": "DF8-R2-ACTUATOR-PIN-004",
+      "mass_kg": 0.001280137647106325,
+      "basis": "PART_MASTER_MASS"
+    },
+    {
+      "occurrence_id": "HBD-CLIP-FIXED",
+      "part_number": "DF8-R2-ACTUATOR-E-RING-004",
+      "mass_kg": 4.345508650541629e-05,
+      "basis": "PART_MASTER_MASS"
+    },
+    {
+      "occurrence_id": "HBD-PIN-MOVING",
+      "part_number": "DF8-R2-ACTUATOR-PIN-004",
+      "mass_kg": 0.001280137647106325,
+      "basis": "PART_MASTER_MASS"
+    },
+    {
+      "occurrence_id": "HBD-CLIP-MOVING",
+      "part_number": "DF8-R2-ACTUATOR-E-RING-004",
+      "mass_kg": 4.345508650541629e-05,
+      "basis": "PART_MASTER_MASS"
+    },
+    {
+      "occurrence_id": "ROUTE-GAS-MAIN-001",
+      "part_number": "DF8-FINAL-GAS-MAIN-001",
+      "mass_kg": 0.013522247,
+      "basis": "STATE_INVARIANT_OCCURRENCE_OVERRIDE"
+    },
+    {
+      "occurrence_id": "ROUTE-PILOT-LINE-001",
+      "part_number": "DF8-FINAL-PILOT-LINE-001",
+      "mass_kg": 0.008495814,
+      "basis": "STATE_INVARIANT_OCCURRENCE_OVERRIDE"
+    },
+    {
+      "occurrence_id": "ROUTE-BOWDEN-SHEATH-001",
+      "part_number": "DF8-FINAL-BOWDEN-SHEATH-001",
+      "mass_kg": 0.009,
+      "basis": "STATE_INVARIANT_OCCURRENCE_OVERRIDE"
+    },
+    {
+      "occurrence_id": "ROUTE-BOWDEN-WIRE-001",
+      "part_number": "DF8-FINAL-BOWDEN-WIRE-001",
+      "mass_kg": 0.002744317,
+      "basis": "STATE_INVARIANT_OCCURRENCE_OVERRIDE"
+    },
+    {
+      "occurrence_id": "GLAND-GAS-MAIN-FWD",
+      "part_number": "DF8-FINAL-GAS-MAIN-RING-GLAND",
+      "mass_kg": 0.0007830216113868606,
+      "basis": "PART_MASTER_MASS"
+    },
+    {
+      "occurrence_id": "GLAND-GAS-MAIN-AFT",
+      "part_number": "DF8-FINAL-GAS-MAIN-RING-GLAND",
+      "mass_kg": 0.0007830216113868606,
+      "basis": "PART_MASTER_MASS"
+    },
+    {
+      "occurrence_id": "GLAND-PILOT-LINE-FWD",
+      "part_number": "DF8-FINAL-PILOT-LINE-RING-GLAND",
+      "mass_kg": 0.0006592679935766515,
+      "basis": "PART_MASTER_MASS"
+    },
+    {
+      "occurrence_id": "GLAND-PILOT-LINE-AFT",
+      "part_number": "DF8-FINAL-PILOT-LINE-RING-GLAND",
+      "mass_kg": 0.0006592679935766515,
+      "basis": "PART_MASTER_MASS"
+    },
+    {
+      "occurrence_id": "GLAND-BOWDEN-SHEATH-FWD",
+      "part_number": "DF8-FINAL-BOWDEN-SHEATH-RING-GLAND",
+      "mass_kg": 0.0006840187171386935,
+      "basis": "PART_MASTER_MASS"
+    },
+    {
+      "occurrence_id": "GLAND-BOWDEN-SHEATH-AFT",
+      "part_number": "DF8-FINAL-BOWDEN-SHEATH-RING-GLAND",
+      "mass_kg": 0.0006840187171386935,
+      "basis": "PART_MASTER_MASS"
+    },
+    {
+      "occurrence_id": "ROUTE-LINER-GAS-MAIN-001",
+      "part_number": "DF8-FINAL-GAS-MAIN-FIXED-SECTOR-GUIDE-LINER",
+      "mass_kg": 0.001728149295628161,
+      "basis": "PART_MASTER_MASS"
+    },
+    {
+      "occurrence_id": "ROUTE-LINER-PILOT-LINE-001",
+      "part_number": "DF8-FINAL-PILOT-LINE-FIXED-SECTOR-GUIDE-LINER",
+      "mass_kg": 0.003229400500009809,
+      "basis": "PART_MASTER_MASS"
+    },
+    {
+      "occurrence_id": "ROUTE-LINER-BOWDEN-SHEATH-001",
+      "part_number": "DF8-FINAL-BOWDEN-SHEATH-FIXED-SECTOR-GUIDE-LINER",
+      "mass_kg": 0.0029599451556336165,
+      "basis": "PART_MASTER_MASS"
+    },
+    {
+      "occurrence_id": "WP04-FULLFLOW-MANIFOLD",
+      "part_number": "DF8-FINAL-WP04-FULLFLOW-MANIFOLD",
+      "mass_kg": 0.000912318506602476,
+      "basis": "PART_MASTER_MASS"
+    },
+    {
+      "occurrence_id": "WP04-MANIFOLD-BRACKET",
+      "part_number": "DF8-FINAL-WP04-MANIFOLD-BRACKET",
+      "mass_kg": 2.1263999999999988e-05,
+      "basis": "PART_MASTER_MASS"
+    },
+    {
+      "occurrence_id": "AFT-SHELL-001",
+      "part_number": "DF8-R2-AFT-SHELL-001",
+      "mass_kg": 0.24851460265768963,
+      "basis": "PART_MASTER_MASS"
+    },
+    {
+      "occurrence_id": "AFT-ROUTE-RING-001",
+      "part_number": "DF8-R2-AFT-ROUTE-RING-001",
+      "mass_kg": 0.046503395723791974,
+      "basis": "PART_MASTER_MASS"
+    },
+    {
+      "occurrence_id": "AFT-LONGERON-1",
+      "part_number": "DF8-R2-AFT-LONGERON-001",
+      "mass_kg": 0.007614048347843667,
+      "basis": "PART_MASTER_MASS"
+    },
+    {
+      "occurrence_id": "AFT-LONGERON-2",
+      "part_number": "DF8-R2-AFT-LONGERON-001",
+      "mass_kg": 0.007614048347843667,
+      "basis": "PART_MASTER_MASS"
+    },
+    {
+      "occurrence_id": "AFT-LONGERON-3",
+      "part_number": "DF8-R2-AFT-LONGERON-001",
+      "mass_kg": 0.007614048347843667,
+      "basis": "PART_MASTER_MASS"
+    },
+    {
+      "occurrence_id": "WP04-REACTION-BULKHEAD",
+      "part_number": "WP04-RB-001-R2",
+      "mass_kg": 0.04117011559946176,
+      "basis": "PART_MASTER_MASS"
+    },
+    {
+      "occurrence_id": "WP04-GUIDE-RAIL-1",
+      "part_number": "WP04-GUIDE-RAIL-001-R2",
+      "mass_kg": 0.003799345544954796,
+      "basis": "PART_MASTER_MASS"
+    },
+    {
+      "occurrence_id": "WP04-GUIDE-RAIL-2",
+      "part_number": "WP04-GUIDE-RAIL-001-R2",
+      "mass_kg": 0.003799345544954796,
+      "basis": "PART_MASTER_MASS"
+    },
+    {
+      "occurrence_id": "WP04-GUIDE-RAIL-3",
+      "part_number": "WP04-GUIDE-RAIL-001-R2",
+      "mass_kg": 0.003799345544954796,
+      "basis": "PART_MASTER_MASS"
+    },
+    {
+      "occurrence_id": "WP04-FOLLOWER-001",
+      "part_number": "WP04-FOL-001-R2",
+      "mass_kg": 0.005580906526629484,
+      "basis": "PART_MASTER_MASS"
+    },
+    {
+      "occurrence_id": "WP04-EJECTOR-SPRING",
+      "part_number": "DF8-FINAL-WP04-EJECTOR-SPRING-001",
+      "mass_kg": 0.0319863,
+      "basis": "STATE_INVARIANT_OCCURRENCE_OVERRIDE"
+    },
+    {
+      "occurrence_id": "WP04-FIXED-SLEEVE",
+      "part_number": "WP04-FIXED-GUIDE-SLEEVE-R2",
+      "mass_kg": 0.004756942733238636,
+      "basis": "PART_MASTER_MASS"
+    },
+    {
+      "occurrence_id": "WP04-MOVING-SLEEVE",
+      "part_number": "WP04-MOVING-GUIDE-SLEEVE-R2",
+      "mass_kg": 0.006847632557480384,
+      "basis": "PART_MASTER_MASS"
+    },
+    {
+      "occurrence_id": "WP04-LATCH-001",
+      "part_number": "WP04-LATCH-HOUSING-R2",
+      "mass_kg": 0.005495645371187144,
+      "basis": "PART_MASTER_MASS"
+    },
+    {
+      "occurrence_id": "WP04-SEAR-001",
+      "part_number": "WP04-LATCH-SEAR-R2",
+      "mass_kg": 0.0006351083567453917,
+      "basis": "PART_MASTER_MASS"
+    },
+    {
+      "occurrence_id": "WP04-SEAR-CLIP-001",
+      "part_number": "WP04-LATCH-SEAR-E-RING-R2",
+      "mass_kg": 4.345508650541629e-05,
+      "basis": "PART_MASTER_MASS"
+    },
+    {
+      "occurrence_id": "BODY-HARDPOINT-001",
+      "part_number": "WP04-RHP-001-R2",
+      "mass_kg": 0.025434396305878713,
+      "basis": "PART_MASTER_MASS"
+    },
+    {
+      "occurrence_id": "WP05-SERVICE-THROAT",
+      "part_number": "WP05-SERVICE-THROAT-R2",
+      "mass_kg": 0.18920752638079455,
+      "basis": "PART_MASTER_MASS"
+    },
+    {
+      "occurrence_id": "WP05-DOOR-001",
+      "part_number": "WP05-DOOR-R2",
+      "mass_kg": 0.023848407511827607,
+      "basis": "PART_MASTER_MASS"
+    },
+    {
+      "occurrence_id": "WP05-HINGE-PIN",
+      "part_number": "WP05-HINGE-PIN-R2",
+      "mass_kg": 0.0009663612633520023,
+      "basis": "PART_MASTER_MASS"
+    },
+    {
+      "occurrence_id": "WP05-HINGE-CLIP",
+      "part_number": "WP05-HINGE-CRESCENT-RING-R2",
+      "mass_kg": 3.0979522731959405e-05,
+      "basis": "PART_MASTER_MASS"
+    },
+    {
+      "occurrence_id": "DOOR-DETENT-1",
+      "part_number": "GN-615.3-M3-KN-PFB",
+      "mass_kg": 0.000482889,
+      "basis": "STATE_INVARIANT_OCCURRENCE_OVERRIDE"
+    },
+    {
+      "occurrence_id": "DOOR-DETENT-2",
+      "part_number": "GN-615.3-M3-KN-PFB",
+      "mass_kg": 0.000482889,
+      "basis": "STATE_INVARIANT_OCCURRENCE_OVERRIDE"
+    },
+    {
+      "occurrence_id": "DOOR-DETENT-3",
+      "part_number": "GN-615.3-M3-KN-PFB",
+      "mass_kg": 0.000482889,
+      "basis": "STATE_INVARIANT_OCCURRENCE_OVERRIDE"
+    },
+    {
+      "occurrence_id": "DOOR-DETENT-4",
+      "part_number": "GN-615.3-M3-KN-PFB",
+      "mass_kg": 0.000482889,
+      "basis": "STATE_INVARIANT_OCCURRENCE_OVERRIDE"
+    },
+    {
+      "occurrence_id": "BUOY-GORE-01",
+      "part_number": "DF8-R2-BUOY-GORE-01",
+      "mass_kg": 0.02375,
+      "basis": "STATE_INVARIANT_OCCURRENCE_OVERRIDE"
+    },
+    {
+      "occurrence_id": "BUOY-GORE-02",
+      "part_number": "DF8-R2-BUOY-GORE-02",
+      "mass_kg": 0.02375,
+      "basis": "STATE_INVARIANT_OCCURRENCE_OVERRIDE"
+    },
+    {
+      "occurrence_id": "BUOY-GORE-03",
+      "part_number": "DF8-R2-BUOY-GORE-03",
+      "mass_kg": 0.02375,
+      "basis": "STATE_INVARIANT_OCCURRENCE_OVERRIDE"
+    },
+    {
+      "occurrence_id": "BUOY-GORE-04",
+      "part_number": "DF8-R2-BUOY-GORE-04",
+      "mass_kg": 0.02375,
+      "basis": "STATE_INVARIANT_OCCURRENCE_OVERRIDE"
+    },
+    {
+      "occurrence_id": "BUOY-GORE-05",
+      "part_number": "DF8-R2-BUOY-GORE-05",
+      "mass_kg": 0.02375,
+      "basis": "STATE_INVARIANT_OCCURRENCE_OVERRIDE"
+    },
+    {
+      "occurrence_id": "BUOY-GORE-06",
+      "part_number": "DF8-R2-BUOY-GORE-06",
+      "mass_kg": 0.02375,
+      "basis": "STATE_INVARIANT_OCCURRENCE_OVERRIDE"
+    },
+    {
+      "occurrence_id": "BUOY-GORE-07",
+      "part_number": "DF8-R2-BUOY-GORE-07",
+      "mass_kg": 0.02375,
+      "basis": "STATE_INVARIANT_OCCURRENCE_OVERRIDE"
+    },
+    {
+      "occurrence_id": "BUOY-GORE-08",
+      "part_number": "DF8-R2-BUOY-GORE-08",
+      "mass_kg": 0.02375,
+      "basis": "STATE_INVARIANT_OCCURRENCE_OVERRIDE"
+    },
+    {
+      "occurrence_id": "HARNESS-BAND-1",
+      "part_number": "DF8-R2-HARNESS-BAND-1",
+      "mass_kg": 0.045,
+      "basis": "STATE_INVARIANT_OCCURRENCE_OVERRIDE"
+    },
+    {
+      "occurrence_id": "HARNESS-BAND-2",
+      "part_number": "DF8-R2-HARNESS-BAND-2",
+      "mass_kg": 0.045,
+      "basis": "STATE_INVARIANT_OCCURRENCE_OVERRIDE"
+    },
+    {
+      "occurrence_id": "HARNESS-TERMINAL-001",
+      "part_number": "WP04-HST-001-R2",
+      "mass_kg": 0.015609223844122947,
+      "basis": "PART_MASTER_MASS"
+    },
+    {
+      "occurrence_id": "HARNESS-LEG-XP",
+      "part_number": "DF8-R2-HARNESS-LEG-XP",
+      "mass_kg": 0.0075,
+      "basis": "STATE_INVARIANT_OCCURRENCE_OVERRIDE"
+    },
+    {
+      "occurrence_id": "HARNESS-LEG-XN",
+      "part_number": "DF8-R2-HARNESS-LEG-XN",
+      "mass_kg": 0.0075,
+      "basis": "STATE_INVARIANT_OCCURRENCE_OVERRIDE"
+    },
+    {
+      "occurrence_id": "HARNESS-LEG-YP",
+      "part_number": "DF8-R2-HARNESS-LEG-YP",
+      "mass_kg": 0.0075,
+      "basis": "STATE_INVARIANT_OCCURRENCE_OVERRIDE"
+    },
+    {
+      "occurrence_id": "HARNESS-LEG-YN",
+      "part_number": "DF8-R2-HARNESS-LEG-YN",
+      "mass_kg": 0.0075,
+      "basis": "STATE_INVARIANT_OCCURRENCE_OVERRIDE"
+    },
+    {
+      "occurrence_id": "TETHER-THIMBLE-BODY",
+      "part_number": "DF8-R2-TETHER-THIMBLE-001",
+      "mass_kg": 0.002896714975429781,
+      "basis": "PART_MASTER_MASS"
+    },
+    {
+      "occurrence_id": "TETHER-THIMBLE-HARNESS",
+      "part_number": "DF8-R2-TETHER-THIMBLE-001",
+      "mass_kg": 0.002896714975429781,
+      "basis": "PART_MASTER_MASS"
+    },
+    {
+      "occurrence_id": "RECOVERY-TETHER-001",
+      "part_number": "AMSTEEL-BLUE-872-7-64-R2",
+      "mass_kg": 0.02,
+      "basis": "STATE_INVARIANT_OCCURRENCE_OVERRIDE"
+    },
+    {
+      "occurrence_id": "RECOVERY-PIN-BODY",
+      "part_number": "DF8-R2-RECOVERY-PIN-006",
+      "mass_kg": 0.003134187821530512,
+      "basis": "PART_MASTER_MASS"
+    },
+    {
+      "occurrence_id": "RECOVERY-PIN-CLIP-BODY",
+      "part_number": "DF8-R2-RECOVERY-E-RING-006",
+      "mass_kg": 6.738960987628341e-05,
+      "basis": "PART_MASTER_MASS"
+    },
+    {
+      "occurrence_id": "RECOVERY-PIN-HARNESS",
+      "part_number": "DF8-R2-RECOVERY-PIN-006",
+      "mass_kg": 0.003134187821530512,
+      "basis": "PART_MASTER_MASS"
+    },
+    {
+      "occurrence_id": "RECOVERY-PIN-CLIP-HARNESS",
+      "part_number": "DF8-R2-RECOVERY-E-RING-006",
+      "mass_kg": 6.738960987628341e-05,
+      "basis": "PART_MASTER_MASS"
+    },
+    {
+      "occurrence_id": "WP05-DOOR-LANYARD",
+      "part_number": "WP05-DOOR-LANYARD-R2",
+      "mass_kg": 0.002,
+      "basis": "STATE_INVARIANT_OCCURRENCE_OVERRIDE"
+    },
+    {
+      "occurrence_id": "FWD-CARRIER-SCREW-1",
+      "part_number": "SSK-M3-6-A4-P80",
+      "mass_kg": 0.00036,
+      "basis": "STATE_INVARIANT_OCCURRENCE_OVERRIDE"
+    },
+    {
+      "occurrence_id": "MANIFOLD-CARRIER-SCREW-1",
+      "part_number": "SSCF-M3-6-A4",
+      "mass_kg": 0.00071,
+      "basis": "STATE_INVARIANT_OCCURRENCE_OVERRIDE"
+    },
+    {
+      "occurrence_id": "FWD-CARRIER-SCREW-2",
+      "part_number": "SSK-M3-6-A4-P80",
+      "mass_kg": 0.00036,
+      "basis": "STATE_INVARIANT_OCCURRENCE_OVERRIDE"
+    },
+    {
+      "occurrence_id": "MANIFOLD-CARRIER-SCREW-2",
+      "part_number": "SSCF-M3-6-A4",
+      "mass_kg": 0.00071,
+      "basis": "STATE_INVARIANT_OCCURRENCE_OVERRIDE"
+    },
+    {
+      "occurrence_id": "FWD-CARRIER-SCREW-3",
+      "part_number": "SSK-M3-6-A4-P80",
+      "mass_kg": 0.00036,
+      "basis": "STATE_INVARIANT_OCCURRENCE_OVERRIDE"
+    },
+    {
+      "occurrence_id": "MANIFOLD-CARRIER-SCREW-3",
+      "part_number": "SSCF-M3-6-A4",
+      "mass_kg": 0.00071,
+      "basis": "STATE_INVARIANT_OCCURRENCE_OVERRIDE"
+    },
+    {
+      "occurrence_id": "FWD-CARRIER-SCREW-4",
+      "part_number": "SSK-M3-6-A4-P80",
+      "mass_kg": 0.00036,
+      "basis": "STATE_INVARIANT_OCCURRENCE_OVERRIDE"
+    },
+    {
+      "occurrence_id": "MANIFOLD-CARRIER-SCREW-4",
+      "part_number": "SSCF-M3-6-A4",
+      "mass_kg": 0.00071,
+      "basis": "STATE_INVARIANT_OCCURRENCE_OVERRIDE"
+    },
+    {
+      "occurrence_id": "BOOSTER-CLAMP-SCREW-1-1",
+      "part_number": "SSCF-M3-10-A4",
+      "mass_kg": 0.00088,
+      "basis": "STATE_INVARIANT_OCCURRENCE_OVERRIDE"
+    },
+    {
+      "occurrence_id": "BOOSTER-CLAMP-SCREW-1-2",
+      "part_number": "SSCF-M3-10-A4",
+      "mass_kg": 0.00088,
+      "basis": "STATE_INVARIANT_OCCURRENCE_OVERRIDE"
+    },
+    {
+      "occurrence_id": "BOOSTER-CLAMP-SCREW-1-3",
+      "part_number": "SSCF-M3-10-A4",
+      "mass_kg": 0.00088,
+      "basis": "STATE_INVARIANT_OCCURRENCE_OVERRIDE"
+    },
+    {
+      "occurrence_id": "BOOSTER-CLAMP-SCREW-2-1",
+      "part_number": "SSCF-M3-10-A4",
+      "mass_kg": 0.00088,
+      "basis": "STATE_INVARIANT_OCCURRENCE_OVERRIDE"
+    },
+    {
+      "occurrence_id": "BOOSTER-CLAMP-SCREW-2-2",
+      "part_number": "SSCF-M3-10-A4",
+      "mass_kg": 0.00088,
+      "basis": "STATE_INVARIANT_OCCURRENCE_OVERRIDE"
+    },
+    {
+      "occurrence_id": "BOOSTER-CLAMP-SCREW-2-3",
+      "part_number": "SSCF-M3-10-A4",
+      "mass_kg": 0.00088,
+      "basis": "STATE_INVARIANT_OCCURRENCE_OVERRIDE"
+    },
+    {
+      "occurrence_id": "BOOSTER-CLAMP-SCREW-3-1",
+      "part_number": "SSCF-M3-10-A4",
+      "mass_kg": 0.00088,
+      "basis": "STATE_INVARIANT_OCCURRENCE_OVERRIDE"
+    },
+    {
+      "occurrence_id": "BOOSTER-CLAMP-SCREW-3-2",
+      "part_number": "SSCF-M3-10-A4",
+      "mass_kg": 0.00088,
+      "basis": "STATE_INVARIANT_OCCURRENCE_OVERRIDE"
+    },
+    {
+      "occurrence_id": "BOOSTER-CLAMP-SCREW-3-3",
+      "part_number": "SSCF-M3-10-A4",
+      "mass_kg": 0.00088,
+      "basis": "STATE_INVARIANT_OCCURRENCE_OVERRIDE"
+    },
+    {
+      "occurrence_id": "TRIGGER-MOUNT-SCREW-1",
+      "part_number": "SSCF-M3-10-A4",
+      "mass_kg": 0.00088,
+      "basis": "STATE_INVARIANT_OCCURRENCE_OVERRIDE"
+    },
+    {
+      "occurrence_id": "TRIGGER-MOUNT-SCREW-2",
+      "part_number": "SSCF-M3-10-A4",
+      "mass_kg": 0.00088,
+      "basis": "STATE_INVARIANT_OCCURRENCE_OVERRIDE"
+    },
+    {
+      "occurrence_id": "TRIGGER-MOUNT-SCREW-3",
+      "part_number": "SSCF-M3-10-A4",
+      "mass_kg": 0.00088,
+      "basis": "STATE_INVARIANT_OCCURRENCE_OVERRIDE"
+    },
+    {
+      "occurrence_id": "NOSE-BALLAST-TAPER-PIN-001",
+      "part_number": "HTP-3-30-A1",
+      "mass_kg": 0.002032641862799132,
+      "basis": "STATE_INVARIANT_OCCURRENCE_OVERRIDE"
+    },
+    {
+      "occurrence_id": "FULLFLOW-VALVE-CIRCLIP-001",
+      "part_number": "HEC-10-A4",
+      "mass_kg": 0.00041,
+      "basis": "STATE_INVARIANT_OCCURRENCE_OVERRIDE"
+    },
+    {
+      "occurrence_id": "WATER-BOBBIN-SERVICE-CAP-001",
+      "part_number": "DF8-WATER-BOBBIN-SERVICE-CAP-001",
+      "mass_kg": 0.004832430804544923,
+      "basis": "STATE_INVARIANT_OCCURRENCE_OVERRIDE"
+    },
+    {
+      "occurrence_id": "ARM-STOP-SCREW-1-1",
+      "part_number": "SSCA-M3-8-A4-BL",
+      "mass_kg": 0.0008,
+      "basis": "STATE_INVARIANT_OCCURRENCE_OVERRIDE"
+    },
+    {
+      "occurrence_id": "ARM-STOP-SCREW-1-2",
+      "part_number": "SSCA-M3-8-A4-BL",
+      "mass_kg": 0.0008,
+      "basis": "STATE_INVARIANT_OCCURRENCE_OVERRIDE"
+    },
+    {
+      "occurrence_id": "FIXED-STOP-SCREW-1-1",
+      "part_number": "SSCA-M3-8-A4-BL",
+      "mass_kg": 0.0008,
+      "basis": "STATE_INVARIANT_OCCURRENCE_OVERRIDE"
+    },
+    {
+      "occurrence_id": "FIXED-STOP-SCREW-1-2",
+      "part_number": "SSCA-M3-8-A4-BL",
+      "mass_kg": 0.0008,
+      "basis": "STATE_INVARIANT_OCCURRENCE_OVERRIDE"
+    },
+    {
+      "occurrence_id": "FIXED-STOP-DOWEL-1-1",
+      "part_number": "HDP-3-8-A1",
+      "mass_kg": 0.00047,
+      "basis": "STATE_INVARIANT_OCCURRENCE_OVERRIDE"
+    },
+    {
+      "occurrence_id": "FIXED-STOP-DOWEL-1-2",
+      "part_number": "HDP-3-8-A1",
+      "mass_kg": 0.00047,
+      "basis": "STATE_INVARIANT_OCCURRENCE_OVERRIDE"
+    },
+    {
+      "occurrence_id": "ARM-STOP-SCREW-2-1",
+      "part_number": "SSCA-M3-8-A4-BL",
+      "mass_kg": 0.0008,
+      "basis": "STATE_INVARIANT_OCCURRENCE_OVERRIDE"
+    },
+    {
+      "occurrence_id": "ARM-STOP-SCREW-2-2",
+      "part_number": "SSCA-M3-8-A4-BL",
+      "mass_kg": 0.0008,
+      "basis": "STATE_INVARIANT_OCCURRENCE_OVERRIDE"
+    },
+    {
+      "occurrence_id": "FIXED-STOP-SCREW-2-1",
+      "part_number": "SSCA-M3-8-A4-BL",
+      "mass_kg": 0.0008,
+      "basis": "STATE_INVARIANT_OCCURRENCE_OVERRIDE"
+    },
+    {
+      "occurrence_id": "FIXED-STOP-SCREW-2-2",
+      "part_number": "SSCA-M3-8-A4-BL",
+      "mass_kg": 0.0008,
+      "basis": "STATE_INVARIANT_OCCURRENCE_OVERRIDE"
+    },
+    {
+      "occurrence_id": "FIXED-STOP-DOWEL-2-1",
+      "part_number": "HDP-3-8-A1",
+      "mass_kg": 0.00047,
+      "basis": "STATE_INVARIANT_OCCURRENCE_OVERRIDE"
+    },
+    {
+      "occurrence_id": "FIXED-STOP-DOWEL-2-2",
+      "part_number": "HDP-3-8-A1",
+      "mass_kg": 0.00047,
+      "basis": "STATE_INVARIANT_OCCURRENCE_OVERRIDE"
+    },
+    {
+      "occurrence_id": "ARM-STOP-SCREW-3-1",
+      "part_number": "SSCA-M3-8-A4-BL",
+      "mass_kg": 0.0008,
+      "basis": "STATE_INVARIANT_OCCURRENCE_OVERRIDE"
+    },
+    {
+      "occurrence_id": "ARM-STOP-SCREW-3-2",
+      "part_number": "SSCA-M3-8-A4-BL",
+      "mass_kg": 0.0008,
+      "basis": "STATE_INVARIANT_OCCURRENCE_OVERRIDE"
+    },
+    {
+      "occurrence_id": "FIXED-STOP-SCREW-3-1",
+      "part_number": "SSCA-M3-8-A4-BL",
+      "mass_kg": 0.0008,
+      "basis": "STATE_INVARIANT_OCCURRENCE_OVERRIDE"
+    },
+    {
+      "occurrence_id": "FIXED-STOP-SCREW-3-2",
+      "part_number": "SSCA-M3-8-A4-BL",
+      "mass_kg": 0.0008,
+      "basis": "STATE_INVARIANT_OCCURRENCE_OVERRIDE"
+    },
+    {
+      "occurrence_id": "FIXED-STOP-DOWEL-3-1",
+      "part_number": "HDP-3-8-A1",
+      "mass_kg": 0.00047,
+      "basis": "STATE_INVARIANT_OCCURRENCE_OVERRIDE"
+    },
+    {
+      "occurrence_id": "FIXED-STOP-DOWEL-3-2",
+      "part_number": "HDP-3-8-A1",
+      "mass_kg": 0.00047,
+      "basis": "STATE_INVARIANT_OCCURRENCE_OVERRIDE"
+    },
+    {
+      "occurrence_id": "BACKUP-GUIDE-SCREW-1",
+      "part_number": "SSCF-M3-10-A4",
+      "mass_kg": 0.00088,
+      "basis": "STATE_INVARIANT_OCCURRENCE_OVERRIDE"
+    },
+    {
+      "occurrence_id": "BACKUP-GUIDE-SCREW-2",
+      "part_number": "SSCF-M3-10-A4",
+      "mass_kg": 0.00088,
+      "basis": "STATE_INVARIANT_OCCURRENCE_OVERRIDE"
+    },
+    {
+      "occurrence_id": "CROSSHEAD-GUIDE-LOCK-SCREW-001",
+      "part_number": "SSCL-M4-8-A4",
+      "mass_kg": 0.00112,
+      "basis": "STATE_INVARIANT_OCCURRENCE_OVERRIDE"
+    },
+    {
+      "occurrence_id": "WP04-AFT-RAIL-SUPPORT",
+      "part_number": "WP04-AFT-RAIL-SUPPORT-R2",
+      "mass_kg": 0.009104494553231311,
+      "basis": "PART_MASTER_MASS"
+    },
+    {
+      "occurrence_id": "GUIDE-RAIL-1-SCREW-FWD",
+      "part_number": "SSCA-M3-8-A4-BL",
+      "mass_kg": 0.0008,
+      "basis": "STATE_INVARIANT_OCCURRENCE_OVERRIDE"
+    },
+    {
+      "occurrence_id": "GUIDE-RAIL-1-SCREW-AFT",
+      "part_number": "SSCA-M3-8-A4-BL",
+      "mass_kg": 0.0008,
+      "basis": "STATE_INVARIANT_OCCURRENCE_OVERRIDE"
+    },
+    {
+      "occurrence_id": "GUIDE-RAIL-2-SCREW-FWD",
+      "part_number": "SSCA-M3-8-A4-BL",
+      "mass_kg": 0.0008,
+      "basis": "STATE_INVARIANT_OCCURRENCE_OVERRIDE"
+    },
+    {
+      "occurrence_id": "GUIDE-RAIL-2-SCREW-AFT",
+      "part_number": "SSCA-M3-8-A4-BL",
+      "mass_kg": 0.0008,
+      "basis": "STATE_INVARIANT_OCCURRENCE_OVERRIDE"
+    },
+    {
+      "occurrence_id": "GUIDE-RAIL-3-SCREW-FWD",
+      "part_number": "SSCA-M3-8-A4-BL",
+      "mass_kg": 0.0008,
+      "basis": "STATE_INVARIANT_OCCURRENCE_OVERRIDE"
+    },
+    {
+      "occurrence_id": "GUIDE-RAIL-3-SCREW-AFT",
+      "part_number": "SSCA-M3-8-A4-BL",
+      "mass_kg": 0.0008,
+      "basis": "STATE_INVARIANT_OCCURRENCE_OVERRIDE"
+    },
+    {
+      "occurrence_id": "WP04-FIXED-SLEEVE-SCREW-1",
+      "part_number": "SSCA-M3-8-A4-BL",
+      "mass_kg": 0.0008,
+      "basis": "STATE_INVARIANT_OCCURRENCE_OVERRIDE"
+    },
+    {
+      "occurrence_id": "WP04-FIXED-SLEEVE-SCREW-2",
+      "part_number": "SSCA-M3-8-A4-BL",
+      "mass_kg": 0.0008,
+      "basis": "STATE_INVARIANT_OCCURRENCE_OVERRIDE"
+    },
+    {
+      "occurrence_id": "WP04-FIXED-SLEEVE-SCREW-3",
+      "part_number": "SSCA-M3-8-A4-BL",
+      "mass_kg": 0.0008,
+      "basis": "STATE_INVARIANT_OCCURRENCE_OVERRIDE"
+    },
+    {
+      "occurrence_id": "WP04-MOVING-SLEEVE-SCREW-1",
+      "part_number": "SSCA-M3-8-A4-BL",
+      "mass_kg": 0.0008,
+      "basis": "STATE_INVARIANT_OCCURRENCE_OVERRIDE"
+    },
+    {
+      "occurrence_id": "WP04-MOVING-SLEEVE-SCREW-2",
+      "part_number": "SSCA-M3-8-A4-BL",
+      "mass_kg": 0.0008,
+      "basis": "STATE_INVARIANT_OCCURRENCE_OVERRIDE"
+    },
+    {
+      "occurrence_id": "WP04-MOVING-SLEEVE-SCREW-3",
+      "part_number": "SSCA-M3-8-A4-BL",
+      "mass_kg": 0.0008,
+      "basis": "STATE_INVARIANT_OCCURRENCE_OVERRIDE"
+    },
+    {
+      "occurrence_id": "LATCH-SUPPORT-BRACKET",
+      "part_number": "WP04-LATCH-SUPPORT-R2",
+      "mass_kg": 0.0012552039176702944,
+      "basis": "PART_MASTER_MASS"
+    },
+    {
+      "occurrence_id": "WP04-LATCH-SCREW-1",
+      "part_number": "SSCA-M3-8-A4-BL",
+      "mass_kg": 0.0008,
+      "basis": "STATE_INVARIANT_OCCURRENCE_OVERRIDE"
+    },
+    {
+      "occurrence_id": "WP04-LATCH-SCREW-2",
+      "part_number": "SSCA-M3-8-A4-BL",
+      "mass_kg": 0.0008,
+      "basis": "STATE_INVARIANT_OCCURRENCE_OVERRIDE"
+    },
+    {
+      "occurrence_id": "WP05-THROAT-SCREW-1",
+      "part_number": "SSK-M3-6-A4-P80",
+      "mass_kg": 0.00036,
+      "basis": "STATE_INVARIANT_OCCURRENCE_OVERRIDE"
+    },
+    {
+      "occurrence_id": "WP05-THROAT-SCREW-2",
+      "part_number": "SSK-M3-6-A4-P80",
+      "mass_kg": 0.00036,
+      "basis": "STATE_INVARIANT_OCCURRENCE_OVERRIDE"
+    },
+    {
+      "occurrence_id": "WP05-THROAT-SCREW-3",
+      "part_number": "SSK-M3-6-A4-P80",
+      "mass_kg": 0.00036,
+      "basis": "STATE_INVARIANT_OCCURRENCE_OVERRIDE"
+    },
+    {
+      "occurrence_id": "WP05-THROAT-SCREW-4",
+      "part_number": "SSK-M3-6-A4-P80",
+      "mass_kg": 0.00036,
+      "basis": "STATE_INVARIANT_OCCURRENCE_OVERRIDE"
+    },
+    {
+      "occurrence_id": "WP05-THROAT-SCREW-5",
+      "part_number": "SSK-M3-6-A4-P80",
+      "mass_kg": 0.00036,
+      "basis": "STATE_INVARIANT_OCCURRENCE_OVERRIDE"
+    },
+    {
+      "occurrence_id": "WP05-THROAT-SCREW-6",
+      "part_number": "SSK-M3-6-A4-P80",
+      "mass_kg": 0.00036,
+      "basis": "STATE_INVARIANT_OCCURRENCE_OVERRIDE"
+    }
+  ],
+  "mass_reserve_using_resolved_mass_only_kg": 6.410945594928416
+}

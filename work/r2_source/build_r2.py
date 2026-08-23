@@ -1317,7 +1317,7 @@ def build_arm_module(b: R2Builder) -> None:
         selected_longeron = longeron_3 if idx == 3 else longeron
         b.add(b.arm_module, path, selected_longeron, f"ARM-LONGERON-{idx}", loc, "FIXED", "WELDED_BETWEEN_ROUTE_RINGS")
 
-    arm = b.define("DF8-R2-ARM-BLADE-001", "B", "733.806 MM SMOOTH ANALYTIC HOLLOW OML ARM WITH SWEPT STOP-HARDWARE RELIEFS", g.make_arm_part_local(),
+    arm = b.define("DF8-R2-ARM-BLADE-001", "C", "733.806 MM SMOOTH ANALYTIC HOLLOW OML ARM WITH SWEPT STOP-HARDWARE RELIEFS", g.make_arm_part_local(),
                    "Ti-6Al-4V", process="Hot form; 5-axis machine; laser weld; CMM inspect",
                    notes="Analytic cylindrical OML; no planar patch tiling or mesh-derived surfaces; one-degree swept service corridors clear the fixed-stop screw and dowel envelopes.", color_key="titanium")
     carrier_shape = g.make_pivot_carrier_local()
@@ -1331,16 +1331,16 @@ def build_arm_module(b: R2Builder) -> None:
         * g.translation_loc(-0.4, 0.0, -4.0)
     )
     stop_to_carrier = carrier_frame.inverse * stop_frame
-    for y in (-7.8, 7.8):
-        screw_neck_clearance = g.cyl_z(1.15, 5.20, 2.0, y, 2.50)
-        screw_thread_minor = g.cyl_z(1.25, 3.40, 2.0, y, 7.35)
+    for screw_x, y in g.FIXED_STOP_SCREW_STATIONS_MM:
+        screw_neck_clearance = g.cyl_z(1.15, 5.20, screw_x, y, 2.50)
+        screw_thread_minor = g.cyl_z(1.25, 3.40, screw_x, y, 7.35)
         for cutter in (screw_neck_clearance, screw_thread_minor):
             carrier_shape = carrier_shape.cut(g.moved(cutter, stop_to_carrier))
     for y in (-8.0, 8.0):
         dowel_h7 = g.cyl_z(1.50, 8.40, 7.0, y, 2.85)
         carrier_shape = carrier_shape.cut(g.moved(dowel_h7, stop_to_carrier))
     carrier = b.define(
-        "DF8-R2-PIVOT-CARRIER-001", "C",
+        "DF8-R2-PIVOT-CARRIER-001", "D",
         "MATCHED DOUBLE-SHEAR PIVOT LUG SET WITH SWEPT BELL-CLEVIS ACCESS AND OBLIQUE STOP-LAND BORES",
         carrier_shape, "Ti-6Al-4V",
         process="5-axis mill swept bell-clevis access slot; ream pivot; occurrence-match drill/tap two M3 and ream two H7 stop-land bores",
@@ -1423,9 +1423,13 @@ def build_arm_module(b: R2Builder) -> None:
     fixed_stop_shape = fixed_stop_shape.cut(arm_in_stop).cut(pad_in_stop)
     # Two separated M3 side-land bores and two H7 dowel bores.  Heads remain
     # outside the lower land face; shanks enter the oblique carrier bores.
-    for y in (-7.8, 7.8):
-        fixed_stop_shape = fixed_stop_shape.cut(g.cyl_z(1.65, 2.0, 2.0, y, 2.35))
-        fixed_stop_shape = fixed_stop_shape.cut(g.cyl_z(2.80, 3.04, 2.0, y, -0.50))
+    for screw_x, y in g.FIXED_STOP_SCREW_STATIONS_MM:
+        fixed_stop_shape = fixed_stop_shape.cut(
+            g.cyl_z(1.65, 2.0, screw_x, y, 2.35)
+        )
+        fixed_stop_shape = fixed_stop_shape.cut(
+            g.cyl_z(2.80, 3.04, screw_x, y, -0.50)
+        )
     for y in (-8.0, 8.0):
         fixed_stop_shape = fixed_stop_shape.cut(g.cyl_z(1.50, 2.0, 7.0, y, 2.85))
     # Head pockets interrupt the former on-axis side ties.  Two outboard
@@ -1435,13 +1439,17 @@ def build_arm_module(b: R2Builder) -> None:
         bypass = g.box_center(1.0, 2.0, 2.0, -1.5, sign * 4.75, 2.5)
         fixed_stop_shape = fixed_stop_shape.fuse(bypass)
     fixed_stop_shape = fixed_stop_shape.cut(arm_in_stop).cut(pad_in_stop)
-    for y in (-7.8, 7.8):
-        fixed_stop_shape = fixed_stop_shape.cut(g.cyl_z(2.85, 3.10, 2.0, y, -0.55))
+    for screw_x, y in g.FIXED_STOP_SCREW_STATIONS_MM:
+        fixed_stop_shape = fixed_stop_shape.cut(
+            g.cyl_z(2.85, 3.10, screw_x, y, -0.55)
+        )
         # The fixed stop is a clearance member; the captive threaded end
         # reacts in the two carrier lands.  Carry the 3.30 mm clearance bore
         # through the full five-millimetre captive neck so no stop material
         # grazes the unthreaded shank above the head pocket.
-        fixed_stop_shape = fixed_stop_shape.cut(g.cyl_z(1.65, 5.40, 2.0, y, 2.35))
+        fixed_stop_shape = fixed_stop_shape.cut(
+            g.cyl_z(1.65, 5.40, screw_x, y, 2.35)
+        )
     # Full occurrence-matched access for the two moving stop-pad screws at
     # the 80-degree endpoint.  Separate head, captive-neck and thread-envelope
     # reliefs retain material between the screws and around the lock channel.
@@ -1496,10 +1504,20 @@ def build_arm_module(b: R2Builder) -> None:
     # edges of both existing side lands, then reapply every motion cutter so
     # the bridge can remain only where it is genuinely outside the audited
     # moving volume.
-    swept_stop_bypass = g.box_center(1.0, 16.0, 1.0, 10.25, 0.0, 3.85)
+    swept_stop_bypass = g.box_center(0.60, 16.0, 1.0, 10.05, 0.0, 3.85)
     fixed_stop_shape = fixed_stop_shape.fuse(swept_stop_bypass)
     for cutter in stop_sweep_cutters:
         fixed_stop_shape = fixed_stop_shape.cut(cutter)
+    # Machine a controlled cylindrical seat for the moved outer PEEK guide
+    # bushing.  The 0.9365 mm seat radius preserves the previously qualified
+    # bounded press-fit common volume while removing the unrelieved side-land
+    # penetration introduced when the lock guide was extended.
+    lock_bushing_press_seat = cq.Solid.makeCylinder(
+        0.9365, 0.70,
+        cq.Vector(0.4, LOCK_BUSHING_Y_MM - 0.35, 4.35),
+        cq.Vector(0, 1, 0),
+    )
+    fixed_stop_shape = fixed_stop_shape.cut(lock_bushing_press_seat)
     fixed_stop_shape = fixed_stop_shape.clean()
     fixed_stop_solids = fixed_stop_shape.Solids()
     if len(fixed_stop_solids) != 1 or not fixed_stop_shape.isValid():
@@ -1522,10 +1540,10 @@ def build_arm_module(b: R2Builder) -> None:
             f"closest_points={closest_points}"
         )
     fixed_stop = b.define(
-        "DF8-R2-FIXED-STOP-001", "D",
-        "80 DEGREE SWEPT-CLEARANCE FIXED STOP WITH EXTENDED AUTOMATIC-LOCK GUIDE",
+        "DF8-R2-FIXED-STOP-001", "E",
+        "80 DEGREE SWEPT-CLEARANCE FIXED STOP WITH CONTROLLED AUTOMATIC-LOCK BUSHING SEAT",
         fixed_stop_solids[0], "17-4PH stainless steel",
-        process="5-axis mill; wire EDM lock guide; occurrence-match drill two M3 clearance and ream two H7 side-land bores; grind stop faces",
+        process="5-axis mill; wire EDM lock guide and controlled PEEK-bushing seat; occurrence-match drill two M3 clearance and ream two H7 side-land bores; grind stop faces",
         color_key="steel",
     )
     stow_dog_shape = g.box_center(4.0, 4.4, 5.5)
@@ -2418,11 +2436,13 @@ def add_mandatory_hardware_occurrences(b: R2Builder) -> None:
 
         stop_pose = g.arm_occurrence_loc(g.DEPLOYED_ANGLE, phi) * g.translation_loc(4.0, 0.0, -8.5)
         stop_loc = stop_pose * g.translation_loc(-0.4, 0.0, -4.0)
-        for index, y in enumerate((-7.8, 7.8), start=1):
+        for index, (screw_x, y) in enumerate(
+            g.FIXED_STOP_SCREW_STATIONS_MM, start=1
+        ):
             add(
                 b.arm_module, arm_path, "SSCA-M3-8-A4-BL",
                 f"FIXED-STOP-SCREW-{arm_index}-{index}",
-                stop_loc * g.translation_loc(2.0, y, 2.50),
+                stop_loc * g.translation_loc(screw_x, y, 2.50),
             )
         for index, y in enumerate((-8.0, 8.0), start=1):
             add(

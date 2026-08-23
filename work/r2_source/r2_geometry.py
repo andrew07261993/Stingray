@@ -26,6 +26,11 @@ ARM_LENGTH = 733.806
 DEPLOYED_ANGLE = 80.0
 MAX_RIGID_LENGTH = 2032.0
 MAX_SYSTEM_MASS_KG = 18.14
+# The positive-side fixed-stop screw is shifted 0.25 mm outboard in stop-local
+# X so its head clears both automatic-lock spring states and the retracted dog
+# without approaching the pivot washer.  One shared station tuple keeps the
+# stop, carrier, arm reliefs, and occurrence placement occurrence-matched.
+FIXED_STOP_SCREW_STATIONS_MM = ((2.0, -7.8), (2.25, 7.8))
 
 # R2 closure law.  The bell crank is aft/outboard of the pivot, allowing the
 # crosshead and its three parallel power elements to occupy the arm module aft
@@ -883,14 +888,16 @@ def make_arm_part_local() -> cq.Shape:
     # outboard of the arm root.  Machine occurrence-matched head, captive-neck
     # and thread-envelope reliefs in the arm so the stationary fasteners have
     # a real service corridor rather than grazing the rotating arm solid.
-    for y in (-7.8, 7.8):
-        arm = arm.cut(cyl_z(2.85, 3.20, 5.6, y, -13.10))
-        arm = arm.cut(cyl_z(1.20, 5.40, 5.6, y, -10.20))
-        arm = arm.cut(cyl_z(1.65, 3.40, 5.6, y, -5.20))
+    for stop_x, y in FIXED_STOP_SCREW_STATIONS_MM:
+        arm_x = 3.6 + stop_x
+        arm = arm.cut(cyl_z(2.85, 3.20, arm_x, y, -13.10))
+        arm = arm.cut(cyl_z(1.20, 5.40, arm_x, y, -10.20))
+        arm = arm.cut(cyl_z(1.65, 3.40, arm_x, y, -5.20))
     # The stationary stop-land screws and dowels trace short arcs through the
     # arm-local frame during deployment.  Endpoint-only cylindrical reliefs
     # left positive-volume intersections at 36..66 degrees (dowels) and
-    # 77..78 degrees (screw heads).  Machine their measured one-degree swept
+    # 75..78 degrees (screw heads after the positive-side 0.25 mm station
+    # shift).  Machine their measured one-degree swept
     # envelopes with 0.05 mm radial/axial stock allowance, including one
     # bounding sample on either side of every observed range.
     stop_frame = (
@@ -911,11 +918,14 @@ def make_arm_part_local() -> cq.Shape:
             swept_fixed_hardware_cutters.append(
                 moved(dowel_clearance, stop_to_arm * translation_loc(7.0, y, 3.05))
             )
-    for angle in range(76, 81):
+    for angle in range(74, 81):
         stop_to_arm = arm_occurrence_loc(float(angle), 0.0).inverse * stop_frame
-        for y in (-7.8, 7.8):
+        for screw_x, y in FIXED_STOP_SCREW_STATIONS_MM:
             swept_fixed_hardware_cutters.append(
-                moved(fixed_screw_clearance, stop_to_arm * translation_loc(2.0, y, 2.50))
+                moved(
+                    fixed_screw_clearance,
+                    stop_to_arm * translation_loc(screw_x, y, 2.50),
+                )
             )
     for cutter in swept_fixed_hardware_cutters:
         arm = arm.cut(cutter)

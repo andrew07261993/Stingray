@@ -723,13 +723,13 @@
     },
     {
       "part_number": "DF8-R2-ARM-BLADE-001",
-      "revision": "B",
+      "revision": "C",
       "description": "733.806 MM SMOOTH ANALYTIC HOLLOW OML ARM WITH SWEPT STOP-HARDWARE RELIEFS",
       "material": "Ti-6Al-4V",
       "make_buy": "MAKE",
       "manufacturer": "STINGRAY custom",
       "cad_classification": "DRAWING_DERIVED",
-      "mass_kg": 0.11651942622193992,
+      "mass_kg": 0.11651724229084344,
       "source_url": "",
       "purchase_url": "",
       "process": "Hot form; 5-axis machine; laser weld; CMM inspect; Ti-6Al-4V Grade 5 certified product form; heat/lot CoC; qualified argon-purged WPS where welded; PT after welding; alpha-case removal; galvanic isolation; CMM final inspection",
@@ -737,19 +737,19 @@
       "notes": "Analytic cylindrical OML; no planar patch tiling or mesh-derived surfaces; one-degree swept service corridors clear the fixed-stop screw and dowel envelopes.",
       "color_key": "titanium",
       "external_context": false,
-      "volume_mm3": 26302.353548970637,
+      "volume_mm3": 26301.860562267142,
       "solid_count": 1,
-      "face_count": 193
+      "face_count": 199
     },
     {
       "part_number": "DF8-R2-PIVOT-CARRIER-001",
-      "revision": "C",
+      "revision": "D",
       "description": "MATCHED DOUBLE-SHEAR PIVOT LUG SET WITH SWEPT BELL-CLEVIS ACCESS AND OBLIQUE STOP-LAND BORES",
       "material": "Ti-6Al-4V",
       "make_buy": "MAKE",
       "manufacturer": "STINGRAY custom",
       "cad_classification": "DRAWING_DERIVED",
-      "mass_kg": 0.002707684349102889,
+      "mass_kg": 0.0027069509237137527,
       "source_url": "",
       "purchase_url": "",
       "process": "5-axis mill swept bell-clevis access slot; ream pivot; occurrence-match drill/tap two M3 and ream two H7 stop-land bores; Ti-6Al-4V Grade 5 certified product form; heat/lot CoC; qualified argon-purged WPS where welded; PT after welding; alpha-case removal; galvanic isolation; CMM final inspection",
@@ -757,7 +757,7 @@
       "notes": "",
       "color_key": "titanium",
       "external_context": false,
-      "volume_mm3": 611.215428691397,
+      "volume_mm3": 611.049869912811,
       "solid_count": 2,
       "face_count": 80
     },
@@ -923,23 +923,23 @@
     },
     {
       "part_number": "DF8-R2-FIXED-STOP-001",
-      "revision": "D",
-      "description": "80 DEGREE SWEPT-CLEARANCE FIXED STOP WITH EXTENDED AUTOMATIC-LOCK GUIDE",
+      "revision": "E",
+      "description": "80 DEGREE SWEPT-CLEARANCE FIXED STOP WITH CONTROLLED AUTOMATIC-LOCK BUSHING SEAT",
       "material": "17-4PH stainless steel",
       "make_buy": "MAKE",
       "manufacturer": "STINGRAY custom",
       "cad_classification": "DRAWING_DERIVED",
-      "mass_kg": 0.0024521400793340183,
+      "mass_kg": 0.0023936337070524028,
       "source_url": "",
       "purchase_url": "",
-      "process": "5-axis mill; wire EDM lock guide; occurrence-match drill two M3 clearance and ream two H7 side-land bores; grind stop faces; ASTM A564 Type 630 certified stock; H900 unless the drawing explicitly selects a tougher condition; heat-treatment/hardness record; ASTM A967 passivation; grind/ream critical fits; CMM inspection",
+      "process": "5-axis mill; wire EDM lock guide and controlled PEEK-bushing seat; occurrence-match drill two M3 clearance and ream two H7 side-land bores; grind stop faces; ASTM A564 Type 630 certified stock; H900 unless the drawing explicitly selects a tougher condition; heat-treatment/hardness record; ASTM A967 passivation; grind/ream critical fits; CMM inspection",
       "finish": "ASTM A967 passivated; critical bearing surfaces ground",
       "notes": "",
       "color_key": "steel",
       "external_context": false,
-      "volume_mm3": 316.4051715269701,
+      "volume_mm3": 308.85596220031005,
       "solid_count": 1,
-      "face_count": 257
+      "face_count": 262
     },
     {
       "part_number": "DF8-R2-STOW-DOG-001",
@@ -4811,7 +4811,7 @@
         ]
       ],
       "identity_transform": false,
-      "global_volume_mm3": 26302.3535489706,
+      "global_volume_mm3": 26301.86056226712,
       "global_bbox_mm": {
         "xmin": 8.237511912596549,
         "xmax": 742.1338476170451,
@@ -4852,7 +4852,7 @@
         ]
       ],
       "identity_transform": false,
-      "global_volume_mm3": 611.2154286913959,
+      "global_volume_mm3": 611.04986991281,
       "global_bbox_mm": {
         "xmin": 11.5,
         "xmax": 24.5,
@@ -5426,13 +5426,13 @@
         ]
       ],
       "identity_transform": false,
-      "global_volume_mm3": 316.40517152697,
+      "global_volume_mm3": 308.85596220030993,
       "global_bbox_mm": {
         "xmin": 3.867888532339875,
         "xmax": 12.630874355124423,
         "ymin": -10.5,
         "ymax": 10.5,
-        "zmin": 884.2791279186225,
+        "zmin": 884.6730510198273,
         "zmax": 897.339607544437
       }
     },
@@ -5795,7 +5795,7 @@
         ]
       ],
       "identity_transform": false,
-      "global_volume_mm3": 26302.353548970605,
+      "global_volume_mm3": 26301.86056226713,
       "global_bbox_mm": {
         "xmin": -376.92833719587793,
         "xmax": 0.9336416016241597,
@@ -5836,7 +5836,7 @@
         ]
       ],
       "identity_transform": false,
-      "global_volume_mm3": 611.2154286913958,
+      "global_volume_mm3": 611.0498699128096,
       "global_bbox_mm": {
         "xmin": -20.044228634059944,
         "xmax": 2.0442286340599507,
@@ -6410,13 +6410,13 @@
         ]
       ],
       "identity_transform": false,
-      "global_volume_mm3": 316.4051715269699,
+      "global_volume_mm3": 308.85596220030993,
       "global_bbox_mm": {
         "xmin": -15.408703917298816,
         "xmax": 4.607564830585746,
         "ymin": 1.29968972801284,
         "ymax": 16.188658063547138,
-        "zmin": 884.2791279186225,
+        "zmin": 884.6730510198273,
         "zmax": 897.339607544437
       }
     },
@@ -6779,7 +6779,7 @@
         ]
       ],
       "identity_transform": false,
-      "global_volume_mm3": 26302.353548970586,
+      "global_volume_mm3": 26301.860562267113,
       "global_bbox_mm": {
         "xmin": -376.9283371958784,
         "xmax": 1.337204087543686,
@@ -6820,7 +6820,7 @@
         ]
       ],
       "identity_transform": false,
-      "global_volume_mm3": 611.2154286913959,
+      "global_volume_mm3": 611.0498699128099,
       "global_bbox_mm": {
         "xmin": -20.04422863405996,
         "xmax": 2.044228634059942,
@@ -7394,13 +7394,13 @@
         ]
       ],
       "identity_transform": false,
-      "global_volume_mm3": 316.4051715269701,
+      "global_volume_mm3": 308.85596220031,
       "global_bbox_mm": {
         "xmin": -15.408703917298821,
         "xmax": 4.793031251910559,
         "ymin": -16.18865806354714,
         "ymax": -1.2996897280128357,
-        "zmin": 884.2791279186225,
+        "zmin": 884.6730510198273,
         "zmax": 897.339607544437
       }
     },
@@ -12257,7 +12257,7 @@
           0.17364817766693041,
           0.0,
           0.984807753012208,
-          9.124352264812732
+          9.167764309229463
         ],
         [
           0.0,
@@ -12269,18 +12269,18 @@
           -0.984807753012208,
           0.0,
           0.17364817766693041,
-          892.7485948064624
+          892.5023928682093
         ]
       ],
       "identity_transform": false,
-      "global_volume_mm3": 104.39668630078263,
+      "global_volume_mm3": 104.3966863007826,
       "global_bbox_mm": {
-        "xmin": 5.69239651719205,
-        "xmax": 17.263286555410794,
+        "xmin": 5.735808561608781,
+        "xmax": 17.306698599827524,
         "ymin": 5.05,
         "ymax": 10.55,
-        "zmin": 889.519428952678,
-        "zmax": 895.6149918573162
+        "zmin": 889.273227014425,
+        "zmax": 895.3687899190631
       }
     },
     {
@@ -12503,30 +12503,30 @@
           -0.08682408883346517,
           -0.8660254037844387,
           -0.4924038765061038,
-          -11.317174281924984
+          -11.338880304133351
         ],
         [
           0.15038373318043535,
           -0.4999999999999998,
           0.8528685319524433,
-          4.001920854405904
+          4.039516787701013
         ],
         [
           -0.984807753012208,
           0.0,
           0.17364817766693041,
-          892.7485948064624
+          892.5023928682093
         ]
       ],
       "identity_transform": false,
-      "global_volume_mm3": 104.39668630078259,
+      "global_volume_mm3": 104.39668630078262,
       "global_bbox_mm": {
-        "xmin": -16.56195554210828,
-        "xmax": -7.446453864160153,
-        "ymin": 0.007469529286561638,
-        "ymax": 11.608057689622912,
-        "zmin": 889.519428952678,
-        "zmax": 895.6149918573162
+        "xmin": -16.583661564316646,
+        "xmax": -7.46815988636852,
+        "ymin": 0.04506546258166999,
+        "ymax": 11.64565362291802,
+        "zmin": 889.273227014425,
+        "zmax": 895.3687899190631
       }
     },
     {
@@ -12749,30 +12749,30 @@
           -0.08682408883346529,
           0.8660254037844385,
           -0.49240387650610445,
-          2.192822017112251
+          2.1711159949038854
         ],
         [
           -0.15038373318043533,
           -0.5000000000000004,
           -0.852868531952443,
-          -11.801920854405903
+          -11.839516787701012
         ],
         [
           -0.984807753012208,
           0.0,
           0.17364817766693041,
-          892.7485948064624
+          892.5023928682093
         ]
       ],
       "identity_transform": false,
-      "global_volume_mm3": 104.39668630078263,
+      "global_volume_mm3": 104.39668630078266,
       "global_bbox_mm": {
-        "xmin": -3.051959243071049,
-        "xmax": 6.063542434877084,
-        "ymin": -19.40805768962291,
-        "ymax": -7.807469529286559,
-        "zmin": 889.519428952678,
-        "zmax": 895.6149918573162
+        "xmin": -3.073665265279415,
+        "xmax": 6.041836412668717,
+        "ymin": -19.44565362291802,
+        "ymax": -7.845065462581667,
+        "zmin": 889.273227014425,
+        "zmax": 895.3687899190631
       }
     },
     {

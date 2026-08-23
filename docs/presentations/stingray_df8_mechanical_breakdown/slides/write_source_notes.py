@@ -18,6 +18,12 @@ def main() -> None:
     manifest = json.loads(
         (root / "manifests" / "per_part_render_manifest.json").read_text(encoding="utf-8")
     )
+    cots_manifest = json.loads(
+        (root / "manifests" / "per_part_cots_traceability.json").read_text(encoding="utf-8")
+    )
+    cots_validation = json.loads(
+        (root / "manifests" / "per_part_cots_traceability_validation.json").read_text(encoding="utf-8")
+    )
     facts = json.loads((root / "source_notes" / "source_facts.json").read_text(encoding="utf-8"))
     pptx_name = "STINGRAY_I5S_DF8_MECHANICAL_BREAKDOWN_PER_PART.pptx"
     pptx_exists = (root / pptx_name).is_file()
@@ -29,6 +35,10 @@ def main() -> None:
     unrenderable = [row for row in included if not row.get("render_png_path")]
     subsystem_counts = Counter(row["subsystem"] for row in included)
     class_counts = Counter(row["classification"] for row in included)
+    cots_rows = [row for row in cots_manifest if row["cots_classification"] != "NOT_COTS_MAKE"]
+    included_cots_rows = [row for row in cots_rows if row["included_in_deck"]]
+    parent_cots_rows = [row for row in cots_rows if row["cots_classification"] == "COTS_BUY"]
+    child_cots_rows = [row for row in cots_rows if row["cots_classification"] == "COTS_SUBCOMPONENT_CHILD"]
     stowed = facts["mass_properties"]["stowed"]
     deployed = facts["mass_properties"]["deployed"]
 
@@ -82,6 +92,29 @@ def main() -> None:
 
     lines.extend([
         "",
+        "## COTS and receiving-evidence traceability",
+        "",
+        "`manifests/per_part_cots_traceability.json` and its CSV companion cover all 121 PartDefs. Each rendered part entry now states its COTS classification, vendor/manufacturer, vendor catalog part number, received-unit serial/lot/heat status, and Certificate of Conformance (CoC) status. MAKE parts are explicitly marked COTS N/A; they remain subject to drawing, material-certification, traveler, and build-record controls rather than supplier-COTS CoC control.",
+        "",
+        f"- COTS/BUY definition rows: **{len(cots_rows)}** total; **{len(included_cots_rows)}** rendered in the deck and **{len(cots_rows) - len(included_cots_rows)}** excluded standard-fastener definitions retained in the traceability manifest.",
+        f"- Parent purchased line items: **{len(parent_cots_rows)}**; articulated child geometry rows governed by a parent purchased assembly: **{len(child_cots_rows)}**.",
+        f"- BUY rows with received serial/lot/heat evidence verified in this package: **{sum(row['serial_lot_or_heat_verified'] for row in cots_rows)}**.",
+        f"- BUY rows with delivered-unit supplier CoC evidence verified in this package: **{sum(row['certificate_of_conformance_verified'] for row in cots_rows)}**.",
+        f"- Traceability-schema validation: **{cots_validation['status']}**. This means the schema is complete and fail-closed; it does not mean COTS acceptance is complete.",
+        "- Receiving disposition: **COTS RECEIVING EVIDENCE INCOMPLETE — NOT RELEASED**. Record the supplier serial number where present, otherwise the lot/batch/heat identifier, and retain the delivered-item CoC before release.",
+        "",
+        "Vendor catalog links identify the intended catalog item only. A catalog page, supplier quality-system certificate, packing slip, or generic material statement is not accepted as proof that the delivered unit came with its required CoC. The two articulated `*-ROD-CHILD` rows are not separate purchase lines; their identity and evidence inherit from the parent ACE assembly.",
+        "",
+        "| PartDef | Vendor | Vendor catalog P/N | Serial / lot / heat | Delivered-item CoC | Receiving disposition |",
+        "|---|---|---|---|---|---|",
+    ])
+    for row in cots_rows:
+        lines.append(
+            f"| `{row['part_number']}` | {row['vendor_or_manufacturer']} | `{row['vendor_catalog_part_number']}` | {row['vendor_serial_lot_or_heat_identifier']} | {row['certificate_of_conformance_status']} | {row['receiving_release_disposition']} |"
+        )
+
+    lines.extend([
+        "",
         "## Deterministic rendering method",
         "",
         "`slides/generate_per_part_renders.py` imports the authoritative `build_r2.py`, builds both exact STOWED and DEPLOYED PartCatalogs in memory, asserts their PartDef sets are identical, and validates each source shape volume against the committed authoring inventory before rendering.",
@@ -109,6 +142,7 @@ def main() -> None:
         f"- The latest full validator terminated at `{facts['validation']['validator_failure_stage']}` with `{facts['validation']['validator_failure_message']}`; it did not compute release gates.",
         "- No physical, environmental, calibrated damper force-speed, or manufacturing qualification is asserted.",
         "- BUY components are presented at their current controlled source fidelity. Where the source identifies a representation as drawing-derived, the deck retains that qualification.",
+        "- No received-unit serial/lot/heat identifier or delivered-item supplier CoC is present in the current package; all BUY receiving-evidence claims remain fail-closed.",
         "- One hero orientation is used per PartDef; no part required a second supporting view. Very slender routes and softgoods remain exact but naturally occupy less projected image area.",
         "- PowerPoint export status: **PRESENT**." if pptx_exists else "- PowerPoint export status: **BLOCKED — `load_workspace_dependencies` and its required `@oai/artifact-tool` runtime paths were unavailable; no prohibited fallback authoring engine was used.**",
         "",
@@ -124,6 +158,7 @@ def main() -> None:
         "& <authoritative-cad-python> slides/generate_per_part_renders.py --source-root <authoritative-source-root> --repo-root <documentation-repo-root> --output-root <this-package-root>",
         "& <authoritative-cad-python> slides/validate_per_part_render_set.py --package-root <this-package-root>",
         "& <authoritative-cad-python> slides/extract_source_facts.py --source-root <authoritative-source-root> --output <this-package-root>/source_notes/source_facts.json",
+        "node slides/generate_cots_traceability.mjs",
         "node slides/build_mechanical_breakdown.mjs",
         "python slides/write_source_notes.py --package-root <this-package-root> --output <this-package-root>/STINGRAY_I5S_DF8_MECHANICAL_BREAKDOWN_PER_PART_SOURCE_NOTES.md",
         "```",

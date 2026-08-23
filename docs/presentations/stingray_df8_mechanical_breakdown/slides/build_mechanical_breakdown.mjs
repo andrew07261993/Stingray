@@ -10,14 +10,24 @@ const repoRoot = path.resolve(packageRoot, "../../..");
 const qaRoot = path.join(here, "qa");
 const pptxPath = path.join(packageRoot, "STINGRAY_I5S_DF8_MECHANICAL_BREAKDOWN_PER_PART.pptx");
 const manifestPath = path.join(packageRoot, "manifests", "per_part_render_manifest.json");
+const cotsPath = path.join(packageRoot, "manifests", "per_part_cots_traceability.json");
 const factsPath = path.join(packageRoot, "source_notes", "source_facts.json");
 const validationPath = path.join(packageRoot, "manifests", "per_part_render_validation.json");
 const tmpDir = process.env.TMP_DIR || os.tmpdir();
 
 const manifest = JSON.parse(await fs.readFile(manifestPath, "utf8"));
+const cotsManifest = JSON.parse(await fs.readFile(cotsPath, "utf8"));
 const facts = JSON.parse(await fs.readFile(factsPath, "utf8"));
 const renderValidation = JSON.parse(await fs.readFile(validationPath, "utf8"));
-const included = manifest.filter((row) => row.included === true && row.render_status === "RENDERED");
+const cotsByPart = new Map(cotsManifest.map((row) => [row.part_number, row]));
+const manifestPartNumbers = new Set(manifest.map((row) => row.part_number));
+if (cotsManifest.length !== manifest.length || cotsManifest.some((row) => !manifestPartNumbers.has(row.part_number))) {
+  throw new Error("COTS traceability manifest does not match the 121-definition render manifest.");
+}
+const included = manifest
+  .filter((row) => row.included === true && row.render_status === "RENDERED")
+  .map((row) => ({ ...row, cots: cotsByPart.get(row.part_number) }));
+if (included.some((row) => !row.cots)) throw new Error("One or more included PartDefs lack COTS traceability data.");
 
 const W = 1280;
 const H = 720;
@@ -197,7 +207,7 @@ let slideNumber = 0;
     bold: true,
     color: "#A8D9E8",
   });
-  addText(slide, "Deterministic per-part CAD render set", pos(72, 246, 520, 70), {
+  addText(slide, "Deterministic per-part CAD render set\nwith COTS receiving-evidence status", pos(72, 246, 520, 86), {
     fontSize: 25,
     color: "#D9E8EF",
   });
@@ -218,6 +228,7 @@ let slideNumber = 0;
     sourceRef("work/final_analysis/authoring_inventory_stowed.json"),
     "slides/context_views/AFTER_IMAGE_01_PRODUCT_BOUNDARY.png — deterministic source-derived assembly context view",
     "manifests/per_part_render_manifest.json — current unique-definition and render counts",
+    "manifests/per_part_cots_traceability.json — vendor P/N, serial/lot and CoC evidence status",
   ]);
 }
 
@@ -232,17 +243,19 @@ let slideNumber = 0;
   addMetric(slide, "0", "O-ring exclusions", 896, 168, 240, COLORS.green);
   addBulletBlock(slide, "What this package proves", [
     "Every included tile resolves to one current exact PartDef B-rep.",
-    "MAKE and BUY definitions are retained at their controlled source fidelity.",
+    "Every PartDef has a COTS classification; BUY rows identify vendor and vendor catalog P/N.",
     "The deck explains mechanism intent while keeping open validation items open.",
   ], pos(72, 390, 535, 220));
   addBulletBlock(slide, "What it does not claim", [
     "No AI-generated geometry, artist approximation, or screenshot substitution.",
-    "No release authorization, physical qualification, or manufacturing sign-off.",
+    "No received-unit serial/lot or supplier CoC is verified by the current package.",
     "No completion claim beyond the accepted 0°–55° motion checkpoint.",
   ], pos(650, 390, 558, 220), COLORS.red);
   setNotes(slide, [
     "manifests/per_part_render_manifest.json",
     "manifests/per_part_render_validation.json",
+    "manifests/per_part_cots_traceability.json",
+    "manifests/per_part_cots_traceability_validation.json",
     sourceRef("work/final_analysis/manual_inspection_checkpoint/CAD_INSPECTION_STATUS.txt"),
   ]);
 }
@@ -533,13 +546,14 @@ let slideNumber = 0;
   addBulletBlock(slide, "What remains open", [
     "Full 0°–80° motion acceptance; final validator stopped during post-merge schema checking.",
     "Physical/environmental qualification, calibrated damping performance and manufacturing qualification.",
-    "Release gate computation and owner acceptance in the approved venue.",
+    "COTS receiving evidence (serial/lot + supplier CoC), release gates and owner acceptance.",
   ], pos(660, 400, 548, 220), COLORS.red);
   setNotes(slide, [
     sourceRef("work/final_analysis/manual_inspection_checkpoint/CAD_INSPECTION_STATUS.txt"),
     sourceRef("work/final_analysis/state_parity_provenance_audit/state_parity_provenance_summary.json"),
     sourceRef("CURRENT_STATE.json"),
     "manifests/per_part_render_validation.json",
+    "manifests/per_part_cots_traceability_validation.json",
   ]);
 }
 
@@ -563,7 +577,7 @@ for (const subsystem of subsystemOrder) {
     for (let slot = 0; slot < pageRows.length; slot += 1) {
       const row = pageRows[slot];
       const top = slot === 0 ? 148 : 405;
-      if (slot === 1) addRect(slide, pos(72, 386, 1136, 1), COLORS.line, "none");
+      if (slot === 1) addRect(slide, pos(72, 394, 1136, 1), COLORS.line, "none");
       const renderFile = path.resolve(repoRoot, row.render_png_path);
       await addImage(slide, renderFile, pos(72, top, 386, 224), `${row.part_number}: ${row.part_name}`);
       addPill(slide, row.classification, 486, top + 1, row.classification === "BUY" ? COLORS.teal : COLORS.navy2, 86);
@@ -578,19 +592,41 @@ for (const subsystem of subsystemOrder) {
         bold: true,
         color: COLORS.navy,
       });
-      addText(slide, row.function_summary, pos(486, top + 145, 696, 53), {
-        fontSize: 21.5,
+      addText(slide, row.function_summary, pos(486, top + 141, 696, 39), {
+        fontSize: 18.5,
         color: COLORS.ink,
       });
-      addText(slide, `${row.material}  •  ${row.occurrence_count} occurrence${row.occurrence_count === 1 ? "" : "s"}`, pos(486, top + 198, 722, 40), {
+      addText(slide, `${row.material}  •  ${row.occurrence_count} occurrence${row.occurrence_count === 1 ? "" : "s"}`, pos(486, top + 181, 722, 20), {
         fontSize: 16,
         color: COLORS.muted,
         lineSpacing: 0.9,
+      });
+      const cotsLabel = row.cots.cots_classification === "NOT_COTS_MAKE"
+        ? "COTS: N/A — MAKE  •  Vendor P/N: N/A"
+        : row.cots.cots_classification === "COTS_SUBCOMPONENT_CHILD"
+          ? `COTS CHILD: ${row.cots.vendor_or_manufacturer}  •  Parent vendor P/N: ${row.cots.vendor_catalog_part_number}`
+          : `COTS: BUY  •  Vendor: ${row.cots.vendor_or_manufacturer}  •  Vendor P/N: ${row.cots.vendor_catalog_part_number}`;
+      addText(slide, cotsLabel, pos(486, top + 201, 722, 20), {
+        fontSize: 16,
+        bold: row.classification === "BUY",
+        color: row.classification === "BUY" ? COLORS.teal : COLORS.muted,
+      });
+      const evidenceLabel = row.cots.cots_classification === "NOT_COTS_MAKE"
+        ? "Vendor serial/lot + supplier CoC: N/A — controlled MAKE item"
+        : row.cots.cots_classification === "COTS_SUBCOMPONENT_CHILD"
+          ? "Serial/lot + CoC: inherit parent assembly — NOT VERIFIED"
+          : "Serial/lot: NOT PROVIDED  •  CoC: NOT VERIFIED — RECEIVING HOLD";
+      addText(slide, evidenceLabel, pos(486, top + 220, 722, 18), {
+        fontSize: 16,
+        bold: row.classification === "BUY",
+        color: row.classification === "BUY" ? COLORS.red : COLORS.muted,
       });
     }
     setNotes(slide, pageRows.flatMap((row) => [
       `${row.part_number}: ${row.source_geometry_path}`,
       `${row.part_number}: ${row.render_png_path} (SHA-256 ${row.png_sha256})`,
+      `${row.part_number}: COTS=${row.cots.cots_classification}; vendor=${row.cots.vendor_or_manufacturer}; vendor catalog P/N=${row.cots.vendor_catalog_part_number}; serial/lot/heat=${row.cots.vendor_serial_lot_or_heat_identifier}; CoC=${row.cots.certificate_of_conformance_status}; receiving=${row.cots.receiving_release_disposition}`,
+      `${row.part_number}: catalog identity source ${row.cots.catalog_source_url}`,
     ]));
   }
 }
@@ -602,7 +638,7 @@ if (slideNumber !== 73) {
 await fs.mkdir(qaRoot, { recursive: true });
 await fs.writeFile(
   path.join(tmpDir, "source-notes.txt"),
-  `DF8 presentation sources\nSource commit: ${facts.source_commit_sha}\nManifest: ${manifestPath}\nFacts: ${factsPath}\n`,
+  `DF8 presentation sources\nSource commit: ${facts.source_commit_sha}\nManifest: ${manifestPath}\nCOTS traceability: ${cotsPath}\nFacts: ${factsPath}\n`,
   "utf8",
 );
 
@@ -631,6 +667,9 @@ const qaSummary = {
   slide_count: slideNumber,
   included_part_render_count: included.length,
   render_manifest_validation_status: renderValidation.status,
+  cots_traceability_row_count: cotsManifest.length,
+  included_buy_definition_count: included.filter((row) => row.classification === "BUY").length,
+  included_buy_coc_verified_count: included.filter((row) => row.classification === "BUY" && row.cots.certificate_of_conformance_verified).length,
   source_commit_sha: facts.source_commit_sha,
   pptx_path: path.relative(repoRoot, pptxPath).replaceAll("\\", "/"),
   rendered_slide_png_count: presentation.slides.items.length,

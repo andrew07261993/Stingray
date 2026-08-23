@@ -1,12 +1,13 @@
 {
-  "schema": "STINGRAY_DF8_PRESENTATION_DELIVERY_VALIDATION_V1",
+  "schema": "STINGRAY_DF8_PRESENTATION_DELIVERY_VALIDATION_V2",
   "status": "PASS",
   "inputs": {
     "manifest": "docs/presentations/stingray_df8_mechanical_breakdown/manifests/per_part_render_manifest.json",
+    "cots_traceability": "docs/presentations/stingray_df8_mechanical_breakdown/manifests/per_part_cots_traceability.json",
     "inspection": "docs/presentations/stingray_df8_mechanical_breakdown/slides/qa/deck-inspection.ndjson",
     "pptx": "docs/presentations/stingray_df8_mechanical_breakdown/STINGRAY_I5S_DF8_MECHANICAL_BREAKDOWN_PER_PART.pptx",
-    "pptx_sha256": "fc5ddf7873f72cc684c11aff264b82048a095c60d173c2eeaf7c5034628c0166",
-    "pptx_size_bytes": 28679874
+    "pptx_sha256": "1f479e422ff3023f97a1f64801fc477948adcdeda88e5ce6a1b401ba4215a465",
+    "pptx_size_bytes": 28709188
   },
   "counts": {
     "slides": 73,
@@ -16,7 +17,12 @@
     "embedded_media_files": 126,
     "included_manifest_rows": 116,
     "make": 104,
-    "buy": 12
+    "buy": 12,
+    "cots_traceability_rows": 121,
+    "visible_cots_blocks": 116,
+    "visible_receiving_evidence_blocks": 116,
+    "included_buy_serial_lot_verified": 0,
+    "included_buy_coc_verified": 0
   },
   "checks": {
     "slide_count_73": true,
@@ -26,6 +32,18 @@
     "manifest_included_count_116": true,
     "per_part_alt_set_exact": true,
     "per_part_note_references_exact": true,
+    "cots_traceability_row_count_121": true,
+    "cots_part_number_set_exact": true,
+    "every_included_part_has_cots_note": true,
+    "visible_cots_block_count_116": true,
+    "visible_receiving_evidence_block_count_116": true,
+    "visible_make_cots_block_count_104": true,
+    "visible_buy_cots_block_count_10": true,
+    "visible_buy_child_cots_block_count_2": true,
+    "included_buy_definition_count_12": true,
+    "no_unsubstantiated_buy_serial_lot_verification": true,
+    "no_unsubstantiated_buy_coc_verification": true,
+    "every_included_buy_row_fail_closed": true,
     "manifest_png_hashes_embedded_exact": true,
     "no_visible_placeholder_text": true,
     "truthful_status_copy_present": true
@@ -34,12 +52,14 @@
     "state_parity_279_of_279": true,
     "accepted_motion_0_through_55": true,
     "unaccepted_motion_56_through_80": true,
-    "release_incomplete": true
+    "release_incomplete": true,
+    "buy_coc_fail_closed": true
   },
   "issues": {
     "missing_part_alts": [],
     "duplicate_part_alts": [],
     "missing_note_references": [],
+    "missing_cots_note_references": [],
     "missing_embedded_hashes": [],
     "duplicate_embedded_hashes": [],
     "placeholder_hits": []

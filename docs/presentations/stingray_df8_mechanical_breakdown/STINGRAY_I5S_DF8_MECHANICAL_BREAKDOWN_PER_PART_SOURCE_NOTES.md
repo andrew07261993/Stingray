@@ -42,6 +42,39 @@ The inclusion rule is deliberately conservative. Functional pins, bushings, spir
 
 No O-ring PartDef exists in the current 121-definition authoritative inventory.
 
+## COTS and receiving-evidence traceability
+
+`manifests/per_part_cots_traceability.json` and its CSV companion cover all 121 PartDefs. Each rendered part entry now states its COTS classification, vendor/manufacturer, vendor catalog part number, received-unit serial/lot/heat status, and Certificate of Conformance (CoC) status. MAKE parts are explicitly marked COTS N/A; they remain subject to drawing, material-certification, traveler, and build-record controls rather than supplier-COTS CoC control.
+
+- COTS/BUY definition rows: **17** total; **12** rendered in the deck and **5** excluded standard-fastener definitions retained in the traceability manifest.
+- Parent purchased line items: **15**; articulated child geometry rows governed by a parent purchased assembly: **2**.
+- BUY rows with received serial/lot/heat evidence verified in this package: **0**.
+- BUY rows with delivered-unit supplier CoC evidence verified in this package: **0**.
+- Traceability-schema validation: **PASS**. This means the schema is complete and fail-closed; it does not mean COTS acceptance is complete.
+- Receiving disposition: **COTS RECEIVING EVIDENCE INCOMPLETE — NOT RELEASED**. Record the supplier serial number where present, otherwise the lot/batch/heat identifier, and retain the delivered-item CoC before release.
+
+Vendor catalog links identify the intended catalog item only. A catalog page, supplier quality-system certificate, packing slip, or generic material statement is not accepted as proof that the delivered unit came with its required CoC. The two articulated `*-ROD-CHILD` rows are not separate purchase lines; their identity and evidence inherit from the parent ACE assembly.
+
+| PartDef | Vendor | Vendor catalog P/N | Serial / lot / heat | Delivered-item CoC | Receiving disposition |
+|---|---|---|---|---|---|
+| `GN-615.3-M3-KN-PFB` | JW Winco / Ganter | `GN 615.3-M3-KN-PFB` | NOT PROVIDED — capture supplier serial, lot, batch, or heat ID at receiving | NOT VERIFIED — no delivered-unit supplier CoC is present in this package | HOLD — verify received item identity and retain supplier CoC before release |
+| `GS-19-50-V4A-B8-B8` | ACE Controls | `GS-19-50-V4A-B8-B8` | NOT PROVIDED — capture supplier serial, lot, batch, or heat ID at receiving | NOT VERIFIED — no delivered-unit supplier CoC is present in this package | HOLD — verify received item identity and retain supplier CoC before release |
+| `GS-19-50-V4A-B8-B8-ROD-CHILD` | ACE Controls | `GS-19-50-V4A-B8-B8` | NOT PROVIDED — inherit from parent received assembly | NOT VERIFIED — inherit parent assembly CoC evidence | HOLD WITH PARENT — do not treat as a separately orderable line |
+| `HBD-15-25-AA-P` | ACE Controls | `HBD-15-25-AA-P` | NOT PROVIDED — capture supplier serial, lot, batch, or heat ID at receiving | NOT VERIFIED — no delivered-unit supplier CoC is present in this package | HOLD — verify received item identity and retain supplier CoC before release |
+| `HBD-15-25-AA-P-ROD-CHILD` | ACE Controls | `HBD-15-25-AA-P` | NOT PROVIDED — inherit from parent received assembly | NOT VERIFIED — inherit parent assembly CoC evidence | HOLD WITH PARENT — do not treat as a separately orderable line |
+| `HDP-3-8-A1` | Accu | `HDP-3-8-A1` | NOT PROVIDED — capture supplier serial, lot, batch, or heat ID at receiving | NOT VERIFIED — no delivered-unit supplier CoC is present in this package | HOLD — verify received item identity and retain supplier CoC before release |
+| `HEC-10-A4` | Accu | `HEC-10-A4` | NOT PROVIDED — capture supplier serial, lot, batch, or heat ID at receiving | NOT VERIFIED — no delivered-unit supplier CoC is present in this package | HOLD — verify received item identity and retain supplier CoC before release |
+| `HTP-3-30-A1` | Accu | `HTP-3-30-A1` | NOT PROVIDED — capture supplier serial, lot, batch, or heat ID at receiving | NOT VERIFIED — no delivered-unit supplier CoC is present in this package | HOLD — verify received item identity and retain supplier CoC before release |
+| `LELAND-81121` | Leland Gas Technologies | `81121` | NOT PROVIDED — capture supplier serial, lot, batch, or heat ID at receiving | NOT VERIFIED — no delivered-unit supplier CoC is present in this package | HOLD — verify received item identity and retain supplier CoC before release |
+| `ROTOR-CLIP-DC-4SS` | Rotor Clip | `DC-4SS` | NOT PROVIDED — capture supplier serial, lot, batch, or heat ID at receiving | NOT VERIFIED — no delivered-unit supplier CoC is present in this package | HOLD — verify received item identity and retain supplier CoC before release |
+| `SS-CHS2-1` | Swagelok | `SS-CHS2-1` | NOT PROVIDED — capture supplier serial, lot, batch, or heat ID at receiving | NOT VERIFIED — no delivered-unit supplier CoC is present in this package | HOLD — verify received item identity and retain supplier CoC before release |
+| `SSCA-M3-8-A4-BL` | Accu | `SSCA-M3-8-A4-BL` | NOT PROVIDED — capture supplier serial, lot, batch, or heat ID at receiving | NOT VERIFIED — no delivered-unit supplier CoC is present in this package | HOLD — verify received item identity and retain supplier CoC before release |
+| `SSCF-M3-10-A4` | Accu | `SSCF-M3-10-A4` | NOT PROVIDED — capture supplier serial, lot, batch, or heat ID at receiving | NOT VERIFIED — no delivered-unit supplier CoC is present in this package | HOLD — verify received item identity and retain supplier CoC before release |
+| `SSCF-M3-6-A4` | Accu | `SSCF-M3-6-A4` | NOT PROVIDED — capture supplier serial, lot, batch, or heat ID at receiving | NOT VERIFIED — no delivered-unit supplier CoC is present in this package | HOLD — verify received item identity and retain supplier CoC before release |
+| `SSCL-M4-8-A4` | Accu | `SSCL-M4-8-A4` | NOT PROVIDED — capture supplier serial, lot, batch, or heat ID at receiving | NOT VERIFIED — no delivered-unit supplier CoC is present in this package | HOLD — verify received item identity and retain supplier CoC before release |
+| `SSK-M3-6-A4-P80` | Accu | `SSK-M3-6-A4-P80` | NOT PROVIDED — capture supplier serial, lot, batch, or heat ID at receiving | NOT VERIFIED — no delivered-unit supplier CoC is present in this package | HOLD — verify received item identity and retain supplier CoC before release |
+| `V80040` | Nordson MEDICAL / Halkey-Roberts | `V80040` | NOT PROVIDED — capture supplier serial, lot, batch, or heat ID at receiving | NOT VERIFIED — no delivered-unit supplier CoC is present in this package | HOLD — verify received item identity and retain supplier CoC before release |
+
 ## Deterministic rendering method
 
 `slides/generate_per_part_renders.py` imports the authoritative `build_r2.py`, builds both exact STOWED and DEPLOYED PartCatalogs in memory, asserts their PartDef sets are identical, and validates each source shape volume against the committed authoring inventory before rendering.
@@ -69,6 +102,7 @@ The CG calculation is regenerated by `slides/extract_source_facts.py` from each 
 - The latest full validator terminated at `POST_MERGE_MOTION_KINEMATICS_SCHEMA_CHECK` with `'angle_deg'`; it did not compute release gates.
 - No physical, environmental, calibrated damper force-speed, or manufacturing qualification is asserted.
 - BUY components are presented at their current controlled source fidelity. Where the source identifies a representation as drawing-derived, the deck retains that qualification.
+- No received-unit serial/lot/heat identifier or delivered-item supplier CoC is present in the current package; all BUY receiving-evidence claims remain fail-closed.
 - One hero orientation is used per PartDef; no part required a second supporting view. Very slender routes and softgoods remain exact but naturally occupy less projected image area.
 - PowerPoint export status: **PRESENT**.
 
@@ -84,6 +118,7 @@ Run with the authoritative CAD environment:
 & <authoritative-cad-python> slides/generate_per_part_renders.py --source-root <authoritative-source-root> --repo-root <documentation-repo-root> --output-root <this-package-root>
 & <authoritative-cad-python> slides/validate_per_part_render_set.py --package-root <this-package-root>
 & <authoritative-cad-python> slides/extract_source_facts.py --source-root <authoritative-source-root> --output <this-package-root>/source_notes/source_facts.json
+node slides/generate_cots_traceability.mjs
 node slides/build_mechanical_breakdown.mjs
 python slides/write_source_notes.py --package-root <this-package-root> --output <this-package-root>/STINGRAY_I5S_DF8_MECHANICAL_BREAKDOWN_PER_PART_SOURCE_NOTES.md
 ```

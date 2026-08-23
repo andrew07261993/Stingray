@@ -19,6 +19,7 @@ from pathlib import Path
 from typing import Any
 
 import cadquery as cq
+from OCP.BRepExtrema import BRepExtrema_DistShapeShape
 from OCP.Interface import Interface_Static
 from OCP.STEPCAFControl import STEPCAFControl_Controller
 
@@ -66,6 +67,20 @@ STATE_INVARIANT_PART_NUMBERS = frozenset({
     "WP05-SERVICE-THROAT-R2",
 })
 _STATE_INVARIANT_SHAPE_CACHE: dict[str, cq.Shape] = {}
+
+# Automatic deployed-lock geometry.  The dog stays outside the rigid arm and
+# captive pad-screw envelopes through 79 degrees, then advances after the pad
+# strike bore aligns at 80 degrees.  The common outer spring seat makes the
+# 3.30 mm dog stroke explicit in both endpoint B-reps.
+LOCK_DEPLOYED_DOG_Y_MM = 3.65
+LOCK_RETRACTED_DOG_Y_MM = 6.95
+LOCK_SPRING_OUTER_SEAT_Y_MM = 9.90
+LOCK_RETRACTED_SPRING_LENGTH_MM = 1.65
+LOCK_DEPLOYED_SPRING_LENGTH_MM = 4.95
+LOCK_BUSHING_Y_MM = 10.15
+LOCK_GUIDE_INNER_Y_MM = 3.80
+LOCK_GUIDE_OUTER_Y_MM = 10.00
+LOCK_SPRING_MASS_KG = 2.8560892651638403e-6
 
 
 def state_invariant_shape(part_number: str, shape: cq.Shape) -> cq.Shape:
@@ -150,7 +165,7 @@ def name_assembly_usage_occurrences(path: Path) -> None:
     updated, count = pattern.subn(repl, text)
     if count == 0:
         raise RuntimeError(f"No NAUO entities found in {path}")
-    path.write_text(updated, encoding="latin-1")
+    path.write_text(updated, encoding="latin-1", newline="\n")
 
 
 def complete_make_definition(material: str, make_buy: str, process: str,
@@ -1242,15 +1257,16 @@ def add_arm_hardware(b: R2Builder, arm_index: int, phi: float, theta: float, arm
     # its fixed-stop guide until the occurrence-specific pad bore aligns at
     # 80 degrees, then advances 0.30 mm into that bore.  The small coaxial
     # spring is captive between the dog head and the guide's closed outer seat.
-    lock_y = 3.65 if b.deployed else 3.95
+    lock_y = LOCK_DEPLOYED_DOG_Y_MM if b.deployed else LOCK_RETRACTED_DOG_Y_MM
     b.add(b.arm_module, path, lock_dog, f"LOCK-DOG-{arm_index}",
           stop_loc * g.translation_loc(0.4, lock_y, 4.0), "MOVING",
           "SPRING_DRIVEN_GUIDED_DEPLOYED_LOCK", "1 TRANSLATION")
     b.add(b.arm_module, path, lock_spring, f"LOCK-SPRING-{arm_index}",
-          stop_loc * g.translation_loc(0.4, 6.90, 4.0) * g.rotation_loc((1, 0, 0), 90.0),
+          stop_loc * g.translation_loc(0.4, LOCK_SPRING_OUTER_SEAT_Y_MM, 4.0)
+          * g.rotation_loc((1, 0, 0), 90.0),
           "FLEXIBLE", "CAPTURED_LOCK_RETURN_SPRING", "AXIAL COMPRESSION")
     b.add(b.arm_module, path, lock_bushing, f"LOCK-BUSHING-{arm_index}",
-          stop_loc * g.translation_loc(0.4, 7.15, 4.35),
+          stop_loc * g.translation_loc(0.4, LOCK_BUSHING_Y_MM, 4.35),
           "FIXED", "PRESS_FIT_OUTER_LOCK_GUIDE_RETAINER")
 
 
@@ -1301,9 +1317,9 @@ def build_arm_module(b: R2Builder) -> None:
         selected_longeron = longeron_3 if idx == 3 else longeron
         b.add(b.arm_module, path, selected_longeron, f"ARM-LONGERON-{idx}", loc, "FIXED", "WELDED_BETWEEN_ROUTE_RINGS")
 
-    arm = b.define("DF8-R2-ARM-BLADE-001", "A", "733.806 MM SMOOTH ANALYTIC HOLLOW OML ARM", g.make_arm_part_local(),
+    arm = b.define("DF8-R2-ARM-BLADE-001", "B", "733.806 MM SMOOTH ANALYTIC HOLLOW OML ARM WITH SWEPT STOP-HARDWARE RELIEFS", g.make_arm_part_local(),
                    "Ti-6Al-4V", process="Hot form; 5-axis machine; laser weld; CMM inspect",
-                   notes="Analytic cylindrical OML; no planar patch tiling or mesh-derived surfaces.", color_key="titanium")
+                   notes="Analytic cylindrical OML; no planar patch tiling or mesh-derived surfaces; one-degree swept service corridors clear the fixed-stop screw and dowel envelopes.", color_key="titanium")
     carrier_shape = g.make_pivot_carrier_local()
     # Occurrence-matched oblique bores for the fixed-stop side lands.  The
     # stop is clocked in the deployed-arm frame, so its +Z fastener axes are
@@ -1324,10 +1340,10 @@ def build_arm_module(b: R2Builder) -> None:
         dowel_h7 = g.cyl_z(1.50, 8.40, 7.0, y, 2.85)
         carrier_shape = carrier_shape.cut(g.moved(dowel_h7, stop_to_carrier))
     carrier = b.define(
-        "DF8-R2-PIVOT-CARRIER-001", "B",
-        "MATCHED DOUBLE-SHEAR PIVOT LUG SET WITH OBLIQUE STOP-LAND BORES",
+        "DF8-R2-PIVOT-CARRIER-001", "C",
+        "MATCHED DOUBLE-SHEAR PIVOT LUG SET WITH SWEPT BELL-CLEVIS ACCESS AND OBLIQUE STOP-LAND BORES",
         carrier_shape, "Ti-6Al-4V",
-        process="5-axis mill; ream pivot; occurrence-match drill/tap two M3 and ream two H7 stop-land bores",
+        process="5-axis mill swept bell-clevis access slot; ream pivot; occurrence-match drill/tap two M3 and ream two H7 stop-land bores",
         color_key="titanium",
     )
     pivot_pin = b.define("DF8-R2-PIVOT-PIN-008", "B", "8 MM CAPTIVE SHOULDER PIVOT PIN WITH EXTERNAL GROOVE", g.make_clevis_pin(8.0, 20.5, 8.8, 1.5),
@@ -1388,11 +1404,13 @@ def build_arm_module(b: R2Builder) -> None:
     # Exact four-wall lock channel.  It is open only at the pad and outer
     # bushing ends, stays outside the deployed arm/pad envelope, and is fused
     # to the fixed-stop body through both side walls.
+    lock_guide_depth = LOCK_GUIDE_OUTER_Y_MM - LOCK_GUIDE_INNER_Y_MM
+    lock_guide_center_y = (LOCK_GUIDE_INNER_Y_MM + LOCK_GUIDE_OUTER_Y_MM) / 2.0
     for wall in (
-        g.box_center(0.30, 3.20, 3.60, -0.75, 5.40, 3.40),
-        g.box_center(0.30, 3.20, 3.60, 1.55, 5.40, 3.40),
-        g.box_center(2.60, 3.20, 0.30, 0.40, 5.40, 5.05),
-        g.box_center(2.60, 3.20, 0.30, 0.40, 5.40, 2.95),
+        g.box_center(0.30, lock_guide_depth, 3.60, -0.75, lock_guide_center_y, 3.40),
+        g.box_center(0.30, lock_guide_depth, 3.60, 1.55, lock_guide_center_y, 3.40),
+        g.box_center(2.60, lock_guide_depth, 0.30, 0.40, lock_guide_center_y, 5.05),
+        g.box_center(2.60, lock_guide_depth, 0.30, 0.40, lock_guide_center_y, 2.95),
     ):
         fixed_stop_shape = fixed_stop_shape.fuse(wall)
     # Machine the stop/lock body to the exact deployed arm and replaceable-pad
@@ -1438,21 +1456,74 @@ def build_arm_module(b: R2Builder) -> None:
             1.65, 3.40, cq.Vector(x, 3.00, 4.0), cq.Vector(0, 1, 0)
         ))
     spring_running_clearance = cq.Solid.makeCylinder(
-        0.82, 2.10, cq.Vector(0.4, 5.15, 4.0), cq.Vector(0, 1, 0)
+        0.82, 5.15, cq.Vector(0.4, 4.85, 4.0), cq.Vector(0, 1, 0)
     )
     fixed_stop_shape = fixed_stop_shape.cut(spring_running_clearance)
+    # Machine the stationary stop body to the measured 0..79 degree moving
+    # envelopes.  The 80-degree arm/pad reaction faces remain governed by the
+    # existing exact endpoint cuts above; only the observed mid-stroke ranges,
+    # plus one bounding sample, are removed here.
+    moving_screw_clearance = (
+        g.cyl_z(2.80, 3.10, z0=-3.05)
+        .fuse(g.cyl_z(1.15, 5.10, z0=-0.05))
+        .fuse(g.cyl_z(1.55, 3.10, z0=4.95))
+    )
+    stop_sweep_cutters: list[cq.Shape] = []
+    for angle in range(42, 80):
+        moving_arm_frame = g.arm_occurrence_loc(float(angle), 0.0)
+        stop_sweep_cutters.append(g.moved(arm.shape, stop_frame.inverse * moving_arm_frame))
+    for angle in range(69, 72):
+        moving_pad_frame = (
+            g.arm_occurrence_loc(float(angle), 0.0)
+            * g.translation_loc(4.0, 0.0, -8.5)
+        )
+        stop_sweep_cutters.append(g.moved(stop_pad_shape, stop_frame.inverse * moving_pad_frame))
+    for screw_x, angle_range in ((-2.80, range(42, 81)), (2.80, range(64, 81))):
+        for angle in angle_range:
+            moving_screw_frame = (
+                g.arm_occurrence_loc(float(angle), 0.0)
+                * g.translation_loc(4.0, 0.0, -8.5)
+                * g.translation_loc(screw_x, -1.80, 0.0)
+                * g.rotation_loc((1, 0, 0), -90.0)
+            )
+            stop_sweep_cutters.append(g.moved(
+                moving_screw_clearance, stop_frame.inverse * moving_screw_frame,
+            ))
+    for cutter in stop_sweep_cutters:
+        fixed_stop_shape = fixed_stop_shape.cut(cutter)
+    # The swept arm corridor opens the original inboard neck to the negative-Y
+    # side land.  Route a machined tie around that corridor at the outboard
+    # edges of both existing side lands, then reapply every motion cutter so
+    # the bridge can remain only where it is genuinely outside the audited
+    # moving volume.
+    swept_stop_bypass = g.box_center(1.0, 16.0, 1.0, 10.25, 0.0, 3.85)
+    fixed_stop_shape = fixed_stop_shape.fuse(swept_stop_bypass)
+    for cutter in stop_sweep_cutters:
+        fixed_stop_shape = fixed_stop_shape.cut(cutter)
     fixed_stop_shape = fixed_stop_shape.clean()
     fixed_stop_solids = fixed_stop_shape.Solids()
     if len(fixed_stop_solids) != 1 or not fixed_stop_shape.isValid():
+        closest_points = None
+        if len(fixed_stop_solids) == 2:
+            distance_probe = BRepExtrema_DistShapeShape(
+                fixed_stop_solids[0].wrapped, fixed_stop_solids[1].wrapped,
+            )
+            distance_probe.Perform()
+            if distance_probe.IsDone() and distance_probe.NbSolution() > 0:
+                closest_points = {
+                    "distance_mm": distance_probe.Value(),
+                    "solid_1_point": distance_probe.PointOnShape1(1).Coord(),
+                    "solid_2_point": distance_probe.PointOnShape2(1).Coord(),
+                }
         raise ValueError(
             f"Fixed stop must remain one valid collision-cleared exact solid; "
             f"found {len(fixed_stop_solids)} solids (valid={fixed_stop_shape.isValid()}), "
             f"solids={[(solid.Volume(), (solid.BoundingBox().xmin, solid.BoundingBox().xmax, solid.BoundingBox().ymin, solid.BoundingBox().ymax, solid.BoundingBox().zmin, solid.BoundingBox().zmax)) for solid in fixed_stop_solids]}, "
-            f"distance={fixed_stop_solids[0].distance(fixed_stop_solids[1]) if len(fixed_stop_solids) == 2 else None}"
+            f"closest_points={closest_points}"
         )
     fixed_stop = b.define(
-        "DF8-R2-FIXED-STOP-001", "C",
-        "80 DEGREE COLLISION-CLEARED FIXED STOP WITH TWO M3 AND TWO H7 SIDE-LAND FEATURES",
+        "DF8-R2-FIXED-STOP-001", "D",
+        "80 DEGREE SWEPT-CLEARANCE FIXED STOP WITH EXTENDED AUTOMATIC-LOCK GUIDE",
         fixed_stop_solids[0], "17-4PH stainless steel",
         process="5-axis mill; wire EDM lock guide; occurrence-match drill two M3 clearance and ream two H7 side-land bores; grind stop faces",
         color_key="steel",
@@ -1501,12 +1572,16 @@ def build_arm_module(b: R2Builder) -> None:
         "DF8-R2-AUTO-LOCK-DOG-001", "A", "SPRING-DRIVEN POSITIVE DEPLOYED LOCK DOG",
         lock_dog_shape, "17-4PH stainless steel", process="Swiss turn; H900; grind", color_key="steel",
     )
-    lock_spring_length = 1.95 if b.deployed else 1.65
+    lock_spring_length = (
+        LOCK_DEPLOYED_SPRING_LENGTH_MM
+        if b.deployed else LOCK_RETRACTED_SPRING_LENGTH_MM
+    )
     lock_spring = b.define(
-        "DF8-R2-AUTO-LOCK-SPRING-001", "A", "CAPTIVE AUTOMATIC-LOCK COMPRESSION SPRING",
+        "DF8-R2-AUTO-LOCK-SPRING-001", "B", "CAPTIVE LONG-STROKE AUTOMATIC-LOCK COMPRESSION SPRING",
         g.make_compression_spring_local(1.60, 0.16, lock_spring_length, 5.0),
-        "1.4310 stainless spring steel", process="Micro-coil; stress relieve; inspect force and installed lengths",
-        notes="Endpoint B-reps bound the 1.65-1.95 mm installed stroke; spring remains captive between the dog head and press-fit outer bushing.",
+        "1.4310 stainless spring steel", mass_kg=LOCK_SPRING_MASS_KG,
+        process="Micro-coil; stress relieve; inspect force and 1.65-4.95 mm installed lengths",
+        notes="Endpoint B-reps bound the 3.30 mm snap-lock stroke; physical wire mass is state-invariant and the spring remains captive between the dog head and press-fit outer bushing.",
         color_key="spring",
     )
     lock_bushing_shape = g.ring_y(0.0, 0.0, 0.30, 1.0, 0.82)
@@ -3445,19 +3520,23 @@ def add_motion_tracks(b: R2Builder) -> None:
             {
                 "angle_deg": angle,
                 "transform_matrix_3x4": g.loc_matrix(
-                    stop_loc * g.translation_loc(0.4, 3.65 if angle == 80 else 3.95, 4.0)
+                    stop_loc * g.translation_loc(
+                        0.4,
+                        LOCK_DEPLOYED_DOG_Y_MM if angle == 80 else LOCK_RETRACTED_DOG_Y_MM,
+                        4.0,
+                    )
                 ),
             }
             for angle in range(81)
         ]
         b.add_motion_track(
             f"LOCK-DOG-{arm_index}", "KEYFRAMED_TRANSFORMS",
-            "Spring-driven lock dog remains captive/retracted until the arm stop pad bore aligns, then advances into positive engagement at 80 degrees.",
+            "Spring-driven lock dog remains fully retracted outside the arm and pad-screw envelopes through 79 degrees, then advances 3.30 mm into positive engagement after bore alignment at 80 degrees.",
             samples=lock_samples,
         )
         lock_spring_loc = (
             stop_loc
-            * g.translation_loc(0.4, 6.90, 4.0)
+            * g.translation_loc(0.4, LOCK_SPRING_OUTER_SEAT_Y_MM, 4.0)
             * g.rotation_loc((1, 0, 0), 90.0)
         )
         lock_spring_samples = [
@@ -3470,7 +3549,7 @@ def add_motion_tracks(b: R2Builder) -> None:
         ]
         b.add_motion_track(
             f"LOCK-SPRING-{arm_index}", "KEYFRAMED_EXACT_BREP_VARIANTS",
-            "The lock remains retracted through 79 degrees and advances at 80 degrees: each sample audits exactly the installed-length endpoint B-rep matching the lock-dog keyframe.",
+            "The lock remains fully retracted through 79 degrees and advances 3.30 mm at 80 degrees: each sample audits the exact 1.65 or 4.95 mm installed-length endpoint B-rep matching the lock-dog keyframe.",
             samples=lock_spring_samples,
         )
 
@@ -3627,7 +3706,9 @@ def main() -> None:
         name_assembly_usage_occurrences(out)
         builders.append(builder)
         data = serialize_builder(builder)
-        (ANALYSIS_DIR / f"authoring_inventory_{state.lower()}.json").write_text(json.dumps(data, indent=2), encoding="utf-8")
+        (ANALYSIS_DIR / f"authoring_inventory_{state.lower()}.json").write_text(
+            json.dumps(data, indent=2), encoding="utf-8", newline="\n",
+        )
         print(f"Wrote {out} ({out.stat().st_size} bytes)", flush=True)
 
     manifest = {
@@ -3660,7 +3741,9 @@ def main() -> None:
             "sha256": hashlib.sha256(inventory_path.read_bytes()).hexdigest(),
             "size_bytes": inventory_path.stat().st_size,
         }
-    (ANALYSIS_DIR / "authoring_manifest.json").write_text(json.dumps(manifest, indent=2), encoding="utf-8")
+    (ANALYSIS_DIR / "authoring_manifest.json").write_text(
+        json.dumps(manifest, indent=2), encoding="utf-8", newline="\n",
+    )
     print(json.dumps(manifest, indent=2), flush=True)
 
 

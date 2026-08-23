@@ -887,6 +887,38 @@ def make_arm_part_local() -> cq.Shape:
         arm = arm.cut(cyl_z(2.85, 3.20, 5.6, y, -13.10))
         arm = arm.cut(cyl_z(1.20, 5.40, 5.6, y, -10.20))
         arm = arm.cut(cyl_z(1.65, 3.40, 5.6, y, -5.20))
+    # The stationary stop-land screws and dowels trace short arcs through the
+    # arm-local frame during deployment.  Endpoint-only cylindrical reliefs
+    # left positive-volume intersections at 36..66 degrees (dowels) and
+    # 77..78 degrees (screw heads).  Machine their measured one-degree swept
+    # envelopes with 0.05 mm radial/axial stock allowance, including one
+    # bounding sample on either side of every observed range.
+    stop_frame = (
+        arm_occurrence_loc(DEPLOYED_ANGLE, 0.0)
+        * translation_loc(4.0, 0.0, -8.5)
+        * translation_loc(-0.4, 0.0, -4.0)
+    )
+    fixed_screw_clearance = (
+        cyl_z(2.80, 3.10, z0=-3.05)
+        .fuse(cyl_z(1.15, 5.10, z0=-0.05))
+        .fuse(cyl_z(1.55, 3.10, z0=4.95))
+    )
+    dowel_clearance = cyl_z(1.55, 8.10, z0=-0.05)
+    swept_fixed_hardware_cutters: list[cq.Shape] = []
+    for angle in range(35, 68):
+        stop_to_arm = arm_occurrence_loc(float(angle), 0.0).inverse * stop_frame
+        for y in (-8.0, 8.0):
+            swept_fixed_hardware_cutters.append(
+                moved(dowel_clearance, stop_to_arm * translation_loc(7.0, y, 3.05))
+            )
+    for angle in range(76, 81):
+        stop_to_arm = arm_occurrence_loc(float(angle), 0.0).inverse * stop_frame
+        for y in (-7.8, 7.8):
+            swept_fixed_hardware_cutters.append(
+                moved(fixed_screw_clearance, stop_to_arm * translation_loc(2.0, y, 2.50))
+            )
+    for cutter in swept_fixed_hardware_cutters:
+        arm = arm.cut(cutter)
     solids = arm.Solids()
     if len(solids) > 1:
         ordered = sorted(solids, key=lambda solid: solid.Volume(), reverse=True)
@@ -959,13 +991,34 @@ def make_pivot_carrier_local() -> cq.Shape:
         pieces.append(ear.fuse(bridge))
     out = pieces[0].fuse(pieces[1])
     bore = cq.Solid.makeCylinder(4.15, 18.0, cq.Vector(0.0, -9.0, 0.0), cq.Vector(0, 1, 0))
-    # The bell-end link pin sits immediately outboard/aft of the pivot.  A
-    # reamed access tunnel through the carrier bridge prevents the pin head
-    # from occupying carrier stock while leaving both pivot ears continuous.
-    bell_pin_access = cq.Solid.makeCylinder(
-        3.25, 20.0, cq.Vector(BELL_U, -10.0, BELL_V), cq.Vector(0, 1, 0)
-    )
-    return out.cut(bore).cut(bell_pin_access)
+    # The bell-end link pin rotates with the arm, so a single endpoint tunnel
+    # is not a valid service corridor.  The exact audit localizes the positive
+    # common volume to 3..22 degrees, so cut 0..23 degrees at the controlling
+    # one-degree increment with 0.05 mm radial clearance.  Later positions are
+    # already outside carrier stock; both matched lug solids must remain valid.
+    carrier = out.cut(bore)
+    for angle in range(24):
+        theta = math.radians(float(angle))
+        center_x = BELL_U * math.cos(theta) + BELL_V * math.sin(theta)
+        center_z = -BELL_U * math.sin(theta) + BELL_V * math.cos(theta)
+        bell_pin_access = cq.Solid.makeCylinder(
+            3.30, 20.0,
+            cq.Vector(center_x, -10.0, center_z), cq.Vector(0, 1, 0),
+        )
+        carrier = carrier.cut(bell_pin_access)
+    carrier = carrier.clean()
+    carrier_solids = carrier.Solids()
+    if (
+        len(carrier_solids) != 2
+        or not carrier.isValid()
+        or any(not solid.isValid() or solid.Volume() <= 0.0 for solid in carrier_solids)
+    ):
+        raise ValueError(
+            "Pivot carrier swept bell-pin access must retain two valid positive lug solids; "
+            f"solids={len(carrier_solids)}, valid={carrier.isValid()}, "
+            f"volumes={[solid.Volume() for solid in carrier_solids]}"
+        )
+    return carrier
 
 
 def make_link_part_local() -> cq.Shape:

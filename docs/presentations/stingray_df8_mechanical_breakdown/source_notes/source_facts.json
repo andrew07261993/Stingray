@@ -1,0 +1,205 @@
+{
+  "schema": "STINGRAY_DF8_PRESENTATION_SOURCE_FACTS_V1",
+  "authoritative_source_root": "C:/Users/ANDRE.ANDREWSPC/Documents/Codex/2026-08-23/stingray-i5-s-df8-state-parity",
+  "source_commit_sha": "61a58cbbccd0aae7a747b2a73046142cf1f44511",
+  "source_commit_timestamp": "2026-08-23T12:36:47-05:00",
+  "source_branch": "audit/state-parity-provenance",
+  "source_files": {
+    "current_state": "CURRENT_STATE.json",
+    "authoring_manifest": "work/final_analysis/authoring_manifest.json",
+    "stowed_ap242": "work/final_release/STINGRAY_I5S_DF8_FINAL_STOWED_MASTER_AP242.step",
+    "deployed_ap242": "work/final_release/STINGRAY_I5S_DF8_FINAL_DEPLOYED_MASTER_AP242.step",
+    "state_parity_summary": "work/final_analysis/state_parity_provenance_audit/state_parity_provenance_summary.json",
+    "manual_checkpoint": "work/final_analysis/manual_inspection_checkpoint/CAD_INSPECTION_STATUS.txt"
+  },
+  "hard_requirements": {
+    "arm_module_od_max_mm": 57.15,
+    "normal_body_target_mm": 53.0,
+    "arm_clocking_deg": [
+      0.0,
+      120.0,
+      240.0
+    ],
+    "arm_deployed_angle_deg": 80.0,
+    "arm_pivot_to_tip_mm": 733.806,
+    "rigid_length_max_mm": 2032.0,
+    "mass_max_kg": 18.14,
+    "crosshead_travel_min_mm": 15.05
+  },
+  "dimensions_mass_reserve": {
+    "arm_module_stowed_bbox_mm": {
+      "xmax": 28.5,
+      "xmin": -28.5,
+      "ymax": 28.550301090003998,
+      "ymin": -28.5,
+      "zmax": 1754.3135211750873,
+      "zmin": 829.6837722339836
+    },
+    "arm_module_stowed_od_mm": 57.050301090004,
+    "crosshead_travel_independent_mm": 15.05503437113498,
+    "crosshead_travel_reimported_mm": 15.055034371129977,
+    "deployed_all_geometry_length_mm": 2522.25,
+    "deployed_rigid_length_mm": 2031.0000001,
+    "mass_invalid_occurrence_ids": [],
+    "mass_reserve_kg": 6.410945597270372,
+    "mass_unresolved_occurrence_ids": [],
+    "normal_body_oml_xy_spans_mm": {
+      "AFT-SHELL-001": 53.0000002,
+      "FIXED-SECTOR-1": 24.00691983422691,
+      "FIXED-SECTOR-2": 27.634148354041656,
+      "FIXED-SECTOR-3": 24.006919934225674,
+      "FWD-SHELL-001": 53.00000020118784
+    },
+    "stowed_all_geometry_length_mm": 2031.0000001,
+    "stowed_rigid_length_mm": 2031.0000001,
+    "system_mass_kg": 11.729054402729629
+  },
+  "mass_properties": {
+    "stowed": {
+      "state": "STOWED",
+      "occurrence_count": 279,
+      "unique_part_definition_count": 121,
+      "system_mass_kg": 11.728961173208724,
+      "center_of_gravity_mm_in_master_frame": {
+        "x": -0.09564408661837116,
+        "y": 0.04057414907451528,
+        "z": 581.8338143650207
+      },
+      "calculation_basis": "Mass-weighted global volume centroid of every authoritative occurrence B-rep; mass follows the validator aggregation rule and the committed authoring inventory (occurrence override, part override, then part-master mass).",
+      "mass_basis_precedence": [
+        "STATE_INVARIANT_OCCURRENCE_OVERRIDE",
+        "STATE_INVARIANT_PART_OVERRIDE",
+        "COMMITTED_AUTHORING_INVENTORY_PART_MASTER_MASS"
+      ]
+    },
+    "deployed": {
+      "state": "DEPLOYED",
+      "occurrence_count": 279,
+      "unique_part_definition_count": 121,
+      "system_mass_kg": 11.728961173208878,
+      "center_of_gravity_mm_in_master_frame": {
+        "x": -0.03680933695422033,
+        "y": 0.039006760570744065,
+        "z": 584.4034019709278
+      },
+      "calculation_basis": "Mass-weighted global volume centroid of every authoritative occurrence B-rep; mass follows the validator aggregation rule and the committed authoring inventory (occurrence override, part override, then part-master mass).",
+      "mass_basis_precedence": [
+        "STATE_INVARIANT_OCCURRENCE_OVERRIDE",
+        "STATE_INVARIANT_PART_OVERRIDE",
+        "COMMITTED_AUTHORING_INVENTORY_PART_MASTER_MASS"
+      ]
+    }
+  },
+  "mass_reconciliation": {
+    "source_derived_inventory_mass_kg": 11.728961173208724,
+    "current_state_metadata_mass_kg": 11.729054402729629,
+    "source_minus_metadata_kg": -9.322952090506931e-05,
+    "absolute_difference_kg": 9.322952090506931e-05,
+    "source_derived_mass_reserve_kg": 6.411038826791277,
+    "disposition": "RECORDED_SOURCE_METADATA_DISCREPANCY \u2014 exact current source and committed authoring inventory control the presentation calculation"
+  },
+  "validation": {
+    "computed_release_status": "NOT_RELEASED_VALIDATOR_FAILURE",
+    "package_required_label": "INCOMPLETE TERMINAL AUDIT \u2014 NOT RELEASED",
+    "latest_validator_exit_code": 1,
+    "validator_failure_stage": "POST_MERGE_MOTION_KINEMATICS_SCHEMA_CHECK",
+    "validator_failure_message": "'angle_deg'",
+    "state_parity_provenance_register_row_count": 64,
+    "state_parity_provenance_register_resolved_count": 64,
+    "state_parity_occurrence_count": 279,
+    "state_parity_occurrence_pass_count": 279,
+    "state_parity_summary": {
+      "source_checkpoint_git_sha": "fcca6642077cf9a420e703c3f7d53b8913501f5a",
+      "original_mismatch_count": 64,
+      "original_serialized_hash_mismatch_count": 64,
+      "same_checkpoint_prior_reimport_hash_mismatch_count": 64,
+      "same_checkpoint_prior_exact_common_equivalent_count": 64,
+      "current_run_serialized_hash_match_count": 64,
+      "forced_exact_common_volume_equivalent_count": 64,
+      "category_a_count": 30,
+      "category_b_count": 34,
+      "category_c_count": 0,
+      "fixed_unchanged_transform_count": 30,
+      "moving_expected_transform_change_count": 34,
+      "moving_mechanism_track_coverage_count": 34,
+      "expected_attachment_change_count": 6,
+      "classified_count": 64,
+      "reconciliation_complete": true,
+      "current_validator_union_occurrence_count": 279,
+      "current_validator_mismatch_count": 0,
+      "current_validator_identity_issue_count": 0,
+      "current_validator_hierarchy_issue_count": 0,
+      "current_validator_overall_issue_count": 0,
+      "unresolved_mismatch_count": 0,
+      "unresolved_occurrence_ids": [],
+      "actual_cad_geometry_defect_found": false,
+      "cad_geometry_files_changed": [],
+      "state_parity_provenance_gate_resolved": true,
+      "root_cause_summary": "The original validator treated byte-for-byte OCCT local-BREP serialization as exact geometry identity. For the same current AP242 master hashes, validation_cycle2 produced 64 differing state digests while proving exact common volume, and this fresh reimport produced 64 matching state digests; therefore the digest is process-unstable and non-semantic. Fixed rows are invariant; moving rows carry authoritative expected endpoint transform or attachment changes.",
+      "validator_correction": {
+        "source_file": "work/r2_source/validate_r2.py",
+        "prior_correction_commit": "6c23e798c5442a02fadde9698eec63f2ed7ce50f",
+        "geometry_policy": "stable occurrence/part/path checks plus local exact common-volume equivalence",
+        "transform_policy": "each XCAF endpoint transform must match its authoritative occurrence transform; fixed transforms must remain invariant"
+      },
+      "tolerances": {
+        "exact_common_full_volume_mm3": 1e-05,
+        "transform_matrix_max_abs_element": 1e-08,
+        "local_metric_mm": 1e-08
+      },
+      "input_evidence": {
+        "original_mismatch_csv": {
+          "path": "work/final_analysis/validation/state_parity.csv",
+          "sha256": "c34d0d627ce95baac167933ae147f1ad7ff84575b295d1ec326277eff47ef120"
+        },
+        "same_checkpoint_prior_parity": {
+          "path": "work/final_analysis/validation_cycle2/state_parity.csv",
+          "sha256": "b79bc43b6b0930a8f8367a465509e68b8a94b8b1f1a19da176711e7558e905f6"
+        },
+        "same_checkpoint_step_hash_binding": {
+          "path": "work/final_analysis/validation_cycle2/step_text_inspection.json",
+          "sha256": "0d1c35f41d6486221cae9c282ac488b6c9c290656e772b18fc73c007799faad3"
+        },
+        "stowed_master": {
+          "path": "work/final_release/STINGRAY_I5S_DF8_FINAL_STOWED_MASTER_AP242.step",
+          "sha256": "1a81a08fc269a4cabef3ffc47be4340bd17d00b3676393c336cf32366400ba0a"
+        },
+        "deployed_master": {
+          "path": "work/final_release/STINGRAY_I5S_DF8_FINAL_DEPLOYED_MASTER_AP242.step",
+          "sha256": "9ffa85af11c4c129dca60b8d9cd012a6a1103f9df5367bd42a72795978051b97"
+        },
+        "stowed_inventory": {
+          "path": "work/final_analysis/authoring_inventory_stowed.json",
+          "sha256": "2789eeabb344602339394794cac6d2d7bfcd121b584127eed601352c9cf1ccea"
+        },
+        "deployed_inventory": {
+          "path": "work/final_analysis/authoring_inventory_deployed.json",
+          "sha256": "fa93617725ab0b8b76360f34dfdf6d1cdd727e8e589f1e6fbbd0c47bb48d06ca"
+        },
+        "validator": {
+          "path": "work/r2_source/validate_r2.py",
+          "sha256": "ac1e8842f00c875032fd3d75b0592780785a95a3b99750aace99b5335a5f8196"
+        },
+        "audit_program": {
+          "path": "work/r2_source/audit_state_parity_provenance.py",
+          "sha256": "bd63bae4eb5ede8db60b9ae1c7fa6beb77b5d7fbd65f9999558af5b35c9ec931"
+        }
+      },
+      "scope_note": "This endpoint parity audit does not execute or satisfy the separate exact 0-80 degree motion-validation requirement."
+    },
+    "manual_checkpoint_text": "STINGRAY I5-S DF8 \u2014 MANUAL CAD INSPECTION CHECKPOINT\n\nDISPOSITION\nFOR MANUAL CAD INSPECTION ONLY.\nTHIS IS NOT THE FINAL RELEASE PACKAGE.\n\nFULL 0\u00b0\u201380\u00b0 MOTION GATE\nINCOMPLETE \u2014 OWNER ELECTED TO STOP AUTOMATED MOTION SWEEP FOR MANUAL CAD INSPECTION\n\nAUTHORITATIVE FROZEN CAD STATE\nAuthoritative source commit SHA: faf16a4d37b553024ea3d5c8865b9f820712c014\nAuthoritative source path: work/r2_source\nRepository root at checkpoint creation: C:\\Users\\ANDRE.ANDREWSPC\\Documents\\Codex\\2026-08-22\\stingray-i5-s-df8-codex-one\\stingray-i5s-df8-cad\nSTOWED STEP filename: STINGRAY_I5S_DF8_FINAL_STOWED_MASTER_AP242.step\nDEPLOYED STEP filename: STINGRAY_I5S_DF8_FINAL_DEPLOYED_MASTER_AP242.step\nSTEP/source binding: both STEP candidates are unchanged from the authoritative source/STEP commit above and their size and SHA-256 records match work/final_analysis/authoring_manifest.json.\n\nAUTOMATED MOTION STATUS\nCompleted automated motion range: 0\u00b0 through 55\u00b0 inclusive at 1\u00b0 increments.\nFirst unvalidated motion angle: 56\u00b0.\nAccepted completed-angle count: 56.\nCompleted-range result: 0 unauthorized positive-volume pairs; 0 boolean-blocked pairs; 0 distance-blocked pairs.\nNo angle at or above 56\u00b0 is accepted as completed validation evidence in this checkpoint.\n\nLAST COMPLETED ENDPOINT VALIDATION\nSTOWED: 308 closed leaf solids; 47,278 exhaustive unordered pairs; 100 documented positive-volume fit pairs; 0 unauthorized positive-volume pairs; 0 boolean-blocked pairs; 0 distance-blocked pairs.\nDEPLOYED: 308 closed leaf solids; 47,278 exhaustive unordered pairs; 110 documented positive-volume fit pairs; 0 unauthorized positive-volume pairs; 0 boolean-blocked pairs; 0 distance-blocked pairs.\n\nKNOWN UNRESOLVED VALIDATOR CONDITIONS\n1. The full 0\u00b0\u201380\u00b0 motion gate is incomplete by owner election and is not a PASS.\n2. The stopped validation run did not generate a complete merged motion_audit_summary.json, gate_results.json, validation_summary.json, or validation_manifest.json for the frozen Cycle 2 configuration; final release validation therefore remains incomplete.\n3. No other active validator/provenance discrepancy is known in the frozen configuration. The current state-parity register contains 279 of 279 PASS rows.\n4. Creo is not required by the controlling commission and is not an acceptance blocker.\n\nRESUMPTION\nThe remaining automated motion sweep can be resumed later from the preserved repository state without replacing the frozen authoritative source or the two STEP candidates.\n\n",
+    "completed_automated_motion_range_deg": [
+      0,
+      55
+    ],
+    "first_unvalidated_motion_angle_deg": 56,
+    "accepted_completed_angle_count": 56,
+    "full_motion_gate_status": "INCOMPLETE \u2014 NOT PASS"
+  },
+  "limitations": [
+    "Current final R2 validation is not release-authorized.",
+    "The accepted automated motion checkpoint covers 0 through 55 degrees only; 56 through 80 degrees remain unvalidated in that checkpoint.",
+    "No physical, environmental, calibrated damper force-speed, or manufacturing qualification evidence is asserted by this presentation.",
+    "Computed CG values are source-derived CAD mass-property calculations, not a measured physical balance result."
+  ]
+}

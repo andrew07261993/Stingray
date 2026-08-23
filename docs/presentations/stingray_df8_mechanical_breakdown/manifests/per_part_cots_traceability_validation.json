@@ -1,0 +1,31 @@
+{
+  "schema": "STINGRAY_DF8_COTS_TRACEABILITY_VALIDATION_V1",
+  "status": "PASS",
+  "evidence_review_date": "2026-08-23",
+  "scope_note": "PASS means the traceability schema is complete and fail-closed. It does not mean any received COTS unit or supplier CoC has been accepted.",
+  "counts": {
+    "catalog_rows": 121,
+    "make_rows": 104,
+    "buy_definition_rows": 17,
+    "included_buy_definition_rows": 12,
+    "excluded_buy_fastener_rows": 5,
+    "buy_parent_purchase_lines": 15,
+    "buy_subcomponent_child_rows": 2,
+    "buy_serial_lot_or_heat_verified": 0,
+    "buy_certificate_of_conformance_verified": 0
+  },
+  "checks": {
+    "traceability_row_count_121": true,
+    "make_row_count_104": true,
+    "buy_definition_row_count_17": true,
+    "included_buy_definition_row_count_12": true,
+    "excluded_buy_fastener_row_count_5": true,
+    "required_fields_complete": true,
+    "child_parent_links_valid": true,
+    "buy_catalog_fields_complete": true,
+    "no_unsubstantiated_serial_lot_verification": true,
+    "no_unsubstantiated_coc_verification": true,
+    "all_buy_rows_fail_closed": true
+  },
+  "release_disposition": "COTS RECEIVING EVIDENCE INCOMPLETE — NOT RELEASED"
+}

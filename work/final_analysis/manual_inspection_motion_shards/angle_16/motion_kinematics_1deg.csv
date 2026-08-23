@@ -1,0 +1,2 @@
+arm_angle_deg,bell_r_mm,bell_z_mm,crosshead_z_mm,crosshead_travel_mm,closure_residual_mm,sample_index,active_dynamic_occurrences,broadphase_candidates,unauthorized_positive_volume_pairs,documented_positive_volume_pairs,boolean_blocked_pairs,distance_blocked_pairs
+16.0,26.248306377982907,906.9975311285428,925.1625508613955,2.863812427472908,1.0658141036401503e-14,17,61,404,0,15,0,0

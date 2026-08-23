@@ -1,0 +1,37 @@
+STINGRAY I5-S DF8 — MANUAL CAD INSPECTION CHECKPOINT
+
+DISPOSITION
+FOR MANUAL CAD INSPECTION ONLY.
+THIS IS NOT THE FINAL RELEASE PACKAGE.
+
+FULL 0°–80° MOTION GATE
+INCOMPLETE — OWNER ELECTED TO STOP AUTOMATED MOTION SWEEP FOR MANUAL CAD INSPECTION
+
+AUTHORITATIVE FROZEN CAD STATE
+Authoritative source commit SHA: faf16a4d37b553024ea3d5c8865b9f820712c014
+Authoritative source path: work/r2_source
+Repository root at checkpoint creation: C:\Users\ANDRE.ANDREWSPC\Documents\Codex\2026-08-22\stingray-i5-s-df8-codex-one\stingray-i5s-df8-cad
+STOWED STEP filename: STINGRAY_I5S_DF8_FINAL_STOWED_MASTER_AP242.step
+DEPLOYED STEP filename: STINGRAY_I5S_DF8_FINAL_DEPLOYED_MASTER_AP242.step
+STEP/source binding: both STEP candidates are unchanged from the authoritative source/STEP commit above and their size and SHA-256 records match work/final_analysis/authoring_manifest.json.
+
+AUTOMATED MOTION STATUS
+Completed automated motion range: 0° through 55° inclusive at 1° increments.
+First unvalidated motion angle: 56°.
+Accepted completed-angle count: 56.
+Completed-range result: 0 unauthorized positive-volume pairs; 0 boolean-blocked pairs; 0 distance-blocked pairs.
+No angle at or above 56° is accepted as completed validation evidence in this checkpoint.
+
+LAST COMPLETED ENDPOINT VALIDATION
+STOWED: 308 closed leaf solids; 47,278 exhaustive unordered pairs; 100 documented positive-volume fit pairs; 0 unauthorized positive-volume pairs; 0 boolean-blocked pairs; 0 distance-blocked pairs.
+DEPLOYED: 308 closed leaf solids; 47,278 exhaustive unordered pairs; 110 documented positive-volume fit pairs; 0 unauthorized positive-volume pairs; 0 boolean-blocked pairs; 0 distance-blocked pairs.
+
+KNOWN UNRESOLVED VALIDATOR CONDITIONS
+1. The full 0°–80° motion gate is incomplete by owner election and is not a PASS.
+2. The stopped validation run did not generate a complete merged motion_audit_summary.json, gate_results.json, validation_summary.json, or validation_manifest.json for the frozen Cycle 2 configuration; final release validation therefore remains incomplete.
+3. No other active validator/provenance discrepancy is known in the frozen configuration. The current state-parity register contains 279 of 279 PASS rows.
+4. Creo is not required by the controlling commission and is not an acceptance blocker.
+
+RESUMPTION
+The remaining automated motion sweep can be resumed later from the preserved repository state without replacing the frozen authoritative source or the two STEP candidates.
+

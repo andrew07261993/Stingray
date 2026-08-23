@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "manifest_path": "C:/Users/ANDRE.ANDREWSPC/CodexProjects/stingray-stakeholder-powerpoint/docs/presentations/stingray_df8_mechanical_breakdown/manifests/per_part_render_manifest.json",
+  "counts": {
+    "part_definition_count": 121,
+    "included_render_count": 116,
+    "fastener_exclusion_count": 5,
+    "o_ring_exclusion_count": 0
+  },
+  "unrenderable_parts": [],
+  "issues": []
+}

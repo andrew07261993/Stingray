@@ -1,0 +1,24 @@
+# TASK_STATE
+
+- objective: Create a targeted COTS retrofit while preserving architecture and baseline envelope/kinematics.
+- baseline_source_commit: 61a58cbbccd0aae7a747b2a73046142cf1f44511
+- baseline_docs_commit: 95766a1bfc7bcc48416b83c7b25fcbd482ac0608
+- source_worktree_path: C:\Users\ANDRE.ANDREWSPC\Documents\Codex\2026-08-23\stingray-i5-s-df8-state-parity-targeted-retrofit
+- docs_worktree_path: C:\Users\ANDRE.ANDREWSPC\Documents\Codex\2026-08-23\stingray-docs
+- source_branch: design/df8-targeted-cots-retrofit
+- docs_branch: design/df8-targeted-cots-retrofit
+- completed_phase: Phase 1
+- current_counts:
+  - unique_partdefs: 121
+  - make_partdefs: 104
+  - buy_partdefs: 17
+  - independently_orderable_line_items: 15
+  - child_geometry_defs_excluded: 2
+  - standard_fasteners_excluded: 5
+  - state_parity_occurrences: 279
+  - baseline_motion_angle_approved_deg: 55
+  - release_status: NOT RELEASED
+- next_exact_action: Continue to Phase 2 with candidate screening only after procurement-compatible evidence and fit verification are collected.
+- known_blockers: CoC, serial/lot/batch linkage and procurement evidence are not yet verified for any candidate substitutions.
+- blockers: No architectural blockers introduced in this pass.
+- last_updated_utc: 2026-08-23T20:42:30Z

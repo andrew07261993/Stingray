@@ -1,0 +1,60 @@
+{
+  "generated_utc": "2026-08-23T20:42:05Z",
+  "before": {
+    "unique_partdefs": 121,
+    "independently_orderable_line_items": 15,
+    "cots_parent_purchase_lines": 15,
+    "cots_child_geometry_defs": 2,
+    "functional_cots_lines_excluding_fasteners_and_geometry": 10,
+    "custom_unique_parts": 104,
+    "custom_adapters_introduced": 0,
+    "items_with_catalog_identity_verified": 10,
+    "items_with_coc_availability_verified": 0,
+    "items_with_procurement_evidence": 0,
+    "items_with_received_item_cocs": 0,
+    "mass_kg": 10.468786223479103,
+    "cg": "not_available"
+  },
+  "after": {
+    "unique_partdefs": 121,
+    "independently_orderable_line_items": 15,
+    "cots_parent_purchase_lines": 15,
+    "cots_child_geometry_defs": 2,
+    "functional_cots_lines_excluding_fasteners_and_geometry": 10,
+    "custom_unique_parts": 104,
+    "custom_adapters_introduced": 0,
+    "items_with_catalog_identity_verified": 10,
+    "items_with_coc_availability_verified": 0,
+    "items_with_procurement_evidence": 0,
+    "items_with_received_item_cocs": 0,
+    "mass_kg": 10.468786223479103,
+    "cg": "not_available"
+  },
+  "percentages": {
+    "unique_partdefs_cots": {
+      "numerator": 10,
+      "denominator": 114,
+      "value": 8.771929824561402
+    },
+    "parent_purchase_lines": {
+      "numerator": 15,
+      "denominator": 121,
+      "value": 12.396694214876034
+    },
+    "catalog_identity_verified": {
+      "numerator": 0,
+      "denominator": 121,
+      "value": 0.0
+    },
+    "coc_available_verified": {
+      "numerator": 0,
+      "denominator": 15,
+      "value": 0.0
+    }
+  },
+  "practical_ceiling": {
+    "status": "below_50_percent",
+    "value_percent": 8.771929824561402,
+    "reason": "No new replacements were accepted in this phase."
+  }
+}

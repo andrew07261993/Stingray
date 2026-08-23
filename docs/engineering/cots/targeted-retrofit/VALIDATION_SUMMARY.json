@@ -1,0 +1,25 @@
+{
+  "generated_utc": "2026-08-23T20:42:05Z",
+  "source_branch": "design/df8-targeted-cots-retrofit",
+  "docs_branch": "design/df8-targeted-cots-retrofit",
+  "phase": "Phase 1",
+  "baseline_validation_preserved": true,
+  "checks_run_this_phase": [
+    "baseline_output_derivation"
+  ],
+  "checks_skipped_this_phase": [
+    "rebuild_endpoints",
+    "state_parity_recheck",
+    "motion_0_to_55_rerun",
+    "motion_55_to_80_rerun",
+    "new_attachment_connectivity"
+  ],
+  "status": {
+    "baseline_mass_kg": 10.468786223479103,
+    "mass_limit_kg": 18.14,
+    "margin_kg": 7.671213776520897,
+    "state_parity_occurrences": 279,
+    "cg_present": false,
+    "release_status": "NOT RELEASED"
+  }
+}

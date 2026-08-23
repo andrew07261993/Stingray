@@ -109,16 +109,16 @@ function addFooter(slide, slideNumber, label = "STINGRAY I5-S DF8 | Engineering 
   });
 }
 
-function addHeader(slide, title, eyebrow, slideNumber, accent = COLORS.blue) {
+function addHeader(slide, title, eyebrow, slideNumber, accent = COLORS.blue, titleFontSize = 46) {
   slide.background.fill = COLORS.white;
   addText(slide, eyebrow.toUpperCase(), pos(72, 38, 760, 24), {
     fontSize: 16,
     bold: true,
     color: accent,
-    characterSpacing: 1.2,
+    characterSpacing: 1,
   });
   addText(slide, title, pos(72, 67, 1080, 58), {
-    fontSize: 46,
+    fontSize: titleFontSize,
     bold: true,
     color: COLORS.navy,
   });
@@ -158,9 +158,9 @@ function addBulletBlock(slide, title, items, position, accent = COLORS.blue) {
   });
 }
 
-function addMetric(slide, value, label, left, top, width, accent = COLORS.blue) {
+function addMetric(slide, value, label, left, top, width, accent = COLORS.blue, valueFontSize = 54) {
   addText(slide, value, pos(left, top, width, 66), {
-    fontSize: 54,
+    fontSize: valueFontSize,
     bold: true,
     color: accent,
   });
@@ -188,7 +188,7 @@ let slideNumber = 0;
   slideNumber += 1;
   slide.background.fill = COLORS.navy;
   addText(slide, "STINGRAY I5-S DF8", pos(72, 84, 535, 74), {
-    fontSize: 68,
+    fontSize: 54,
     bold: true,
     color: COLORS.white,
   });
@@ -211,7 +211,7 @@ let slideNumber = 0;
     fontSize: 16,
     bold: true,
     color: "#6FC2D8",
-    characterSpacing: 1.1,
+    characterSpacing: 1,
   });
   setNotes(slide, [
     sourceRef("work/r2_source/build_r2.py"),
@@ -288,7 +288,7 @@ let slideNumber = 0;
     const top = 155 + i * 119;
     addText(slide, zone[0], pos(724, top, 54, 44), { fontSize: 28, bold: true, color: COLORS.blue });
     addText(slide, zone[1], pos(790, top, 350, 34), { fontSize: 25, bold: true, color: COLORS.navy });
-    addText(slide, zone[2], pos(790, top + 38, 418, 68), { fontSize: 21.5, color: COLORS.slate });
+    addText(slide, zone[2], pos(790, top + 38, 418, 68), { fontSize: 18.5, color: COLORS.slate, lineSpacing: 1 });
     if (i < zones.length - 1) addRect(slide, pos(724, top + 108, 484, 1), COLORS.line, "none");
   });
   setNotes(slide, [
@@ -306,7 +306,7 @@ let slideNumber = 0;
   const steps = [
     ["01", "Wet", "Water reaches the screened inlet and source-controlled bobbin housing."],
     ["02", "Release", "The water-sensitive trigger chain releases the puncture action."],
-    ["03", "Open flow", "Cartridge puncture feeds collection/check-valve/full-flow routing."],
+    ["03", "Open flow", "Cartridge puncture feeds the collection path, check valve and full-flow route."],
     ["04", "Deploy arms", "GS-19, HBD and backup spring act through the guided crosshead and link pairs."],
     ["05", "Eject buoy", "Latch/sear release lets the guided ejector spring drive the follower and open the captive door."],
     ["06", "Carry load", "Inflated buoy load transfers through harness, terminal, tether and rigid hardpoint."],
@@ -524,7 +524,7 @@ let slideNumber = 0;
   addMetric(slide, `${facts.validation.state_parity_occurrence_pass_count}/${facts.validation.state_parity_occurrence_count}`, "State-parity occurrences pass", 72, 165, 255, COLORS.green);
   addMetric(slide, "0°–55°", "Accepted automated checkpoint", 355, 165, 255, COLORS.teal);
   addMetric(slide, "56°–80°", "Not accepted as completed", 638, 165, 255, COLORS.amber);
-  addMetric(slide, "NOT RELEASED", "Current package disposition", 920, 165, 265, COLORS.red);
+  addMetric(slide, "NOT RELEASED", "Current package disposition", 920, 165, 265, COLORS.red, 36);
   addBulletBlock(slide, "What is current", [
     "Exact STOWED and DEPLOYED AP242 files and 121-definition authoring inventories are source-bound.",
     "All 116 requested PartDef renders pass filename, hash, size, format and manifest checks.",
@@ -556,7 +556,9 @@ for (const subsystem of subsystemOrder) {
       : subsystem.includes("ejection") ? COLORS.amber
       : subsystem.includes("Load") ? COLORS.green
       : COLORS.blue;
-    addHeader(slide, `${subsystem} — Part definitions ${page + 1}/${pageCount}`, "Per-part exact B-rep", slideNumber, accent);
+    const partPageTitle = `${subsystem} — Part definitions ${page + 1}/${pageCount}`;
+    const partPageTitleFontSize = subsystem === "Body ejection / buoy extraction" && page >= 9 ? 40 : 46;
+    addHeader(slide, partPageTitle, "Per-part exact B-rep", slideNumber, accent, partPageTitleFontSize);
     const pageRows = rows.slice(page * 2, page * 2 + 2);
     for (let slot = 0; slot < pageRows.length; slot += 1) {
       const row = pageRows[slot];
@@ -576,13 +578,14 @@ for (const subsystem of subsystemOrder) {
         bold: true,
         color: COLORS.navy,
       });
-      addText(slide, row.function_summary, pos(486, top + 145, 696, 58), {
+      addText(slide, row.function_summary, pos(486, top + 145, 696, 53), {
         fontSize: 21.5,
         color: COLORS.ink,
       });
-      addText(slide, `${row.material}  •  ${row.occurrence_count} occurrence${row.occurrence_count === 1 ? "" : "s"}`, pos(486, top + 205, 696, 24), {
-        fontSize: 16.5,
+      addText(slide, `${row.material}  •  ${row.occurrence_count} occurrence${row.occurrence_count === 1 ? "" : "s"}`, pos(486, top + 198, 722, 40), {
+        fontSize: 16,
         color: COLORS.muted,
+        lineSpacing: 0.9,
       });
     }
     setNotes(slide, pageRows.flatMap((row) => [

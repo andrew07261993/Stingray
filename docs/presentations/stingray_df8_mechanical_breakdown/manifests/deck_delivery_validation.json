@@ -1,0 +1,47 @@
+{
+  "schema": "STINGRAY_DF8_PRESENTATION_DELIVERY_VALIDATION_V1",
+  "status": "PASS",
+  "inputs": {
+    "manifest": "docs/presentations/stingray_df8_mechanical_breakdown/manifests/per_part_render_manifest.json",
+    "inspection": "docs/presentations/stingray_df8_mechanical_breakdown/slides/qa/deck-inspection.ndjson",
+    "pptx": "docs/presentations/stingray_df8_mechanical_breakdown/STINGRAY_I5S_DF8_MECHANICAL_BREAKDOWN_PER_PART.pptx",
+    "pptx_sha256": "fc5ddf7873f72cc684c11aff264b82048a095c60d173c2eeaf7c5034628c0166",
+    "pptx_size_bytes": 28679874
+  },
+  "counts": {
+    "slides": 73,
+    "notes": 73,
+    "inspection_images": 126,
+    "part_render_images": 116,
+    "embedded_media_files": 126,
+    "included_manifest_rows": 116,
+    "make": 104,
+    "buy": 12
+  },
+  "checks": {
+    "slide_count_73": true,
+    "sequential_slide_numbers": true,
+    "all_slides_have_source_blocks": true,
+    "inspection_image_count_126": true,
+    "manifest_included_count_116": true,
+    "per_part_alt_set_exact": true,
+    "per_part_note_references_exact": true,
+    "manifest_png_hashes_embedded_exact": true,
+    "no_visible_placeholder_text": true,
+    "truthful_status_copy_present": true
+  },
+  "status_copy": {
+    "state_parity_279_of_279": true,
+    "accepted_motion_0_through_55": true,
+    "unaccepted_motion_56_through_80": true,
+    "release_incomplete": true
+  },
+  "issues": {
+    "missing_part_alts": [],
+    "duplicate_part_alts": [],
+    "missing_note_references": [],
+    "missing_embedded_hashes": [],
+    "duplicate_embedded_hashes": [],
+    "placeholder_hits": []
+  }
+}

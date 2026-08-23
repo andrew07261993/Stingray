@@ -1,0 +1,12 @@
+{
+  "schema": "STINGRAY_DF8_DECK_QA_V1",
+  "slide_count": 73,
+  "included_part_render_count": 116,
+  "render_manifest_validation_status": "PASS",
+  "source_commit_sha": "61a58cbbccd0aae7a747b2a73046142cf1f44511",
+  "pptx_path": "docs/presentations/stingray_df8_mechanical_breakdown/STINGRAY_I5S_DF8_MECHANICAL_BREAKDOWN_PER_PART.pptx",
+  "rendered_slide_png_count": 73,
+  "layout_json_count": 73,
+  "inspection_path": "docs/presentations/stingray_df8_mechanical_breakdown/slides/qa/deck-inspection.ndjson",
+  "montage_path": "docs/presentations/stingray_df8_mechanical_breakdown/slides/qa/deck-montage.webp"
+}

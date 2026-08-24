@@ -1,47 +1,24 @@
-# TASK_STATE
+# Targeted-COTS task state
 
-- objective: Close Phase 4 pre-CAD procurement, fit and certification evidence and transmit the four owner-authorized Priority-1 RFQ/technical inquiries without purchasing or modifying CAD.
-- docs_worktree_path: C:\Users\ANDRE.ANDREWSPC\Documents\Codex\2026-08-23\stingray-docs
-- docs_branch: design/df8-targeted-cots-retrofit
-- phase_4_controlling_input_commit: 09b8e958d9b20ec2aaed9c579a48bc896677217d
-- clean_cad_authority_path: C:\Users\ANDRE.ANDREWSPC\Documents\Codex\2026-08-23\stingray-i5-s-df8-final-cad-semantic-cleanup
-- clean_cad_authority_commit: 8c594781e27b0597a71957082fb64f152cacfcd9
-- clean_cad_authority_branch: fix/final-cad-semantic-cleanup
-- clean_cad_status: CLEAN CAD BASELINE TECHNICALLY COMPLETE — OWNER CREO ACCEPTANCE PENDING
-- completed_phase: Phase 4 pre-CAD procurement / fit / certification closure
-- terminal_status: RFQ TRANSMITTED — VENDOR RESPONSES PENDING; TARGETED COTS REQUIRES PHYSICAL TEST BEFORE CAD
-- seven_item_gate:
-  - C-001 Swagelok 316L-50DF4-150: C — ACCEPT FOR PHYSICAL TEST BEFORE CAD
-  - C-006 HIKO 87640_OLV_ONE: C — ACCEPT FOR PHYSICAL TEST BEFORE CAD
-  - C-012 Gutekunst VD-244: E — REJECT — RETURN FUNCTION TO CUSTOM BASELINE
-  - C-013 igus GFM-081013-08: E — REJECT — RETURN FUNCTION TO CUSTOM BASELINE
-  - C-014 igus GTM-0815-005: E — REJECT — RETURN FUNCTION TO CUSTOM BASELINE
-  - C-015 Smalley VSM-8-S16: B — ACCEPT PENDING OWNER / VENDOR APPLICATION APPROVAL
-  - C-016 Rotor Clip DC-4SS: A — ACCEPT FOR CAD IMPLEMENTATION
-- gate_counts:
-  - A_accept_for_cad_implementation: 1
-  - B_vendor_or_owner_approval: 1
-  - C_physical_test_before_cad: 2
-  - D_deferred: 0
-  - E_rejected: 3
-- accounting:
-  - baseline_functional_cots: 10/114 = 8.77%
-  - accepted_cots_additions_if_A_B_C_close: 14
-  - projected_functional_cots: 24/114 = 21.05%
-  - gross_custom_definitions_conditionally_removed: 14
-  - custom_adapter_lines_added: 4
-  - net_custom_line_reduction: 10
-  - delivered_item_cocs_verified: 0
-  - procurement_orders_placed: 0
-  - rfq_inquiries_transmitted: 4
-  - automated_receipt_acknowledgments: 1
-  - substantive_vendor_responses_received: 0
-  - cad_substitutions_implemented: 0
-  - release_status: NOT RELEASED
-- pressure_reservoir: Swagelok 316L-50DF4-150 remains FOR QUALIFIED FIT / PRESSURE-SUBSYSTEM EVALUATION ONLY; PRESSURE-RATED is verified, while CO2 APPLICATION APPROVED, FIELD REFILLABLE, external-pressure rated and PROCUREMENT CERTIFICATE AVAILABLE remain UNVERIFIED.
-- field_reset_verdict: CONDITIONAL — preserved only by certified pressure-module exchange and successful buoy drying/repack qualification; operator field refill is not established.
-- test_articles: HIKO x2 DEFER; empty Swagelok x2 DEFER; ACE HBD-15-25-AA-P x2 DEFER. No purchase authorized.
-- priority_1_rfq_only: SENT — Swagelok 316L-50DF4-150 at 2026-08-24T14:14:15Z; HIKO 87640_OLV_ONE at 2026-08-24T14:14:13Z; Smalley VSM-8-S16 at 2026-08-24T14:14:13Z; Rotor Clip DC-4SS at 2026-08-24T14:14:14Z. Smalley automated receipt/routing acknowledgment received at 2026-08-24T14:14:43Z; all substantive vendor responses pending; no purchase commitment.
-- owner_decisions_required: Accept/reject clean CAD baseline after Creo review; accept/reject bounded ring-groove revisions after vendor responses; accept/reject certified-module-exchange field-reset concept; accept/reject C-001/C-006 after physical test.
-- next_exact_action: Monitor the four recorded Gmail threads for vendor replies; when received, record application/certificate/CAD/availability answers without ordering or expanding candidate research. Owner clean-CAD review remains separate. Do not begin CAD implementation.
-- last_updated_utc: 2026-08-24T14:15:06Z
+- documentation_branch: `design/df8-targeted-cots-retrofit`
+- CAD_branch: `design/df8-targeted-cots-retrofit`
+- CAD_commit: `584e673a8b0490bc0b6ec1e508d5fc3426f45f5b`
+- clean_baseline: `8c594781e27b0597a71957082fb64f152cacfcd9`
+- terminal_status: **TARGETED-COTS DEVELOPMENTAL ALTERNATIVE COMPLETE**
+- release_status: **TARGETED-COTS DEVELOPMENTAL CAD COMPLETE — PROCUREMENT / PHYSICAL QUALIFICATION / FINAL RELEASE VALIDATION REMAIN**
+- implemented_COTS:
+  - Smalley `VSM-8-S16`: 3 pivot-retainer occurrences; engineering accepted; procurement/receiving gate open.
+  - Rotor Clip `DC-4SS`: 4 GS-19/HBD-15 actuator-retainer occurrences; engineering accepted; procurement/receiving gate open.
+- retained_custom_selected_functions:
+  - Swagelok `316L-50DF4-150`: installed substitution rejected by exact fit; three custom pressure reservoirs retained.
+  - HIKO `87640_OLV_ONE`: published geometry insufficient and proxy/interface route interfered; custom buoy retained.
+  - Gutekunst `VD-244`, igus `GFM-081013-08`, igus `GTM-0815-005`: rejected baseline functions retained.
+  - WP04 sear retainer: `DC-4SS` reuse rejected because the required groove revision interfered with the Bowden path; custom ring retained.
+- final_accounting: 120 unique PartDefs; 114 functional lines; 12 COTS; 102 custom; 0 adapters; 2 net MAKE definitions removed; 10.53% functional COTS.
+- custom_pressure_vessels: 3
+- delivered_item_CoCs_verified: 0
+- purchases: 0
+- field_reset: preserved; custom pressure system uses the controlled baseline recovery/service procedure; no field-refill claim is introduced.
+- validation: PASS for both 308-solid AP242 endpoints, exact changed-solid audit, occurrence/BOM, named hierarchy, mass/CG/OD/length, and clean reimport. Arm/link/crosshead definitions are unchanged; full release motion validation remains downstream.
+- remaining_gates: PROCUREMENT; RECEIVING / COC; PHYSICAL QUALIFICATION; FINAL RELEASE VALIDATION.
+- exact_next_action: obtain and receive traceable VSM-8-S16 and DC-4SS articles under the procurement acceptance gates, then perform incoming inspection and retaining-function qualification before release validation.

@@ -1,42 +1,16 @@
 {
-  "generated_utc": "2026-08-24T14:15:06Z",
-  "source_branch": "design/df8-targeted-cots-retrofit",
-  "phase": "Phase 4 pre-CAD procurement / fit / certification closure",
-  "scope": "Seven existing selected substitutions only",
-  "checks": {
-    "required_new_outputs_present": "8/8 PASS",
-    "required_existing_outputs_updated": "11/11 PASS",
-    "csv_parse": "14/14 PASS",
-    "json_parse": "4/4 PASS",
-    "selected_gate_rows": "7/7 PASS",
-    "gate_counts": "A=1 B=1 C=2 D=0 E=3",
-    "ledger_csv_json_parity": "121/121 rows; 0 selected-field mismatches",
-    "git_diff_check": "PASS"
-  },
-  "accounting": {
-    "baseline_functional_cots": "10/114 = 8.77%",
-    "accepted_additions": 14,
-    "projected_functional_cots": "24/114 = 21.05%",
-    "custom_adapters_added": 4,
-    "net_custom_line_reduction": 10
-  },
-  "skipped_by_scope": [
-    "production CAD edits",
-    "endpoint rebuild",
-    "state parity",
-    "motion sweep",
-    "physical pressure or softgood test",
-    "purchase"
-  ],
-  "status": {
-    "owner_clean_cad_acceptance": "PENDING",
-    "procurement_orders_placed": 0,
-    "rfqs_sent": 4,
-    "automated_receipt_acknowledgments": 1,
-    "substantive_vendor_responses_received": 0,
-    "received_item_cocs_verified": 0,
-    "cad_substitutions_implemented": 0,
-    "cad_readiness": "TARGETED COTS REQUIRES PHYSICAL TEST BEFORE CAD",
-    "release_status": "NOT RELEASED"
-  }
+  "status": "PASS",
+  "cad_commit": "584e673a8b0490bc0b6ec1e508d5fc3426f45f5b",
+  "stowed_ap242_sha256": "8d7d5c4930a4dad5b23d7ac4c2a66b0e2567106b5c5124ed1dd49735767ecb6d",
+  "deployed_ap242_sha256": "42fce19a5ba93d8d61fb760b0fde3c6320126b691d79a9f5f70f65ee525bf717",
+  "clean_reimported_solids": {"STOWED": 308, "DEPLOYED": 308},
+  "invalid_solids": 0,
+  "occurrence_bom_issues": 0,
+  "changed_occurrences_audited": 14,
+  "changed_pairs_evaluated_per_state": 4207,
+  "unauthorized_positive_volume_pairs": 0,
+  "boolean_blocked_pairs": 0,
+  "mechanism_geometry": "Arm, link, and crosshead definitions unchanged from cleanup baseline",
+  "motion": "Prior accepted motion evidence inherited; FULL RELEASE MOTION VALIDATION REMAINS A FINAL RELEASE GATE",
+  "remaining_gates": ["PROCUREMENT", "RECEIVING / COC", "PHYSICAL QUALIFICATION", "FINAL RELEASE VALIDATION"]
 }

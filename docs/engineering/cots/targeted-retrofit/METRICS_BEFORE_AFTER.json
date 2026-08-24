@@ -1,68 +1,34 @@
 {
-  "schema": "stingray.targeted_cots.metrics.v3",
-  "generated_utc": "2026-08-24T14:15:06Z",
-  "accounting_policy": {
-    "functional_denominator": 114,
-    "denominator_excludes": [
-      "5 standard-fastener definitions",
-      "2 child-geometry definitions",
-      "raw material",
-      "consumables"
-    ],
-    "denominator_changed": false,
-    "adapter_accounting": "Four new custom adapter lines support existing functions and do not create new functional denominator entries.",
-    "selection_meaning": "Phase-4 gates A/B/C survive conditionally; not implemented, procured, qualified or released."
-  },
+  "schema": "stingray.targeted_cots.metrics.v4",
   "baseline": {
-    "functional_cots_numerator": 10,
-    "functional_cots_denominator": 114,
-    "functional_cots_percent": 8.771929824561402,
-    "make_definitions": 104,
+    "unique_partdefs": 121,
+    "functional_lines": 114,
+    "functional_cots": 10,
+    "functional_custom": 104,
+    "functional_cots_percent": 8.771929824561402
+  },
+  "final_targeted_cots": {
+    "unique_partdefs": 120,
+    "functional_lines": 114,
+    "functional_cots": 12,
+    "functional_custom": 102,
+    "functional_cots_percent": 10.526315789473683,
+    "net_make_definitions_removed": 2,
+    "custom_adapters": 0,
+    "custom_pressure_vessels": 3,
+    "total_mass_kg": 11.733211762625395,
+    "mass_reserve_kg": 6.406788237374606,
+    "cg_stowed_mm": [-0.10241814058538713, 0.02885369947533341, 581.9164783002476],
+    "cg_deployed_mm": [-0.04274943759590851, 0.027405165337103327, 584.4940433832246],
+    "maximum_rigid_od_mm": 57.15,
+    "rigid_length_mm": 2031.0000001,
+    "clean_reimported_solids_per_state": 308,
     "delivered_item_cocs_verified": 0,
-    "cad_substitutions_implemented": 0,
-    "release_status": "NOT RELEASED"
-  },
-  "phase_4_gate": {
-    "selections_reviewed": 7,
-    "A_accept_for_cad_implementation": 1,
-    "B_vendor_or_owner_approval": 1,
-    "C_physical_test_before_cad": 2,
-    "D_deferred": 0,
-    "E_rejected": 3,
-    "accepted_cots_additions": 14,
-    "rejected_selected_definitions": 3,
-    "gross_custom_definitions_conditionally_removed": 14,
-    "custom_adapter_lines_added": 4,
-    "net_custom_line_reduction": 10,
-    "procurement_orders_placed": 0,
-    "rfq_inquiries_transmitted": 4,
-    "automated_receipt_acknowledgments": 1,
-    "substantive_vendor_responses_received": 0,
-    "received_item_cocs_verified": 0,
-    "cad_changes": 0
-  },
-  "projected_after_gate": {
-    "functional_cots_numerator": 24,
-    "functional_cots_denominator": 114,
-    "functional_cots_percent": 21.052631578947366,
-    "remaining_make_definitions_before_adapter_accounting": 90,
-    "gross_custom_definitions_conditionally_removed": 14,
-    "custom_adapters_introduced": 4,
-    "net_custom_definitions_eliminated": 10,
-    "mass_kg": "UNVERIFIED",
-    "cg": "UNVERIFIED",
-    "release_status": "NOT RELEASED"
+    "release_status": "DEVELOPMENTAL — NOT RELEASED"
   },
   "practical_ceiling": {
-    "target_percent": 50.0,
-    "target_met": false,
-    "bounded_targeted_retrofit_percent": 21.052631578947366,
-    "basis": "Only A/B/C items survive current evidence. The value is conditional on vendor approval and physical test; rejected spring and iglide G items return to the custom baseline."
-  },
-  "clean_cad_baseline": {
-    "commit": "8c594781e27b0597a71957082fb64f152cacfcd9",
-    "technical_status": "COMPLETE",
-    "owner_creo_acceptance": "PENDING"
-  },
-  "cad_readiness": "TARGETED COTS REQUIRES PHYSICAL TEST BEFORE CAD"
+    "functional_cots": "12/114",
+    "percent": 10.526315789473683,
+    "basis": "Only VSM-8-S16 pivot retainers and DC-4SS GS-19/HBD-15 actuator retainers survive exact installed fit."
+  }
 }

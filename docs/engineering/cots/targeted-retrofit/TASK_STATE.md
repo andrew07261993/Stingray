@@ -1,0 +1,24 @@
+# Targeted-COTS task state
+
+- documentation_branch: `design/df8-targeted-cots-retrofit`
+- CAD_branch: `design/df8-targeted-cots-retrofit`
+- CAD_commit: `584e673a8b0490bc0b6ec1e508d5fc3426f45f5b`
+- clean_baseline: `8c594781e27b0597a71957082fb64f152cacfcd9`
+- terminal_status: **TARGETED-COTS DEVELOPMENTAL ALTERNATIVE COMPLETE**
+- release_status: **TARGETED-COTS DEVELOPMENTAL CAD COMPLETE — PROCUREMENT / PHYSICAL QUALIFICATION / FINAL RELEASE VALIDATION REMAIN**
+- implemented_COTS:
+  - Smalley `VSM-8-S16`: 3 pivot-retainer occurrences; engineering accepted; procurement/receiving gate open.
+  - Rotor Clip `DC-4SS`: 4 GS-19/HBD-15 actuator-retainer occurrences; engineering accepted; procurement/receiving gate open.
+- retained_custom_selected_functions:
+  - Swagelok `316L-50DF4-150`: installed substitution rejected by exact fit; three custom pressure reservoirs retained.
+  - HIKO `87640_OLV_ONE`: published geometry insufficient and proxy/interface route interfered; custom buoy retained.
+  - Gutekunst `VD-244`, igus `GFM-081013-08`, igus `GTM-0815-005`: rejected baseline functions retained.
+  - WP04 sear retainer: `DC-4SS` reuse rejected because the required groove revision interfered with the Bowden path; custom ring retained.
+- final_accounting: 120 unique PartDefs; 114 functional lines; 12 COTS; 102 custom; 0 adapters; 2 net MAKE definitions removed; 10.53% functional COTS.
+- custom_pressure_vessels: 3
+- delivered_item_CoCs_verified: 0
+- purchases: 0
+- field_reset: preserved; custom pressure system uses the controlled baseline recovery/service procedure; no field-refill claim is introduced.
+- validation: PASS for both 308-solid AP242 endpoints, exact changed-solid audit, occurrence/BOM, named hierarchy, mass/CG/OD/length, and clean reimport. Arm/link/crosshead definitions are unchanged; full release motion validation remains downstream.
+- remaining_gates: PROCUREMENT; RECEIVING / COC; PHYSICAL QUALIFICATION; FINAL RELEASE VALIDATION.
+- exact_next_action: obtain and receive traceable VSM-8-S16 and DC-4SS articles under the procurement acceptance gates, then perform incoming inspection and retaining-function qualification before release validation.

@@ -1,0 +1,6 @@
+candidate_id,selected_mpn,final_disposition,custom_adapters_implemented,net_make_definitions_removed,notes
+C-001,316L-50DF4-150,REJECT_RETURN_TO_CUSTOM_BASELINE,0,0,"48.2 mm cylinder failed exact installed fit; both planned pressure adapters deleted"
+C-006,87640_OLV_ONE,REJECT_RETURN_TO_CUSTOM_BASELINE,0,0,"Published geometry insufficient and proxy/interface route interfered; both planned buoy adapters deleted"
+C-015,VSM-8-S16,IMPLEMENTED_ENGINEERING_ACCEPTED,0,1,"Existing pivot-pin groove revised; no adapter line"
+C-016,DC-4SS,IMPLEMENTED_ACTUATOR_RINGS_ONLY,0,1,"Four actuator retainers implemented; WP04 sear retained custom; no adapter line"
+TOTAL,,FINAL,0,2,"No custom adapters survive the final gate"

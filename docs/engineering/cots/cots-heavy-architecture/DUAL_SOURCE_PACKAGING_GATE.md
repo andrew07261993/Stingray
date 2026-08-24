@@ -3,54 +3,48 @@
 ## Controlled envelope
 
 - DF8 hard external diameter: **57.15 mm**.
-- Practical cylinder-body allocation: **50.80 mm**.
-- `89200` published body diameter: **50.038 mm**.
-- Diametral screening clearance: **0.762 mm** total / **0.381 mm radial**.
+- Practical pressure-source cylinder allocation: **50.80 mm**.
+- Leland `89200` catalog body diameter: **50.038 mm**.
+- Diameter arithmetic: **0.762 mm total / 0.381 mm radial clearance**, before tolerance, support, and anti-chafe stack.
+- Available forward pressure corridor: **545.0 mm**.
 - Maximum rigid length: **2032 mm**.
 
-The body passes the arithmetic diameter screen but is tolerance-critical. Bounded CAD must demonstrate the actual wall, support, anti-chafe and extraction stack without exceeding 57.15 mm. The 31.242 mm mountable-head family proxy is radially below the cylinder body; hose and bracket clocking remain part of the CAD check.
+The source body passes only the arithmetic diameter screen and remains tolerance-critical. No CAD was modified.
 
-## Longitudinal arrangement
+## Required axial arrangement
 
-Side-by-side placement is prohibited. The selected concept is axial:
+The frozen packaging topology is longitudinal:
 
-`MODULE 1 -> MODULE 2`
+`89200 + 65026-18Y12 MODULE 1 -> INTER-MODULE/OUTLET ALLOWANCE -> 89200 + 65026-18Y12 MODULE 2`
 
-The read-only clean CAD authority defines the forward shell from z = 340 mm to z = 885 mm, a **545 mm** corridor presently containing the pressure subsystem. No CAD was modified.
+Side-by-side placement is prohibited by the DF8 diameter limit.
 
-Published arithmetic, before thread overlap or armed travel, is:
+## Installed-length determination
 
-`2 x (234.95 mm cylinder + 45.085 mm mountable-head family length) = 560.07 mm`
+The public Leland evidence does not publish the exact `89200` neck projection, usable engagement, sealing/shoulder datum, `65026-18Y12` insertion depth, SAFE/ARMED position, FIRED position, puncture travel, or outlet/bracket keep-out. Therefore:
 
-That arithmetic exceeds the existing corridor by 15.07 mm. It is not the installed length because the head overlaps the threaded neck, while an armed twist-to-puncture configuration also needs a controlled separation/advance. Neither effect is public. A drawing-controlled installed armed-module length is therefore mandatory before developmental CAD can claim longitudinal fit.
+| Packaging measure | Result |
+|---|---:|
+| SAFE/ARMED module length | **UNKNOWN** |
+| FIRED module length | **UNKNOWN** |
+| Two-module operating package | **UNKNOWN** |
+| Available operating corridor | **545.0 mm** |
+| Clearance or overrun | **NOT DETERMINABLE** |
 
-The missing document must bound, on one configuration:
+The previous `560.07 mm` cylinder-plus-head arithmetic is not an installed dimension and is not evidence of a 15.07 mm overrun. It uses a different head suffix's referential exterior length, double-counts unknown cylinder/head overlap, and omits armed/fired and fitting keep-outs.
 
-- installed safe/armed overall length;
-- fully punctured overall length;
-- cylinder-to-head thread engagement in the armed state;
-- axial/rotary advance to full puncture;
-- hose outlet and bracket keep-out;
-- cartridge removal/extraction direction and minimum service keep-out.
+## Service envelope
 
-If the resulting two-module installed envelope is at or below 545 mm, the current forward corridor is a direct candidate. If it is above 545 mm, no fit is claimed and any alternative allocation must be addressed only in the separately authorized bounded CAD commission without changing the 2032 mm or 57.15 mm limits.
+**OPEN-CLOSURE AXIAL WITHDRAWAL IS AN ACCEPTABLE SERVICE BASIS, BUT ITS GEOMETRY IS NOT YET VERIFIED.**
 
-## Mass screen
+The full removal trajectory may extend beyond the closed 545.0 mm operating corridor when an access closure is removed. The missing controlled assembly data must still identify removal direction and local disconnect/withdrawal keep-out. No field-replacement claim is based on an invented service trajectory.
 
-- Published source gross mass: 2 x 0.300 = **0.600 kg**.
-- Existing complete pressure-system engineering estimate: **3.400 kg** including sources, two heads/mounts, trigger/equalizer, hoses, pressure control, GIV and relief allowances.
-- Fixed system estimate excluding pressure source: **11.511 kg**.
-- Projected ready-to-throw mass: **14.911 kg**.
-- Reserve to 18.14 kg: **3.229 kg**.
+## Gate result
 
-The mass numbers are pre-CAD estimates, not measured BOM masses. Unknown `65026`/mounting hardware mass is covered by the current estimate and must be replaced with vendor/BOM values during bounded CAD.
+- Diameter: **PASS — TOLERANCE-CRITICAL**.
+- Inventory: **PASS**.
+- Mass: **PASS BY PRE-CAD ESTIMATE**.
+- Longitudinal operating fit: **C — ONE DRAWING/DIMENSION SET REQUIRED**.
+- Developmental CAD: **NOT AUTHORIZED**.
 
-## Gate
-
-Diameter: **PASS — TOLERANCE-CRITICAL**
-
-Inventory: **PASS**
-
-Mass: **PASS BY ESTIMATE**
-
-Longitudinal fit: **ONE DRAWING-CONTROLLED INTERFACE REQUIRED BEFORE CAD**
+The exact request and evidence trace are in `LELAND_89200_65026_INTERFACE_GATE.md`.

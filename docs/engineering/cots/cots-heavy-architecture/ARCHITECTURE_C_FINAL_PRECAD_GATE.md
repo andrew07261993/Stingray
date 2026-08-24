@@ -2,43 +2,46 @@
 
 ## Decision
 
-**C. ONE SPECIFIC MANUFACTURER INTERFACE VALUE REQUIRED BEFORE CAD**
+**C — ONE DRAWING/DIMENSION SET REQUIRED**
 
-The selected developmental path is two Leland `89200` cylinders, two Leland `65026-18Y12` mountable puncture heads, two independent commercial HP outlet/control paths, one `V80040` water-sensitive consumable with a dual non-pressure STINGRAY release, low-pressure convergence, Leafield GIV/B10 protection and the STINGRAY 60 L softgood. The custom `V80040` latch application is physical-qualification-required and is not represented as Nordson-approved.
+The provisionally frozen architecture remains:
+
+- 2 x Leland `89200`, 200 g CO2 each / 400 g total;
+- 2 x Leland `65026-18Y12` commercial puncture devices;
+- `65027` brackets and `65028` retaining nuts;
+- one passive water-authorized dual mechanical release;
+- two independent HP modules and pressure-control paths, converging only after pressure reduction;
+- zero custom pressure vessels and zero custom HP adapters;
+- certified charged-module exchange for field reset.
+
+No architecture trade was reopened.
 
 ## Closed gates
 
-- gas inventory: 400 g versus 334.51 g qualification requirement — **PASS**;
-- source body diameter: 50.038 mm versus 50.80 mm allocation — **PASS, TOLERANCE-CRITICAL**;
-- source count: two — **PASS**;
-- source gross mass: 0.600 kg total published — **PASS**;
-- complete system mass estimate: 3.400 kg; projected ready-to-throw 14.911 kg; reserve 3.229 kg — **PASS BY PRE-CAD ESTIMATE**;
-- pressure boundary: commercial Leland head through 1/8 NPT; no raw-HP manifold — **CREDIBLE TOPOLOGY**;
-- water authorization: separated from HP boundary, passive and non-electrical — **CREDIBLE TOPOLOGY**;
-- field reset: certified charged module exchange — **PASS IN CONCEPT**;
-- custom pressure vessels: 0;
-- custom HP adapters: 0.
+- gas inventory: **PASS**, 400 g versus 334.51 g qualification requirement;
+- diameter arithmetic: **PASS — TOLERANCE-CRITICAL**, 50.038 mm versus 50.80 mm cylinder allocation;
+- source count: **PASS**, two;
+- estimated mass: **PASS BY PRE-CAD ESTIMATE**;
+- field-reset topology: **PASS IN CONCEPT**;
+- custom pressure vessels: **0**;
+- custom HP adapters: **0**.
 
-## Single developmental-CAD hold
+## Sole developmental-CAD hold
 
-Obtain the **Leland drawing-controlled `89200` + `65026-18Y12` armed interface definition**, stating installed safe/armed and fired overall lengths, thread engagement, axial/rotary advance, puncture torque/force, retention/reaction, bracket/outlet keep-out and removal direction.
+The controlled installed geometry of `89200 + 65026-18Y12 + 65027 + 65028` is not publicly available. SAFE/ARMED length, FIRED length, exact cylinder/head overlap, operating keep-out, and mounting-retention envelope are therefore unknown. The two-module clearance or overrun against the 545.0 mm corridor cannot be calculated.
 
-This one document controls both mechanical release sizing and the longitudinal packaging gate. Published cylinder-plus-head arithmetic is 560.07 mm against the existing 545 mm forward pressure corridor, but it double-counts unknown neck/head overlap and omits unknown armed travel. Fit cannot truthfully be claimed without the interface document.
+A single, exact technical-data request has been sent to Leland. See `LELAND_89200_65026_INTERFACE_GATE.md`.
 
 `CAD_AUTHORIZED = false`
 
-`FALLBACK_SEARCH_TRIGGERED = false`
+`DECISION = C — ONE DRAWING/DIMENSION SET REQUIRED`
 
-`REASON = COMMERCIAL RATED PUNCTURE INTERFACE EXISTS; ONLY ITS ARMED INSTALLATION DEFINITION IS MISSING`
+`INQUIRY_SENT = true`
 
-## Downstream gates that do not hold developmental CAD
+## Downstream gates
 
-- procurement: orderable suffixes, quote, lead time, CoC/lot options and exact hose/control MPNs;
-- pressure test: exact `89200` allowable/proof/burst/temperature data, `65026` derating/application limit and complete component ratings;
-- release: received identity/CoC, 0 C/5 m/10 s performance, relief accumulation, softgood pressure/leak/cycle, salt/corrosion/reset and structural qualification.
-
-Delivered-item CoCs accepted: **0**.
+Procurement suffix/quote/CoC data, delivered-item identity, component pressure-temperature substantiation, and physical pressure/performance/relief/softgood/corrosion/reset qualification remain downstream gates. They do not replace the sole installed-geometry requirement before developmental CAD.
 
 ## Exact next action
 
-Obtain the one Leland armed-interface drawing above; then commission only the bounded developmental CAD packaging of two axial modules. Do not start CAD before that document.
+On receipt of the Leland controlled assembly dimension set, compute both module operating extents plus required inter-module and outlet allowances against 545.0 mm. Issue A if the total is at or below 545.0 mm, or B with the exact overrun if it exceeds 545.0 mm. Do not run CAD until then.

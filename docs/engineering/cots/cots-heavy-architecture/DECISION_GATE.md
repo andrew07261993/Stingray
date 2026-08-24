@@ -2,58 +2,52 @@
 
 ## Decision
 
-**C. ONE SPECIFIC MANUFACTURER INTERFACE VALUE REQUIRED BEFORE CAD**
+**C — ONE DRAWING/DIMENSION SET REQUIRED**
 
 `SELECTED_SOURCE = 2 X LELAND 89200`
 
 `SELECTED_PUNCTURE_HEAD = 2 X LELAND 65026-18Y12`
 
-`COMPATIBILITY = COMPATIBLE WITH PUBLISHED COMMERCIAL INTERFACE`
+`SELECTED_MOUNTING = 2 X 65027 + 2 X 65028`
 
 `NOMINAL_CO2_G = 400`
 
 `QUALIFICATION_REQUIREMENT_G = 334.51`
 
-`MARGIN_G = 65.49`
-
-`MARGIN_PERCENT_OF_REQUIREMENT = 19.58`
-
 `HARD_EXTERNAL_DIAMETER_MM = 57.15`
-
-`CYLINDER_BODY_OD_MM = 50.038`
 
 `PRACTICAL_CYLINDER_OD_ALLOCATION_MM = 50.80`
 
+`PUBLISHED_CYLINDER_OD_MM = 50.038`
+
 `PUBLISHED_CYLINDER_LENGTH_MM_EACH = 234.95`
 
-`TWO_CYLINDER_PLUS_HEAD_ARITHMETIC_MM = 560.07`
+`AVAILABLE_OPERATING_CORRIDOR_MM = 545.0`
 
-`CURRENT_FORWARD_PRESSURE_CORRIDOR_MM = 545.00`
+`SAFE_ARMED_MODULE_LENGTH_MM = UNKNOWN`
 
-`PROJECTED_COMPLETE_PRESSURE_SYSTEM_KG = 3.400`
+`FIRED_MODULE_LENGTH_MM = UNKNOWN`
 
-`PROJECTED_READY_TO_THROW_KG = 14.911`
+`TWO_MODULE_OPERATING_PACKAGE_MM = UNKNOWN`
 
-`PROJECTED_MASS_RESERVE_KG = 3.229`
+`CLEARANCE_OR_OVERRUN_MM = NOT DETERMINABLE`
 
-`DUAL_RELEASE = ONE V80040 WATER-SENSITIVE CONSUMABLE / ONE NON-PRESSURE STINGRAY EQUALIZER / TWO POSITIVE OUTPUTS — APPLICATION QUALIFICATION REQUIRED`
+`SERVICE_ENVELOPE = OPEN-CLOSURE AXIAL WITHDRAWAL ACCEPTABLE IN PRINCIPLE; GEOMETRY UNVERIFIED`
 
 `CUSTOM_PRESSURE_VESSELS = 0`
 
 `CUSTOM_HP_ADAPTERS = 0`
 
-`DELIVERED_ITEM_COCS_ACCEPTED = 0`
+`INQUIRY_SENT = true`
 
 `CAD_AUTHORIZED = false`
 
-`PRODUCTION_PROCUREMENT_RELEASED = false`
-
 `PRODUCT_RELEASED = false`
 
-## One missing pre-CAD document
+## Exact single missing manufacturer dimension set
 
-**Leland drawing-controlled `89200` + `65026-18Y12` armed interface definition**, including installed safe/fired length and puncture advance/torque/retention.
+Controlled `89200 + 65026-18Y12 + 65027 + 65028` assembly geometry giving `89200` neck/seat/shoulder datums; exact head insertion/engagement; SAFE/ARMED and FIRED installed lengths; puncture travel; operating, outlet, and removal keep-outs; and bracket/nut retention envelope, with drawing/model number and revision.
 
 ## Exact next action
 
-Obtain that one Leland interface document. If its installed two-module envelope fits the current axial allocation, commission the bounded developmental CAD implementation; otherwise stop at the package gate without changing DF8 limits.
+Use Leland's response to calculate the two-module operating package. Issue A for `<= 545.0 mm` or B with the exact overrun for `> 545.0 mm`; do not begin CAD before that decision.

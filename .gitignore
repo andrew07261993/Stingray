@@ -22,6 +22,7 @@ tmp/
 work/.cache/
 work/spreadsheet_runtime/node_modules/
 node_modules/
+work/forward_arm_repack/motion_5_angle/
 
 # Disposable logs
 *.log

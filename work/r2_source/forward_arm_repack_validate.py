@@ -25,13 +25,18 @@ inventories = {
 endpoints = {state: validate_r2.load_endpoint(state, files[state], inventories[state]) for state in files}
 identity = {state: validate_r2.imported_leaf_identity_audit(endpoint) for state, endpoint in endpoints.items()}
 dimensions = validate_r2.key_dimensions(endpoints, inventories)
-motion_dir = OUT / "motion_5_angle"
-motion_dir.mkdir(parents=True, exist_ok=True)
+motion_path = OUT / "five_angle_boolean_gate_pass2" / "five_angle_exact_boolean_summary.json"
+motion_gate = json.loads(motion_path.read_text(encoding="utf-8"))
 motion = {
-    "sample_count": 0,
-    "unauthorized_positive_volume_pair_count": None,
-    "boolean_blocked_pair_count": None,
-    "track_errors": ["Bounded exact five-angle audit was stopped safely before completion; no motion PASS claimed."],
+    "sample_count": len(motion_gate["angles_deg"]),
+    "unauthorized_positive_volume_pair_count": len(motion_gate["unauthorized_positive_pairs"]),
+    "boolean_blocked_pair_count": motion_gate["boolean_blocked_pair_count"],
+    "track_errors": [] if motion_gate["track_validation_error_count"] == 0 else [
+        f"{motion_gate['track_validation_error_count']} track validation errors"
+    ],
+    "disposition": motion_gate["disposition"],
+    "per_angle": motion_gate["per_angle"],
+    "evidence_path": str(motion_path.relative_to(ROOT)),
 }
 
 def total_mass(inventory):
@@ -59,6 +64,9 @@ summary = {
         "unauthorized_positive_volume_pair_count": motion["unauthorized_positive_volume_pair_count"],
         "boolean_blocked_pair_count": motion["boolean_blocked_pair_count"],
         "track_errors": motion.get("track_errors", []),
+        "disposition": motion["disposition"],
+        "per_angle": motion["per_angle"],
+        "evidence_path": motion["evidence_path"],
     },
 }
 (OUT / "targeted_validation_summary.json").write_text(json.dumps(summary, indent=2) + "\n", encoding="utf-8")

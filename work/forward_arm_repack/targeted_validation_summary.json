@@ -17,8 +17,8 @@
     }
   },
   "mass_kg": {
-    "STOWED": 12.189027825711584,
-    "DEPLOYED": 12.189027825711738
+    "STOWED": 12.187491463640375,
+    "DEPLOYED": 12.18749146364053
   },
   "key_dimensions": {
     "stowed": {
@@ -42,14 +42,14 @@
       "all_geometry_length_mm": 2031.0000001,
       "solid_count": 311,
       "invalid_solid_count": 0,
-      "face_count": 5961,
+      "face_count": 6037,
       "surface_type_counts": {
-        "BSplineSurface": 19,
+        "BSplineSurface": 45,
         "Cone": 70,
-        "Cylinder": 2288,
-        "Plane": 3522,
+        "Cylinder": 2311,
+        "Plane": 3534,
         "Sphere": 28,
-        "Torus": 34
+        "Torus": 49
       }
     },
     "deployed": {
@@ -73,14 +73,14 @@
       "all_geometry_length_mm": 2522.25,
       "solid_count": 311,
       "invalid_solid_count": 0,
-      "face_count": 6407,
+      "face_count": 6483,
       "surface_type_counts": {
-        "BSplineSurface": 19,
+        "BSplineSurface": 45,
         "Cone": 70,
-        "Cylinder": 2353,
-        "Plane": 3809,
+        "Cylinder": 2376,
+        "Plane": 3821,
         "Sphere": 122,
-        "Torus": 34
+        "Torus": 49
       }
     },
     "arm_module_stowed_bbox_mm": {
@@ -198,8 +198,8 @@
       "DEPLOYED": 492.97132891773
     },
     "crosshead_travel_from_reimported_transforms_mm": 15.055034371130034,
-    "crosshead_travel_from_independent_closure_equation_mm": 15.05503437113498,
-    "mass_rollup_from_authoring_inventory_kg": 12.1890278257116,
+    "crosshead_travel_from_independent_closure_equation_mm": 15.055034371135037,
+    "mass_rollup_from_authoring_inventory_kg": 12.187491463640391,
     "mass_unresolved_occurrence_ids": [],
     "mass_invalid_occurrence_ids": [],
     "mass_override_state_mismatch_keys": [],
@@ -347,25 +347,25 @@
       {
         "occurrence_id": "BOOSTER-COLLECTION-LINE-1",
         "part_number": "DF8-R2-BOOSTER-COLLECTION-LINE-001",
-        "mass_kg": 0.007280395930467362,
+        "mass_kg": 0.007532985481736194,
         "basis": "PART_MASTER_MASS"
       },
       {
         "occurrence_id": "BOOSTER-BAND-1-1",
         "part_number": "DF8-R2-BOOSTER-BAND-001",
-        "mass_kg": 0.00031423136719677266,
+        "mass_kg": 0.0002456057946892932,
         "basis": "PART_MASTER_MASS"
       },
       {
         "occurrence_id": "BOOSTER-BAND-1-2",
         "part_number": "DF8-R2-BOOSTER-BAND-001",
-        "mass_kg": 0.00031423136719677266,
+        "mass_kg": 0.0002456057946892932,
         "basis": "PART_MASTER_MASS"
       },
       {
         "occurrence_id": "BOOSTER-BAND-1-3",
         "part_number": "DF8-R2-BOOSTER-BAND-001",
-        "mass_kg": 0.00031423136719677266,
+        "mass_kg": 0.0002456057946892932,
         "basis": "PART_MASTER_MASS"
       },
       {
@@ -395,25 +395,25 @@
       {
         "occurrence_id": "BOOSTER-COLLECTION-LINE-2",
         "part_number": "DF8-R2-BOOSTER-COLLECTION-LINE-001",
-        "mass_kg": 0.007280395930467362,
+        "mass_kg": 0.007532985481736194,
         "basis": "PART_MASTER_MASS"
       },
       {
         "occurrence_id": "BOOSTER-BAND-2-1",
         "part_number": "DF8-R2-BOOSTER-BAND-001",
-        "mass_kg": 0.00031423136719677266,
+        "mass_kg": 0.0002456057946892932,
         "basis": "PART_MASTER_MASS"
       },
       {
         "occurrence_id": "BOOSTER-BAND-2-2",
         "part_number": "DF8-R2-BOOSTER-BAND-001",
-        "mass_kg": 0.00031423136719677266,
+        "mass_kg": 0.0002456057946892932,
         "basis": "PART_MASTER_MASS"
       },
       {
         "occurrence_id": "BOOSTER-BAND-2-3",
         "part_number": "DF8-R2-BOOSTER-BAND-001",
-        "mass_kg": 0.00031423136719677266,
+        "mass_kg": 0.0002456057946892932,
         "basis": "PART_MASTER_MASS"
       },
       {
@@ -443,25 +443,25 @@
       {
         "occurrence_id": "BOOSTER-COLLECTION-LINE-3",
         "part_number": "DF8-R2-BOOSTER-COLLECTION-LINE-001",
-        "mass_kg": 0.007280395930467362,
+        "mass_kg": 0.007532985481736194,
         "basis": "PART_MASTER_MASS"
       },
       {
         "occurrence_id": "BOOSTER-BAND-3-1",
         "part_number": "DF8-R2-BOOSTER-BAND-001",
-        "mass_kg": 0.00031423136719677266,
+        "mass_kg": 0.0002456057946892932,
         "basis": "PART_MASTER_MASS"
       },
       {
         "occurrence_id": "BOOSTER-BAND-3-2",
         "part_number": "DF8-R2-BOOSTER-BAND-001",
-        "mass_kg": 0.00031423136719677266,
+        "mass_kg": 0.0002456057946892932,
         "basis": "PART_MASTER_MASS"
       },
       {
         "occurrence_id": "BOOSTER-BAND-3-3",
         "part_number": "DF8-R2-BOOSTER-BAND-001",
-        "mass_kg": 0.00031423136719677266,
+        "mass_kg": 0.0002456057946892932,
         "basis": "PART_MASTER_MASS"
       },
       {
@@ -551,7 +551,7 @@
       {
         "occurrence_id": "ARM-TERMINATION-RING-001",
         "part_number": "DF8-FORWARD-ARM-TERMINATION-RING-001",
-        "mass_kg": 0.04590029776860261,
+        "mass_kg": 0.044223797196155726,
         "basis": "PART_MASTER_MASS"
       },
       {
@@ -1899,7 +1899,7 @@
         "basis": "STATE_INVARIANT_OCCURRENCE_OVERRIDE"
       }
     ],
-    "mass_reserve_using_resolved_mass_only_kg": 5.950972174288401
+    "mass_reserve_using_resolved_mass_only_kg": 5.952508536359609
   },
   "motion_angles_deg": [
     0,
@@ -1909,11 +1909,63 @@
     80
   ],
   "motion": {
-    "sample_count": 0,
-    "unauthorized_positive_volume_pair_count": null,
-    "boolean_blocked_pair_count": null,
-    "track_errors": [
-      "Bounded exact five-angle audit was stopped safely before completion; no motion PASS claimed."
-    ]
+    "sample_count": 5,
+    "unauthorized_positive_volume_pair_count": 0,
+    "boolean_blocked_pair_count": 0,
+    "track_errors": [],
+    "disposition": "PASS",
+    "per_angle": {
+      "0": {
+        "pair_row_count": 18070,
+        "broadphase_candidate_count": 365,
+        "authorized_positive_volume_pair_count": 15,
+        "unauthorized_positive_volume_pair_count": 0,
+        "boolean_blocked_pair_count": 0,
+        "distance_blocked_pair_count": 0,
+        "track_validation_error_count": 0,
+        "elapsed_seconds": 69.03494596481323
+      },
+      "20": {
+        "pair_row_count": 18070,
+        "broadphase_candidate_count": 389,
+        "authorized_positive_volume_pair_count": 15,
+        "unauthorized_positive_volume_pair_count": 0,
+        "boolean_blocked_pair_count": 0,
+        "distance_blocked_pair_count": 0,
+        "track_validation_error_count": 0,
+        "elapsed_seconds": 57.71686577796936
+      },
+      "40": {
+        "pair_row_count": 18070,
+        "broadphase_candidate_count": 401,
+        "authorized_positive_volume_pair_count": 15,
+        "unauthorized_positive_volume_pair_count": 0,
+        "boolean_blocked_pair_count": 0,
+        "distance_blocked_pair_count": 0,
+        "track_validation_error_count": 0,
+        "elapsed_seconds": 59.92710852622986
+      },
+      "55": {
+        "pair_row_count": 18070,
+        "broadphase_candidate_count": 425,
+        "authorized_positive_volume_pair_count": 15,
+        "unauthorized_positive_volume_pair_count": 0,
+        "boolean_blocked_pair_count": 0,
+        "distance_blocked_pair_count": 0,
+        "track_validation_error_count": 0,
+        "elapsed_seconds": 60.733362436294556
+      },
+      "80": {
+        "pair_row_count": 18070,
+        "broadphase_candidate_count": 413,
+        "authorized_positive_volume_pair_count": 15,
+        "unauthorized_positive_volume_pair_count": 0,
+        "boolean_blocked_pair_count": 0,
+        "distance_blocked_pair_count": 0,
+        "track_validation_error_count": 0,
+        "elapsed_seconds": 81.58109855651855
+      }
+    },
+    "evidence_path": "work\\forward_arm_repack\\five_angle_boolean_gate_pass2\\five_angle_exact_boolean_summary.json"
   }
 }

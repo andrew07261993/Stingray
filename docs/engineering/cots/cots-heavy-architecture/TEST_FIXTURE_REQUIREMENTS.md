@@ -21,10 +21,14 @@ Every fixture requires an approved drawing/configuration, article restraint, cal
 - Representative non-corroding pins/end supports without imposing unintended side load.
 - Chamber-rated feedthrough and fixture only if depth simulation is later authorized.
 
-## Type 3 — blocked 70 g branch
+## Type 3 — complete functional-scale LSC 481-CG system
 
-No fixture is to be built around an unapproved inflator. After vendor approval, a qualified pressure facility shall specify a rated receiver or approved buoy interface, HP and LP calibrated transducers, fast temperature sensing, flow or cartridge mass measurement, relief capture/vent routing, article restraint, shielding/remote activation and a verified safe depressurization state. All hoses, fittings, sensors and adapters must be rated above the applicable node pressure. Hydrostatic chamber exposure and pneumatic discharge/proof are separate procedures.
+- Use the complete, unmodified manufacturer vest/bladder/inflator/cylinder mounting; no added pressure tap, receiver, hose, fitting or improvised holder.
+- Controlled tank/pool or qualified-facility station with soft restraint that does not obstruct deployment, synchronized video/time, water/cylinder temperature and pre/post cylinder mass where the approved procedure permits.
+- Protected/remote activation where appropriate and a personnel exclusion zone clear of the cylinder/projectile path.
+- Follow current LSC/HR rearm and inspection instructions. Pressure/flow instrumentation is deferred unless LSC supplies an approved interface and a qualified pressure facility approves the procedure.
+- The article is functional-scale only. Hydrostatic mission-depth work and pneumatic proof/burst remain separate and outside this commission.
 
 ## Instrument calibration floor
 
-Select ranges only after the exact procedure is approved. As a minimum, resolution must distinguish the acceptance criterion: low-range buoy differential and leakage for Type 1; ±20% force-change screen and full 25 mm travel for Type 2; source/downstream transient, activation time, delivered mass and relief accumulation for the future Type 3.
+Select ranges only after the exact procedure is approved. As a minimum, resolution must distinguish the acceptance criterion: low-range buoy differential and leakage for Type 1; ±20% force-change screen and full 25 mm travel for Type 2; activation time, water/cylinder temperature, achieved inflation and rearm state for Type 3.

@@ -1,6 +1,6 @@
 {
-  "schema": "STINGRAY_DF8_COTS_HEAVY_ARCHITECTURE_METRICS_V2",
-  "status": "PRE_CAD_PRESSURE_CLOSURE_COMPLETE_CONCEPT_REVISION_REQUIRED",
+  "schema": "STINGRAY_DF8_COTS_HEAVY_ARCHITECTURE_METRICS_V3",
+  "status": "PRESSURE_REVISION_READY_FOR_OWNER_REQUIREMENT_CLOSURE",
   "baseline": {
     "partdefs_total": 121,
     "functional_cots_numerator": 10,
@@ -39,24 +39,31 @@
       "nominal_15C": 1.56,
       "cold_0C": null
     },
-    "recommended_packaging_minimum_cartridges": 4,
+    "preferred_supported_cartridge_mpn": "86202Z",
+    "preferred_supported_cartridge_charge_g": 38,
+    "preferred_supported_count_range": [5, 7],
+    "seven_branch_qualification_grid_depth_m": {
+      "warm_25C": 7.5,
+      "nominal_15C": 3.0,
+      "cold_0C": 0.0
+    },
     "released_cartridge_count": null,
-    "hp_design_pressure_psig": 2500,
-    "hp_minimum_catalog_rating_psig": 3000,
-    "inflator_compatibility": "FIT APPEARS POSSIBLE — APPLICATION APPROVAL REQUIRED",
+    "hp_design_pressure_psig": null,
+    "hp_screening_catalog_rating_psig": 3000,
+    "inflator_compatibility": "V95000 + 86202Z PUBLISHED CONFIGURATION SUPPORTED; V95000 + 89070 APPLICATION APPROVAL REQUIRED",
     "owner_values_open": 7,
-    "field_reset_verdict": "CONDITIONALLY FIELD RESETTABLE — NOT DEMONSTRATED"
+    "field_reset_verdict": "CREDIBLE FIELD RESET PATH — REPRESENTATIVE TWO-CYCLE DEMONSTRATION PENDING"
   },
   "development_procurement": {
-    "selected_item_types": 2,
-    "selected_units": 4,
+    "selected_item_types": 3,
+    "selected_units": 6,
     "maximum_item_types": 3,
     "maximum_units": 6,
     "type_1": {"mpn": "87640_OLV_ONE", "quantity": 2},
     "type_2": {"mpn": "HBD-15-25-AA-P", "quantity": 2},
-    "type_3": {"status": "BLOCKED — COMPATIBLE INFLATOR NOT YET VERIFIED", "quantity": 0},
+    "type_3": {"mpn": "LSC 481-CG with 470-CG + #484", "status": "FUNCTIONAL-SCALE — NOT REPRESENTATIVE OF FINAL GAS INVENTORY", "quantity": 2},
     "delivered_item_cocs": 0
   },
   "coverage_policy": "Historical COTS projection retained; pre-CAD closure changes pressure acceptability, not the earlier line-count arithmetic.",
-  "terminal_status": "ARCHITECTURE C PRESSURE CONCEPT REQUIRES REVISION — CAD NOT AUTHORIZED"
+  "terminal_status": "ARCHITECTURE C PRESSURE REVISION READY FOR OWNER REQUIREMENT CLOSURE — CAD NOT AUTHORIZED"
 }

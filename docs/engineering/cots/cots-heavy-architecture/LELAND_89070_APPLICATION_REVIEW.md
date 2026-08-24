@@ -2,7 +2,7 @@
 
 ## Disposition
 
-Compatibility classification: **FIT APPEARS POSSIBLE — APPLICATION APPROVAL REQUIRED**
+Compatibility classification under the revised gate: **APPLICATION APPROVAL REQUIRED**
 
 This classification applies to the proposed 70 g cartridge plus a water-activated inflator. It is not a production approval. No retained source states that a Halkey-Roberts V85000/V90000/V95000 or another water inflator is approved for Leland `89070`.
 

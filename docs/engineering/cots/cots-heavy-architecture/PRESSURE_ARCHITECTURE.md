@@ -1,80 +1,38 @@
-# Pressure architecture
+# Revised pressure architecture
 
-Status: **CONCEPT DEFINED — COMMERCIAL PATH IDENTIFIED — REVISION / VENDOR APPROVAL REQUIRED BEFORE CAD**
+## Required path
 
-## Required pressure path
+`5–7 × cartridge → V95000 puncture/inflator → individual HP check → HP collection bus → pressure regulator → fixed flow restriction → buoy-adjacent differential relief → buoy`
 
-```text
-[89070 cartridge × N]
-  → [manufacturer-approved supported water puncture/inflator × N]
-  → [HP branch check × N]
-  → [HP collection bus + service pressure indication]
-  → [pressure-reducing regulator]
-  → [fixed flow restrictor / anti-icing transition]
-  → [buoy-adjacent high-flow differential relief]
-  → [60 L-class buoy]
-```
+Preferred source pair: Leland `86202Z` 38 g + Nordson MEDICAL/Halkey-Roberts `V95000` Hydro 1F 1/2-20, **PUBLISHED CONFIGURATION SUPPORTED**.
 
-The earlier concept of a check-valve bus plus unspecified relief is not sufficient. Architecture C requires both pressure reduction/flow control and buoy-adjacent relief. The regulator controls normal delivery; the fixed restriction bounds regulator-fail-open flow; the relief protects the buoy and ascent condition. No low-pressure buoy may be connected directly to cartridge equilibrium pressure.
+## Pressure hierarchy
 
-## A. Stored-cartridge pressure
+| Zone/node | Nominal | Maximum credible | Minimum useful | Required rating/control | Blocked/failure response |
+|---|---|---|---|---|---|
+| Stored cartridge | CO2 equilibrium at actual cartridge temperature | Supplier maximum pressure at maximum specified environment; **OPEN** | Vapor pressure sufficient to discharge at minimum temperature; **OPEN** | Commercial marked cartridge within supplier storage/discharge limits | Keep isolated until puncture; reject damaged/overtemperature article |
+| Puncture/inflator | Transient cartridge pressure | Same maximum credible source pressure plus dynamic effects | Must puncture/seal/flow at cold condition | Exact approved pair, supported holder and reaction path | Each branch restrained and checked; unsupported pairs prohibited |
+| Branch check/tube/fitting | Source pressure during discharge | Maximum credible source pressure at environment | Must pass required cold flow | Temperature-derated allowable above maximum credible pressure with required margin | Individual check prevents reverse discharge; blocked branch must not overload components |
+| HP bus/regulator inlet | Highest active-branch source pressure | Maximum credible source pressure/common blocked transient | Above regulator control requirement | HP-rated bus and regulator inlet with controlled derating | HP relief/burst protection only if required by regulator/blocked-volume analysis |
+| Regulator outlet/restrictor | Low controlled pressure | Regulator lockup/failure transient, bounded by restriction and relief | Ambient absolute + required buoy differential + losses | Qualified two-phase/cold CO2 performance; relief downstream | Relief must pass worst credible fault flow without exceeding buoy MAWP |
+| Buoy inlet | Ambient at depth + line loss + operating differential | Limited below buoy MAWP | Sufficient to produce required volume/time | LP hose/fittings rated above relief envelope | Differential relief vents excess; check/regulator isolate source |
+| Buoy differential | Required operating differential; **OPEN** | Buoy allowable/MAWP; **OPEN** | Shape/deployment differential; **OPEN** | Supplier operating/MAWP data | Resettable relief preferred; reject damaged buoy |
+| Relief | No flow normally | Set/reseat/flow envelope below buoy MAWP and above required differential; **OPEN** | Must remain shut at required operating differential | Calibrated COTS differential behavior at depth/backpressure | Vents fault flow; setting locked and receiving-verified |
 
-CO2 is two-phase through much of the storage range and pressure is strongly temperature dependent. NIST data gives approximately 35.5 bar absolute at 0 °C, 51.1 bar at 15 °C, 57.4 bar at 20 °C and 64.4 bar at 25 °C for saturation. `89070` is 70 g in 100 mL (700 kg/m³ nominal fill density). Above the two-phase crossover, pressure rises faster than vapor pressure; a Peng–Robinson constant-density bound is approximately 131 bar / 1,895 psia at 40 °C and 163 bar / 2,365 psia at Leland's 120 °F heat limit. These are engineering estimates, not Leland ratings.
+## HP design-pressure rule
 
-Therefore the high-pressure design basis is **2,500 psig minimum design pressure, with every wetted HP component rated at least 3,000 psig throughout its temperature range**. If Leland's application pressure or maximum service temperature produces a higher value, that value controls and the architecture must be uprated. The cartridge itself remains a separately approved disposable pressure receptacle; transport approval does not approve the device application.
+The previous 2,500 psig assumption is not frozen. `≥3,000 psig` remains a screening criterion until the maximum storage/environment temperature and Leland pressure-temperature data are established.
 
-## B. High-pressure branch design pressure
+For every HP component:
 
-The puncture head, cartridge support, branch check, tube, fittings, bus and regulator inlet see the stored/transient source pressure. Nominal pressure is temperature-dependent (roughly 500–1,100 psia over 0–30 °C); the maximum credible controlled-temperature pressure is bounded at approximately 2,400 psia at 120 °F. Minimum useful pressure is whatever maintains regulator flow above `Pambient + required buoy differential + losses` through end-of-discharge; it is a transient test result.
+`P_allowable(T_environment) > P_max_credible_cartridge(T_environment)`
 
-Candidate component ratings:
+with the additional engineering/code margin selected for the controlled environment and failure consequences. Manufacturer pressure-temperature derating controls. A missing allowable, seal-temperature limit or two-phase CO2 statement is a design hold.
 
-- Swagelok `SS-4C-1/3`: 316 SS, 1/3 psig crack, Cv 0.47, 3,000 psig at 100 °F.
-- Swagelok `KPR1DRB412A20000`: 316 SS, 3,600 psig inlet, 0–25 psig outlet range, Cv 0.06, 80 °C maximum.
-- Leland `65026-18N12`: 1/2-20 inlet, 1/8 NPT outlet, stainless, CO2-compatible; public working-pressure and 70 g application limits are unavailable.
+## Low-pressure protection and relief
 
-The first two provide a credible catalog rating path, but neither is publicly approved for submerged, flashing-liquid CO2 duty. The Leland puncture head lacks public pressure/mass approval. These are CAD-entry blockers.
+The buoy cannot be connected directly to cartridge pressure. Regulator, fixed restriction and buoy-adjacent calibrated differential relief are mandatory functional layers. A buoy-integral relief may substitute only with supplier set, reseat, capacity, temperature, depth/backpressure and MAWP evidence. No numeric relief setting is selected until buoy required differential and MAWP are controlled.
 
-## C. Downstream buoy pressure
+## Development versus final
 
-Required buoy inlet absolute pressure is:
-
-`Pbuoy,in = Patmosphere + rho_water*g*depth + ΔP_operating + ΔP_line/check/inlet`
-
-`ΔP_operating`, inlet loss and regulator reference behavior are unknown. The 10 kPa value in gas sizing is only sensitivity. The regulator must either reference local ambient water pressure or be selected/configured on a demonstrated absolute-pressure basis. A standard dry-gas regulator cannot be presumed to regulate correctly while externally submerged.
-
-## D. Buoy differential pressure
-
-`ΔPbuoy = Pinternal − Pambient`. This, not cartridge pressure, loads the flexible buoy. Required differential must be high enough to unfold and establish usable geometry while remaining below supplier MAWP at every depth and during ascent. HIKO publishes no MAWP for `87640_OLV_ONE` and does not describe direct CO2 inflation; it is a developmental softgoods article only.
-
-## E. Relief pressure
-
-The required differential setting envelope is:
-
-`ΔP_required + line/dynamic allowance < ΔP_relief,set`
-
-and
-
-`ΔP_relief,set + positive tolerance + full-flow accumulation ≤ buoy differential MAWP`.
-
-The valve must vent to local ambient, pass the regulator-fail-open/restrictor-limited CO2 flow without exceeding MAWP, reseat after discharge/ascent, tolerate cold CO2 and seawater, and be installed adjacent to the buoy. No numeric set point is selected.
-
-## F. Proof / component rating
-
-- HP wetted components: catalog MAWP ≥3,000 psig at temperature, with manufacturer pressure/leak/proof documentation; design basis ≥2,500 psig pending Leland data.
-- Regulator outlet and LP fittings: catalog MAWP at least the regulator maximum outlet plus fault/relief accumulation, never less than buoy MAWP.
-- Buoy/relief: supplier MAWP, production test and relief flow evidence are mandatory.
-- Proof/burst testing is outside this commission and may only be performed by a qualified facility under an approved procedure. Hydrostatic depth testing is not pneumatic proof.
-
-## Blocked-flow and relief behavior
-
-| Location blocked | Result | Required control |
-|---|---|---|
-| Piercer outlet / HP check | Branch remains at cartridge pressure; no buoy gas | HP rating; supported cartridge; branch-out detection/test |
-| HP bus / regulator inlet | All fired sources remain at storage pressure | 2,500 psig design basis; ≥3,000 psig catalog rating; temperature control |
-| Regulator closed | No inflation | independent functional check; sufficient cartridge count does not cure this single-point failure |
-| Regulator fails open | Excess downstream pressure/flow | fixed restrictor plus high-flow differential relief sized for fault flow |
-| Relief blocked | Buoy can overpressure even with an orifice | relief inspection; debris guard; supplier-approved redundant/integral protection where required |
-| Buoy inlet blocked | LP train pressurizes to regulator setting and relief opens | relief adjacent to inlet; all LP parts rated above accumulation |
-
-Sources: [Swagelok KPR1DRB412A20000](https://products.swagelok.com/en/c/single-stage/p/KPR1DRB412A20000), [Swagelok SS-4C-1/3](https://products.swagelok.com/en/c/fixed-pressure/p/SS-4C-1%252F3), [Leland 65026-18N12](https://www.lelandgas.com/product-page/copy-of-65026-18n12-puncture-device-in-line-non-mountable), and [NIST CO2](https://webbook.nist.gov/cgi/cbook.cgi?ID=C124389&Mask=4).
+The complete LSC `481-CG` Type-3 article, containing `470-CG` + `#484`, tests the V95000/V80040 trigger and rearm architecture only. It does not qualify this full pressure path or final inventory. Final regulator/restrictor/relief sizing requires the owner inflation time and buoy data plus cold discharge tests at a qualified facility.

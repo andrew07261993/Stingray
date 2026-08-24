@@ -1,6 +1,6 @@
 # STINGRAY I5-S DF8 COTS-heavy architecture trade
 
-> **2026-08-24 pre-CAD closure:** the historical Architecture C trade lead is retained, but its three-cartridge pressure embodiment is not accepted. Current disposition is **ARCHITECTURE C PRESSURE CONCEPT REQUIRES REVISION**. See `PRE_CAD_ENGINEERING_GATE.md`, `CO2_GAS_SIZING_ANALYSIS.md`, and `PRESSURE_ARCHITECTURE.md`. The alternatives below remain historical trade evidence.
+> **2026-08-24 pressure-source revision:** the historical Architecture C trade lead is retained and its three-cartridge pressure embodiment remains superseded. A five-to-seven-branch `V95000 + 86202Z` bounded revision and functional-scale Type 3 are now supported. Current disposition is **ARCHITECTURE C PRESSURE REVISION READY FOR OWNER REQUIREMENT CLOSURE**; CAD remains unauthorized. See `ARCHITECTURE_C_REVISION_GATE.md`. The alternatives below remain historical trade evidence.
 
 Status: **Phase 1–4 complete; provisional selection only; NOT RELEASED**.
 

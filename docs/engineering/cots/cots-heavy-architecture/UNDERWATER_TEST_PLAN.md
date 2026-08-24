@@ -6,7 +6,7 @@ Maximum three types × two articles = six total. No equipment was purchased and 
 
 | Type | Exact article | Qty | Architecture relevance | Procurement state |
 |---|---|---:|---|---|
-| 1 | HIKO `87640_OLV_ONE` FLOATEK FULL TAIL, 60 L | 2 | COMMON TO TARGETED + COTS-HEAVY | RFQ after dealer authorization/traceability confirmation |
+| 1 | STINGRAY 60 L engineering softgood with Leafield GIV/B10 | 2 | COTS-HEAVY PRIMARY | Downstream definition; do not purchase/fabricate yet |
 | 2 | ACE `HBD-15-25-AA-P` | 2 | COMMON TO TARGETED + COTS-HEAVY | RFQ; exact suffix orderable on request |
 | 3 | LSC `481-CG` complete automatic vest with `470-CG` (HR `V95000-1F`) + `#484` 33 g | 2 | COTS-HEAVY PRIMARY | RFQ manufacturer-direct; confirm exact installed configuration |
 
@@ -14,15 +14,15 @@ Type 3 is **FUNCTIONAL-SCALE TEST ARTICLE — NOT REPRESENTATIVE OF FINAL GAS IN
 
 ## Type 1 — buoy
 
-Questions: packed volume, extraction/unfolding, usable displaced volume, inflation geometry, leakage, attachment integrity, drying and two repack/reset cycles.
+HIKO is superseded because it provides no published MAWP/relief/cycle basis. Type 1 now tests the final residual custom softgood with commercial Leafield inlet and relief.
+
+Questions: packed volume, extraction/unfolding, usable displaced volume, 0 C/5 m/10 s inflation geometry, leakage, B10 relief opening/accumulation, attachment integrity, drying and repeated repack/reset.
 
 Minimum instrumentation: depth/temperature, inlet differential pressure, timer/video, buoyant-load or displaced-volume measurement and pressure-decay/leak observation.
 
 Fixture: non-cutting pack surrogate, supplier-approved low-energy inlet and pool/open-water restraint. A qualified pressure chamber is required for depth cases beyond open-water capability. This is hydrostatic environmental testing, not pneumatic proof testing.
 
-Development pass: both articles demonstrate at least 60 L actual usable displacement at 5 m (or an approved chamber equivalent), lose no more than 5% over 30 minutes at the supplier-approved differential, show no seam/attachment/valve damage, and complete two dry/repack cycles. The separate system useful-inflation gate is at least 54 L measured displacement within 10.0 s, stable and holding/increasing. HIKO cannot be pressure-tested to either condition until the supplier provides operating differential and MAWP; rated/geometric volume alone does not pass.
-
-Source status: HIKO direct shows sold out. Exact MPN inventory/add-to-cart was observed at credible EU retailers, but authorization, export availability and lot traceability are unverified. Backup is HIKO `87901_ONE` Buoyancy RF V.2 only after HIKO confirms exact identity/specification; no generic 60 L substitution is accepted.
+Development pass: both articles achieve at least 54 L measured displacement within 10.0 s at 5 m/0 C, stable and holding/increasing, and reach 60 L steady useful displacement. The B10 must hold differential within the physically qualified softgood envelope with no seam/attachment/valve failure; leakage/hold and cycle criteria are finalized by the approved qualification procedure. Rated/geometric volume alone does not pass.
 
 ## Type 2 — underwater damper
 

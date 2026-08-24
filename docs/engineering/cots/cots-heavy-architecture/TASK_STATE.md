@@ -2,35 +2,33 @@
 
 ## Terminal status
 
-**OWNER MISSION SIZING CLOSED — ARCHITECTURE C PRESSURE ARCHITECTURE REQUIRES REVISION — CAD NOT AUTHORIZED**
+**COMMERCIAL MARINE PRESSURE ARCHITECTURE SELECTED — ONE DRAWING-CONTROLLED ENGINEERING INPUT REMAINS — CAD NOT AUTHORIZED**
 
 ## Closed this commission
 
-- Owner basis: 5.0 m maximum depth, 0 °C minimum source/water temperature, 10 s useful-inflation time, 60 L actual usable displacement at depth and repeated fresh/salt-water marine service.
-- Useful inflation: at least 54 L measured displacement at 5 m within 10 s, stable geometry and holding/increasing; full steady-state inventory remains sized to 60 L.
-- Controlling 5 m/0 °C calculation: 190.06 g theoretical, 304.10 g design and 334.51 g qualification.
-- Five, six and seven `86202Z` branches all fail. Nine (342 g) is the first integer count to pass both mass cases; eight fails.
-- HP basis: approximately 2,624 psig maximum credible pressure at 50 °C on the documented NIST 760 kg/m³ proxy; 3,000 psig at 50 °C is the required screening/design basis pending component-specific derating acceptance.
-- Type 3 remains two complete LSC `481-CG` systems with `470-CG`/HR `V95000-1F` and `#484` 33 g, functional-scale only.
+- Rejected nine-V95000 physical architecture replaced by one Leafield GIS water-authorized/servo source branch.
+- Selected cylinder: eurocylinder systems AG `130522277`, 1.0 L, 25E, 200 bar WP/300 bar TP, charged to 342 g net CO2.
+- Owner case remains 5 m, 0 C, 60 L, 10 s; 342 g passes 304.10 g design and 334.51 g qualification inventory.
+- Selected source fill density 342 kg/m3 gives 96.215 bar absolute at 50 C and 113.58 bar absolute at 65 C on NIST data.
+- HP checks: zero. HP bus/manifold: zero. Custom pressure vessels: zero.
+- HP design hierarchy: 200 bar cylinder working boundary; Leafield valve/outlet/hose components at least 250 bar MWP.
+- Final buoy basis: STINGRAY 60 L custom marine softgood, Leafield GIV and B10 Yellow relief. HIKO is no longer the final buoy.
+- Provisional operating differential 10.0 kPa; B10 nominal 12.1 kPa, maximum opening 14.7 kPa, minimum sealing 10.2 kPa.
+- Field reset closes by complete charged-module exchange; fired-module internal service/recharge is depot only.
+- Type 2 remains two `HBD-15-25-AA-P`; Type 3 remains two functional-scale `LSC 481-CG` systems. HIKO Type 1 is superseded by two final softgood engineering articles after bounded definition.
+- Packaging risk is bounded, not hidden: the selected cylinder is 82.5 mm diameter versus the 53 mm normal-body target. Exact fit is not claimed; a localized compliant source allocation must be proved in bounded CAD after the head/servo drawing is available.
 
-## Architecture blocker
+## One remaining engineering input
 
-Nordson publishes `V95000 + 86202Z` as a rearm pairing for a life-vest/manifold context. The published `830011001` manifold interface has valve core, cap and O-rings; no published pressure-rated outlet supports the proposed individual HP check and collection bus. Therefore:
-
-- pair in published PFD/manifold context: **PUBLISHED CONFIGURATION SUPPORTED**;
-- STINGRAY branch feeding HP check/bus: **APPLICATION APPROVAL REQUIRED / NO PUBLISHED INTERFACE**;
-- nine is the thermodynamic minimum count, not a released source architecture.
-
-HIKO `87640_OLV_ONE` has no published operating differential, MAWP, proof/burst, relief or cycle data. No buoy operating/relief setting is authorized.
-
-## Field reset
-
-The service sequence remains conceptually field-resettable, but nine sources impose at least nine cartridges, nine bobbins and supplier-defined seals/pins/clips per deployment. The published source-module seal minimum is 27; an assumed two check connections per branch would raise the source/check lower bound to 45 before the common path. Final leak count cannot close until a commercial outlet/topology exists.
+Leafield must provide the drawing-controlled configured-assembly definition: exact water actuator, servo, D91-220 25E/250 bar valve and hose/outlet MPNs plus mass and installed keep-out envelope. Public evidence establishes the family pressure topology but not those CAD dimensions.
 
 ## Preserved controls
 
 - Branch: `design/df8-cots-heavy-architecture`.
-- Read-only CAD authority `8c594781e27b0597a71957082fb64f152cacfcd9` was not modified.
-- Zero custom pressure vessels remains mandatory.
-- Delivered-item CoCs accepted: zero.
+- Read-only CAD baseline `8c594781e27b0597a71957082fb64f152cacfcd9` was not modified.
 - No CAD, motion, AP242, render, purchase, physical test, merge or production release was performed.
+- Delivered-item CoCs accepted: zero.
+
+## Exact next action
+
+Acquire the configured Leafield drawing package and exact MPN suffixes, then authorize only the bounded CAD packaging/interface commission. Physical 0 C/5 m/10 s and softgood pressure/cycle qualification remain downstream release gates.

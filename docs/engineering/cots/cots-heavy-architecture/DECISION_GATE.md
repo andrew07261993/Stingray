@@ -2,31 +2,39 @@
 
 ## Decision
 
-**ARCHITECTURE C PRESSURE ARCHITECTURE REQUIRES REVISION**
+**ARCHITECTURE C REQUIRES ONE REMAINING ENGINEERING INPUT**
 
-Architecture C remains the COTS-heavy trade lead, but its current distributed Hydro 1F-to-HP-bus embodiment is rejected for CAD because the rated outlet is not published and the 60 L buoy pressure envelope is absent.
+The commercial pressure architecture is selected: one 342 g CO2 cylinder with Leafield GIS passive water authorization/servo, rated marine hose/fixed-jet GIV and B10 differential relief. The nine-PFD-inflator embodiment is rejected.
 
 ## Gate state
 
 `OWNER_MISSION_VALUES_CLOSED = true`
 
-`THERMODYNAMIC_INVENTORY_FROZEN_G = 342`
+`FINAL_GAS_INVENTORY_G = 342`
 
-`THERMODYNAMIC_CARTRIDGE_COUNT_86202Z = 9`
+`GAS_SOURCE_COUNT = 1`
 
-`FINAL_PHYSICAL_CARTRIDGE_COUNT_RELEASED = false`
+`SELECTED_CYLINDER = EUROCYLINDER 130522277`
 
-`PAIR_CLASSIFICATION = PUBLISHED CONFIGURATION SUPPORTED IN PFD/MANIFOLD CONTEXT`
+`SELECTED_MARINE_INFLATION_FAMILY = LEAFIELD GIS WATER-ACTIVATED/SERVO`
 
-`STINGRAY_HP_BRANCH_CLASSIFICATION = APPLICATION APPROVAL REQUIRED / NO PUBLISHED INTERFACE`
+`HP_SYSTEM_DESIGN_PRESSURE_BAR = 200`
 
-`HP_COMPONENT_BASIS = 3000 PSIG AT 50 DEG C`
+`HP_TRANSFER_COMPONENT_MINIMUM_MWP_BAR = 250`
 
-`BUOY_OPERATING_AND_RELIEF_ENVELOPE = UNESTABLISHED`
+`HP_CHECK_COUNT = 0`
 
-`TYPE_3_FUNCTIONAL_SCALE_UNBLOCKED = true`
+`HP_BUS_COUNT = 0`
 
-`TOTAL_TEST_ARTICLES = 6`
+`BUOY = STINGRAY 60 L CUSTOM MARINE SOFTGOOD`
+
+`RELIEF = LEAFIELD B10 YELLOW 1.75 PSI NOMINAL`
+
+`CUSTOM_PRESSURE_VESSELS = 0`
+
+`PROJECTED_FUNCTIONAL_COTS = 18/23 = 78.26 PERCENT`
+
+`ONE_REMAINING_ENGINEERING_INPUT = LEAFIELD CONFIGURED-ASSEMBLY DRAWING/MPN/ENVELOPE`
 
 `DELIVERED_ITEM_COCS_ACCEPTED = 0`
 
@@ -38,4 +46,4 @@ Architecture C remains the COTS-heavy trade lead, but its current distributed Hy
 
 ## Exact next action
 
-Issue the focused manufacturer application request for a rated water-automatic source outlet/topology and the HIKO pressure/cycle data request; select a supported replacement buoy if HIKO cannot respond. Re-run sizing for the verified differential and qualify 0 °C/5 m/10 s behavior before any CAD commission.
+Obtain the exact drawing-controlled Leafield water-actuator/servo/25E-valve/hose configuration and installed envelope. Once accepted, issue the bounded Architecture C CAD packaging/interface commission; keep physical cold-depth flow and softgood pressure/cycle work as downstream release qualification.

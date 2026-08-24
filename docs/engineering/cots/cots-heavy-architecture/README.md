@@ -1,6 +1,6 @@
 # STINGRAY I5-S DF8 COTS-heavy architecture trade
 
-> **2026-08-24 owner-mission closure:** the historical Architecture C trade lead is retained, but the current pressure path is not. Nine `86202Z` cartridges (342 g) are the first count to pass the 5 m/0 °C mass cases; the published `V95000` manifold does not provide a rated HP-bus outlet, and HIKO publishes no pressure envelope. Current disposition is **ARCHITECTURE C PRESSURE ARCHITECTURE REQUIRES REVISION**; CAD remains unauthorized. See `ARCHITECTURE_C_REVISION_GATE.md`. Earlier alternatives remain historical trade evidence.
+> **2026-08-24 commercial-marine convergence:** nine `V95000` branches are rejected and superseded by one 342 g commercial-cylinder Leafield GIS water/servo branch with rated hose/GIV and B10 relief. HIKO is removed as the final pressure-basis buoy; the residual STINGRAY 60 L softgood uses commercial inlet/relief and requires physical qualification. Current disposition is **ARCHITECTURE C REQUIRES ONE REMAINING ENGINEERING INPUT**: the dimensioned, exact-MPN Leafield configured-assembly package. CAD remains unauthorized. See `ARCHITECTURE_C_FINAL_PRECAD_GATE.md`; earlier alternatives remain historical evidence.
 
 Status: **Phase 1–4 complete; provisional selection only; NOT RELEASED**.
 
@@ -11,7 +11,7 @@ The work stops at architecture selection. It creates no CAD, STEP, motion, rende
 ## Outcome
 
 - Alternatives evaluated: 3 materially different architectures.
-- Provisional selection: **Architecture C — distributed 3 × 70 g replaceable-cartridge mechanical bus**.
+- Current selection: **Architecture C — one commercial marine cylinder/GIS source branch**.
 - Baseline functional COTS coverage: **10/114 = 8.77%**.
 - Selected projected coverage: **18/23 = 78.26%** independently orderable functional unique line items.
 - Selected projected residual custom unique lines: **5**.

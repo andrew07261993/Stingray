@@ -1,43 +1,36 @@
-# Selected architecture — Architecture C pressure source
+# Selected architecture — Architecture C commercial marine source
 
 ## Status
 
-The historical COTS-heavy trade lead remains Architecture C, but its previous three × 70 g and five-to-seven × 38 g pressure-source embodiments are superseded.
+The historical Architecture C trade lead is retained, but distributed three-cartridge and nine-PFD-inflator pressure paths are superseded.
 
-Formal disposition: **ARCHITECTURE C PRESSURE ARCHITECTURE REQUIRES REVISION**.
+Formal disposition: **ARCHITECTURE C REQUIRES ONE REMAINING ENGINEERING INPUT**.
 
 `CAD_AUTHORIZED = false`
 
-## Frozen sizing result
+## Selected source path
 
-For 5 m, 0 °C, 60 L actual displacement and the existing provisional 10 kPa buoy differential:
+`water-activated Leafield GIS unit -> servo -> one 342 g CO2 cylinder -> GIS cutter/valve -> rated hose -> fixed-jet GIV -> 60 L STINGRAY softgood -> B10 Yellow relief`
 
-- theoretical minimum: 190.06 g;
-- design requirement: 304.10 g;
-- qualification requirement: 334.51 g;
-- lowest passing `86202Z` count: **nine**, totaling **342 g**.
+- Cylinder: eurocylinder systems AG `130522277`, one 1.0 L/25E/200 bar WP/300 bar TP vessel.
+- Charge: 342 g net CO2.
+- Source branches: one.
+- HP checks/bus/manifold: none.
+- Regulator: none; Leafield fixed-jet GIV is the control element and B10 is the differential overpressure device.
+- Buoy: residual custom 60 L softgood; no custom pressure vessel.
+- Functional COTS projection: 18/23 = 78.26%.
 
-Five (190 g), six (228 g) and seven (266 g) fail both design and qualification. Eight (304 g) misses design by 0.10 g and qualification by 30.51 g. Nine passes design by 37.90 g and qualification by 7.49 g. This freezes the minimum thermodynamic inventory, not a CAD-released configuration.
+## Frozen sizing and pressure hierarchy
 
-## Rejected pressure-path embodiment
+- 5 m/0 C design requirement 304.10 g; qualification 334.51 g; 342 g passes both.
+- At 342 kg/m3, NIST pressure is 96.215 bar absolute at 50 C and 113.58 bar absolute at 65 C.
+- Cylinder boundary: 200 bar working, 300 bar test.
+- Leafield valve/outlet/hose: at least 250 bar MWP.
+- Buoy operating differential: provisional 10.0 kPa.
+- Relief: B10 Yellow, 12.1 kPa nominal, 14.7 kPa maximum opening and 10.2 kPa minimum sealing.
 
-The previous path
+## Remaining input and release boundary
 
-`V95000 + 86202Z → HP check → HP bus → regulator → restriction → relief → buoy`
+Before CAD, obtain the drawing-controlled exact-MPN Leafield configured assembly for water actuator, servo, D91-220 25E valve and hose/outlet, including dimensions, mass and keep-out. Physical 0 C/5 m/10 s flow, relief accumulation, softgood pressure/leak/cycle and marine-reset testing remain required before release.
 
-is not supported by the published `V95000` interface evidence. The exact cartridge/inflator rearm pairing is supported only in the manufacturer life-vest/manifold context; a rated outlet to an HP check/bus is not published. A custom adapter or pressure plenum is prohibited.
-
-A revised Architecture C source must retain passive water authorization, commercial replaceable sources, HP/LP separation, a rated pressure-limiting stage, fixed flow bounding and buoy-adjacent differential relief—but only through documented commercial interfaces.
-
-## Pressure and buoy holds
-
-- HP design/screening basis: 3,000 psig at 50 °C, with each item’s allowable/MAWP and manufacturer derating verified above the approximately 2,624 psig maximum-credible source basis.
-- Low-pressure operating differential, MAWP and relief envelope: **UNESTABLISHED** for HIKO `87640_OLV_ONE`; no numeric setting authorized.
-- The 10 kPa differential remains a mass-sizing sensitivity only.
-- Cold 5 m/10 s flow, synchronization and delivered-volume qualification remain physical tests.
-
-## Field reset and development articles
-
-Field reset remains feasible in principle but is high-burden at nine source modules and cannot be released until the commercial outlet, holder, seal and test instructions close. Type 3 remains two complete unmodified LSC `481-CG` systems with `470-CG` + `#484`, explicitly functional-scale and not representative of final inventory.
-
-**NOT RELEASED — DO NOT PROCURE A PRODUCTION PRESSURE SOURCE — DO NOT IMPLEMENT CAD.**
+**NOT RELEASED — DO NOT PURCHASE A PRODUCTION PRESSURE SOURCE — DO NOT IMPLEMENT CAD UNTIL THE CONFIGURED DRAWING INPUT CLOSES.**

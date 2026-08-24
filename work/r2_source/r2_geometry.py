@@ -106,6 +106,11 @@ class PartDef:
     notes: str = ""
     color_key: str = "steel"
     external_context: bool = False
+    final_display_name: str = ""
+    creo_safe_name: str = ""
+    actual_part_number: str = ""
+    traceability_property: str = ""
+    abbreviation_reason: str = ""
 
     def resolved_mass(self) -> float | None:
         if self.mass_kg is not None:
@@ -126,6 +131,8 @@ class Occurrence:
     permitted_dof: str
     state_membership: str = "BOTH"
     notes: str = ""
+    display_name: str = ""
+    display_parent_path: str = ""
 
 
 @dataclass

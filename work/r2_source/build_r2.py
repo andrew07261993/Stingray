@@ -27,6 +27,7 @@ import r2_geometry as g
 import r2_hardware as hw
 import r2_final_scope
 import r2_hierarchy
+import final_detail_naming
 
 
 ROOT = Path(__file__).resolve().parents[2]
@@ -253,7 +254,7 @@ class R2Builder:
         self.state = state
         self.deployed = state == "DEPLOYED"
         self.catalog = g.PartCatalog()
-        self.root = cq.Assembly(name=f"STINGRAY_I5S_DF8_FINAL_{state}_MASTER_ASSY")
+        self.root = cq.Assembly(name=f"Stingray_{state.title()}_Inspection_Assembly")
         self.forward = cq.Assembly(name="100_FORWARD_PENETRATOR_WAI_AND_PRIMARY_STRUCTURE_ASSY")
         self.arm_module = cq.Assembly(name="300_TRUE_TRANSFORM_ARM_AND_POWERTRAIN_ASSY")
         self.aft = cq.Assembly(name="500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY")
@@ -3658,6 +3659,7 @@ def build_state(state: str) -> R2Builder:
     add_primary_connections(b)
     add_motion_tracks(b)
     r2_final_scope.install_final_scope(b, hw)
+    final_detail_naming.apply_final_names(b)
     r2_hierarchy.rebuild_named_hierarchy(b)
     b.root.add(b.forward, name=b.forward.name)
     b.root.add(b.arm_module, name=b.arm_module.name)
@@ -3730,6 +3732,8 @@ def main() -> None:
             json.dumps(data, indent=2), encoding="utf-8", newline="\n",
         )
         print(f"Wrote {out} ({out.stat().st_size} bytes)", flush=True)
+
+    final_detail_naming.write_name_maps(builders[0], ANALYSIS_DIR / "final_detail_cleanup")
 
     manifest = {
         "release_status": "AUTHORING_COMPLETE — RELEASE DISPOSITION CALCULATED BY INDEPENDENT NEUTRAL-CAD VALIDATOR",

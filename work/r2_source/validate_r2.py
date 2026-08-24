@@ -368,6 +368,10 @@ def load_endpoint(state: str, path: Path, inventory: dict[str, Any]) -> Endpoint
     """Fresh XCAF reimport followed by a recursive relative/absolute transform walk."""
     assembly = cq.Assembly.importStep(str(path))
     occurrence_lookup = {o["occurrence_id"]: o for o in inventory["occurrences"]}
+    display_lookup = {
+        str(o.get("display_name", "")): o
+        for o in inventory["occurrences"] if str(o.get("display_name", ""))
+    }
     occurrence_rows: list[dict[str, Any]] = []
     solids: list[SolidRecord] = []
     local_shapes: dict[str, cq.Shape] = {}
@@ -379,7 +383,11 @@ def load_endpoint(state: str, path: Path, inventory: dict[str, Any]) -> Endpoint
         node_path = f"{parent_path}/{node_name}" if parent_path else node_name
         local_matrix = matrix_3x4(local_loc)
         absolute_matrix = matrix_3x4(absolute_loc)
-        occurrence_id, parsed_part = parse_occurrence_name(node_name)
+        display_auth = display_lookup.get(node_name, {})
+        occurrence_id, parsed_part = (
+            (str(display_auth.get("occurrence_id", "")), str(display_auth.get("part_number", "")))
+            if display_auth else parse_occurrence_name(node_name)
+        )
         auth = occurrence_lookup.get(occurrence_id, {})
         part_number = auth.get("part_number", parsed_part)
         classification = auth.get("classification", "ASSEMBLY" if node.obj is None else "UNMAPPED")
@@ -530,7 +538,7 @@ def assembly_hierarchy_audit(endpoint: EndpointData, inventory: dict[str, Any]) 
         occurrence_id = str(row.get("occurrence_id", "")).strip()
         authored = inventory_occurrences.get(occurrence_id)
         expected_parent = "" if authored is None else "/".join(
-            part for part in str(authored.get("parent_path", "")).strip().strip("/").split("/") if part
+            part for part in str(authored.get("display_parent_path", authored.get("parent_path", ""))).strip().strip("/").split("/") if part
         )
         actual_parent = _relative_assembly_path(row.get("parent_path", ""), actual_root)
         if authored is None or actual_parent != expected_parent:

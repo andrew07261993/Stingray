@@ -10,6 +10,7 @@ from typing import Any
 import cadquery as cq
 
 import r2_geometry as g
+import final_detail_naming
 
 
 def _slug(value: str, limit: int = 72) -> str:
@@ -60,16 +61,13 @@ def rebuild_named_hierarchy(builder: Any) -> dict[str, Any]:
         segments = path.split("/")
         all_paths.update("/".join(segments[:index]) for index in range(1, len(segments) + 1))
     nodes = {
-        path: cq.Assembly(name=path.rsplit("/", 1)[-1])
+        path: cq.Assembly(name=final_detail_naming.display_assembly_path(path).rsplit("/", 1)[-1])
         for path in sorted(all_paths, key=lambda value: (value.count("/"), value))
     }
 
     for occurrence in builder.occurrences:
         part = builder.catalog.parts[occurrence.part_number]
-        node_name = (
-            f"{occurrence.occurrence_id}__{part.part_number}__REV_{part.revision}__"
-            f"{_slug(part.description)}"
-        )
+        node_name = occurrence.display_name
         nodes[normalized_parent_paths[occurrence.occurrence_id]].add(
             part.shape,
             name=node_name,
@@ -82,7 +80,8 @@ def rebuild_named_hierarchy(builder: Any) -> dict[str, Any]:
         key=lambda value: (-value.count("/"), value),
     )
     for child_path in nested_paths:
-        parent_path, child_name = child_path.rsplit("/", 1)
+        parent_path, _legacy_child_name = child_path.rsplit("/", 1)
+        child_name = final_detail_naming.display_assembly_path(child_path).rsplit("/", 1)[-1]
         nodes[parent_path].add(nodes[child_path], name=child_name)
 
     builder.forward = nodes[top_names[0]]
@@ -90,8 +89,8 @@ def rebuild_named_hierarchy(builder: Any) -> dict[str, Any]:
     builder.aft = nodes[top_names[2]]
     hierarchy = {
         "root_name": builder.root.name,
-        "top_level_assembly_names": list(top_names),
-        "assembly_paths": sorted(all_paths),
+        "top_level_assembly_names": [final_detail_naming.display_assembly_path(path) for path in top_names],
+        "assembly_paths": sorted(final_detail_naming.display_assembly_path(path) for path in all_paths),
         "leaf_occurrence_count": len(builder.occurrences),
     }
     builder.assembly_hierarchy = hierarchy

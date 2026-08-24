@@ -315,6 +315,217 @@ def routed_round(points: list[tuple[float, float, float]], ro: float, ri: float 
     return solids[0]
 
 
+def tangent_routed_round(points: list[tuple[float, float, float]], ro: float,
+                         ri: float | None = None, bend_radius: float = 3.0) -> cq.Shape:
+    """Sweep one round article along a line/arc wire with tangent bends.
+
+    Each non-collinear vertex is replaced by a true circular arc tangent to
+    its adjacent straight segments. The requested bend radius is reduced only
+    when a short neighboring segment requires it; adjacent tangent offsets
+    are capped so arcs cannot overlap. Unlike the legacy rod/sphere union,
+    this produces one swept BREP without overlapping internal bend volumes.
+    """
+    if len(points) < 2:
+        raise ValueError("A tangent routed round article requires at least two points")
+    if ro <= 0.0 or bend_radius <= 0.0 or (ri is not None and not 0.0 < ri < ro):
+        raise ValueError(f"Invalid tangent-route dimensions ro={ro}, ri={ri}, bend_radius={bend_radius}")
+    vectors = [cq.Vector(*point) for point in points]
+    for a, b in zip(vectors, vectors[1:]):
+        if (b - a).Length <= 1.0e-9:
+            raise ValueError(f"Consecutive tangent-route points must be distinct: {a.toTuple()}, {b.toTuple()}")
+
+    edges: list[cq.Edge] = []
+    cursor = vectors[0]
+    for index in range(1, len(vectors) - 1):
+        previous, vertex, following = vectors[index - 1:index + 2]
+        incoming = (vertex - previous).normalized()
+        outgoing = (following - vertex).normalized()
+        turn = math.acos(max(-1.0, min(1.0, incoming.dot(outgoing))))
+        if turn <= 1.0e-7:
+            continue
+        if abs(math.pi - turn) <= 1.0e-7:
+            raise ValueError(f"Tangent route cannot reverse direction at point {points[index]}")
+        tangent_factor = math.tan(turn / 2.0)
+        offset = min(
+            bend_radius * tangent_factor,
+            0.24 * (vertex - previous).Length,
+            0.24 * (following - vertex).Length,
+        )
+        actual_radius = offset / tangent_factor
+        if actual_radius <= max(ro * 1.05, 1.0e-6):
+            raise ValueError(
+                f"Route bend at {points[index]} is too tight for section radius {ro}: "
+                f"actual_centerline_radius={actual_radius}"
+            )
+        tangent_start = vertex - incoming * offset
+        tangent_end = vertex + outgoing * offset
+        if (tangent_start - cursor).Length > 1.0e-8:
+            edges.append(cq.Edge.makeLine(cursor, tangent_start))
+        center_direction = (-incoming + outgoing).normalized()
+        center = vertex + center_direction * (actual_radius / math.sin(turn / 2.0))
+        start_radius = tangent_start - center
+        end_radius = tangent_end - center
+        midpoint = center + (start_radius.normalized() + end_radius.normalized()).normalized() * actual_radius
+        edges.append(cq.Edge.makeThreePointArc(tangent_start, midpoint, tangent_end))
+        cursor = tangent_end
+    if (vectors[-1] - cursor).Length > 1.0e-8:
+        edges.append(cq.Edge.makeLine(cursor, vectors[-1]))
+    path_wire = cq.Wire.assembleEdges(edges)
+    first_tangent = (vectors[1] - vectors[0]).normalized()
+    if ri is not None:
+        try:
+            direct_profile = cq.Workplane(
+                cq.Plane(origin=vectors[0], normal=first_tangent)
+            ).circle(ro).circle(ri)
+            direct = direct_profile.sweep(
+                path_wire, isFrenet=True, transition="round", clean=False
+            ).val()
+            direct_solids = direct.Solids()
+            if len(direct_solids) == 1 and direct.isValid() and direct.Volume() > 0.0:
+                return direct_solids[0]
+        except Exception:
+            pass
+        try:
+            control_vectors = list(vectors)
+            for _endpoint_fit_pass in range(12):
+                smooth_edge = cq.Edge.makeSplineApprox(
+                    control_vectors, tol=0.05, smoothing=(1.0, 1.0, 1.0),
+                    minDeg=3, maxDeg=5,
+                )
+                start_error = smooth_edge.startPoint() - vectors[0]
+                end_error = smooth_edge.endPoint() - vectors[-1]
+                if max(start_error.Length, end_error.Length) <= 0.01:
+                    break
+                control_vectors[0] = control_vectors[0] - start_error
+                control_vectors[-1] = control_vectors[-1] - end_error
+            smooth_wire = cq.Wire.assembleEdges([smooth_edge])
+            smooth_profile = cq.Workplane(cq.Plane(
+                origin=smooth_edge.startPoint(), normal=smooth_edge.tangentAt(0.0)
+            )).circle(ro).circle(ri)
+            smooth = smooth_profile.sweep(
+                smooth_wire, isFrenet=True, transition="round", clean=False
+            ).val()
+            smooth_solids = smooth.Solids()
+            endpoint_error = max(
+                (smooth_edge.startPoint() - vectors[0]).Length,
+                (smooth_edge.endPoint() - vectors[-1]).Length,
+            )
+            if (
+                len(smooth_solids) == 1 and smooth.isValid()
+                and smooth.Volume() > 0.0 and endpoint_error <= 0.05
+            ):
+                return smooth_solids[0]
+        except Exception:
+            pass
+    else:
+        try:
+            exact_edge = cq.Edge.makeSpline(vectors)
+            exact_wire = cq.Wire.assembleEdges([exact_edge])
+            exact_profile = cq.Workplane(cq.Plane(
+                origin=exact_edge.startPoint(), normal=exact_edge.tangentAt(0.0)
+            )).circle(ro)
+            exact = exact_profile.sweep(
+                exact_wire, isFrenet=True, transition="round", clean=False
+            ).val()
+            exact_solids = exact.Solids()
+            if len(exact_solids) == 1 and exact.isValid() and exact.Volume() > 0.0:
+                return exact_solids[0]
+        except Exception:
+            pass
+        try:
+            smooth_edge = cq.Edge.makeSplineApprox(
+                vectors, tol=0.05, smoothing=(1.0, 1.0, 1.0),
+                minDeg=3, maxDeg=5,
+            )
+            smooth_wire = cq.Wire.assembleEdges([smooth_edge])
+            smooth_profile = cq.Workplane(cq.Plane(
+                origin=smooth_edge.startPoint(), normal=smooth_edge.tangentAt(0.0)
+            )).circle(ro)
+            smooth = smooth_profile.sweep(
+                smooth_wire, isFrenet=True, transition="round", clean=False
+            ).val()
+            smooth_solids = smooth.Solids()
+            endpoint_error = max(
+                (smooth_edge.startPoint() - vectors[0]).Length,
+                (smooth_edge.endPoint() - vectors[-1]).Length,
+            )
+            if (
+                len(smooth_solids) == 1 and smooth.isValid()
+                and smooth.Volume() > 0.0 and endpoint_error <= 0.05
+            ):
+                return smooth_solids[0]
+        except Exception:
+            pass
+    # Sweep each C1-continuous line/arc span from its exact tangent plane,
+    # then Boolean-union the shared end faces. This avoids OCCT's inverted
+    # hollow-pipe Boolean on long multi-edge three-dimensional wires while
+    # retaining one manufactured solid and no overlapping bend volumes.
+    pieces: list[cq.Shape] = []
+    for edge in edges:
+        tangent = edge.tangentAt(0.0).normalized()
+        profile = cq.Workplane(cq.Plane(origin=edge.startPoint(), normal=tangent)).circle(ro)
+        swept = profile.sweep(
+            edge, isFrenet=True, transition="round", clean=False
+        ).val()
+        swept_solids = swept.Solids()
+        if len(swept_solids) != 1:
+            raise ValueError(f"Route sweep span produced {len(swept_solids)} solids")
+        pieces.append(swept_solids[0])
+    out = pieces[0]
+    for piece in pieces[1:]:
+        out = out.fuse(piece)
+    out = out.clean()
+    if ri is not None:
+        lumen_profile = cq.Wire.makeCircle(ri, vectors[0], first_tangent)
+        lumen = cq.Solid.sweep(
+            lumen_profile, [], path_wire, True, True, None, "transformed"
+        )
+        extension = max(0.20, ro * 0.50)
+        final_tangent = (vectors[-1] - vectors[-2]).normalized()
+        lumen = lumen.fuse(cq.Solid.makeCylinder(
+            ri, extension, vectors[0] - first_tangent * extension, first_tangent
+        ))
+        lumen = lumen.fuse(cq.Solid.makeCylinder(
+            ri, extension, vectors[-1], final_tangent
+        ))
+        out = out.cut(lumen)
+    solids = out.Solids()
+    if len(solids) != 1 or not out.isValid() or out.Volume() <= 0.0:
+        raise ValueError(
+            "Tangent routed round article must be one valid positive-orientation solid; "
+            f"found {len(solids)} solids, valid={out.isValid()}, volume_mm3={out.Volume()}, "
+            f"ro={ro}, ri={ri}, first={points[0]}, last={points[-1]}"
+        )
+    return solids[0]
+
+
+def planar_tangent_routed_round(points_xz: list[tuple[float, float]], ro: float,
+                                ri: float | None, bend_radius: float,
+                                clock_deg: float = 0.0) -> cq.Shape:
+    """Create a planar formed route with true tangent circular fillets."""
+    if len(points_xz) < 3:
+        raise ValueError("A planar tangent route requires at least three points")
+    wire = cq.Workplane("XZ").polyline(points_xz).wire().val()
+    wire = wire.fillet2D(bend_radius, wire.Vertices()[1:-1])
+    first = cq.Vector(points_xz[0][0], 0.0, points_xz[0][1])
+    second = cq.Vector(points_xz[1][0], 0.0, points_xz[1][1])
+    profile = cq.Workplane(cq.Plane(
+        origin=first, normal=(second - first).normalized()
+    )).circle(ro)
+    if ri is not None:
+        profile = profile.circle(ri)
+    out = profile.sweep(
+        wire, isFrenet=True, transition="round", clean=False
+    ).val().rotate((0, 0, 0), (0, 0, 1), clock_deg)
+    solids = out.Solids()
+    if len(solids) != 1 or not out.isValid() or out.Volume() <= 0.0:
+        raise ValueError(
+            "Planar tangent route must be one valid exact solid; "
+            f"found {len(solids)} solids, valid={out.isValid()}, volume_mm3={out.Volume()}"
+        )
+    return solids[0]
+
+
 def strap_between(p1: tuple[float, float, float], p2: tuple[float, float, float], width: float, thickness: float) -> cq.Shape:
     """Flat structural web aligned with a straight load-path segment."""
     v = cq.Vector(*(p2[i] - p1[i] for i in range(3)))
@@ -1297,7 +1508,7 @@ def make_service_door_local() -> cq.Shape:
         a = math.radians(phi)
         center = cq.Vector(22.9 * math.cos(a), 22.9 * math.sin(a), -1.5)
         out = out.cut(cq.Solid.makeSphere(1.62, center))
-    return out
+    return _single_valid_positive(out, "moving service-door hinge leaf")
 
 
 def door_occurrence_loc(deployed: bool, pivot_z: float = 2028.0) -> cq.Location:

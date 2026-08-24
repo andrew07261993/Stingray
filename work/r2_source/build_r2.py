@@ -605,7 +605,13 @@ def service_throat_shape() -> cq.Shape:
     anchor = g.ring_y(18.0, 77.0, 3.0, 3.2, 2.0)
     anchor_web = g.box_center(3.2, 3.0, 2.0, 22.5, 0.0, 77.0)
     throat = throat.fuse(anchor).fuse(anchor_web)
-    return throat
+    solids = throat.Solids()
+    if len(solids) != 1 or not throat.isValid():
+        raise ValueError(
+            "Fixed service-throat hinge leaf must remain one cohesive valid part; "
+            f"found {len(solids)} solids (valid={throat.isValid()})"
+        )
+    return solids[0]
 
 
 def radial_detent_shape() -> cq.Shape:
@@ -737,24 +743,36 @@ def puncture_head_shape() -> cq.Shape:
 
 def manifold_shape() -> cq.Shape:
     block = g.cyl_z(20.0, 10.0, z0=-5.0)
-    for x in (-9.5, 9.5):
-        for y in (-9.5, 9.5):
-            block = block.cut(g.cyl_z(5.55, 4.4, x, y, -5.2))
-            block = block.cut(g.cyl_z(2.2, 10.6, x, y, -5.3))
-    block = block.cut(g.cyl_z(3.0, 10.6, 0, 0, -5.3))
+    cartridge_centers = [(-9.5, -9.5), (9.5, -9.5), (9.5, 9.5), (-9.5, 9.5)]
+    # Four blind cartridge inlets enter from the forward face and stop in a
+    # sealed mid-plane collection gallery. The former axial cutters crossed
+    # the complete block and left four unintended openings on the aft face.
+    # Each diagonal gallery ends inside the block; the central outlet opens
+    # only on the aft feed face.
+    for x, y in cartridge_centers:
+        block = block.cut(g.cyl_z(5.55, 4.4, x, y, -5.2))
+        block = block.cut(g.cyl_z(2.2, 5.9, x, y, -5.3))
+        block = block.cut(g.rod_between((0.0, 0.0, 0.0), (x, y, 0.0), 1.20))
+    block = block.cut(g.cyl_z(1.01, 5.5, 0, 0, -0.2))
     # Three dedicated booster-collection ports at the occurrence-matched
     # reservoir clocks.  Exact route liners occupy these bores with 0.10 mm
     # radial clearance and terminate at the manifold aft face.
     for phi in (30.0, 150.0, 270.0):
         x, y = radial_xy(14.0, phi)
-        block = block.cut(g.cyl_z(1.10, 10.6, x, y, -5.3))
+        block = block.cut(g.cyl_z(1.10, 5.6, x, y, -0.3))
     for phi in (0.0, 90.0, 180.0, 270.0):
         x, y = radial_xy(18.1, phi)
         tap = g.make_tapped_hole_cutter_z(
             2.50, 6.40, thread_major_diameter_mm=3.0, z0=-5.0
         ).translate((x, y, 0.0))
         block = block.cut(tap)
-    return block
+    solids = block.Solids()
+    if len(solids) != 1 or not block.isValid():
+        raise ValueError(
+            "Sealed collection manifold must remain one valid exact solid; "
+            f"found {len(solids)} solids (valid={block.isValid()})"
+        )
+    return solids[0]
 
 
 def water_trigger_housing_shape() -> cq.Shape:
@@ -806,14 +824,14 @@ def water_trigger_housing_shape() -> cq.Shape:
 
 def valve_body_shape() -> cq.Shape:
     body = g.cyl_z(5.5, 22.0)
-    body = body.cut(g.cyl_z(2.1, 22.4, z0=-0.2))
+    body = body.cut(g.cyl_z(1.01, 22.4, z0=-0.2))
     branch = cq.Solid.makeCylinder(3.0, 11.0, cq.Vector(0, 0, 11.0), cq.Vector(1, 0, 0))
     branch = branch.cut(cq.Solid.makeCylinder(1.2, 11.4, cq.Vector(-0.2, 0, 11), cq.Vector(1, 0, 0)))
     body = body.fuse(branch)
-    # The valve occurrence is clocked +90 degrees, so this 240-degree local
-    # branch becomes the global 330-degree pilot corridor.  Coaxial routing
+    # The valve occurrence is clocked +90 degrees, so this 235-degree local
+    # branch becomes the global 325-degree pilot corridor. Coaxial routing
     # from its end face clears both adjacent booster envelopes.
-    pilot_axis = cq.Vector(math.cos(math.radians(240.0)), math.sin(math.radians(240.0)), 0.0)
+    pilot_axis = cq.Vector(math.cos(math.radians(235.0)), math.sin(math.radians(235.0)), 0.0)
     pilot_branch = cq.Solid.makeCylinder(1.65, 6.5, cq.Vector(0, 0, 11.0), pilot_axis)
     pilot_bore = cq.Solid.makeCylinder(0.90, 7.0, cq.Vector(0, 0, 11.0) - pilot_axis * 0.25, pilot_axis)
     body = body.fuse(pilot_branch).cut(pilot_bore)
@@ -1110,18 +1128,11 @@ def build_forward(b: R2Builder) -> None:
     # real separate occurrences laser-welded to the shell inner land.
     feed_phi = 70.0
     feed_radius = 21.0
-    fx, fy = radial_xy(feed_radius, feed_phi)
-    feed_points_local = [
-        (0.0, 0.0, 0.50),
-        (0.0, 0.0, 1.50),
-        (fx, fy, 1.50),
-        (fx, fy, 403.00),
-        (0.0, 0.0, 410.50),
-        (0.0, 0.0, 411.50),
-    ]
-    feed_shape = g.routed_round(feed_points_local, 1.00, 0.65)
-    feed_shape = feed_shape.fuse(g.tube_z(3.40, 0.65, 1.00, z0=0.00))
-    feed_shape = feed_shape.fuse(g.tube_z(2.50, 0.65, 0.80, z0=411.20))
+    feed_shape = g.planar_tangent_routed_round(
+        [(0.0, 0.0), (0.0, 12.0), (feed_radius, 33.0),
+         (feed_radius, 379.0), (0.0, 400.0), (0.0, 412.0)],
+        1.00, 0.65, bend_radius=6.0, clock_deg=feed_phi,
+    )
     feed_solids = feed_shape.Solids()
     if len(feed_solids) != 1 or not feed_shape.isValid():
         raise ValueError(
@@ -1135,19 +1146,19 @@ def build_forward(b: R2Builder) -> None:
         "STINGRAY controlled pressure-route drawing", "DRAWING_DERIVED",
         mass_kg=0.0070,
         process=(
-            "CNC form; braze occurrence-matched integral ferrule collars; "
+            "CNC form; prepare occurrence-matched direct-braze tube ends; "
             "passivate; helium leak and 20.7 MPa hydro proof"
         ),
         notes=(
-            "2.00 mm OD x 0.35 mm wall exact formed feed with integral end "
-            "collars; three occurrence-specific welded spring supports."
+            "2.00 mm OD x 0.35 mm wall exact formed feed with direct-braze end "
+            "preparations; three occurrence-specific welded spring supports."
         ),
         color_key="route",
     )
     feed_id = b.add(
         b.forward, path, feed, "ROUTE-MANIFOLD-FEED-001",
         g.translation_loc(0.0, 0.0, 447.0), "FIXED",
-        "FORMED_PRESSURE_ROUTE_WITH_INTEGRAL_FERRULES", "0",
+        "FORMED_PRESSURE_ROUTE_WITH_DIRECT_BRAZE_ENDS", "0",
     )
 
     clip_ring = g.tube_z(1.80, 1.05, 4.0, z0=-2.0)
@@ -1185,7 +1196,7 @@ def build_forward(b: R2Builder) -> None:
         )
     b.add_route_record(
         feed_id, "COLLECTION-MANIFOLD-001", "FULLFLOW-VALVE-001",
-        "Integral occurrence-matched brazed ferrule collars",
+        "Occurrence-matched direct-braze tube-end preparations",
         "No wall penetration; protected forward-body internal corridor",
         "Three laser-welded titanium spring clips on the shell inner land",
         20.0, 0.0, "20.7 MPa proof", "COMPLETE",
@@ -1794,15 +1805,14 @@ def build_arm_module(b: R2Builder) -> None:
         return ([(x - x0, y - y0, z - z0) for x, y, z in points], g.translation_loc(x0, y0, z0))
 
     gas_points = [
-        (0.0, 11.0, 870.0), (0.0, 13.0, 870.0), polar_point(18.0, 85.0, 830.0), polar_point(23.0, 85.0, 845.0),
-        polar_point(26.2, 85.0, 850.0), polar_point(26.2, 85.0, 1642.5),
+        (0.0, 11.0, 870.0), (0.0, 17.0, 870.0), polar_point(18.0, 85.0, 850.0),
+        *[polar_point(26.2, 85.0, z) for z in (850.0, 885.0, 1200.0, 1638.0, 1642.5)],
         polar_point(24.0, 85.0, 1660.0),
         polar_point(23.0, 85.0, 1670.0), polar_point(22.5, 85.0, 1720.0),
     ]
     pilot_points = [
-        polar_point(6.5, 330.0, 870.0), polar_point(8.0, 330.0, 870.0),
-        polar_point(18.0, 330.0, 865.0), polar_point(23.0, 325.0, 850.0),
-        polar_point(26.2, 325.0, 850.0), polar_point(26.2, 325.0, 1642.5),
+        polar_point(6.5, 325.0, 870.0), polar_point(18.0, 325.0, 870.0),
+        *[polar_point(26.2, 325.0, z) for z in (870.0, 885.0, 1200.0, 1638.0, 1642.5)],
         polar_point(24.0, 325.0, 1660.0), polar_point(18.0, 325.0, 1680.0),
         polar_point(18.0, 315.0, 1700.0), polar_point(18.0, 300.0, 1720.0),
         polar_point(18.0, 290.0, 1735.0), polar_point(18.0, 280.0, 1748.0),
@@ -1811,11 +1821,11 @@ def build_arm_module(b: R2Builder) -> None:
     bowden_points = [
         (0.0, 0.0, 557.5), (0.0, 0.0, 562.0), polar_point(18.0, 205.0, 565.0), polar_point(23.0, 205.0, 575.0),
         polar_point(23.0, 205.0, 845.0), polar_point(26.2, 205.0, 850.0),
-        polar_point(26.2, 205.0, 1642.5), polar_point(24.0, 205.0, 1660.0),
+        polar_point(26.2, 205.0, 1642.5),
+        polar_point(24.0, 205.0, 1660.0),
         polar_point(17.0, 205.0, 1680.0),
         polar_point(17.0, 225.0, 1700.0), polar_point(17.0, 240.0, 1720.0),
         polar_point(17.0, 255.0, 1735.0), polar_point(17.0, 260.0, 1745.0),
-        polar_point(15.5, 270.0, 1745.0),
         polar_point(18.1, 270.0, 1745.0),
     ]
     # The wire terminates coplanar with the sear nose.  The former route first
@@ -1856,8 +1866,54 @@ def build_arm_module(b: R2Builder) -> None:
     }
     route_occurrences: dict[str, str] = {}
     for rid, points, ro, ri, origin, destination, process, rating, material in route_specs:
-        local_points, route_loc = localize(points)
-        route_shape = g.routed_round(local_points, ro, ri)
+        if rid == "PILOT-LINE":
+            main_shape = g.planar_tangent_routed_round(
+                [(6.5, 870.0), (26.2, 870.0), (26.2, 1642.5),
+                 (24.0, 1660.0), (18.0, 1690.0)],
+                ro, ri, bend_radius=3.0, clock_deg=325.0,
+            )
+            tail_points = [
+                polar_point(18.0, 325.0, 1670.0), polar_point(18.0, 325.0, 1690.0),
+                polar_point(18.0, 315.0, 1700.0), polar_point(18.0, 300.0, 1720.0),
+                polar_point(18.0, 290.0, 1735.0), polar_point(18.0, 280.0, 1748.0),
+                polar_point(21.1, 270.0, 1753.85),
+            ]
+            tail_local, tail_loc = localize(tail_points)
+            tail_shape = g.moved(
+                g.tangent_routed_round(tail_local, ro, ri, bend_radius=3.0), tail_loc
+            )
+            global_route = main_shape.fuse(tail_shape)
+            route_origin = polar_point(6.5, 325.0, 870.0)
+            route_shape = global_route.translate(tuple(-value for value in route_origin))
+            route_loc = g.translation_loc(*route_origin)
+        elif rid == "BOWDEN-SHEATH":
+            main_shape = g.planar_tangent_routed_round(
+                [(0.0, 557.5), (0.0, 562.0), (18.0, 565.0),
+                 (23.0, 575.0), (23.0, 845.0), (26.2, 850.0),
+                 (26.2, 1642.5), (24.0, 1660.0), (17.0, 1690.0)],
+                ro, ri, bend_radius=2.0, clock_deg=205.0,
+            )
+            tail_points = [
+                polar_point(17.0, 205.0, 1670.0), polar_point(17.0, 205.0, 1690.0),
+                polar_point(17.0, 225.0, 1700.0), polar_point(17.0, 240.0, 1720.0),
+                polar_point(17.0, 255.0, 1735.0), polar_point(17.0, 260.0, 1745.0),
+                polar_point(18.1, 270.0, 1745.0),
+            ]
+            tail_local, tail_loc = localize(tail_points)
+            tail_shape = g.moved(
+                g.tangent_routed_round(tail_local, ro, ri, bend_radius=3.0), tail_loc
+            )
+            global_route = main_shape.fuse(tail_shape)
+            route_origin = (0.0, 0.0, 557.5)
+            route_shape = global_route.translate(tuple(-value for value in route_origin))
+            route_loc = g.translation_loc(*route_origin)
+        else:
+            local_points, route_loc = localize(points)
+            route_shape = g.tangent_routed_round(
+                local_points, ro, ri,
+                bend_radius={"GAS-MAIN": 4.0, "BOWDEN-SHEATH": 3.0,
+                             "BOWDEN-WIRE": 3.0}[rid],
+            )
         route = b.define(
             f"DF8-FINAL-{rid}-001", "A", f"COMPLETE TERMINATED {rid.replace('-', ' ')} ASSEMBLY",
             route_shape, material, "MAKE", "STINGRAY controlled route assembly", "DRAWING_DERIVED",

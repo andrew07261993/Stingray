@@ -1,0 +1,25 @@
+failure_id,function,failure_mode,effect,architectures,existing_or_proposed_control,severity_1_to_5,likelihood_1_to_5,detection_1_to_5,rpn,required_action,status
+FM-001,water sensing,Premature activation from humidity/splash,Unsafe discharge or pack deployment,A;C,"V80040 splash/humidity-resistant family; transport inhibit",4,2,3,24,"Splash/humidity/aging test and keyed inhibit",OPEN
+FM-002,water sensing,No activation after immersion,No buoy or arm deployment,A;B;C,"Manual/backup initiation concept; replace-by date",5,2,4,40,"Two-specimen underwater repeatability and fouling test",OPEN
+FM-003,gas storage,Cartridge underfill or cold liquid lock,Insufficient inflation,A;C,"Incoming weight check; multiple branches",5,3,3,45,"Cold/depth transient test and acceptance weight",OPEN
+FM-004,gas storage,Incorrect or spent cartridge installed,No/partial gas,A;C,"Pierced-cylinder indication; keyed kit",5,2,2,20,"Poka-yoke design and pre-use indicator check",OPEN
+FM-005,pressure control,One branch check valve blocked,Reduced gas charge/flow,A;C,"Independent branches and one-branch-out test",4,2,3,24,"Specify cleanliness and branch flow test",OPEN
+FM-006,pressure control,Check valve reverse leakage,Cross-branch discharge or loss,C,"Individual checks; protected routing",4,2,4,32,"Leak/flow qualification",OPEN
+FM-007,pressure control,Relief absent or mis-set,B;C,Buoy overpressure,"Catalog relief candidate; controlled set point",5,2,4,40,"Close buoy MAWP then select/test relief",OPEN
+FM-008,pressure storage,Cylinder isolation or fill error,B,No gas or unsafe overcharge,"DOT cylinder; qualified fill station; mass record",5,2,3,30,"Approved fill procedure and lifecycle record",OPEN
+FM-009,release,Pilot actuator fails to retract,Arms remain stowed,A;B;C,"Backup manual path and accessible replaceable actuator",5,2,4,40,"Force margin and underwater cycle test",OPEN
+FM-010,arm actuation,Gas spring unavailable,Reduced deployment energy,A;B;C,"Central backup spring",4,2,3,24,"Zero-gas-spring deployment test",OPEN
+FM-011,backup energy,Compression spring fractured or set,Deployment failure,A;B;C,"Incoming dimensions; guided/captive design",5,2,4,40,"Cycle/corrosion/solid-height qualification",OPEN
+FM-012,damping,Damper seizes,Deployment blocked or too fast,A;B;C,"Bypass/lost-motion must be designed; physical stop",5,2,4,40,"Do not inherit accepted single-point seizure; jam test",OPEN
+FM-013,stops/locks,One deployed lock fails,Arm back-drives,A;B;C,"Independent lock per arm and hard stop",5,2,3,30,"0.8 kN/arm floor proof plus shock test",OPEN
+FM-014,transport inhibit,Inhibit omitted or ineffective,Unsafe handling deployment,A;B;C,"Positive keyed pin and conspicuous witness",5,2,2,20,"Abuse/two-action verification",OPEN
+FM-015,buoy extraction,Packed buoy jams,Inflation trapped in body,A;B;C,"Dedicated ejector spring and pack gauge",5,3,4,60,"Wet/cold pack extraction test",OPEN
+FM-016,buoy,Seam or inlet rupture,Loss of buoyancy,A;B;C,"Qualified buoy/module and relief",5,2,4,40,"Supplier qualification plus proof/burst/aging",OPEN
+FM-017,recovery,Tether or termination failure,Loss of recovered system,A;B;C,"Continuous structural chain; catalog rope",5,2,4,40,"Wet splice/chafe/dynamic proof",OPEN
+FM-018,corrosion,Galvanic or crevice corrosion,Binding/leak/strength loss,A;B;C,"316/A4 preference; isolation/drainage",4,3,4,48,"Material couple review and salt immersion",OPEN
+FM-019,service,Incorrect reset sequence,Latent unsafe or no-fire state,A;B;C,"Keyed kit; witnesses; controlled fold/reset card",5,3,3,45,"Human-factors timed reset trials",OPEN
+FM-020,service,Residual pressure during access,Personnel injury,A;B;C,"Protected vent and pressure indication",5,2,2,20,"Formal pressure safety review; rated tooling",OPEN
+FM-021,envelope,Module exceeds body or arm envelope,Integration failure,A;B;C,"Source-derived CAD packaging gate",4,3,2,24,"No procurement until exact CAD/tolerance study",OPEN
+FM-022,mass,Architecture exceeds mass/reserve,Noncompliance,A;B;C,"Mass budget with 1 kg reserve requirement",4,2,2,16,"Exact vendor mass and CAD roll-up",OPEN
+FM-023,supply,Single-source inflator/cartridge discontinued,Redesign/requalification,A;C,"Second-source interface study; lifetime buy only after release",3,3,3,27,"RFQ lifecycle statement and alternate qualification",OPEN
+FM-024,validation,Baseline evidence improperly inherited,False release claim,A;B;C,"Explicit no-carryover gate",5,2,1,10,"Run complete new validation",OPEN

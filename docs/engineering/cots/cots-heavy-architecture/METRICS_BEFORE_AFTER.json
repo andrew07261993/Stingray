@@ -1,0 +1,63 @@
+{
+  "schema": "STINGRAY_DF8_COTS_HEAVY_ARCHITECTURE_METRICS_V1",
+  "status": "PHASE_1_TO_4_COMPLETE_PROVISIONAL_NOT_RELEASED",
+  "baseline": {
+    "partdefs_total": 121,
+    "make_partdefs": 104,
+    "cots_related_partdefs": 17,
+    "independently_purchased_cots_parent_lines": 15,
+    "purchased_assembly_child_geometry_definitions": 2,
+    "standard_fastener_definitions": 5,
+    "functional_cots_numerator": 10,
+    "functional_unique_line_denominator": 114,
+    "functional_cots_percent": 8.77,
+    "delivered_item_cocs": 0,
+    "state_parity_occurrences_passed": 279,
+    "state_parity_occurrences_total": 279,
+    "accepted_motion_deg_inclusive": [0, 55],
+    "first_unvalidated_motion_deg": 56,
+    "release_status": "NOT RELEASED"
+  },
+  "alternatives": {
+    "A": {
+      "name": "Twin marine-module 70",
+      "functional_cots_numerator": 16,
+      "functional_unique_line_denominator": 22,
+      "functional_cots_percent": 72.73,
+      "projected_custom_unique_lines": 6,
+      "projected_custom_fabrication_operations": 16,
+      "custom_pressure_vessels": 0,
+      "estimated_mass_kg": 13.3,
+      "weighted_score_out_of_500": 382
+    },
+    "B": {
+      "name": "DOT refillable 300",
+      "functional_cots_numerator": 15,
+      "functional_unique_line_denominator": 23,
+      "functional_cots_percent": 65.22,
+      "projected_custom_unique_lines": 8,
+      "projected_custom_fabrication_operations": 19,
+      "custom_pressure_vessels": 0,
+      "estimated_mass_kg": 14.7,
+      "weighted_score_out_of_500": 313
+    },
+    "C": {
+      "name": "Distributed three-cartridge mechanical bus",
+      "functional_cots_numerator": 18,
+      "functional_unique_line_denominator": 23,
+      "functional_cots_percent": 78.26,
+      "projected_custom_unique_lines": 5,
+      "projected_custom_constituent_partdefs": 21,
+      "projected_custom_fabrication_operations": 14,
+      "custom_pressure_vessels": 0,
+      "custom_pressure_boundary_adapters": 0,
+      "estimated_mass_kg": 14.0,
+      "estimated_mass_reserve_kg": 4.14,
+      "weighted_score_out_of_500": 405,
+      "provisionally_selected": true
+    }
+  },
+  "coverage_policy": "Independently orderable functional unique line items; excludes standard fasteners, raw stock, consumables, inherited child geometry, machining services, and catalog assembly splits.",
+  "maturity_caveat": "Projected COTS classification does not imply procurement, CoC, delivered identity, qualification, CAD fit, or release maturity.",
+  "terminal_status": "COTS-HEAVY ARCHITECTURE TRADE COMPLETE — PROVISIONAL ARCHITECTURE SELECTED — CAD IMPLEMENTATION HELD FOR OWNER CREO ACCEPTANCE AND ARCHITECTURE DECISION"
+}

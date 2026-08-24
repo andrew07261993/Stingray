@@ -1,0 +1,30 @@
+requirement_id,category,requirement_or_constraint,value_or_condition,source_authority,support_status,architecture_disposition,verification_or_gate
+CH-REQ-001,Mission,Three-arm functional deployment,"3 arms; 0/120/240 deg clocking; 80 deg deployed",R1_REJECTION_R2_CORRECTION lines 82-98 and WP02-REQ-001,SUPPORTED,PRESERVE,New exact CAD kinematics and physical deployment test
+CH-REQ-002,Mission,Parachute/fabric engagement mission,Functional engagement and retention of mission fabric,User commission plus arm/recovery architecture context,PARTIALLY_SUPPORTED,PRESERVE; engagement loads unknown,UNKNOWN — DESIGN GATE REQUIRED
+CH-REQ-003,Mission,Buoyancy/recovery function,Inflatable buoy plus continuous structural recovery load path,Original commission section 15 and R2 NCR-02,SUPPORTED,PRESERVE,Physical buoyancy and recovery proof tests
+CH-REQ-004,Activation,Water-initiated operation,Passive water-sensitive authorization and gas initiation,WP03 source BOM and Halkey-Roberts V80040 source record,SUPPORTED,PRESERVE,Immersion and false-activation tests
+CH-REQ-005,Power,No electrical dependency,Passive mechanical/pneumatic operation,User commission; repository architecture is non-electrical,PARTIALLY_SUPPORTED,MANDATORY FOR SELECTED CONCEPT,Design review and physical test
+CH-REQ-006,Envelope,Maximum stowed arm-module diameter,57.150 mm,R2 correction section 2,SUPPORTED,PRESERVE,New CAD envelope and tolerance analysis
+CH-REQ-007,Envelope,Normal body target,53.0 mm where practicable,R2 correction section 2,SUPPORTED,TARGET,New CAD envelope review
+CH-REQ-008,Envelope,Maximum rigid-body length,2032 mm,R2 correction section 2,SUPPORTED,PRESERVE,New CAD measurement
+CH-REQ-009,Mass,Ready-to-throw maximum mass,18.14 kg,R2 correction section 2,SUPPORTED,PRESERVE,Occurrence mass roll-up and measured article
+CH-REQ-010,Mass,Unallocated mass reserve,At least 1.0 kg,Original commission section 4.2,SUPPORTED,PRESERVE,New mass budget
+CH-REQ-011,Structure,Continuous recovery load path,"buoy harness to terminal/tether/hardware/body hardpoint/primary structure",R2 correction NCR-02,SUPPORTED,PRESERVE,Connectivity audit and proof test
+CH-REQ-012,Environment,Seawater/corrosion exposure,Materials and interfaces suitable for seawater service,User commission; drain/corrosion provisions in source,PARTIALLY_SUPPORTED,PRESERVE,UNKNOWN — DESIGN GATE REQUIRED
+CH-REQ-013,Service,Field reset,System resettable without depot reconstruction,User commission and reverse reset/service motion requirement,SUPPORTED AS NEW ARCHITECTURE METRIC,PRIMARY TRADE METRIC,Service demonstration
+CH-REQ-014,Safety,Positive deployment,"hard stops; positive deployed locks; passive backup deployment",Original commission section 4.4 and WP02 requirements,SUPPORTED,PRESERVE,Load/functional/jam tests
+CH-REQ-015,Safety,Physical transport inhibit/safe condition,Positive stowed retention and transport inhibit interface,Original commission sections 4.4 and 11,SUPPORTED,PRESERVE,Two-action release and inhibit verification
+CH-REQ-016,Safety,Non-pyrotechnic architecture,No pyrotechnic initiator,User commission,REQUIRED,PRESERVE,Design inspection
+CH-REQ-017,Mechanism,Crosshead travel,At least 15.050 mm,R2 correction section 2,SUPPORTED,PRESERVE IF COMMON-CROSSHEAD RETAINED,New kinematics
+CH-REQ-018,Mechanism,Arm pivot-to-tip length,733.806 mm,R2 correction section 2,SUPPORTED,PRESERVE,New CAD measurement
+CH-REQ-019,Mechanism,Arm provisional design load,0.8 kN per arm any direction until superseded,Original commission section 11,SUPPORTED PROVISIONAL,PRESERVE AS FLOOR,Structural analysis and proof/ultimate test
+CH-REQ-020,Pressure,No custom pressure vessel merely for packaging,Certified/orderable COTS pressure source preferred,User commission pressure policy,REQUIRED,NO CUSTOM VESSEL,Vendor certification review
+CH-REQ-021,Pressure,Buoy nominal volume,Approximately 60 L,Baseline WP04 custom buoy definition,SUPPORTED AS BASELINE APPROXIMATION,TRADE BASIS ONLY,Confirm certified usable volume
+CH-REQ-022,Pressure,Deployment depth,UNKNOWN,No authoritative numeric value found,UNSUPPORTED,UNKNOWN — DESIGN GATE REQUIRED,Owner requirement
+CH-REQ-023,Pressure,Minimum gas/cartridge temperature,UNKNOWN,No authoritative numeric value found,UNSUPPORTED,UNKNOWN — DESIGN GATE REQUIRED,Environmental requirement and cold test
+CH-REQ-024,Pressure,Maximum inflation time,UNKNOWN,No authoritative numeric value found,UNSUPPORTED,UNKNOWN — DESIGN GATE REQUIRED,Mission timing requirement
+CH-REQ-025,Pressure,Buoy relief/maximum working pressure,UNKNOWN,No authoritative numeric value found,UNSUPPORTED,UNKNOWN — DESIGN GATE REQUIRED,Buoy supplier specification
+CH-REQ-026,Recovery,Recovery design/ultimate load above arm floor,UNKNOWN,No system-level numeric value found,UNSUPPORTED,UNKNOWN — DESIGN GATE REQUIRED,Owner load cases
+CH-REQ-027,Environment,Environmental qualification profile,"UNKNOWN: temperature, salinity, immersion duration, shock, vibration, storage",No complete controlled profile found,UNSUPPORTED,UNKNOWN — DESIGN GATE REQUIRED,Qualification plan
+CH-REQ-028,Validation,Baseline parity and motion boundary,"279/279 parity; accepted motion only 0-55 deg; 56-80 deg unvalidated",Source facts and manual checkpoint,SUPPORTED,HISTORICAL ONLY; NOT INHERITED,Full new validation after CAD authorization
+CH-REQ-029,Release,Product release status,NOT RELEASED,Final-cleanup validation summary and owner Creo hold,SUPPORTED,FAIL CLOSED,Owner Creo acceptance plus all release gates

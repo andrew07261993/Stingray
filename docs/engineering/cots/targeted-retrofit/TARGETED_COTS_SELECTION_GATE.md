@@ -1,5 +1,7 @@
 # Targeted COTS Selection Gate
 
+> Phase-4 continuation note (2026-08-24): this file preserves the Phase-2/3 selection record. The current seven-item dispositions and recalculated practical ceiling are controlled by `SELECTED_COTS_TECHNICAL_CLOSURE.md` and `TARGETED_COTS_CAD_IMPLEMENTATION_GATE.md`. Three selections were rejected after exact duty/environment comparison; the current gated ceiling is 24/114 = 21.05%, not the provisional 27/114 below.
+
 ## Gate result
 
 **TARGETED COTS PHASE 2/3 DECISION GATE COMPLETE — CAD IMPLEMENTATION HELD FOR OWNER ACCEPTANCE OF CLEAN CAD BASELINE**

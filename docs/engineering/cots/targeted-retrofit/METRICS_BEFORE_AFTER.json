@@ -1,6 +1,6 @@
 {
-  "schema": "stingray.targeted_cots.metrics.v2",
-  "generated_utc": "2026-08-24T08:35:05Z",
+  "schema": "stingray.targeted_cots.metrics.v3",
+  "generated_utc": "2026-08-24T13:47:00Z",
   "accounting_policy": {
     "functional_denominator": 114,
     "denominator_excludes": [
@@ -10,42 +10,42 @@
       "consumables"
     ],
     "denominator_changed": false,
-    "selection_meaning": "SELECTED_FOR_QUALIFICATION; not implemented, procured, qualified, or released"
+    "adapter_accounting": "Four new custom adapter lines support existing functions and do not create new functional denominator entries.",
+    "selection_meaning": "Phase-4 gates A/B/C survive conditionally; not implemented, procured, qualified or released."
   },
-  "before_phase_2": {
-    "unique_partdefs": 121,
-    "make_partdefs": 104,
-    "cots_related_partdefs": 17,
-    "independently_purchased_cots_parent_lines": 15,
-    "cots_child_geometry_defs": 2,
-    "standard_fastener_defs": 5,
+  "baseline": {
     "functional_cots_numerator": 10,
     "functional_cots_denominator": 114,
     "functional_cots_percent": 8.771929824561402,
+    "make_definitions": 104,
     "delivered_item_cocs_verified": 0,
-    "state_parity_occurrences": "279/279",
-    "accepted_motion_evidence_through_deg": 55,
+    "cad_substitutions_implemented": 0,
     "release_status": "NOT RELEASED"
   },
-  "phase_2_3_gate": {
-    "detailed_candidates": 25,
-    "pressure_reservoir_finalists": 5,
-    "unique_priority_make_definitions_screened": 47,
-    "selected_substitutions": 7,
-    "selected_make_definitions_conditionally_covered": 17,
-    "deferred_or_rejected_candidates": 18,
-    "underwater_test_item_types": 3,
-    "underwater_test_articles_total": 6,
+  "phase_4_gate": {
+    "selections_reviewed": 7,
+    "A_accept_for_cad_implementation": 1,
+    "B_vendor_or_owner_approval": 1,
+    "C_physical_test_before_cad": 2,
+    "D_deferred": 0,
+    "E_rejected": 3,
+    "accepted_cots_additions": 14,
+    "rejected_selected_definitions": 3,
+    "gross_custom_definitions_conditionally_removed": 14,
+    "custom_adapter_lines_added": 4,
+    "net_custom_line_reduction": 10,
     "procurement_orders_placed": 0,
-    "items_with_received_item_cocs": 0,
+    "received_item_cocs_verified": 0,
     "cad_changes": 0
   },
-  "projected_if_all_seven_selections_qualify": {
-    "functional_cots_numerator": 27,
+  "projected_after_gate": {
+    "functional_cots_numerator": 24,
     "functional_cots_denominator": 114,
-    "functional_cots_percent": 23.68421052631579,
-    "remaining_make_definitions": 87,
-    "custom_adapters_introduced": "UNVERIFIED",
+    "functional_cots_percent": 21.052631578947366,
+    "remaining_make_definitions_before_adapter_accounting": 90,
+    "gross_custom_definitions_conditionally_removed": 14,
+    "custom_adapters_introduced": 4,
+    "net_custom_definitions_eliminated": 10,
     "mass_kg": "UNVERIFIED",
     "cg": "UNVERIFIED",
     "release_status": "NOT RELEASED"
@@ -53,7 +53,13 @@
   "practical_ceiling": {
     "target_percent": 50.0,
     "target_met": false,
-    "bounded_targeted_retrofit_percent": 23.68421052631579,
-    "reason": "Current evidence supports only seven architecture-preserving selections. Greater coverage depends on unverified configured tubing, Bowden and tether assemblies or material changes to trigger, latch, manifold, harness and recovery architecture."
-  }
+    "bounded_targeted_retrofit_percent": 21.052631578947366,
+    "basis": "Only A/B/C items survive current evidence. The value is conditional on vendor approval and physical test; rejected spring and iglide G items return to the custom baseline."
+  },
+  "clean_cad_baseline": {
+    "commit": "8c594781e27b0597a71957082fb64f152cacfcd9",
+    "technical_status": "COMPLETE",
+    "owner_creo_acceptance": "PENDING"
+  },
+  "cad_readiness": "TARGETED COTS REQUIRES PHYSICAL TEST BEFORE CAD"
 }

@@ -1,25 +1,40 @@
 {
-  "generated_utc": "2026-08-23T20:42:05Z",
+  "generated_utc": "2026-08-24T13:47:00Z",
   "source_branch": "design/df8-targeted-cots-retrofit",
-  "docs_branch": "design/df8-targeted-cots-retrofit",
-  "phase": "Phase 1",
-  "baseline_validation_preserved": true,
-  "checks_run_this_phase": [
-    "baseline_output_derivation"
-  ],
-  "checks_skipped_this_phase": [
-    "rebuild_endpoints",
-    "state_parity_recheck",
-    "motion_0_to_55_rerun",
-    "motion_55_to_80_rerun",
-    "new_attachment_connectivity"
+  "phase": "Phase 4 pre-CAD procurement / fit / certification closure",
+  "scope": "Seven existing selected substitutions only",
+  "checks": {
+    "required_new_outputs_present": "8/8 PASS",
+    "required_existing_outputs_updated": "11/11 PASS",
+    "csv_parse": "14/14 PASS",
+    "json_parse": "4/4 PASS",
+    "selected_gate_rows": "7/7 PASS",
+    "gate_counts": "A=1 B=1 C=2 D=0 E=3",
+    "ledger_csv_json_parity": "121/121 rows; 0 selected-field mismatches",
+    "git_diff_check": "PASS"
+  },
+  "accounting": {
+    "baseline_functional_cots": "10/114 = 8.77%",
+    "accepted_additions": 14,
+    "projected_functional_cots": "24/114 = 21.05%",
+    "custom_adapters_added": 4,
+    "net_custom_line_reduction": 10
+  },
+  "skipped_by_scope": [
+    "production CAD edits",
+    "endpoint rebuild",
+    "state parity",
+    "motion sweep",
+    "physical pressure or softgood test",
+    "purchase and RFQ transmission"
   ],
   "status": {
-    "baseline_mass_kg": 10.468786223479103,
-    "mass_limit_kg": 18.14,
-    "margin_kg": 7.671213776520897,
-    "state_parity_occurrences": 279,
-    "cg_present": false,
+    "owner_clean_cad_acceptance": "PENDING",
+    "procurement_orders_placed": 0,
+    "rfqs_sent": 0,
+    "received_item_cocs_verified": 0,
+    "cad_substitutions_implemented": 0,
+    "cad_readiness": "TARGETED COTS REQUIRES PHYSICAL TEST BEFORE CAD",
     "release_status": "NOT RELEASED"
   }
 }

@@ -1,37 +1,44 @@
 # TASK_STATE
 
-- objective: Complete Phase 2 candidate screening and Phase 3 targeted selection gate without modifying CAD.
-- provisional_cad_authority_path: C:\Users\ANDRE.ANDREWSPC\Documents\Codex\2026-08-23\stingray-i5-s-df8-final-cad-semantic-cleanup
-- provisional_cad_authority_commit: 8c594781e27b0597a71957082fb64f152cacfcd9
-- provisional_cad_authority_branch: fix/final-cad-semantic-cleanup
-- cad_authority_status: OWNER CREO VISUAL INSPECTION REQUIRED BEFORE REMAINING RELEASE VALIDATION
+- objective: Close Phase 4 pre-CAD procurement, fit and certification evidence for the seven existing targeted-COTS selections without purchasing or modifying CAD.
 - docs_worktree_path: C:\Users\ANDRE.ANDREWSPC\Documents\Codex\2026-08-23\stingray-docs
 - docs_branch: design/df8-targeted-cots-retrofit
-- phase_1_docs_commit: c345782ea3a733ac8338fbd7f206001a18b6f8a8
-- completed_phase: Phase 2 / Phase 3 decision gate
-- terminal_status: TARGETED COTS PHASE 2/3 DECISION GATE COMPLETE — CAD IMPLEMENTATION HELD FOR OWNER ACCEPTANCE OF CLEAN CAD BASELINE
-- bounded_results:
-  - vendor_candidates_retained: 25
-  - pressure_reservoir_finalists: 5
-  - unique_priority_make_definitions_screened: 47
-  - selected_substitutions_for_qualification: 7
-  - selected_make_definitions_conditionally_covered: 17
-  - underwater_test_item_types: 3
-  - underwater_test_articles_total: 6
-- preserved_accounting:
-  - unique_partdefs: 121
-  - make_partdefs: 104
-  - cots_related_partdefs: 17
-  - independently_purchased_cots_parent_lines: 15
-  - child_geometry_defs_excluded: 2
-  - standard_fastener_defs_excluded: 5
-  - functional_cots_before: 10/114 = 8.77%
-  - functional_cots_projected_if_all_selections_qualify: 27/114 = 23.68%
+- phase_4_controlling_input_commit: 09b8e958d9b20ec2aaed9c579a48bc896677217d
+- clean_cad_authority_path: C:\Users\ANDRE.ANDREWSPC\Documents\Codex\2026-08-23\stingray-i5-s-df8-final-cad-semantic-cleanup
+- clean_cad_authority_commit: 8c594781e27b0597a71957082fb64f152cacfcd9
+- clean_cad_authority_branch: fix/final-cad-semantic-cleanup
+- clean_cad_status: CLEAN CAD BASELINE TECHNICALLY COMPLETE — OWNER CREO ACCEPTANCE PENDING
+- completed_phase: Phase 4 pre-CAD procurement / fit / certification closure
+- terminal_status: TARGETED COTS REQUIRES PHYSICAL TEST BEFORE CAD
+- seven_item_gate:
+  - C-001 Swagelok 316L-50DF4-150: C — ACCEPT FOR PHYSICAL TEST BEFORE CAD
+  - C-006 HIKO 87640_OLV_ONE: C — ACCEPT FOR PHYSICAL TEST BEFORE CAD
+  - C-012 Gutekunst VD-244: E — REJECT — RETURN FUNCTION TO CUSTOM BASELINE
+  - C-013 igus GFM-081013-08: E — REJECT — RETURN FUNCTION TO CUSTOM BASELINE
+  - C-014 igus GTM-0815-005: E — REJECT — RETURN FUNCTION TO CUSTOM BASELINE
+  - C-015 Smalley VSM-8-S16: B — ACCEPT PENDING OWNER / VENDOR APPLICATION APPROVAL
+  - C-016 Rotor Clip DC-4SS: A — ACCEPT FOR CAD IMPLEMENTATION
+- gate_counts:
+  - A_accept_for_cad_implementation: 1
+  - B_vendor_or_owner_approval: 1
+  - C_physical_test_before_cad: 2
+  - D_deferred: 0
+  - E_rejected: 3
+- accounting:
+  - baseline_functional_cots: 10/114 = 8.77%
+  - accepted_cots_additions_if_A_B_C_close: 14
+  - projected_functional_cots: 24/114 = 21.05%
+  - gross_custom_definitions_conditionally_removed: 14
+  - custom_adapter_lines_added: 4
+  - net_custom_line_reduction: 10
   - delivered_item_cocs_verified: 0
-  - state_parity_occurrences: 279/279
-  - accepted_motion_evidence_through_deg: 55
+  - procurement_orders_placed: 0
+  - cad_substitutions_implemented: 0
   - release_status: NOT RELEASED
-- pressure_reservoir_recommendation: Swagelok 316L-50DF4-150, supplied empty, selected for qualified fit/pressure-subsystem testing only; no approved gas/fill/relief design.
-- next_exact_action: Owner accepts or rejects final-cleanup CAD commit 8c594781e27b0597a71957082fb64f152cacfcd9 after Creo visual inspection. If accepted, request certificate-bearing quotations and official CAD for the seven selections, beginning with two empty Swagelok 316L-50DF4-150 cylinders, two HIKO 87640_OLV_ONE bags, and two ACE HBD-15-25-AA-P dampers; then perform fit-only CAD evaluation and qualified fixture/chamber test planning. Do not begin CAD implementation before owner acceptance.
-- known_blockers: Mission depth, gas species/fill pressure, downstream pressure, relief setting, temperature range, exact pressure-package fit, official selected-item CAD, stock/lead time, supplier CoC/MTR/heat/serial options, received-item CoCs, and qualification results remain unverified.
-- last_updated_utc: 2026-08-24T08:35:05Z
+- pressure_reservoir: Swagelok 316L-50DF4-150 remains FOR QUALIFIED FIT / PRESSURE-SUBSYSTEM EVALUATION ONLY; PRESSURE-RATED is verified, while CO2 APPLICATION APPROVED, FIELD REFILLABLE, external-pressure rated and PROCUREMENT CERTIFICATE AVAILABLE remain UNVERIFIED.
+- field_reset_verdict: CONDITIONAL — preserved only by certified pressure-module exchange and successful buoy drying/repack qualification; operator field refill is not established.
+- test_articles: HIKO x2 DEFER; empty Swagelok x2 DEFER; ACE HBD-15-25-AA-P x2 DEFER. No purchase authorized.
+- priority_1_rfq_only: Swagelok 316L-50DF4-150; HIKO 87640_OLV_ONE; Smalley VSM-8-S16; Rotor Clip DC-4SS.
+- owner_decisions_required: Accept/reject clean CAD baseline after Creo review; accept/reject bounded ring-groove revisions after vendor responses; accept/reject certified-module-exchange field-reset concept; accept/reject C-001/C-006 after physical test.
+- next_exact_action: Obtain owner authorization to send the four prepared Priority-1 RFQs without purchasing; collect certificate/application/CAD evidence while the owner reviews clean CAD baseline 8c594781e27b0597a71957082fb64f152cacfcd9. Do not begin CAD implementation.
+- last_updated_utc: 2026-08-24T13:47:00Z

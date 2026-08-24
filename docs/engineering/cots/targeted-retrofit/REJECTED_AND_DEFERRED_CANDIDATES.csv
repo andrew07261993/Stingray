@@ -9,10 +9,10 @@ DF8-R2-FWD-LONGERON-001,,FORWARD PRIMARY LOAD-PATH LONGERON,Must remain custom p
 DF8-R2-CARTRIDGE-CARRIER-001,,FOUR-CARTRIDGE DOUBLE-PLATE CARRIER,Must remain custom pending architecture-safe catalog replacement evidence.,DEFERRED
 DF8-R2-COLLECTION-MANIFOLD-001,,FOUR-PORT COLLECTION MANIFOLD WITH BORED PASSAGES,Must remain custom pending architecture-safe catalog replacement evidence.,DEFERRED
 DF8-R2-PUNCTURE-HEAD-001,,CARTRIDGE PUNCTURE HEAD WITH CONTROLLED NEEDLE,Must remain custom pending architecture-safe catalog replacement evidence.,DEFERRED
-DF8-R2-BOOSTER-RESERVOIR-001,,13 OD X 11 ID X 430 BOOSTER RESERVOIR WITH END BOSSES,Must remain custom pending architecture-safe catalog replacement evidence.,DEFERRED
+DF8-R2-BOOSTER-RESERVOIR-001,,13 OD X 11 ID X 430 BOOSTER RESERVOIR WITH END BOSSES,"C-001 exact identity is verified; significant interface change and unresolved external-pressure, fill/relief, field-refill and certificate evidence require qualified test before CAD.",PHASE4_ACCEPT_FOR_PHYSICAL_TEST_BEFORE_CAD
 DF8-R2-BOOSTER-BAND-001,,CAPTIVE BOOSTER SUPPORT BAND WITH M3 TAB,Must remain custom pending architecture-safe catalog replacement evidence.,DEFERRED
-DF8-R2-BOOSTER-FWD-ADAPTER-CLOSURE-001,,PORTED FORWARD BOOSTER CLOSURE WITH WELD LIP AND VALVE ADAPTER,Must remain custom pending architecture-safe catalog replacement evidence.,DEFERRED
-DF8-R2-BOOSTER-AFT-WELDED-CLOSURE-001,,SOLID AFT BOOSTER CLOSURE WITH LOCATING PILOT,Must remain custom pending architecture-safe catalog replacement evidence.,DEFERRED
+DF8-R2-BOOSTER-FWD-ADAPTER-CLOSURE-001,,PORTED FORWARD BOOSTER CLOSURE WITH WELD LIP AND VALVE ADAPTER,"C-001 exact identity is verified; significant interface change and unresolved external-pressure, fill/relief, field-refill and certificate evidence require qualified test before CAD.",PHASE4_ACCEPT_FOR_PHYSICAL_TEST_BEFORE_CAD
+DF8-R2-BOOSTER-AFT-WELDED-CLOSURE-001,,SOLID AFT BOOSTER CLOSURE WITH LOCATING PILOT,"C-001 exact identity is verified; significant interface change and unresolved external-pressure, fill/relief, field-refill and certificate evidence require qualified test before CAD.",PHASE4_ACCEPT_FOR_PHYSICAL_TEST_BEFORE_CAD
 DF8-R2-BOOSTER-COLLECTION-LINE-001,,SHORT 316L BOOSTER COLLECTION LINE WITH INTEGRAL FERRULE ENDS,Must remain custom pending architecture-safe catalog replacement evidence.,DEFERRED
 DF8-R2-WATER-TRIGGER-HSG-001,,CENTRAL WATER-SENSITIVE TRIGGER HOUSING,Must remain custom pending architecture-safe catalog replacement evidence.,DEFERRED
 DF8-R2-WATER-INLET-001,,"RADIAL FLOOD INLET, GLAND AND ANTI-DEBRIS SCREEN",Must remain custom pending architecture-safe catalog replacement evidence.,DEFERRED
@@ -26,9 +26,9 @@ DF8-R2-BACKUP-GUIDE-LONGERON-003,,PRIMARY LONGERON 3 WITH TWO RADIAL BACKUP-GUID
 DF8-R2-ARM-BLADE-001,,733.806 MM SMOOTH ANALYTIC HOLLOW OML ARM WITH SWEPT STOP-HARDWARE RELIEFS,Must remain custom pending architecture-safe catalog replacement evidence.,DEFERRED
 DF8-R2-PIVOT-CARRIER-001,,MATCHED DOUBLE-SHEAR PIVOT LUG SET WITH SWEPT BELL-CLEVIS ACCESS AND OBLIQUE STOP-LAND BORES,Must remain custom pending architecture-safe catalog replacement evidence.,DEFERRED
 DF8-R2-PIVOT-PIN-008,,8 MM CAPTIVE SHOULDER PIVOT PIN WITH EXTERNAL GROOVE,Must remain custom pending architecture-safe catalog replacement evidence.,DEFERRED
-DF8-R2-PIVOT-BUSH-008,,8 MM PEEK-LINED PIVOT BUSHING,Must remain custom pending architecture-safe catalog replacement evidence.,DEFERRED
-DF8-R2-PIVOT-WASHER-008,,8 MM PEEK THRUST WASHER,Must remain custom pending architecture-safe catalog replacement evidence.,DEFERRED
-DF8-R2-PIVOT-SPIRAL-RING-008,,8 MM EXTERNAL SPIRAL PIVOT RETAINER,Must remain custom pending architecture-safe catalog replacement evidence.,DEFERRED
+DF8-R2-PIVOT-BUSH-008,,8 MM PEEK-LINED PIVOT BUSHING,C-013 envelope mismatch and official iglide G guidance says not for underwater applications.,PHASE4_REJECTED_RETURN_CUSTOM
+DF8-R2-PIVOT-WASHER-008,,8 MM PEEK THRUST WASHER,C-014 0.5 mm catalog thickness mismatches 0.18 mm authored stack and official iglide G guidance says not for underwater applications.,PHASE4_REJECTED_RETURN_CUSTOM
+DF8-R2-PIVOT-SPIRAL-RING-008,,8 MM EXTERNAL SPIRAL PIVOT RETAINER,C-015 exact 316 suffix/load basis verified; existing groove requires bounded revision and submerged/service/certificate approval.,PHASE4_ACCEPT_PENDING_OWNER_VENDOR_APPLICATION_APPROVAL
 DF8-R2-SHORT-LINK-001,,19.950 MM CENTER-DISTANCE REAMED SHORT LINK,Must remain custom pending architecture-safe catalog replacement evidence.,DEFERRED
 DF8-R2-LINK-PIN-004,,4 MM FULL-SPAN LINK PIN WITH DC-4SS RETAINER GROOVE,Must remain custom pending architecture-safe catalog replacement evidence.,DEFERRED
 DF8-R2-ARM-STOP-PAD-001,,REPLACEABLE ARM STOP AND AUTOMATIC-LOCK STRIKE,Must remain custom pending architecture-safe catalog replacement evidence.,DEFERRED
@@ -51,7 +51,7 @@ DF8-R2-BACKUP-SPRING-GUIDE-001,,BACKUP SPRING DLC GUIDE SHAFT WITH TWO FIXED SUP
 DF8-R2-ACTUATOR-FIXED-YOKE-GS19-001,,DOUBLE-SHEAR GS19 ANCHOR YOKE WITH CONFORMAL LONGERON TONGUE,Must remain custom pending architecture-safe catalog replacement evidence.,DEFERRED
 DF8-R2-ACTUATOR-FIXED-YOKE-HBD-001,,DOUBLE-SHEAR HBD ANCHOR YOKE WITH CONFORMAL LONGERON TONGUE,Must remain custom pending architecture-safe catalog replacement evidence.,DEFERRED
 DF8-R2-ACTUATOR-PIN-004,,4 MM CAPTIVE ACTUATOR CLEVIS PIN,Must remain custom pending architecture-safe catalog replacement evidence.,DEFERRED
-DF8-R2-ACTUATOR-E-RING-004,,4 MM ACTUATOR PIN RETAINER,Must remain custom pending architecture-safe catalog replacement evidence.,DEFERRED
+DF8-R2-ACTUATOR-E-RING-004,,4 MM ACTUATOR PIN RETAINER,C-016 exact identity/groove/load basis verified; two existing mating grooves require bounded revision with no new adapter line.,PHASE4_ACCEPT_FOR_CAD_IMPLEMENTATION
 DF8-FINAL-GAS-MAIN-001,,COMPLETE TERMINATED GAS MAIN ASSEMBLY,Must remain custom pending architecture-safe catalog replacement evidence.,DEFERRED
 DF8-FINAL-PILOT-LINE-001,,COMPLETE TERMINATED PILOT LINE ASSEMBLY,Must remain custom pending architecture-safe catalog replacement evidence.,DEFERRED
 DF8-FINAL-BOWDEN-SHEATH-001,,COMPLETE TERMINATED BOWDEN SHEATH ASSEMBLY,Must remain custom pending architecture-safe catalog replacement evidence.,DEFERRED
@@ -70,25 +70,25 @@ DF8-R2-AFT-LONGERON-001,,AFT PRIMARY LOAD-PATH LONGERON,Must remain custom pendi
 WP04-RB-001-R2,,SPRING REACTION BULKHEAD WITH GUIDE-RAIL BORES AND PERMANENT SHELL LAND,Must remain custom pending architecture-safe catalog replacement evidence.,DEFERRED
 WP04-GUIDE-RAIL-001-R2,,FOLLOWER ANTI-ROTATION GUIDE RAIL WITH TWO M3 CAPTIVE-SCREW END LANDS,Must remain custom pending architecture-safe catalog replacement evidence.,DEFERRED
 WP04-FOL-001-R2,,CAPTIVE PEEK FOLLOWER WITH THREE GUIDE SLOTS,Must remain custom pending architecture-safe catalog replacement evidence.,DEFERRED
-DF8-FINAL-WP04-EJECTOR-SPRING-001,,CONTROLLED LONG-STROKE GUIDED EJECTOR SPRING,Must remain custom pending architecture-safe catalog replacement evidence.,DEFERRED
+DF8-FINAL-WP04-EJECTOR-SPRING-001,,CONTROLLED LONG-STROKE GUIDED EJECTOR SPRING,C-012 manufacturer dynamic stroke is 31.82 mm versus 85 mm required; clean baseline explicitly records VD-244 as unsuitable.,PHASE4_REJECTED_RETURN_CUSTOM
 WP04-FIXED-GUIDE-SLEEVE-R2,,BULKHEAD-MOUNTED FIXED TELESCOPING SPRING GUIDE AND SEAT,Must remain custom pending architecture-safe catalog replacement evidence.,DEFERRED
 WP04-MOVING-GUIDE-SLEEVE-R2,,FOLLOWER-MOUNTED INNER TELESCOPING SPRING GUIDE SLEEVE,Must remain custom pending architecture-safe catalog replacement evidence.,DEFERRED
 WP04-LATCH-HOUSING-R2,,RADIAL FOLLOWER LATCH HOUSING WITH REAMED SEAR GUIDE,Must remain custom pending architecture-safe catalog replacement evidence.,DEFERRED
 WP04-LATCH-SEAR-R2,,CAPTIVE RADIAL FOLLOWER SEAR PLUNGER WITH RETAINING RING,Must remain custom pending architecture-safe catalog replacement evidence.,DEFERRED
-WP04-LATCH-SEAR-E-RING-R2,,4 MM SEAR PIN EXTERNAL RETAINING RING,Must remain custom pending architecture-safe catalog replacement evidence.,DEFERRED
+WP04-LATCH-SEAR-E-RING-R2,,4 MM SEAR PIN EXTERNAL RETAINING RING,C-016 exact identity/groove/load basis verified; two existing mating grooves require bounded revision with no new adapter line.,PHASE4_ACCEPT_FOR_CAD_IMPLEMENTATION
 WP04-RHP-001-R2,,INTEGRAL STRUCTURAL RING AND RECOVERY HARDPOINT LUG,Must remain custom pending architecture-safe catalog replacement evidence.,DEFERRED
 WP05-SERVICE-THROAT-R2,,AFT SERVICE THROAT WITH CONTROLLED DETENT BORES,Must remain custom pending architecture-safe catalog replacement evidence.,DEFERRED
 WP05-DOOR-R2,,CAPTIVE LOW-FORCE AFT DOOR WITH HINGE AND LANYARD EYE,Must remain custom pending architecture-safe catalog replacement evidence.,DEFERRED
 WP05-HINGE-PIN-R2,,DOOR HINGE PIN WITH EXTERNAL RETAINER,Must remain custom pending architecture-safe catalog replacement evidence.,DEFERRED
 WP05-HINGE-CRESCENT-RING-R2,,3 MM HINGE-PIN EXTERNAL CRESCENT RETAINER,Must remain custom pending architecture-safe catalog replacement evidence.,DEFERRED
-DF8-R2-BUOY-GORE-01,,60 L BUOY GORE 1 OF 8,Must remain custom pending architecture-safe catalog replacement evidence.,DEFERRED
-DF8-R2-BUOY-GORE-02,,60 L BUOY GORE 2 OF 8,Must remain custom pending architecture-safe catalog replacement evidence.,DEFERRED
-DF8-R2-BUOY-GORE-03,,60 L BUOY GORE 3 OF 8,Must remain custom pending architecture-safe catalog replacement evidence.,DEFERRED
-DF8-R2-BUOY-GORE-04,,60 L BUOY GORE 4 OF 8,Must remain custom pending architecture-safe catalog replacement evidence.,DEFERRED
-DF8-R2-BUOY-GORE-05,,60 L BUOY GORE 5 OF 8,Must remain custom pending architecture-safe catalog replacement evidence.,DEFERRED
-DF8-R2-BUOY-GORE-06,,60 L BUOY GORE 6 OF 8,Must remain custom pending architecture-safe catalog replacement evidence.,DEFERRED
-DF8-R2-BUOY-GORE-07,,60 L BUOY GORE 7 OF 8,Must remain custom pending architecture-safe catalog replacement evidence.,DEFERRED
-DF8-R2-BUOY-GORE-08,,60 L BUOY GORE 8 OF 8,Must remain custom pending architecture-safe catalog replacement evidence.,DEFERRED
+DF8-R2-BUOY-GORE-01,,60 L BUOY GORE 1 OF 8,"C-006 exact SKU is verified, but manufacturer capacity/envelope/pressure/load data are absent and physical two-specimen qualification is required.",PHASE4_ACCEPT_FOR_PHYSICAL_TEST_BEFORE_CAD
+DF8-R2-BUOY-GORE-02,,60 L BUOY GORE 2 OF 8,"C-006 exact SKU is verified, but manufacturer capacity/envelope/pressure/load data are absent and physical two-specimen qualification is required.",PHASE4_ACCEPT_FOR_PHYSICAL_TEST_BEFORE_CAD
+DF8-R2-BUOY-GORE-03,,60 L BUOY GORE 3 OF 8,"C-006 exact SKU is verified, but manufacturer capacity/envelope/pressure/load data are absent and physical two-specimen qualification is required.",PHASE4_ACCEPT_FOR_PHYSICAL_TEST_BEFORE_CAD
+DF8-R2-BUOY-GORE-04,,60 L BUOY GORE 4 OF 8,"C-006 exact SKU is verified, but manufacturer capacity/envelope/pressure/load data are absent and physical two-specimen qualification is required.",PHASE4_ACCEPT_FOR_PHYSICAL_TEST_BEFORE_CAD
+DF8-R2-BUOY-GORE-05,,60 L BUOY GORE 5 OF 8,"C-006 exact SKU is verified, but manufacturer capacity/envelope/pressure/load data are absent and physical two-specimen qualification is required.",PHASE4_ACCEPT_FOR_PHYSICAL_TEST_BEFORE_CAD
+DF8-R2-BUOY-GORE-06,,60 L BUOY GORE 6 OF 8,"C-006 exact SKU is verified, but manufacturer capacity/envelope/pressure/load data are absent and physical two-specimen qualification is required.",PHASE4_ACCEPT_FOR_PHYSICAL_TEST_BEFORE_CAD
+DF8-R2-BUOY-GORE-07,,60 L BUOY GORE 7 OF 8,"C-006 exact SKU is verified, but manufacturer capacity/envelope/pressure/load data are absent and physical two-specimen qualification is required.",PHASE4_ACCEPT_FOR_PHYSICAL_TEST_BEFORE_CAD
+DF8-R2-BUOY-GORE-08,,60 L BUOY GORE 8 OF 8,"C-006 exact SKU is verified, but manufacturer capacity/envelope/pressure/load data are absent and physical two-specimen qualification is required.",PHASE4_ACCEPT_FOR_PHYSICAL_TEST_BEFORE_CAD
 DF8-R2-HARNESS-BAND-1,,X-6292 STRUCTURAL HARNESS CLOSED BAND 1,Must remain custom pending architecture-safe catalog replacement evidence.,DEFERRED
 DF8-R2-HARNESS-BAND-2,,X-6292 STRUCTURAL HARNESS CLOSED BAND 2,Must remain custom pending architecture-safe catalog replacement evidence.,DEFERRED
 WP04-HST-001-R2,,HARNESS STRUCTURAL TERMINAL WITH FOUR WEB SLOTS AND DOUBLE-SHEAR CLEVIS,Must remain custom pending architecture-safe catalog replacement evidence.,DEFERRED
@@ -103,21 +103,21 @@ DF8-R2-RECOVERY-E-RING-006,,6 MM RECOVERY PIN EXTERNAL RETAINER,Must remain cust
 WP05-DOOR-LANYARD-R2,,CAPTIVE DOOR LANYARD WITH SWAGED EYES,Must remain custom pending architecture-safe catalog replacement evidence.,DEFERRED
 WP04-AFT-RAIL-SUPPORT-R2,,ONE-PIECE AFT GUIDE-RAIL SUPPORT RING WITH THREE M3 THREADS,Must remain custom pending architecture-safe catalog replacement evidence.,DEFERRED
 WP04-LATCH-SUPPORT-R2,,GUIDE-RAIL-3 TO LATCH TWO-SCREW SUPPORT BLADE,Must remain custom pending architecture-safe catalog replacement evidence.,DEFERRED
-C-002,PRESSURE_RESERVOIR,"Swagelok 316L-HDF4-500","Adequate ideal-gas inventory but 50.8 mm OD nearly equals 53 mm OML and length is 351 mm.",DEFERRED
-C-003,PRESSURE_RESERVOIR,"Swagelok 316L-50DF4-300","Greater length and mass than selected 150 cm3 lead without a verified need for double volume.",REJECTED
-C-004,PRESSURE_RESERVOIR,"Parker 4F-SC500D-SS","Credible DOT alternate but package fit is no better than 500 cm3 Swagelok and live procurement evidence is absent.",DEFERRED
-C-005,PRESSURE_RESERVOIR,"HOKE 4HDY500","5000 psig and ASME testing are quotation options; exact dimensions/certificate basis incomplete.",DEFERRED
-C-007,RECOVERY_BUOY,"Subsalve Rapid Recovery System custom size","High cross-branch value but no exact orderable 60 L configuration; requires architecture/custom-size trade.",DEFERRED
-C-008,RECOVERY_BUOY,"Carter CB-100 open-bottom lift bag","Approximately 45 L open-bottom product does not meet closed approximately 60 L buoy function.",REJECTED
-C-009,WATER_ACTIVATION,"Halkey-Roberts V95000xxB Hydro 1F family","Exact suffix and multi-cartridge/booster flow capacity not verified.",DEFERRED
-C-010,FULL_FLOW_VALVE,"Swagelok SS-CHS2-1","Check valve cannot replace commanded full-flow function despite high pressure rating.",REJECTED
-C-011,BACKUP_SPRING,"Lee Spring LHL 625D 12","11.909 N/mm and 139.7 mm solid height fail controlled approximately 16 N/mm and 138 mm maximum envelope.",REJECTED
-C-019,PINS,"JW Winco GN 2342 family","No exact 4/6/8 mm grip and captive-retention configuration verified for all DF8 joints.",DEFERRED
-C-020,LOCK_GUIDE,"JW Winco 705-8-E-NI","Set collar does not provide press-fit guide/bearing function and uses AISI 303.",REJECTED
-C-021,SHORT_LINK,"JW Winco 751-4-8-M4-A-NI","Exact catalog joint does not establish controlled 19.950 mm center distance or motion fit.",DEFERRED
-C-022,BOWDEN,"Cablecraft 33C family","No exact MPN, length, end fittings, external-pressure ingress basis or official evidence verified.",DEFERRED
-C-023,PRESSURE_LINES,"Swagelok SS-T2-S-035-6ME plus SS-200-1-2BT","Catalog tubing/fittings do not eliminate custom routed/terminated assemblies or establish fit.",DEFERRED
-C-024,RECOVERY_TETHER,"Samson AmSteel-Blue code 872 7/64 in finished assembly","Raw rope is COTS but the proof-certified two-eye assembly remains configured/custom.",DEFERRED
-C-025,LATCH_LOCK,"Southco R4-10-20-901-20","Potential six-definition consolidation materially changes fail-safe stop/lock architecture.",DEFERRED
-C-017,RETENTION_RING,"Rotor Clip proposed DC-3SS","Public manufacturer page did not verify an exact orderable stainless SKU; do not infer it from naming convention.",DEFERRED
-C-018,RETENTION_RING,"Rotor Clip proposed DC-6SS","Exact stainless SKU and recovery-joint load proof remain unverified.",DEFERRED
+C-002,PRESSURE_RESERVOIR,Swagelok 316L-HDF4-500,Adequate ideal-gas inventory but 50.8 mm OD nearly equals 53 mm OML and length is 351 mm.,DEFERRED
+C-003,PRESSURE_RESERVOIR,Swagelok 316L-50DF4-300,Greater length and mass than selected 150 cm3 lead without a verified need for double volume.,REJECTED
+C-004,PRESSURE_RESERVOIR,Parker 4F-SC500D-SS,Credible DOT alternate but package fit is no better than 500 cm3 Swagelok and live procurement evidence is absent.,DEFERRED
+C-005,PRESSURE_RESERVOIR,HOKE 4HDY500,5000 psig and ASME testing are quotation options; exact dimensions/certificate basis incomplete.,DEFERRED
+C-007,RECOVERY_BUOY,Subsalve Rapid Recovery System custom size,High cross-branch value but no exact orderable 60 L configuration; requires architecture/custom-size trade.,DEFERRED
+C-008,RECOVERY_BUOY,Carter CB-100 open-bottom lift bag,Approximately 45 L open-bottom product does not meet closed approximately 60 L buoy function.,REJECTED
+C-009,WATER_ACTIVATION,Halkey-Roberts V95000xxB Hydro 1F family,Exact suffix and multi-cartridge/booster flow capacity not verified.,DEFERRED
+C-010,FULL_FLOW_VALVE,Swagelok SS-CHS2-1,Check valve cannot replace commanded full-flow function despite high pressure rating.,REJECTED
+C-011,BACKUP_SPRING,Lee Spring LHL 625D 12,11.909 N/mm and 139.7 mm solid height fail controlled approximately 16 N/mm and 138 mm maximum envelope.,REJECTED
+C-019,PINS,JW Winco GN 2342 family,No exact 4/6/8 mm grip and captive-retention configuration verified for all DF8 joints.,DEFERRED
+C-020,LOCK_GUIDE,JW Winco 705-8-E-NI,Set collar does not provide press-fit guide/bearing function and uses AISI 303.,REJECTED
+C-021,SHORT_LINK,JW Winco 751-4-8-M4-A-NI,Exact catalog joint does not establish controlled 19.950 mm center distance or motion fit.,DEFERRED
+C-022,BOWDEN,Cablecraft 33C family,"No exact MPN, length, end fittings, external-pressure ingress basis or official evidence verified.",DEFERRED
+C-023,PRESSURE_LINES,Swagelok SS-T2-S-035-6ME plus SS-200-1-2BT,Catalog tubing/fittings do not eliminate custom routed/terminated assemblies or establish fit.,DEFERRED
+C-024,RECOVERY_TETHER,Samson AmSteel-Blue code 872 7/64 in finished assembly,Raw rope is COTS but the proof-certified two-eye assembly remains configured/custom.,DEFERRED
+C-025,LATCH_LOCK,Southco R4-10-20-901-20,Potential six-definition consolidation materially changes fail-safe stop/lock architecture.,DEFERRED
+C-017,RETENTION_RING,Rotor Clip proposed DC-3SS,Public manufacturer page did not verify an exact orderable stainless SKU; do not infer it from naming convention.,DEFERRED
+C-018,RETENTION_RING,Rotor Clip proposed DC-6SS,Exact stainless SKU and recovery-joint load proof remain unverified.,DEFERRED

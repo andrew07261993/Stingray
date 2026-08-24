@@ -1,5 +1,7 @@
 # Underwater Test Article Shortlist
 
+> Phase-4 continuation note (2026-08-24): this file preserves the Phase-2/3 shortlist. `TARGETED_COTS_PROCUREMENT_ACTION_LIST.md` now controls: HIKO x2 DEFER, empty Swagelok x2 DEFER, and ACE HBD-15-25-AA-P x2 DEFER. No six-article purchase is approved.
+
 Maximum authorized recommendation: **3 item types x 2 specimens = 6 total articles**.
 
 ## Recommended purchases

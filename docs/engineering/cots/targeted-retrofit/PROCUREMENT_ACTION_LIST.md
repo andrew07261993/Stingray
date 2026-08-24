@@ -1,5 +1,7 @@
 # Procurement Action List
 
+> Phase-4 continuation note (2026-08-24): this Phase-2/3 action list is retained as history. `TARGETED_COTS_PROCUREMENT_ACTION_LIST.md` and `TARGETED_COTS_RFQ_PACKAGE.md` now control. Four RFQs may be prepared for owner authorization; all purchases remain held.
+
 Status: **RECOMMENDATION ONLY — NO PURCHASE EXECUTED**
 
 ## Immediate quotation package

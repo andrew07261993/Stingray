@@ -1,41 +1,52 @@
-# Provisional selection — Architecture C
+# Selected architecture — Architecture C retained with pressure revision required
 
-## Selection
+## Selection status
 
-**Architecture C: distributed three-cartridge mechanical bus** is provisionally preferred with a weighted score of **405/500 (81.0/100)**. It projects **18/23 = 78.26% functional COTS**, has five residual custom unique lines, fourteen projected custom fabrication operations, and zero custom pressure vessels.
+The historical trade winner remains **Architecture C: distributed cartridge mechanical bus**, with the recorded 405/500 score and projected 18/23 = 78.26% functional COTS. That trade result is preserved. The specific **three-cartridge pressure embodiment is not accepted for general CAD implementation**.
 
-The selection is provisional, not a release or procurement decision. It can be invalidated by the depth, cold-temperature, inflation-time, buoy-pressure, or envelope gates.
+Formal disposition: **ARCHITECTURE C PRESSURE CONCEPT REQUIRES REVISION**.
 
-## Why it leads
+## What remains selected
 
-- Meets the 70% target without counting fasteners, raw stock, consumables, services, or catalog-assembly child geometry.
-- Separates arm deployment energy from total buoy-inflation success.
-- Uses sealed replaceable gas sources instead of field charging or a custom vessel.
-- Allows cartridge, water element, check branch, actuator, spring, damper and tether service as modules.
-- Provides branch-out tolerance that the single-cylinder architecture lacks.
-- Retains non-electrical, non-pyrotechnic, positive-stop/lock and physical-inhibit principles.
+- Distributed, independently checked, field-replaceable sealed gas-source modules.
+- Zero custom pressure vessels.
+- Passive water authorization, no electrical dependency and no pyrotechnic initiation.
+- COTS pressure components with explicit catalog ratings and receiving traceability.
+- Modular field reset without routine depot rebuilding after damage-free deployment.
+- Separate structural recovery chain and positive mechanical arm stops/locks.
 
-## Selected service concept
+## Required revised pressure topology
 
-Operator-level work is limited to confirming safe indication, removing the keyed service cover, exchanging the sealed cartridge/bobbin kit, repacking the buoy to an approved fold card, resetting arms/locks through the defined tool interface, and completing visual/witness checks. Field-maintenance performs branch-valve exchange, controlled inert-gas leak testing, damper/actuator replacement, pressure-connection inspection, and detailed pre-use function. Depot or manufacturer work handles structural damage, pressure-boundary damage, buoy seam/relief repair, and life-limited module overhaul.
+`supported approved cartridge/inflator branches → HP checks → HP bus → pressure regulator → fixed flow restrictor → buoy-adjacent high-flow differential relief → buoy`
 
-No activation should require depot reconstruction when no damage is found.
+The HP design basis is provisionally 2,500 psig with ≥3,000 psig component ratings at temperature. The exact value is replaced by higher manufacturer application data if supplied.
 
-## Projected eligible line count
+## Gas inventory disposition
 
-| Class | Lines | Count |
-|---|---|---:|
-| Complete/configurable/component-family COTS | water inflator; cartridges; branch checks; fitting bus; relief; release cylinder; gas spring; damper; backup spring; ejector spring; guides/bushings; stops; lock plungers; tether; terminations; closure seal; service collar; vent/indicator | 18 |
-| Custom | penetrator; body/carrier; crosshead/three-arm set; buoy pack enclosure/door; interface-adapter set | 5 |
-| Total eligible | — | 23 |
+For 60 L at depth with a provisional 10 kPa buoy differential:
 
-## Fail-closed selection gates
+- 210 g supports about 5.18 m warm design, 2.82 m nominal design and 0.07 m cold design.
+- Qualification limits are about 3.72 m warm, 1.56 m nominal and unsupported at 0 °C surface.
+- Three cartridges therefore fail as a general solution.
+- Reserve packaging/interfaces for **at least four 70 g-class sources** in the next trade/layout iteration, but do not call four sufficient until mission values close. Ten-metre qualification needs about 300/352/440 g at warm/nominal/cold conditions.
 
-- **Pressure sizing:** 210 g must satisfy specified depth/cold/time with residual and relief margins.
-- **Vendor configuration:** exact 70 g-compatible 1/2-20 inflator suffix and service kit must be orderable and supported.
-- **Envelope/mass:** source-derived layout must meet 57.15 mm arm-module OD, 2032 mm rigid length, 18.14 kg mass, and 1 kg reserve.
-- **Recovery:** custom body/arm/pack interfaces must maintain a continuous structural chain.
-- **Service:** two representative reset cycles must be completed without depot operations or latent unsafe indication.
-- **Owner/CAD:** owner accepts the corrected baseline in Creo and separately authorizes architecture implementation.
+## Field reset
 
-Until all gates close: **PROVISIONAL — NOT RELEASED — DO NOT PROCURE FOR PRODUCTION — DO NOT IMPLEMENT CAD**.
+The service architecture is conditionally feasible: complete cartridge/puncture modules, water consumables, checks, regulator/restrictor/relief modules, damper and buoy are line-replaceable or inspectable. Normal deployment should not require depot work. This verdict is held until the exact inflator service kit, torque/engagement controls, leak criterion, fold card and two representative reset cycles are approved.
+
+## Development procurement
+
+- HIKO `87640_OLV_ONE`: quantity 2, softgoods development only.
+- ACE `HBD-15-25-AA-P`: quantity 2, underwater mechanism development.
+- Complete 70 g water branch: **blocked, quantity 0**, until manufacturer application approval and buoy pressure/relief closure.
+
+## Fail-closed gates before CAD commission
+
+1. Owner mission and buoy pressure values close.
+2. Exact 89070 water inflator/puncture configuration is manufacturer-supported or published-data technically supported.
+3. Revised cartridge count and layout meet mass/envelope requirements.
+4. Regulator, restrictor and relief pass cold transient/fault-flow sizing.
+5. Development procurement and test results are reviewed; field reset is demonstrated.
+6. Owner separately authorizes Architecture C CAD implementation.
+
+Until then: **NOT RELEASED — DO NOT PROCURE FOR PRODUCTION — DO NOT IMPLEMENT CAD**.

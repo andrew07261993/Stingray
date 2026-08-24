@@ -1,5 +1,7 @@
 # Common underwater development articles
 
+> Historical Phase 4 shortlist. The controlling immediate plan is now `UNDERWATER_TEST_PLAN.md`: HIKO ×2 and ACE HBD ×2 are recommended; the complete 70 g branch is blocked at quantity 0 until inflator approval.
+
 Maximum retained: **three item types, quantity two per type**. These are development articles, not procurement release. High-energy pressure work must use appropriately rated systems, remote/protected operation, responsible pressure-system review, and facility procedures.
 
 ## Type 1 — water-triggered cartridge branch

@@ -1,5 +1,7 @@
 # Pressure architecture trade
 
+> Historical Phase 3/4 screening. Superseded for the pre-CAD pressure decision by `CO2_GAS_SIZING_ANALYSIS.md`, `PRESSURE_ARCHITECTURE.md`, and `PRE_CAD_ENGINEERING_GATE.md`. The three-cartridge embodiment now requires revision.
+
 ## First-order gas sizing
 
 For a nominal 60 L flexible buoy, the ideal-gas screening equation is:

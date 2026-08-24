@@ -1,0 +1,13 @@
+requirement_id,requirement,classification,controlled_or_bounded_value,source_or_basis,closure_action,status
+MRC-001,Maximum deployment depth,OWNER DECISION REQUIRED,"UNSPECIFIED; sensitivity 0|3|5|7.5|10|15 m seawater",Repository search and Architecture C requirement register,Owner selects maximum activation depth,OPEN
+MRC-002,Minimum gas cartridge and water temperature,OWNER DECISION REQUIRED; PHYSICAL TEST REQUIRED,"UNSPECIFIED; sensitivity 25|15|0 degC",Repository search,Owner selects minimum soak/discharge temperature and qualified facility tests it,OPEN
+MRC-003,Maximum allowable inflation time,OWNER DECISION REQUIRED; PHYSICAL TEST REQUIRED,UNSPECIFIED,Repository search,Owner sets time from water authorization to usable buoyancy; instrument transient test,OPEN
+MRC-004,Required usable buoy volume at deployment depth,CONTROLLED VALUE FOUND; OWNER DECISION REQUIRED,"Approximately 60 L trade basis; 60 L at depth used for sensitivity",Baseline WP04 custom buoy definition,Owner confirms minimum usable displaced volume and fill geometry,PARTIAL
+MRC-005,Required recovery ultimate load,OWNER DECISION REQUIRED,"UNSPECIFIED system ultimate; 0.8 kN per arm provisional floor",Original commission section 11,Owner supplies recovery load cases and factors,OPEN
+MRC-006,Exact buoy MAWP and relief pressure,OWNER DECISION REQUIRED; PHYSICAL TEST REQUIRED,UNSPECIFIED,Buoy supplier evidence absent,Obtain supplier MAWP and operating differential then select and flow-test relief,OPEN
+MRC-007,Environmental exposure profile,OWNER DECISION REQUIRED; PHYSICAL TEST REQUIRED,"Seawater intent only; temperature salinity wet time storage shock vibration fouling cycles unspecified",Repository search,Owner approves qualification profile,OPEN
+MRC-008,Maximum stowed arm-module diameter,CONTROLLED VALUE FOUND,57.150 mm,Final-cleanup commission and validation evidence,Preserve in subsequent CAD commission,CLOSED
+MRC-009,Maximum rigid length,CONTROLLED VALUE FOUND,2032 mm,Final-cleanup commission and validation evidence,Preserve in subsequent CAD commission,CLOSED
+MRC-010,Ready-to-throw mass and reserve,CONTROLLED VALUE FOUND,"18.14 kg maximum; at least 1.0 kg reserve",Final-cleanup commission and validation evidence,Preserve in subsequent CAD commission,CLOSED
+MRC-011,Ambient pressure by depth,DERIVABLE FROM CONTROLLED VALUE,"Pabs=101.325 kPa+1025 kg/m3*9.80665 m/s2*depth",Standard hydrostatic relation with stated seawater assumption,Use in sensitivity and replace density if owner environment differs,BOUNDED
+MRC-012,Buoy operating differential,PROVISIONAL ENGINEERING ASSUMPTION,10 kPa for sizing sensitivity only,Transparent analysis assumption,Replace with buoy supplier value before component release,OPEN

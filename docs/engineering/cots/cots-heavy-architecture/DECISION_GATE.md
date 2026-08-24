@@ -2,38 +2,43 @@
 
 ## Decision
 
-Architecture C is **PROVISIONALLY SELECTED** for the next, separately authorized detailed-design phase. Architectures A and B remain trade evidence; none is released.
+**ARCHITECTURE C PRESSURE CONCEPT REQUIRES REVISION**
 
-## Evidence sufficient for provisional selection
+Architecture C remains the COTS-heavy trade lead, but the three-cartridge implementation and incomplete pressure-control path are not acceptable for CAD implementation.
 
-- Independent baseline lineage verified.
-- Three materially different architectures evaluated.
-- First-order gas balance identifies why 48 g baseline cartridge gas cannot independently support 60 L.
-- Current manufacturer identities support 70 g disposable sources, automatic water inflator family, DOT sample-cylinder alternative, pressure-control components, springs, actuator/damper, locks and tether candidates.
-- Weighted score constrains mission compliance, pressure risk and reset/service higher than COTS percentage alone.
-- Architecture C meets the minimum projected COTS objective and avoids a custom vessel.
+## Evidence supporting continued development
 
-## Evidence insufficient for implementation or release
+- Exact Leland `89070` catalog identity, 70 g fill, 100 mL capacity, 1.18 in diameter, 8.07 in length and 1/2-20 thread are supported.
+- COTS HP check, regulator and low-pressure high-flow relief families provide a plausible commercial path.
+- A modular field-reset architecture can avoid routine depot service.
+- Two cross-architecture developmental article types can be purchased without committing to unsafe Type 3 pressure hardware.
 
-- Owner Creo visual acceptance of corrected baseline.
-- Mission depth, minimum temperature, inflation time, buoy pressure/relief and complete qualification environment.
-- Vendor confirmation that the selected inflator accepts and safely flows a 70 g cartridge.
-- Source-derived packaging, mass and load analysis.
-- RFQ/quote, CoC options, traceability, delivered identity and delivered-item CoC.
-- Underwater, pressure, corrosion, deployment, recovery and reset test results.
+## Failing / open gates
 
-## Gate status
+- Three 70 g cartridges fail cold qualification at the surface and fail nominal design by 3 m under declared sizing assumptions.
+- No water inflator is approved for `89070`; compatibility is only **FIT APPEARS POSSIBLE — APPLICATION APPROVAL REQUIRED**.
+- Owner mission values and buoy MAWP/relief data remain absent.
+- The required regulator/restrictor/relief transient has not been sized or tested.
+- HP puncture head rating/support and regulator submerged/two-phase CO2 use are unverified.
+- Delivered identity and delivered-item CoCs remain 0.
 
-`PHASE_4_COMPLETE = true`
+## Gate state
 
-`PROVISIONAL_ARCHITECTURE = C`
+`PRE_CAD_ENGINEERING_CLOSURE_COMPLETE = true`
+
+`ARCHITECTURE_C_TRADE_LEAD = true`
+
+`THREE_CARTRIDGE_CONCEPT_ACCEPTED = false`
 
 `CAD_AUTHORIZED = false`
 
-`PROCUREMENT_RELEASED = false`
+`DEVELOPMENT_PROCUREMENT_TYPE_1_2_RECOMMENDED = true`
 
+`TYPE_3_PROCUREMENT_AUTHORIZED = false`
+
+`PRODUCTION_PROCUREMENT_RELEASED = false`
 `PRODUCT_RELEASED = false`
 
 ## Exact next action
 
-Owner performs the required Creo visual inspection of final-cleanup commit `8c594781e27b0597a71957082fb64f152cacfcd9`, then records architecture acceptance/rejection and supplies the missing depth/cold/time/buoy-pressure requirements. Only after that decision may a separate commission begin source-derived Architecture C packaging and detailed pressure analysis.
+Owner supplies the seven open mission/buoy values and approves development RFQs for two HIKO `87640_OLV_ONE` and two ACE `HBD-15-25-AA-P`; in parallel, request written `89070` application approval from Leland and the exact water-inflator manufacturer. Keep Type 3 and all CAD work held.

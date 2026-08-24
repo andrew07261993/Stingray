@@ -1,5 +1,7 @@
 # STINGRAY I5-S DF8 COTS-heavy architecture trade
 
+> **2026-08-24 pre-CAD closure:** the historical Architecture C trade lead is retained, but its three-cartridge pressure embodiment is not accepted. Current disposition is **ARCHITECTURE C PRESSURE CONCEPT REQUIRES REVISION**. See `PRE_CAD_ENGINEERING_GATE.md`, `CO2_GAS_SIZING_ANALYSIS.md`, and `PRESSURE_ARCHITECTURE.md`. The alternatives below remain historical trade evidence.
+
 Status: **Phase 1–4 complete; provisional selection only; NOT RELEASED**.
 
 This package is an independent architecture trade derived from documentation baseline `95766a1bfc7bcc48416b83c7b25fcbd482ac0608`. It was not branched from, and does not modify, `design/df8-targeted-cots-retrofit`. The read-only CAD authority is `fix/final-cad-semantic-cleanup` at `8c594781e27b0597a71957082fb64f152cacfcd9`.

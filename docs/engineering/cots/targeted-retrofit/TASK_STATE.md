@@ -1,24 +1,37 @@
 # TASK_STATE
 
-- objective: Create a targeted COTS retrofit while preserving architecture and baseline envelope/kinematics.
-- baseline_source_commit: 61a58cbbccd0aae7a747b2a73046142cf1f44511
-- baseline_docs_commit: 95766a1bfc7bcc48416b83c7b25fcbd482ac0608
-- source_worktree_path: C:\Users\ANDRE.ANDREWSPC\Documents\Codex\2026-08-23\stingray-i5-s-df8-state-parity-targeted-retrofit
+- objective: Complete Phase 2 candidate screening and Phase 3 targeted selection gate without modifying CAD.
+- provisional_cad_authority_path: C:\Users\ANDRE.ANDREWSPC\Documents\Codex\2026-08-23\stingray-i5-s-df8-final-cad-semantic-cleanup
+- provisional_cad_authority_commit: 8c594781e27b0597a71957082fb64f152cacfcd9
+- provisional_cad_authority_branch: fix/final-cad-semantic-cleanup
+- cad_authority_status: OWNER CREO VISUAL INSPECTION REQUIRED BEFORE REMAINING RELEASE VALIDATION
 - docs_worktree_path: C:\Users\ANDRE.ANDREWSPC\Documents\Codex\2026-08-23\stingray-docs
-- source_branch: design/df8-targeted-cots-retrofit
 - docs_branch: design/df8-targeted-cots-retrofit
-- completed_phase: Phase 1
-- current_counts:
+- phase_1_docs_commit: c345782ea3a733ac8338fbd7f206001a18b6f8a8
+- completed_phase: Phase 2 / Phase 3 decision gate
+- terminal_status: TARGETED COTS PHASE 2/3 DECISION GATE COMPLETE — CAD IMPLEMENTATION HELD FOR OWNER ACCEPTANCE OF CLEAN CAD BASELINE
+- bounded_results:
+  - vendor_candidates_retained: 25
+  - pressure_reservoir_finalists: 5
+  - unique_priority_make_definitions_screened: 47
+  - selected_substitutions_for_qualification: 7
+  - selected_make_definitions_conditionally_covered: 17
+  - underwater_test_item_types: 3
+  - underwater_test_articles_total: 6
+- preserved_accounting:
   - unique_partdefs: 121
   - make_partdefs: 104
-  - buy_partdefs: 17
-  - independently_orderable_line_items: 15
+  - cots_related_partdefs: 17
+  - independently_purchased_cots_parent_lines: 15
   - child_geometry_defs_excluded: 2
-  - standard_fasteners_excluded: 5
-  - state_parity_occurrences: 279
-  - baseline_motion_angle_approved_deg: 55
+  - standard_fastener_defs_excluded: 5
+  - functional_cots_before: 10/114 = 8.77%
+  - functional_cots_projected_if_all_selections_qualify: 27/114 = 23.68%
+  - delivered_item_cocs_verified: 0
+  - state_parity_occurrences: 279/279
+  - accepted_motion_evidence_through_deg: 55
   - release_status: NOT RELEASED
-- next_exact_action: Continue to Phase 2 with candidate screening only after procurement-compatible evidence and fit verification are collected.
-- known_blockers: CoC, serial/lot/batch linkage and procurement evidence are not yet verified for any candidate substitutions.
-- blockers: No architectural blockers introduced in this pass.
-- last_updated_utc: 2026-08-23T20:42:30Z
+- pressure_reservoir_recommendation: Swagelok 316L-50DF4-150, supplied empty, selected for qualified fit/pressure-subsystem testing only; no approved gas/fill/relief design.
+- next_exact_action: Owner accepts or rejects final-cleanup CAD commit 8c594781e27b0597a71957082fb64f152cacfcd9 after Creo visual inspection. If accepted, request certificate-bearing quotations and official CAD for the seven selections, beginning with two empty Swagelok 316L-50DF4-150 cylinders, two HIKO 87640_OLV_ONE bags, and two ACE HBD-15-25-AA-P dampers; then perform fit-only CAD evaluation and qualified fixture/chamber test planning. Do not begin CAD implementation before owner acceptance.
+- known_blockers: Mission depth, gas species/fill pressure, downstream pressure, relief setting, temperature range, exact pressure-package fit, official selected-item CAD, stock/lead time, supplier CoC/MTR/heat/serial options, received-item CoCs, and qualification results remain unverified.
+- last_updated_utc: 2026-08-24T08:35:05Z

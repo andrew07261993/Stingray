@@ -103,3 +103,21 @@ DF8-R2-RECOVERY-E-RING-006,,6 MM RECOVERY PIN EXTERNAL RETAINER,Must remain cust
 WP05-DOOR-LANYARD-R2,,CAPTIVE DOOR LANYARD WITH SWAGED EYES,Must remain custom pending architecture-safe catalog replacement evidence.,DEFERRED
 WP04-AFT-RAIL-SUPPORT-R2,,ONE-PIECE AFT GUIDE-RAIL SUPPORT RING WITH THREE M3 THREADS,Must remain custom pending architecture-safe catalog replacement evidence.,DEFERRED
 WP04-LATCH-SUPPORT-R2,,GUIDE-RAIL-3 TO LATCH TWO-SCREW SUPPORT BLADE,Must remain custom pending architecture-safe catalog replacement evidence.,DEFERRED
+C-002,PRESSURE_RESERVOIR,"Swagelok 316L-HDF4-500","Adequate ideal-gas inventory but 50.8 mm OD nearly equals 53 mm OML and length is 351 mm.",DEFERRED
+C-003,PRESSURE_RESERVOIR,"Swagelok 316L-50DF4-300","Greater length and mass than selected 150 cm3 lead without a verified need for double volume.",REJECTED
+C-004,PRESSURE_RESERVOIR,"Parker 4F-SC500D-SS","Credible DOT alternate but package fit is no better than 500 cm3 Swagelok and live procurement evidence is absent.",DEFERRED
+C-005,PRESSURE_RESERVOIR,"HOKE 4HDY500","5000 psig and ASME testing are quotation options; exact dimensions/certificate basis incomplete.",DEFERRED
+C-007,RECOVERY_BUOY,"Subsalve Rapid Recovery System custom size","High cross-branch value but no exact orderable 60 L configuration; requires architecture/custom-size trade.",DEFERRED
+C-008,RECOVERY_BUOY,"Carter CB-100 open-bottom lift bag","Approximately 45 L open-bottom product does not meet closed approximately 60 L buoy function.",REJECTED
+C-009,WATER_ACTIVATION,"Halkey-Roberts V95000xxB Hydro 1F family","Exact suffix and multi-cartridge/booster flow capacity not verified.",DEFERRED
+C-010,FULL_FLOW_VALVE,"Swagelok SS-CHS2-1","Check valve cannot replace commanded full-flow function despite high pressure rating.",REJECTED
+C-011,BACKUP_SPRING,"Lee Spring LHL 625D 12","11.909 N/mm and 139.7 mm solid height fail controlled approximately 16 N/mm and 138 mm maximum envelope.",REJECTED
+C-019,PINS,"JW Winco GN 2342 family","No exact 4/6/8 mm grip and captive-retention configuration verified for all DF8 joints.",DEFERRED
+C-020,LOCK_GUIDE,"JW Winco 705-8-E-NI","Set collar does not provide press-fit guide/bearing function and uses AISI 303.",REJECTED
+C-021,SHORT_LINK,"JW Winco 751-4-8-M4-A-NI","Exact catalog joint does not establish controlled 19.950 mm center distance or motion fit.",DEFERRED
+C-022,BOWDEN,"Cablecraft 33C family","No exact MPN, length, end fittings, external-pressure ingress basis or official evidence verified.",DEFERRED
+C-023,PRESSURE_LINES,"Swagelok SS-T2-S-035-6ME plus SS-200-1-2BT","Catalog tubing/fittings do not eliminate custom routed/terminated assemblies or establish fit.",DEFERRED
+C-024,RECOVERY_TETHER,"Samson AmSteel-Blue code 872 7/64 in finished assembly","Raw rope is COTS but the proof-certified two-eye assembly remains configured/custom.",DEFERRED
+C-025,LATCH_LOCK,"Southco R4-10-20-901-20","Potential six-definition consolidation materially changes fail-safe stop/lock architecture.",DEFERRED
+C-017,RETENTION_RING,"Rotor Clip proposed DC-3SS","Public manufacturer page did not verify an exact orderable stainless SKU; do not infer it from naming convention.",DEFERRED
+C-018,RETENTION_RING,"Rotor Clip proposed DC-6SS","Exact stainless SKU and recovery-joint load proof remain unverified.",DEFERRED

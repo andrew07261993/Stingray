@@ -1,0 +1,65 @@
+{
+  "schema": "STINGRAY_DF8_ARCHITECTURE_C_ENVELOPE_CORRECTION_V2",
+  "status": "ONE_SPECIFIC_MANUFACTURER_INTERFACE_REQUIRED_BEFORE_CAD",
+  "owner_case": {
+    "depth_m": 5.0,
+    "minimum_temperature_C": 0,
+    "maximum_useful_inflation_time_s": 10.0,
+    "useful_threshold_L_at_10s": 54.0,
+    "steady_usable_volume_L": 60.0,
+    "qualification_inventory_g": 334.51,
+    "preferred_nominal_inventory_g": 342.0
+  },
+  "packaging": {
+    "hard_external_diameter_mm": 57.15,
+    "radial_allowance_each_side_mm": 3.175,
+    "practical_cylinder_body_od_max_mm": 50.8,
+    "preferred_cylinder_body_od_mm_or_less": 50.0,
+    "ready_to_throw_maximum_kg": 18.14,
+    "required_mass_reserve_kg": 1.0,
+    "maximum_complete_pressure_system_mass_kg": 5.629
+  },
+  "rejected_source": {
+    "manufacturer": "eurocylinder systems AG",
+    "mpn": "130522277",
+    "body_od_mm": 82.5,
+    "body_length_mm": 280.0,
+    "classification": "REJECTED — EXCEEDS CONTROLLING DF8 DIAMETER"
+  },
+  "selected_source": {
+    "manufacturer": "Leland Limited",
+    "mpn": "89200",
+    "quantity": 2,
+    "net_CO2_g": 400.0,
+    "puncture_device": "65026-18Y12",
+    "compatibility": "COMPATIBLE WITH PUBLISHED COMMERCIAL INTERFACE",
+    "status": "SELECTED DEVELOPMENTAL PATH — ARMED INTERFACE DRAWING REQUIRED"
+  },
+  "closest_geometric_lead": {
+    "manufacturer": "Leland Limited",
+    "mpn": "89200",
+    "quantity": 2,
+    "net_CO2_g": 400.0,
+    "body_od_mm": 50.04,
+    "body_length_mm_each": 234.95,
+    "combined_published_gross_mass_kg": 0.6,
+    "projected_complete_pressure_system_mass_kg": 3.4,
+    "projected_ready_to_throw_mass_kg": 14.911,
+    "projected_mass_reserve_kg": 3.229,
+    "status": "SELECTED DEVELOPMENTAL PATH",
+    "blocking_reason": "One Leland drawing-controlled 89200 plus 65026-18Y12 armed installed/puncture interface is required before CAD"
+  },
+  "retained_architecture": {
+    "marine_inflation_family": "Leafield GIS water-activated/servo concept",
+    "gas_inlet": "Leafield B9116042.2 development jet",
+    "differential_relief": "Leafield B10 Yellow",
+    "buoy": "STINGRAY 60 L custom marine softgood",
+    "custom_pressure_vessels": 0,
+    "functional_cots_percent": null,
+    "functional_cots_status": "UNFROZEN PENDING FINAL SOURCE SELECTION"
+  },
+  "delivered_item_CoCs_accepted": 0,
+  "cad_authorized": false,
+  "production_procurement_authorized": false,
+  "release_status": "NOT RELEASED"
+}

@@ -1,0 +1,51 @@
+# Immediate underwater development test plan
+
+## Procurement gate
+
+Maximum three types × two articles = six total. No equipment was purchased and delivered-item CoCs accepted remain zero.
+
+| Type | Exact article | Qty | Architecture relevance | Procurement state |
+|---|---|---:|---|---|
+| 1 | STINGRAY 60 L engineering softgood with Leafield GIV/B10 | 2 | COTS-HEAVY PRIMARY | Downstream definition; do not purchase/fabricate yet |
+| 2 | ACE `HBD-15-25-AA-P` | 2 | COMMON TO TARGETED + COTS-HEAVY | RFQ; exact suffix orderable on request |
+| 3 | LSC `481-CG` complete automatic vest with `470-CG` (HR `V95000-1F`) + `#484` 33 g | 2 | COTS-HEAVY PRIMARY | RFQ manufacturer-direct; confirm exact installed configuration |
+
+Type 3 is **FUNCTIONAL-SCALE TEST ARTICLE — NOT REPRESENTATIVE OF FINAL GAS INVENTORY**.
+
+## Type 1 — buoy
+
+HIKO is superseded because it provides no published MAWP/relief/cycle basis. Type 1 now tests the final residual custom softgood with commercial Leafield inlet and relief.
+
+Questions: packed volume, extraction/unfolding, usable displaced volume, 0 C/5 m/10 s inflation geometry, leakage, B10 relief opening/accumulation, attachment integrity, drying and repeated repack/reset.
+
+Minimum instrumentation: depth/temperature, inlet differential pressure, timer/video, buoyant-load or displaced-volume measurement and pressure-decay/leak observation.
+
+Fixture: non-cutting pack surrogate, supplier-approved low-energy inlet and pool/open-water restraint. A qualified pressure chamber is required for depth cases beyond open-water capability. This is hydrostatic environmental testing, not pneumatic proof testing.
+
+Development pass: both articles achieve at least 54 L measured displacement within 10.0 s at 5 m/0 C, stable and holding/increasing, and reach 60 L steady useful displacement. The B10 must hold differential within the physically qualified softgood envelope with no seam/attachment/valve failure; leakage/hold and cycle criteria are finalized by the approved qualification procedure. Rated/geometric volume alone does not pass.
+
+## Type 2 — underwater damper
+
+Questions: dry/wet force-speed behavior, 25 mm stroke, both-direction damping, adjustment stability, leakage, water ingress, corrosion, post-immersion function and reset/service behavior.
+
+Minimum instrumentation: load cell, displacement/speed measurement, water/part temperature, cycle counter and video.
+
+Fixture: guarded submerged linear test stand with manufacturer-required mounting and 1–1.5 mm external positive stroke stops.
+
+Provisional pass: no binding or visible leakage; force-speed result stays within ±20% of each article's dry baseline after 10 submerged cycles and dwell; no functional corrosion; adjustment remains fixed. Final force curve, cycles, depth and dwell are **PROVISIONAL — OWNER REQUIREMENT REQUIRED**.
+
+Evidence limit: ACE family data support 25 mm stroke, 36–800 N HBD-15 family range, -20 to 80 °C and `P` damping in both directions. No captured evidence qualifies continuous seawater immersion; that uncertainty is the test purpose.
+
+## Type 3 — water-activated functional branch
+
+Questions: water activation, V80040/Super Bobbin behavior, puncture, discharge initiation, achieved functional inflation, icing, leakage and published rearm/reset repeatability.
+
+Minimum instrumentation: water/cylinder temperature sensors, timer/video and cylinder mass before/after where the controlled procedure allows. The first unmodified-system test does not add a pressure tap.
+
+Fixture: complete unmodified manufacturer vest/bladder/mount, soft restraint in a controlled tank/pool or qualified facility, protected/remote initiation where appropriate and personnel exclusion from cylinder/projectile paths. Pressure/flow instrumentation is deferred unless LSC provides an approved interface and a qualified facility approves it. No improvised pressure apparatus is authorized.
+
+Development pass: both branches successfully activate and puncture on two controlled cycles, exhibit no structural/seal failure, pass the facility-approved post-rearm leak check and are rearmed with published parts/instructions. Record activation delay, but do not apply the final 54 L/10 s gate: this 33 g article does not represent the final gas inventory, outlet, buoy, regulator or restriction.
+
+## Safety boundary
+
+Open-water/pool work is limited to buoy and appropriately guarded low-energy mechanical tests. Live CO2 discharge is dry-bench or water-activation work at a qualified pressure facility; mission-depth work requires a qualified chamber. Pneumatic proof/burst is outside this commission. Manufacturer limits and facility procedures control all tests.

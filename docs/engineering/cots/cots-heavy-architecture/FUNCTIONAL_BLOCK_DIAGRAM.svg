@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="820" viewBox="0 0 1400 820" role="img" aria-labelledby="title desc">
+  <title id="title">Architecture C functional block diagram</title>
+  <desc id="desc">Passive water authorization fires three checked 70 gram carbon dioxide branches. A pilot releases the mechanical arm mechanism while the main bus inflates and ejects the buoy. Recovery loads follow a separate structural path.</desc>
+  <defs>
+    <style>
+      .bg{fill:#f7f9fc}.box{fill:#fff;stroke:#17324d;stroke-width:2;rx:12}.cots{fill:#e7f5ed;stroke:#237a50}.custom{fill:#fff0e5;stroke:#a65318}.gate{fill:#fff7cc;stroke:#8a6d00}.t{font:16px Arial,sans-serif;fill:#132238}.h{font:bold 20px Arial,sans-serif;fill:#132238}.s{font:13px Arial,sans-serif;fill:#334e68}.flow{stroke:#1769aa;stroke-width:4;fill:none;marker-end:url(#arrow)}.mech{stroke:#8b3a8f;stroke-width:4;fill:none;marker-end:url(#arrow)}.load{stroke:#b42318;stroke-width:5;fill:none;marker-end:url(#arrow)}
+    </style>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="context-stroke"/></marker>
+  </defs>
+  <rect class="bg" x="0" y="0" width="1400" height="820"/>
+  <text class="h" x="40" y="40">Architecture C — distributed three-cartridge mechanical bus (PROVISIONAL)</text>
+  <text class="s" x="40" y="65">Green = COTS/configurable module · orange = custom · yellow = unresolved design gate</text>
+
+  <rect class="box cots" x="40" y="110" width="200" height="80"/><text class="t" x="60" y="140">Water authorization</text><text class="s" x="60" y="166">V95000 family + V80040</text>
+  <rect class="box cots" x="300" y="90" width="220" height="70"/><text class="t" x="320" y="120">Branch 1: Leland 89070</text><text class="s" x="320" y="143">70 g + piercer + check</text>
+  <rect class="box cots" x="300" y="175" width="220" height="70"/><text class="t" x="320" y="205">Branch 2: Leland 89070</text><text class="s" x="320" y="228">70 g + piercer + check</text>
+  <rect class="box cots" x="300" y="260" width="220" height="70"/><text class="t" x="320" y="290">Branch 3: Leland 89070</text><text class="s" x="320" y="313">70 g + piercer + check</text>
+  <rect class="box cots" x="600" y="175" width="190" height="80"/><text class="t" x="620" y="205">COTS fitting bus</text><text class="s" x="620" y="230">checks + tees + relief</text>
+  <rect class="box cots" x="860" y="105" width="200" height="80"/><text class="t" x="880" y="135">Pilot release actuator</text><text class="s" x="880" y="160">SRR-14-4 candidate</text>
+  <rect class="box custom" x="1120" y="105" width="230" height="80"/><text class="t" x="1140" y="135">Stowed latch / inhibit</text><text class="s" x="1140" y="160">custom interface + GN 817</text>
+
+  <rect class="box cots" x="860" y="270" width="200" height="95"/><text class="t" x="880" y="300">Mechanical energy</text><text class="s" x="880" y="325">GS-19 + backup spring</text><text class="s" x="880" y="345">HBD-15 damping</text>
+  <rect class="box custom" x="1120" y="270" width="230" height="95"/><text class="t" x="1140" y="300">Common crosshead + arms</text><text class="s" x="1140" y="325">3 arms / stops / locks</text><text class="s" x="1140" y="345">0 / 120 / 240 degrees</text>
+
+  <rect class="box cots" x="860" y="455" width="200" height="80"/><text class="t" x="880" y="485">Buoy ejector</text><text class="s" x="880" y="510">VD-244 module</text>
+  <rect class="box custom" x="1120" y="455" width="230" height="80"/><text class="t" x="1140" y="485">Pack enclosure / door</text><text class="s" x="1140" y="510">custom to qualified buoy</text>
+  <rect class="box gate" x="600" y="455" width="190" height="100"/><text class="t" x="620" y="485">60 L-class buoy</text><text class="s" x="620" y="510">Exact MPN / MAWP / depth</text><text class="s" x="620" y="532">UNKNOWN — GATE</text>
+
+  <rect class="box custom" x="1120" y="650" width="230" height="90"/><text class="t" x="1140" y="680">Primary body / penetrator</text><text class="s" x="1140" y="705">custom structural path</text>
+  <rect class="box cots" x="600" y="650" width="190" height="90"/><text class="t" x="620" y="680">Tether / terminations</text><text class="s" x="620" y="705">AmSteel-Blue candidate</text>
+  <rect class="box gate" x="40" y="650" width="410" height="90"/><text class="t" x="60" y="680">Recovered payload / mission fabric</text><text class="s" x="60" y="705">Loads and engagement definition UNKNOWN — DESIGN GATE REQUIRED</text>
+
+  <path class="flow" d="M240 150 L280 150 L280 125 L300 125"/><path class="flow" d="M240 150 L280 150 L280 210 L300 210"/><path class="flow" d="M240 150 L280 150 L280 295 L300 295"/>
+  <path class="flow" d="M520 125 L560 125 L560 215 L600 215"/><path class="flow" d="M520 210 L600 210"/><path class="flow" d="M520 295 L560 295 L560 230 L600 230"/>
+  <path class="flow" d="M790 205 L830 205 L830 145 L860 145"/><path class="flow" d="M790 225 L820 225 L820 505 L790 505"/>
+  <path class="mech" d="M1060 145 L1120 145"/><path class="mech" d="M1235 185 L1235 250 L1060 317"/><path class="mech" d="M1060 317 L1120 317"/>
+  <path class="mech" d="M1235 365 L1235 430 L1060 495"/><path class="mech" d="M1060 495 L1120 495"/>
+  <path class="flow" d="M695 255 L695 455"/>
+  <path class="load" d="M1235 535 L1235 650"/><path class="load" d="M1120 695 L790 695"/><path class="load" d="M600 695 L450 695"/>
+  <text class="s" x="820" y="680" fill="#b42318">Structural recovery load path — separate from gas and bladder film</text>
+</svg>

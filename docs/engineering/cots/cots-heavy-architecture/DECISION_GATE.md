@@ -2,29 +2,31 @@
 
 ## Decision
 
-**ARCHITECTURE C REQUIRES ONE REMAINING ENGINEERING INPUT**
+**ARCHITECTURE C PRESSURE SOURCE REQUIRES FURTHER REVISION**
 
-The commercial pressure architecture is selected: one 342 g CO2 cylinder with Leafield GIS passive water authorization/servo, rated marine hose/fixed-jet GIV and B10 differential relief. The nine-PFD-inflator embodiment is rejected.
+The 82.5 mm eurocylinder selection is rejected. The retained Leafield marine topology has no published pressure source that simultaneously fits the 50.80 mm practical cylinder allocation, supplies at least 334.51 g CO2, carries adequate pressure/temperature ratings, and connects to the passive GIS water-actuated system without an unsupported HP adapter.
 
 ## Gate state
 
 `OWNER_MISSION_VALUES_CLOSED = true`
 
-`FINAL_GAS_INVENTORY_G = 342`
+`QUALIFICATION_GAS_INVENTORY_G = 334.51`
 
-`GAS_SOURCE_COUNT = 1`
+`PREFERRED_NOMINAL_GAS_INVENTORY_G = 342`
 
-`SELECTED_CYLINDER = EUROCYLINDER 130522277`
+`HARD_EXTERNAL_DIAMETER_MM = 57.15`
 
-`SELECTED_MARINE_INFLATION_FAMILY = LEAFIELD GIS WATER-ACTIVATED/SERVO`
+`PRACTICAL_CYLINDER_OD_ALLOCATION_MM = 50.80`
 
-`HP_SYSTEM_DESIGN_PRESSURE_BAR = 200`
+`REJECTED_CYLINDER = EUROCYLINDER 130522277 — 82.5 MM OD`
 
-`HP_TRANSFER_COMPONENT_MINIMUM_MWP_BAR = 250`
+`FINAL_GAS_SOURCE_SELECTED = false`
 
-`HP_CHECK_COUNT = 0`
+`CLOSEST_GEOMETRIC_LEAD = 2 X LELAND 89200 — 400 G CO2`
 
-`HP_BUS_COUNT = 0`
+`CLOSEST_LEAD_STATUS = NOT SELECTED — PASSIVE LEAFIELD-COMPATIBLE ACTUATION NOT PUBLISHED`
+
+`SELECTED_MARINE_INFLATION_FAMILY = LEAFIELD GIS WATER-ACTIVATED/SERVO — RETAINED CONCEPT`
 
 `BUOY = STINGRAY 60 L CUSTOM MARINE SOFTGOOD`
 
@@ -32,9 +34,7 @@ The commercial pressure architecture is selected: one 342 g CO2 cylinder with Le
 
 `CUSTOM_PRESSURE_VESSELS = 0`
 
-`PROJECTED_FUNCTIONAL_COTS = 18/23 = 78.26 PERCENT`
-
-`ONE_REMAINING_ENGINEERING_INPUT = LEAFIELD CONFIGURED-ASSEMBLY DRAWING/MPN/ENVELOPE`
+`PROJECTED_FUNCTIONAL_COTS = UNFROZEN PENDING SOURCE SELECTION`
 
 `DELIVERED_ITEM_COCS_ACCEPTED = 0`
 
@@ -46,4 +46,4 @@ The commercial pressure architecture is selected: one 342 g CO2 cylinder with Le
 
 ## Exact next action
 
-Obtain the exact drawing-controlled Leafield water-actuator/servo/25E-valve/hose configuration and installed envelope. Once accepted, issue the bounded Architecture C CAD packaging/interface commission; keep physical cold-depth flow and softgood pressure/cycle work as downstream release qualification.
+Obtain or identify one exact manufacturer-controlled narrow marine source/head assembly meeting the inventory, 50.80 mm OD, pressure, passive-water-actuation, and no-adapter gates. Then repeat only the source-package mass/interface gate before commissioning bounded CAD.

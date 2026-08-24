@@ -1,76 +1,56 @@
 {
-  "schema": "STINGRAY_DF8_ARCHITECTURE_C_FINAL_MARINE_PRESSURE_V1",
-  "status": "REQUIRES_ONE_REMAINING_ENGINEERING_INPUT",
+  "schema": "STINGRAY_DF8_ARCHITECTURE_C_ENVELOPE_CORRECTION_V2",
+  "status": "PRESSURE_SOURCE_REQUIRES_FURTHER_REVISION",
   "owner_case": {
     "depth_m": 5.0,
     "minimum_temperature_C": 0,
     "maximum_useful_inflation_time_s": 10.0,
     "useful_threshold_L_at_10s": 54.0,
     "steady_usable_volume_L": 60.0,
-    "theoretical_inventory_g": 190.06,
-    "design_inventory_g": 304.10,
-    "qualification_inventory_g": 334.51
+    "qualification_inventory_g": 334.51,
+    "preferred_nominal_inventory_g": 342.0
   },
-  "selected_source": {
-    "architecture": "Leafield GIS water-actuated servo, one cylinder",
-    "cylinder_manufacturer": "eurocylinder systems AG",
-    "cylinder_mpn": "130522277",
-    "cylinder_count": 1,
-    "cylinder_water_capacity_L": 1.0,
-    "net_CO2_g": 342.0,
-    "charge_density_kg_m3": 342.0,
-    "empty_cylinder_mass_kg": 1.7,
-    "filled_cylinder_mass_kg": 2.042,
-    "cylinder_body_diameter_mm": 82.5,
-    "cylinder_body_length_mm": 280.0,
-    "cylinder_working_pressure_bar": 200,
-    "cylinder_test_pressure_bar": 300,
-    "leafield_HP_component_minimum_MWP_bar": 250,
-    "pressure_source_branches": 1,
-    "HP_checks": 0,
-    "HP_bus_or_manifold": 0,
-    "custom_pressure_vessels": 0,
-    "estimated_total_pressure_system_mass_kg": 4.3,
-    "estimated_total_leak_points": 10,
-    "normal_body_target_mm": 53.0,
-    "selected_cylinder_exceeds_normal_body_target": true,
-    "packaging_fit_claimed": false
-  },
-  "pressure_basis": {
-    "NIST_density_kg_m3": 342.0,
-    "pressure_at_50C_bar_absolute": 96.215,
-    "pressure_at_50C_psig": 1381,
-    "pressure_at_65C_bar_absolute": 113.58,
-    "pressure_at_65C_psig": 1633,
-    "system_design_pressure_bar": 200,
-    "HP_transfer_component_MWP_bar": 250
-  },
-  "buoy": {
-    "selection": "STINGRAY 60 L custom marine softgood",
-    "commercial_inlet": "Leafield B9116042.2 development jet",
-    "commercial_relief": "Leafield B10 Yellow",
-    "operating_differential_kPa": 10.0,
-    "relief_nominal_kPa": 12.1,
-    "relief_maximum_opening_kPa": 14.7,
-    "relief_minimum_sealing_kPa": 10.2,
-    "physical_pressure_qualification_required": true
-  },
-  "architecture_metrics": {
-    "projected_functional_cots_numerator": 18,
-    "projected_functional_unique_line_denominator": 23,
-    "projected_functional_cots_percent": 78.26,
-    "projected_ready_to_throw_mass_kg": 15.81,
+  "packaging": {
+    "hard_external_diameter_mm": 57.15,
+    "radial_allowance_each_side_mm": 3.175,
+    "practical_cylinder_body_od_max_mm": 50.8,
+    "preferred_cylinder_body_od_mm_or_less": 50.0,
     "ready_to_throw_maximum_kg": 18.14,
-    "estimated_mass_reserve_kg": 2.33,
-    "delivered_item_CoCs_accepted": 0
+    "required_mass_reserve_kg": 1.0,
+    "maximum_complete_pressure_system_mass_kg": 5.629
   },
-  "test_articles": {
-    "type_1": "two final 60 L STINGRAY softgood engineering articles with Leafield GIV/B10; downstream definition",
-    "type_2": "2 x ACE HBD-15-25-AA-P",
-    "type_3": "2 x LSC 481-CG with 470-CG/V95000-1F and #484 33 g; functional-scale only",
-    "total_cap": 6
+  "rejected_source": {
+    "manufacturer": "eurocylinder systems AG",
+    "mpn": "130522277",
+    "body_od_mm": 82.5,
+    "body_length_mm": 280.0,
+    "classification": "REJECTED — EXCEEDS CONTROLLING DF8 DIAMETER"
   },
-  "one_remaining_engineering_input": "Leafield drawing-controlled configured-assembly package: exact water actuator, servo, D91-220 25E/250 bar valve suffixes, interfaces, mass and installed keep-out envelope",
+  "selected_source": null,
+  "closest_geometric_lead": {
+    "manufacturer": "Leland Limited",
+    "mpn": "89200",
+    "quantity": 2,
+    "net_CO2_g": 400.0,
+    "body_od_mm": 50.04,
+    "body_length_mm_each": 234.95,
+    "combined_published_gross_mass_kg": 0.6,
+    "projected_complete_pressure_system_mass_kg": 3.4,
+    "projected_ready_to_throw_mass_kg": 14.911,
+    "projected_mass_reserve_kg": 3.229,
+    "status": "NOT SELECTED",
+    "blocking_reason": "No published passive water-actuated Leafield-compatible 1/2-20 armed head; exact cylinder pressure rating is also not public"
+  },
+  "retained_architecture": {
+    "marine_inflation_family": "Leafield GIS water-activated/servo concept",
+    "gas_inlet": "Leafield B9116042.2 development jet",
+    "differential_relief": "Leafield B10 Yellow",
+    "buoy": "STINGRAY 60 L custom marine softgood",
+    "custom_pressure_vessels": 0,
+    "functional_cots_percent": null,
+    "functional_cots_status": "UNFROZEN PENDING FINAL SOURCE SELECTION"
+  },
+  "delivered_item_CoCs_accepted": 0,
   "cad_authorized": false,
   "production_procurement_authorized": false,
   "release_status": "NOT RELEASED"

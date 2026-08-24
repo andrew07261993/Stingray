@@ -2,39 +2,39 @@
 
 ## Disposition
 
-**ARCHITECTURE C REQUIRES ONE REMAINING ENGINEERING INPUT**
+**ARCHITECTURE C PRESSURE SOURCE REQUIRES FURTHER REVISION**
 
-The pressure architecture has converged. Nine individual PFD inflators are replaced by one commercial marine source branch:
+## Corrected source state
 
-`342 g CO2 in eurocylinder 130522277 -> Leafield GIS water actuator/servo -> GIS cutter head/cylinder valve -> rated hose -> fixed-jet GIV -> 60 L STINGRAY softgood -> B10 Yellow relief`
+The superseded path used eurocylinder systems AG `130522277`. Its 82.5 mm diameter violates the 57.15 mm hard external limit and it is rejected. The pressure source cannot consume the full hard envelope; the calculated practical body allocation is 50.80 mm.
 
-## Closed
+The retained functional path is held at an open source node:
 
-- 342 g selected versus 334.51 g qualification requirement.
-- One gas source; zero HP checks; zero HP bus/manifold; zero custom pressure vessels.
-- NIST source pressure at 50 C: 96.215 bar absolute for selected 342 kg/m3 fill density.
-- HP hierarchy: 200 bar cylinder working boundary, 300 bar cylinder test, at least 250 bar Leafield valve/outlet/hose MWP.
-- No regulator: manufacturer marine topology uses rated HP transfer, fixed-jet GIV and high-flow differential relief.
-- Low-pressure operating basis: 10.0 kPa differential.
-- B10 Yellow: 12.1 kPa nominal, 14.7 kPa maximum opening, 10.2 kPa minimum sealing.
-- Residual custom 60 L softgood with commercial inlet/relief.
-- Complete certified source-module field exchange; fired-module recharge/refurbishment is depot work.
-- Estimated pressure-system mass 4.3 kg; projected ready-to-throw estimate 15.81 kg with 2.33 kg reserve.
-- Functional COTS projection 18/23 = 78.26%.
-- Known packaging risk: the selected 82.5 mm cylinder exceeds the 53 mm normal-body target; it is not claimed to fit. The target is not the 57.15 mm stowed arm-module maximum, but the bounded CAD commission must allocate a compliant localized source envelope.
+`commercial source/head <=50.80 mm OD [OPEN] -> Leafield GIS passive water authorization/servo [RETAINED] -> rated hose -> fixed-jet GIV -> 60 L STINGRAY softgood -> B10 Yellow relief`
 
-## One remaining engineering input
+## Evidence gate
 
-Obtain a **Leafield drawing-controlled configured-assembly package** giving:
+Leafield's official `LEL-20018 Rev 7b` manual publishes standard GIS valves `D912202` and `D912205` with W28.8 x 1/14 DIN 477 cylinder threads and 250 bar MWP. No public 1/2-20 or 1/4 NPT GIS valve is identified.
 
-1. exact MPN for the water-activated GIS unit;
-2. exact servo/adaptor/hose MPNs for firing one cylinder;
-3. exact D91-220 25E, 250 bar cylinder-valve suffix compatible with `130522277`;
-4. exact outlet/hose-end definition;
-5. assembly mass, dimensions and keep-out envelope sufficient to combine with the known 82.5 x 280 mm cylinder body;
-6. current drawing/manual revisions and configuration statement.
+The closest geometric source is two Leland `89200` 200 g cartridges. Both fit the 50.80 mm screen and supply 400 g, but they are not a supported final architecture because:
 
-Public evidence establishes the GIS family topology and pressure capability but does not publish this dimensioned configuration. This configured source-package definition is the sole remaining **engineering CAD input**; the subsequent bounded CAD commission must prove the known 82.5 mm source can be allocated without violating hard external/stowed envelopes. General application approval, quote, lead time, CoC and delivered identity are procurement/receiving gates.
+1. their 1/2-20 puncture interface is not a published Leafield GIS cylinder connection;
+2. Leland's compatible `65026-18Y12` puncture device is not an armed water-triggered inflator;
+3. exact `89200` cylinder pressure/burst values are not public;
+4. connecting the systems would require an unsupported HP adapter or a new actuation mechanism.
+
+The gap cannot be reclassified as `DRAWING-CONTROLLED FINAL MPN PENDING` because no supported interface family exists in the published evidence.
+
+## Preserved downstream basis
+
+- 5 m maximum depth, 0 C minimum source/water temperature, useful inflation by 10 s;
+- 60 L actual displacement target;
+- 334.51 g minimum qualification inventory;
+- Leafield B9116042.2 development GIV and B10 Yellow relief basis;
+- custom 60 L softgood, physical pressure qualification required;
+- zero custom pressure vessels;
+- field exchange/reset objective;
+- Type 2 and functional-scale Type 3 development articles unchanged.
 
 `CAD_AUTHORIZED = false`
 
@@ -42,14 +42,14 @@ Public evidence establishes the GIS family topology and pressure capability but 
 
 ## Downstream physical qualification gates
 
+Once a source is selected and bounded CAD is separately authorized:
+
 - full-scale 0 C, 5 m, 54 L-by-10 s and 60 L steady-volume test;
 - fixed-jet selection, icing, hose reaction and B10 relief-flow/accumulation test;
 - softgood leak, pressure, relief, repeated-cycle and salt-water/corrosion qualification;
-- field module-exchange/reset demonstration;
+- field source exchange/reset demonstration;
 - separate 500 lbf recovery proof/load-path verification and unresolved design/ultimate structural requirement.
-
-These gates block final release, not bounded CAD after the drawing-controlled input closes.
 
 ## Exact next action
 
-Acquire the current Leafield configured-assembly drawing package above; then commission bounded Architecture C CAD packaging/interface implementation against the read-only final-cleanup baseline. Do not purchase production hardware or release the softgood before physical qualification.
+Identify a manufacturer-released integrated marine source/head configuration meeting the 50.80 mm body allocation, at least 334.51 g inventory, published pressure ratings, passive Leafield-compatible water actuation, and no unsupported HP adapter. Do not start CAD.

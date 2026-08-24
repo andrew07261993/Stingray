@@ -1,4 +1,6 @@
-# Final pressure-source selection
+# Final pressure-source selection — superseded
+
+> **2026-08-24 envelope correction:** eurocylinder systems AG `130522277` is **REJECTED — EXCEEDS CONTROLLING DF8 DIAMETER**. No final pressure source is selected. See `FINAL_GAS_SOURCE_SELECTION.md` and `ENVELOPE_COMPLIANT_GAS_SOURCE_TRADE.md`. The material below is retained as the superseded commercial-marine convergence record and is not CAD authority.
 
 ## Selected architecture
 

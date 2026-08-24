@@ -1,5 +1,7 @@
 # Final field-reset architecture
 
+> **Envelope-correction status:** the normal reset concept remains acceptable in principle, but no final source module is selected. The sequence below becomes executable only after a manufacturer-supported <=50.80 mm source/head assembly is identified. Field reset is therefore **CONDITIONALLY CREDIBLE — FINAL SOURCE MODULE REQUIRED**, not currently released.
+
 ## Verdict
 
 **FIELD-RESETTABLE BY TRAINED FIELD PERSONNEL USING COMPLETE CERTIFIED CYLINDER-MODULE EXCHANGE.** Normal reset requires no fabrication, pressure-vessel opening or field recharge. The fired module is quarantined for qualified service-station recharge/refurbishment; an accepted spare module restores the article immediately.

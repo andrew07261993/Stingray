@@ -1,22 +1,22 @@
 {
   "state": "STOWED",
   "assembly_hierarchy": {
-    "root_name": "STINGRAY_I5S_DF8_FINAL_STOWED_MASTER_ASSY",
+    "root_name": "Stingray_Stowed_Inspection_Assembly",
     "top_level_assembly_names": [
-      "100_FORWARD_PENETRATOR_WAI_AND_PRIMARY_STRUCTURE_ASSY",
-      "300_TRUE_TRANSFORM_ARM_AND_POWERTRAIN_ASSY",
-      "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY"
+      "Forward_Body_Assembly",
+      "Arm_Activation_Powertrain_Assembly",
+      "Aft_Service_Closure_Assembly"
     ],
     "assembly_paths": [
-      "100_FORWARD_PENETRATOR_WAI_AND_PRIMARY_STRUCTURE_ASSY",
-      "100_FORWARD_PENETRATOR_WAI_AND_PRIMARY_STRUCTURE_ASSY/190_MANDATORY_HARDWARE_ASSY",
-      "300_TRUE_TRANSFORM_ARM_AND_POWERTRAIN_ASSY",
-      "300_TRUE_TRANSFORM_ARM_AND_POWERTRAIN_ASSY/331_ARM_1_ASSY",
-      "300_TRUE_TRANSFORM_ARM_AND_POWERTRAIN_ASSY/332_ARM_2_ASSY",
-      "300_TRUE_TRANSFORM_ARM_AND_POWERTRAIN_ASSY/333_ARM_3_ASSY",
-      "300_TRUE_TRANSFORM_ARM_AND_POWERTRAIN_ASSY/390_MANDATORY_HARDWARE_ASSY",
-      "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY",
-      "500_SPRING_EJECTOR_AFT_CLOSURE_AND_RECOVERY_ASSY/590_MANDATORY_HARDWARE_ASSY"
+      "Aft_Service_Closure_Assembly",
+      "Aft_Service_Closure_Assembly/Aft_Mandatory_Hardware_Assembly",
+      "Arm_Activation_Powertrain_Assembly",
+      "Arm_Activation_Powertrain_Assembly/Arm_Deployment_Assembly_01",
+      "Arm_Activation_Powertrain_Assembly/Arm_Deployment_Assembly_02",
+      "Arm_Activation_Powertrain_Assembly/Arm_Deployment_Assembly_03",
+      "Arm_Activation_Powertrain_Assembly/Powertrain_Mandatory_Hardware_Assembly",
+      "Forward_Body_Assembly",
+      "Forward_Body_Assembly/Forward_Mandatory_Hardware_Assembly"
     ],
     "leaf_occurrence_count": 279
   },
@@ -37,6 +37,11 @@
       "notes": "Official Accu product identity and nominal dimensions verified 2026-08-22; Official mass 71 g per 100; M3 x 0.5, 5.5 mm head diameter, 3.0 mm head height.",
       "color_key": "stainless",
       "external_context": false,
+      "final_display_name": "Accu_SSCF-M3-6-A4",
+      "creo_safe_name": "Accu_SSCF-M3-6-A4",
+      "actual_part_number": "SSCF-M3-6-A4",
+      "traceability_property": "LEGACY_ID=SSCF-M3-6-A4;SOURCE_ID=SSCF-M3-6-A4",
+      "abbreviation_reason": "",
       "volume_mm3": 106.59580115829556,
       "solid_count": 1,
       "face_count": 12
@@ -57,6 +62,11 @@
       "notes": "Official Accu product identity and nominal dimensions verified 2026-08-22; Official mass 88 g per 100; M3 x 0.5, 5.5 mm head diameter, 3.0 mm head height.",
       "color_key": "stainless",
       "external_context": false,
+      "final_display_name": "Accu_SSCF-M3-10-A4",
+      "creo_safe_name": "Accu_SSCF-M3-10-A4",
+      "actual_part_number": "SSCF-M3-10-A4",
+      "traceability_property": "LEGACY_ID=SSCF-M3-10-A4;SOURCE_ID=SSCF-M3-10-A4",
+      "abbreviation_reason": "",
       "volume_mm3": 134.87013504060369,
       "solid_count": 1,
       "face_count": 12
@@ -77,6 +87,11 @@
       "notes": "Official Accu product identity and nominal dimensions verified 2026-08-22; Official mass 36 g per 100; 90 degree head, 6.72 mm nominal head diameter, 1.86 mm countersunk length.",
       "color_key": "stainless",
       "external_context": false,
+      "final_display_name": "Accu_SSK-M3-6-A4-P80",
+      "creo_safe_name": "Accu_SSK-M3-6-A4-P80",
+      "actual_part_number": "SSK-M3-6-A4-P80",
+      "traceability_property": "LEGACY_ID=SSK-M3-6-A4-P80;SOURCE_ID=SSK-M3-6-A4-P80",
+      "abbreviation_reason": "",
       "volume_mm3": 61.607894392700906,
       "solid_count": 1,
       "face_count": 11
@@ -97,6 +112,11 @@
       "notes": "Official Accu product identity and nominal dimensions verified 2026-08-22; Official mass 80 g per 100; 2.2 mm captive diameter x 5 mm captive length and 3 mm M3 threaded end.",
       "color_key": "stainless",
       "external_context": false,
+      "final_display_name": "Accu_SSCA-M3-8-A4-BL",
+      "creo_safe_name": "Accu_SSCA-M3-8-A4-BL",
+      "actual_part_number": "SSCA-M3-8-A4-BL",
+      "traceability_property": "LEGACY_ID=SSCA-M3-8-A4-BL;SOURCE_ID=SSCA-M3-8-A4-BL",
+      "abbreviation_reason": "",
       "volume_mm3": 104.39668630078269,
       "solid_count": 1,
       "face_count": 14
@@ -117,6 +137,11 @@
       "notes": "Official Accu product identity and nominal dimensions verified 2026-08-22; Official mass 112 g per 100; M4 x 0.7, 7.0 mm head diameter, 2.8 mm head height.",
       "color_key": "stainless",
       "external_context": false,
+      "final_display_name": "Accu_SSCL-M4-8-A4",
+      "creo_safe_name": "Accu_SSCL-M4-8-A4",
+      "actual_part_number": "SSCL-M4-8-A4",
+      "traceability_property": "LEGACY_ID=SSCL-M4-8-A4;SOURCE_ID=SSCL-M4-8-A4",
+      "abbreviation_reason": "",
       "volume_mm3": 195.78435116586544,
       "solid_count": 1,
       "face_count": 12
@@ -137,6 +162,11 @@
       "notes": "Official Accu product identity and nominal dimensions verified 2026-08-22; Official mass 47 g per 100; diameter tolerance +0.002/+0.008 mm and 0.45 mm radius length.",
       "color_key": "stainless",
       "external_context": false,
+      "final_display_name": "Accu_HDP-3-8-A1",
+      "creo_safe_name": "Accu_HDP-3-8-A1",
+      "actual_part_number": "HDP-3-8-A1",
+      "traceability_property": "LEGACY_ID=HDP-3-8-A1;SOURCE_ID=HDP-3-8-A1",
+      "abbreviation_reason": "",
       "volume_mm3": 54.831001981266056,
       "solid_count": 1,
       "face_count": 5
@@ -157,6 +187,11 @@
       "notes": "Official Accu product identity and nominal dimensions verified 2026-08-22; Nominal 3.0 mm small diameter, 3.6 mm large diameter and 30 mm length; mass from exact nominal B-rep at 7.90 g/cm3.",
       "color_key": "stainless",
       "external_context": false,
+      "final_display_name": "Accu_HTP-3-30-A1",
+      "creo_safe_name": "Accu_HTP-3-30-A1",
+      "actual_part_number": "HTP-3-30-A1",
+      "traceability_property": "LEGACY_ID=HTP-3-30-A1;SOURCE_ID=HTP-3-30-A1",
+      "abbreviation_reason": "",
       "volume_mm3": 257.29643832900405,
       "solid_count": 1,
       "face_count": 3
@@ -177,6 +212,11 @@
       "notes": "Official Accu product identity and nominal dimensions verified 2026-08-22; Official mass 41 g per 100; 1.0 mm thickness, 9.3 mm ID, 17 mm clearance diameter, 9.6 x 1.1 mm shaft groove.",
       "color_key": "stainless",
       "external_context": false,
+      "final_display_name": "Accu_HEC-10-A4",
+      "creo_safe_name": "Accu_HEC-10-A4",
+      "actual_part_number": "HEC-10-A4",
+      "traceability_property": "LEGACY_ID=HEC-10-A4;SOURCE_ID=HEC-10-A4",
+      "abbreviation_reason": "",
       "volume_mm3": 147.9657423266114,
       "solid_count": 1,
       "face_count": 33
@@ -197,6 +237,11 @@
       "notes": "Controlled MAKE cap; requires integral opposite housing shoulder, positive lock and tool-access proof.",
       "color_key": "stainless",
       "external_context": false,
+      "final_display_name": "CAPTIVE_WATER-BOBBIN_THREADED_BAYONET_SERVICE_CAP_SS",
+      "creo_safe_name": "CAPTIVE_WATER-BOBBIN_T_11FDB4F5",
+      "actual_part_number": "",
+      "traceability_property": "LEGACY_ID=DF8-WATER-BOBBIN-SERVICE-CAP-001;SOURCE_ID=DF8-WATER-BOBBIN-SERVICE-CAP-001",
+      "abbreviation_reason": "Deterministic 31-character Creo filename limit",
       "volume_mm3": 604.0538505681156,
       "solid_count": 1,
       "face_count": 32
@@ -217,6 +262,11 @@
       "notes": "",
       "color_key": "tungsten",
       "external_context": false,
+      "final_display_name": "Penetrator_Nose_W",
+      "creo_safe_name": "Penetrator_Nose_W",
+      "actual_part_number": "",
+      "traceability_property": "LEGACY_ID=DF8-R2-NOSE-001;SOURCE_ID=DF8-R2-NOSE-001",
+      "abbreviation_reason": "",
       "volume_mm3": 130430.3430987191,
       "solid_count": 1,
       "face_count": 8
@@ -237,6 +287,11 @@
       "notes": "",
       "color_key": "tungsten",
       "external_context": false,
+      "final_display_name": "Forward_Ballast_W",
+      "creo_safe_name": "Forward_Ballast_W",
+      "actual_part_number": "",
+      "traceability_property": "LEGACY_ID=DF8-R2-BALLAST-001;SOURCE_ID=DF8-R2-BALLAST-001",
+      "abbreviation_reason": "",
       "volume_mm3": 287307.507603522,
       "solid_count": 1,
       "face_count": 14
@@ -257,6 +312,11 @@
       "notes": "",
       "color_key": "titanium",
       "external_context": false,
+      "final_display_name": "Forward_Shell_TI",
+      "creo_safe_name": "Forward_Shell_TI",
+      "actual_part_number": "",
+      "traceability_property": "LEGACY_ID=DF8-R2-FWD-SHELL-001;SOURCE_ID=DF8-R2-FWD-SHELL-001",
+      "abbreviation_reason": "",
       "volume_mm3": 100417.10070217462,
       "solid_count": 1,
       "face_count": 168
@@ -277,6 +337,11 @@
       "notes": "",
       "color_key": "titanium",
       "external_context": false,
+      "final_display_name": "PRIMARY_STRUCTURAL_TRANSITION_RING_WITH_FOUR_TAPPED_CARRIER_LANDS_TI",
+      "creo_safe_name": "PRIMARY_STRUCTURAL_TRA_B40E7620",
+      "actual_part_number": "",
+      "traceability_property": "LEGACY_ID=DF8-R2-STRUCT-RING-PLAIN-001;SOURCE_ID=DF8-R2-STRUCT-RING-PLAIN-001",
+      "abbreviation_reason": "Deterministic 31-character Creo filename limit",
       "volume_mm3": 7413.272467566528,
       "solid_count": 1,
       "face_count": 43
@@ -297,6 +362,11 @@
       "notes": "",
       "color_key": "titanium",
       "external_context": false,
+      "final_display_name": "STRUCTURAL_RING_WITH_ROUTE_PASSAGES_ARM_RELIEFS_AND_FULLFLOW_CIRCLIP_REACTION_CAGE_TI",
+      "creo_safe_name": "STRUCTURAL_RING_WITH_R_761E73E6",
+      "actual_part_number": "",
+      "traceability_property": "LEGACY_ID=DF8-R2-STRUCT-RING-ROUTED-001;SOURCE_ID=DF8-R2-STRUCT-RING-ROUTED-001",
+      "abbreviation_reason": "Deterministic 31-character Creo filename limit",
       "volume_mm3": 6590.0616425391245,
       "solid_count": 4,
       "face_count": 68
@@ -317,6 +387,11 @@
       "notes": "",
       "color_key": "titanium",
       "external_context": false,
+      "final_display_name": "FORWARD_PRIMARY_LOAD-PATH_LONGERON_TI",
+      "creo_safe_name": "FORWARD_PRIMARY_LOAD-P_D84C0BB5",
+      "actual_part_number": "",
+      "traceability_property": "LEGACY_ID=DF8-R2-FWD-LONGERON-001;SOURCE_ID=DF8-R2-FWD-LONGERON-001",
+      "abbreviation_reason": "Deterministic 31-character Creo filename limit",
       "volume_mm3": 3636.5919404661327,
       "solid_count": 1,
       "face_count": 8
@@ -337,6 +412,11 @@
       "notes": "Incoming acceptance: 12 g CO2, 0.735 in body diameter, 3.250 in overall length, 3/8-24 neck, lot traceability and CoC; occurrence-matched puncture-head thread and pre-puncture clearance are inspected.",
       "color_key": "steel",
       "external_context": false,
+      "final_display_name": "Leland_CO2_Cartridge_81121",
+      "creo_safe_name": "Leland_CO2_Cartridge_81121",
+      "actual_part_number": "LELAND-81121",
+      "traceability_property": "LEGACY_ID=LELAND-81121;SOURCE_ID=LELAND-81121",
+      "abbreviation_reason": "",
       "volume_mm3": 21963.508172001293,
       "solid_count": 1,
       "face_count": 8
@@ -357,6 +437,11 @@
       "notes": "",
       "color_key": "aluminum",
       "external_context": false,
+      "final_display_name": "FOUR-CARTRIDGE_DOUBLE-PLATE_CARRIER_AL",
+      "creo_safe_name": "FOUR-CARTRIDGE_DOUBLE-_C7692199",
+      "actual_part_number": "",
+      "traceability_property": "LEGACY_ID=DF8-R2-CARTRIDGE-CARRIER-001;SOURCE_ID=DF8-R2-CARTRIDGE-CARRIER-001",
+      "abbreviation_reason": "Deterministic 31-character Creo filename limit",
       "volume_mm3": 930.5586464795159,
       "solid_count": 5,
       "face_count": 43
@@ -369,7 +454,7 @@
       "make_buy": "MAKE",
       "manufacturer": "STINGRAY custom",
       "cad_classification": "DRAWING_DERIVED",
-      "mass_kg": 0.08077311172532872,
+      "mass_kg": 0.08367859264028146,
       "source_url": "",
       "purchase_url": "",
       "process": "5-axis mill; gun drill; proof test; Certified stainless product form/condition; heat/lot CoC; qualified weld/braze procedure where applicable; ASTM A967 passivation; PT of pressure welds; dimensional inspection",
@@ -377,9 +462,14 @@
       "notes": "",
       "color_key": "stainless",
       "external_context": false,
-      "volume_mm3": 10096.63896566609,
+      "final_display_name": "Collection_Manifold_SS",
+      "creo_safe_name": "Collection_Manifold_SS",
+      "actual_part_number": "",
+      "traceability_property": "LEGACY_ID=DF8-R2-COLLECTION-MANIFOLD-001;SOURCE_ID=DF8-R2-COLLECTION-MANIFOLD-001",
+      "abbreviation_reason": "",
+      "volume_mm3": 10459.824080035183,
       "solid_count": 1,
-      "face_count": 31
+      "face_count": 50
     },
     {
       "part_number": "DF8-R2-PUNCTURE-HEAD-001",
@@ -397,6 +487,11 @@
       "notes": "",
       "color_key": "steel",
       "external_context": false,
+      "final_display_name": "CARTRIDGE_PUNCTURE_HEAD_WITH_CONTROLLED_NEEDLE_SS",
+      "creo_safe_name": "CARTRIDGE_PUNCTURE_HEA_91C02C2E",
+      "actual_part_number": "",
+      "traceability_property": "LEGACY_ID=DF8-R2-PUNCTURE-HEAD-001;SOURCE_ID=DF8-R2-PUNCTURE-HEAD-001",
+      "abbreviation_reason": "Deterministic 31-character Creo filename limit",
       "volume_mm3": 650.945465227976,
       "solid_count": 1,
       "face_count": 13
@@ -417,6 +512,11 @@
       "notes": "Controlled MAKE item: 13.00 OD, 11.00 ID, 430.00 OAL; serialized leak and hydro-proof acceptance.",
       "color_key": "stainless",
       "external_context": false,
+      "final_display_name": "13_OD_X_11_ID_X_430_BOOSTER_RESERVOIR_WITH_END_BOSSES_SS",
+      "creo_safe_name": "13_OD_X_11_ID_X_430_BO_BB63C750",
+      "actual_part_number": "",
+      "traceability_property": "LEGACY_ID=DF8-R2-BOOSTER-RESERVOIR-001;SOURCE_ID=DF8-R2-BOOSTER-RESERVOIR-001",
+      "abbreviation_reason": "Deterministic 31-character Creo filename limit",
       "volume_mm3": 17200.219778404113,
       "solid_count": 1,
       "face_count": 12
@@ -437,6 +537,11 @@
       "notes": "",
       "color_key": "peek",
       "external_context": false,
+      "final_display_name": "CAPTIVE_BOOSTER_SUPPORT_BAND_WITH_M3_TAB_PEEK",
+      "creo_safe_name": "CAPTIVE_BOOSTER_SUPPOR_F646D477",
+      "actual_part_number": "",
+      "traceability_property": "LEGACY_ID=DF8-R2-BOOSTER-BAND-001;SOURCE_ID=DF8-R2-BOOSTER-BAND-001",
+      "abbreviation_reason": "Deterministic 31-character Creo filename limit",
       "volume_mm3": 238.05406605816108,
       "solid_count": 1,
       "face_count": 23
@@ -457,6 +562,11 @@
       "notes": "Separate pressure-boundary occurrence; integral pilot enters the reservoir boss with controlled clearance while the full face weld closes the annulus.",
       "color_key": "stainless",
       "external_context": false,
+      "final_display_name": "PORTED_FORWARD_BOOSTER_CLOSURE_WITH_WELD_LIP_AND_VALVE_ADAPTER_SS",
+      "creo_safe_name": "PORTED_FORWARD_BOOSTER_2FFE41D1",
+      "actual_part_number": "",
+      "traceability_property": "LEGACY_ID=DF8-R2-BOOSTER-FWD-ADAPTER-CLOSURE-001;SOURCE_ID=DF8-R2-BOOSTER-FWD-ADAPTER-CLOSURE-001",
+      "abbreviation_reason": "Deterministic 31-character Creo filename limit",
       "volume_mm3": 159.20806170229673,
       "solid_count": 1,
       "face_count": 6
@@ -477,6 +587,11 @@
       "notes": "Separate solid pressure-boundary occurrence; no open-ended-cylinder representation remains in the installed reservoir.",
       "color_key": "stainless",
       "external_context": false,
+      "final_display_name": "SOLID_AFT_BOOSTER_CLOSURE_WITH_LOCATING_PILOT_SS",
+      "creo_safe_name": "SOLID_AFT_BOOSTER_CLOS_2FE2C491",
+      "actual_part_number": "",
+      "traceability_property": "LEGACY_ID=DF8-R2-BOOSTER-AFT-WELDED-CLOSURE-001;SOURCE_ID=DF8-R2-BOOSTER-AFT-WELDED-CLOSURE-001",
+      "abbreviation_reason": "Deterministic 31-character Creo filename limit",
       "volume_mm3": 125.75795392319938,
       "solid_count": 1,
       "face_count": 5
@@ -497,6 +612,11 @@
       "notes": "Exact SS-CHS2-1 procurement identity; 316 SS poppet check valve with 1/8-in tube fittings and 6000 psig/413 bar catalog rating. The compact analytic exterior is a controlled installation BREP; incoming identity, rating, cracking direction and leak test are verified.",
       "color_key": "stainless",
       "external_context": false,
+      "final_display_name": "Swagelok_Check_Valve_SS-CHS2-1",
+      "creo_safe_name": "Swagelok_Check_Valve_SS-CHS2-1",
+      "actual_part_number": "SS-CHS2-1",
+      "traceability_property": "LEGACY_ID=SS-CHS2-1;SOURCE_ID=SS-CHS2-1",
+      "abbreviation_reason": "",
       "volume_mm3": 54.651789595583324,
       "solid_count": 1,
       "face_count": 30
@@ -517,6 +637,11 @@
       "notes": "Occurrence-specific line bridges one dedicated manifold port to one SS-CHS2-1 inlet with 0.10 mm manifold-bore clearance.",
       "color_key": "route",
       "external_context": false,
+      "final_display_name": "Booster_Collection_Line_SS",
+      "creo_safe_name": "Booster_Collection_Line_SS",
+      "actual_part_number": "",
+      "traceability_property": "LEGACY_ID=DF8-R2-BOOSTER-COLLECTION-LINE-001;SOURCE_ID=DF8-R2-BOOSTER-COLLECTION-LINE-001",
+      "abbreviation_reason": "",
       "volume_mm3": 4.728882341816032,
       "solid_count": 1,
       "face_count": 12
@@ -537,6 +662,11 @@
       "notes": "",
       "color_key": "black",
       "external_context": false,
+      "final_display_name": "Water_Trigger_Housing_AC",
+      "creo_safe_name": "Water_Trigger_Housing_AC",
+      "actual_part_number": "",
+      "traceability_property": "LEGACY_ID=DF8-R2-WATER-TRIGGER-HSG-001;SOURCE_ID=DF8-R2-WATER-TRIGGER-HSG-001",
+      "abbreviation_reason": "",
       "volume_mm3": 4312.9471671848805,
       "solid_count": 1,
       "face_count": 120
@@ -557,6 +687,11 @@
       "notes": "Exact V80040 identity; controlled incoming inspection verifies the 10 mm diameter by 18 mm modeled service envelope, lot traceability, and current Nordson/Halkey-Roberts IFU revision.",
       "color_key": "peek",
       "external_context": false,
+      "final_display_name": "Halkey_Roberts_Water_Bobbin_V80040",
+      "creo_safe_name": "Halkey_Roberts_Water_B_B9F610C2",
+      "actual_part_number": "V80040",
+      "traceability_property": "LEGACY_ID=V80040;SOURCE_ID=V80040",
+      "abbreviation_reason": "Deterministic 31-character Creo filename limit",
       "volume_mm3": 1413.716694115407,
       "solid_count": 1,
       "face_count": 3
@@ -577,6 +712,11 @@
       "notes": "",
       "color_key": "stainless",
       "external_context": false,
+      "final_display_name": "RADIAL_FLOOD_INLET_GLAND_AND_ANTI-DEBRIS_SCREEN_SS",
+      "creo_safe_name": "RADIAL_FLOOD_INLET_GLA_A8ACA4AE",
+      "actual_part_number": "",
+      "traceability_property": "LEGACY_ID=DF8-R2-WATER-INLET-001;SOURCE_ID=DF8-R2-WATER-INLET-001",
+      "abbreviation_reason": "Deterministic 31-character Creo filename limit",
       "volume_mm3": 191.0465324501025,
       "solid_count": 3,
       "face_count": 12
@@ -589,7 +729,7 @@
       "make_buy": "MAKE",
       "manufacturer": "STINGRAY custom",
       "cad_classification": "DRAWING_DERIVED",
-      "mass_kg": 0.018513436307927143,
+      "mass_kg": 0.020074330627018175,
       "source_url": "",
       "purchase_url": "",
       "process": "Swiss turn; cross-drill; lap; ASTM A564 Type 630 certified stock; H900 unless the drawing explicitly selects a tougher condition; heat-treatment/hardness record; ASTM A967 passivation; grind/ream critical fits; CMM inspection",
@@ -597,9 +737,14 @@
       "notes": "",
       "color_key": "steel",
       "external_context": false,
-      "volume_mm3": 2388.8304913454376,
+      "final_display_name": "DIRECT_FULL-FLOW_VALVE_WITH_BORED_AXIAL_AND_RADIAL_PORTS_SS",
+      "creo_safe_name": "DIRECT_FULL-FLOW_VALVE_9C908483",
+      "actual_part_number": "",
+      "traceability_property": "LEGACY_ID=DF8-R2-FULLFLOW-VALVE-001;SOURCE_ID=DF8-R2-FULLFLOW-VALVE-001",
+      "abbreviation_reason": "Deterministic 31-character Creo filename limit",
+      "volume_mm3": 2590.236209937829,
       "solid_count": 4,
-      "face_count": 53
+      "face_count": 54
     },
     {
       "part_number": "DF8-FINAL-MANIFOLD-FULLFLOW-FEED-001",
@@ -612,14 +757,19 @@
       "mass_kg": 0.007,
       "source_url": "",
       "purchase_url": "",
-      "process": "CNC form; braze occurrence-matched integral ferrule collars; passivate; helium leak and 20.7 MPa hydro proof; Certified stainless product form/condition; heat/lot CoC; qualified weld/braze procedure where applicable; ASTM A967 passivation; PT of pressure welds; dimensional inspection",
+      "process": "CNC form; prepare occurrence-matched direct-braze tube ends; passivate; helium leak and 20.7 MPa hydro proof; Certified stainless product form/condition; heat/lot CoC; qualified weld/braze procedure where applicable; ASTM A967 passivation; PT of pressure welds; dimensional inspection",
       "finish": "ASTM A967 passivated; rope-contact and seal surfaces polished per drawing",
-      "notes": "2.00 mm OD x 0.35 mm wall exact formed feed with integral end collars; three occurrence-specific welded spring supports.",
+      "notes": "2.00 mm OD x 0.35 mm wall exact formed feed with direct-braze end preparations; three occurrence-specific welded spring supports.",
       "color_key": "route",
       "external_context": false,
-      "volume_mm3": 855.5758476669288,
+      "final_display_name": "Collection_Manifold_Fullflow_Feed_SS",
+      "creo_safe_name": "Collection_Manifold_Fu_4DB6BFA6",
+      "actual_part_number": "",
+      "traceability_property": "LEGACY_ID=DF8-FINAL-MANIFOLD-FULLFLOW-FEED-001;SOURCE_ID=DF8-FINAL-MANIFOLD-FULLFLOW-FEED-001",
+      "abbreviation_reason": "Deterministic 31-character Creo filename limit",
+      "volume_mm3": 777.1683484823643,
       "solid_count": 1,
-      "face_count": 36
+      "face_count": 20
     },
     {
       "part_number": "DF8-FINAL-MANIFOLD-FEED-SPRING-CLIP-001",
@@ -637,6 +787,11 @@
       "notes": "0.05 mm nominal tube running clearance and 0.01 mm shell weld-land stand-off.",
       "color_key": "titanium",
       "external_context": false,
+      "final_display_name": "LASER-WELDED_TITANIUM_SPRING_CLIP_FOR_MANIFOLD_FEED_TI",
+      "creo_safe_name": "LASER-WELDED_TITANIUM_4C0BF7FB",
+      "actual_part_number": "",
+      "traceability_property": "LEGACY_ID=DF8-FINAL-MANIFOLD-FEED-SPRING-CLIP-001;SOURCE_ID=DF8-FINAL-MANIFOLD-FEED-SPRING-CLIP-001",
+      "abbreviation_reason": "Deterministic 31-character Creo filename limit",
       "volume_mm3": 34.678939328725775,
       "solid_count": 1,
       "face_count": 15
@@ -657,6 +812,11 @@
       "notes": "",
       "color_key": "titanium",
       "external_context": false,
+      "final_display_name": "ANALYTIC_CYLINDRICAL_FIXED_BODY_SECTOR_TI",
+      "creo_safe_name": "ANALYTIC_CYLINDRICAL_F_66B0AB70",
+      "actual_part_number": "",
+      "traceability_property": "LEGACY_ID=DF8-R2-FIXED-SECTOR-001;SOURCE_ID=DF8-R2-FIXED-SECTOR-001",
+      "abbreviation_reason": "Deterministic 31-character Creo filename limit",
       "volume_mm3": 76852.99600249955,
       "solid_count": 1,
       "face_count": 34
@@ -677,6 +837,11 @@
       "notes": "",
       "color_key": "titanium",
       "external_context": false,
+      "final_display_name": "FIXED_SECTOR_3_WITH_TWO_RADIAL_M3_BACKUP-GUIDE_HEAD_POCKETS_TI",
+      "creo_safe_name": "FIXED_SECTOR_3_WITH_TW_179D3078",
+      "actual_part_number": "",
+      "traceability_property": "LEGACY_ID=DF8-R2-BACKUP-ACCESS-FIXED-SECTOR-003;SOURCE_ID=DF8-R2-BACKUP-ACCESS-FIXED-SECTOR-003",
+      "abbreviation_reason": "Deterministic 31-character Creo filename limit",
       "volume_mm3": 76687.53789130793,
       "solid_count": 1,
       "face_count": 38
@@ -697,6 +862,11 @@
       "notes": "",
       "color_key": "titanium",
       "external_context": false,
+      "final_display_name": "PRIMARY_LONGERON_WITH_TWO_JIG-BORED_ROUTE_CHANNELS_TI",
+      "creo_safe_name": "PRIMARY_LONGERON_WITH_6702CE25",
+      "actual_part_number": "",
+      "traceability_property": "LEGACY_ID=DF8-R2-ROUTED-LONGERON-001;SOURCE_ID=DF8-R2-ROUTED-LONGERON-001",
+      "abbreviation_reason": "Deterministic 31-character Creo filename limit",
       "volume_mm3": 11047.09640708313,
       "solid_count": 1,
       "face_count": 8
@@ -717,6 +887,11 @@
       "notes": "",
       "color_key": "titanium",
       "external_context": false,
+      "final_display_name": "PRIMARY_LONGERON_3_WITH_TWO_RADIAL_BACKUP-GUIDE_M3_CLEARANCE_BORES_TI",
+      "creo_safe_name": "PRIMARY_LONGERON_3_WIT_AAB40731",
+      "actual_part_number": "",
+      "traceability_property": "LEGACY_ID=DF8-R2-BACKUP-GUIDE-LONGERON-003;SOURCE_ID=DF8-R2-BACKUP-GUIDE-LONGERON-003",
+      "abbreviation_reason": "Deterministic 31-character Creo filename limit",
       "volume_mm3": 10997.996970983115,
       "solid_count": 1,
       "face_count": 10
@@ -737,6 +912,11 @@
       "notes": "Analytic cylindrical OML; no planar patch tiling or mesh-derived surfaces; one-degree swept service corridors clear the fixed-stop screw and dowel envelopes.",
       "color_key": "titanium",
       "external_context": false,
+      "final_display_name": "Arm_Blade_TI",
+      "creo_safe_name": "Arm_Blade_TI",
+      "actual_part_number": "",
+      "traceability_property": "LEGACY_ID=DF8-R2-ARM-BLADE-001;SOURCE_ID=DF8-R2-ARM-BLADE-001",
+      "abbreviation_reason": "",
       "volume_mm3": 26301.860562267142,
       "solid_count": 1,
       "face_count": 199
@@ -757,6 +937,11 @@
       "notes": "",
       "color_key": "titanium",
       "external_context": false,
+      "final_display_name": "Pivot_Carrier_TI",
+      "creo_safe_name": "Pivot_Carrier_TI",
+      "actual_part_number": "",
+      "traceability_property": "LEGACY_ID=DF8-R2-PIVOT-CARRIER-001;SOURCE_ID=DF8-R2-PIVOT-CARRIER-001",
+      "abbreviation_reason": "",
       "volume_mm3": 611.049869912811,
       "solid_count": 2,
       "face_count": 80
@@ -777,6 +962,11 @@
       "notes": "",
       "color_key": "steel",
       "external_context": false,
+      "final_display_name": "8_MM_CAPTIVE_SHOULDER_PIVOT_PIN_WITH_EXTERNAL_GROOVE_SS",
+      "creo_safe_name": "8_MM_CAPTIVE_SHOULDER_93AFD764",
+      "actual_part_number": "",
+      "traceability_property": "LEGACY_ID=DF8-R2-PIVOT-PIN-008;SOURCE_ID=DF8-R2-PIVOT-PIN-008",
+      "abbreviation_reason": "Deterministic 31-character Creo filename limit",
       "volume_mm3": 1118.935164942851,
       "solid_count": 1,
       "face_count": 9
@@ -797,6 +987,11 @@
       "notes": "",
       "color_key": "peek",
       "external_context": false,
+      "final_display_name": "8_MM_PEEK-LINED_PIVOT_BUSHING_PEEK",
+      "creo_safe_name": "8_MM_PEEK-LINED_PIVOT_4F9A22C2",
+      "actual_part_number": "",
+      "traceability_property": "LEGACY_ID=DF8-R2-PIVOT-BUSH-008;SOURCE_ID=DF8-R2-PIVOT-BUSH-008",
+      "abbreviation_reason": "Deterministic 31-character Creo filename limit",
       "volume_mm3": 6.673371114755497,
       "solid_count": 1,
       "face_count": 4
@@ -817,6 +1012,11 @@
       "notes": "",
       "color_key": "peek",
       "external_context": false,
+      "final_display_name": "8_MM_PEEK_THRUST_WASHER_PEEK",
+      "creo_safe_name": "8_MM_PEEK_THRUST_WASHER_PEEK",
+      "actual_part_number": "",
+      "traceability_property": "LEGACY_ID=DF8-R2-PIVOT-WASHER-008;SOURCE_ID=DF8-R2-PIVOT-WASHER-008",
+      "abbreviation_reason": "",
       "volume_mm3": 10.61842608950082,
       "solid_count": 1,
       "face_count": 4
@@ -837,6 +1037,11 @@
       "notes": "",
       "color_key": "spring",
       "external_context": false,
+      "final_display_name": "8_MM_EXTERNAL_SPIRAL_PIVOT_RETAINER_SS",
+      "creo_safe_name": "8_MM_EXTERNAL_SPIRAL_P_973C221C",
+      "actual_part_number": "",
+      "traceability_property": "LEGACY_ID=DF8-R2-PIVOT-SPIRAL-RING-008;SOURCE_ID=DF8-R2-PIVOT-SPIRAL-RING-008",
+      "abbreviation_reason": "Deterministic 31-character Creo filename limit",
       "volume_mm3": 12.11929728913127,
       "solid_count": 1,
       "face_count": 8
@@ -857,6 +1062,11 @@
       "notes": "",
       "color_key": "steel",
       "external_context": false,
+      "final_display_name": "19.950_MM_CENTER-DISTANCE_REAMED_SHORT_LINK_SS",
+      "creo_safe_name": "19.950_MM_CENTER-DISTA_D87B419A",
+      "actual_part_number": "",
+      "traceability_property": "LEGACY_ID=DF8-R2-SHORT-LINK-001;SOURCE_ID=DF8-R2-SHORT-LINK-001",
+      "abbreviation_reason": "Deterministic 31-character Creo filename limit",
       "volume_mm3": 110.80246512557181,
       "solid_count": 1,
       "face_count": 38
@@ -877,6 +1087,11 @@
       "notes": "",
       "color_key": "steel",
       "external_context": false,
+      "final_display_name": "4_MM_FULL-SPAN_LINK_PIN_WITH_DC-4SS_RETAINER_GROOVE_SS",
+      "creo_safe_name": "4_MM_FULL-SPAN_LINK_PI_AB5403EF",
+      "actual_part_number": "",
+      "traceability_property": "LEGACY_ID=DF8-R2-LINK-PIN-004;SOURCE_ID=DF8-R2-LINK-PIN-004",
+      "abbreviation_reason": "Deterministic 31-character Creo filename limit",
       "volume_mm3": 186.23824635396696,
       "solid_count": 1,
       "face_count": 11
@@ -897,6 +1112,11 @@
       "notes": "Explicit occurrence mass is the 3.7479745 mm3 authored envelope at 7.85e-6 kg/mm3; incoming lot mass and material are verified.",
       "color_key": "spring",
       "external_context": false,
+      "final_display_name": "Rotor_Clip_Retaining_Ring_DC-4SS",
+      "creo_safe_name": "Rotor_Clip_Retaining_R_F8DCF531",
+      "actual_part_number": "ROTOR-CLIP-DC-4SS",
+      "traceability_property": "LEGACY_ID=ROTOR-CLIP-DC-4SS;SOURCE_ID=ROTOR-CLIP-DC-4SS",
+      "abbreviation_reason": "Deterministic 31-character Creo filename limit",
       "volume_mm3": 3.7479745343124473,
       "solid_count": 1,
       "face_count": 8
@@ -917,6 +1137,11 @@
       "notes": "",
       "color_key": "steel",
       "external_context": false,
+      "final_display_name": "REPLACEABLE_ARM_STOP_AND_AUTOMATIC-LOCK_STRIKE_SS",
+      "creo_safe_name": "REPLACEABLE_ARM_STOP_A_81632427",
+      "actual_part_number": "",
+      "traceability_property": "LEGACY_ID=DF8-R2-ARM-STOP-PAD-001;SOURCE_ID=DF8-R2-ARM-STOP-PAD-001",
+      "abbreviation_reason": "Deterministic 31-character Creo filename limit",
       "volume_mm3": 151.9246858269315,
       "solid_count": 1,
       "face_count": 22
@@ -937,6 +1162,11 @@
       "notes": "",
       "color_key": "steel",
       "external_context": false,
+      "final_display_name": "80_DEGREE_SWEPT-CLEARANCE_FIXED_STOP_WITH_CONTROLLED_AUTOMATIC-LOCK_BUSHING_SEAT_SS",
+      "creo_safe_name": "80_DEGREE_SWEPT-CLEARA_5C81023A",
+      "actual_part_number": "",
+      "traceability_property": "LEGACY_ID=DF8-R2-FIXED-STOP-001;SOURCE_ID=DF8-R2-FIXED-STOP-001",
+      "abbreviation_reason": "Deterministic 31-character Creo filename limit",
       "volume_mm3": 308.85596220031005,
       "solid_count": 1,
       "face_count": 262
@@ -957,6 +1187,11 @@
       "notes": "",
       "color_key": "steel",
       "external_context": false,
+      "final_display_name": "CAPTIVE_RADIAL_STOWED-RETENTION_DOG_WITH_TRANSPORT-INHIBIT_BORE_SS",
+      "creo_safe_name": "CAPTIVE_RADIAL_STOWED-_9AE8B720",
+      "actual_part_number": "",
+      "traceability_property": "LEGACY_ID=DF8-R2-STOW-DOG-001;SOURCE_ID=DF8-R2-STOW-DOG-001",
+      "abbreviation_reason": "Deterministic 31-character Creo filename limit",
       "volume_mm3": 90.95977925697657,
       "solid_count": 1,
       "face_count": 7
@@ -977,6 +1212,11 @@
       "notes": "",
       "color_key": "steel",
       "external_context": false,
+      "final_display_name": "FULL-STROKE_AFT-RING-MOUNTED_STOW-DOG_U-GUIDE_SS",
+      "creo_safe_name": "FULL-STROKE_AFT-RING-M_D29C6941",
+      "actual_part_number": "",
+      "traceability_property": "LEGACY_ID=DF8-R2-STOW-DOG-GUIDE-001;SOURCE_ID=DF8-R2-STOW-DOG-GUIDE-001",
+      "abbreviation_reason": "Deterministic 31-character Creo filename limit",
       "volume_mm3": 68.47450346109282,
       "solid_count": 1,
       "face_count": 49
@@ -997,6 +1237,11 @@
       "notes": "Endpoint B-reps bound the full radial dog stroke; spring is captured between the integral guide bridge and dog inboard face.",
       "color_key": "spring",
       "external_context": false,
+      "final_display_name": "CAPTIVE_STOW-DOG_RADIAL_RETURN_SPRING_SS",
+      "creo_safe_name": "CAPTIVE_STOW-DOG_RADIA_BCFA9824",
+      "actual_part_number": "",
+      "traceability_property": "LEGACY_ID=DF8-R2-STOW-DOG-RETURN-SPRING-001;SOURCE_ID=DF8-R2-STOW-DOG-RETURN-SPRING-001",
+      "abbreviation_reason": "Deterministic 31-character Creo filename limit",
       "volume_mm3": 0.0407121593375711,
       "solid_count": 1,
       "face_count": 3
@@ -1017,6 +1262,11 @@
       "notes": "",
       "color_key": "steel",
       "external_context": false,
+      "final_display_name": "WITHDRAWABLE_HEADED_TRANSPORT-INHIBIT_PIN_SS",
+      "creo_safe_name": "WITHDRAWABLE_HEADED_TR_E926CA1B",
+      "actual_part_number": "",
+      "traceability_property": "LEGACY_ID=DF8-R2-STOW-DOG-INHIBIT-PIN-001;SOURCE_ID=DF8-R2-STOW-DOG-INHIBIT-PIN-001",
+      "abbreviation_reason": "Deterministic 31-character Creo filename limit",
       "volume_mm3": 7.6564539958800255,
       "solid_count": 1,
       "face_count": 9
@@ -1037,6 +1287,11 @@
       "notes": "External keeper remains seated on and translates with the headed inhibit pin in both retained and withdrawn endpoint states.",
       "color_key": "spring",
       "external_context": false,
+      "final_display_name": "CAPTIVE_CRESCENT_RETAINER_FOR_TRANSPORT-INHIBIT_PIN_SS",
+      "creo_safe_name": "CAPTIVE_CRESCENT_RETAI_084350B9",
+      "actual_part_number": "",
+      "traceability_property": "LEGACY_ID=DF8-R2-STOW-DOG-INHIBIT-KEEPER-001;SOURCE_ID=DF8-R2-STOW-DOG-INHIBIT-KEEPER-001",
+      "abbreviation_reason": "Deterministic 31-character Creo filename limit",
       "volume_mm3": 0.5030499526640888,
       "solid_count": 1,
       "face_count": 10
@@ -1057,6 +1312,11 @@
       "notes": "",
       "color_key": "steel",
       "external_context": false,
+      "final_display_name": "SPRING-DRIVEN_POSITIVE_DEPLOYED_LOCK_DOG_SS",
+      "creo_safe_name": "SPRING-DRIVEN_POSITIVE_320AD997",
+      "actual_part_number": "",
+      "traceability_property": "LEGACY_ID=DF8-R2-AUTO-LOCK-DOG-001;SOURCE_ID=DF8-R2-AUTO-LOCK-DOG-001",
+      "abbreviation_reason": "Deterministic 31-character Creo filename limit",
       "volume_mm3": 1.0850275627335748,
       "solid_count": 1,
       "face_count": 5
@@ -1077,6 +1337,11 @@
       "notes": "Endpoint B-reps bound the 3.30 mm snap-lock stroke; physical wire mass is state-invariant and the spring remains captive between the dog head and press-fit outer bushing.",
       "color_key": "spring",
       "external_context": false,
+      "final_display_name": "CAPTIVE_LONG-STROKE_AUTOMATIC-LOCK_COMPRESSION_SPRING_SS",
+      "creo_safe_name": "CAPTIVE_LONG-STROKE_AU_4967D225",
+      "actual_part_number": "",
+      "traceability_property": "LEGACY_ID=DF8-R2-AUTO-LOCK-SPRING-001;SOURCE_ID=DF8-R2-AUTO-LOCK-SPRING-001",
+      "abbreviation_reason": "Deterministic 31-character Creo filename limit",
       "volume_mm3": 0.3638330274094065,
       "solid_count": 1,
       "face_count": 3
@@ -1097,6 +1362,11 @@
       "notes": "",
       "color_key": "peek",
       "external_context": false,
+      "final_display_name": "PRESS-FIT_LOCK_GUIDE_OUTER_RETAINER_BUSHING_PEEK",
+      "creo_safe_name": "PRESS-FIT_LOCK_GUIDE_O_D4B308B2",
+      "actual_part_number": "",
+      "traceability_property": "LEGACY_ID=DF8-R2-AUTO-LOCK-BUSHING-001;SOURCE_ID=DF8-R2-AUTO-LOCK-BUSHING-001",
+      "abbreviation_reason": "Deterministic 31-character Creo filename limit",
       "volume_mm3": 0.23443395315417684,
       "solid_count": 1,
       "face_count": 8
@@ -1117,6 +1387,11 @@
       "notes": "",
       "color_key": "steel",
       "external_context": false,
+      "final_display_name": "Common_Crosshead_SS",
+      "creo_safe_name": "Common_Crosshead_SS",
+      "actual_part_number": "",
+      "traceability_property": "LEGACY_ID=DF8-R2-CROSSHEAD-001;SOURCE_ID=DF8-R2-CROSSHEAD-001",
+      "abbreviation_reason": "",
       "volume_mm3": 1572.6682061609977,
       "solid_count": 5,
       "face_count": 213
@@ -1137,6 +1412,11 @@
       "notes": "",
       "color_key": "steel",
       "external_context": false,
+      "final_display_name": "CENTRAL_DLC_CROSSHEAD_GUIDE_SHAFT_WITH_SPIDER_SHOULDER_SS",
+      "creo_safe_name": "CENTRAL_DLC_CROSSHEAD_8B1517DF",
+      "actual_part_number": "",
+      "traceability_property": "LEGACY_ID=DF8-R2-CROSSHEAD-GUIDE-001;SOURCE_ID=DF8-R2-CROSSHEAD-GUIDE-001",
+      "abbreviation_reason": "Deterministic 31-character Creo filename limit",
       "volume_mm3": 1488.658255893436,
       "solid_count": 1,
       "face_count": 9
@@ -1157,6 +1437,11 @@
       "notes": "",
       "color_key": "titanium",
       "external_context": false,
+      "final_display_name": "THREE-SPOKE_CROSSHEAD-GUIDE_FORWARD_MOUNT_TI",
+      "creo_safe_name": "THREE-SPOKE_CROSSHEAD-_D791F0B8",
+      "actual_part_number": "",
+      "traceability_property": "LEGACY_ID=DF8-R2-CROSSHEAD-GUIDE-SPIDER-001;SOURCE_ID=DF8-R2-CROSSHEAD-GUIDE-SPIDER-001",
+      "abbreviation_reason": "Deterministic 31-character Creo filename limit",
       "volume_mm3": 278.53566991131635,
       "solid_count": 1,
       "face_count": 28
@@ -1177,6 +1462,11 @@
       "notes": "OD 15.8 mm; wire 3.0 mm; free length 195.0 mm; rate 16.0 N/mm; controlled drawing and proof acceptance.",
       "color_key": "spring",
       "external_context": false,
+      "final_display_name": "CONTROLLED_16_N_MM_GUIDED_BACKUP_COMPRESSION_SPRING_SS",
+      "creo_safe_name": "CONTROLLED_16_N_MM_GUI_1196CFA1",
+      "actual_part_number": "",
+      "traceability_property": "LEGACY_ID=DF8-R2-BACKUP-SPRING-16N-001;SOURCE_ID=DF8-R2-BACKUP-SPRING-16N-001",
+      "abbreviation_reason": "Deterministic 31-character Creo filename limit",
       "volume_mm3": 6907.1433139746205,
       "solid_count": 1,
       "face_count": 3
@@ -1197,6 +1487,11 @@
       "notes": "",
       "color_key": "titanium",
       "external_context": false,
+      "final_display_name": "BACKUP_SPRING_AFT_FIXED_SEAT_WITH_LONGERON_MOUNTING_TONGUE_TI",
+      "creo_safe_name": "BACKUP_SPRING_AFT_FIXE_B90EEA99",
+      "actual_part_number": "",
+      "traceability_property": "LEGACY_ID=DF8-R2-BACKUP-SPRING-FIXED-SEAT-001;SOURCE_ID=DF8-R2-BACKUP-SPRING-FIXED-SEAT-001",
+      "abbreviation_reason": "Deterministic 31-character Creo filename limit",
       "volume_mm3": 949.5448212127816,
       "solid_count": 1,
       "face_count": 9
@@ -1217,6 +1512,11 @@
       "notes": "",
       "color_key": "steel",
       "external_context": false,
+      "final_display_name": "BACKUP_SPRING_CROSSHEAD_SEAT_WITH_PILOTED_PERMANENT_LAND_SS",
+      "creo_safe_name": "BACKUP_SPRING_CROSSHEA_30A72A2A",
+      "actual_part_number": "",
+      "traceability_property": "LEGACY_ID=DF8-R2-BACKUP-SPRING-MOVING-SEAT-001;SOURCE_ID=DF8-R2-BACKUP-SPRING-MOVING-SEAT-001",
+      "abbreviation_reason": "Deterministic 31-character Creo filename limit",
       "volume_mm3": 953.3162907318227,
       "solid_count": 1,
       "face_count": 4
@@ -1237,6 +1537,11 @@
       "notes": "",
       "color_key": "steel",
       "external_context": false,
+      "final_display_name": "BACKUP_SPRING_DLC_GUIDE_SHAFT_WITH_TWO_FIXED_SUPPORT_SHOULDERS_SS",
+      "creo_safe_name": "BACKUP_SPRING_DLC_GUID_CAD379D3",
+      "actual_part_number": "",
+      "traceability_property": "LEGACY_ID=DF8-R2-BACKUP-SPRING-GUIDE-001;SOURCE_ID=DF8-R2-BACKUP-SPRING-GUIDE-001",
+      "abbreviation_reason": "Deterministic 31-character Creo filename limit",
       "volume_mm3": 3750.833153224008,
       "solid_count": 1,
       "face_count": 20
@@ -1257,6 +1562,11 @@
       "notes": "Configured GS-19-50-V4A-B8-B8, 50 mm stroke, 164.1 mm extended length, 7.9 mm rod and 300\u00b130 N setting. The controlled ACE STEP ITEM_020_ACE_GS_19_50_V4A_B8_B8_VENDOR.stp is the dimensional/interface verification source; this separated body/rod BREP is a drawing-derived articulated installation representation. Occurrence mass allocation is 0.124 kg body + 0.020 kg rod = 0.144 kg catalog assembly total.",
       "color_key": "gas",
       "external_context": false,
+      "final_display_name": "ACE_Gas_Spring_GS-19-50-V4A-B8-B8",
+      "creo_safe_name": "ACE_Gas_Spring_GS-19-5_0587B81C",
+      "actual_part_number": "GS-19-50-V4A-B8-B8",
+      "traceability_property": "LEGACY_ID=GS-19-50-V4A-B8-B8;SOURCE_ID=GS-19-50-V4A-B8-B8",
+      "abbreviation_reason": "Deterministic 31-character Creo filename limit",
       "volume_mm3": 21267.145221236355,
       "solid_count": 2,
       "face_count": 18
@@ -1277,6 +1587,11 @@
       "notes": "Included articulation child of the configured GS-19 purchased assembly; no separate purchase quantity. Occurrence-level mass allocation reconciles with the 0.144 kg parent assembly. Drawing-derived child verified against the controlled ACE STEP.",
       "color_key": "stainless",
       "external_context": false,
+      "final_display_name": "ACE_Gas_Spring_Rod_GS-19-50-V4A-B8-B8",
+      "creo_safe_name": "ACE_Gas_Spring_Rod_GS-_996273C3",
+      "actual_part_number": "GS-19-50-V4A-B8-B8",
+      "traceability_property": "LEGACY_ID=GS-19-50-V4A-B8-B8-ROD-CHILD;SOURCE_ID=GS-19-50-V4A-B8-B8-ROD-CHILD",
+      "abbreviation_reason": "Deterministic 31-character Creo filename limit",
       "volume_mm3": 3511.8098685571126,
       "solid_count": 1,
       "face_count": 20
@@ -1297,6 +1612,11 @@
       "notes": "Configured HBD-15-25-AA-P, 24.9 mm stroke, 145.0 mm extended length, 15 mm body and 6.1 mm rod. The controlled ACE source ACE_HBD_15_25_AA_P_DRAWING_DERIVED_NOT_VENDOR_CAD_AP242.step verifies the configured envelope/interfaces; this separated body/rod BREP is a drawing-derived articulated installation representation. External travel stops limit motion 1.0-1.5 mm before stroke ends. Occurrence mass allocation is 0.190 kg body + 0.030 kg rod = 0.220 kg catalog assembly total.",
       "color_key": "hydraulic",
       "external_context": false,
+      "final_display_name": "ACE_Hydraulic_Damper_HBD-15-25-AA-P",
+      "creo_safe_name": "ACE_Hydraulic_Damper_H_4E38E47D",
+      "actual_part_number": "HBD-15-25-AA-P",
+      "traceability_property": "LEGACY_ID=HBD-15-25-AA-P;SOURCE_ID=HBD-15-25-AA-P",
+      "abbreviation_reason": "Deterministic 31-character Creo filename limit",
       "volume_mm3": 12366.992123374155,
       "solid_count": 2,
       "face_count": 18
@@ -1317,6 +1637,11 @@
       "notes": "Included articulation child of the configured HBD purchased assembly; no separate purchase quantity. Occurrence-level mass allocation reconciles with the 0.220 kg parent assembly. Drawing-derived child verified against the controlled ACE source.",
       "color_key": "stainless",
       "external_context": false,
+      "final_display_name": "ACE_Hydraulic_Damper_Rod_HBD-15-25-AA-P",
+      "creo_safe_name": "ACE_Hydraulic_Damper_R_373600BA",
+      "actual_part_number": "HBD-15-25-AA-P",
+      "traceability_property": "LEGACY_ID=HBD-15-25-AA-P-ROD-CHILD;SOURCE_ID=HBD-15-25-AA-P-ROD-CHILD",
+      "abbreviation_reason": "Deterministic 31-character Creo filename limit",
       "volume_mm3": 1759.0481865927184,
       "solid_count": 1,
       "face_count": 20
@@ -1337,6 +1662,11 @@
       "notes": "",
       "color_key": "titanium",
       "external_context": false,
+      "final_display_name": "DOUBLE-SHEAR_GS19_ANCHOR_YOKE_WITH_CONFORMAL_LONGERON_TONGUE_TI",
+      "creo_safe_name": "DOUBLE-SHEAR_GS19_ANCH_E7BA99D1",
+      "actual_part_number": "",
+      "traceability_property": "LEGACY_ID=DF8-R2-ACTUATOR-FIXED-YOKE-GS19-001;SOURCE_ID=DF8-R2-ACTUATOR-FIXED-YOKE-GS19-001",
+      "abbreviation_reason": "Deterministic 31-character Creo filename limit",
       "volume_mm3": 707.346591544634,
       "solid_count": 1,
       "face_count": 47
@@ -1357,6 +1687,11 @@
       "notes": "",
       "color_key": "titanium",
       "external_context": false,
+      "final_display_name": "DOUBLE-SHEAR_HBD_ANCHOR_YOKE_WITH_CONFORMAL_LONGERON_TONGUE_TI",
+      "creo_safe_name": "DOUBLE-SHEAR_HBD_ANCHO_A837427F",
+      "actual_part_number": "",
+      "traceability_property": "LEGACY_ID=DF8-R2-ACTUATOR-FIXED-YOKE-HBD-001;SOURCE_ID=DF8-R2-ACTUATOR-FIXED-YOKE-HBD-001",
+      "abbreviation_reason": "Deterministic 31-character Creo filename limit",
       "volume_mm3": 699.346591544634,
       "solid_count": 1,
       "face_count": 47
@@ -1377,6 +1712,11 @@
       "notes": "",
       "color_key": "steel",
       "external_context": false,
+      "final_display_name": "4_MM_CAPTIVE_ACTUATOR_CLEVIS_PIN_SS",
+      "creo_safe_name": "4_MM_CAPTIVE_ACTUATOR_511143BF",
+      "actual_part_number": "",
+      "traceability_property": "LEGACY_ID=DF8-R2-ACTUATOR-PIN-004;SOURCE_ID=DF8-R2-ACTUATOR-PIN-004",
+      "abbreviation_reason": "Deterministic 31-character Creo filename limit",
       "volume_mm3": 165.17905123952582,
       "solid_count": 1,
       "face_count": 9
@@ -1397,6 +1737,11 @@
       "notes": "",
       "color_key": "spring",
       "external_context": false,
+      "final_display_name": "4_MM_ACTUATOR_PIN_RETAINER_SS",
+      "creo_safe_name": "4_MM_ACTUATOR_PIN_RETAINER_SS",
+      "actual_part_number": "",
+      "traceability_property": "LEGACY_ID=DF8-R2-ACTUATOR-E-RING-004;SOURCE_ID=DF8-R2-ACTUATOR-E-RING-004",
+      "abbreviation_reason": "",
       "volume_mm3": 5.5356798096071715,
       "solid_count": 1,
       "face_count": 8
@@ -1417,9 +1762,14 @@
       "notes": "Controlled centerline and end terminations; 20.7 MPa proof; 100% continuity/engagement inspection. State-invariant mass basis: 1690.2809 mm3 controlled 316L tube/termination envelope at 8.00e-6 kg/mm3.",
       "color_key": "route",
       "external_context": false,
-      "volume_mm3": 1690.2808860492232,
+      "final_display_name": "Gas_Main_SS",
+      "creo_safe_name": "Gas_Main_SS",
+      "actual_part_number": "",
+      "traceability_property": "LEGACY_ID=DF8-FINAL-GAS-MAIN-001;SOURCE_ID=DF8-FINAL-GAS-MAIN-001",
+      "abbreviation_reason": "",
+      "volume_mm3": 1976.443135189751,
       "solid_count": 1,
-      "face_count": 40
+      "face_count": 4
     },
     {
       "part_number": "DF8-FINAL-PILOT-LINE-001",
@@ -1437,9 +1787,14 @@
       "notes": "Controlled centerline and end terminations; 20.7 MPa proof; 100% continuity/engagement inspection. State-invariant mass basis: 1061.9767 mm3 controlled 316L tube/termination envelope at 8.00e-6 kg/mm3.",
       "color_key": "route",
       "external_context": false,
-      "volume_mm3": 1061.9767111202632,
+      "final_display_name": "Pilot_Line_SS",
+      "creo_safe_name": "Pilot_Line_SS",
+      "actual_part_number": "",
+      "traceability_property": "LEGACY_ID=DF8-FINAL-PILOT-LINE-001;SOURCE_ID=DF8-FINAL-PILOT-LINE-001",
+      "abbreviation_reason": "",
+      "volume_mm3": 1046.2964076909352,
       "solid_count": 1,
-      "face_count": 85
+      "face_count": 26
     },
     {
       "part_number": "DF8-FINAL-BOWDEN-SHEATH-001",
@@ -1457,9 +1812,14 @@
       "notes": "Controlled centerline and end terminations; Non-pressure control cable; 100% continuity/engagement inspection. State-invariant mass basis: Controlled finished-article mass including PTFE liner, 316 spiral/overbraid and swaged terminals.",
       "color_key": "black",
       "external_context": false,
-      "volume_mm3": 1766.7248807591698,
+      "final_display_name": "Bowden_Sheath",
+      "creo_safe_name": "Bowden_Sheath",
+      "actual_part_number": "",
+      "traceability_property": "LEGACY_ID=DF8-FINAL-BOWDEN-SHEATH-001;SOURCE_ID=DF8-FINAL-BOWDEN-SHEATH-001",
+      "abbreviation_reason": "",
+      "volume_mm3": 1830.5804504194962,
       "solid_count": 1,
-      "face_count": 78
+      "face_count": 42
     },
     {
       "part_number": "DF8-FINAL-BOWDEN-WIRE-001",
@@ -1477,9 +1837,14 @@
       "notes": "Controlled centerline and end terminations; 445 N tensile proof; 100% continuity/engagement inspection. State-invariant mass basis: 343.0397 mm3 controlled 316 wire/terminal envelope at 8.00e-6 kg/mm3.",
       "color_key": "black",
       "external_context": false,
-      "volume_mm3": 343.378967568904,
+      "final_display_name": "Bowden_Wire_SS",
+      "creo_safe_name": "Bowden_Wire_SS",
+      "actual_part_number": "",
+      "traceability_property": "LEGACY_ID=DF8-FINAL-BOWDEN-WIRE-001;SOURCE_ID=DF8-FINAL-BOWDEN-WIRE-001",
+      "abbreviation_reason": "",
+      "volume_mm3": 320.38077706912554,
       "solid_count": 1,
-      "face_count": 52
+      "face_count": 3
     },
     {
       "part_number": "DF8-FINAL-GAS-MAIN-RING-GLAND",
@@ -1497,6 +1862,11 @@
       "notes": "Integral controlled fitting assembly; route bore includes diagonal-transition clearance.",
       "color_key": "stainless",
       "external_context": false,
+      "final_display_name": "GAS_MAIN_TWO-COLLAR_BULKHEAD_GLAND_SS",
+      "creo_safe_name": "GAS_MAIN_TWO-COLLAR_BU_EEBBE0BC",
+      "actual_part_number": "",
+      "traceability_property": "LEGACY_ID=DF8-FINAL-GAS-MAIN-RING-GLAND;SOURCE_ID=DF8-FINAL-GAS-MAIN-RING-GLAND",
+      "abbreviation_reason": "Deterministic 31-character Creo filename limit",
       "volume_mm3": 97.87770142335758,
       "solid_count": 1,
       "face_count": 8
@@ -1517,6 +1887,11 @@
       "notes": "Integral controlled fitting assembly; route bore includes diagonal-transition clearance.",
       "color_key": "stainless",
       "external_context": false,
+      "final_display_name": "PILOT_LINE_TWO-COLLAR_BULKHEAD_GLAND_SS",
+      "creo_safe_name": "PILOT_LINE_TWO-COLLAR_9B5BFE86",
+      "actual_part_number": "",
+      "traceability_property": "LEGACY_ID=DF8-FINAL-PILOT-LINE-RING-GLAND;SOURCE_ID=DF8-FINAL-PILOT-LINE-RING-GLAND",
+      "abbreviation_reason": "Deterministic 31-character Creo filename limit",
       "volume_mm3": 82.40849919708144,
       "solid_count": 1,
       "face_count": 8
@@ -1537,6 +1912,11 @@
       "notes": "Integral controlled fitting assembly; route bore includes diagonal-transition clearance.",
       "color_key": "stainless",
       "external_context": false,
+      "final_display_name": "BOWDEN_SHEATH_TWO-COLLAR_BULKHEAD_GLAND_SS",
+      "creo_safe_name": "BOWDEN_SHEATH_TWO-COLL_AD26AD3B",
+      "actual_part_number": "",
+      "traceability_property": "LEGACY_ID=DF8-FINAL-BOWDEN-SHEATH-RING-GLAND;SOURCE_ID=DF8-FINAL-BOWDEN-SHEATH-RING-GLAND",
+      "abbreviation_reason": "Deterministic 31-character Creo filename limit",
       "volume_mm3": 85.5023396423367,
       "solid_count": 1,
       "face_count": 8
@@ -1557,6 +1937,11 @@
       "notes": "One occurrence-specific exact support spans the complete arm-module corridor; end shoulders are trapped between the two bulkhead glands.",
       "color_key": "peek",
       "external_context": false,
+      "final_display_name": "SPLIT_PEEK_GUIDE_LINER_FOR_GAS_MAIN_LONG_SPAN_PEEK",
+      "creo_safe_name": "SPLIT_PEEK_GUIDE_LINER_788ED1C1",
+      "actual_part_number": "",
+      "traceability_property": "LEGACY_ID=DF8-FINAL-GAS-MAIN-FIXED-SECTOR-GUIDE-LINER;SOURCE_ID=DF8-FINAL-GAS-MAIN-FIXED-SECTOR-GUIDE-LINER",
+      "abbreviation_reason": "Deterministic 31-character Creo filename limit",
       "volume_mm3": 1309.204011839516,
       "solid_count": 1,
       "face_count": 12
@@ -1577,6 +1962,11 @@
       "notes": "One occurrence-specific exact support spans the complete arm-module corridor; end shoulders are trapped between the two bulkhead glands.",
       "color_key": "peek",
       "external_context": false,
+      "final_display_name": "SPLIT_PEEK_GUIDE_LINER_FOR_PILOT_LINE_LONG_SPAN_PEEK",
+      "creo_safe_name": "SPLIT_PEEK_GUIDE_LINER_2D1DEFD8",
+      "actual_part_number": "",
+      "traceability_property": "LEGACY_ID=DF8-FINAL-PILOT-LINE-FIXED-SECTOR-GUIDE-LINER;SOURCE_ID=DF8-FINAL-PILOT-LINE-FIXED-SECTOR-GUIDE-LINER",
+      "abbreviation_reason": "Deterministic 31-character Creo filename limit",
       "volume_mm3": 2446.515530310461,
       "solid_count": 1,
       "face_count": 12
@@ -1597,6 +1987,11 @@
       "notes": "One occurrence-specific exact support spans the complete arm-module corridor; end shoulders are trapped between the two bulkhead glands.",
       "color_key": "peek",
       "external_context": false,
+      "final_display_name": "SPLIT_PEEK_GUIDE_LINER_FOR_BOWDEN_SHEATH_LONG_SPAN_PEEK",
+      "creo_safe_name": "SPLIT_PEEK_GUIDE_LINER_55ACFBBA",
+      "actual_part_number": "",
+      "traceability_property": "LEGACY_ID=DF8-FINAL-BOWDEN-SHEATH-FIXED-SECTOR-GUIDE-LINER;SOURCE_ID=DF8-FINAL-BOWDEN-SHEATH-FIXED-SECTOR-GUIDE-LINER",
+      "abbreviation_reason": "Deterministic 31-character Creo filename limit",
       "volume_mm3": 2242.3826936618307,
       "solid_count": 1,
       "face_count": 12
@@ -1617,6 +2012,11 @@
       "notes": "Gas-main route seats at the modeled forward port face; aft outlet is controlled by WP04 buoy-pack plumbing.",
       "color_key": "stainless",
       "external_context": false,
+      "final_display_name": "FULL-FLOW_TERMINAL_MANIFOLD_WITH_BRAZED_GAS_PORT_SS",
+      "creo_safe_name": "FULL-FLOW_TERMINAL_MAN_FF5CD83F",
+      "actual_part_number": "",
+      "traceability_property": "LEGACY_ID=DF8-FINAL-WP04-FULLFLOW-MANIFOLD;SOURCE_ID=DF8-FINAL-WP04-FULLFLOW-MANIFOLD",
+      "abbreviation_reason": "Deterministic 31-character Creo filename limit",
       "volume_mm3": 114.0398133253095,
       "solid_count": 1,
       "face_count": 4
@@ -1637,6 +2037,11 @@
       "notes": "",
       "color_key": "titanium",
       "external_context": false,
+      "final_display_name": "FULL-FLOW_MANIFOLD_RADIAL_SUPPORT_BRACKET_TI",
+      "creo_safe_name": "FULL-FLOW_MANIFOLD_RAD_A27076D5",
+      "actual_part_number": "",
+      "traceability_property": "LEGACY_ID=DF8-FINAL-WP04-MANIFOLD-BRACKET;SOURCE_ID=DF8-FINAL-WP04-MANIFOLD-BRACKET",
+      "abbreviation_reason": "Deterministic 31-character Creo filename limit",
       "volume_mm3": 4.799999999999997,
       "solid_count": 1,
       "face_count": 6
@@ -1657,6 +2062,11 @@
       "notes": "",
       "color_key": "titanium",
       "external_context": false,
+      "final_display_name": "AFT_GRADE-9_SHELL_WITH_HARDPOINT_AND_HINGE_APERTURES_TI",
+      "creo_safe_name": "AFT_GRADE-9_SHELL_WITH_E53DC433",
+      "actual_part_number": "",
+      "traceability_property": "LEGACY_ID=DF8-R2-AFT-SHELL-001;SOURCE_ID=DF8-R2-AFT-SHELL-001",
+      "abbreviation_reason": "Deterministic 31-character Creo filename limit",
       "volume_mm3": 55472.00956544197,
       "solid_count": 1,
       "face_count": 53
@@ -1677,6 +2087,11 @@
       "notes": "",
       "color_key": "titanium",
       "external_context": false,
+      "final_display_name": "AFT_STRUCTURAL_RING_WITH_CONTROLLED_ROUTE_PASSAGES_TI",
+      "creo_safe_name": "AFT_STRUCTURAL_RING_WI_E17EB9DF",
+      "actual_part_number": "",
+      "traceability_property": "LEGACY_ID=DF8-R2-AFT-ROUTE-RING-001;SOURCE_ID=DF8-R2-AFT-ROUTE-RING-001",
+      "abbreviation_reason": "Deterministic 31-character Creo filename limit",
       "volume_mm3": 10497.380524558008,
       "solid_count": 1,
       "face_count": 9
@@ -1697,6 +2112,11 @@
       "notes": "",
       "color_key": "titanium",
       "external_context": false,
+      "final_display_name": "AFT_PRIMARY_LOAD-PATH_LONGERON_TI",
+      "creo_safe_name": "AFT_PRIMARY_LOAD-PATH_526FFB0A",
+      "actual_part_number": "",
+      "traceability_property": "LEGACY_ID=DF8-R2-AFT-LONGERON-001;SOURCE_ID=DF8-R2-AFT-LONGERON-001",
+      "abbreviation_reason": "Deterministic 31-character Creo filename limit",
       "volume_mm3": 1718.7468053823177,
       "solid_count": 1,
       "face_count": 8
@@ -1717,6 +2137,11 @@
       "notes": "",
       "color_key": "titanium",
       "external_context": false,
+      "final_display_name": "SPRING_REACTION_BULKHEAD_WITH_GUIDE-RAIL_BORES_AND_PERMANENT_SHELL_LAND_TI",
+      "creo_safe_name": "SPRING_REACTION_BULKHE_1E3B03E0",
+      "actual_part_number": "",
+      "traceability_property": "LEGACY_ID=WP04-RB-001-R2;SOURCE_ID=WP04-RB-001-R2",
+      "abbreviation_reason": "Deterministic 31-character Creo filename limit",
       "volume_mm3": 9293.479818783864,
       "solid_count": 2,
       "face_count": 58
@@ -1737,6 +2162,11 @@
       "notes": "",
       "color_key": "peek",
       "external_context": false,
+      "final_display_name": "FOLLOWER_ANTI-ROTATION_GUIDE_RAIL_WITH_TWO_M3_CAPTIVE-SCREW_END_LANDS_PEEK",
+      "creo_safe_name": "FOLLOWER_ANTI-ROTATION_B82DF555",
+      "actual_part_number": "",
+      "traceability_property": "LEGACY_ID=WP04-GUIDE-RAIL-001-R2;SOURCE_ID=WP04-GUIDE-RAIL-001-R2",
+      "abbreviation_reason": "Deterministic 31-character Creo filename limit",
       "volume_mm3": 2878.292079511209,
       "solid_count": 1,
       "face_count": 20
@@ -1757,6 +2187,11 @@
       "notes": "",
       "color_key": "peek",
       "external_context": false,
+      "final_display_name": "CAPTIVE_PEEK_FOLLOWER_WITH_THREE_GUIDE_SLOTS_PEEK",
+      "creo_safe_name": "CAPTIVE_PEEK_FOLLOWER_201B193A",
+      "actual_part_number": "",
+      "traceability_property": "LEGACY_ID=WP04-FOL-001-R2;SOURCE_ID=WP04-FOL-001-R2",
+      "abbreviation_reason": "Deterministic 31-character Creo filename limit",
       "volume_mm3": 4227.95948987082,
       "solid_count": 1,
       "face_count": 40
@@ -1777,6 +2212,11 @@
       "notes": "Custom long-stroke article replaces the unsuitable catalog VD-244 dynamic-stroke application; 22.0 mm OD, 200.0 mm free length, 2.0 mm wire, 0.946 N/mm target rate, 85.0 mm minimum installed length and 170.0 mm released installed length.",
       "color_key": "spring",
       "external_context": false,
+      "final_display_name": "CONTROLLED_LONG-STROKE_GUIDED_EJECTOR_SPRING_SS",
+      "creo_safe_name": "CONTROLLED_LONG-STROKE_0D6B1462",
+      "actual_part_number": "",
+      "traceability_property": "LEGACY_ID=DF8-FINAL-WP04-EJECTOR-SPRING-001;SOURCE_ID=DF8-FINAL-WP04-EJECTOR-SPRING-001",
+      "abbreviation_reason": "Deterministic 31-character Creo filename limit",
       "volume_mm3": 3454.3569435004315,
       "solid_count": 1,
       "face_count": 3
@@ -1797,6 +2237,11 @@
       "notes": "",
       "color_key": "peek",
       "external_context": false,
+      "final_display_name": "BULKHEAD-MOUNTED_FIXED_TELESCOPING_SPRING_GUIDE_AND_SEAT_PEEK",
+      "creo_safe_name": "BULKHEAD-MOUNTED_FIXED_28A47F50",
+      "actual_part_number": "",
+      "traceability_property": "LEGACY_ID=WP04-FIXED-GUIDE-SLEEVE-R2;SOURCE_ID=WP04-FIXED-GUIDE-SLEEVE-R2",
+      "abbreviation_reason": "Deterministic 31-character Creo filename limit",
       "volume_mm3": 3603.7444948777543,
       "solid_count": 1,
       "face_count": 17
@@ -1817,6 +2262,11 @@
       "notes": "",
       "color_key": "peek",
       "external_context": false,
+      "final_display_name": "FOLLOWER-MOUNTED_INNER_TELESCOPING_SPRING_GUIDE_SLEEVE_PEEK",
+      "creo_safe_name": "FOLLOWER-MOUNTED_INNER_FEF81885",
+      "actual_part_number": "",
+      "traceability_property": "LEGACY_ID=WP04-MOVING-GUIDE-SLEEVE-R2;SOURCE_ID=WP04-MOVING-GUIDE-SLEEVE-R2",
+      "abbreviation_reason": "Deterministic 31-character Creo filename limit",
       "volume_mm3": 5187.600422333624,
       "solid_count": 1,
       "face_count": 20
@@ -1837,6 +2287,11 @@
       "notes": "",
       "color_key": "steel",
       "external_context": false,
+      "final_display_name": "RADIAL_FOLLOWER_LATCH_HOUSING_WITH_REAMED_SEAR_GUIDE_SS",
+      "creo_safe_name": "RADIAL_FOLLOWER_LATCH_2BBDBFAE",
+      "actual_part_number": "",
+      "traceability_property": "LEGACY_ID=WP04-LATCH-HOUSING-R2;SOURCE_ID=WP04-LATCH-HOUSING-R2",
+      "abbreviation_reason": "Deterministic 31-character Creo filename limit",
       "volume_mm3": 709.1155317660829,
       "solid_count": 2,
       "face_count": 30
@@ -1857,6 +2312,11 @@
       "notes": "",
       "color_key": "steel",
       "external_context": false,
+      "final_display_name": "CAPTIVE_RADIAL_FOLLOWER_SEAR_PLUNGER_WITH_RETAINING_RING_SS",
+      "creo_safe_name": "CAPTIVE_RADIAL_FOLLOWE_73E7523D",
+      "actual_part_number": "",
+      "traceability_property": "LEGACY_ID=WP04-LATCH-SEAR-R2;SOURCE_ID=WP04-LATCH-SEAR-R2",
+      "abbreviation_reason": "Deterministic 31-character Creo filename limit",
       "volume_mm3": 81.94946538650215,
       "solid_count": 1,
       "face_count": 11
@@ -1877,6 +2337,11 @@
       "notes": "",
       "color_key": "spring",
       "external_context": false,
+      "final_display_name": "4_MM_SEAR_PIN_EXTERNAL_RETAINING_RING_SS",
+      "creo_safe_name": "4_MM_SEAR_PIN_EXTERNAL_58132833",
+      "actual_part_number": "",
+      "traceability_property": "LEGACY_ID=WP04-LATCH-SEAR-E-RING-R2;SOURCE_ID=WP04-LATCH-SEAR-E-RING-R2",
+      "abbreviation_reason": "Deterministic 31-character Creo filename limit",
       "volume_mm3": 5.5356798096071715,
       "solid_count": 1,
       "face_count": 8
@@ -1897,6 +2362,11 @@
       "notes": "",
       "color_key": "titanium",
       "external_context": false,
+      "final_display_name": "INTEGRAL_STRUCTURAL_RING_AND_RECOVERY_HARDPOINT_LUG_TI",
+      "creo_safe_name": "INTEGRAL_STRUCTURAL_RI_17284E5F",
+      "actual_part_number": "",
+      "traceability_property": "LEGACY_ID=WP04-RHP-001-R2;SOURCE_ID=WP04-RHP-001-R2",
+      "abbreviation_reason": "Deterministic 31-character Creo filename limit",
       "volume_mm3": 5741.398714645307,
       "solid_count": 3,
       "face_count": 50
@@ -1917,6 +2387,11 @@
       "notes": "",
       "color_key": "titanium",
       "external_context": false,
+      "final_display_name": "Fixed_Hinge_Leaf_Service_Throat_TI",
+      "creo_safe_name": "Fixed_Hinge_Leaf_Servi_F2534C99",
+      "actual_part_number": "",
+      "traceability_property": "LEGACY_ID=WP05-SERVICE-THROAT-R2;SOURCE_ID=WP05-SERVICE-THROAT-R2",
+      "abbreviation_reason": "Deterministic 31-character Creo filename limit",
       "volume_mm3": 42710.5060522286,
       "solid_count": 1,
       "face_count": 72
@@ -1937,6 +2412,11 @@
       "notes": "",
       "color_key": "titanium",
       "external_context": false,
+      "final_display_name": "Moving_Hinge_Leaf_Aft_Door_TI",
+      "creo_safe_name": "Moving_Hinge_Leaf_Aft_Door_TI",
+      "actual_part_number": "",
+      "traceability_property": "LEGACY_ID=WP05-DOOR-R2;SOURCE_ID=WP05-DOOR-R2",
+      "abbreviation_reason": "",
       "volume_mm3": 5383.387700186983,
       "solid_count": 1,
       "face_count": 28
@@ -1957,6 +2437,11 @@
       "notes": "",
       "color_key": "steel",
       "external_context": false,
+      "final_display_name": "Aft_Door_Hinge_Pin_SS",
+      "creo_safe_name": "Aft_Door_Hinge_Pin_SS",
+      "actual_part_number": "",
+      "traceability_property": "LEGACY_ID=WP05-HINGE-PIN-R2;SOURCE_ID=WP05-HINGE-PIN-R2",
+      "abbreviation_reason": "",
       "volume_mm3": 124.69177591638739,
       "solid_count": 1,
       "face_count": 9
@@ -1977,6 +2462,11 @@
       "notes": "",
       "color_key": "spring",
       "external_context": false,
+      "final_display_name": "Aft_Door_Hinge_Retainer_SS",
+      "creo_safe_name": "Aft_Door_Hinge_Retainer_SS",
+      "actual_part_number": "",
+      "traceability_property": "LEGACY_ID=WP05-HINGE-CRESCENT-RING-R2;SOURCE_ID=WP05-HINGE-CRESCENT-RING-R2",
+      "abbreviation_reason": "",
       "volume_mm3": 3.9464360168101154,
       "solid_count": 1,
       "face_count": 8
@@ -1997,6 +2487,11 @@
       "notes": "Exact GN 615.3 M3 KN PFB identity; 8.0 mm housing length, 1.5 mm ball travel, 3.0/4.5 N initial/final spring load; incoming dimensional/material verification and four-place seating-force inspection. Explicit mass is the 61.1253 mm3 authored catalog envelope at the controlled mixed-stainless density basis (~7.9e-6 kg/mm3).",
       "color_key": "stainless",
       "external_context": false,
+      "final_display_name": "JW_Winco_Ball_Plunger_GN-615.3-M3-KN-PFB",
+      "creo_safe_name": "JW_Winco_Ball_Plunger_F4A1E75B",
+      "actual_part_number": "GN-615.3-M3-KN-PFB",
+      "traceability_property": "LEGACY_ID=GN-615.3-M3-KN-PFB;SOURCE_ID=GN-615.3-M3-KN-PFB",
+      "abbreviation_reason": "Deterministic 31-character Creo filename limit",
       "volume_mm3": 61.12525039706924,
       "solid_count": 1,
       "face_count": 5
@@ -2017,6 +2512,11 @@
       "notes": "",
       "color_key": "softgood",
       "external_context": false,
+      "final_display_name": "60_L_BUOY_GORE_1_OF_8_TPU",
+      "creo_safe_name": "60_L_BUOY_GORE_1_OF_8_TPU",
+      "actual_part_number": "",
+      "traceability_property": "LEGACY_ID=DF8-R2-BUOY-GORE-01;SOURCE_ID=DF8-R2-BUOY-GORE-01",
+      "abbreviation_reason": "",
       "volume_mm3": 1282.8025250941114,
       "solid_count": 1,
       "face_count": 14
@@ -2037,6 +2537,11 @@
       "notes": "",
       "color_key": "softgood",
       "external_context": false,
+      "final_display_name": "60_L_BUOY_GORE_2_OF_8_TPU",
+      "creo_safe_name": "60_L_BUOY_GORE_2_OF_8_TPU",
+      "actual_part_number": "",
+      "traceability_property": "LEGACY_ID=DF8-R2-BUOY-GORE-02;SOURCE_ID=DF8-R2-BUOY-GORE-02",
+      "abbreviation_reason": "",
       "volume_mm3": 1252.7999999986557,
       "solid_count": 1,
       "face_count": 6
@@ -2057,6 +2562,11 @@
       "notes": "",
       "color_key": "softgood",
       "external_context": false,
+      "final_display_name": "60_L_BUOY_GORE_3_OF_8_TPU",
+      "creo_safe_name": "60_L_BUOY_GORE_3_OF_8_TPU",
+      "actual_part_number": "",
+      "traceability_property": "LEGACY_ID=DF8-R2-BUOY-GORE-03;SOURCE_ID=DF8-R2-BUOY-GORE-03",
+      "abbreviation_reason": "",
       "volume_mm3": 1252.7999999986557,
       "solid_count": 1,
       "face_count": 6
@@ -2077,6 +2587,11 @@
       "notes": "",
       "color_key": "softgood",
       "external_context": false,
+      "final_display_name": "60_L_BUOY_GORE_4_OF_8_TPU",
+      "creo_safe_name": "60_L_BUOY_GORE_4_OF_8_TPU",
+      "actual_part_number": "",
+      "traceability_property": "LEGACY_ID=DF8-R2-BUOY-GORE-04;SOURCE_ID=DF8-R2-BUOY-GORE-04",
+      "abbreviation_reason": "",
       "volume_mm3": 1252.7999999986553,
       "solid_count": 1,
       "face_count": 6
@@ -2097,6 +2612,11 @@
       "notes": "",
       "color_key": "softgood",
       "external_context": false,
+      "final_display_name": "60_L_BUOY_GORE_5_OF_8_TPU",
+      "creo_safe_name": "60_L_BUOY_GORE_5_OF_8_TPU",
+      "actual_part_number": "",
+      "traceability_property": "LEGACY_ID=DF8-R2-BUOY-GORE-05;SOURCE_ID=DF8-R2-BUOY-GORE-05",
+      "abbreviation_reason": "",
       "volume_mm3": 1301.279999998656,
       "solid_count": 1,
       "face_count": 11
@@ -2117,6 +2637,11 @@
       "notes": "",
       "color_key": "softgood",
       "external_context": false,
+      "final_display_name": "60_L_BUOY_GORE_6_OF_8_TPU",
+      "creo_safe_name": "60_L_BUOY_GORE_6_OF_8_TPU",
+      "actual_part_number": "",
+      "traceability_property": "LEGACY_ID=DF8-R2-BUOY-GORE-06;SOURCE_ID=DF8-R2-BUOY-GORE-06",
+      "abbreviation_reason": "",
       "volume_mm3": 1252.7999999986555,
       "solid_count": 1,
       "face_count": 6
@@ -2137,6 +2662,11 @@
       "notes": "",
       "color_key": "softgood",
       "external_context": false,
+      "final_display_name": "60_L_BUOY_GORE_7_OF_8_TPU",
+      "creo_safe_name": "60_L_BUOY_GORE_7_OF_8_TPU",
+      "actual_part_number": "",
+      "traceability_property": "LEGACY_ID=DF8-R2-BUOY-GORE-07;SOURCE_ID=DF8-R2-BUOY-GORE-07",
+      "abbreviation_reason": "",
       "volume_mm3": 1252.7999999986557,
       "solid_count": 1,
       "face_count": 6
@@ -2157,6 +2687,11 @@
       "notes": "",
       "color_key": "softgood",
       "external_context": false,
+      "final_display_name": "60_L_BUOY_GORE_8_OF_8_TPU",
+      "creo_safe_name": "60_L_BUOY_GORE_8_OF_8_TPU",
+      "actual_part_number": "",
+      "traceability_property": "LEGACY_ID=DF8-R2-BUOY-GORE-08;SOURCE_ID=DF8-R2-BUOY-GORE-08",
+      "abbreviation_reason": "",
       "volume_mm3": 1252.799999998655,
       "solid_count": 1,
       "face_count": 6
@@ -2177,6 +2712,11 @@
       "notes": "Finished MAKE article from exact X-6292 raw webbing; lot CoC and proof record required.",
       "color_key": "rope",
       "external_context": false,
+      "final_display_name": "X-6292_STRUCTURAL_HARNESS_CLOSED_BAND_1_HMPE",
+      "creo_safe_name": "X-6292_STRUCTURAL_HARN_E7A576D0",
+      "actual_part_number": "",
+      "traceability_property": "LEGACY_ID=DF8-R2-HARNESS-BAND-1;SOURCE_ID=DF8-R2-HARNESS-BAND-1",
+      "abbreviation_reason": "Deterministic 31-character Creo filename limit",
       "volume_mm3": 4358.639999999998,
       "solid_count": 1,
       "face_count": 4
@@ -2197,6 +2737,11 @@
       "notes": "Finished MAKE article from exact X-6292 raw webbing; lot CoC and proof record required.",
       "color_key": "rope",
       "external_context": false,
+      "final_display_name": "X-6292_STRUCTURAL_HARNESS_CLOSED_BAND_2_HMPE",
+      "creo_safe_name": "X-6292_STRUCTURAL_HARN_EA48759C",
+      "actual_part_number": "",
+      "traceability_property": "LEGACY_ID=DF8-R2-HARNESS-BAND-2;SOURCE_ID=DF8-R2-HARNESS-BAND-2",
+      "abbreviation_reason": "Deterministic 31-character Creo filename limit",
       "volume_mm3": 4358.639999999998,
       "solid_count": 1,
       "face_count": 4
@@ -2217,6 +2762,11 @@
       "notes": "",
       "color_key": "steel",
       "external_context": false,
+      "final_display_name": "HARNESS_STRUCTURAL_TERMINAL_WITH_FOUR_WEB_SLOTS_AND_DOUBLE-SHEAR_CLEVIS_SS",
+      "creo_safe_name": "HARNESS_STRUCTURAL_TER_8A49D1B9",
+      "actual_part_number": "",
+      "traceability_property": "LEGACY_ID=WP04-HST-001-R2;SOURCE_ID=WP04-HST-001-R2",
+      "abbreviation_reason": "Deterministic 31-character Creo filename limit",
       "volume_mm3": 2014.0933992416706,
       "solid_count": 1,
       "face_count": 43
@@ -2237,6 +2787,11 @@
       "notes": "Finished MAKE article; lot CoC, stitch traveler and proof record required.",
       "color_key": "rope",
       "external_context": false,
+      "final_display_name": "X-6292_TERMINAL_HARNESS_LEG_XP_HMPE",
+      "creo_safe_name": "X-6292_TERMINAL_HARNES_204E8D74",
+      "actual_part_number": "",
+      "traceability_property": "LEGACY_ID=DF8-R2-HARNESS-LEG-XP;SOURCE_ID=DF8-R2-HARNESS-LEG-XP",
+      "abbreviation_reason": "Deterministic 31-character Creo filename limit",
       "volume_mm3": 1365.444242504893,
       "solid_count": 1,
       "face_count": 14
@@ -2257,6 +2812,11 @@
       "notes": "Finished MAKE article; lot CoC, stitch traveler and proof record required.",
       "color_key": "rope",
       "external_context": false,
+      "final_display_name": "X-6292_TERMINAL_HARNESS_LEG_XN_HMPE",
+      "creo_safe_name": "X-6292_TERMINAL_HARNES_C59485D2",
+      "actual_part_number": "",
+      "traceability_property": "LEGACY_ID=DF8-R2-HARNESS-LEG-XN;SOURCE_ID=DF8-R2-HARNESS-LEG-XN",
+      "abbreviation_reason": "Deterministic 31-character Creo filename limit",
       "volume_mm3": 1365.4442425048924,
       "solid_count": 1,
       "face_count": 14
@@ -2277,6 +2837,11 @@
       "notes": "Finished MAKE article; lot CoC, stitch traveler and proof record required.",
       "color_key": "rope",
       "external_context": false,
+      "final_display_name": "X-6292_TERMINAL_HARNESS_LEG_YP_HMPE",
+      "creo_safe_name": "X-6292_TERMINAL_HARNES_B344DBA4",
+      "actual_part_number": "",
+      "traceability_property": "LEGACY_ID=DF8-R2-HARNESS-LEG-YP;SOURCE_ID=DF8-R2-HARNESS-LEG-YP",
+      "abbreviation_reason": "Deterministic 31-character Creo filename limit",
       "volume_mm3": 1106.0674306867222,
       "solid_count": 1,
       "face_count": 14
@@ -2297,6 +2862,11 @@
       "notes": "Finished MAKE article; lot CoC, stitch traveler and proof record required.",
       "color_key": "rope",
       "external_context": false,
+      "final_display_name": "X-6292_TERMINAL_HARNESS_LEG_YN_HMPE",
+      "creo_safe_name": "X-6292_TERMINAL_HARNES_5BCC16C9",
+      "actual_part_number": "",
+      "traceability_property": "LEGACY_ID=DF8-R2-HARNESS-LEG-YN;SOURCE_ID=DF8-R2-HARNESS-LEG-YN",
+      "abbreviation_reason": "Deterministic 31-character Creo filename limit",
       "volume_mm3": 1106.0674306867224,
       "solid_count": 1,
       "face_count": 14
@@ -2317,6 +2887,11 @@
       "notes": "",
       "color_key": "stainless",
       "external_context": false,
+      "final_display_name": "AMSTEEL_EYE-SPLICE_THIMBLE_SS",
+      "creo_safe_name": "AMSTEEL_EYE-SPLICE_THIMBLE_SS",
+      "actual_part_number": "",
+      "traceability_property": "LEGACY_ID=DF8-R2-TETHER-THIMBLE-001;SOURCE_ID=DF8-R2-TETHER-THIMBLE-001",
+      "abbreviation_reason": "",
       "volume_mm3": 362.089371928723,
       "solid_count": 1,
       "face_count": 12
@@ -2337,6 +2912,11 @@
       "notes": "Samson product code 872, 7/64 in; controlled Class II buried-eye splices, chafe sleeves and 4.45 kN finished-assembly proof.",
       "color_key": "rope",
       "external_context": false,
+      "final_display_name": "STRUCTURAL_RECOVERY_TETHER_WITH_TWO_BURIED_EYE_SPLICES_HMPE",
+      "creo_safe_name": "STRUCTURAL_RECOVERY_TE_4DAB80EB",
+      "actual_part_number": "",
+      "traceability_property": "LEGACY_ID=AMSTEEL-BLUE-872-7-64-R2;SOURCE_ID=AMSTEEL-BLUE-872-7-64-R2",
+      "abbreviation_reason": "Deterministic 31-character Creo filename limit",
       "volume_mm3": 559.5777177068609,
       "solid_count": 1,
       "face_count": 22
@@ -2357,6 +2937,11 @@
       "notes": "",
       "color_key": "steel",
       "external_context": false,
+      "final_display_name": "6_MM_CAPTIVE_RECOVERY_TERMINAL_PIN_WITH_RETAINER_GROOVE_SS",
+      "creo_safe_name": "6_MM_CAPTIVE_RECOVERY_E01E7839",
+      "actual_part_number": "",
+      "traceability_property": "LEGACY_ID=DF8-R2-RECOVERY-PIN-006;SOURCE_ID=DF8-R2-RECOVERY-PIN-006",
+      "abbreviation_reason": "Deterministic 31-character Creo filename limit",
       "volume_mm3": 404.4113318103886,
       "solid_count": 1,
       "face_count": 9
@@ -2377,6 +2962,11 @@
       "notes": "",
       "color_key": "spring",
       "external_context": false,
+      "final_display_name": "6_MM_RECOVERY_PIN_EXTERNAL_RETAINER_SS",
+      "creo_safe_name": "6_MM_RECOVERY_PIN_EXTE_50BCE6E4",
+      "actual_part_number": "",
+      "traceability_property": "LEGACY_ID=DF8-R2-RECOVERY-E-RING-006;SOURCE_ID=DF8-R2-RECOVERY-E-RING-006",
+      "abbreviation_reason": "Deterministic 31-character Creo filename limit",
       "volume_mm3": 8.584663678507441,
       "solid_count": 1,
       "face_count": 8
@@ -2397,6 +2987,11 @@
       "notes": "",
       "color_key": "rope",
       "external_context": false,
+      "final_display_name": "CAPTIVE_DOOR_LANYARD_WITH_SWAGED_EYES_HMPE",
+      "creo_safe_name": "CAPTIVE_DOOR_LANYARD_W_2FAC99C5",
+      "actual_part_number": "",
+      "traceability_property": "LEGACY_ID=WP05-DOOR-LANYARD-R2;SOURCE_ID=WP05-DOOR-LANYARD-R2",
+      "abbreviation_reason": "Deterministic 31-character Creo filename limit",
       "volume_mm3": 141.08497406549117,
       "solid_count": 1,
       "face_count": 19
@@ -2417,6 +3012,11 @@
       "notes": "",
       "color_key": "titanium",
       "external_context": false,
+      "final_display_name": "ONE-PIECE_AFT_GUIDE-RAIL_SUPPORT_RING_WITH_THREE_M3_THREADS_TI",
+      "creo_safe_name": "ONE-PIECE_AFT_GUIDE-RA_45A59E4D",
+      "actual_part_number": "",
+      "traceability_property": "LEGACY_ID=WP04-AFT-RAIL-SUPPORT-R2;SOURCE_ID=WP04-AFT-RAIL-SUPPORT-R2",
+      "abbreviation_reason": "Deterministic 31-character Creo filename limit",
       "volume_mm3": 2055.1906440702733,
       "solid_count": 1,
       "face_count": 7
@@ -2437,6 +3037,11 @@
       "notes": "",
       "color_key": "steel",
       "external_context": false,
+      "final_display_name": "GUIDE-RAIL-3_TO_LATCH_TWO-SCREW_SUPPORT_BLADE_SS",
+      "creo_safe_name": "GUIDE-RAIL-3_TO_LATCH_D6CB60FA",
+      "actual_part_number": "",
+      "traceability_property": "LEGACY_ID=WP04-LATCH-SUPPORT-R2;SOURCE_ID=WP04-LATCH-SUPPORT-R2",
+      "abbreviation_reason": "Deterministic 31-character Creo filename limit",
       "volume_mm3": 161.9617958284251,
       "solid_count": 1,
       "face_count": 15
@@ -2453,6 +3058,8 @@
       "permitted_dof": "0",
       "state_membership": "BOTH",
       "notes": "Identity transform justified: top-level product datum origin.",
+      "display_name": "Penetrator_Nose_W",
+      "display_parent_path": "Forward_Body_Assembly",
       "transform_matrix_3x4": [
         [
           1.0,
@@ -2494,6 +3101,8 @@
       "permitted_dof": "0",
       "state_membership": "BOTH",
       "notes": "",
+      "display_name": "Forward_Ballast_W",
+      "display_parent_path": "Forward_Body_Assembly",
       "transform_matrix_3x4": [
         [
           1.0,
@@ -2535,6 +3144,8 @@
       "permitted_dof": "0",
       "state_membership": "BOTH",
       "notes": "",
+      "display_name": "Forward_Shell_TI",
+      "display_parent_path": "Forward_Body_Assembly",
       "transform_matrix_3x4": [
         [
           1.0,
@@ -2576,6 +3187,8 @@
       "permitted_dof": "0",
       "state_membership": "BOTH",
       "notes": "",
+      "display_name": "PRIMARY_STRUCTURAL_TRANSITION_RING_WITH_FOUR_TAPPED_CARRIER_LANDS_TI",
+      "display_parent_path": "Forward_Body_Assembly",
       "transform_matrix_3x4": [
         [
           1.0,
@@ -2617,6 +3230,8 @@
       "permitted_dof": "0",
       "state_membership": "BOTH",
       "notes": "",
+      "display_name": "STRUCTURAL_RING_WITH_ROUTE_PASSAGES_ARM_RELIEFS_AND_FULLFLOW_CIRCLIP_REACTION_CAGE_TI",
+      "display_parent_path": "Forward_Body_Assembly",
       "transform_matrix_3x4": [
         [
           1.0,
@@ -2658,6 +3273,8 @@
       "permitted_dof": "0",
       "state_membership": "BOTH",
       "notes": "",
+      "display_name": "FORWARD_PRIMARY_LOAD-PATH_LONGERON_TI_01",
+      "display_parent_path": "Forward_Body_Assembly",
       "transform_matrix_3x4": [
         [
           0.5000000000000001,
@@ -2699,6 +3316,8 @@
       "permitted_dof": "0",
       "state_membership": "BOTH",
       "notes": "",
+      "display_name": "FORWARD_PRIMARY_LOAD-PATH_LONGERON_TI_02",
+      "display_parent_path": "Forward_Body_Assembly",
       "transform_matrix_3x4": [
         [
           -1.0,
@@ -2740,6 +3359,8 @@
       "permitted_dof": "0",
       "state_membership": "BOTH",
       "notes": "",
+      "display_name": "FORWARD_PRIMARY_LOAD-PATH_LONGERON_TI_03",
+      "display_parent_path": "Forward_Body_Assembly",
       "transform_matrix_3x4": [
         [
           0.5000000000000001,
@@ -2781,6 +3402,8 @@
       "permitted_dof": "0",
       "state_membership": "BOTH",
       "notes": "",
+      "display_name": "FOUR-CARTRIDGE_DOUBLE-PLATE_CARRIER_AL_02",
+      "display_parent_path": "Forward_Body_Assembly",
       "transform_matrix_3x4": [
         [
           1.0,
@@ -2822,6 +3445,8 @@
       "permitted_dof": "0",
       "state_membership": "BOTH",
       "notes": "",
+      "display_name": "FOUR-CARTRIDGE_DOUBLE-PLATE_CARRIER_AL_01",
+      "display_parent_path": "Forward_Body_Assembly",
       "transform_matrix_3x4": [
         [
           1.0,
@@ -2863,6 +3488,8 @@
       "permitted_dof": "0",
       "state_membership": "BOTH",
       "notes": "",
+      "display_name": "Leland_CO2_Cartridge_81121_01",
+      "display_parent_path": "Forward_Body_Assembly",
       "transform_matrix_3x4": [
         [
           1.0,
@@ -2904,6 +3531,8 @@
       "permitted_dof": "0",
       "state_membership": "BOTH",
       "notes": "",
+      "display_name": "Leland_CO2_Cartridge_81121_02",
+      "display_parent_path": "Forward_Body_Assembly",
       "transform_matrix_3x4": [
         [
           1.0,
@@ -2945,6 +3574,8 @@
       "permitted_dof": "0",
       "state_membership": "BOTH",
       "notes": "",
+      "display_name": "Leland_CO2_Cartridge_81121_03",
+      "display_parent_path": "Forward_Body_Assembly",
       "transform_matrix_3x4": [
         [
           1.0,
@@ -2986,6 +3617,8 @@
       "permitted_dof": "0",
       "state_membership": "BOTH",
       "notes": "",
+      "display_name": "Leland_CO2_Cartridge_81121_04",
+      "display_parent_path": "Forward_Body_Assembly",
       "transform_matrix_3x4": [
         [
           1.0,
@@ -3027,6 +3660,8 @@
       "permitted_dof": "0",
       "state_membership": "BOTH",
       "notes": "",
+      "display_name": "Collection_Manifold_SS",
+      "display_parent_path": "Forward_Body_Assembly",
       "transform_matrix_3x4": [
         [
           1.0,
@@ -3048,14 +3683,14 @@
         ]
       ],
       "identity_transform": false,
-      "global_volume_mm3": 10096.638965666081,
+      "global_volume_mm3": 10459.824080035185,
       "global_bbox_mm": {
         "xmin": -20.0,
         "xmax": 20.0,
         "ymin": -20.0,
         "ymax": 20.0,
-        "zmin": 437.0,
-        "zmax": 447.0
+        "zmin": 436.9999999,
+        "zmax": 447.0000001
       }
     },
     {
@@ -3068,6 +3703,8 @@
       "permitted_dof": "0",
       "state_membership": "BOTH",
       "notes": "",
+      "display_name": "CARTRIDGE_PUNCTURE_HEAD_WITH_CONTROLLED_NEEDLE_SS_01",
+      "display_parent_path": "Forward_Body_Assembly",
       "transform_matrix_3x4": [
         [
           1.0,
@@ -3109,6 +3746,8 @@
       "permitted_dof": "0",
       "state_membership": "BOTH",
       "notes": "",
+      "display_name": "CARTRIDGE_PUNCTURE_HEAD_WITH_CONTROLLED_NEEDLE_SS_02",
+      "display_parent_path": "Forward_Body_Assembly",
       "transform_matrix_3x4": [
         [
           1.0,
@@ -3150,6 +3789,8 @@
       "permitted_dof": "0",
       "state_membership": "BOTH",
       "notes": "",
+      "display_name": "CARTRIDGE_PUNCTURE_HEAD_WITH_CONTROLLED_NEEDLE_SS_03",
+      "display_parent_path": "Forward_Body_Assembly",
       "transform_matrix_3x4": [
         [
           1.0,
@@ -3191,6 +3832,8 @@
       "permitted_dof": "0",
       "state_membership": "BOTH",
       "notes": "",
+      "display_name": "CARTRIDGE_PUNCTURE_HEAD_WITH_CONTROLLED_NEEDLE_SS_04",
+      "display_parent_path": "Forward_Body_Assembly",
       "transform_matrix_3x4": [
         [
           1.0,
@@ -3232,6 +3875,8 @@
       "permitted_dof": "0",
       "state_membership": "BOTH",
       "notes": "",
+      "display_name": "13_OD_X_11_ID_X_430_BOOSTER_RESERVOIR_WITH_END_BOSSES_SS_01",
+      "display_parent_path": "Forward_Body_Assembly",
       "transform_matrix_3x4": [
         [
           1.0,
@@ -3273,6 +3918,8 @@
       "permitted_dof": "0",
       "state_membership": "BOTH",
       "notes": "",
+      "display_name": "PORTED_FORWARD_BOOSTER_CLOSURE_WITH_WELD_LIP_AND_VALVE_ADAPTER_SS_01",
+      "display_parent_path": "Forward_Body_Assembly",
       "transform_matrix_3x4": [
         [
           1.0,
@@ -3314,6 +3961,8 @@
       "permitted_dof": "0",
       "state_membership": "BOTH",
       "notes": "",
+      "display_name": "SOLID_AFT_BOOSTER_CLOSURE_WITH_LOCATING_PILOT_SS_01",
+      "display_parent_path": "Forward_Body_Assembly",
       "transform_matrix_3x4": [
         [
           1.0,
@@ -3355,6 +4004,8 @@
       "permitted_dof": "0",
       "state_membership": "BOTH",
       "notes": "",
+      "display_name": "Swagelok_Check_Valve_SS-CHS2-1_01",
+      "display_parent_path": "Forward_Body_Assembly",
       "transform_matrix_3x4": [
         [
           1.0,
@@ -3396,6 +4047,8 @@
       "permitted_dof": "0",
       "state_membership": "BOTH",
       "notes": "",
+      "display_name": "Booster_Collection_Line_SS_01",
+      "display_parent_path": "Forward_Body_Assembly",
       "transform_matrix_3x4": [
         [
           1.0,
@@ -3437,6 +4090,8 @@
       "permitted_dof": "0",
       "state_membership": "BOTH",
       "notes": "",
+      "display_name": "CAPTIVE_BOOSTER_SUPPORT_BAND_WITH_M3_TAB_PEEK_01",
+      "display_parent_path": "Forward_Body_Assembly",
       "transform_matrix_3x4": [
         [
           0.8660254037844387,
@@ -3478,6 +4133,8 @@
       "permitted_dof": "0",
       "state_membership": "BOTH",
       "notes": "",
+      "display_name": "CAPTIVE_BOOSTER_SUPPORT_BAND_WITH_M3_TAB_PEEK_02",
+      "display_parent_path": "Forward_Body_Assembly",
       "transform_matrix_3x4": [
         [
           0.8660254037844387,
@@ -3519,6 +4176,8 @@
       "permitted_dof": "0",
       "state_membership": "BOTH",
       "notes": "",
+      "display_name": "CAPTIVE_BOOSTER_SUPPORT_BAND_WITH_M3_TAB_PEEK_03",
+      "display_parent_path": "Forward_Body_Assembly",
       "transform_matrix_3x4": [
         [
           0.8660254037844387,
@@ -3560,6 +4219,8 @@
       "permitted_dof": "0",
       "state_membership": "BOTH",
       "notes": "",
+      "display_name": "13_OD_X_11_ID_X_430_BOOSTER_RESERVOIR_WITH_END_BOSSES_SS_02",
+      "display_parent_path": "Forward_Body_Assembly",
       "transform_matrix_3x4": [
         [
           1.0,
@@ -3601,6 +4262,8 @@
       "permitted_dof": "0",
       "state_membership": "BOTH",
       "notes": "",
+      "display_name": "PORTED_FORWARD_BOOSTER_CLOSURE_WITH_WELD_LIP_AND_VALVE_ADAPTER_SS_02",
+      "display_parent_path": "Forward_Body_Assembly",
       "transform_matrix_3x4": [
         [
           1.0,
@@ -3642,6 +4305,8 @@
       "permitted_dof": "0",
       "state_membership": "BOTH",
       "notes": "",
+      "display_name": "SOLID_AFT_BOOSTER_CLOSURE_WITH_LOCATING_PILOT_SS_02",
+      "display_parent_path": "Forward_Body_Assembly",
       "transform_matrix_3x4": [
         [
           1.0,
@@ -3683,6 +4348,8 @@
       "permitted_dof": "0",
       "state_membership": "BOTH",
       "notes": "",
+      "display_name": "Swagelok_Check_Valve_SS-CHS2-1_02",
+      "display_parent_path": "Forward_Body_Assembly",
       "transform_matrix_3x4": [
         [
           1.0,
@@ -3724,6 +4391,8 @@
       "permitted_dof": "0",
       "state_membership": "BOTH",
       "notes": "",
+      "display_name": "Booster_Collection_Line_SS_02",
+      "display_parent_path": "Forward_Body_Assembly",
       "transform_matrix_3x4": [
         [
           1.0,
@@ -3765,6 +4434,8 @@
       "permitted_dof": "0",
       "state_membership": "BOTH",
       "notes": "",
+      "display_name": "CAPTIVE_BOOSTER_SUPPORT_BAND_WITH_M3_TAB_PEEK_04",
+      "display_parent_path": "Forward_Body_Assembly",
       "transform_matrix_3x4": [
         [
           -0.8660254037844388,
@@ -3806,6 +4477,8 @@
       "permitted_dof": "0",
       "state_membership": "BOTH",
       "notes": "",
+      "display_name": "CAPTIVE_BOOSTER_SUPPORT_BAND_WITH_M3_TAB_PEEK_05",
+      "display_parent_path": "Forward_Body_Assembly",
       "transform_matrix_3x4": [
         [
           -0.8660254037844388,
@@ -3847,6 +4520,8 @@
       "permitted_dof": "0",
       "state_membership": "BOTH",
       "notes": "",
+      "display_name": "CAPTIVE_BOOSTER_SUPPORT_BAND_WITH_M3_TAB_PEEK_06",
+      "display_parent_path": "Forward_Body_Assembly",
       "transform_matrix_3x4": [
         [
           -0.8660254037844388,
@@ -3888,6 +4563,8 @@
       "permitted_dof": "0",
       "state_membership": "BOTH",
       "notes": "",
+      "display_name": "13_OD_X_11_ID_X_430_BOOSTER_RESERVOIR_WITH_END_BOSSES_SS_03",
+      "display_parent_path": "Forward_Body_Assembly",
       "transform_matrix_3x4": [
         [
           1.0,
@@ -3929,6 +4606,8 @@
       "permitted_dof": "0",
       "state_membership": "BOTH",
       "notes": "",
+      "display_name": "PORTED_FORWARD_BOOSTER_CLOSURE_WITH_WELD_LIP_AND_VALVE_ADAPTER_SS_03",
+      "display_parent_path": "Forward_Body_Assembly",
       "transform_matrix_3x4": [
         [
           1.0,
@@ -3970,6 +4649,8 @@
       "permitted_dof": "0",
       "state_membership": "BOTH",
       "notes": "",
+      "display_name": "SOLID_AFT_BOOSTER_CLOSURE_WITH_LOCATING_PILOT_SS_03",
+      "display_parent_path": "Forward_Body_Assembly",
       "transform_matrix_3x4": [
         [
           1.0,
@@ -4011,6 +4692,8 @@
       "permitted_dof": "0",
       "state_membership": "BOTH",
       "notes": "",
+      "display_name": "Swagelok_Check_Valve_SS-CHS2-1_03",
+      "display_parent_path": "Forward_Body_Assembly",
       "transform_matrix_3x4": [
         [
           1.0,
@@ -4052,6 +4735,8 @@
       "permitted_dof": "0",
       "state_membership": "BOTH",
       "notes": "",
+      "display_name": "Booster_Collection_Line_SS_03",
+      "display_parent_path": "Forward_Body_Assembly",
       "transform_matrix_3x4": [
         [
           1.0,
@@ -4093,6 +4778,8 @@
       "permitted_dof": "0",
       "state_membership": "BOTH",
       "notes": "",
+      "display_name": "CAPTIVE_BOOSTER_SUPPORT_BAND_WITH_M3_TAB_PEEK_07",
+      "display_parent_path": "Forward_Body_Assembly",
       "transform_matrix_3x4": [
         [
           -2.220446049250313e-16,
@@ -4134,6 +4821,8 @@
       "permitted_dof": "0",
       "state_membership": "BOTH",
       "notes": "",
+      "display_name": "CAPTIVE_BOOSTER_SUPPORT_BAND_WITH_M3_TAB_PEEK_08",
+      "display_parent_path": "Forward_Body_Assembly",
       "transform_matrix_3x4": [
         [
           -2.220446049250313e-16,
@@ -4175,6 +4864,8 @@
       "permitted_dof": "0",
       "state_membership": "BOTH",
       "notes": "",
+      "display_name": "CAPTIVE_BOOSTER_SUPPORT_BAND_WITH_M3_TAB_PEEK_09",
+      "display_parent_path": "Forward_Body_Assembly",
       "transform_matrix_3x4": [
         [
           -2.220446049250313e-16,
@@ -4216,6 +4907,8 @@
       "permitted_dof": "0",
       "state_membership": "BOTH",
       "notes": "",
+      "display_name": "Water_Trigger_Housing_AC",
+      "display_parent_path": "Forward_Body_Assembly",
       "transform_matrix_3x4": [
         [
           1.0,
@@ -4257,6 +4950,8 @@
       "permitted_dof": "0",
       "state_membership": "BOTH",
       "notes": "",
+      "display_name": "Halkey_Roberts_Water_Bobbin_V80040",
+      "display_parent_path": "Forward_Body_Assembly",
       "transform_matrix_3x4": [
         [
           1.0,
@@ -4298,6 +4993,8 @@
       "permitted_dof": "0",
       "state_membership": "BOTH",
       "notes": "",
+      "display_name": "RADIAL_FLOOD_INLET_GLAND_AND_ANTI-DEBRIS_SCREEN_SS",
+      "display_parent_path": "Forward_Body_Assembly",
       "transform_matrix_3x4": [
         [
           1.1102230246251565e-16,
@@ -4339,6 +5036,8 @@
       "permitted_dof": "1 AXIAL",
       "state_membership": "BOTH",
       "notes": "",
+      "display_name": "DIRECT_FULL-FLOW_VALVE_WITH_BORED_AXIAL_AND_RADIAL_PORTS_SS",
+      "display_parent_path": "Forward_Body_Assembly",
       "transform_matrix_3x4": [
         [
           1.1102230246251565e-16,
@@ -4360,7 +5059,7 @@
         ]
       ],
       "identity_transform": false,
-      "global_volume_mm3": 2388.8304913454376,
+      "global_volume_mm3": 2590.236209937828,
       "global_bbox_mm": {
         "xmin": -17.387495373796554,
         "xmax": 17.38749537379655,
@@ -4376,10 +5075,12 @@
       "parent_path": "100_FORWARD_PENETRATOR_WAI_AND_PRIMARY_STRUCTURE_ASSY",
       "state": "STOWED",
       "classification": "FIXED",
-      "joint_type": "FORMED_PRESSURE_ROUTE_WITH_INTEGRAL_FERRULES",
+      "joint_type": "FORMED_PRESSURE_ROUTE_WITH_DIRECT_BRAZE_ENDS",
       "permitted_dof": "0",
       "state_membership": "BOTH",
       "notes": "",
+      "display_name": "Collection_Manifold_Fullflow_Feed_SS",
+      "display_parent_path": "Forward_Body_Assembly",
       "transform_matrix_3x4": [
         [
           1.0,
@@ -4401,13 +5102,13 @@
         ]
       ],
       "identity_transform": false,
-      "global_volume_mm3": 855.5758476669264,
+      "global_volume_mm3": 777.1683484823642,
       "global_bbox_mm": {
-        "xmin": -3.4000000999999997,
-        "xmax": 8.182423009839045,
-        "ymin": -3.4000000999999997,
-        "ymax": 20.733545036504076,
-        "zmin": 446.9999999,
+        "xmin": -1.0000001000000005,
+        "xmax": 8.182423109839046,
+        "ymin": -1.0000001,
+        "ymax": 20.733545136504077,
+        "zmin": 447.0,
         "zmax": 859.0
       }
     },
@@ -4421,6 +5122,8 @@
       "permitted_dof": "0",
       "state_membership": "BOTH",
       "notes": "",
+      "display_name": "LASER-WELDED_TITANIUM_SPRING_CLIP_FOR_MANIFOLD_FEED_TI_01",
+      "display_parent_path": "Forward_Body_Assembly",
       "transform_matrix_3x4": [
         [
           0.3420201433256689,
@@ -4462,6 +5165,8 @@
       "permitted_dof": "0",
       "state_membership": "BOTH",
       "notes": "",
+      "display_name": "LASER-WELDED_TITANIUM_SPRING_CLIP_FOR_MANIFOLD_FEED_TI_02",
+      "display_parent_path": "Forward_Body_Assembly",
       "transform_matrix_3x4": [
         [
           0.3420201433256689,
@@ -4503,6 +5208,8 @@
       "permitted_dof": "0",
       "state_membership": "BOTH",
       "notes": "",
+      "display_name": "LASER-WELDED_TITANIUM_SPRING_CLIP_FOR_MANIFOLD_FEED_TI_03",
+      "display_parent_path": "Forward_Body_Assembly",
       "transform_matrix_3x4": [
         [
           0.3420201433256689,
@@ -4544,6 +5251,8 @@
       "permitted_dof": "0",
       "state_membership": "BOTH",
       "notes": "",
+      "display_name": "ANALYTIC_CYLINDRICAL_FIXED_BODY_SECTOR_TI_01",
+      "display_parent_path": "Arm_Activation_Powertrain_Assembly",
       "transform_matrix_3x4": [
         [
           0.5000000000000001,
@@ -4585,6 +5294,8 @@
       "permitted_dof": "0",
       "state_membership": "BOTH",
       "notes": "",
+      "display_name": "PRIMARY_LONGERON_WITH_TWO_JIG-BORED_ROUTE_CHANNELS_TI_01",
+      "display_parent_path": "Arm_Activation_Powertrain_Assembly",
       "transform_matrix_3x4": [
         [
           0.5000000000000001,
@@ -4626,6 +5337,8 @@
       "permitted_dof": "0",
       "state_membership": "BOTH",
       "notes": "",
+      "display_name": "ANALYTIC_CYLINDRICAL_FIXED_BODY_SECTOR_TI_02",
+      "display_parent_path": "Arm_Activation_Powertrain_Assembly",
       "transform_matrix_3x4": [
         [
           -1.0,
@@ -4667,6 +5380,8 @@
       "permitted_dof": "0",
       "state_membership": "BOTH",
       "notes": "",
+      "display_name": "PRIMARY_LONGERON_WITH_TWO_JIG-BORED_ROUTE_CHANNELS_TI_02",
+      "display_parent_path": "Arm_Activation_Powertrain_Assembly",
       "transform_matrix_3x4": [
         [
           -1.0,
@@ -4708,6 +5423,8 @@
       "permitted_dof": "0",
       "state_membership": "BOTH",
       "notes": "",
+      "display_name": "FIXED_SECTOR_3_WITH_TWO_RADIAL_M3_BACKUP-GUIDE_HEAD_POCKETS_TI",
+      "display_parent_path": "Arm_Activation_Powertrain_Assembly",
       "transform_matrix_3x4": [
         [
           0.5000000000000001,
@@ -4749,6 +5466,8 @@
       "permitted_dof": "0",
       "state_membership": "BOTH",
       "notes": "",
+      "display_name": "PRIMARY_LONGERON_3_WITH_TWO_RADIAL_BACKUP-GUIDE_M3_CLEARANCE_BORES_TI",
+      "display_parent_path": "Arm_Activation_Powertrain_Assembly",
       "transform_matrix_3x4": [
         [
           0.5000000000000001,
@@ -4790,6 +5509,8 @@
       "permitted_dof": "1 ROTATION ABOUT 8 MM PIVOT",
       "state_membership": "BOTH",
       "notes": "",
+      "display_name": "Arm_Blade_TI_01",
+      "display_parent_path": "Arm_Activation_Powertrain_Assembly/Arm_Deployment_Assembly_01",
       "transform_matrix_3x4": [
         [
           1.0,
@@ -4831,6 +5552,8 @@
       "permitted_dof": "0",
       "state_membership": "BOTH",
       "notes": "",
+      "display_name": "Pivot_Carrier_TI_01",
+      "display_parent_path": "Arm_Activation_Powertrain_Assembly/Arm_Deployment_Assembly_01",
       "transform_matrix_3x4": [
         [
           1.0,
@@ -4872,6 +5595,8 @@
       "permitted_dof": "0",
       "state_membership": "BOTH",
       "notes": "",
+      "display_name": "8_MM_CAPTIVE_SHOULDER_PIVOT_PIN_WITH_EXTERNAL_GROOVE_SS_01",
+      "display_parent_path": "Arm_Activation_Powertrain_Assembly/Arm_Deployment_Assembly_01",
       "transform_matrix_3x4": [
         [
           1.0,
@@ -4913,6 +5638,8 @@
       "permitted_dof": "0",
       "state_membership": "BOTH",
       "notes": "",
+      "display_name": "8_MM_PEEK-LINED_PIVOT_BUSHING_PEEK_01",
+      "display_parent_path": "Arm_Activation_Powertrain_Assembly/Arm_Deployment_Assembly_01",
       "transform_matrix_3x4": [
         [
           1.0,
@@ -4954,6 +5681,8 @@
       "permitted_dof": "0",
       "state_membership": "BOTH",
       "notes": "",
+      "display_name": "8_MM_PEEK-LINED_PIVOT_BUSHING_PEEK_02",
+      "display_parent_path": "Arm_Activation_Powertrain_Assembly/Arm_Deployment_Assembly_01",
       "transform_matrix_3x4": [
         [
           1.0,
@@ -4995,6 +5724,8 @@
       "permitted_dof": "0",
       "state_membership": "BOTH",
       "notes": "",
+      "display_name": "8_MM_PEEK_THRUST_WASHER_PEEK_01",
+      "display_parent_path": "Arm_Activation_Powertrain_Assembly/Arm_Deployment_Assembly_01",
       "transform_matrix_3x4": [
         [
           1.0,
@@ -5036,6 +5767,8 @@
       "permitted_dof": "0",
       "state_membership": "BOTH",
       "notes": "",
+      "display_name": "8_MM_PEEK_THRUST_WASHER_PEEK_02",
+      "display_parent_path": "Arm_Activation_Powertrain_Assembly/Arm_Deployment_Assembly_01",
       "transform_matrix_3x4": [
         [
           1.0,
@@ -5077,6 +5810,8 @@
       "permitted_dof": "0",
       "state_membership": "BOTH",
       "notes": "",
+      "display_name": "8_MM_EXTERNAL_SPIRAL_PIVOT_RETAINER_SS_01",
+      "display_parent_path": "Arm_Activation_Powertrain_Assembly/Arm_Deployment_Assembly_01",
       "transform_matrix_3x4": [
         [
           1.0,
@@ -5118,6 +5853,8 @@
       "permitted_dof": "PLANAR FOUR-BAR",
       "state_membership": "BOTH",
       "notes": "",
+      "display_name": "19.950_MM_CENTER-DISTANCE_REAMED_SHORT_LINK_SS_01",
+      "display_parent_path": "Arm_Activation_Powertrain_Assembly/Arm_Deployment_Assembly_01",
       "transform_matrix_3x4": [
         [
           0.3007518796992481,
@@ -5159,6 +5896,8 @@
       "permitted_dof": "PLANAR FOUR-BAR",
       "state_membership": "BOTH",
       "notes": "",
+      "display_name": "19.950_MM_CENTER-DISTANCE_REAMED_SHORT_LINK_SS_02",
+      "display_parent_path": "Arm_Activation_Powertrain_Assembly/Arm_Deployment_Assembly_01",
       "transform_matrix_3x4": [
         [
           0.3007518796992481,
@@ -5200,6 +5939,8 @@
       "permitted_dof": "0",
       "state_membership": "BOTH",
       "notes": "",
+      "display_name": "4_MM_FULL-SPAN_LINK_PIN_WITH_DC-4SS_RETAINER_GROOVE_SS_01",
+      "display_parent_path": "Arm_Activation_Powertrain_Assembly/Arm_Deployment_Assembly_01",
       "transform_matrix_3x4": [
         [
           1.0,
@@ -5241,6 +5982,8 @@
       "permitted_dof": "0",
       "state_membership": "BOTH",
       "notes": "",
+      "display_name": "Rotor_Clip_Retaining_Ring_DC-4SS_01",
+      "display_parent_path": "Arm_Activation_Powertrain_Assembly/Arm_Deployment_Assembly_01",
       "transform_matrix_3x4": [
         [
           1.0,
@@ -5282,6 +6025,8 @@
       "permitted_dof": "0",
       "state_membership": "BOTH",
       "notes": "",
+      "display_name": "4_MM_FULL-SPAN_LINK_PIN_WITH_DC-4SS_RETAINER_GROOVE_SS_02",
+      "display_parent_path": "Arm_Activation_Powertrain_Assembly/Arm_Deployment_Assembly_01",
       "transform_matrix_3x4": [
         [
           1.0,
@@ -5323,6 +6068,8 @@
       "permitted_dof": "0",
       "state_membership": "BOTH",
       "notes": "",
+      "display_name": "Rotor_Clip_Retaining_Ring_DC-4SS_02",
+      "display_parent_path": "Arm_Activation_Powertrain_Assembly/Arm_Deployment_Assembly_01",
       "transform_matrix_3x4": [
         [
           1.0,
@@ -5364,6 +6111,8 @@
       "permitted_dof": "0",
       "state_membership": "BOTH",
       "notes": "",
+      "display_name": "REPLACEABLE_ARM_STOP_AND_AUTOMATIC-LOCK_STRIKE_SS_01",
+      "display_parent_path": "Arm_Activation_Powertrain_Assembly/Arm_Deployment_Assembly_01",
       "transform_matrix_3x4": [
         [
           1.0,
@@ -5405,6 +6154,8 @@
       "permitted_dof": "0",
       "state_membership": "BOTH",
       "notes": "",
+      "display_name": "80_DEGREE_SWEPT-CLEARANCE_FIXED_STOP_WITH_CONTROLLED_AUTOMATIC-LOCK_BUSHING_SEAT_SS_01",
+      "display_parent_path": "Arm_Activation_Powertrain_Assembly/Arm_Deployment_Assembly_01",
       "transform_matrix_3x4": [
         [
           0.17364817766693041,
@@ -5446,6 +6197,8 @@
       "permitted_dof": "1 RADIAL TRANSLATION",
       "state_membership": "BOTH",
       "notes": "",
+      "display_name": "CAPTIVE_RADIAL_STOWED-RETENTION_DOG_WITH_TRANSPORT-INHIBIT_BORE_SS_01",
+      "display_parent_path": "Arm_Activation_Powertrain_Assembly/Arm_Deployment_Assembly_01",
       "transform_matrix_3x4": [
         [
           1.0,
@@ -5487,6 +6240,8 @@
       "permitted_dof": "0",
       "state_membership": "BOTH",
       "notes": "",
+      "display_name": "FULL-STROKE_AFT-RING-MOUNTED_STOW-DOG_U-GUIDE_SS_01",
+      "display_parent_path": "Arm_Activation_Powertrain_Assembly/Arm_Deployment_Assembly_01",
       "transform_matrix_3x4": [
         [
           1.0,
@@ -5528,6 +6283,8 @@
       "permitted_dof": "AXIAL COMPRESSION",
       "state_membership": "BOTH",
       "notes": "",
+      "display_name": "CAPTIVE_STOW-DOG_RADIAL_RETURN_SPRING_SS_01",
+      "display_parent_path": "Arm_Activation_Powertrain_Assembly/Arm_Deployment_Assembly_01",
       "transform_matrix_3x4": [
         [
           1.1102230246251565e-16,
@@ -5569,6 +6326,8 @@
       "permitted_dof": "1 AXIAL TRANSLATION",
       "state_membership": "BOTH",
       "notes": "",
+      "display_name": "WITHDRAWABLE_HEADED_TRANSPORT-INHIBIT_PIN_SS_01",
+      "display_parent_path": "Arm_Activation_Powertrain_Assembly/Arm_Deployment_Assembly_01",
       "transform_matrix_3x4": [
         [
           1.0,
@@ -5610,6 +6369,8 @@
       "permitted_dof": "1 AXIAL TRANSLATION WITH PARENT PIN",
       "state_membership": "BOTH",
       "notes": "",
+      "display_name": "CAPTIVE_CRESCENT_RETAINER_FOR_TRANSPORT-INHIBIT_PIN_SS_01",
+      "display_parent_path": "Arm_Activation_Powertrain_Assembly/Arm_Deployment_Assembly_01",
       "transform_matrix_3x4": [
         [
           1.0,
@@ -5651,6 +6412,8 @@
       "permitted_dof": "1 TRANSLATION",
       "state_membership": "BOTH",
       "notes": "",
+      "display_name": "SPRING-DRIVEN_POSITIVE_DEPLOYED_LOCK_DOG_SS_01",
+      "display_parent_path": "Arm_Activation_Powertrain_Assembly/Arm_Deployment_Assembly_01",
       "transform_matrix_3x4": [
         [
           0.17364817766693041,
@@ -5692,6 +6455,8 @@
       "permitted_dof": "AXIAL COMPRESSION",
       "state_membership": "BOTH",
       "notes": "",
+      "display_name": "CAPTIVE_LONG-STROKE_AUTOMATIC-LOCK_COMPRESSION_SPRING_SS_01",
+      "display_parent_path": "Arm_Activation_Powertrain_Assembly/Arm_Deployment_Assembly_01",
       "transform_matrix_3x4": [
         [
           0.17364817766693041,
@@ -5733,6 +6498,8 @@
       "permitted_dof": "0",
       "state_membership": "BOTH",
       "notes": "",
+      "display_name": "PRESS-FIT_LOCK_GUIDE_OUTER_RETAINER_BUSHING_PEEK_01",
+      "display_parent_path": "Arm_Activation_Powertrain_Assembly/Arm_Deployment_Assembly_01",
       "transform_matrix_3x4": [
         [
           0.17364817766693041,
@@ -5774,6 +6541,8 @@
       "permitted_dof": "1 ROTATION ABOUT 8 MM PIVOT",
       "state_membership": "BOTH",
       "notes": "",
+      "display_name": "Arm_Blade_TI_02",
+      "display_parent_path": "Arm_Activation_Powertrain_Assembly/Arm_Deployment_Assembly_02",
       "transform_matrix_3x4": [
         [
           -0.4999999999999998,
@@ -5815,6 +6584,8 @@
       "permitted_dof": "0",
       "state_membership": "BOTH",
       "notes": "",
+      "display_name": "Pivot_Carrier_TI_02",
+      "display_parent_path": "Arm_Activation_Powertrain_Assembly/Arm_Deployment_Assembly_02",
       "transform_matrix_3x4": [
         [
           -0.4999999999999998,
@@ -5856,6 +6627,8 @@
       "permitted_dof": "0",
       "state_membership": "BOTH",
       "notes": "",
+      "display_name": "8_MM_CAPTIVE_SHOULDER_PIVOT_PIN_WITH_EXTERNAL_GROOVE_SS_02",
+      "display_parent_path": "Arm_Activation_Powertrain_Assembly/Arm_Deployment_Assembly_02",
       "transform_matrix_3x4": [
         [
           -0.4999999999999998,
@@ -5897,6 +6670,8 @@
       "permitted_dof": "0",
       "state_membership": "BOTH",
       "notes": "",
+      "display_name": "8_MM_PEEK-LINED_PIVOT_BUSHING_PEEK_03",
+      "display_parent_path": "Arm_Activation_Powertrain_Assembly/Arm_Deployment_Assembly_02",
       "transform_matrix_3x4": [
         [
           -0.4999999999999998,
@@ -5938,6 +6713,8 @@
       "permitted_dof": "0",
       "state_membership": "BOTH",
       "notes": "",
+      "display_name": "8_MM_PEEK-LINED_PIVOT_BUSHING_PEEK_04",
+      "display_parent_path": "Arm_Activation_Powertrain_Assembly/Arm_Deployment_Assembly_02",
       "transform_matrix_3x4": [
         [
           -0.4999999999999998,
@@ -5979,6 +6756,8 @@
       "permitted_dof": "0",
       "state_membership": "BOTH",
       "notes": "",
+      "display_name": "8_MM_PEEK_THRUST_WASHER_PEEK_03",
+      "display_parent_path": "Arm_Activation_Powertrain_Assembly/Arm_Deployment_Assembly_02",
       "transform_matrix_3x4": [
         [
           -0.4999999999999998,
@@ -6020,6 +6799,8 @@
       "permitted_dof": "0",
       "state_membership": "BOTH",
       "notes": "",
+      "display_name": "8_MM_PEEK_THRUST_WASHER_PEEK_04",
+      "display_parent_path": "Arm_Activation_Powertrain_Assembly/Arm_Deployment_Assembly_02",
       "transform_matrix_3x4": [
         [
           -0.4999999999999998,
@@ -6061,6 +6842,8 @@
       "permitted_dof": "0",
       "state_membership": "BOTH",
       "notes": "",
+      "display_name": "8_MM_EXTERNAL_SPIRAL_PIVOT_RETAINER_SS_02",
+      "display_parent_path": "Arm_Activation_Powertrain_Assembly/Arm_Deployment_Assembly_02",
       "transform_matrix_3x4": [
         [
           -0.4999999999999998,
@@ -6102,6 +6885,8 @@
       "permitted_dof": "PLANAR FOUR-BAR",
       "state_membership": "BOTH",
       "notes": "",
+      "display_name": "19.950_MM_CENTER-DISTANCE_REAMED_SHORT_LINK_SS_03",
+      "display_parent_path": "Arm_Activation_Powertrain_Assembly/Arm_Deployment_Assembly_02",
       "transform_matrix_3x4": [
         [
           -0.150375939849624,
@@ -6143,6 +6928,8 @@
       "permitted_dof": "PLANAR FOUR-BAR",
       "state_membership": "BOTH",
       "notes": "",
+      "display_name": "19.950_MM_CENTER-DISTANCE_REAMED_SHORT_LINK_SS_04",
+      "display_parent_path": "Arm_Activation_Powertrain_Assembly/Arm_Deployment_Assembly_02",
       "transform_matrix_3x4": [
         [
           -0.150375939849624,
@@ -6184,6 +6971,8 @@
       "permitted_dof": "0",
       "state_membership": "BOTH",
       "notes": "",
+      "display_name": "4_MM_FULL-SPAN_LINK_PIN_WITH_DC-4SS_RETAINER_GROOVE_SS_03",
+      "display_parent_path": "Arm_Activation_Powertrain_Assembly/Arm_Deployment_Assembly_02",
       "transform_matrix_3x4": [
         [
           -0.4999999999999998,
@@ -6225,6 +7014,8 @@
       "permitted_dof": "0",
       "state_membership": "BOTH",
       "notes": "",
+      "display_name": "Rotor_Clip_Retaining_Ring_DC-4SS_03",
+      "display_parent_path": "Arm_Activation_Powertrain_Assembly/Arm_Deployment_Assembly_02",
       "transform_matrix_3x4": [
         [
           -0.4999999999999998,
@@ -6266,6 +7057,8 @@
       "permitted_dof": "0",
       "state_membership": "BOTH",
       "notes": "",
+      "display_name": "4_MM_FULL-SPAN_LINK_PIN_WITH_DC-4SS_RETAINER_GROOVE_SS_04",
+      "display_parent_path": "Arm_Activation_Powertrain_Assembly/Arm_Deployment_Assembly_02",
       "transform_matrix_3x4": [
         [
           -0.4999999999999998,
@@ -6307,6 +7100,8 @@
       "permitted_dof": "0",
       "state_membership": "BOTH",
       "notes": "",
+      "display_name": "Rotor_Clip_Retaining_Ring_DC-4SS_04",
+      "display_parent_path": "Arm_Activation_Powertrain_Assembly/Arm_Deployment_Assembly_02",
       "transform_matrix_3x4": [
         [
           -0.4999999999999998,
@@ -6348,6 +7143,8 @@
       "permitted_dof": "0",
       "state_membership": "BOTH",
       "notes": "",
+      "display_name": "REPLACEABLE_ARM_STOP_AND_AUTOMATIC-LOCK_STRIKE_SS_02",
+      "display_parent_path": "Arm_Activation_Powertrain_Assembly/Arm_Deployment_Assembly_02",
       "transform_matrix_3x4": [
         [
           -0.4999999999999998,
@@ -6389,6 +7186,8 @@
       "permitted_dof": "0",
       "state_membership": "BOTH",
       "notes": "",
+      "display_name": "80_DEGREE_SWEPT-CLEARANCE_FIXED_STOP_WITH_CONTROLLED_AUTOMATIC-LOCK_BUSHING_SEAT_SS_02",
+      "display_parent_path": "Arm_Activation_Powertrain_Assembly/Arm_Deployment_Assembly_02",
       "transform_matrix_3x4": [
         [
           -0.08682408883346517,
@@ -6430,6 +7229,8 @@
       "permitted_dof": "1 RADIAL TRANSLATION",
       "state_membership": "BOTH",
       "notes": "",
+      "display_name": "CAPTIVE_RADIAL_STOWED-RETENTION_DOG_WITH_TRANSPORT-INHIBIT_BORE_SS_02",
+      "display_parent_path": "Arm_Activation_Powertrain_Assembly/Arm_Deployment_Assembly_02",
       "transform_matrix_3x4": [
         [
           -0.4999999999999998,
@@ -6471,6 +7272,8 @@
       "permitted_dof": "0",
       "state_membership": "BOTH",
       "notes": "",
+      "display_name": "FULL-STROKE_AFT-RING-MOUNTED_STOW-DOG_U-GUIDE_SS_02",
+      "display_parent_path": "Arm_Activation_Powertrain_Assembly/Arm_Deployment_Assembly_02",
       "transform_matrix_3x4": [
         [
           -0.4999999999999998,
@@ -6512,6 +7315,8 @@
       "permitted_dof": "AXIAL COMPRESSION",
       "state_membership": "BOTH",
       "notes": "",
+      "display_name": "CAPTIVE_STOW-DOG_RADIAL_RETURN_SPRING_SS_02",
+      "display_parent_path": "Arm_Activation_Powertrain_Assembly/Arm_Deployment_Assembly_02",
       "transform_matrix_3x4": [
         [
           -5.55111512312578e-17,
@@ -6553,6 +7358,8 @@
       "permitted_dof": "1 AXIAL TRANSLATION",
       "state_membership": "BOTH",
       "notes": "",
+      "display_name": "WITHDRAWABLE_HEADED_TRANSPORT-INHIBIT_PIN_SS_02",
+      "display_parent_path": "Arm_Activation_Powertrain_Assembly/Arm_Deployment_Assembly_02",
       "transform_matrix_3x4": [
         [
           -0.4999999999999998,
@@ -6594,6 +7401,8 @@
       "permitted_dof": "1 AXIAL TRANSLATION WITH PARENT PIN",
       "state_membership": "BOTH",
       "notes": "",
+      "display_name": "CAPTIVE_CRESCENT_RETAINER_FOR_TRANSPORT-INHIBIT_PIN_SS_02",
+      "display_parent_path": "Arm_Activation_Powertrain_Assembly/Arm_Deployment_Assembly_02",
       "transform_matrix_3x4": [
         [
           -0.4999999999999998,
@@ -6635,6 +7444,8 @@
       "permitted_dof": "1 TRANSLATION",
       "state_membership": "BOTH",
       "notes": "",
+      "display_name": "SPRING-DRIVEN_POSITIVE_DEPLOYED_LOCK_DOG_SS_02",
+      "display_parent_path": "Arm_Activation_Powertrain_Assembly/Arm_Deployment_Assembly_02",
       "transform_matrix_3x4": [
         [
           -0.08682408883346517,
@@ -6676,6 +7487,8 @@
       "permitted_dof": "AXIAL COMPRESSION",
       "state_membership": "BOTH",
       "notes": "",
+      "display_name": "CAPTIVE_LONG-STROKE_AUTOMATIC-LOCK_COMPRESSION_SPRING_SS_02",
+      "display_parent_path": "Arm_Activation_Powertrain_Assembly/Arm_Deployment_Assembly_02",
       "transform_matrix_3x4": [
         [
           -0.08682408883346517,
@@ -6717,6 +7530,8 @@
       "permitted_dof": "0",
       "state_membership": "BOTH",
       "notes": "",
+      "display_name": "PRESS-FIT_LOCK_GUIDE_OUTER_RETAINER_BUSHING_PEEK_02",
+      "display_parent_path": "Arm_Activation_Powertrain_Assembly/Arm_Deployment_Assembly_02",
       "transform_matrix_3x4": [
         [
           -0.08682408883346517,
@@ -6758,6 +7573,8 @@
       "permitted_dof": "1 ROTATION ABOUT 8 MM PIVOT",
       "state_membership": "BOTH",
       "notes": "",
+      "display_name": "Arm_Blade_TI_03",
+      "display_parent_path": "Arm_Activation_Powertrain_Assembly/Arm_Deployment_Assembly_03",
       "transform_matrix_3x4": [
         [
           -0.5000000000000004,
@@ -6799,6 +7616,8 @@
       "permitted_dof": "0",
       "state_membership": "BOTH",
       "notes": "",
+      "display_name": "Pivot_Carrier_TI_03",
+      "display_parent_path": "Arm_Activation_Powertrain_Assembly/Arm_Deployment_Assembly_03",
       "transform_matrix_3x4": [
         [
           -0.5000000000000004,
@@ -6840,6 +7659,8 @@
       "permitted_dof": "0",
       "state_membership": "BOTH",
       "notes": "",
+      "display_name": "8_MM_CAPTIVE_SHOULDER_PIVOT_PIN_WITH_EXTERNAL_GROOVE_SS_03",
+      "display_parent_path": "Arm_Activation_Powertrain_Assembly/Arm_Deployment_Assembly_03",
       "transform_matrix_3x4": [
         [
           -0.5000000000000004,
@@ -6881,6 +7702,8 @@
       "permitted_dof": "0",
       "state_membership": "BOTH",
       "notes": "",
+      "display_name": "8_MM_PEEK-LINED_PIVOT_BUSHING_PEEK_05",
+      "display_parent_path": "Arm_Activation_Powertrain_Assembly/Arm_Deployment_Assembly_03",
       "transform_matrix_3x4": [
         [
           -0.5000000000000004,
@@ -6922,6 +7745,8 @@
       "permitted_dof": "0",
       "state_membership": "BOTH",
       "notes": "",
+      "display_name": "8_MM_PEEK-LINED_PIVOT_BUSHING_PEEK_06",
+      "display_parent_path": "Arm_Activation_Powertrain_Assembly/Arm_Deployment_Assembly_03",
       "transform_matrix_3x4": [
         [
           -0.5000000000000004,
@@ -6963,6 +7788,8 @@
       "permitted_dof": "0",
       "state_membership": "BOTH",
       "notes": "",
+      "display_name": "8_MM_PEEK_THRUST_WASHER_PEEK_05",
+      "display_parent_path": "Arm_Activation_Powertrain_Assembly/Arm_Deployment_Assembly_03",
       "transform_matrix_3x4": [
         [
           -0.5000000000000004,
@@ -7004,6 +7831,8 @@
       "permitted_dof": "0",
       "state_membership": "BOTH",
       "notes": "",
+      "display_name": "8_MM_PEEK_THRUST_WASHER_PEEK_06",
+      "display_parent_path": "Arm_Activation_Powertrain_Assembly/Arm_Deployment_Assembly_03",
       "transform_matrix_3x4": [
         [
           -0.5000000000000004,
@@ -7045,6 +7874,8 @@
       "permitted_dof": "0",
       "state_membership": "BOTH",
       "notes": "",
+      "display_name": "8_MM_EXTERNAL_SPIRAL_PIVOT_RETAINER_SS_03",
+      "display_parent_path": "Arm_Activation_Powertrain_Assembly/Arm_Deployment_Assembly_03",
       "transform_matrix_3x4": [
         [
           -0.5000000000000004,
@@ -7086,6 +7917,8 @@
       "permitted_dof": "PLANAR FOUR-BAR",
       "state_membership": "BOTH",
       "notes": "",
+      "display_name": "19.950_MM_CENTER-DISTANCE_REAMED_SHORT_LINK_SS_05",
+      "display_parent_path": "Arm_Activation_Powertrain_Assembly/Arm_Deployment_Assembly_03",
       "transform_matrix_3x4": [
         [
           -0.1503759398496242,
@@ -7127,6 +7960,8 @@
       "permitted_dof": "PLANAR FOUR-BAR",
       "state_membership": "BOTH",
       "notes": "",
+      "display_name": "19.950_MM_CENTER-DISTANCE_REAMED_SHORT_LINK_SS_06",
+      "display_parent_path": "Arm_Activation_Powertrain_Assembly/Arm_Deployment_Assembly_03",
       "transform_matrix_3x4": [
         [
           -0.1503759398496242,
@@ -7168,6 +8003,8 @@
       "permitted_dof": "0",
       "state_membership": "BOTH",
       "notes": "",
+      "display_name": "4_MM_FULL-SPAN_LINK_PIN_WITH_DC-4SS_RETAINER_GROOVE_SS_05",
+      "display_parent_path": "Arm_Activation_Powertrain_Assembly/Arm_Deployment_Assembly_03",
       "transform_matrix_3x4": [
         [
           -0.5000000000000004,
@@ -7209,6 +8046,8 @@
       "permitted_dof": "0",
       "state_membership": "BOTH",
       "notes": "",
+      "display_name": "Rotor_Clip_Retaining_Ring_DC-4SS_05",
+      "display_parent_path": "Arm_Activation_Powertrain_Assembly/Arm_Deployment_Assembly_03",
       "transform_matrix_3x4": [
         [
           -0.5000000000000004,
@@ -7250,6 +8089,8 @@
       "permitted_dof": "0",
       "state_membership": "BOTH",
       "notes": "",
+      "display_name": "4_MM_FULL-SPAN_LINK_PIN_WITH_DC-4SS_RETAINER_GROOVE_SS_06",
+      "display_parent_path": "Arm_Activation_Powertrain_Assembly/Arm_Deployment_Assembly_03",
       "transform_matrix_3x4": [
         [
           -0.5000000000000004,
@@ -7291,6 +8132,8 @@
       "permitted_dof": "0",
       "state_membership": "BOTH",
       "notes": "",
+      "display_name": "Rotor_Clip_Retaining_Ring_DC-4SS_06",
+      "display_parent_path": "Arm_Activation_Powertrain_Assembly/Arm_Deployment_Assembly_03",
       "transform_matrix_3x4": [
         [
           -0.5000000000000004,
@@ -7332,6 +8175,8 @@
       "permitted_dof": "0",
       "state_membership": "BOTH",
       "notes": "",
+      "display_name": "REPLACEABLE_ARM_STOP_AND_AUTOMATIC-LOCK_STRIKE_SS_03",
+      "display_parent_path": "Arm_Activation_Powertrain_Assembly/Arm_Deployment_Assembly_03",
       "transform_matrix_3x4": [
         [
           -0.5000000000000004,
@@ -7373,6 +8218,8 @@
       "permitted_dof": "0",
       "state_membership": "BOTH",
       "notes": "",
+      "display_name": "80_DEGREE_SWEPT-CLEARANCE_FIXED_STOP_WITH_CONTROLLED_AUTOMATIC-LOCK_BUSHING_SEAT_SS_03",
+      "display_parent_path": "Arm_Activation_Powertrain_Assembly/Arm_Deployment_Assembly_03",
       "transform_matrix_3x4": [
         [
           -0.08682408883346529,
@@ -7414,6 +8261,8 @@
       "permitted_dof": "1 RADIAL TRANSLATION",
       "state_membership": "BOTH",
       "notes": "",
+      "display_name": "CAPTIVE_RADIAL_STOWED-RETENTION_DOG_WITH_TRANSPORT-INHIBIT_BORE_SS_03",
+      "display_parent_path": "Arm_Activation_Powertrain_Assembly/Arm_Deployment_Assembly_03",
       "transform_matrix_3x4": [
         [
           -0.5000000000000004,
@@ -7455,6 +8304,8 @@
       "permitted_dof": "0",
       "state_membership": "BOTH",
       "notes": "",
+      "display_name": "FULL-STROKE_AFT-RING-MOUNTED_STOW-DOG_U-GUIDE_SS_03",
+      "display_parent_path": "Arm_Activation_Powertrain_Assembly/Arm_Deployment_Assembly_03",
       "transform_matrix_3x4": [
         [
           -0.5000000000000004,
@@ -7496,6 +8347,8 @@
       "permitted_dof": "AXIAL COMPRESSION",
       "state_membership": "BOTH",
       "notes": "",
+      "display_name": "CAPTIVE_STOW-DOG_RADIAL_RETURN_SPRING_SS_03",
+      "display_parent_path": "Arm_Activation_Powertrain_Assembly/Arm_Deployment_Assembly_03",
       "transform_matrix_3x4": [
         [
           -5.551115123125788e-17,
@@ -7537,6 +8390,8 @@
       "permitted_dof": "1 AXIAL TRANSLATION",
       "state_membership": "BOTH",
       "notes": "",
+      "display_name": "WITHDRAWABLE_HEADED_TRANSPORT-INHIBIT_PIN_SS_03",
+      "display_parent_path": "Arm_Activation_Powertrain_Assembly/Arm_Deployment_Assembly_03",
       "transform_matrix_3x4": [
         [
           -0.5000000000000004,
@@ -7578,6 +8433,8 @@
       "permitted_dof": "1 AXIAL TRANSLATION WITH PARENT PIN",
       "state_membership": "BOTH",
       "notes": "",
+      "display_name": "CAPTIVE_CRESCENT_RETAINER_FOR_TRANSPORT-INHIBIT_PIN_SS_03",
+      "display_parent_path": "Arm_Activation_Powertrain_Assembly/Arm_Deployment_Assembly_03",
       "transform_matrix_3x4": [
         [
           -0.5000000000000004,
@@ -7619,6 +8476,8 @@
       "permitted_dof": "1 TRANSLATION",
       "state_membership": "BOTH",
       "notes": "",
+      "display_name": "SPRING-DRIVEN_POSITIVE_DEPLOYED_LOCK_DOG_SS_03",
+      "display_parent_path": "Arm_Activation_Powertrain_Assembly/Arm_Deployment_Assembly_03",
       "transform_matrix_3x4": [
         [
           -0.08682408883346529,
@@ -7660,6 +8519,8 @@
       "permitted_dof": "AXIAL COMPRESSION",
       "state_membership": "BOTH",
       "notes": "",
+      "display_name": "CAPTIVE_LONG-STROKE_AUTOMATIC-LOCK_COMPRESSION_SPRING_SS_03",
+      "display_parent_path": "Arm_Activation_Powertrain_Assembly/Arm_Deployment_Assembly_03",
       "transform_matrix_3x4": [
         [
           -0.08682408883346529,
@@ -7701,6 +8562,8 @@
       "permitted_dof": "0",
       "state_membership": "BOTH",
       "notes": "",
+      "display_name": "PRESS-FIT_LOCK_GUIDE_OUTER_RETAINER_BUSHING_PEEK_03",
+      "display_parent_path": "Arm_Activation_Powertrain_Assembly/Arm_Deployment_Assembly_03",
       "transform_matrix_3x4": [
         [
           -0.08682408883346529,
@@ -7742,6 +8605,8 @@
       "permitted_dof": "1 AXIAL TRANSLATION",
       "state_membership": "BOTH",
       "notes": "",
+      "display_name": "Common_Crosshead_SS",
+      "display_parent_path": "Arm_Activation_Powertrain_Assembly",
       "transform_matrix_3x4": [
         [
           1.0,
@@ -7783,6 +8648,8 @@
       "permitted_dof": "0",
       "state_membership": "BOTH",
       "notes": "",
+      "display_name": "CENTRAL_DLC_CROSSHEAD_GUIDE_SHAFT_WITH_SPIDER_SHOULDER_SS",
+      "display_parent_path": "Arm_Activation_Powertrain_Assembly",
       "transform_matrix_3x4": [
         [
           1.0,
@@ -7824,6 +8691,8 @@
       "permitted_dof": "0",
       "state_membership": "BOTH",
       "notes": "",
+      "display_name": "THREE-SPOKE_CROSSHEAD-GUIDE_FORWARD_MOUNT_TI",
+      "display_parent_path": "Arm_Activation_Powertrain_Assembly",
       "transform_matrix_3x4": [
         [
           1.0,
@@ -7865,6 +8734,8 @@
       "permitted_dof": "AXIAL COMPRESSION",
       "state_membership": "BOTH",
       "notes": "",
+      "display_name": "CONTROLLED_16_N_MM_GUIDED_BACKUP_COMPRESSION_SPRING_SS",
+      "display_parent_path": "Arm_Activation_Powertrain_Assembly",
       "transform_matrix_3x4": [
         [
           0.5000000000000001,
@@ -7906,6 +8777,8 @@
       "permitted_dof": "0",
       "state_membership": "BOTH",
       "notes": "",
+      "display_name": "BACKUP_SPRING_AFT_FIXED_SEAT_WITH_LONGERON_MOUNTING_TONGUE_TI",
+      "display_parent_path": "Arm_Activation_Powertrain_Assembly",
       "transform_matrix_3x4": [
         [
           0.5000000000000001,
@@ -7947,6 +8820,8 @@
       "permitted_dof": "0",
       "state_membership": "BOTH",
       "notes": "",
+      "display_name": "BACKUP_SPRING_CROSSHEAD_SEAT_WITH_PILOTED_PERMANENT_LAND_SS",
+      "display_parent_path": "Arm_Activation_Powertrain_Assembly",
       "transform_matrix_3x4": [
         [
           0.5000000000000001,
@@ -7988,6 +8863,8 @@
       "permitted_dof": "0",
       "state_membership": "BOTH",
       "notes": "",
+      "display_name": "BACKUP_SPRING_DLC_GUIDE_SHAFT_WITH_TWO_FIXED_SUPPORT_SHOULDERS_SS",
+      "display_parent_path": "Arm_Activation_Powertrain_Assembly",
       "transform_matrix_3x4": [
         [
           0.5000000000000001,
@@ -8029,6 +8906,8 @@
       "permitted_dof": "0",
       "state_membership": "BOTH",
       "notes": "",
+      "display_name": "ACE_Gas_Spring_GS-19-50-V4A-B8-B8",
+      "display_parent_path": "Arm_Activation_Powertrain_Assembly",
       "transform_matrix_3x4": [
         [
           0.5000000000000001,
@@ -8070,6 +8949,8 @@
       "permitted_dof": "1 AXIAL TRANSLATION",
       "state_membership": "BOTH",
       "notes": "",
+      "display_name": "ACE_Gas_Spring_Rod_GS-19-50-V4A-B8-B8",
+      "display_parent_path": "Arm_Activation_Powertrain_Assembly",
       "transform_matrix_3x4": [
         [
           0.5000000000000001,
@@ -8111,6 +8992,8 @@
       "permitted_dof": "0",
       "state_membership": "BOTH",
       "notes": "",
+      "display_name": "ACE_Hydraulic_Damper_HBD-15-25-AA-P",
+      "display_parent_path": "Arm_Activation_Powertrain_Assembly",
       "transform_matrix_3x4": [
         [
           -1.0,
@@ -8152,6 +9035,8 @@
       "permitted_dof": "1 AXIAL TRANSLATION",
       "state_membership": "BOTH",
       "notes": "",
+      "display_name": "ACE_Hydraulic_Damper_Rod_HBD-15-25-AA-P",
+      "display_parent_path": "Arm_Activation_Powertrain_Assembly",
       "transform_matrix_3x4": [
         [
           -1.0,
@@ -8193,6 +9078,8 @@
       "permitted_dof": "0",
       "state_membership": "BOTH",
       "notes": "",
+      "display_name": "DOUBLE-SHEAR_GS19_ANCHOR_YOKE_WITH_CONFORMAL_LONGERON_TONGUE_TI",
+      "display_parent_path": "Arm_Activation_Powertrain_Assembly",
       "transform_matrix_3x4": [
         [
           0.5000000000000001,
@@ -8234,6 +9121,8 @@
       "permitted_dof": "0",
       "state_membership": "BOTH",
       "notes": "",
+      "display_name": "4_MM_CAPTIVE_ACTUATOR_CLEVIS_PIN_SS_01",
+      "display_parent_path": "Arm_Activation_Powertrain_Assembly",
       "transform_matrix_3x4": [
         [
           0.5000000000000001,
@@ -8275,6 +9164,8 @@
       "permitted_dof": "0",
       "state_membership": "BOTH",
       "notes": "",
+      "display_name": "4_MM_ACTUATOR_PIN_RETAINER_SS_01",
+      "display_parent_path": "Arm_Activation_Powertrain_Assembly",
       "transform_matrix_3x4": [
         [
           0.5000000000000001,
@@ -8316,6 +9207,8 @@
       "permitted_dof": "0",
       "state_membership": "BOTH",
       "notes": "",
+      "display_name": "4_MM_CAPTIVE_ACTUATOR_CLEVIS_PIN_SS_02",
+      "display_parent_path": "Arm_Activation_Powertrain_Assembly",
       "transform_matrix_3x4": [
         [
           0.5000000000000001,
@@ -8357,6 +9250,8 @@
       "permitted_dof": "0",
       "state_membership": "BOTH",
       "notes": "",
+      "display_name": "4_MM_ACTUATOR_PIN_RETAINER_SS_02",
+      "display_parent_path": "Arm_Activation_Powertrain_Assembly",
       "transform_matrix_3x4": [
         [
           0.5000000000000001,
@@ -8398,6 +9293,8 @@
       "permitted_dof": "0",
       "state_membership": "BOTH",
       "notes": "",
+      "display_name": "DOUBLE-SHEAR_HBD_ANCHOR_YOKE_WITH_CONFORMAL_LONGERON_TONGUE_TI",
+      "display_parent_path": "Arm_Activation_Powertrain_Assembly",
       "transform_matrix_3x4": [
         [
           -1.0,
@@ -8439,6 +9336,8 @@
       "permitted_dof": "0",
       "state_membership": "BOTH",
       "notes": "",
+      "display_name": "4_MM_CAPTIVE_ACTUATOR_CLEVIS_PIN_SS_03",
+      "display_parent_path": "Arm_Activation_Powertrain_Assembly",
       "transform_matrix_3x4": [
         [
           -1.0,
@@ -8480,6 +9379,8 @@
       "permitted_dof": "0",
       "state_membership": "BOTH",
       "notes": "",
+      "display_name": "4_MM_ACTUATOR_PIN_RETAINER_SS_03",
+      "display_parent_path": "Arm_Activation_Powertrain_Assembly",
       "transform_matrix_3x4": [
         [
           -1.0,
@@ -8521,6 +9422,8 @@
       "permitted_dof": "0",
       "state_membership": "BOTH",
       "notes": "",
+      "display_name": "4_MM_CAPTIVE_ACTUATOR_CLEVIS_PIN_SS_04",
+      "display_parent_path": "Arm_Activation_Powertrain_Assembly",
       "transform_matrix_3x4": [
         [
           -1.0,
@@ -8562,6 +9465,8 @@
       "permitted_dof": "0",
       "state_membership": "BOTH",
       "notes": "",
+      "display_name": "4_MM_ACTUATOR_PIN_RETAINER_SS_04",
+      "display_parent_path": "Arm_Activation_Powertrain_Assembly",
       "transform_matrix_3x4": [
         [
           -1.0,
@@ -8603,6 +9508,8 @@
       "permitted_dof": "0",
       "state_membership": "BOTH",
       "notes": "Non-identity placement carries the route-local origin to its first modeled port face.",
+      "display_name": "Gas_Main_SS",
+      "display_parent_path": "Arm_Activation_Powertrain_Assembly",
       "transform_matrix_3x4": [
         [
           1.0,
@@ -8624,14 +9531,14 @@
         ]
       ],
       "identity_transform": false,
-      "global_volume_mm3": 1690.2808860492232,
+      "global_volume_mm3": 1976.4431351897524,
       "global_bbox_mm": {
-        "xmin": -1.0,
-        "xmax": 3.283480459988643,
-        "ymin": 11.0,
-        "ymax": 27.100301090003732,
-        "zmin": 829.6837722339832,
-        "zmax": 1720.0099995000376
+        "xmin": -1.036728870149635,
+        "xmax": 3.8286532831642237,
+        "ymin": -20.873934314020346,
+        "ymax": 38.98075400431522,
+        "zmin": 848.0238665424571,
+        "zmax": 1720.0614903096077
       }
     },
     {
@@ -8644,18 +9551,20 @@
       "permitted_dof": "0",
       "state_membership": "BOTH",
       "notes": "Non-identity placement carries the route-local origin to its first modeled port face.",
+      "display_name": "Pilot_Line_SS",
+      "display_parent_path": "Arm_Activation_Powertrain_Assembly",
       "transform_matrix_3x4": [
         [
           1.0,
           0.0,
           0.0,
-          5.629165124598849
+          5.324488287878445
         ],
         [
           0.0,
           1.0,
           0.0,
-          -3.2500000000000027
+          -3.7282468362818024
         ],
         [
           0.0,
@@ -8665,14 +9574,14 @@
         ]
       ],
       "identity_transform": false,
-      "global_volume_mm3": 1061.9767111202639,
+      "global_volume_mm3": 1046.2964076909345,
       "global_bbox_mm": {
-        "xmin": -0.6806275488525294,
-        "xmax": 22.21178356037158,
-        "ymin": -21.76850150335542,
-        "ymax": -2.6004809471616737,
-        "zmin": 849.25,
-        "zmax": 1754.3135211750875
+        "xmin": -0.6601098943195455,
+        "xmax": 22.21178366037158,
+        "ymin": -21.69581289126962,
+        "ymax": -3.1138828030650587,
+        "zmin": 869.2499999,
+        "zmax": 1754.4259164281523
       }
     },
     {
@@ -8685,6 +9594,8 @@
       "permitted_dof": "CONTROLLED FLEXURE",
       "state_membership": "BOTH",
       "notes": "Non-identity placement carries the route-local origin to its first modeled port face.",
+      "display_name": "Bowden_Sheath",
+      "display_parent_path": "Arm_Activation_Powertrain_Assembly",
       "transform_matrix_3x4": [
         [
           1.0,
@@ -8706,14 +9617,14 @@
         ]
       ],
       "identity_transform": false,
-      "global_volume_mm3": 1766.7248807591695,
+      "global_volume_mm3": 1830.580450419496,
       "global_bbox_mm": {
-        "xmin": -24.545264020360232,
-        "xmax": 0.8,
-        "ymin": -18.1,
-        "ymax": 0.8,
+        "xmin": -24.54526412036023,
+        "xmax": 0.8000001000000002,
+        "ymin": -18.82706282882655,
+        "ymax": 0.8000001000000002,
         "zmin": 557.5,
-        "zmax": 1745.8
+        "zmax": 1746.0699881577982
       }
     },
     {
@@ -8726,6 +9637,8 @@
       "permitted_dof": "CONTROLLED FLEXURE",
       "state_membership": "BOTH",
       "notes": "Non-identity placement carries the route-local origin to its first modeled port face.",
+      "display_name": "Bowden_Wire_SS",
+      "display_parent_path": "Arm_Activation_Powertrain_Assembly",
       "transform_matrix_3x4": [
         [
           1.0,
@@ -8747,14 +9660,14 @@
         ]
       ],
       "identity_transform": false,
-      "global_volume_mm3": 343.3789675689038,
+      "global_volume_mm3": 320.38077706912594,
       "global_bbox_mm": {
-        "xmin": -24.045264020360232,
-        "xmax": 0.3,
-        "ymin": -18.1,
-        "ymax": 0.3,
-        "zmin": 556.8,
-        "zmax": 1745.3
+        "xmin": -85.8088691202266,
+        "xmax": 0.7923463553149588,
+        "ymin": -38.76805183131731,
+        "ymax": 0.5295851504212512,
+        "zmin": 556.7115518640285,
+        "zmax": 1745.5858580312383
       }
     },
     {
@@ -8767,6 +9680,8 @@
       "permitted_dof": "0",
       "state_membership": "BOTH",
       "notes": "",
+      "display_name": "GAS_MAIN_TWO-COLLAR_BULKHEAD_GLAND_SS_02",
+      "display_parent_path": "Arm_Activation_Powertrain_Assembly",
       "transform_matrix_3x4": [
         [
           1.0,
@@ -8808,6 +9723,8 @@
       "permitted_dof": "0",
       "state_membership": "BOTH",
       "notes": "",
+      "display_name": "GAS_MAIN_TWO-COLLAR_BULKHEAD_GLAND_SS_01",
+      "display_parent_path": "Arm_Activation_Powertrain_Assembly",
       "transform_matrix_3x4": [
         [
           1.0,
@@ -8849,6 +9766,8 @@
       "permitted_dof": "0",
       "state_membership": "BOTH",
       "notes": "",
+      "display_name": "PILOT_LINE_TWO-COLLAR_BULKHEAD_GLAND_SS_02",
+      "display_parent_path": "Arm_Activation_Powertrain_Assembly",
       "transform_matrix_3x4": [
         [
           1.0,
@@ -8890,6 +9809,8 @@
       "permitted_dof": "0",
       "state_membership": "BOTH",
       "notes": "",
+      "display_name": "PILOT_LINE_TWO-COLLAR_BULKHEAD_GLAND_SS_01",
+      "display_parent_path": "Arm_Activation_Powertrain_Assembly",
       "transform_matrix_3x4": [
         [
           1.0,
@@ -8931,6 +9852,8 @@
       "permitted_dof": "0",
       "state_membership": "BOTH",
       "notes": "",
+      "display_name": "BOWDEN_SHEATH_TWO-COLLAR_BULKHEAD_GLAND_SS_02",
+      "display_parent_path": "Arm_Activation_Powertrain_Assembly",
       "transform_matrix_3x4": [
         [
           1.0,
@@ -8972,6 +9895,8 @@
       "permitted_dof": "0",
       "state_membership": "BOTH",
       "notes": "",
+      "display_name": "BOWDEN_SHEATH_TWO-COLLAR_BULKHEAD_GLAND_SS_01",
+      "display_parent_path": "Arm_Activation_Powertrain_Assembly",
       "transform_matrix_3x4": [
         [
           1.0,
@@ -9013,6 +9938,8 @@
       "permitted_dof": "0",
       "state_membership": "BOTH",
       "notes": "",
+      "display_name": "SPLIT_PEEK_GUIDE_LINER_FOR_GAS_MAIN_LONG_SPAN_PEEK",
+      "display_parent_path": "Arm_Activation_Powertrain_Assembly",
       "transform_matrix_3x4": [
         [
           0.5000000000000001,
@@ -9054,6 +9981,8 @@
       "permitted_dof": "0",
       "state_membership": "BOTH",
       "notes": "",
+      "display_name": "SPLIT_PEEK_GUIDE_LINER_FOR_PILOT_LINE_LONG_SPAN_PEEK",
+      "display_parent_path": "Arm_Activation_Powertrain_Assembly",
       "transform_matrix_3x4": [
         [
           0.5000000000000001,
@@ -9095,6 +10024,8 @@
       "permitted_dof": "0",
       "state_membership": "BOTH",
       "notes": "",
+      "display_name": "SPLIT_PEEK_GUIDE_LINER_FOR_BOWDEN_SHEATH_LONG_SPAN_PEEK",
+      "display_parent_path": "Arm_Activation_Powertrain_Assembly",
       "transform_matrix_3x4": [
         [
           -1.0,
@@ -9136,6 +10067,8 @@
       "permitted_dof": "0",
       "state_membership": "BOTH",
       "notes": "",
+      "display_name": "FULL-FLOW_TERMINAL_MANIFOLD_WITH_BRAZED_GAS_PORT_SS",
+      "display_parent_path": "Arm_Activation_Powertrain_Assembly",
       "transform_matrix_3x4": [
         [
           1.0,
@@ -9177,6 +10110,8 @@
       "permitted_dof": "0",
       "state_membership": "BOTH",
       "notes": "",
+      "display_name": "FULL-FLOW_MANIFOLD_RADIAL_SUPPORT_BRACKET_TI",
+      "display_parent_path": "Arm_Activation_Powertrain_Assembly",
       "transform_matrix_3x4": [
         [
           0.08715574274765814,
@@ -9218,6 +10153,8 @@
       "permitted_dof": "0",
       "state_membership": "BOTH",
       "notes": "",
+      "display_name": "AFT_GRADE-9_SHELL_WITH_HARDPOINT_AND_HINGE_APERTURES_TI",
+      "display_parent_path": "Aft_Service_Closure_Assembly",
       "transform_matrix_3x4": [
         [
           1.0,
@@ -9259,6 +10196,8 @@
       "permitted_dof": "0",
       "state_membership": "BOTH",
       "notes": "",
+      "display_name": "AFT_STRUCTURAL_RING_WITH_CONTROLLED_ROUTE_PASSAGES_TI",
+      "display_parent_path": "Aft_Service_Closure_Assembly",
       "transform_matrix_3x4": [
         [
           1.0,
@@ -9300,6 +10239,8 @@
       "permitted_dof": "0",
       "state_membership": "BOTH",
       "notes": "",
+      "display_name": "AFT_PRIMARY_LOAD-PATH_LONGERON_TI_01",
+      "display_parent_path": "Aft_Service_Closure_Assembly",
       "transform_matrix_3x4": [
         [
           0.5000000000000001,
@@ -9341,6 +10282,8 @@
       "permitted_dof": "0",
       "state_membership": "BOTH",
       "notes": "",
+      "display_name": "AFT_PRIMARY_LOAD-PATH_LONGERON_TI_02",
+      "display_parent_path": "Aft_Service_Closure_Assembly",
       "transform_matrix_3x4": [
         [
           -1.0,
@@ -9382,6 +10325,8 @@
       "permitted_dof": "0",
       "state_membership": "BOTH",
       "notes": "",
+      "display_name": "AFT_PRIMARY_LOAD-PATH_LONGERON_TI_03",
+      "display_parent_path": "Aft_Service_Closure_Assembly",
       "transform_matrix_3x4": [
         [
           0.5000000000000001,
@@ -9423,6 +10368,8 @@
       "permitted_dof": "0",
       "state_membership": "BOTH",
       "notes": "",
+      "display_name": "SPRING_REACTION_BULKHEAD_WITH_GUIDE-RAIL_BORES_AND_PERMANENT_SHELL_LAND_TI",
+      "display_parent_path": "Aft_Service_Closure_Assembly",
       "transform_matrix_3x4": [
         [
           1.0,
@@ -9464,6 +10411,8 @@
       "permitted_dof": "0",
       "state_membership": "BOTH",
       "notes": "",
+      "display_name": "FOLLOWER_ANTI-ROTATION_GUIDE_RAIL_WITH_TWO_M3_CAPTIVE-SCREW_END_LANDS_PEEK_01",
+      "display_parent_path": "Aft_Service_Closure_Assembly",
       "transform_matrix_3x4": [
         [
           1.0,
@@ -9505,6 +10454,8 @@
       "permitted_dof": "0",
       "state_membership": "BOTH",
       "notes": "",
+      "display_name": "FOLLOWER_ANTI-ROTATION_GUIDE_RAIL_WITH_TWO_M3_CAPTIVE-SCREW_END_LANDS_PEEK_02",
+      "display_parent_path": "Aft_Service_Closure_Assembly",
       "transform_matrix_3x4": [
         [
           -0.4999999999999998,
@@ -9546,6 +10497,8 @@
       "permitted_dof": "0",
       "state_membership": "BOTH",
       "notes": "",
+      "display_name": "FOLLOWER_ANTI-ROTATION_GUIDE_RAIL_WITH_TWO_M3_CAPTIVE-SCREW_END_LANDS_PEEK_03",
+      "display_parent_path": "Aft_Service_Closure_Assembly",
       "transform_matrix_3x4": [
         [
           -0.5000000000000004,
@@ -9587,6 +10540,8 @@
       "permitted_dof": "1 AXIAL TRANSLATION 85 MM",
       "state_membership": "BOTH",
       "notes": "",
+      "display_name": "CAPTIVE_PEEK_FOLLOWER_WITH_THREE_GUIDE_SLOTS_PEEK",
+      "display_parent_path": "Aft_Service_Closure_Assembly",
       "transform_matrix_3x4": [
         [
           1.0,
@@ -9628,6 +10583,8 @@
       "permitted_dof": "AXIAL COMPRESSION",
       "state_membership": "BOTH",
       "notes": "",
+      "display_name": "CONTROLLED_LONG-STROKE_GUIDED_EJECTOR_SPRING_SS",
+      "display_parent_path": "Aft_Service_Closure_Assembly",
       "transform_matrix_3x4": [
         [
           1.0,
@@ -9669,6 +10626,8 @@
       "permitted_dof": "0",
       "state_membership": "BOTH",
       "notes": "",
+      "display_name": "BULKHEAD-MOUNTED_FIXED_TELESCOPING_SPRING_GUIDE_AND_SEAT_PEEK",
+      "display_parent_path": "Aft_Service_Closure_Assembly",
       "transform_matrix_3x4": [
         [
           1.0,
@@ -9710,6 +10669,8 @@
       "permitted_dof": "0",
       "state_membership": "BOTH",
       "notes": "",
+      "display_name": "FOLLOWER-MOUNTED_INNER_TELESCOPING_SPRING_GUIDE_SLEEVE_PEEK",
+      "display_parent_path": "Aft_Service_Closure_Assembly",
       "transform_matrix_3x4": [
         [
           1.0,
@@ -9751,6 +10712,8 @@
       "permitted_dof": "0",
       "state_membership": "BOTH",
       "notes": "",
+      "display_name": "RADIAL_FOLLOWER_LATCH_HOUSING_WITH_REAMED_SEAR_GUIDE_SS",
+      "display_parent_path": "Aft_Service_Closure_Assembly",
       "transform_matrix_3x4": [
         [
           -2.220446049250313e-16,
@@ -9792,6 +10755,8 @@
       "permitted_dof": "1 TRANSLATION",
       "state_membership": "BOTH",
       "notes": "",
+      "display_name": "CAPTIVE_RADIAL_FOLLOWER_SEAR_PLUNGER_WITH_RETAINING_RING_SS",
+      "display_parent_path": "Aft_Service_Closure_Assembly",
       "transform_matrix_3x4": [
         [
           -2.220446049250313e-16,
@@ -9833,6 +10798,8 @@
       "permitted_dof": "1 TRANSLATION WITH SEAR",
       "state_membership": "BOTH",
       "notes": "",
+      "display_name": "4_MM_SEAR_PIN_EXTERNAL_RETAINING_RING_SS",
+      "display_parent_path": "Aft_Service_Closure_Assembly",
       "transform_matrix_3x4": [
         [
           1.0,
@@ -9874,6 +10841,8 @@
       "permitted_dof": "0",
       "state_membership": "BOTH",
       "notes": "",
+      "display_name": "INTEGRAL_STRUCTURAL_RING_AND_RECOVERY_HARDPOINT_LUG_TI",
+      "display_parent_path": "Aft_Service_Closure_Assembly",
       "transform_matrix_3x4": [
         [
           1.0,
@@ -9915,6 +10884,8 @@
       "permitted_dof": "0",
       "state_membership": "BOTH",
       "notes": "",
+      "display_name": "Fixed_Hinge_Leaf_Service_Throat_TI",
+      "display_parent_path": "Aft_Service_Closure_Assembly",
       "transform_matrix_3x4": [
         [
           1.0,
@@ -9956,6 +10927,8 @@
       "permitted_dof": "1 ROTATION 0-90 DEG",
       "state_membership": "BOTH",
       "notes": "",
+      "display_name": "Moving_Hinge_Leaf_Aft_Door_TI",
+      "display_parent_path": "Aft_Service_Closure_Assembly",
       "transform_matrix_3x4": [
         [
           1.0,
@@ -9997,6 +10970,8 @@
       "permitted_dof": "0",
       "state_membership": "BOTH",
       "notes": "",
+      "display_name": "Aft_Door_Hinge_Pin_SS",
+      "display_parent_path": "Aft_Service_Closure_Assembly",
       "transform_matrix_3x4": [
         [
           1.0,
@@ -10038,6 +11013,8 @@
       "permitted_dof": "0",
       "state_membership": "BOTH",
       "notes": "",
+      "display_name": "Aft_Door_Hinge_Retainer_SS",
+      "display_parent_path": "Aft_Service_Closure_Assembly",
       "transform_matrix_3x4": [
         [
           1.0,
@@ -10079,6 +11056,8 @@
       "permitted_dof": "0",
       "state_membership": "BOTH",
       "notes": "",
+      "display_name": "JW_Winco_Ball_Plunger_GN-615.3-M3-KN-PFB_01",
+      "display_parent_path": "Aft_Service_Closure_Assembly",
       "transform_matrix_3x4": [
         [
           0.7071067811865476,
@@ -10120,6 +11099,8 @@
       "permitted_dof": "0",
       "state_membership": "BOTH",
       "notes": "",
+      "display_name": "JW_Winco_Ball_Plunger_GN-615.3-M3-KN-PFB_02",
+      "display_parent_path": "Aft_Service_Closure_Assembly",
       "transform_matrix_3x4": [
         [
           -0.7071067811865475,
@@ -10161,6 +11142,8 @@
       "permitted_dof": "0",
       "state_membership": "BOTH",
       "notes": "",
+      "display_name": "JW_Winco_Ball_Plunger_GN-615.3-M3-KN-PFB_03",
+      "display_parent_path": "Aft_Service_Closure_Assembly",
       "transform_matrix_3x4": [
         [
           -0.7071067811865477,
@@ -10202,6 +11185,8 @@
       "permitted_dof": "0",
       "state_membership": "BOTH",
       "notes": "",
+      "display_name": "JW_Winco_Ball_Plunger_GN-615.3-M3-KN-PFB_04",
+      "display_parent_path": "Aft_Service_Closure_Assembly",
       "transform_matrix_3x4": [
         [
           0.7071067811865474,
@@ -10243,6 +11228,8 @@
       "permitted_dof": "FLEXIBLE MEMBRANE",
       "state_membership": "BOTH",
       "notes": "",
+      "display_name": "60_L_BUOY_GORE_1_OF_8_TPU",
+      "display_parent_path": "Aft_Service_Closure_Assembly",
       "transform_matrix_3x4": [
         [
           1.0,
@@ -10284,6 +11271,8 @@
       "permitted_dof": "FLEXIBLE MEMBRANE",
       "state_membership": "BOTH",
       "notes": "",
+      "display_name": "60_L_BUOY_GORE_2_OF_8_TPU",
+      "display_parent_path": "Aft_Service_Closure_Assembly",
       "transform_matrix_3x4": [
         [
           1.0,
@@ -10325,6 +11314,8 @@
       "permitted_dof": "FLEXIBLE MEMBRANE",
       "state_membership": "BOTH",
       "notes": "",
+      "display_name": "60_L_BUOY_GORE_3_OF_8_TPU",
+      "display_parent_path": "Aft_Service_Closure_Assembly",
       "transform_matrix_3x4": [
         [
           1.0,
@@ -10366,6 +11357,8 @@
       "permitted_dof": "FLEXIBLE MEMBRANE",
       "state_membership": "BOTH",
       "notes": "",
+      "display_name": "60_L_BUOY_GORE_4_OF_8_TPU",
+      "display_parent_path": "Aft_Service_Closure_Assembly",
       "transform_matrix_3x4": [
         [
           1.0,
@@ -10407,6 +11400,8 @@
       "permitted_dof": "FLEXIBLE MEMBRANE",
       "state_membership": "BOTH",
       "notes": "",
+      "display_name": "60_L_BUOY_GORE_5_OF_8_TPU",
+      "display_parent_path": "Aft_Service_Closure_Assembly",
       "transform_matrix_3x4": [
         [
           1.0,
@@ -10448,6 +11443,8 @@
       "permitted_dof": "FLEXIBLE MEMBRANE",
       "state_membership": "BOTH",
       "notes": "",
+      "display_name": "60_L_BUOY_GORE_6_OF_8_TPU",
+      "display_parent_path": "Aft_Service_Closure_Assembly",
       "transform_matrix_3x4": [
         [
           1.0,
@@ -10489,6 +11486,8 @@
       "permitted_dof": "FLEXIBLE MEMBRANE",
       "state_membership": "BOTH",
       "notes": "",
+      "display_name": "60_L_BUOY_GORE_7_OF_8_TPU",
+      "display_parent_path": "Aft_Service_Closure_Assembly",
       "transform_matrix_3x4": [
         [
           1.0,
@@ -10530,6 +11529,8 @@
       "permitted_dof": "FLEXIBLE MEMBRANE",
       "state_membership": "BOTH",
       "notes": "",
+      "display_name": "60_L_BUOY_GORE_8_OF_8_TPU",
+      "display_parent_path": "Aft_Service_Closure_Assembly",
       "transform_matrix_3x4": [
         [
           1.0,
@@ -10571,6 +11572,8 @@
       "permitted_dof": "FLEXIBLE",
       "state_membership": "BOTH",
       "notes": "",
+      "display_name": "X-6292_STRUCTURAL_HARNESS_CLOSED_BAND_1_HMPE",
+      "display_parent_path": "Aft_Service_Closure_Assembly",
       "transform_matrix_3x4": [
         [
           1.0,
@@ -10612,6 +11615,8 @@
       "permitted_dof": "FLEXIBLE",
       "state_membership": "BOTH",
       "notes": "",
+      "display_name": "X-6292_STRUCTURAL_HARNESS_CLOSED_BAND_2_HMPE",
+      "display_parent_path": "Aft_Service_Closure_Assembly",
       "transform_matrix_3x4": [
         [
           1.0,
@@ -10653,6 +11658,8 @@
       "permitted_dof": "0",
       "state_membership": "BOTH",
       "notes": "",
+      "display_name": "HARNESS_STRUCTURAL_TERMINAL_WITH_FOUR_WEB_SLOTS_AND_DOUBLE-SHEAR_CLEVIS_SS",
+      "display_parent_path": "Aft_Service_Closure_Assembly",
       "transform_matrix_3x4": [
         [
           1.0,
@@ -10694,6 +11701,8 @@
       "permitted_dof": "FLEXIBLE",
       "state_membership": "BOTH",
       "notes": "",
+      "display_name": "X-6292_TERMINAL_HARNESS_LEG_XP_HMPE",
+      "display_parent_path": "Aft_Service_Closure_Assembly",
       "transform_matrix_3x4": [
         [
           1.0,
@@ -10735,6 +11744,8 @@
       "permitted_dof": "FLEXIBLE",
       "state_membership": "BOTH",
       "notes": "",
+      "display_name": "X-6292_TERMINAL_HARNESS_LEG_XN_HMPE",
+      "display_parent_path": "Aft_Service_Closure_Assembly",
       "transform_matrix_3x4": [
         [
           1.0,
@@ -10776,6 +11787,8 @@
       "permitted_dof": "FLEXIBLE",
       "state_membership": "BOTH",
       "notes": "",
+      "display_name": "X-6292_TERMINAL_HARNESS_LEG_YP_HMPE",
+      "display_parent_path": "Aft_Service_Closure_Assembly",
       "transform_matrix_3x4": [
         [
           1.0,
@@ -10817,6 +11830,8 @@
       "permitted_dof": "FLEXIBLE",
       "state_membership": "BOTH",
       "notes": "",
+      "display_name": "X-6292_TERMINAL_HARNESS_LEG_YN_HMPE",
+      "display_parent_path": "Aft_Service_Closure_Assembly",
       "transform_matrix_3x4": [
         [
           1.0,
@@ -10858,6 +11873,8 @@
       "permitted_dof": "0",
       "state_membership": "BOTH",
       "notes": "",
+      "display_name": "AMSTEEL_EYE-SPLICE_THIMBLE_SS_01",
+      "display_parent_path": "Aft_Service_Closure_Assembly",
       "transform_matrix_3x4": [
         [
           1.0,
@@ -10899,6 +11916,8 @@
       "permitted_dof": "0",
       "state_membership": "BOTH",
       "notes": "",
+      "display_name": "AMSTEEL_EYE-SPLICE_THIMBLE_SS_02",
+      "display_parent_path": "Aft_Service_Closure_Assembly",
       "transform_matrix_3x4": [
         [
           1.0,
@@ -10940,6 +11959,8 @@
       "permitted_dof": "FLEXIBLE",
       "state_membership": "BOTH",
       "notes": "",
+      "display_name": "STRUCTURAL_RECOVERY_TETHER_WITH_TWO_BURIED_EYE_SPLICES_HMPE",
+      "display_parent_path": "Aft_Service_Closure_Assembly",
       "transform_matrix_3x4": [
         [
           1.0,
@@ -10981,6 +12002,8 @@
       "permitted_dof": "0",
       "state_membership": "BOTH",
       "notes": "",
+      "display_name": "6_MM_CAPTIVE_RECOVERY_TERMINAL_PIN_WITH_RETAINER_GROOVE_SS_01",
+      "display_parent_path": "Aft_Service_Closure_Assembly",
       "transform_matrix_3x4": [
         [
           1.0,
@@ -11022,6 +12045,8 @@
       "permitted_dof": "0",
       "state_membership": "BOTH",
       "notes": "",
+      "display_name": "6_MM_RECOVERY_PIN_EXTERNAL_RETAINER_SS_01",
+      "display_parent_path": "Aft_Service_Closure_Assembly",
       "transform_matrix_3x4": [
         [
           1.0,
@@ -11063,6 +12088,8 @@
       "permitted_dof": "0",
       "state_membership": "BOTH",
       "notes": "",
+      "display_name": "6_MM_CAPTIVE_RECOVERY_TERMINAL_PIN_WITH_RETAINER_GROOVE_SS_02",
+      "display_parent_path": "Aft_Service_Closure_Assembly",
       "transform_matrix_3x4": [
         [
           1.0,
@@ -11104,6 +12131,8 @@
       "permitted_dof": "0",
       "state_membership": "BOTH",
       "notes": "",
+      "display_name": "6_MM_RECOVERY_PIN_EXTERNAL_RETAINER_SS_02",
+      "display_parent_path": "Aft_Service_Closure_Assembly",
       "transform_matrix_3x4": [
         [
           1.0,
@@ -11145,6 +12174,8 @@
       "permitted_dof": "FLEXIBLE",
       "state_membership": "BOTH",
       "notes": "Identity placement is intentional because the routed lanyard definition uses the product datum frame shared by its two moving endpoints.",
+      "display_name": "CAPTIVE_DOOR_LANYARD_WITH_SWAGED_EYES_HMPE",
+      "display_parent_path": "Aft_Service_Closure_Assembly",
       "transform_matrix_3x4": [
         [
           1.0,
@@ -11186,6 +12217,8 @@
       "permitted_dof": "0",
       "state_membership": "BOTH",
       "notes": "Occurrence-specific exact hardware; location is defined by the machined coaxial mating features and is not baked into the PartDef.",
+      "display_name": "Accu_SSK-M3-6-A4-P80_01",
+      "display_parent_path": "Forward_Body_Assembly/Forward_Mandatory_Hardware_Assembly",
       "transform_matrix_3x4": [
         [
           1.0,
@@ -11227,6 +12260,8 @@
       "permitted_dof": "0",
       "state_membership": "BOTH",
       "notes": "Occurrence-specific exact hardware; location is defined by the machined coaxial mating features and is not baked into the PartDef.",
+      "display_name": "Accu_SSCF-M3-6-A4_01",
+      "display_parent_path": "Forward_Body_Assembly/Forward_Mandatory_Hardware_Assembly",
       "transform_matrix_3x4": [
         [
           1.0,
@@ -11268,6 +12303,8 @@
       "permitted_dof": "0",
       "state_membership": "BOTH",
       "notes": "Occurrence-specific exact hardware; location is defined by the machined coaxial mating features and is not baked into the PartDef.",
+      "display_name": "Accu_SSK-M3-6-A4-P80_02",
+      "display_parent_path": "Forward_Body_Assembly/Forward_Mandatory_Hardware_Assembly",
       "transform_matrix_3x4": [
         [
           1.0,
@@ -11309,6 +12346,8 @@
       "permitted_dof": "0",
       "state_membership": "BOTH",
       "notes": "Occurrence-specific exact hardware; location is defined by the machined coaxial mating features and is not baked into the PartDef.",
+      "display_name": "Accu_SSCF-M3-6-A4_02",
+      "display_parent_path": "Forward_Body_Assembly/Forward_Mandatory_Hardware_Assembly",
       "transform_matrix_3x4": [
         [
           1.0,
@@ -11350,6 +12389,8 @@
       "permitted_dof": "0",
       "state_membership": "BOTH",
       "notes": "Occurrence-specific exact hardware; location is defined by the machined coaxial mating features and is not baked into the PartDef.",
+      "display_name": "Accu_SSK-M3-6-A4-P80_03",
+      "display_parent_path": "Forward_Body_Assembly/Forward_Mandatory_Hardware_Assembly",
       "transform_matrix_3x4": [
         [
           1.0,
@@ -11391,6 +12432,8 @@
       "permitted_dof": "0",
       "state_membership": "BOTH",
       "notes": "Occurrence-specific exact hardware; location is defined by the machined coaxial mating features and is not baked into the PartDef.",
+      "display_name": "Accu_SSCF-M3-6-A4_03",
+      "display_parent_path": "Forward_Body_Assembly/Forward_Mandatory_Hardware_Assembly",
       "transform_matrix_3x4": [
         [
           1.0,
@@ -11432,6 +12475,8 @@
       "permitted_dof": "0",
       "state_membership": "BOTH",
       "notes": "Occurrence-specific exact hardware; location is defined by the machined coaxial mating features and is not baked into the PartDef.",
+      "display_name": "Accu_SSK-M3-6-A4-P80_04",
+      "display_parent_path": "Forward_Body_Assembly/Forward_Mandatory_Hardware_Assembly",
       "transform_matrix_3x4": [
         [
           1.0,
@@ -11473,6 +12518,8 @@
       "permitted_dof": "0",
       "state_membership": "BOTH",
       "notes": "Occurrence-specific exact hardware; location is defined by the machined coaxial mating features and is not baked into the PartDef.",
+      "display_name": "Accu_SSCF-M3-6-A4_04",
+      "display_parent_path": "Forward_Body_Assembly/Forward_Mandatory_Hardware_Assembly",
       "transform_matrix_3x4": [
         [
           1.0,
@@ -11514,6 +12561,8 @@
       "permitted_dof": "0",
       "state_membership": "BOTH",
       "notes": "Occurrence-specific exact hardware; location is defined by the machined coaxial mating features and is not baked into the PartDef.",
+      "display_name": "Accu_SSCF-M3-10-A4_03",
+      "display_parent_path": "Forward_Body_Assembly/Forward_Mandatory_Hardware_Assembly",
       "transform_matrix_3x4": [
         [
           0.8660254037844387,
@@ -11555,6 +12604,8 @@
       "permitted_dof": "0",
       "state_membership": "BOTH",
       "notes": "Occurrence-specific exact hardware; location is defined by the machined coaxial mating features and is not baked into the PartDef.",
+      "display_name": "Accu_SSCF-M3-10-A4_04",
+      "display_parent_path": "Forward_Body_Assembly/Forward_Mandatory_Hardware_Assembly",
       "transform_matrix_3x4": [
         [
           0.8660254037844387,
@@ -11596,6 +12647,8 @@
       "permitted_dof": "0",
       "state_membership": "BOTH",
       "notes": "Occurrence-specific exact hardware; location is defined by the machined coaxial mating features and is not baked into the PartDef.",
+      "display_name": "Accu_SSCF-M3-10-A4_05",
+      "display_parent_path": "Forward_Body_Assembly/Forward_Mandatory_Hardware_Assembly",
       "transform_matrix_3x4": [
         [
           0.8660254037844387,
@@ -11637,6 +12690,8 @@
       "permitted_dof": "0",
       "state_membership": "BOTH",
       "notes": "Occurrence-specific exact hardware; location is defined by the machined coaxial mating features and is not baked into the PartDef.",
+      "display_name": "Accu_SSCF-M3-10-A4_06",
+      "display_parent_path": "Forward_Body_Assembly/Forward_Mandatory_Hardware_Assembly",
       "transform_matrix_3x4": [
         [
           -0.8660254037844388,
@@ -11678,6 +12733,8 @@
       "permitted_dof": "0",
       "state_membership": "BOTH",
       "notes": "Occurrence-specific exact hardware; location is defined by the machined coaxial mating features and is not baked into the PartDef.",
+      "display_name": "Accu_SSCF-M3-10-A4_07",
+      "display_parent_path": "Forward_Body_Assembly/Forward_Mandatory_Hardware_Assembly",
       "transform_matrix_3x4": [
         [
           -0.8660254037844388,
@@ -11719,6 +12776,8 @@
       "permitted_dof": "0",
       "state_membership": "BOTH",
       "notes": "Occurrence-specific exact hardware; location is defined by the machined coaxial mating features and is not baked into the PartDef.",
+      "display_name": "Accu_SSCF-M3-10-A4_08",
+      "display_parent_path": "Forward_Body_Assembly/Forward_Mandatory_Hardware_Assembly",
       "transform_matrix_3x4": [
         [
           -0.8660254037844388,
@@ -11760,6 +12819,8 @@
       "permitted_dof": "0",
       "state_membership": "BOTH",
       "notes": "Occurrence-specific exact hardware; location is defined by the machined coaxial mating features and is not baked into the PartDef.",
+      "display_name": "Accu_SSCF-M3-10-A4_09",
+      "display_parent_path": "Forward_Body_Assembly/Forward_Mandatory_Hardware_Assembly",
       "transform_matrix_3x4": [
         [
           -2.220446049250313e-16,
@@ -11801,6 +12862,8 @@
       "permitted_dof": "0",
       "state_membership": "BOTH",
       "notes": "Occurrence-specific exact hardware; location is defined by the machined coaxial mating features and is not baked into the PartDef.",
+      "display_name": "Accu_SSCF-M3-10-A4_10",
+      "display_parent_path": "Forward_Body_Assembly/Forward_Mandatory_Hardware_Assembly",
       "transform_matrix_3x4": [
         [
           -2.220446049250313e-16,
@@ -11842,6 +12905,8 @@
       "permitted_dof": "0",
       "state_membership": "BOTH",
       "notes": "Occurrence-specific exact hardware; location is defined by the machined coaxial mating features and is not baked into the PartDef.",
+      "display_name": "Accu_SSCF-M3-10-A4_11",
+      "display_parent_path": "Forward_Body_Assembly/Forward_Mandatory_Hardware_Assembly",
       "transform_matrix_3x4": [
         [
           -2.220446049250313e-16,
@@ -11883,6 +12948,8 @@
       "permitted_dof": "0",
       "state_membership": "BOTH",
       "notes": "Occurrence-specific exact hardware; location is defined by the machined coaxial mating features and is not baked into the PartDef.",
+      "display_name": "Accu_SSCF-M3-10-A4_12",
+      "display_parent_path": "Forward_Body_Assembly/Forward_Mandatory_Hardware_Assembly",
       "transform_matrix_3x4": [
         [
           1.232595164407831e-32,
@@ -11924,6 +12991,8 @@
       "permitted_dof": "0",
       "state_membership": "BOTH",
       "notes": "Occurrence-specific exact hardware; location is defined by the machined coaxial mating features and is not baked into the PartDef.",
+      "display_name": "Accu_SSCF-M3-10-A4_13",
+      "display_parent_path": "Forward_Body_Assembly/Forward_Mandatory_Hardware_Assembly",
       "transform_matrix_3x4": [
         [
           -9.614813431917819e-17,
@@ -11965,6 +13034,8 @@
       "permitted_dof": "0",
       "state_membership": "BOTH",
       "notes": "Occurrence-specific exact hardware; location is defined by the machined coaxial mating features and is not baked into the PartDef.",
+      "display_name": "Accu_SSCF-M3-10-A4_14",
+      "display_parent_path": "Forward_Body_Assembly/Forward_Mandatory_Hardware_Assembly",
       "transform_matrix_3x4": [
         [
           9.614813431917817e-17,
@@ -12006,6 +13077,8 @@
       "permitted_dof": "0",
       "state_membership": "BOTH",
       "notes": "Occurrence-specific exact hardware; location is defined by the machined coaxial mating features and is not baked into the PartDef.",
+      "display_name": "Accu_HTP-3-30-A1",
+      "display_parent_path": "Forward_Body_Assembly/Forward_Mandatory_Hardware_Assembly",
       "transform_matrix_3x4": [
         [
           1.1102230246251565e-16,
@@ -12047,6 +13120,8 @@
       "permitted_dof": "RIGID_WITH_PARENT",
       "state_membership": "BOTH",
       "notes": "Occurrence-specific exact hardware; location is defined by the machined coaxial mating features and is not baked into the PartDef.",
+      "display_name": "Accu_HEC-10-A4",
+      "display_parent_path": "Forward_Body_Assembly/Forward_Mandatory_Hardware_Assembly",
       "transform_matrix_3x4": [
         [
           1.0,
@@ -12088,6 +13163,8 @@
       "permitted_dof": "0",
       "state_membership": "BOTH",
       "notes": "Occurrence-specific exact hardware; location is defined by the machined coaxial mating features and is not baked into the PartDef.",
+      "display_name": "CAPTIVE_WATER-BOBBIN_THREADED_BAYONET_SERVICE_CAP_SS",
+      "display_parent_path": "Forward_Body_Assembly/Forward_Mandatory_Hardware_Assembly",
       "transform_matrix_3x4": [
         [
           0.984807753012208,
@@ -12129,6 +13206,8 @@
       "permitted_dof": "RIGID_WITH_PARENT",
       "state_membership": "BOTH",
       "notes": "Occurrence-specific exact hardware; location is defined by the machined coaxial mating features and is not baked into the PartDef.",
+      "display_name": "Accu_SSCA-M3-8-A4-BL_01",
+      "display_parent_path": "Arm_Activation_Powertrain_Assembly/Powertrain_Mandatory_Hardware_Assembly",
       "transform_matrix_3x4": [
         [
           1.0,
@@ -12170,6 +13249,8 @@
       "permitted_dof": "RIGID_WITH_PARENT",
       "state_membership": "BOTH",
       "notes": "Occurrence-specific exact hardware; location is defined by the machined coaxial mating features and is not baked into the PartDef.",
+      "display_name": "Accu_SSCA-M3-8-A4-BL_02",
+      "display_parent_path": "Arm_Activation_Powertrain_Assembly/Powertrain_Mandatory_Hardware_Assembly",
       "transform_matrix_3x4": [
         [
           1.0,
@@ -12211,6 +13292,8 @@
       "permitted_dof": "0",
       "state_membership": "BOTH",
       "notes": "Occurrence-specific exact hardware; location is defined by the machined coaxial mating features and is not baked into the PartDef.",
+      "display_name": "Accu_SSCA-M3-8-A4-BL_07",
+      "display_parent_path": "Arm_Activation_Powertrain_Assembly/Powertrain_Mandatory_Hardware_Assembly",
       "transform_matrix_3x4": [
         [
           0.17364817766693041,
@@ -12252,6 +13335,8 @@
       "permitted_dof": "0",
       "state_membership": "BOTH",
       "notes": "Occurrence-specific exact hardware; location is defined by the machined coaxial mating features and is not baked into the PartDef.",
+      "display_name": "Accu_SSCA-M3-8-A4-BL_08",
+      "display_parent_path": "Arm_Activation_Powertrain_Assembly/Powertrain_Mandatory_Hardware_Assembly",
       "transform_matrix_3x4": [
         [
           0.17364817766693041,
@@ -12293,6 +13378,8 @@
       "permitted_dof": "0",
       "state_membership": "BOTH",
       "notes": "Occurrence-specific exact hardware; location is defined by the machined coaxial mating features and is not baked into the PartDef.",
+      "display_name": "Accu_HDP-3-8-A1_01",
+      "display_parent_path": "Arm_Activation_Powertrain_Assembly/Powertrain_Mandatory_Hardware_Assembly",
       "transform_matrix_3x4": [
         [
           0.17364817766693041,
@@ -12334,6 +13421,8 @@
       "permitted_dof": "0",
       "state_membership": "BOTH",
       "notes": "Occurrence-specific exact hardware; location is defined by the machined coaxial mating features and is not baked into the PartDef.",
+      "display_name": "Accu_HDP-3-8-A1_02",
+      "display_parent_path": "Arm_Activation_Powertrain_Assembly/Powertrain_Mandatory_Hardware_Assembly",
       "transform_matrix_3x4": [
         [
           0.17364817766693041,
@@ -12375,6 +13464,8 @@
       "permitted_dof": "RIGID_WITH_PARENT",
       "state_membership": "BOTH",
       "notes": "Occurrence-specific exact hardware; location is defined by the machined coaxial mating features and is not baked into the PartDef.",
+      "display_name": "Accu_SSCA-M3-8-A4-BL_03",
+      "display_parent_path": "Arm_Activation_Powertrain_Assembly/Powertrain_Mandatory_Hardware_Assembly",
       "transform_matrix_3x4": [
         [
           -0.4999999999999998,
@@ -12416,6 +13507,8 @@
       "permitted_dof": "RIGID_WITH_PARENT",
       "state_membership": "BOTH",
       "notes": "Occurrence-specific exact hardware; location is defined by the machined coaxial mating features and is not baked into the PartDef.",
+      "display_name": "Accu_SSCA-M3-8-A4-BL_04",
+      "display_parent_path": "Arm_Activation_Powertrain_Assembly/Powertrain_Mandatory_Hardware_Assembly",
       "transform_matrix_3x4": [
         [
           -0.4999999999999998,
@@ -12457,6 +13550,8 @@
       "permitted_dof": "0",
       "state_membership": "BOTH",
       "notes": "Occurrence-specific exact hardware; location is defined by the machined coaxial mating features and is not baked into the PartDef.",
+      "display_name": "Accu_SSCA-M3-8-A4-BL_09",
+      "display_parent_path": "Arm_Activation_Powertrain_Assembly/Powertrain_Mandatory_Hardware_Assembly",
       "transform_matrix_3x4": [
         [
           -0.08682408883346517,
@@ -12498,6 +13593,8 @@
       "permitted_dof": "0",
       "state_membership": "BOTH",
       "notes": "Occurrence-specific exact hardware; location is defined by the machined coaxial mating features and is not baked into the PartDef.",
+      "display_name": "Accu_SSCA-M3-8-A4-BL_10",
+      "display_parent_path": "Arm_Activation_Powertrain_Assembly/Powertrain_Mandatory_Hardware_Assembly",
       "transform_matrix_3x4": [
         [
           -0.08682408883346517,
@@ -12539,6 +13636,8 @@
       "permitted_dof": "0",
       "state_membership": "BOTH",
       "notes": "Occurrence-specific exact hardware; location is defined by the machined coaxial mating features and is not baked into the PartDef.",
+      "display_name": "Accu_HDP-3-8-A1_03",
+      "display_parent_path": "Arm_Activation_Powertrain_Assembly/Powertrain_Mandatory_Hardware_Assembly",
       "transform_matrix_3x4": [
         [
           -0.08682408883346517,
@@ -12580,6 +13679,8 @@
       "permitted_dof": "0",
       "state_membership": "BOTH",
       "notes": "Occurrence-specific exact hardware; location is defined by the machined coaxial mating features and is not baked into the PartDef.",
+      "display_name": "Accu_HDP-3-8-A1_04",
+      "display_parent_path": "Arm_Activation_Powertrain_Assembly/Powertrain_Mandatory_Hardware_Assembly",
       "transform_matrix_3x4": [
         [
           -0.08682408883346517,
@@ -12621,6 +13722,8 @@
       "permitted_dof": "RIGID_WITH_PARENT",
       "state_membership": "BOTH",
       "notes": "Occurrence-specific exact hardware; location is defined by the machined coaxial mating features and is not baked into the PartDef.",
+      "display_name": "Accu_SSCA-M3-8-A4-BL_05",
+      "display_parent_path": "Arm_Activation_Powertrain_Assembly/Powertrain_Mandatory_Hardware_Assembly",
       "transform_matrix_3x4": [
         [
           -0.5000000000000004,
@@ -12662,6 +13765,8 @@
       "permitted_dof": "RIGID_WITH_PARENT",
       "state_membership": "BOTH",
       "notes": "Occurrence-specific exact hardware; location is defined by the machined coaxial mating features and is not baked into the PartDef.",
+      "display_name": "Accu_SSCA-M3-8-A4-BL_06",
+      "display_parent_path": "Arm_Activation_Powertrain_Assembly/Powertrain_Mandatory_Hardware_Assembly",
       "transform_matrix_3x4": [
         [
           -0.5000000000000004,
@@ -12703,6 +13808,8 @@
       "permitted_dof": "0",
       "state_membership": "BOTH",
       "notes": "Occurrence-specific exact hardware; location is defined by the machined coaxial mating features and is not baked into the PartDef.",
+      "display_name": "Accu_SSCA-M3-8-A4-BL_11",
+      "display_parent_path": "Arm_Activation_Powertrain_Assembly/Powertrain_Mandatory_Hardware_Assembly",
       "transform_matrix_3x4": [
         [
           -0.08682408883346529,
@@ -12744,6 +13851,8 @@
       "permitted_dof": "0",
       "state_membership": "BOTH",
       "notes": "Occurrence-specific exact hardware; location is defined by the machined coaxial mating features and is not baked into the PartDef.",
+      "display_name": "Accu_SSCA-M3-8-A4-BL_12",
+      "display_parent_path": "Arm_Activation_Powertrain_Assembly/Powertrain_Mandatory_Hardware_Assembly",
       "transform_matrix_3x4": [
         [
           -0.08682408883346529,
@@ -12785,6 +13894,8 @@
       "permitted_dof": "0",
       "state_membership": "BOTH",
       "notes": "Occurrence-specific exact hardware; location is defined by the machined coaxial mating features and is not baked into the PartDef.",
+      "display_name": "Accu_HDP-3-8-A1_05",
+      "display_parent_path": "Arm_Activation_Powertrain_Assembly/Powertrain_Mandatory_Hardware_Assembly",
       "transform_matrix_3x4": [
         [
           -0.08682408883346529,
@@ -12826,6 +13937,8 @@
       "permitted_dof": "0",
       "state_membership": "BOTH",
       "notes": "Occurrence-specific exact hardware; location is defined by the machined coaxial mating features and is not baked into the PartDef.",
+      "display_name": "Accu_HDP-3-8-A1_06",
+      "display_parent_path": "Arm_Activation_Powertrain_Assembly/Powertrain_Mandatory_Hardware_Assembly",
       "transform_matrix_3x4": [
         [
           -0.08682408883346529,
@@ -12867,6 +13980,8 @@
       "permitted_dof": "0",
       "state_membership": "BOTH",
       "notes": "Occurrence-specific exact hardware; location is defined by the machined coaxial mating features and is not baked into the PartDef.",
+      "display_name": "Accu_SSCF-M3-10-A4_01",
+      "display_parent_path": "Arm_Activation_Powertrain_Assembly/Powertrain_Mandatory_Hardware_Assembly",
       "transform_matrix_3x4": [
         [
           5.551115123125784e-17,
@@ -12908,6 +14023,8 @@
       "permitted_dof": "0",
       "state_membership": "BOTH",
       "notes": "Occurrence-specific exact hardware; location is defined by the machined coaxial mating features and is not baked into the PartDef.",
+      "display_name": "Accu_SSCF-M3-10-A4_02",
+      "display_parent_path": "Arm_Activation_Powertrain_Assembly/Powertrain_Mandatory_Hardware_Assembly",
       "transform_matrix_3x4": [
         [
           5.551115123125784e-17,
@@ -12949,6 +14066,8 @@
       "permitted_dof": "0",
       "state_membership": "BOTH",
       "notes": "Occurrence-specific exact hardware; location is defined by the machined coaxial mating features and is not baked into the PartDef.",
+      "display_name": "Accu_SSCL-M4-8-A4",
+      "display_parent_path": "Arm_Activation_Powertrain_Assembly/Powertrain_Mandatory_Hardware_Assembly",
       "transform_matrix_3x4": [
         [
           1.0,
@@ -12990,6 +14109,8 @@
       "permitted_dof": "0",
       "state_membership": "BOTH",
       "notes": "",
+      "display_name": "ONE-PIECE_AFT_GUIDE-RAIL_SUPPORT_RING_WITH_THREE_M3_THREADS_TI",
+      "display_parent_path": "Aft_Service_Closure_Assembly/Aft_Mandatory_Hardware_Assembly",
       "transform_matrix_3x4": [
         [
           1.0,
@@ -13031,6 +14152,8 @@
       "permitted_dof": "0",
       "state_membership": "BOTH",
       "notes": "Occurrence-specific exact hardware; location is defined by the machined coaxial mating features and is not baked into the PartDef.",
+      "display_name": "Accu_SSCA-M3-8-A4-BL_14",
+      "display_parent_path": "Aft_Service_Closure_Assembly/Aft_Mandatory_Hardware_Assembly",
       "transform_matrix_3x4": [
         [
           1.0,
@@ -13072,6 +14195,8 @@
       "permitted_dof": "0",
       "state_membership": "BOTH",
       "notes": "Occurrence-specific exact hardware; location is defined by the machined coaxial mating features and is not baked into the PartDef.",
+      "display_name": "Accu_SSCA-M3-8-A4-BL_13",
+      "display_parent_path": "Aft_Service_Closure_Assembly/Aft_Mandatory_Hardware_Assembly",
       "transform_matrix_3x4": [
         [
           1.0,
@@ -13113,6 +14238,8 @@
       "permitted_dof": "0",
       "state_membership": "BOTH",
       "notes": "Occurrence-specific exact hardware; location is defined by the machined coaxial mating features and is not baked into the PartDef.",
+      "display_name": "Accu_SSCA-M3-8-A4-BL_16",
+      "display_parent_path": "Aft_Service_Closure_Assembly/Aft_Mandatory_Hardware_Assembly",
       "transform_matrix_3x4": [
         [
           -0.4999999999999998,
@@ -13154,6 +14281,8 @@
       "permitted_dof": "0",
       "state_membership": "BOTH",
       "notes": "Occurrence-specific exact hardware; location is defined by the machined coaxial mating features and is not baked into the PartDef.",
+      "display_name": "Accu_SSCA-M3-8-A4-BL_15",
+      "display_parent_path": "Aft_Service_Closure_Assembly/Aft_Mandatory_Hardware_Assembly",
       "transform_matrix_3x4": [
         [
           -0.4999999999999998,
@@ -13195,6 +14324,8 @@
       "permitted_dof": "0",
       "state_membership": "BOTH",
       "notes": "Occurrence-specific exact hardware; location is defined by the machined coaxial mating features and is not baked into the PartDef.",
+      "display_name": "Accu_SSCA-M3-8-A4-BL_18",
+      "display_parent_path": "Aft_Service_Closure_Assembly/Aft_Mandatory_Hardware_Assembly",
       "transform_matrix_3x4": [
         [
           -0.5000000000000004,
@@ -13236,6 +14367,8 @@
       "permitted_dof": "0",
       "state_membership": "BOTH",
       "notes": "Occurrence-specific exact hardware; location is defined by the machined coaxial mating features and is not baked into the PartDef.",
+      "display_name": "Accu_SSCA-M3-8-A4-BL_17",
+      "display_parent_path": "Aft_Service_Closure_Assembly/Aft_Mandatory_Hardware_Assembly",
       "transform_matrix_3x4": [
         [
           -0.5000000000000004,
@@ -13277,6 +14410,8 @@
       "permitted_dof": "0",
       "state_membership": "BOTH",
       "notes": "Occurrence-specific exact hardware; location is defined by the machined coaxial mating features and is not baked into the PartDef.",
+      "display_name": "Accu_SSCA-M3-8-A4-BL_19",
+      "display_parent_path": "Aft_Service_Closure_Assembly/Aft_Mandatory_Hardware_Assembly",
       "transform_matrix_3x4": [
         [
           1.0,
@@ -13318,6 +14453,8 @@
       "permitted_dof": "0",
       "state_membership": "BOTH",
       "notes": "Occurrence-specific exact hardware; location is defined by the machined coaxial mating features and is not baked into the PartDef.",
+      "display_name": "Accu_SSCA-M3-8-A4-BL_20",
+      "display_parent_path": "Aft_Service_Closure_Assembly/Aft_Mandatory_Hardware_Assembly",
       "transform_matrix_3x4": [
         [
           1.0,
@@ -13359,6 +14496,8 @@
       "permitted_dof": "0",
       "state_membership": "BOTH",
       "notes": "Occurrence-specific exact hardware; location is defined by the machined coaxial mating features and is not baked into the PartDef.",
+      "display_name": "Accu_SSCA-M3-8-A4-BL_21",
+      "display_parent_path": "Aft_Service_Closure_Assembly/Aft_Mandatory_Hardware_Assembly",
       "transform_matrix_3x4": [
         [
           1.0,
@@ -13400,6 +14539,8 @@
       "permitted_dof": "RIGID_WITH_PARENT",
       "state_membership": "BOTH",
       "notes": "Occurrence-specific exact hardware; location is defined by the machined coaxial mating features and is not baked into the PartDef.",
+      "display_name": "Accu_SSCA-M3-8-A4-BL_24",
+      "display_parent_path": "Aft_Service_Closure_Assembly/Aft_Mandatory_Hardware_Assembly",
       "transform_matrix_3x4": [
         [
           1.0,
@@ -13441,6 +14582,8 @@
       "permitted_dof": "RIGID_WITH_PARENT",
       "state_membership": "BOTH",
       "notes": "Occurrence-specific exact hardware; location is defined by the machined coaxial mating features and is not baked into the PartDef.",
+      "display_name": "Accu_SSCA-M3-8-A4-BL_25",
+      "display_parent_path": "Aft_Service_Closure_Assembly/Aft_Mandatory_Hardware_Assembly",
       "transform_matrix_3x4": [
         [
           1.0,
@@ -13482,6 +14625,8 @@
       "permitted_dof": "RIGID_WITH_PARENT",
       "state_membership": "BOTH",
       "notes": "Occurrence-specific exact hardware; location is defined by the machined coaxial mating features and is not baked into the PartDef.",
+      "display_name": "Accu_SSCA-M3-8-A4-BL_26",
+      "display_parent_path": "Aft_Service_Closure_Assembly/Aft_Mandatory_Hardware_Assembly",
       "transform_matrix_3x4": [
         [
           1.0,
@@ -13523,6 +14668,8 @@
       "permitted_dof": "0",
       "state_membership": "BOTH",
       "notes": "Identity XY definition uses the aft-module product datum; the non-identity Z placement locates the machined support plane.",
+      "display_name": "GUIDE-RAIL-3_TO_LATCH_TWO-SCREW_SUPPORT_BLADE_SS",
+      "display_parent_path": "Aft_Service_Closure_Assembly/Aft_Mandatory_Hardware_Assembly",
       "transform_matrix_3x4": [
         [
           1.0,
@@ -13564,6 +14711,8 @@
       "permitted_dof": "0",
       "state_membership": "BOTH",
       "notes": "Occurrence-specific exact hardware; location is defined by the machined coaxial mating features and is not baked into the PartDef.",
+      "display_name": "Accu_SSCA-M3-8-A4-BL_22",
+      "display_parent_path": "Aft_Service_Closure_Assembly/Aft_Mandatory_Hardware_Assembly",
       "transform_matrix_3x4": [
         [
           -2.220446049250313e-16,
@@ -13605,6 +14754,8 @@
       "permitted_dof": "0",
       "state_membership": "BOTH",
       "notes": "Occurrence-specific exact hardware; location is defined by the machined coaxial mating features and is not baked into the PartDef.",
+      "display_name": "Accu_SSCA-M3-8-A4-BL_23",
+      "display_parent_path": "Aft_Service_Closure_Assembly/Aft_Mandatory_Hardware_Assembly",
       "transform_matrix_3x4": [
         [
           -2.220446049250313e-16,
@@ -13646,6 +14797,8 @@
       "permitted_dof": "0",
       "state_membership": "BOTH",
       "notes": "Occurrence-specific exact hardware; location is defined by the machined coaxial mating features and is not baked into the PartDef.",
+      "display_name": "Accu_SSK-M3-6-A4-P80_05",
+      "display_parent_path": "Aft_Service_Closure_Assembly/Aft_Mandatory_Hardware_Assembly",
       "transform_matrix_3x4": [
         [
           1.0,
@@ -13687,6 +14840,8 @@
       "permitted_dof": "0",
       "state_membership": "BOTH",
       "notes": "Occurrence-specific exact hardware; location is defined by the machined coaxial mating features and is not baked into the PartDef.",
+      "display_name": "Accu_SSK-M3-6-A4-P80_06",
+      "display_parent_path": "Aft_Service_Closure_Assembly/Aft_Mandatory_Hardware_Assembly",
       "transform_matrix_3x4": [
         [
           1.0,
@@ -13728,6 +14883,8 @@
       "permitted_dof": "0",
       "state_membership": "BOTH",
       "notes": "Occurrence-specific exact hardware; location is defined by the machined coaxial mating features and is not baked into the PartDef.",
+      "display_name": "Accu_SSK-M3-6-A4-P80_07",
+      "display_parent_path": "Aft_Service_Closure_Assembly/Aft_Mandatory_Hardware_Assembly",
       "transform_matrix_3x4": [
         [
           1.0,
@@ -13769,6 +14926,8 @@
       "permitted_dof": "0",
       "state_membership": "BOTH",
       "notes": "Occurrence-specific exact hardware; location is defined by the machined coaxial mating features and is not baked into the PartDef.",
+      "display_name": "Accu_SSK-M3-6-A4-P80_08",
+      "display_parent_path": "Aft_Service_Closure_Assembly/Aft_Mandatory_Hardware_Assembly",
       "transform_matrix_3x4": [
         [
           1.0,
@@ -13810,6 +14969,8 @@
       "permitted_dof": "0",
       "state_membership": "BOTH",
       "notes": "Occurrence-specific exact hardware; location is defined by the machined coaxial mating features and is not baked into the PartDef.",
+      "display_name": "Accu_SSK-M3-6-A4-P80_09",
+      "display_parent_path": "Aft_Service_Closure_Assembly/Aft_Mandatory_Hardware_Assembly",
       "transform_matrix_3x4": [
         [
           1.0,
@@ -13851,6 +15012,8 @@
       "permitted_dof": "0",
       "state_membership": "BOTH",
       "notes": "Occurrence-specific exact hardware; location is defined by the machined coaxial mating features and is not baked into the PartDef.",
+      "display_name": "Accu_SSK-M3-6-A4-P80_10",
+      "display_parent_path": "Aft_Service_Closure_Assembly/Aft_Mandatory_Hardware_Assembly",
       "transform_matrix_3x4": [
         [
           1.0,
@@ -18053,7 +19216,7 @@
       "route_occurrence_id": "ROUTE-MANIFOLD-FEED-001",
       "origin_occurrence": "COLLECTION-MANIFOLD-001",
       "destination_occurrence": "FULLFLOW-VALVE-001",
-      "termination_fittings": "Integral occurrence-matched brazed ferrule collars",
+      "termination_fittings": "Occurrence-matched direct-braze tube-end preparations",
       "controlled_penetrations": "No wall penetration; protected forward-body internal corridor",
       "supports": "Three laser-welded titanium spring clips on the shell inner land",
       "minimum_bend_radius_mm": 20.0,
@@ -18067,7 +19230,7 @@
       "destination_external_boundary": false,
       "termination_occurrence_ids": [],
       "integral_terminations": true,
-      "termination_process_basis": "Integral occurrence-matched brazed ferrule collars",
+      "termination_process_basis": "Occurrence-matched direct-braze tube-end preparations",
       "support_occurrence_ids": [
         "MANIFOLD-FEED-CLAMP-1",
         "MANIFOLD-FEED-CLAMP-2",

@@ -20,22 +20,22 @@
   },
   "files": {
     "STINGRAY_I5S_DF8_FINAL_STOWED_MASTER_AP242.step": {
-      "sha256": "1a81a08fc269a4cabef3ffc47be4340bd17d00b3676393c336cf32366400ba0a",
-      "size_bytes": 16197459
+      "sha256": "960c7ca5c25e5df230c2672358ba577c187f6eb0a1012f04b2020e5f956a608f",
+      "size_bytes": 19775272
     },
     "STINGRAY_I5S_DF8_FINAL_DEPLOYED_MASTER_AP242.step": {
-      "sha256": "9ffa85af11c4c129dca60b8d9cd012a6a1103f9df5367bd42a72795978051b97",
-      "size_bytes": 17858903
+      "sha256": "efc5f8bee8927adfeb1fedc644ffc6b1424309940d7dce21176435dd3f776c2e",
+      "size_bytes": 21438710
     }
   },
   "inventories": {
     "authoring_inventory_stowed.json": {
-      "sha256": "2789eeabb344602339394794cac6d2d7bfcd121b584127eed601352c9cf1ccea",
-      "size_bytes": 1900435
+      "sha256": "18d50c19efbef332b6276b06bfe259b65e38fd46ffb4b444c5b1c34fa1b7e847",
+      "size_bytes": 1980451
     },
     "authoring_inventory_deployed.json": {
-      "sha256": "fa93617725ab0b8b76360f34dfdf6d1cdd727e8e589f1e6fbbd0c47bb48d06ca",
-      "size_bytes": 1906913
+      "sha256": "4dab35729033b58fb21b67f237f72e3685013c6451532b445de5e41503884bb6",
+      "size_bytes": 1986926
     }
   }
 }

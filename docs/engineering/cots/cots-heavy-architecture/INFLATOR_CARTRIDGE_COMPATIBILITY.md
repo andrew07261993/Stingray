@@ -6,9 +6,11 @@ The exact preferred supported pair is:
 
 `Nordson MEDICAL / Halkey-Roberts V95000 Hydro 1F, 1/2-20 configuration + Leland 86202Z 38 g`
 
-Classification: **PUBLISHED CONFIGURATION SUPPORTED**.
+Pair classification: **PUBLISHED CONFIGURATION SUPPORTED in the published PFD/manifold context**.
 
-The captured evidence is Leland's exact `V95000-86202Z` rearm kit plus Nordson's current Hydro 1F drawing, product description and service instructions. The exact lanyard suffix and handed cylinder-holder kit remain installation choices that must be frozen on the RFQ; they do not change the 1/2-20 inflator body family.
+The captured evidence is Leland's exact `V95000-86202Z` rearm kit plus Nordson's current Hydro 1F drawing, product description, service instructions and `830011001` manifold installation. That evidence supports a life-vest inflator installation. It does **not** publish a pressure-rated threaded/tube outlet to a STINGRAY HP check valve or bus. The pair therefore remains supported, while `V95000 + 86202Z + HP check/bus` is **APPLICATION APPROVAL REQUIRED / NO PUBLISHED INTERFACE**.
+
+The owner-case mass minimum is nine cartridges. This does not turn the pair into a nine-branch commercial system and does not authorize CAD.
 
 ## Why this is not approval for 70 g
 

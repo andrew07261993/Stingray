@@ -1,12 +1,10 @@
 # CO2 gas sizing analysis
 
-Status: **ENGINEERING SENSITIVITY — NOT A QUALIFIED TRANSIENT MODEL**
+Status: **OWNER-CASE MASS SIZING CLOSED — TRANSIENT AND BUOY-PRESSURE QUALIFICATION OPEN**
 
-## Method and assumptions
+## Method
 
-The required low-pressure CO2 gas state was calculated with the Peng–Robinson equation of state, not an ideal-only surface conversion. Inputs are 60.0 L usable volume **at deployment depth**, 101.325 kPa atmosphere, 1025 kg/m³ seawater, 9.80665 m/s² gravity, and a provisional 10 kPa buoy differential. Low-pressure compressibility factors range from 0.981 to 0.994 in the evaluated cases, so real-gas correction is small but retained.
-
-The strict theoretical lower bound with zero buoy differential ranges from 108.5 g (25 °C, surface) to 298.5 g (0 °C, 15 m). The CSV uses the more useful 10 kPa differential sensitivity; its theoretical range is 119.3–310.6 g.
+The existing Peng–Robinson model is retained. It calculates 60.0 L actual usable gas volume at deployment depth using 101.325 kPa atmosphere, 1,025 kg/m³ seawater, 9.80665 m/s² gravity and a provisional 10 kPa buoy differential. That differential is a sizing sensitivity, not a buoy pressure requirement.
 
 | Scenario | Temperature | Discharge utilization | Leakage/flow/reserve adder | Design multiplier | Qualification multiplier |
 |---|---:|---:|---:|---:|---:|
@@ -14,24 +12,37 @@ The strict theoretical lower bound with zero buoy differential ranges from 108.5
 | Nominal | 15 °C | 0.85 | 15% | 1.353 × theoretical | 1.488 × theoretical |
 | Cold | 0 °C | 0.75 | 20% | 1.600 × theoretical | 1.760 × theoretical |
 
-Discharge utilization bounds residual/unusable gas, flashing, line/check/regulator losses and cold/icing loss. The reserve adder bounds leakage, dead volume and rate uncertainty. Qualification adds 10% model/test margin. These are declared assumptions, not hidden requirements; transient tests must replace them.
+Utilization bounds residual gas, flashing, line/check/regulator losses and cold/icing loss. The reserve bounds leakage, dead volume and flow-rate uncertainty. Qualification adds 10% model/test margin. Physical testing must validate these assumptions.
 
-## Inventory result
+## Controlling owner case
 
-| Inventory | Result |
-|---|---|
-| 2 × 70 g = 140 g | Fails even warm surface design with the provisional 10 kPa differential. |
-| 3 × 70 g = 210 g | Passes warm design through 5.18 m, nominal design through 2.82 m, and cold design only through 0.07 m. Qualification limits are 3.72 m warm, 1.56 m nominal, and **not supported at the cold surface case**. |
-| 4 × 70 g = 280 g | Passes warm qualification through 7.5 m, nominal qualification through 5 m, and cold qualification only below about 2.3 m; it still fails 10 m qualification in every evaluated temperature. |
+At 5.0 m and 0 °C:
 
-At the specified grid points, 3 × 70 g passes warm design at 0, 3 and 5 m but fails warm qualification at 5 m; passes nominal design/qualification at the surface but fails at 3 m; and passes cold design only at the surface by 1.25 g while failing cold qualification there.
+- ambient absolute pressure: 151.58 kPa;
+- modeled buoy absolute pressure with 10 kPa sensitivity: 161.58 kPa;
+- Peng–Robinson compressibility factor: 0.98847;
+- theoretical minimum: **190.06 g**;
+- design inventory: **304.10 g**;
+- qualification inventory: **334.51 g**.
 
-## Cartridge-count recommendation
+## Discrete `86202Z` result
 
-Three cartridges are **not retained as a general mission solution**. No fixed release count can be selected without owner depth, minimum temperature, usable volume, differential pressure and inflation time. For the next architecture trade/CAD packaging study, reserve space and interfaces for **at least four 70 g-class sources**, but do not label four sufficient: cold/deep cases require five to eight cartridges on mass alone (before packaging and flow gates). At 10 m the qualification demand is approximately 300 g warm, 352 g nominal and 440 g cold, equivalent to 5, 6 and 7 nominal 70 g cartridges after rounding up.
+| Count | Inventory | Design margin | Qualification margin | Gate |
+|---:|---:|---:|---:|---|
+| 5 | 190 g | −114.10 g | −144.51 g | FAIL |
+| 6 | 228 g | −76.10 g | −106.51 g | FAIL |
+| 7 | 266 g | −38.10 g | −68.51 g | FAIL |
+| 8 | 304 g | −0.10 g | −30.51 g | FAIL |
+| **9** | **342 g** | **+37.90 g / +12.46%** | **+7.49 g / +2.24%** | **PASS** |
+
+Nine is the lowest integer count satisfying both controlling mass cases. No one-branch-out requirement is controlled, so a tenth is not added merely as unsourced redundancy. Nine is a thermodynamic count only; the V95000-to-HP-bus interface is not published and the architecture is not released.
+
+## Useful-inflation criterion
+
+Within 10.0 s of water activation, achieve at least 54 L actual displaced volume at 5 m, stable intended geometry, and displacement holding/increasing without structural leakage. Full steady-state usable displacement remains 60 L. Rated/geometric capacity or visual fullness does not pass.
 
 ## What mass sizing does not close
 
-Mass sufficiency does not establish inflation time. Liquid/vapor behavior inside the cartridge, two-phase flashing, regulator droop, check/orifice Cv, line heat transfer, dry ice/icing, simultaneous branch discharge and relief accumulation require instrumented cold discharge. CO2 dissolution in water is not credited as useful gas and any contact loss is inside the utilization factors. Full-volume ascent also requires controlled venting because ambient pressure falls.
+Static mass does not establish 10 s inflation. Two-phase flashing, regulator droop, check/orifice capacity, line heat transfer, dry ice/icing, nine-way synchronization, relief accumulation and gas dissolution/contact losses require an instrumented 0 °C/5 m test or approved equivalent. Type 3 tests only the small-scale trigger/puncture/rearm architecture.
 
-CO2 storage-pressure references are separated in `PRESSURE_ARCHITECTURE.md`. NIST is the thermophysical source: [NIST CO2 data](https://webbook.nist.gov/cgi/cbook.cgi?ID=C124389&Mask=4) and [NIST vapor-pressure publication](https://nvlpubs.nist.gov/nistpubs/jres/10/jresv10n3p381_A2b.pdf).
+NIST is the thermophysical source: [NIST CO2 fluid data](https://webbook.nist.gov/cgi/fluid.cgi?ID=C124389&Action=Page).

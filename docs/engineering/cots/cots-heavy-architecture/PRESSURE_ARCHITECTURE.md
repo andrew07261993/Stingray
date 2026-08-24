@@ -1,38 +1,50 @@
-# Revised pressure architecture
+# Pressure architecture — owner mission closure
 
-## Required path
+## Disposition
 
-`5–7 × cartridge → V95000 puncture/inflator → individual HP check → HP collection bus → pressure regulator → fixed flow restriction → buoy-adjacent differential relief → buoy`
+The required functional hierarchy is retained, but no final physical path is frozen:
 
-Preferred source pair: Leland `86202Z` 38 g + Nordson MEDICAL/Halkey-Roberts `V95000` Hydro 1F 1/2-20, **PUBLISHED CONFIGURATION SUPPORTED**.
+`commercial CO2 source → water-authorized puncture/inflator → branch isolation/check where required → HP collection → regulator → fixed restriction → buoy-adjacent differential relief → 60 L buoy`
+
+The prior V95000-to-HP-check interface is not published. Therefore cartridge count is frozen thermodynamically at nine `86202Z` units, while inflator count, check arrangement and HP bus architecture remain **NOT FROZEN — PRESSURE ARCHITECTURE REVISION REQUIRED**.
 
 ## Pressure hierarchy
 
-| Zone/node | Nominal | Maximum credible | Minimum useful | Required rating/control | Blocked/failure response |
-|---|---|---|---|---|---|
-| Stored cartridge | CO2 equilibrium at actual cartridge temperature | Supplier maximum pressure at maximum specified environment; **OPEN** | Vapor pressure sufficient to discharge at minimum temperature; **OPEN** | Commercial marked cartridge within supplier storage/discharge limits | Keep isolated until puncture; reject damaged/overtemperature article |
-| Puncture/inflator | Transient cartridge pressure | Same maximum credible source pressure plus dynamic effects | Must puncture/seal/flow at cold condition | Exact approved pair, supported holder and reaction path | Each branch restrained and checked; unsupported pairs prohibited |
-| Branch check/tube/fitting | Source pressure during discharge | Maximum credible source pressure at environment | Must pass required cold flow | Temperature-derated allowable above maximum credible pressure with required margin | Individual check prevents reverse discharge; blocked branch must not overload components |
-| HP bus/regulator inlet | Highest active-branch source pressure | Maximum credible source pressure/common blocked transient | Above regulator control requirement | HP-rated bus and regulator inlet with controlled derating | HP relief/burst protection only if required by regulator/blocked-volume analysis |
-| Regulator outlet/restrictor | Low controlled pressure | Regulator lockup/failure transient, bounded by restriction and relief | Ambient absolute + required buoy differential + losses | Qualified two-phase/cold CO2 performance; relief downstream | Relief must pass worst credible fault flow without exceeding buoy MAWP |
-| Buoy inlet | Ambient at depth + line loss + operating differential | Limited below buoy MAWP | Sufficient to produce required volume/time | LP hose/fittings rated above relief envelope | Differential relief vents excess; check/regulator isolate source |
-| Buoy differential | Required operating differential; **OPEN** | Buoy allowable/MAWP; **OPEN** | Shape/deployment differential; **OPEN** | Supplier operating/MAWP data | Resettable relief preferred; reject damaged buoy |
-| Relief | No flow normally | Set/reseat/flow envelope below buoy MAWP and above required differential; **OPEN** | Must remain shut at required operating differential | Calibrated COTS differential behavior at depth/backpressure | Vents fault flow; setting locked and receiving-verified |
+| Zone/node | Nominal or operating basis | Maximum credible | Required rating/control | Gate |
+|---|---|---|---|---|
+| Stored `86202Z` cartridge | CO2 equilibrium/dense-fluid pressure at actual temperature | ≈2,624 psig at 50 °C using the NIST 760 kg/m³ proxy; Leland-controlled maximum pending | Commercial source within manufacturer limits | Leland pressure/temperature and fill-density declaration required |
+| Puncture/inflator/outlet | Source pressure during puncture/discharge | Same source basis plus any blocked transient | Manufacturer-approved cartridge, holder/reaction path, rated outlet and derating | V95000 published outlet absent |
+| HP check and branch | Source pressure; transient two-phase flow | Maximum source/blocked-branch transient | Allowable/MAWP ≥3,000 psig at 50 °C; CO2/seal/flow suitability | Exact commercial interface not selected |
+| HP collection/regulator inlet | Highest active-source pressure | Common blocked transient | Allowable/MAWP ≥3,000 psig at 50 °C; verified derating | Topology not selected |
+| Regulator outlet/fixed restriction | Controlled low pressure | Regulator lockup/fail-open transient | CO2 two-phase/cold qualification; restriction bounds relief fault flow | Exact MPN/Cv not selected |
+| Buoy inlet | Ambient + required operating differential + losses | Limited below supplier MAWP | Rated low-pressure connection and buoy-adjacent relief | Supplier envelope absent |
+| Buoy differential | Supplier-supported shape/volume pressure | Supplier MAWP | Must achieve 60 L at 5 m without exceeding MAWP | UNESTABLISHED |
+| Differential relief | Shut at required operating differential | Pass worst credible fault flow without buoy MAWP exceedance | Factory-set/calibrated, depth/backpressure-qualified, resettable preferred | No numeric set/reseat/capacity authorized |
 
-## HP design-pressure rule
+## HP design basis
 
-The previous 2,500 psig assumption is not frozen. `≥3,000 psig` remains a screening criterion until the maximum storage/environment temperature and Leland pressure-temperature data are established.
+NIST CO2 isochoric calculations at 760 kg/m³ provide the documented screening series in `HP_PRESSURE_TEMPERATURE_BASIS.csv`: approximately 2,306 psig at 45 °C and 2,624 psig at 50 °C. The owner environment sets 0 °C minimum but not a lower maximum storage temperature than the recorded 49 °C / 120 °F warning; therefore use a rounded **3,000 psig at 50 °C** component basis.
 
-For every HP component:
+For every HP item:
 
-`P_allowable(T_environment) > P_max_credible_cartridge(T_environment)`
+`manufacturer allowable/MAWP at 50 °C ≥ 3,000 psig > 2,624 psig maximum-credible screening pressure`
 
-with the additional engineering/code margin selected for the controlled environment and failure consequences. Manufacturer pressure-temperature derating controls. A missing allowable, seal-temperature limit or two-phase CO2 statement is a design hold.
+This does not invent a code factor. It is the bounded rating needed for component screening until Leland’s controlled pressure-temperature/fill data and the governing design-code margin are supplied. Items rated 3,000 psig only at 100 °F remain open.
 
-## Low-pressure protection and relief
+## Low-pressure envelope
 
-The buoy cannot be connected directly to cartridge pressure. Regulator, fixed restriction and buoy-adjacent calibrated differential relief are mandatory functional layers. A buoy-integral relief may substitute only with supplier set, reseat, capacity, temperature, depth/backpressure and MAWP evidence. No numeric relief setting is selected until buoy required differential and MAWP are controlled.
+HIKO `87640_OLV_ONE` has no published rated volume verification, operating differential, MAWP, inlet rating, proof/burst, relief or cycle data. Consequently:
 
-## Development versus final
+- operating differential: **UNESTABLISHED**;
+- relief crack/set and tolerance: **UNESTABLISHED**;
+- reseat and flow capacity: **UNESTABLISHED**;
+- buoy MAWP: **UNESTABLISHED**;
+- numeric regulator outlet/setpoint: **NOT AUTHORIZED**.
 
-The complete LSC `481-CG` Type-3 article, containing `470-CG` + `#484`, tests the V95000/V80040 trigger and rearm architecture only. It does not qualify this full pressure path or final inventory. Final regulator/restrictor/relief sizing requires the owner inflation time and buoy data plus cold discharge tests at a qualified facility.
+The 10 kPa differential in gas sizing is sensitivity only. Subsalve’s published 2.5 psig enclosed-bag relief is test-reference evidence and cannot be transferred to HIKO.
+
+## Failure behavior
+
+A blocked source branch must remain inside all cartridge/outlet/check ratings. A blocked HP collection volume must not depend on a low-pressure buoy relief. Regulator fail-open must be flow-bounded by a fixed restriction sized so the buoy-adjacent relief holds the buoy below MAWP at 5 m backpressure and 0 °C discharge. Full ascent must vent without overpressure as ambient pressure falls.
+
+No custom pressure vessel, receiver, adapter or improvised manifold is authorized.

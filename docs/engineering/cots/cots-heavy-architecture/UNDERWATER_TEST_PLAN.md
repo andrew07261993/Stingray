@@ -20,7 +20,7 @@ Minimum instrumentation: depth/temperature, inlet differential pressure, timer/v
 
 Fixture: non-cutting pack surrogate, supplier-approved low-energy inlet and pool/open-water restraint. A qualified pressure chamber is required for depth cases beyond open-water capability. This is hydrostatic environmental testing, not pneumatic proof testing.
 
-Provisional pass: both articles reach at least 54 L measured usable displacement and lose no more than 5% over 30 minutes at supplier-approved differential, with no seam/attachment/valve damage and two successful dry/repack cycles. Timing, depth and load gates are **PROVISIONAL — OWNER REQUIREMENT REQUIRED**.
+Development pass: both articles demonstrate at least 60 L actual usable displacement at 5 m (or an approved chamber equivalent), lose no more than 5% over 30 minutes at the supplier-approved differential, show no seam/attachment/valve damage, and complete two dry/repack cycles. The separate system useful-inflation gate is at least 54 L measured displacement within 10.0 s, stable and holding/increasing. HIKO cannot be pressure-tested to either condition until the supplier provides operating differential and MAWP; rated/geometric volume alone does not pass.
 
 Source status: HIKO direct shows sold out. Exact MPN inventory/add-to-cart was observed at credible EU retailers, but authorization, export availability and lot traceability are unverified. Backup is HIKO `87901_ONE` Buoyancy RF V.2 only after HIKO confirms exact identity/specification; no generic 60 L substitution is accepted.
 
@@ -44,7 +44,7 @@ Minimum instrumentation: water/cylinder temperature sensors, timer/video and cyl
 
 Fixture: complete unmodified manufacturer vest/bladder/mount, soft restraint in a controlled tank/pool or qualified facility, protected/remote initiation where appropriate and personnel exclusion from cylinder/projectile paths. Pressure/flow instrumentation is deferred unless LSC provides an approved interface and a qualified facility approves it. No improvised pressure apparatus is authorized.
 
-Provisional pass: both branches successfully activate and puncture on two controlled cycles, exhibit no structural/seal failure, pass the facility-approved post-rearm leak check and are rearmed with published parts/instructions. Numeric delay/pressure/flow criteria are **PROVISIONAL — OWNER REQUIREMENT REQUIRED**.
+Development pass: both branches successfully activate and puncture on two controlled cycles, exhibit no structural/seal failure, pass the facility-approved post-rearm leak check and are rearmed with published parts/instructions. Record activation delay, but do not apply the final 54 L/10 s gate: this 33 g article does not represent the final gas inventory, outlet, buoy, regulator or restriction.
 
 ## Safety boundary
 

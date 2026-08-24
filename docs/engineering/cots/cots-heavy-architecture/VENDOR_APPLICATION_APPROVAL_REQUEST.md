@@ -4,13 +4,13 @@
 
 ## Project summary
 
-STINGRAY I5-S DF8 is evaluating passive, non-electrical, non-pyrotechnic, water-authorized inflation of an approximately 60 L recoverable buoy. The design uses individually replaceable commercial CO2 sources, checked branches, a separate pressure-limiting stage and low-pressure buoy relief. No custom pressure vessel is permitted. Components will be exposed to water and may be cold-soaked before discharge.
+STINGRAY I5-S DF8 is evaluating passive, non-electrical, non-pyrotechnic, water-authorized inflation of a 60 L recoverable buoy. The controlled mission case is 5 m activation depth, 0 °C water/source temperature, 60 L actual usable displacement and 10 s to at least 54 L useful displacement. The design requires independently replaceable commercial CO2 sources, a rated pressure-limiting stage and low-pressure buoy relief. No custom pressure vessel, plenum or improvised pressure adapter is permitted. Components will see fresh and salt water, repeated immersion/reset/repack and marine corrosion exposure.
 
 ## Candidate configurations attached
 
 | Config | Water inflator / puncture device | Cartridge | Purpose | Current classification |
 |---|---|---|---|---|
-| A | Halkey-Roberts `V95000` Hydro 1F, 1/2-20 | Leland `86202Z`, 38 g | Preferred supported multi-branch baseline | PUBLISHED CONFIGURATION SUPPORTED |
+| A | Halkey-Roberts `V95000` Hydro 1F, 1/2-20 | Leland `86202Z`, 38 g | Published rearm pair; thermodynamic minimum is nine at owner case | PUBLISHED CONFIGURATION SUPPORTED only in published PFD/manifold context; STINGRAY HP outlet APPLICATION APPROVAL REQUIRED |
 | B | Halkey-Roberts `V95000` Hydro 1F, 1/2-20 | Leland `89070`, 70 g | Prior source; potential count reduction | APPLICATION APPROVAL REQUIRED |
 | C | Halkey-Roberts `V95000` Hydro 1F, 1/2-20 | Leland `89092`, 92 g | Count-reduction challenger | APPLICATION APPROVAL REQUIRED |
 | D | Halkey-Roberts `V95000` Hydro 1F, 1/2-20 | Leland `89150`, 150 g | Minimum-count challenger | APPLICATION APPROVAL REQUIRED |
@@ -52,12 +52,23 @@ Please answer for each configuration within your product authority and cite the 
 - Confirm the exact 1/2-20 Hydro 1F body/lanyard suffix and exact holder kit for the proposed installation.
 - State the public or application-specific cartridge mass/length/reaction limit for `V95000`.
 - Confirm service life and environmental limits of `V80040`, including saltwater and cold-soak conditions.
+- Confirm whether `V95000` and manifold `830011001` have a commercial, pressure-rated outlet configuration suitable for connection to an HP check valve or collection bus. Identify exact MPN, connection, MAWP, proof basis, temperature derating, valve-core function, flow limit, allowable reaction load, installation torque and replacement seals.
+- If no such outlet exists, nominate a commercial water-automatic source/inflator with a rated pressure outlet or an approved direct-buoy manifold architecture. Confirm that no custom adapter is needed.
+- State whether multiple automatic units may discharge into a common checked bus and identify synchronization, reverse-flow and blocked-outlet restrictions.
 
 ### Lifesaving Systems
 
 - Confirm the current `481-CG` is supplied with exact `470-CG`/HR `V95000-1F`, bobbin, gaskets, lanyard and `#484` 33 g cylinder.
 - Confirm controlled water-activation testing of the complete unmodified `481-CG` and identify manufacturer test/inspection restrictions.
 - Quote two complete `481-CG` articles plus replacement `#474` bobbins, `#479-A2` gaskets and `#484` cylinders; identify CoC and lot/date traceability options.
+
+### HIKO or replacement buoy manufacturer
+
+- Confirm exact rated/geometric capacity and actual usable displaced volume at 5 m for the quoted article.
+- Provide operating differential-pressure range, MAWP, proof/burst basis, inlet rating and direct-CO2 restrictions.
+- Identify the integral or required relief MPN, crack/set tolerance, reseat behavior and flow-capacity curve with external hydrostatic backpressure.
+- State 0 °C water limits, storage limits, fresh/salt-water immersion limits, drying/inspection criteria and permitted reset/repack cycles.
+- Confirm recovery attachment/load path and whether 500 lbf proof is permitted through the article. If not, identify required load-path separation.
 
 ## Evidence requested with response
 

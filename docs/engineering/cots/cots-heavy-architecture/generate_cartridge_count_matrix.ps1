@@ -20,7 +20,7 @@ $candidates = @(
 
 $rows = foreach ($candidate in $candidates) {
     $envelopeMl = [math]::Round([math]::PI * [math]::Pow(($candidate.diameter * 25.4) / 2, 2) * ($candidate.length * 25.4) / 1000, 1)
-    foreach ($count in 1..7) {
+    foreach ($count in 1..10) {
         $inventory = $candidate.charge * $count
         foreach ($base in $baseRows) {
             $designPass = $inventory -ge [double]$base.design_required_g

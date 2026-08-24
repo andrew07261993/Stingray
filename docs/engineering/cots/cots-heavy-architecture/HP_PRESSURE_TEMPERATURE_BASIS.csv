@@ -1,0 +1,9 @@
+temperature_C,co2_density_basis_kg_m3,nist_pressure_psia,nist_pressure_psig,phase,basis_use
+0,760,505.48,490.78,"liquid and vapor","minimum-temperature source pressure reference"
+20,760,830.93,816.23,"liquid and vapor","ambient reference"
+25,760,1079.7,1065.0,liquid,"warm operating reference"
+30,760,1383.2,1368.5,liquid,"near water-operation maximum"
+35,760,1692.3,1677.6,supercritical,"air/storage reference"
+40,760,2005.2,1990.5,supercritical,"air/storage reference"
+45,760,2320.8,2306.1,supercritical,"Hydro 1F published air operating maximum"
+50,760,2638.5,2623.8,supercritical,"rounded coverage of Leland 49 C / 120 F storage ceiling"

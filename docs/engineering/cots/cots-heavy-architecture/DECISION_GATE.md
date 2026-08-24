@@ -2,23 +2,27 @@
 
 ## Decision
 
-**ARCHITECTURE C PRESSURE REVISION READY FOR OWNER REQUIREMENT CLOSURE**
+**ARCHITECTURE C PRESSURE ARCHITECTURE REQUIRES REVISION**
 
-Architecture C remains the COTS-heavy trade lead. The pressure source is now grounded in an exact published commercial automatic configuration, but mission values still prevent final count, relief setting and CAD release.
+Architecture C remains the COTS-heavy trade lead, but its current distributed Hydro 1F-to-HP-bus embodiment is rejected for CAD because the rated outlet is not published and the 60 L buoy pressure envelope is absent.
 
 ## Gate state
 
-`PRESSURE_SOURCE_REVISION_COMPLETE = true`
+`OWNER_MISSION_VALUES_CLOSED = true`
 
-`SUPPORTED_AUTOMATIC_PAIR_EXISTS = true`
+`THERMODYNAMIC_INVENTORY_FROZEN_G = 342`
 
-`PREFERRED_PAIR = HR V95000 1/2-20 + LELAND 86202Z 38 G`
+`THERMODYNAMIC_CARTRIDGE_COUNT_86202Z = 9`
 
-`PAIR_CLASSIFICATION = PUBLISHED CONFIGURATION SUPPORTED`
+`FINAL_PHYSICAL_CARTRIDGE_COUNT_RELEASED = false`
 
-`PREFERRED_COUNT_RANGE = 5 TO 7`
+`PAIR_CLASSIFICATION = PUBLISHED CONFIGURATION SUPPORTED IN PFD/MANIFOLD CONTEXT`
 
-`FINAL_CARTRIDGE_COUNT_ESTABLISHED = false`
+`STINGRAY_HP_BRANCH_CLASSIFICATION = APPLICATION APPROVAL REQUIRED / NO PUBLISHED INTERFACE`
+
+`HP_COMPONENT_BASIS = 3000 PSIG AT 50 DEG C`
+
+`BUOY_OPERATING_AND_RELIEF_ENVELOPE = UNESTABLISHED`
 
 `TYPE_3_FUNCTIONAL_SCALE_UNBLOCKED = true`
 
@@ -34,4 +38,4 @@ Architecture C remains the COTS-heavy trade lead. The pressure source is now gro
 
 ## Exact next action
 
-Issue the vendor application/RFQ package and obtain the seven owner mission values; then select the final integer count, close HP derating and LP relief/fault-flow limits, and seek an explicit pre-CAD commission. Do not start CAD or merge this draft branch.
+Issue the focused manufacturer application request for a rated water-automatic source outlet/topology and the HIKO pressure/cycle data request; select a supported replacement buoy if HIKO cannot respond. Re-run sizing for the verified differential and qualify 0 °C/5 m/10 s behavior before any CAD commission.

@@ -27,7 +27,7 @@ The first live discharge uses the complete, unmodified `481-CG` system in a cont
 
 Minimum measurements: activation delay, successful puncture, water/cylinder temperature, video, cylinder mass before/after where the procedure permits, achieved vest inflation, visible icing/leakage, bobbin/pin/gasket condition and rearm time.
 
-Provisional pass: both specimens activate and puncture on two controlled cycles without structural/seal failure; no detectable post-rearm leakage under the facility's approved low-energy leak check; rearm is completed using only published service parts/instructions. Numeric activation time, pressure and flow acceptance remain **PROVISIONAL — OWNER REQUIREMENT REQUIRED**.
+Development pass: both specimens activate and puncture on two controlled cycles without structural/seal failure; no detectable post-rearm leakage under the facility's approved low-energy leak check; rearm is completed using only published service parts/instructions. Activation delay is recorded, but the owner’s 54 L/10 s useful-inflation gate does not apply to this 33 g functional-scale article and cannot be inferred from it.
 
 ## Procurement hold point
 

@@ -1,6 +1,6 @@
 # STINGRAY I5-S DF8 COTS-heavy architecture trade
 
-> **2026-08-24 pressure-source revision:** the historical Architecture C trade lead is retained and its three-cartridge pressure embodiment remains superseded. A five-to-seven-branch `V95000 + 86202Z` bounded revision and functional-scale Type 3 are now supported. Current disposition is **ARCHITECTURE C PRESSURE REVISION READY FOR OWNER REQUIREMENT CLOSURE**; CAD remains unauthorized. See `ARCHITECTURE_C_REVISION_GATE.md`. The alternatives below remain historical trade evidence.
+> **2026-08-24 owner-mission closure:** the historical Architecture C trade lead is retained, but the current pressure path is not. Nine `86202Z` cartridges (342 g) are the first count to pass the 5 m/0 °C mass cases; the published `V95000` manifold does not provide a rated HP-bus outlet, and HIKO publishes no pressure envelope. Current disposition is **ARCHITECTURE C PRESSURE ARCHITECTURE REQUIRES REVISION**; CAD remains unauthorized. See `ARCHITECTURE_C_REVISION_GATE.md`. Earlier alternatives remain historical trade evidence.
 
 Status: **Phase 1–4 complete; provisional selection only; NOT RELEASED**.
 

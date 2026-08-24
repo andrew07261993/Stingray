@@ -20,7 +20,7 @@ Keep these stages separate: **CATALOG IDENTITY VERIFIED**, **COC AVAILABILITY CO
 
 - Exact MPN `87640_OLV_ONE`, quantity two identical, 60 L.
 - Confirm retailer is authorized/traceable and permitted to export to the delivery location.
-- Supply manufacturer label/lot/date images or records, construction/material specification, inspection/repair instructions and any operating-pressure/relief limitation.
+- Supply manufacturer label/lot/date images or records, construction/material specification and inspection/repair instructions. Provide rated/geometric capacity, actual usable displaced volume at 5 m, operating differential, MAWP, proof/burst basis, inlet rating, relief set/reseat/capacity, 0 °C and storage limits, salt-water limits and permitted reset/repack cycles. No pressure test or PO release occurs without sufficient supplier limits.
 - No substitution to a generic 60 L bag.
 - Backup if the exact primary cannot be traced: HIKO `87901_ONE` Buoyancy RF V.2, quantity two, development-only after manufacturer identity/spec confirmation.
 

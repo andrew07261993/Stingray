@@ -2,37 +2,35 @@
 
 ## Terminal status
 
-**PRESSURE-SOURCE REVISION COMPLETE — ARCHITECTURE C PRESSURE REVISION READY FOR OWNER REQUIREMENT CLOSURE — CAD NOT AUTHORIZED**
+**OWNER MISSION SIZING CLOSED — ARCHITECTURE C PRESSURE ARCHITECTURE REQUIRES REVISION — CAD NOT AUTHORIZED**
 
-## Revision outcome
+## Closed this commission
 
-- Preferred supported pair: Nordson MEDICAL/Halkey-Roberts `V95000` Hydro 1F, 1/2-20 + Leland `86202Z` 38 g.
-- Compatibility: **PUBLISHED CONFIGURATION SUPPORTED** through an exact Leland rearm configuration.
-- Preferred count range: five to seven independent checked automatic branches, pending mission closure.
-- Seven-branch qualification grid envelope: 7.5 m at 25 °C, 3 m at 15 °C and 0 m at 0 °C under the existing 60 L model.
-- Type 3 unblocked at functional scale: two complete LSC `481-CG` systems with `470-CG` + `#484` 33 g, not representative of final inventory.
-- Type 1: two HIKO `87640_OLV_ONE`; direct manufacturer sold out, credible EU retailer stock observed, authorization/traceability pending.
-- Type 2: two ACE `HBD-15-25-AA-P`; exact suffix orderable on request, lead time and seawater guidance pending.
-- Six total development articles; no purchase made; delivered-item CoCs accepted: zero.
+- Owner basis: 5.0 m maximum depth, 0 °C minimum source/water temperature, 10 s useful-inflation time, 60 L actual usable displacement at depth and repeated fresh/salt-water marine service.
+- Useful inflation: at least 54 L measured displacement at 5 m within 10 s, stable geometry and holding/increasing; full steady-state inventory remains sized to 60 L.
+- Controlling 5 m/0 °C calculation: 190.06 g theoretical, 304.10 g design and 334.51 g qualification.
+- Five, six and seven `86202Z` branches all fail. Nine (342 g) is the first integer count to pass both mass cases; eight fails.
+- HP basis: approximately 2,624 psig maximum credible pressure at 50 °C on the documented NIST 760 kg/m³ proxy; 3,000 psig at 50 °C is the required screening/design basis pending component-specific derating acceptance.
+- Type 3 remains two complete LSC `481-CG` systems with `470-CG`/HR `V95000-1F` and `#484` 33 g, functional-scale only.
+
+## Architecture blocker
+
+Nordson publishes `V95000 + 86202Z` as a rearm pairing for a life-vest/manifold context. The published `830011001` manifold interface has valve core, cap and O-rings; no published pressure-rated outlet supports the proposed individual HP check and collection bus. Therefore:
+
+- pair in published PFD/manifold context: **PUBLISHED CONFIGURATION SUPPORTED**;
+- STINGRAY branch feeding HP check/bus: **APPLICATION APPROVAL REQUIRED / NO PUBLISHED INTERFACE**;
+- nine is the thermodynamic minimum count, not a released source architecture.
+
+HIKO `87640_OLV_ONE` has no published operating differential, MAWP, proof/burst, relief or cycle data. No buoy operating/relief setting is authorized.
+
+## Field reset
+
+The service sequence remains conceptually field-resettable, but nine sources impose at least nine cartridges, nine bobbins and supplier-defined seals/pins/clips per deployment. The published source-module seal minimum is 27; an assumed two check connections per branch would raise the source/check lower bound to 45 before the common path. Final leak count cannot close until a commercial outlet/topology exists.
 
 ## Preserved controls
 
 - Branch: `design/df8-cots-heavy-architecture`.
-- Controlling input commit: `cf029128ba61f8c6010fd5d0a6df183ce23bacec`.
 - Read-only CAD authority `8c594781e27b0597a71957082fb64f152cacfcd9` was not modified.
-- Zero custom pressure vessels; HP and LP circuits remain separated.
-- `3,000 psig` is an HP component-screening floor only, not frozen design pressure.
-- Field reset remains credible using exact cartridge, bobbin, pin/seal/clip and holder service controls.
-
-## Holds
-
-1. Owner supplies maximum depth, minimum temperature, inflation time, usable volume at depth, recovery load, buoy differential MAWP and environmental profile.
-2. Leland supplies maximum cartridge pressure versus temperature and controlled mass/dimension data.
-3. Buoy operating differential/MAWP and relief data close; regulator/restrictor/relief fault-flow sizing follows.
-4. Larger 60–150 g automatic or supplemental pairs remain **APPLICATION APPROVAL REQUIRED**.
-5. LSC confirms the current `481-CG` ships with exact `470-CG`/HR `V95000-1F` and `#484` before PO release.
-6. Quotes, received identity, delivered CoCs and qualified-facility tests pass.
-
-## Explicitly not performed
-
-No CAD modification, motion validation, STEP/AP242 generation, rendering, purchase, physical test, release package, merge or production release was performed.
+- Zero custom pressure vessels remains mandatory.
+- Delivered-item CoCs accepted: zero.
+- No CAD, motion, AP242, render, purchase, physical test, merge or production release was performed.

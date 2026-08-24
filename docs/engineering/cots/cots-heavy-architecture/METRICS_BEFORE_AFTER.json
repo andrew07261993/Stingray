@@ -1,6 +1,6 @@
 {
-  "schema": "STINGRAY_DF8_COTS_HEAVY_ARCHITECTURE_METRICS_V3",
-  "status": "PRESSURE_REVISION_READY_FOR_OWNER_REQUIREMENT_CLOSURE",
+  "schema": "STINGRAY_DF8_COTS_HEAVY_ARCHITECTURE_METRICS_V4",
+  "status": "PRESSURE_ARCHITECTURE_REQUIRES_REVISION",
   "baseline": {
     "partdefs_total": 121,
     "functional_cots_numerator": 10,
@@ -20,50 +20,64 @@
     "projected_custom_fabrication_operations": 14,
     "custom_pressure_vessels": 0,
     "trade_lead_retained": true,
-    "three_cartridge_concept_accepted": false,
+    "current_pressure_path_accepted": false,
     "cad_authorized": false
   },
-  "pre_cad_pressure_closure": {
-    "nominal_buoy_volume_L": 60.0,
+  "owner_mission_basis": {
+    "maximum_activation_depth_m": 5.0,
+    "minimum_source_water_temperature_C": 0,
+    "maximum_useful_inflation_time_s": 10.0,
+    "useful_inflation_displaced_volume_L": 54.0,
+    "required_steady_usable_displaced_volume_L": 60.0,
+    "recovery_proof_load_lbf": 500,
+    "recovery_design_load": null,
+    "recovery_ultimate_load": null,
+    "environment": ["fresh_water", "salt_water", "repeated_immersion", "repeated_field_reset_repack", "marine_corrosion"]
+  },
+  "final_mass_sizing": {
     "provisional_buoy_differential_kPa": 10.0,
-    "temperatures_C": [25, 15, 0],
-    "depths_m": [0, 3, 5, 7.5, 10, 15],
-    "inventories_g": [140, 210, 280],
-    "three_by_70_design_depth_m": {
-      "warm_25C": 5.18,
-      "nominal_15C": 2.82,
-      "cold_0C": 0.07
-    },
-    "three_by_70_qualification_depth_m": {
-      "warm_25C": 3.72,
-      "nominal_15C": 1.56,
-      "cold_0C": null
-    },
+    "ambient_absolute_pressure_at_5m_kPa": 151.58,
+    "modeled_buoy_absolute_pressure_kPa": 161.58,
+    "theoretical_required_g": 190.06,
+    "design_required_g": 304.10,
+    "qualification_required_g": 334.51,
     "preferred_supported_cartridge_mpn": "86202Z",
-    "preferred_supported_cartridge_charge_g": 38,
-    "preferred_supported_count_range": [5, 7],
-    "seven_branch_qualification_grid_depth_m": {
-      "warm_25C": 7.5,
-      "nominal_15C": 3.0,
-      "cold_0C": 0.0
-    },
-    "released_cartridge_count": null,
-    "hp_design_pressure_psig": null,
-    "hp_screening_catalog_rating_psig": 3000,
-    "inflator_compatibility": "V95000 + 86202Z PUBLISHED CONFIGURATION SUPPORTED; V95000 + 89070 APPLICATION APPROVAL REQUIRED",
-    "owner_values_open": 7,
-    "field_reset_verdict": "CREDIBLE FIELD RESET PATH — REPRESENTATIVE TWO-CYCLE DEMONSTRATION PENDING"
+    "cartridge_charge_g": 38,
+    "thermodynamic_minimum_count": 9,
+    "thermodynamic_inventory_g": 342,
+    "design_margin_g": 37.90,
+    "qualification_margin_g": 7.49,
+    "physical_count_released": false,
+    "inflator_count_released": false,
+    "hp_check_and_bus_released": false
+  },
+  "pressure_basis": {
+    "nist_density_proxy_kg_m3": 760,
+    "maximum_credible_temperature_C": 50,
+    "maximum_credible_pressure_psig": 2623.8,
+    "hp_component_basis_psig_at_50C": 3000,
+    "component_derating_closed": false,
+    "buoy_operating_differential_kPa": null,
+    "buoy_mawp_kPa": null,
+    "relief_setting_kPa": null,
+    "inflator_pair_classification": "PUBLISHED CONFIGURATION SUPPORTED IN PFD/MANIFOLD CONTEXT",
+    "stingray_hp_outlet_classification": "APPLICATION APPROVAL REQUIRED / NO PUBLISHED INTERFACE"
+  },
+  "package_proxy": {
+    "nine_cylinder_outer_envelope_ml": 749.7,
+    "nine_source_shipping_procurement_mass_proxy_kg": 2.489,
+    "installed_package_mass_kg": null,
+    "published_source_seals_minimum": 27,
+    "hypothetical_source_check_interfaces_minimum": 45,
+    "final_leak_point_count": null
   },
   "development_procurement": {
     "selected_item_types": 3,
     "selected_units": 6,
-    "maximum_item_types": 3,
-    "maximum_units": 6,
     "type_1": {"mpn": "87640_OLV_ONE", "quantity": 2},
     "type_2": {"mpn": "HBD-15-25-AA-P", "quantity": 2},
     "type_3": {"mpn": "LSC 481-CG with 470-CG + #484", "status": "FUNCTIONAL-SCALE — NOT REPRESENTATIVE OF FINAL GAS INVENTORY", "quantity": 2},
     "delivered_item_cocs": 0
   },
-  "coverage_policy": "Historical COTS projection retained; pre-CAD closure changes pressure acceptability, not the earlier line-count arithmetic.",
-  "terminal_status": "ARCHITECTURE C PRESSURE REVISION READY FOR OWNER REQUIREMENT CLOSURE — CAD NOT AUTHORIZED"
+  "terminal_status": "ARCHITECTURE C PRESSURE ARCHITECTURE REQUIRES REVISION — CAD NOT AUTHORIZED"
 }

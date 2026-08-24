@@ -13,7 +13,8 @@
 - Accounting target: baseline 10/114; accepted additions 14; projected 24/114 = 21.05%; adapters 4; net custom line reduction 10.
 - Owner clean-CAD acceptance: pending; no explicit record found.
 - Purchases placed: 0.
-- RFQs sent: 0.
+- RFQs sent: 4/4 owner-authorized Priority-1 inquiries; no purchase commitment.
+- Immediate vendor responses: 1 automated Smalley receipt/routing acknowledgment; 0 substantive technical, application, certificate or commercial responses.
 - Delivered-item CoCs verified: 0.
 - Production CAD files modified: 0.
 - CAD substitutions implemented: 0.
@@ -21,4 +22,4 @@
 
 Engineering disposition: **TARGETED COTS REQUIRES PHYSICAL TEST BEFORE CAD**.
 
-The Phase-4 check is a documentation/evidence gate. It is not physical qualification, pressure-system approval, CAD implementation, motion validation or product release.
+The Phase-4 check and RFQ transmission are documentation/evidence activities. They are not a purchase, physical qualification, pressure-system approval, CAD implementation, motion validation or product release.

@@ -1,17 +1,19 @@
 # Targeted COTS Procurement Action List
 
-Status: **RFQ PREPARATION ONLY — NO PURCHASE AUTHORIZED OR PERFORMED**
+Status: **FOUR RFQ/TECHNICAL INQUIRIES TRANSMITTED — ONE SMALLEY AUTOMATED RECEIPT ACKNOWLEDGMENT — ALL SUBSTANTIVE VENDOR RESPONSES PENDING — NO PURCHASE AUTHORIZED OR PERFORMED**
 
 ## Priority 1 — BUY / QUOTE NOW
 
-Quote now; do not place an order:
+The following owner-authorized, non-purchasing inquiries were transmitted from `carefinancialframework@gmail.com`; do not place an order:
 
-1. Swagelok `316L-50DF4-150`, quantity 2 empty — certificate-bearing quote, official CAD/drawing, serial/heat/MTR/proof-hydro options, external-pressure and CO2/refill application response.
-2. HIKO `87640_OLV_ONE`, quantity 2 same lot — manufacturer/authorized-stock quote plus volume, pressure, packed-envelope, lot and repack data. Manufacturer page is sold out; no adjacent SKU substitution.
-3. Smalley `VSM-8-S16`, quantity 10 — exact `-S16` quote, drawing/CAD, certificate/lot/heat options and submerged/reuse response.
-4. Rotor Clip `DC-4SS`, quantity 25 — exact material quote, drawing/CAD, certificate/lot/heat options and submerged/reuse response.
+1. **SENT** — Swagelok `316L-50DF4-150`, quantity 2 empty, to `info@chicago.swagelok.com` at `2026-08-24T14:14:15Z`; response pending.
+2. **SENT** — HIKO `87640_OLV_ONE`, quantity 2 same lot, to `info@hiko.cz` at `2026-08-24T14:14:13Z`; response pending.
+3. **SENT** — Smalley `VSM-8-S16`, quantity 10, to `sales@smalley.com` at `2026-08-24T14:14:13Z`; automated receipt/routing acknowledgment received at `2026-08-24T14:14:43Z`, substantive response pending.
+4. **SENT** — Rotor Clip `DC-4SS`, quantity 25, to `info@rotorclip.com` at `2026-08-24T14:14:14Z`; response pending.
 
 Gate: a quotation is non-purchasing evidence and can close identity/certification/availability gaps before owner CAD acceptance.
+
+Exact subjects, message bodies, recipients, timestamps and Gmail message/thread IDs are recorded in `TARGETED_COTS_RFQ_TRANSMISSION_LOG.md`.
 
 ## Priority 2 — QUOTE AFTER OWNER CAD ACCEPTANCE
 

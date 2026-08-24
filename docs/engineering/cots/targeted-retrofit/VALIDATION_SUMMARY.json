@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-08-24T13:47:00Z",
+  "generated_utc": "2026-08-24T14:15:06Z",
   "source_branch": "design/df8-targeted-cots-retrofit",
   "phase": "Phase 4 pre-CAD procurement / fit / certification closure",
   "scope": "Seven existing selected substitutions only",
@@ -26,12 +26,14 @@
     "state parity",
     "motion sweep",
     "physical pressure or softgood test",
-    "purchase and RFQ transmission"
+    "purchase"
   ],
   "status": {
     "owner_clean_cad_acceptance": "PENDING",
     "procurement_orders_placed": 0,
-    "rfqs_sent": 0,
+    "rfqs_sent": 4,
+    "automated_receipt_acknowledgments": 1,
+    "substantive_vendor_responses_received": 0,
     "received_item_cocs_verified": 0,
     "cad_substitutions_implemented": 0,
     "cad_readiness": "TARGETED COTS REQUIRES PHYSICAL TEST BEFORE CAD",

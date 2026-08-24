@@ -1,6 +1,6 @@
 # TASK_STATE
 
-- objective: Close Phase 4 pre-CAD procurement, fit and certification evidence for the seven existing targeted-COTS selections without purchasing or modifying CAD.
+- objective: Close Phase 4 pre-CAD procurement, fit and certification evidence and transmit the four owner-authorized Priority-1 RFQ/technical inquiries without purchasing or modifying CAD.
 - docs_worktree_path: C:\Users\ANDRE.ANDREWSPC\Documents\Codex\2026-08-23\stingray-docs
 - docs_branch: design/df8-targeted-cots-retrofit
 - phase_4_controlling_input_commit: 09b8e958d9b20ec2aaed9c579a48bc896677217d
@@ -9,7 +9,7 @@
 - clean_cad_authority_branch: fix/final-cad-semantic-cleanup
 - clean_cad_status: CLEAN CAD BASELINE TECHNICALLY COMPLETE — OWNER CREO ACCEPTANCE PENDING
 - completed_phase: Phase 4 pre-CAD procurement / fit / certification closure
-- terminal_status: TARGETED COTS REQUIRES PHYSICAL TEST BEFORE CAD
+- terminal_status: RFQ TRANSMITTED — VENDOR RESPONSES PENDING; TARGETED COTS REQUIRES PHYSICAL TEST BEFORE CAD
 - seven_item_gate:
   - C-001 Swagelok 316L-50DF4-150: C — ACCEPT FOR PHYSICAL TEST BEFORE CAD
   - C-006 HIKO 87640_OLV_ONE: C — ACCEPT FOR PHYSICAL TEST BEFORE CAD
@@ -33,12 +33,15 @@
   - net_custom_line_reduction: 10
   - delivered_item_cocs_verified: 0
   - procurement_orders_placed: 0
+  - rfq_inquiries_transmitted: 4
+  - automated_receipt_acknowledgments: 1
+  - substantive_vendor_responses_received: 0
   - cad_substitutions_implemented: 0
   - release_status: NOT RELEASED
 - pressure_reservoir: Swagelok 316L-50DF4-150 remains FOR QUALIFIED FIT / PRESSURE-SUBSYSTEM EVALUATION ONLY; PRESSURE-RATED is verified, while CO2 APPLICATION APPROVED, FIELD REFILLABLE, external-pressure rated and PROCUREMENT CERTIFICATE AVAILABLE remain UNVERIFIED.
 - field_reset_verdict: CONDITIONAL — preserved only by certified pressure-module exchange and successful buoy drying/repack qualification; operator field refill is not established.
 - test_articles: HIKO x2 DEFER; empty Swagelok x2 DEFER; ACE HBD-15-25-AA-P x2 DEFER. No purchase authorized.
-- priority_1_rfq_only: Swagelok 316L-50DF4-150; HIKO 87640_OLV_ONE; Smalley VSM-8-S16; Rotor Clip DC-4SS.
+- priority_1_rfq_only: SENT — Swagelok 316L-50DF4-150 at 2026-08-24T14:14:15Z; HIKO 87640_OLV_ONE at 2026-08-24T14:14:13Z; Smalley VSM-8-S16 at 2026-08-24T14:14:13Z; Rotor Clip DC-4SS at 2026-08-24T14:14:14Z. Smalley automated receipt/routing acknowledgment received at 2026-08-24T14:14:43Z; all substantive vendor responses pending; no purchase commitment.
 - owner_decisions_required: Accept/reject clean CAD baseline after Creo review; accept/reject bounded ring-groove revisions after vendor responses; accept/reject certified-module-exchange field-reset concept; accept/reject C-001/C-006 after physical test.
-- next_exact_action: Obtain owner authorization to send the four prepared Priority-1 RFQs without purchasing; collect certificate/application/CAD evidence while the owner reviews clean CAD baseline 8c594781e27b0597a71957082fb64f152cacfcd9. Do not begin CAD implementation.
-- last_updated_utc: 2026-08-24T13:47:00Z
+- next_exact_action: Monitor the four recorded Gmail threads for vendor replies; when received, record application/certificate/CAD/availability answers without ordering or expanding candidate research. Owner clean-CAD review remains separate. Do not begin CAD implementation.
+- last_updated_utc: 2026-08-24T14:15:06Z

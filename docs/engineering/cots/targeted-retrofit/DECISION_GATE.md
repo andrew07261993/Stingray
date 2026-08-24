@@ -13,11 +13,12 @@
 - [x] Projected gated functional COTS recalculated to **24/114 = 21.05%**.
 - [x] Gross accepted MAKE definitions removed = 14; new custom adapter lines = 4; net custom line reduction = 10.
 - [x] Delivered-item CoCs verified = 0; purchases = 0; CAD substitutions = 0; product = **NOT RELEASED**.
+- [x] Owner authorized and all four Priority-1 RFQ/technical/certificate inquiries were transmitted without a purchase commitment.
 - [ ] Owner accepts clean CAD baseline after Creo review.
-- [ ] Priority-1 RFQs are owner-authorized and supplier responses received.
+- [ ] Substantive Priority-1 supplier application, certificate, CAD, availability and commercial responses received and evaluated.
 - [ ] Swagelok/HIKO physical qualification closes C gates.
 - [ ] Any bounded CAD implementation begins.
 
 Current decision: **TARGETED COTS REQUIRES PHYSICAL TEST BEFORE CAD**.
 
-Exact next action: obtain owner authorization to send the four prepared Priority-1 RFQs without purchasing, then collect vendor certificate/application/CAD responses while owner review of the clean CAD baseline proceeds.
+Exact next action: monitor the four recorded Gmail threads and evaluate vendor certificate/application/CAD/availability responses when received; do not order, accept terms or start CAD. Owner review of the clean CAD baseline proceeds separately.

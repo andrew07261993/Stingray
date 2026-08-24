@@ -31,4 +31,4 @@ Projected functional COTS is **24/114 = 21.05%** only if A/B/C items ultimately 
 
 ## Exact next action
 
-Obtain owner authorization to send the four prepared Priority-1 RFQs; request certificate/application/CAD evidence without purchasing. In parallel, owner reviews the clean CAD baseline. Do not start CAD until owner acceptance and the C-item physical-test gates are closed.
+Monitor the four transmitted Priority-1 RFQs and record certificate/application/CAD evidence when suppliers reply, without purchasing. In parallel, owner reviews the clean CAD baseline. Do not start CAD until owner acceptance and the C-item physical-test gates are closed.

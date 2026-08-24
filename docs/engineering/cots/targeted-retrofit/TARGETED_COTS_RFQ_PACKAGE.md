@@ -1,6 +1,8 @@
 # Targeted COTS RFQ Package
 
-Status: **PREPARED — DO NOT SEND / DO NOT PURCHASE WITHOUT OWNER AUTHORIZATION**
+Status: **TRANSMITTED UNDER OWNER RFQ-ONLY AUTHORIZATION — SMALLEY RECEIPT ACKNOWLEDGED — ALL SUBSTANTIVE VENDOR RESPONSES PENDING — DO NOT PURCHASE**
+
+Transmission evidence is recorded in `TARGETED_COTS_RFQ_TRANSMISSION_LOG.md`. The messages were sent as developmental RFQ/technical-information inquiries only; no order, terms acceptance, fabrication authorization or purchase commitment was issued.
 
 Use the following developmental RFQ wording. No supplier is being asked to certify the complete STINGRAY system; each supplier is asked only to identify, quote and document its own catalog item and to answer the bounded application questions below.
 

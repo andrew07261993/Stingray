@@ -1,6 +1,6 @@
 {
   "schema": "stingray.targeted_cots.metrics.v3",
-  "generated_utc": "2026-08-24T13:47:00Z",
+  "generated_utc": "2026-08-24T14:15:06Z",
   "accounting_policy": {
     "functional_denominator": 114,
     "denominator_excludes": [
@@ -35,6 +35,9 @@
     "custom_adapter_lines_added": 4,
     "net_custom_line_reduction": 10,
     "procurement_orders_placed": 0,
+    "rfq_inquiries_transmitted": 4,
+    "automated_receipt_acknowledgments": 1,
+    "substantive_vendor_responses_received": 0,
     "received_item_cocs_verified": 0,
     "cad_changes": 0
   },

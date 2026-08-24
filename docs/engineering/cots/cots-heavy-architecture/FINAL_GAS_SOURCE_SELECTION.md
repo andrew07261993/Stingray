@@ -1,39 +1,36 @@
-# Final gas-source selection correction
+# Final gas-source selection
 
-## Result
+## Selected path
 
-**NO ENVELOPE-COMPLIANT COMMERCIAL PRESSURE SOURCE IS SELECTED.**
+**Two Leland `89200` commercial charged cylinders with two Leland `65026-18Y12` mountable puncture devices are selected as the sole Architecture C developmental pressure-source path.**
 
-The previous eurocylinder systems AG `130522277` selection is rejected because its 82.5 mm OD exceeds the 57.15 mm controlling external diameter. The retained Leafield GIS water-activated/servo, GIV, B10, and custom 60 L softgood topology remains the preferred marine architecture, but its published W28.8 cylinder-valve interface has no source that meets the 50.80 mm practical cylinder allocation.
+- quantity: 2;
+- nominal CO2: 200 g each / 400 g total;
+- qualification excess: 65.49 g / 19.58%;
+- body: 50.038 mm OD x 234.95 mm long each;
+- published gross mass: 0.300 kg each / 0.600 kg total;
+- pressure boundary: two independent commercial `65026-18Y12` heads, 1/2-20 inlet, 1/8 NPT outlet, published 206 bar / 3,000 psi maximum inlet;
+- topology: two separate HP outlet/control paths converging only at low pressure;
+- passive actuation: one `V80040` water-sensitive bobbin releases one non-pressure dual-output STINGRAY mechanism; application qualification required because Nordson limits the bobbin to Halkey-Roberts products;
+- custom pressure vessels: 0;
+- custom HP adapters: 0.
 
-## Closest commercial lead
+The interface classification is **COMPATIBLE WITH PUBLISHED COMMERCIAL INTERFACE**. It is not manufacturer-approved as an armed water-triggered application. The design deliberately separates water authorization from the commercial HP puncture boundary.
 
-The lowest-complexity geometry lead is:
+## Retained downstream elements
 
-`2 x Leland 89200, 200 g each, 400 g total CO2`
+- two commercial rated pressure-control/fixed-restriction paths;
+- Leafield GIV/B10 marine low-pressure inlet/relief basis;
+- STINGRAY 60 L custom softgood, physical pressure qualification required;
+- simultaneous release of both sources;
+- certified charged module exchange in the field; no field cylinder refill.
 
-- body: 50.04 mm OD x 234.95 mm long each;
-- published gross mass: 300 g each, 600 g total;
-- neck: 1/2-20UNF2A;
-- regulation: Leland large-cylinder DOT-39/NRC non-refillable family;
-- commercial puncture device: Leland `65026-18Y12`, 1/2-20 inlet, 1/8 NPT outlet, 206 bar maximum inlet.
+Leland `50043-003` is not substituted as a shortcut regulator because public evidence does not establish `89200` application support or the required 60 L/10 s flow.
 
-This pair is **not selected** because the `65026` is a manual/installation puncture device, not a published armed water-triggered head, and Leafield publishes no 1/2-20 GIS cylinder valve. Connecting it would require a new actuation architecture and an unsupported high-pressure interface. The exact `89200` cylinder pressure/burst rating is also not public.
+## Decision
 
-## Preserved elements
+**C. ONE SPECIFIC MANUFACTURER INTERFACE VALUE REQUIRED BEFORE CAD**
 
-- owner case: 5 m, 0 C, 60 L actual displacement, useful inflation by 10 s;
-- qualification inventory: at least 334.51 g;
-- Leafield GIS passive water authorization/servo concept;
-- Leafield rated hose/GIV transfer concept;
-- Leafield B10 Yellow differential relief;
-- STINGRAY 60 L custom softgood with physical pressure qualification required;
-- zero custom pressure vessels;
-- field exchange of a complete charged source module;
-- no CAD authorization.
+Required document: **Leland drawing-controlled `89200` + `65026-18Y12` armed interface definition**, including installed safe/fired overall length and puncture advance/torque/retention. Exact cylinder pressure and procurement evidence remain downstream gates under the owner's explicit developmental-versus-release rule.
 
-## Disposition
-
-**ARCHITECTURE C PRESSURE SOURCE REQUIRES FURTHER REVISION**
-
-The exact next engineering action is to obtain or identify a manufacturer-released integrated marine source/head assembly with all of the following on one drawing-controlled configuration: cylinder body OD at or below 50.80 mm, net CO2 at or above 334.51 g in no more than three sources, published pressure/temperature ratings, passive water actuation compatible with the Leafield GIS topology, and no custom HP adapter. This is a source-architecture action, not a CAD action.
+No CAD is authorized by this document update.

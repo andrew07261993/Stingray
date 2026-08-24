@@ -1,55 +1,44 @@
 # Architecture C final pre-CAD gate
 
-## Disposition
+## Decision
 
-**ARCHITECTURE C PRESSURE SOURCE REQUIRES FURTHER REVISION**
+**C. ONE SPECIFIC MANUFACTURER INTERFACE VALUE REQUIRED BEFORE CAD**
 
-## Corrected source state
+The selected developmental path is two Leland `89200` cylinders, two Leland `65026-18Y12` mountable puncture heads, two independent commercial HP outlet/control paths, one `V80040` water-sensitive consumable with a dual non-pressure STINGRAY release, low-pressure convergence, Leafield GIV/B10 protection and the STINGRAY 60 L softgood. The custom `V80040` latch application is physical-qualification-required and is not represented as Nordson-approved.
 
-The superseded path used eurocylinder systems AG `130522277`. Its 82.5 mm diameter violates the 57.15 mm hard external limit and it is rejected. The pressure source cannot consume the full hard envelope; the calculated practical body allocation is 50.80 mm.
+## Closed gates
 
-The retained functional path is held at an open source node:
+- gas inventory: 400 g versus 334.51 g qualification requirement — **PASS**;
+- source body diameter: 50.038 mm versus 50.80 mm allocation — **PASS, TOLERANCE-CRITICAL**;
+- source count: two — **PASS**;
+- source gross mass: 0.600 kg total published — **PASS**;
+- complete system mass estimate: 3.400 kg; projected ready-to-throw 14.911 kg; reserve 3.229 kg — **PASS BY PRE-CAD ESTIMATE**;
+- pressure boundary: commercial Leland head through 1/8 NPT; no raw-HP manifold — **CREDIBLE TOPOLOGY**;
+- water authorization: separated from HP boundary, passive and non-electrical — **CREDIBLE TOPOLOGY**;
+- field reset: certified charged module exchange — **PASS IN CONCEPT**;
+- custom pressure vessels: 0;
+- custom HP adapters: 0.
 
-`commercial source/head <=50.80 mm OD [OPEN] -> Leafield GIS passive water authorization/servo [RETAINED] -> rated hose -> fixed-jet GIV -> 60 L STINGRAY softgood -> B10 Yellow relief`
+## Single developmental-CAD hold
 
-## Evidence gate
+Obtain the **Leland drawing-controlled `89200` + `65026-18Y12` armed interface definition**, stating installed safe/armed and fired overall lengths, thread engagement, axial/rotary advance, puncture torque/force, retention/reaction, bracket/outlet keep-out and removal direction.
 
-Leafield's official `LEL-20018 Rev 7b` manual publishes standard GIS valves `D912202` and `D912205` with W28.8 x 1/14 DIN 477 cylinder threads and 250 bar MWP. No public 1/2-20 or 1/4 NPT GIS valve is identified.
-
-The closest geometric source is two Leland `89200` 200 g cartridges. Both fit the 50.80 mm screen and supply 400 g, but they are not a supported final architecture because:
-
-1. their 1/2-20 puncture interface is not a published Leafield GIS cylinder connection;
-2. Leland's compatible `65026-18Y12` puncture device is not an armed water-triggered inflator;
-3. exact `89200` cylinder pressure/burst values are not public;
-4. connecting the systems would require an unsupported HP adapter or a new actuation mechanism.
-
-The gap cannot be reclassified as `DRAWING-CONTROLLED FINAL MPN PENDING` because no supported interface family exists in the published evidence.
-
-## Preserved downstream basis
-
-- 5 m maximum depth, 0 C minimum source/water temperature, useful inflation by 10 s;
-- 60 L actual displacement target;
-- 334.51 g minimum qualification inventory;
-- Leafield B9116042.2 development GIV and B10 Yellow relief basis;
-- custom 60 L softgood, physical pressure qualification required;
-- zero custom pressure vessels;
-- field exchange/reset objective;
-- Type 2 and functional-scale Type 3 development articles unchanged.
+This one document controls both mechanical release sizing and the longitudinal packaging gate. Published cylinder-plus-head arithmetic is 560.07 mm against the existing 545 mm forward pressure corridor, but it double-counts unknown neck/head overlap and omits unknown armed travel. Fit cannot truthfully be claimed without the interface document.
 
 `CAD_AUTHORIZED = false`
 
-`NO_VENDOR_EMAIL_WAIT = true`
+`FALLBACK_SEARCH_TRIGGERED = false`
 
-## Downstream physical qualification gates
+`REASON = COMMERCIAL RATED PUNCTURE INTERFACE EXISTS; ONLY ITS ARMED INSTALLATION DEFINITION IS MISSING`
 
-Once a source is selected and bounded CAD is separately authorized:
+## Downstream gates that do not hold developmental CAD
 
-- full-scale 0 C, 5 m, 54 L-by-10 s and 60 L steady-volume test;
-- fixed-jet selection, icing, hose reaction and B10 relief-flow/accumulation test;
-- softgood leak, pressure, relief, repeated-cycle and salt-water/corrosion qualification;
-- field source exchange/reset demonstration;
-- separate 500 lbf recovery proof/load-path verification and unresolved design/ultimate structural requirement.
+- procurement: orderable suffixes, quote, lead time, CoC/lot options and exact hose/control MPNs;
+- pressure test: exact `89200` allowable/proof/burst/temperature data, `65026` derating/application limit and complete component ratings;
+- release: received identity/CoC, 0 C/5 m/10 s performance, relief accumulation, softgood pressure/leak/cycle, salt/corrosion/reset and structural qualification.
+
+Delivered-item CoCs accepted: **0**.
 
 ## Exact next action
 
-Identify a manufacturer-released integrated marine source/head configuration meeting the 50.80 mm body allocation, at least 334.51 g inventory, published pressure ratings, passive Leafield-compatible water actuation, and no unsupported HP adapter. Do not start CAD.
+Obtain the one Leland armed-interface drawing above; then commission only the bounded developmental CAD packaging of two axial modules. Do not start CAD before that document.

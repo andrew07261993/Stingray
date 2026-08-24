@@ -1,6 +1,6 @@
 # STINGRAY I5-S DF8 COTS-heavy architecture trade
 
-> **2026-08-24 envelope correction:** eurocylinder `130522277` is rejected because its 82.5 mm OD exceeds the 57.15 mm hard maximum. The practical cylinder-body allocation is 50.80 mm. No published source simultaneously closes inventory, pressure margin, passive Leafield-compatible actuation, and this envelope; the closest geometric lead is two Leland `89200` cartridges but it is not selected. Current disposition is **ARCHITECTURE C PRESSURE SOURCE REQUIRES FURTHER REVISION** and CAD remains unauthorized. See `ARCHITECTURE_C_FINAL_PRECAD_GATE.md`; earlier alternatives remain historical evidence.
+> **2026-08-24 dual-source gate:** eurocylinder `130522277` remains rejected. The selected developmental path is two Leland `89200` cylinders with two `65026-18Y12` commercial puncture heads, two independent HP control paths and low-pressure convergence. It supplies 400 g CO2 inside the 50.80 mm body screen. Current decision is **C. ONE SPECIFIC MANUFACTURER INTERFACE VALUE REQUIRED BEFORE CAD**: the drawing-controlled armed `89200`/`65026-18Y12` installed/puncture definition. CAD remains unauthorized. See `ARCHITECTURE_C_FINAL_PRECAD_GATE.md`; earlier alternatives remain historical evidence.
 
 Status: **Phase 1–4 complete; provisional selection only; NOT RELEASED**.
 
@@ -11,7 +11,7 @@ The work stops at architecture selection. It creates no CAD, STEP, motion, rende
 ## Outcome
 
 - Alternatives evaluated: 3 materially different architectures.
-- Current source state: **Architecture C downstream marine topology retained; pressure source open**.
+- Current source state: **two Leland 89200 / 65026-18Y12 developmental modules selected; one armed-interface drawing required before CAD**.
 - Baseline functional COTS coverage: **10/114 = 8.77%**.
 - Projected coverage: **unfrozen pending final source/head selection**; historical 18/23 = 78.26% is not carried forward as a current selected metric.
 - Selected projected residual custom unique lines: **5**.

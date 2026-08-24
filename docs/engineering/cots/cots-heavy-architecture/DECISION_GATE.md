@@ -2,39 +2,45 @@
 
 ## Decision
 
-**ARCHITECTURE C PRESSURE SOURCE REQUIRES FURTHER REVISION**
+**C. ONE SPECIFIC MANUFACTURER INTERFACE VALUE REQUIRED BEFORE CAD**
 
-The 82.5 mm eurocylinder selection is rejected. The retained Leafield marine topology has no published pressure source that simultaneously fits the 50.80 mm practical cylinder allocation, supplies at least 334.51 g CO2, carries adequate pressure/temperature ratings, and connects to the passive GIS water-actuated system without an unsupported HP adapter.
+`SELECTED_SOURCE = 2 X LELAND 89200`
 
-## Gate state
+`SELECTED_PUNCTURE_HEAD = 2 X LELAND 65026-18Y12`
 
-`OWNER_MISSION_VALUES_CLOSED = true`
+`COMPATIBILITY = COMPATIBLE WITH PUBLISHED COMMERCIAL INTERFACE`
 
-`QUALIFICATION_GAS_INVENTORY_G = 334.51`
+`NOMINAL_CO2_G = 400`
 
-`PREFERRED_NOMINAL_GAS_INVENTORY_G = 342`
+`QUALIFICATION_REQUIREMENT_G = 334.51`
+
+`MARGIN_G = 65.49`
+
+`MARGIN_PERCENT_OF_REQUIREMENT = 19.58`
 
 `HARD_EXTERNAL_DIAMETER_MM = 57.15`
 
+`CYLINDER_BODY_OD_MM = 50.038`
+
 `PRACTICAL_CYLINDER_OD_ALLOCATION_MM = 50.80`
 
-`REJECTED_CYLINDER = EUROCYLINDER 130522277 — 82.5 MM OD`
+`PUBLISHED_CYLINDER_LENGTH_MM_EACH = 234.95`
 
-`FINAL_GAS_SOURCE_SELECTED = false`
+`TWO_CYLINDER_PLUS_HEAD_ARITHMETIC_MM = 560.07`
 
-`CLOSEST_GEOMETRIC_LEAD = 2 X LELAND 89200 — 400 G CO2`
+`CURRENT_FORWARD_PRESSURE_CORRIDOR_MM = 545.00`
 
-`CLOSEST_LEAD_STATUS = NOT SELECTED — PASSIVE LEAFIELD-COMPATIBLE ACTUATION NOT PUBLISHED`
+`PROJECTED_COMPLETE_PRESSURE_SYSTEM_KG = 3.400`
 
-`SELECTED_MARINE_INFLATION_FAMILY = LEAFIELD GIS WATER-ACTIVATED/SERVO — RETAINED CONCEPT`
+`PROJECTED_READY_TO_THROW_KG = 14.911`
 
-`BUOY = STINGRAY 60 L CUSTOM MARINE SOFTGOOD`
+`PROJECTED_MASS_RESERVE_KG = 3.229`
 
-`RELIEF = LEAFIELD B10 YELLOW 1.75 PSI NOMINAL`
+`DUAL_RELEASE = ONE V80040 WATER-SENSITIVE CONSUMABLE / ONE NON-PRESSURE STINGRAY EQUALIZER / TWO POSITIVE OUTPUTS — APPLICATION QUALIFICATION REQUIRED`
 
 `CUSTOM_PRESSURE_VESSELS = 0`
 
-`PROJECTED_FUNCTIONAL_COTS = UNFROZEN PENDING SOURCE SELECTION`
+`CUSTOM_HP_ADAPTERS = 0`
 
 `DELIVERED_ITEM_COCS_ACCEPTED = 0`
 
@@ -44,6 +50,10 @@ The 82.5 mm eurocylinder selection is rejected. The retained Leafield marine top
 
 `PRODUCT_RELEASED = false`
 
+## One missing pre-CAD document
+
+**Leland drawing-controlled `89200` + `65026-18Y12` armed interface definition**, including installed safe/fired length and puncture advance/torque/retention.
+
 ## Exact next action
 
-Obtain or identify one exact manufacturer-controlled narrow marine source/head assembly meeting the inventory, 50.80 mm OD, pressure, passive-water-actuation, and no-adapter gates. Then repeat only the source-package mass/interface gate before commissioning bounded CAD.
+Obtain that one Leland interface document. If its installed two-module envelope fits the current axial allocation, commission the bounded developmental CAD implementation; otherwise stop at the package gate without changing DF8 limits.

@@ -1,6 +1,6 @@
 {
   "schema": "STINGRAY_DF8_ARCHITECTURE_C_ENVELOPE_CORRECTION_V2",
-  "status": "PRESSURE_SOURCE_REQUIRES_FURTHER_REVISION",
+  "status": "ONE_SPECIFIC_MANUFACTURER_INTERFACE_REQUIRED_BEFORE_CAD",
   "owner_case": {
     "depth_m": 5.0,
     "minimum_temperature_C": 0,
@@ -26,7 +26,15 @@
     "body_length_mm": 280.0,
     "classification": "REJECTED — EXCEEDS CONTROLLING DF8 DIAMETER"
   },
-  "selected_source": null,
+  "selected_source": {
+    "manufacturer": "Leland Limited",
+    "mpn": "89200",
+    "quantity": 2,
+    "net_CO2_g": 400.0,
+    "puncture_device": "65026-18Y12",
+    "compatibility": "COMPATIBLE WITH PUBLISHED COMMERCIAL INTERFACE",
+    "status": "SELECTED DEVELOPMENTAL PATH — ARMED INTERFACE DRAWING REQUIRED"
+  },
   "closest_geometric_lead": {
     "manufacturer": "Leland Limited",
     "mpn": "89200",
@@ -38,8 +46,8 @@
     "projected_complete_pressure_system_mass_kg": 3.4,
     "projected_ready_to_throw_mass_kg": 14.911,
     "projected_mass_reserve_kg": 3.229,
-    "status": "NOT SELECTED",
-    "blocking_reason": "No published passive water-actuated Leafield-compatible 1/2-20 armed head; exact cylinder pressure rating is also not public"
+    "status": "SELECTED DEVELOPMENTAL PATH",
+    "blocking_reason": "One Leland drawing-controlled 89200 plus 65026-18Y12 armed installed/puncture interface is required before CAD"
   },
   "retained_architecture": {
     "marine_inflation_family": "Leafield GIS water-activated/servo concept",

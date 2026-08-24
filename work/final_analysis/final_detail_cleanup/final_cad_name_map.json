@@ -325,6 +325,18 @@
       "abbreviation_reason": "Deterministic 31-character Creo filename limit"
     },
     {
+      "legacy_id": "DF8-FORWARD-ARM-AFT-REPACK-SHELL-001",
+      "final_full_display_name": "AFT_REPACK_BAY_GRADE-9_TITANIUM_SHELL_TI",
+      "creo_safe_name": "AFT_REPACK_BAY_GRADE-9_C7315042",
+      "actual_part_number": "",
+      "make_buy": "MAKE",
+      "material": "Ti-3Al-2.5V Grade 9",
+      "subsystem": "Arm_Activation_Powertrain_Assembly",
+      "occurrence_naming_rule": "base name",
+      "traceability_property": "LEGACY_ID=DF8-FORWARD-ARM-AFT-REPACK-SHELL-001;SOURCE_ID=DF8-FORWARD-ARM-AFT-REPACK-SHELL-001",
+      "abbreviation_reason": "Deterministic 31-character Creo filename limit"
+    },
+    {
       "legacy_id": "DF8-R2-AFT-ROUTE-RING-001",
       "final_full_display_name": "AFT_STRUCTURAL_RING_WITH_CONTROLLED_ROUTE_PASSAGES_TI",
       "creo_safe_name": "AFT_STRUCTURAL_RING_WI_E17EB9DF",
@@ -358,6 +370,18 @@
       "subsystem": "Arm_Activation_Powertrain_Assembly",
       "occurrence_naming_rule": "base name + _01.._02",
       "traceability_property": "LEGACY_ID=DF8-R2-FIXED-SECTOR-001;SOURCE_ID=DF8-R2-FIXED-SECTOR-001",
+      "abbreviation_reason": "Deterministic 31-character Creo filename limit"
+    },
+    {
+      "legacy_id": "DF8-FORWARD-ARM-TERMINATION-RING-001",
+      "final_full_display_name": "ARM_MODULE_AFT_STRUCTURAL_RING_WITH_THREE_PRESSURE-RESERVOIR_PASSAGES_TI",
+      "creo_safe_name": "ARM_MODULE_AFT_STRUCTU_AC1B5D0B",
+      "actual_part_number": "",
+      "make_buy": "MAKE",
+      "material": "Ti-6Al-4V",
+      "subsystem": "Arm_Activation_Powertrain_Assembly",
+      "occurrence_naming_rule": "base name",
+      "traceability_property": "LEGACY_ID=DF8-FORWARD-ARM-TERMINATION-RING-001;SOURCE_ID=DF8-FORWARD-ARM-TERMINATION-RING-001",
       "abbreviation_reason": "Deterministic 31-character Creo filename limit"
     },
     {
@@ -709,6 +733,18 @@
       "abbreviation_reason": "Deterministic 31-character Creo filename limit"
     },
     {
+      "legacy_id": "DF8-FORWARD-ARM-CG-TRIM-BALLAST-001",
+      "final_full_display_name": "CENTERED_AFT_CG_TRIM_BALLAST_WITH_SIX_INTEGRAL_RETENTION_ARMS_W",
+      "creo_safe_name": "CENTERED_AFT_CG_TRIM_B_62251E5F",
+      "actual_part_number": "",
+      "make_buy": "MAKE",
+      "material": "Tungsten heavy alloy",
+      "subsystem": "Arm_Activation_Powertrain_Assembly",
+      "occurrence_naming_rule": "base name",
+      "traceability_property": "LEGACY_ID=DF8-FORWARD-ARM-CG-TRIM-BALLAST-001;SOURCE_ID=DF8-FORWARD-ARM-CG-TRIM-BALLAST-001",
+      "abbreviation_reason": "Deterministic 31-character Creo filename limit"
+    },
+    {
       "legacy_id": "DF8-R2-CROSSHEAD-GUIDE-001",
       "final_full_display_name": "CENTRAL_DLC_CROSSHEAD_GUIDE_SHAFT_WITH_SPIDER_SHOULDER_SS",
       "creo_safe_name": "CENTRAL_DLC_CROSSHEAD_8B1517DF",
@@ -850,18 +886,6 @@
       "subsystem": "Aft_Service_Closure_Assembly",
       "occurrence_naming_rule": "base name + _01.._03",
       "traceability_property": "LEGACY_ID=WP04-GUIDE-RAIL-001-R2;SOURCE_ID=WP04-GUIDE-RAIL-001-R2",
-      "abbreviation_reason": "Deterministic 31-character Creo filename limit"
-    },
-    {
-      "legacy_id": "DF8-R2-FWD-LONGERON-001",
-      "final_full_display_name": "FORWARD_PRIMARY_LOAD-PATH_LONGERON_TI",
-      "creo_safe_name": "FORWARD_PRIMARY_LOAD-P_D84C0BB5",
-      "actual_part_number": "",
-      "make_buy": "MAKE",
-      "material": "Ti-6Al-4V",
-      "subsystem": "Forward_Body_Assembly",
-      "occurrence_naming_rule": "base name + _01.._03",
-      "traceability_property": "LEGACY_ID=DF8-R2-FWD-LONGERON-001;SOURCE_ID=DF8-R2-FWD-LONGERON-001",
       "abbreviation_reason": "Deterministic 31-character Creo filename limit"
     },
     {
@@ -1234,6 +1258,18 @@
       "subsystem": "Arm_Activation_Powertrain_Assembly",
       "occurrence_naming_rule": "base name + _01.._06",
       "traceability_property": "LEGACY_ID=ROTOR-CLIP-DC-4SS;SOURCE_ID=ROTOR-CLIP-DC-4SS",
+      "abbreviation_reason": "Deterministic 31-character Creo filename limit"
+    },
+    {
+      "legacy_id": "DF8-R2-FWD-LONGERON-001",
+      "final_full_display_name": "SHORTENED_FORWARD_PRIMARY_LOAD-PATH_LONGERON_TI",
+      "creo_safe_name": "SHORTENED_FORWARD_PRIM_3D3DB287",
+      "actual_part_number": "",
+      "make_buy": "MAKE",
+      "material": "Ti-6Al-4V",
+      "subsystem": "Forward_Body_Assembly",
+      "occurrence_naming_rule": "base name + _01.._03",
+      "traceability_property": "LEGACY_ID=DF8-R2-FWD-LONGERON-001;SOURCE_ID=DF8-R2-FWD-LONGERON-001",
       "abbreviation_reason": "Deterministic 31-character Creo filename limit"
     },
     {

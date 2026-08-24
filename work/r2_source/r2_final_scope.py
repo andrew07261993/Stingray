@@ -12,6 +12,7 @@ from __future__ import annotations
 
 from collections import Counter, defaultdict, deque
 import math
+import os
 import re
 from typing import Any, Iterable
 
@@ -28,6 +29,7 @@ class _AttachmentRegistrar:
         self.builder = builder
         self.hardware = hardware
         self.state = str(builder.state).upper()
+        self.gap_failures: list[str] = []
         if self.state not in {"STOWED", "DEPLOYED"}:
             raise FinalScopeError(f"Unsupported builder state: {builder.state!r}")
         self.known = set(builder.global_shapes)
@@ -112,11 +114,15 @@ class _AttachmentRegistrar:
         )
         gap = self._distance(occurrence_a, occurrence_b)
         if gap > float(maximum_separation_mm) + DISTANCE_TOLERANCE_MM:
-            raise FinalScopeError(
+            message = (
                 f"Attachment {attachment_id} exceeds its design gap: "
                 f"{occurrence_a} <> {occurrence_b} = {gap:.9f} mm > "
                 f"{float(maximum_separation_mm):.9f} mm"
             )
+            if os.environ.get("DF8_REPACK_DIAGNOSTIC") == "1":
+                self.gap_failures.append(message)
+            else:
+                raise FinalScopeError(message)
         self.rows.append(row)
 
     def bridge(
@@ -272,20 +278,22 @@ def build_attachment_requirements(builder: Any, hardware: Any) -> list[dict[str,
             band_id = f"BOOSTER-BAND-{booster}-{band}"
             r.direct(f"ATT-BOOSTER-{booster}-BAND-{band}", f"BOOSTER-{booster}", band_id,
                      "CONTROLLED_PEEK_CLAMP_CLEARANCE", 0.16, fitted)
-            r.bridge(f"ATT-BOOSTER-BAND-SHELL-{booster}-{band}", band_id, "FWD-SHELL-001",
+            r.bridge(f"ATT-BOOSTER-BAND-SHELL-{booster}-{band}", band_id, "AFT-REPACK-SHELL-001",
                      [f"BOOSTER-CLAMP-SCREW-{booster}-{band}"], "RADIAL_CLAMP_SCREW", 0.05, structural)
 
     # Water trigger/service access and full-flow spool retention.
-    r.bridge("ATT-TRIGGER-SHELL", "WATER-TRIGGER-HSG-001", "FWD-SHELL-001",
+    r.bridge("ATT-TRIGGER-SHELL", "WATER-TRIGGER-HSG-001", "AFT-REPACK-SHELL-001",
              hardware.TRIGGER_MOUNT_SCREW_IDS, "THREE_SCREW_TRIGGER_MOUNT", 0.05, structural, True)
     r.bridge("ATT-BOBBIN-TRIGGER", "WATER-BOBBIN-001", "WATER-TRIGGER-HSG-001",
              hardware.SERVICE_CAP_IDS, "CAPTIVE_BAYONET_SERVICE_CAP", 0.05, fitted)
-    r.direct("ATT-WATER-INLET-SHELL", "WATER-INLET-001", "FWD-SHELL-001",
+    r.direct("ATT-WATER-INLET-SHELL", "WATER-INLET-001", "AFT-REPACK-SHELL-001",
              "BRAZED_RADIAL_PENETRATION", 0.16, fitted)
     r.direct("ATT-WATER-INLET-TRIGGER", "WATER-INLET-001", "WATER-TRIGGER-HSG-001",
              "O_RING_NIPPLE_TERMINATION", 0.11, fitted)
-    r.bridge("ATT-FULLFLOW-RING", "FULLFLOW-VALVE-001", "FWD-RING-02",
+    r.bridge("ATT-FULLFLOW-RING", "FULLFLOW-VALVE-001", "ARM-TERMINATION-RING-001",
              hardware.CIRCLIP_IDS, "SHOULDER_AND_EXTERNAL_CIRCLIP", 0.05, fitted)
+    r.direct("ATT-CG-TRIM-BALLAST-SHELL", "CG-TRIM-BALLAST-001", "AFT-REPACK-SHELL-001",
+             "SIX_ARM_QUALIFIED_SHELL_JOINT", 0.02, structural, True)
 
     # Arm primary structure and all occurrence-specific moving hardware.
     for arm in range(1, 4):
@@ -293,7 +301,7 @@ def build_attachment_requirements(builder: Any, hardware: Any) -> list[dict[str,
                  "WELDED_FIXED_SECTOR", 0.02, structural, True)
         r.direct(f"ATT-ARM-LONGERON-{arm}-FWD", f"ARM-LONGERON-{arm}", "FWD-RING-02",
                  "WELDED_PRIMARY_LONGERON_END", 0.02, structural, True)
-        r.direct(f"ATT-ARM-LONGERON-{arm}-AFT", f"ARM-LONGERON-{arm}", "AFT-ROUTE-RING-001",
+        r.direct(f"ATT-ARM-LONGERON-{arm}-AFT", f"ARM-LONGERON-{arm}", "ARM-TERMINATION-RING-001",
                  "WELDED_PRIMARY_LONGERON_END", 0.02, structural, True)
         r.direct(f"ATT-PIVOT-PIN-{arm}-ARM", f"PIVOT-PIN-{arm}", f"ARM-{arm}",
                  "GROUND_PIN_IN_REAMED_ARM_BORE", 0.20, fitted, True)
@@ -330,7 +338,7 @@ def build_attachment_requirements(builder: Any, hardware: Any) -> list[dict[str,
         r.bridge(f"ATT-FIXED-STOP-{arm}", f"FIXED-STOP-{arm}", f"PIVOT-CARRIER-{arm}",
                  fixed_stop_hardware, "TWO_SCREW_TWO_DOWEL_STOP_LAND", 0.05, structural, True)
 
-        r.direct(f"ATT-STOW-GUIDE-RING-{arm}", f"STOW-DOG-GUIDE-{arm}", "AFT-ROUTE-RING-001",
+        r.direct(f"ATT-STOW-GUIDE-RING-{arm}", f"STOW-DOG-GUIDE-{arm}", "ARM-TERMINATION-RING-001",
                  "STRUCTURAL_GUIDE_MOUNT", 0.02, structural, True)
         r.direct(f"ATT-STOW-DOG-GUIDE-{arm}", f"STOW-DOG-{arm}", f"STOW-DOG-GUIDE-{arm}",
                  "CAPTIVE_RADIAL_GUIDE", 0.06, fitted)
@@ -421,7 +429,7 @@ def build_attachment_requirements(builder: Any, hardware: Any) -> list[dict[str,
         r.direct(f"ATT-MANIFOLD-FEED-CLAMP-{index}-ROUTE", clip,
                  "ROUTE-MANIFOLD-FEED-001", "SPRING_ROUTE_CAPTURE", 0.06, fitted)
         r.direct(f"ATT-MANIFOLD-FEED-CLAMP-{index}-SHELL", clip,
-                 "FWD-SHELL-001", "LASER_WELDED_SUPPORT_TAB", 0.02, structural, True)
+                 "FIXED-SECTOR-1", "LASER_WELDED_SUPPORT_TAB", 0.02, structural, True)
     for route_name, sector in (
         ("GAS-MAIN", "FIXED-SECTOR-1"),
         ("PILOT-LINE", "FIXED-SECTOR-3"),
@@ -431,7 +439,7 @@ def build_attachment_requirements(builder: Any, hardware: Any) -> list[dict[str,
         liner = f"ROUTE-LINER-{route_name}-001"
         r.direct(f"ATT-{route_name}-LINER", route, liner, "CONTINUOUS_SPLIT_GUIDE_LINER", 0.11, fitted)
         r.direct(f"ATT-{route_name}-LINER-SECTOR", liner, sector, "CAPTURED_LINER_IN_BORED_SECTOR", 0.02, fitted)
-        for station, ring in (("FWD", "FWD-RING-02"), ("AFT", "AFT-ROUTE-RING-001")):
+        for station, ring in (("FWD", "AFT-REPACK-SHELL-001"), ("AFT", "AFT-ROUTE-RING-001")):
             gland = f"GLAND-{route_name}-{station}"
             r.direct(f"ATT-{route_name}-{station}-GLAND-ROUTE", route, gland,
                      "SWAGED_OR_BRAZED_GLANDLESS_TERMINATION", 0.09, fitted)
@@ -552,7 +560,9 @@ def build_attachment_requirements(builder: Any, hardware: Any) -> list[dict[str,
         for row in builder.routes
         if str(row.get("route_occurrence_id", "")).strip()
     }
-    return r.finish(route_ids)
+    rows = r.finish(route_ids)
+    builder.repack_gap_failures = list(r.gap_failures)
+    return rows
 
 
 def _pin_candidates(builder: Any) -> set[str]:

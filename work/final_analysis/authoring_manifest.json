@@ -3,7 +3,7 @@
   "creo_environment": "N/A \u2014 NOT REQUIRED BY THE CONTROLLING COMMISSION; OWNER CREO IMPORT OCCURS AFTER DELIVERY.",
   "authoring_kernel": "CadQuery 2.8.0 / OCCT 7.9",
   "schema": "AP242",
-  "crosshead_travel_mm": 15.05503437113498,
+  "crosshead_travel_mm": 15.055034371135037,
   "hard_requirements": {
     "arm_module_od_max_mm": 57.15,
     "normal_body_target_mm": 53.0,
@@ -20,22 +20,22 @@
   },
   "files": {
     "STINGRAY_I5S_DF8_FINAL_STOWED_MASTER_AP242.step": {
-      "sha256": "960c7ca5c25e5df230c2672358ba577c187f6eb0a1012f04b2020e5f956a608f",
-      "size_bytes": 19775272
+      "sha256": "a28f34e3adb12aa9bbe921766a75e073ff92344ac3b8a6c84e50ffb98146ca28",
+      "size_bytes": 17950437
     },
     "STINGRAY_I5S_DF8_FINAL_DEPLOYED_MASTER_AP242.step": {
-      "sha256": "efc5f8bee8927adfeb1fedc644ffc6b1424309940d7dce21176435dd3f776c2e",
-      "size_bytes": 21438710
+      "sha256": "a4744586c68c9cc92bceceaec9330963b405ab44a2ed986f1e65c0c23553880c",
+      "size_bytes": 19531409
     }
   },
   "inventories": {
     "authoring_inventory_stowed.json": {
-      "sha256": "18d50c19efbef332b6276b06bfe259b65e38fd46ffb4b444c5b1c34fa1b7e847",
-      "size_bytes": 1980451
+      "sha256": "b34e8de3d90bc835c76b6d671341047a84d010127e2efdf3fdc8e09fa7b55f77",
+      "size_bytes": 1989405
     },
     "authoring_inventory_deployed.json": {
-      "sha256": "4dab35729033b58fb21b67f237f72e3685013c6451532b445de5e41503884bb6",
-      "size_bytes": 1986926
+      "sha256": "00f22d12ac7b0ff9b427a230492f1cdc00b3f27bc8d2fdc1749cc3de7f3cf4ef",
+      "size_bytes": 1995877
     }
   }
 }

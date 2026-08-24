@@ -13,6 +13,7 @@ from dataclasses import dataclass, field
 from typing import Any, Iterable
 
 import cadquery as cq
+import forward_arm_repack_config as repack
 
 
 # Frozen owner requirements -------------------------------------------------
@@ -21,7 +22,7 @@ NORMAL_R = NORMAL_OD / 2.0
 HARD_OD = 57.150
 HARD_R = HARD_OD / 2.0
 PIVOT_R = 18.0
-PIVOT_Z = 900.0
+PIVOT_Z = repack.ARM_PIVOT_Z_MM
 ARM_LENGTH = 733.806
 DEPLOYED_ANGLE = 80.0
 MAX_RIGID_LENGTH = 2032.0

@@ -28,6 +28,7 @@ import r2_hardware as hw
 import r2_final_scope
 import r2_hierarchy
 import final_detail_naming
+import forward_arm_repack_config as repack
 
 
 ROOT = Path(__file__).resolve().parents[2]
@@ -476,58 +477,17 @@ def ring_with_axial_route_holes(length: float, ro: float = 28.5, ri: float = 19.
 
 
 def forward_shell_with_port() -> cq.Shape:
-    # Butt between the aft face of FWD-RING-01 (z=344) and the forward face
-    # of FWD-RING-02 (z=881).  The prior 545 mm tube double-occupied 4 mm of
-    # both weld rings.
-    shell = g.tube_z(g.NORMAL_R, 25.35, 537.0, z0=4.0)
-    # Deliberate radial water path at local z=200 (global z=540), phi=90.
-    bore = cq.Solid.makeCylinder(2.15, 4.0, cq.Vector(0.0, 24.5, 200.0), cq.Vector(0, 1, 0))
-    # Shallow conformal counterbore receives the inner gland flange without
-    # allowing its flat annulus to occupy the curved shell wall.
-    gland_counterbore = cq.Solid.makeCylinder(4.15, 1.2, cq.Vector(0.0, 24.3, 200.0), cq.Vector(0, 1, 0))
-    shell = shell.cut(bore.fuse(gland_counterbore))
-    # Four edge-open, jig-machined axial service grooves lead the formed
-    # routes from the shell interior into their individual bulkhead unions at
-    # the routed ring.  Each cutter includes 0.20 mm radial assembly clearance.
-    route_grooves = ((85.0, 1.20, 505.0), (325.0, 0.95, 510.0), (205.0, 1.00, 505.0))
-    for phi, radius, transition_z in route_grooves:
-        a = math.radians(phi)
-        points = [
-            (23.0 * math.cos(a), 23.0 * math.sin(a), transition_z),
-            (26.2 * math.cos(a), 26.2 * math.sin(a), 510.0),
-            (26.2 * math.cos(a), 26.2 * math.sin(a), 542.0),
-        ]
-        shell = shell.cut(g.routed_round(points, radius))
-    for phi, radius in ((85.0, 2.60), (325.0, 2.35), (205.0, 2.40)):
-        x, y = radial_xy(26.2, phi)
-        shell = shell.cut(g.cyl_z(radius, 4.0, x, y, 537.5))
-    # Flush radial counterbores keep the M3 cap heads inside the 53 mm OML.
-    # Each larger pocket receives the head; the coaxial 3.3 mm passage is the
-    # manufactured clearance through the Grade-9 shell wall.
-    for phi in (90.0, 210.0, 330.0):
-        local_z = 508.0 - 340.0
-        shell = shell.cut(radial_cylinder(phi, 23.30, 3.40, 2.79, local_z))
-        shell = shell.cut(radial_cylinder(phi, 23.20, 3.60, 1.65, local_z))
+    # The repack moves FWD-RING-02 forward with the pivot carrier.  This short
+    # shell remains the unchanged pressure-cartridge/manifold bay closure.
+    length = repack.FWD_RING_02_Z_MM - repack.FWD_RING_01_Z_MM - 8.0
+    return g.tube_z(g.NORMAL_R, 25.35, length, z0=4.0)
 
-    # Nine occurrence-specific booster-clamp nut lands are integral with the
-    # shell.  Each tangential M3 screw first clamps its split PEEK band, then
-    # engages this shell-backed tapped lug.  A separate head pocket clears
-    # the shell wall on the insertion side; the previous arrangement merely
-    # drove the cap head through intact shell stock.
-    for phi in (30.0, 150.0, 270.0):
-        for local_z in (114.0, 310.0, 518.0):
-            lug = g.box_center(4.80, 2.20, 5.40, 24.0, 5.15, local_z).rotate(
-                (0, 0, 0), (0, 0, 1), phi
-            )
-            shell = shell.fuse(lug)
-            thread_minor = cq.Solid.makeCylinder(
-                1.25, 2.40, cq.Vector(23.0, 3.95, local_z), cq.Vector(0, 1, 0)
-            ).rotate((0, 0, 0), (0, 0, 1), phi)
-            head_clearance = cq.Solid.makeCylinder(
-                2.85, 3.40, cq.Vector(23.0, -7.20, local_z), cq.Vector(0, 1, 0)
-            ).rotate((0, 0, 0), (0, 0, 1), phi)
-            shell = shell.cut(thread_minor).cut(head_clearance)
-    return shell
+
+def repack_transition_shell_shape() -> cq.Shape:
+    """Continuous OD shell over the aft-relocated stationary hardware bay."""
+    start = repack.ARM_TERMINATION_RING_Z_MM + 4.0
+    end = repack.AFT_ROUTE_RING_Z_MM - 4.0
+    return g.tube_z(g.NORMAL_R, 25.35, end - start)
 
 
 def aft_shell_with_openings() -> cq.Shape:
@@ -969,7 +929,7 @@ def build_forward(b: R2Builder) -> None:
     # arm windows.  These six bores follow the deployed stop-land axes and
     # eliminate the former 1.7743 mm3 per-dowel ring collision without
     # enlarging unrelated structural sectors.
-    ring_frame = g.translation_loc(0.0, 0.0, 885.0)
+    ring_frame = g.translation_loc(0.0, 0.0, repack.FWD_RING_02_Z_MM)
     for phi in (0.0, 120.0, 240.0):
         stop_loc = (
             g.arm_occurrence_loc(g.DEPLOYED_ANGLE, phi)
@@ -989,12 +949,13 @@ def build_forward(b: R2Builder) -> None:
         process="Mill-turn; jig-bore routes; machine integral three-spoke valve-retention cage",
         color_key="titanium",
     )
-    for idx, z in enumerate((340.0, 885.0), 1):
+    for idx, z in enumerate((repack.FWD_RING_01_Z_MM, repack.FWD_RING_02_Z_MM), 1):
         p = ring_plain if idx == 1 else route_ring
         b.add(b.forward, path, p, f"FWD-RING-{idx:02d}", g.translation_loc(0, 0, z), "FIXED", "LASER_WELDED_RING_JOINT")
 
-    fwd_longeron = b.define("DF8-R2-FWD-LONGERON-001", "B", "FORWARD PRIMARY LOAD-PATH LONGERON",
-                            make_body_longeron(537.0), "Ti-6Al-4V", process="5-axis mill; trim both ring butt faces", color_key="titanium")
+    fwd_longeron_length = repack.FWD_RING_02_Z_MM - repack.FWD_RING_01_Z_MM - 8.0
+    fwd_longeron = b.define("DF8-R2-FWD-LONGERON-001", "C", "SHORTENED FORWARD PRIMARY LOAD-PATH LONGERON",
+                            make_body_longeron(fwd_longeron_length), "Ti-6Al-4V", process="5-axis mill; trim both ring butt faces", color_key="titanium")
     for idx, phi in enumerate((60.0, 180.0, 300.0), 1):
         loc = g.rotation_loc((0, 0, 1), phi) * g.translation_loc(0, 0, 344.0)
         b.add(b.forward, path, fwd_longeron, f"FWD-LONGERON-{idx}", loc, "FIXED", "WELDED_TO_STRUCTURAL_RINGS")
@@ -1054,12 +1015,15 @@ def build_forward(b: R2Builder) -> None:
         notes="Exact SS-CHS2-1 procurement identity; 316 SS poppet check valve with 1/8-in tube fittings and 6000 psig/413 bar catalog rating. The compact analytic exterior is a controlled installation BREP; incoming identity, rating, cracking direction and leak test are verified.",
         color_key="stainless",
     )
-    booster_collection_line_shape = g.tube_z(1.0, 0.65, 2.5)
+    booster_collection_line_length = repack.BOOSTER_BODY_START_Z_MM - 4.0 - 444.5
+    booster_collection_line_shape = g.tube_z(1.0, 0.65, booster_collection_line_length)
     booster_collection_line_shape = booster_collection_line_shape.fuse(g.tube_z(1.05, 0.65, 0.30))
-    booster_collection_line_shape = booster_collection_line_shape.fuse(g.tube_z(1.05, 0.65, 0.30, z0=2.20))
+    booster_collection_line_shape = booster_collection_line_shape.fuse(
+        g.tube_z(1.05, 0.65, 0.30, z0=booster_collection_line_length - 0.30)
+    )
     booster_collection_line = b.define(
         "DF8-R2-BOOSTER-COLLECTION-LINE-001", "A",
-        "SHORT 316L BOOSTER COLLECTION LINE WITH INTEGRAL FERRULE ENDS",
+        "LONG 316L BOOSTER COLLECTION LINE WITH INTEGRAL FERRULE ENDS",
         booster_collection_line_shape, "316 stainless steel",
         process="ASTM A269 capillary; face ends; form integral ferrules; passivate; helium leak and 34.5 MPa proof",
         notes="Occurrence-specific line bridges one dedicated manifold port to one SS-CHS2-1 inlet with 0.10 mm manifold-bore clearance.",
@@ -1067,13 +1031,14 @@ def build_forward(b: R2Builder) -> None:
     )
     for idx, phi in enumerate((30.0, 150.0, 270.0), 1):
         x, y = radial_xy(14.0, phi)
-        b.add(b.forward, path, booster, f"BOOSTER-{idx}", g.translation_loc(x, y, 451.0), "FIXED", "THREE_SPACED_PEEK_BANDS")
+        booster_z = repack.BOOSTER_BODY_START_Z_MM
+        b.add(b.forward, path, booster, f"BOOSTER-{idx}", g.translation_loc(x, y, booster_z), "FIXED", "THREE_SPACED_PEEK_BANDS")
         b.add(b.forward, path, booster_fwd_closure, f"BOOSTER-FWD-CLOSURE-{idx}",
-              g.translation_loc(x, y, 450.0), "FIXED", "ORBITAL_WELDED_PORTED_CLOSURE")
+              g.translation_loc(x, y, booster_z - 1.0), "FIXED", "ORBITAL_WELDED_PORTED_CLOSURE")
         b.add(b.forward, path, booster_aft_closure, f"BOOSTER-AFT-CLOSURE-{idx}",
-              g.translation_loc(x, y, 881.0), "FIXED", "ORBITAL_WELDED_SOLID_CLOSURE")
+              g.translation_loc(x, y, booster_z + 430.0), "FIXED", "ORBITAL_WELDED_SOLID_CLOSURE")
         b.add(b.forward, path, booster_valve, f"BOOSTER-ISOLATION-VALVE-{idx}",
-              g.translation_loc(x, y, 447.0), "FIXED", "TUBE_FITTED_TO_PORTED_CLOSURE")
+              g.translation_loc(x, y, booster_z - 4.0), "FIXED", "TUBE_FITTED_TO_PORTED_CLOSURE")
         collection_oid = b.add(
             b.forward, path, booster_collection_line, f"BOOSTER-COLLECTION-LINE-{idx}",
             g.translation_loc(x, y, 444.5), "FIXED", "FORMED_ROUTE_WITH_CAPTURED_FERRULES",
@@ -1089,7 +1054,7 @@ def build_forward(b: R2Builder) -> None:
             integral_terminations=True, integral_support=True,
             penetration_occurrence_ids=[], integral_penetrations=True,
         )
-        for bi, z in enumerate((454.0, 650.0, 858.0), 1):
+        for bi, z in enumerate((1230.0, 1295.0, 1360.0), 1):
             loc = g.rotation_loc((0, 0, 1), phi) * g.translation_loc(14.0, 0, z)
             b.add(b.forward, path, band, f"BOOSTER-BAND-{idx}-{bi}", loc, "FIXED", "M3_BOLTED_CLAMP")
 
@@ -1101,8 +1066,8 @@ def build_forward(b: R2Builder) -> None:
                       source_url="https://fluid-components.nordsonmedical.com/files/fluid-components-nordsonmedical-com/Technical%20Information/HRC/Hyrdo-1F-Manual-Automatic-Inflator-V80040-Bobbin-Instructions-For-Use.pdf",
                       purchase_url="https://fluid-components.nordsonmedical.com/Resources/Orders/",
                       notes="Exact V80040 identity; controlled incoming inspection verifies the 10 mm diameter by 18 mm modeled service envelope, lot traceability, and current Nordson/Halkey-Roberts IFU revision.", color_key="peek")
-    b.add(b.forward, path, trigger, "WATER-TRIGGER-HSG-001", g.translation_loc(0, 0, 500.0), "FIXED", "BOLTED_TO_CENTRAL_CARRIER")
-    b.add(b.forward, path, bobbin, "WATER-BOBBIN-001", g.translation_loc(0, 0, 520.0), "CONSUMED", "CAPTIVE_TRIGGER_CUP")
+    b.add(b.forward, path, trigger, "WATER-TRIGGER-HSG-001", g.translation_loc(0, 0, repack.WATER_TRIGGER_Z_MM), "FIXED", "BOLTED_TO_CENTRAL_CARRIER")
+    b.add(b.forward, path, bobbin, "WATER-BOBBIN-001", g.translation_loc(0, 0, repack.WATER_TRIGGER_Z_MM + 20.0), "CONSUMED", "CAPTIVE_TRIGGER_CUP")
 
     inlet_shape = g.tube_between((0, 0, 0), (23.5, 0, 0), 1.95, 1.45)
     inlet_shape = inlet_shape.fuse(g.ring_x(0, 0, 1.0, 4.0, 2.1, 19.8))
@@ -1110,7 +1075,7 @@ def build_forward(b: R2Builder) -> None:
     inlet = b.define("DF8-R2-WATER-INLET-001", "A", "RADIAL FLOOD INLET, GLAND AND ANTI-DEBRIS SCREEN",
                      inlet_shape,
                      "316 stainless steel", process="Microtube form and braze", color_key="stainless")
-    inlet_loc = g.rotation_loc((0, 0, 1), 90.0) * g.translation_loc(5.0, 0.0, 540.0)
+    inlet_loc = g.rotation_loc((0, 0, 1), 90.0) * g.translation_loc(5.0, 0.0, repack.WATER_TRIGGER_Z_MM + 40.0)
     b.add(b.forward, path, inlet, "WATER-INLET-001", inlet_loc, "FIXED", "RADIAL_GLAND_AND_SCREEN")
     b.add_route_record("WATER-INLET-001", "EXTERNAL_WATER", "WATER-TRIGGER-HSG-001",
                        "Integral screen flange / housing O-ring nipple", "FWD-SHELL radial Ø4.30 mm port",
@@ -1119,7 +1084,7 @@ def build_forward(b: R2Builder) -> None:
 
     valve = b.define("DF8-R2-FULLFLOW-VALVE-001", "A", "DIRECT FULL-FLOW VALVE WITH BORED AXIAL AND RADIAL PORTS", valve_body_shape(),
                      "17-4PH stainless steel", process="Swiss turn; cross-drill; lap", color_key="steel")
-    b.add(b.forward, path, valve, "FULLFLOW-VALVE-001", g.rotation_loc((0, 0, 1), 90.0) * g.translation_loc(0, 0, 859.0), "MOVING", "GUIDED_SPOOL", "1 AXIAL")
+    b.add(b.forward, path, valve, "FULLFLOW-VALVE-001", g.rotation_loc((0, 0, 1), 90.0) * g.translation_loc(0, 0, repack.FULLFLOW_VALVE_Z_MM), "MOVING", "GUIDED_SPOOL", "1 AXIAL")
 
     # The collection manifold previously had no physical pressure article to
     # the full-flow valve.  This formed 316L feed seats on the manifold's
@@ -1128,9 +1093,10 @@ def build_forward(b: R2Builder) -> None:
     # real separate occurrences laser-welded to the shell inner land.
     feed_phi = 70.0
     feed_radius = 21.0
+    feed_length = repack.FULLFLOW_VALVE_Z_MM - 447.0
     feed_shape = g.planar_tangent_routed_round(
         [(0.0, 0.0), (0.0, 12.0), (feed_radius, 33.0),
-         (feed_radius, 379.0), (0.0, 400.0), (0.0, 412.0)],
+         (feed_radius, feed_length - 33.0), (0.0, feed_length - 12.0), (0.0, feed_length)],
         1.00, 0.65, bend_radius=6.0, clock_deg=feed_phi,
     )
     feed_solids = feed_shape.Solids()
@@ -1185,7 +1151,7 @@ def build_forward(b: R2Builder) -> None:
         color_key="titanium",
     )
     support_ids: list[str] = []
-    for index, z in enumerate((600.0, 700.0, 800.0), start=1):
+    for index, z in enumerate((650.0, 900.0, 1100.0), start=1):
         clip_id = f"MANIFOLD-FEED-CLAMP-{index}"
         support_ids.append(clip_id)
         b.add(
@@ -1295,7 +1261,7 @@ def build_arm_module(b: R2Builder) -> None:
     # stations; the screw heads seat on the inner counterbore shoulders and
     # no longer occupy intact sector stock.
     fixed_sector_3_shape = g.make_fixed_sector_local()
-    for local_z in (11.75, predicted_fixed_seat_z - 889.0):
+    for local_z in (11.75, predicted_fixed_seat_z - repack.ARM_STRUCTURE_START_Z_MM):
         head_pocket = cq.Solid.makeCylinder(
             2.85, 3.45, cq.Vector(23.95, 0.0, local_z), cq.Vector(1, 0, 0)
         )
@@ -1310,7 +1276,7 @@ def build_arm_module(b: R2Builder) -> None:
     longeron = b.define("DF8-R2-ROUTED-LONGERON-001", "A", "PRIMARY LONGERON WITH TWO JIG-BORED ROUTE CHANNELS", g.make_longeron_local(),
                         "Ti-6Al-4V", process="5-axis mill and jig bore", color_key="titanium")
     longeron_3_shape = g.make_longeron_local()
-    for local_z in (11.75, predicted_fixed_seat_z - 889.0):
+    for local_z in (11.75, predicted_fixed_seat_z - repack.ARM_STRUCTURE_START_Z_MM):
         hole_radius = 2.55
         longeron_3_shape = longeron_3_shape.cut(cq.Solid.makeCylinder(
             hole_radius, 1.8, cq.Vector(22.7, 0.0, local_z), cq.Vector(1, 0, 0)
@@ -1323,11 +1289,63 @@ def build_arm_module(b: R2Builder) -> None:
         color_key="titanium",
     )
     for idx, phi in enumerate((60.0, 180.0, 300.0), 1):
-        loc = g.rotation_loc((0, 0, 1), phi) * g.translation_loc(0, 0, 889.0)
+        loc = g.rotation_loc((0, 0, 1), phi) * g.translation_loc(0, 0, repack.ARM_STRUCTURE_START_Z_MM)
         selected_sector = fixed_sector_3 if idx == 3 else fixed_sector
         b.add(b.arm_module, path, selected_sector, f"FIXED-SECTOR-{idx}", loc, "FIXED", "WELDED_TO_LONGERON")
         selected_longeron = longeron_3 if idx == 3 else longeron
         b.add(b.arm_module, path, selected_longeron, f"ARM-LONGERON-{idx}", loc, "FIXED", "WELDED_BETWEEN_ROUTE_RINGS")
+
+    termination_ring_shape = ring_with_axial_route_holes(8.0, arm_root_reliefs=False)
+    termination_cage = g.tube_z(9.20, 8.54, 1.20, z0=-1.60)
+    for phi in (0.0, 120.0, 240.0):
+        termination_cage = termination_cage.fuse(
+            g.box_center(10.60, 1.20, 1.20, 14.30, 0.0, -1.0).rotate(
+                (0, 0, 0), (0, 0, 1), phi
+            )
+        )
+    termination_ring_shape = termination_ring_shape.fuse(termination_cage)
+    for phi in (30.0, 150.0, 270.0):
+        x, y = radial_xy(14.0, phi)
+        termination_ring_shape = termination_ring_shape.cut(g.cyl_z(6.8, 9.0, x, y, -4.5))
+    termination_ring = b.define(
+        "DF8-FORWARD-ARM-TERMINATION-RING-001", "A",
+        "ARM MODULE AFT STRUCTURAL RING WITH THREE PRESSURE-RESERVOIR PASSAGES",
+        termination_ring_shape, "Ti-6Al-4V",
+        process="Mill-turn; jig-bore three reservoir passages and three service routes",
+        color_key="titanium",
+    )
+    b.add(b.arm_module, path, termination_ring, "ARM-TERMINATION-RING-001",
+          g.translation_loc(0, 0, repack.ARM_TERMINATION_RING_Z_MM), "FIXED", "LASER_WELDED_RING_JOINT")
+
+    transition_shell = b.define(
+        "DF8-FORWARD-ARM-AFT-REPACK-SHELL-001", "A",
+        "AFT REPACK BAY GRADE-9 TITANIUM SHELL",
+        repack_transition_shell_shape(), "Ti-3Al-2.5V Grade 9",
+        process="Cold draw; trim; laser weld to structural rings; machine water-service port",
+        color_key="titanium",
+    )
+    transition_start = repack.ARM_TERMINATION_RING_Z_MM + 4.0
+    b.add(b.arm_module, path, transition_shell, "AFT-REPACK-SHELL-001",
+          g.translation_loc(0, 0, transition_start), "FIXED", "LASER_WELDED_RING_JOINT")
+
+    trim_length = 155.0
+    trim_shape = g.cyl_z(6.512850623, trim_length)
+    for local_z in (3.0, trim_length - 3.0):
+        for phi in (90.0, 210.0, 330.0):
+            x = 25.35 * math.cos(math.radians(phi))
+            y = 25.35 * math.sin(math.radians(phi))
+            trim_shape = trim_shape.fuse(g.rod_between((0.0, 0.0, local_z), (x, y, local_z), 0.80))
+    trim_ballast = b.define(
+        "DF8-FORWARD-ARM-CG-TRIM-BALLAST-001", "A",
+        "CENTERED AFT CG TRIM BALLAST WITH SIX INTEGRAL RETENTION ARMS",
+        trim_shape.clean(), "Tungsten heavy alloy", "MAKE", "STINGRAY custom",
+        "EXACT_ANALYTIC", mass_kg=0.351133873274735,
+        process="CNC turn; wire-EDM integral retention arms; six-place qualified shell joint",
+        notes="Mass and axial station are controlled to restore the accepted baseline STOWED axial CG and transverse inertia after the forward-arm repack.",
+        color_key="tungsten",
+    )
+    b.add(b.arm_module, path, trim_ballast, "CG-TRIM-BALLAST-001",
+          g.translation_loc(0, 0, 1257.5), "FIXED", "SIX_ARM_QUALIFIED_SHELL_JOINT")
 
     arm = b.define("DF8-R2-ARM-BLADE-001", "C", "733.806 MM SMOOTH ANALYTIC HOLLOW OML ARM WITH SWEPT STOP-HARDWARE RELIEFS", g.make_arm_part_local(),
                    "Ti-6Al-4V", process="Hot form; 5-axis machine; laser weld; CMM inspect",
@@ -1639,7 +1657,7 @@ def build_arm_module(b: R2Builder) -> None:
     ))
     guide = b.define("DF8-R2-CROSSHEAD-GUIDE-001", "C", "CENTRAL DLC CROSSHEAD GUIDE SHAFT WITH SPIDER SHOULDER", guide_shape,
                      "17-4PH stainless steel", process="Centerless grind and DLC", color_key="steel")
-    b.add(b.arm_module, path, guide, "CROSSHEAD-GUIDE-001", g.translation_loc(0, 0, 889.0), "FIXED", "DOUBLE_SUPPORTED_SHAFT")
+    b.add(b.arm_module, path, guide, "CROSSHEAD-GUIDE-001", g.translation_loc(0, 0, repack.ARM_STRUCTURE_START_Z_MM), "FIXED", "DOUBLE_SUPPORTED_SHAFT")
     guide_spider = b.define(
         "DF8-R2-CROSSHEAD-GUIDE-SPIDER-001", "A", "THREE-SPOKE CROSSHEAD-GUIDE FORWARD MOUNT",
         g.make_crosshead_guide_spider_local(), "Ti-6Al-4V",
@@ -1647,7 +1665,7 @@ def build_arm_module(b: R2Builder) -> None:
         color_key="titanium",
     )
     b.add(b.arm_module, path, guide_spider, "CROSSHEAD-GUIDE-SPIDER",
-          g.translation_loc(0, 0, 889.0), "FIXED", "THREE_SPOKE_QUALIFIED_PERMANENT_RING_JOINT")
+          g.translation_loc(0, 0, repack.ARM_STRUCTURE_START_Z_MM), "FIXED", "THREE_SPOKE_QUALIFIED_PERMANENT_RING_JOINT")
 
     spring_length = g.SPRING_DEPLOYED if b.deployed else g.SPRING_STOWED
     backup_spring = b.define("DF8-R2-BACKUP-SPRING-16N-001", "B", "CONTROLLED 16 N/MM GUIDED BACKUP COMPRESSION SPRING",
@@ -1693,7 +1711,7 @@ def build_arm_module(b: R2Builder) -> None:
         spring_station * g.translation_loc(0, 0, moving_seat_z), "MOVING",
         "PILOTED_QUALIFIED_PERMANENT_CROSSHEAD_JOINT",
     )
-    guide_length = fixed_seat_z + 2.5 - 900.0
+    guide_length = fixed_seat_z + 2.5 - g.PIVOT_Z
     spring_guide_shape = g.cyl_z(2.5, guide_length)
     spring_guide_shape = spring_guide_shape.fuse(
         g.rod_between((0.0, 0.0, 0.75), (10.90, 0.0, 0.75), 0.45)
@@ -1719,7 +1737,7 @@ def build_arm_module(b: R2Builder) -> None:
     ))
     spring_guide = b.define("DF8-R2-BACKUP-SPRING-GUIDE-001", "B", "BACKUP SPRING DLC GUIDE SHAFT WITH TWO FIXED SUPPORT SHOULDERS", spring_guide_shape,
                             "17-4PH stainless steel", process="Centerless grind and DLC", color_key="steel")
-    b.add(b.arm_module, path, spring_guide, "BACKUP-SPRING-GUIDE", spring_station * g.translation_loc(0, 0, 900.0), "FIXED", "SUPPORTED_AT_BOTH_ENDS")
+    b.add(b.arm_module, path, spring_guide, "BACKUP-SPRING-GUIDE", spring_station * g.translation_loc(0, 0, g.PIVOT_Z), "FIXED", "SUPPORTED_AT_BOTH_ENDS")
 
     # Parallel GS/HBD installations occupy fixed-sector corridors aft of the crosshead.
     gs_src = next((INPUT_DIR / "wp02").rglob("ITEM_020_ACE_GS_19_50_V4A_B8_B8_VENDOR.stp"))
@@ -1734,7 +1752,7 @@ def build_arm_module(b: R2Builder) -> None:
                       purchase_url="https://www.acecontrols.com/us/calculations/gas-spring-configurator.html",
                       notes="Included articulation child of the configured GS-19 purchased assembly; no separate purchase quantity. Occurrence-level mass allocation reconciles with the 0.144 kg parent assembly. Drawing-derived child verified against the controlled ACE STEP.", color_key="stainless")
     gs_body.mass_kg = 0.124
-    gs_phi, gs_r, gs_body_z = 60.0, 13.5, 960.0
+    gs_phi, gs_r, gs_body_z = 60.0, 13.5, g.PIVOT_Z + 60.0
     gs_body_loc = g.rotation_loc((0, 0, 1), gs_phi) * g.translation_loc(gs_r, 0, gs_body_z)
     gs_rod_loc = g.rotation_loc((0, 0, 1), gs_phi) * g.translation_loc(gs_r, 0, zc)
     b.add(b.arm_module, path, gs_body, "GS19-BODY-001", gs_body_loc, "FIXED", "PINNED_B8_END")
@@ -1752,7 +1770,7 @@ def build_arm_module(b: R2Builder) -> None:
                        purchase_url="https://www.acecontrols.com/us/products/motion-control/hydraulic-dampers/hbd-15-to-hbd-40/hbd-15/hbd-15-25.html",
                        notes="Included articulation child of the configured HBD purchased assembly; no separate purchase quantity. Occurrence-level mass allocation reconciles with the 0.220 kg parent assembly. Drawing-derived child verified against the controlled ACE source.", color_key="stainless")
     hbd_body.mass_kg = 0.190
-    hbd_phi, hbd_r, hbd_body_z = 180.0, 14.5, 960.0
+    hbd_phi, hbd_r, hbd_body_z = 180.0, 14.5, g.PIVOT_Z + 60.0
     hbd_body_loc = g.rotation_loc((0, 0, 1), hbd_phi) * g.translation_loc(hbd_r, 0, hbd_body_z)
     hbd_rod_loc = g.rotation_loc((0, 0, 1), hbd_phi) * g.translation_loc(hbd_r, 0, zc)
     b.add(b.arm_module, path, hbd_body, "HBD-BODY-001", hbd_body_loc, "FIXED", "PINNED_AA_END")
@@ -1805,22 +1823,27 @@ def build_arm_module(b: R2Builder) -> None:
         return ([(x - x0, y - y0, z - z0) for x, y, z in points], g.translation_loc(x0, y0, z0))
 
     gas_points = [
-        (0.0, 11.0, 870.0), (0.0, 17.0, 870.0), polar_point(18.0, 85.0, 850.0),
-        *[polar_point(26.2, 85.0, z) for z in (850.0, 885.0, 1200.0, 1638.0, 1642.5)],
+        (0.0, 11.0, repack.FULLFLOW_VALVE_Z_MM), (0.0, 17.0, repack.FULLFLOW_VALVE_Z_MM),
+        polar_point(18.0, 85.0, repack.FULLFLOW_VALVE_Z_MM + 15.0),
+        *[polar_point(26.2, 85.0, z) for z in (repack.FULLFLOW_VALVE_Z_MM + 35.0, 1638.0, 1642.5)],
         polar_point(24.0, 85.0, 1660.0),
         polar_point(23.0, 85.0, 1670.0), polar_point(22.5, 85.0, 1720.0),
     ]
     pilot_points = [
-        polar_point(6.5, 325.0, 870.0), polar_point(18.0, 325.0, 870.0),
-        *[polar_point(26.2, 325.0, z) for z in (870.0, 885.0, 1200.0, 1638.0, 1642.5)],
+        polar_point(6.5, 325.0, repack.FULLFLOW_VALVE_Z_MM),
+        polar_point(18.0, 325.0, repack.FULLFLOW_VALVE_Z_MM),
+        *[polar_point(26.2, 325.0, z) for z in (repack.FULLFLOW_VALVE_Z_MM + 35.0, 1638.0, 1642.5)],
         polar_point(24.0, 325.0, 1660.0), polar_point(18.0, 325.0, 1680.0),
         polar_point(18.0, 315.0, 1700.0), polar_point(18.0, 300.0, 1720.0),
         polar_point(18.0, 290.0, 1735.0), polar_point(18.0, 280.0, 1748.0),
         polar_point(21.1, 270.0, 1753.85),
     ]
     bowden_points = [
-        (0.0, 0.0, 557.5), (0.0, 0.0, 562.0), polar_point(18.0, 205.0, 565.0), polar_point(23.0, 205.0, 575.0),
-        polar_point(23.0, 205.0, 845.0), polar_point(26.2, 205.0, 850.0),
+        (0.0, 0.0, repack.WATER_TRIGGER_Z_MM + 57.5),
+        (0.0, 0.0, repack.WATER_TRIGGER_Z_MM + 62.0),
+        polar_point(18.0, 205.0, repack.WATER_TRIGGER_Z_MM + 65.0),
+        polar_point(23.0, 205.0, repack.WATER_TRIGGER_Z_MM + 75.0),
+        polar_point(26.2, 205.0, repack.WATER_TRIGGER_Z_MM + 90.0),
         polar_point(26.2, 205.0, 1642.5),
         polar_point(24.0, 205.0, 1660.0),
         polar_point(17.0, 205.0, 1680.0),
@@ -1832,7 +1855,7 @@ def build_arm_module(b: R2Builder) -> None:
     # ran past that face to r=21 and then doubled back to r=18.1, producing a
     # real wire/sear and sheath/sear positive-volume collision.
     bowden_wire_points = list(bowden_points)
-    bowden_wire_points[0] = (0.0, 0.0, 556.8)
+    bowden_wire_points[0] = (0.0, 0.0, repack.WATER_TRIGGER_Z_MM + 56.8)
     # The fixed sheath seats in the latch boss.  Only the inner wire follows
     # the 3.2 mm sear withdrawal at the deployed endpoint.
     bowden_wire_points[-1] = (0.0, -18.1 - (3.2 if b.deployed else 0.0), 1745.0)
@@ -1868,7 +1891,8 @@ def build_arm_module(b: R2Builder) -> None:
     for rid, points, ro, ri, origin, destination, process, rating, material in route_specs:
         if rid == "PILOT-LINE":
             main_shape = g.planar_tangent_routed_round(
-                [(6.5, 870.0), (26.2, 870.0), (26.2, 1642.5),
+                [(6.5, repack.FULLFLOW_VALVE_Z_MM),
+                 (26.2, repack.FULLFLOW_VALVE_Z_MM + 35.0), (26.2, 1642.5),
                  (24.0, 1660.0), (18.0, 1690.0)],
                 ro, ri, bend_radius=3.0, clock_deg=325.0,
             )
@@ -1883,13 +1907,16 @@ def build_arm_module(b: R2Builder) -> None:
                 g.tangent_routed_round(tail_local, ro, ri, bend_radius=3.0), tail_loc
             )
             global_route = main_shape.fuse(tail_shape)
-            route_origin = polar_point(6.5, 325.0, 870.0)
+            route_origin = polar_point(6.5, 325.0, repack.FULLFLOW_VALVE_Z_MM)
             route_shape = global_route.translate(tuple(-value for value in route_origin))
             route_loc = g.translation_loc(*route_origin)
         elif rid == "BOWDEN-SHEATH":
             main_shape = g.planar_tangent_routed_round(
-                [(0.0, 557.5), (0.0, 562.0), (18.0, 565.0),
-                 (23.0, 575.0), (23.0, 845.0), (26.2, 850.0),
+                [(0.0, repack.WATER_TRIGGER_Z_MM + 57.5),
+                 (0.0, repack.WATER_TRIGGER_Z_MM + 62.0),
+                 (18.0, repack.WATER_TRIGGER_Z_MM + 65.0),
+                 (23.0, repack.WATER_TRIGGER_Z_MM + 75.0),
+                 (26.2, repack.WATER_TRIGGER_Z_MM + 90.0),
                  (26.2, 1642.5), (24.0, 1660.0), (17.0, 1690.0)],
                 ro, ri, bend_radius=2.0, clock_deg=205.0,
             )
@@ -1904,7 +1931,7 @@ def build_arm_module(b: R2Builder) -> None:
                 g.tangent_routed_round(tail_local, ro, ri, bend_radius=3.0), tail_loc
             )
             global_route = main_shape.fuse(tail_shape)
-            route_origin = (0.0, 0.0, 557.5)
+            route_origin = (0.0, 0.0, repack.WATER_TRIGGER_Z_MM + 57.5)
             route_shape = global_route.translate(tuple(-value for value in route_origin))
             route_loc = g.translation_loc(*route_origin)
         else:
@@ -1955,7 +1982,12 @@ def build_arm_module(b: R2Builder) -> None:
             process="Swiss turn body/collars; laser braze collars; passivate; helium leak check",
             notes="Integral controlled fitting assembly; route bore includes diagonal-transition clearance.", color_key="stainless",
         )
-        for station, z in (("FWD", 885.0), ("AFT", 1638.0)):
+        forward_gland_z = (
+            repack.WATER_TRIGGER_Z_MM + 90.0
+            if rid == "BOWDEN-SHEATH"
+            else repack.FULLFLOW_VALVE_Z_MM + 35.0
+        )
+        for station, z in (("FWD", forward_gland_z), ("AFT", 1638.0)):
             x, y = radial_xy(26.2, phi)
             b.add(b.arm_module, path, gland, f"GLAND-{rid}-{station}", g.translation_loc(x, y, z), "FIXED", "SHOULDERED_BULKHEAD_GLAND")
 
@@ -1979,7 +2011,7 @@ def build_arm_module(b: R2Builder) -> None:
         )
         b.add(
             b.arm_module, path, liner, f"ROUTE-LINER-{rid}-001",
-            g.rotation_loc((0, 0, 1), base_phi) * g.translation_loc(0, 0, 889.0),
+            g.rotation_loc((0, 0, 1), base_phi) * g.translation_loc(0, 0, 895.4),
             "FIXED", "SPLIT_LINER_CAPTURED_IN_FIXED_SECTOR",
         )
 
@@ -2444,7 +2476,7 @@ def add_mandatory_hardware_occurrences(b: R2Builder) -> None:
         )
 
     for booster, phi in enumerate((30.0, 150.0, 270.0), start=1):
-        for band, z in enumerate((454.0, 650.0, 858.0), start=1):
+        for band, z in enumerate((1230.0, 1295.0, 1360.0), start=1):
             band_loc = g.rotation_loc((0, 0, 1), phi) * g.translation_loc(14.0, 0.0, z)
             add(
                 b.forward, forward_path, "SSCF-M3-10-A4",
@@ -2457,7 +2489,7 @@ def add_mandatory_hardware_occurrences(b: R2Builder) -> None:
             b.forward, forward_path, "SSCF-M3-10-A4",
             f"TRIGGER-MOUNT-SCREW-{index}",
             g.rotation_loc((0, 0, 1), phi)
-            * g.translation_loc(23.30, 0.0, 508.0)
+            * g.translation_loc(23.30, 0.0, repack.WATER_TRIGGER_Z_MM + 8.0)
             * g.rotation_loc((0, 1, 0), -90.0),
         )
 
@@ -2468,12 +2500,12 @@ def add_mandatory_hardware_occurrences(b: R2Builder) -> None:
     )
     add(
         b.forward, forward_path, "HEC-10-A4", "FULLFLOW-VALVE-CIRCLIP-001",
-        g.translation_loc(0.0, 0.0, 883.5), "MOVING", "EXTERNAL_CIRCLIP_IN_GROOVE",
+        g.translation_loc(0.0, 0.0, repack.FULLFLOW_VALVE_Z_MM + 24.5), "MOVING", "EXTERNAL_CIRCLIP_IN_GROOVE",
     )
     add(
         b.forward, forward_path, "DF8-WATER-BOBBIN-SERVICE-CAP-001",
         "WATER-BOBBIN-SERVICE-CAP-001",
-        g.translation_loc(0.0, 0.0, 500.0)
+        g.translation_loc(0.0, 0.0, repack.WATER_TRIGGER_Z_MM)
         * g.rotation_loc((0, 0, 1), 10.0),
         joint_type="POSITIVE_BAYONET_SERVICE_CAP",
     )
@@ -2512,7 +2544,7 @@ def add_mandatory_hardware_occurrences(b: R2Builder) -> None:
     spring_station = g.rotation_loc((0, 0, 1), 300.0) * g.translation_loc(12.0, 0.0, 0.0)
     guide = b.global_shapes["BACKUP-SPRING-GUIDE"]
     guide_bb = guide.BoundingBox()
-    for index, z in enumerate((900.75, guide_bb.zmax - 2.50), start=1):
+    for index, z in enumerate((g.PIVOT_Z + 0.75, guide_bb.zmax - 2.50), start=1):
         add(
             b.arm_module, arm_path, "SSCF-M3-10-A4",
             f"BACKUP-GUIDE-SCREW-{index}",
@@ -2521,7 +2553,7 @@ def add_mandatory_hardware_occurrences(b: R2Builder) -> None:
         )
     add(
         b.arm_module, arm_path, "SSCL-M4-8-A4", "CROSSHEAD-GUIDE-LOCK-SCREW-001",
-        g.translation_loc(0.0, 0.0, 887.0),
+        g.translation_loc(0.0, 0.0, repack.ARM_STRUCTURE_START_Z_MM - 2.0),
     )
 
     # One aft support closes the load path of all three guide rails.

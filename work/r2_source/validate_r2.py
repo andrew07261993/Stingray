@@ -79,7 +79,9 @@ MAX_RIGID_LENGTH_MM = 2032.0
 MAX_SYSTEM_MASS_KG = 18.14
 MIN_MASS_RESERVE_KG = 1.0
 PIVOT_RADIUS_MM = 18.0
-PIVOT_Z_MM = 900.0
+# Branch-controlled forward-arm station. Keep this frozen validator datum
+# independent from authoring imports, but aligned with the selected repack.
+PIVOT_Z_MM = 480.0
 ARM_LENGTH_MM = 733.806
 DEPLOYED_ANGLE_DEG = 80.0
 BELL_U_MM = 6.0
@@ -2931,7 +2933,7 @@ class MotionSolid:
 
 def _motion_angle_audit(
     endpoints: dict[str, EndpointData], inventories: dict[str, dict[str, Any]], out_dir: Path,
-    angles: Iterable[int],
+    angles: Iterable[int], *, exact_common_only: bool = False,
 ) -> dict[str, Any]:
     """Run the unchanged exact-BREP motion body for specified global angles.
 
@@ -3505,7 +3507,7 @@ def _motion_angle_audit(
                     clearance = 0.0
                 else:
                     result = "CLEAR_OR_CONTACT"
-                    if gap <= NEAR_DISTANCE_LIMIT_MM:
+                    if not exact_common_only and gap <= NEAR_DISTANCE_LIMIT_MM:
                         distance_status, clearance, dist_error = exact_distance(a.shape, b.shape)
                         if dist_error:
                             error = f"{error}; {dist_error}".strip("; ")
@@ -3675,6 +3677,35 @@ def _run_motion_angle_task(task: tuple[int, str]) -> dict[str, Any]:
     kinematics_path = angle_dir / "motion_kinematics_1deg.csv"
     if not pair_path.is_file() or not kinematics_path.is_file():
         raise RuntimeError(f"Motion angle {angle} did not materialize both evidence shards")
+    return {
+        "angle": angle,
+        "context_fingerprint": _MOTION_WORKER_CONTEXT_FINGERPRINT,
+        "summary": summary,
+        "pair_path": str(pair_path),
+        "pair_sha256": sha256(pair_path),
+        "pair_size_bytes": pair_path.stat().st_size,
+        "kinematics_path": str(kinematics_path),
+        "kinematics_sha256": sha256(kinematics_path),
+        "kinematics_size_bytes": kinematics_path.stat().st_size,
+        "worker_pid": os.getpid(),
+    }
+
+
+def _run_motion_boolean_angle_task(task: tuple[int, str]) -> dict[str, Any]:
+    """Evaluate one exact angle for positive common volume only."""
+    angle, output_directory = task
+    if _MOTION_WORKER_ENDPOINTS is None or _MOTION_WORKER_INVENTORIES is None:
+        raise RuntimeError("Motion worker context was not initialized")
+    angle_dir = Path(output_directory)
+    angle_dir.mkdir(parents=True, exist_ok=False)
+    summary = _motion_angle_audit(
+        _MOTION_WORKER_ENDPOINTS, _MOTION_WORKER_INVENTORIES, angle_dir, [angle],
+        exact_common_only=True,
+    )
+    pair_path = angle_dir / "motion_full_mechanism_audit.csv.gz"
+    kinematics_path = angle_dir / "motion_kinematics_1deg.csv"
+    if not pair_path.is_file() or not kinematics_path.is_file():
+        raise RuntimeError(f"Boolean angle {angle} did not materialize both evidence shards")
     return {
         "angle": angle,
         "context_fingerprint": _MOTION_WORKER_CONTEXT_FINGERPRINT,

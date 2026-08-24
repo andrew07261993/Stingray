@@ -658,17 +658,22 @@ def ss_chs2_1_check_valve_shape() -> cq.Shape:
 
 def booster_band_shape() -> cq.Shape:
     band = g.tube_z(7.2, 6.50, 5.0, z0=-2.5)
-    foot = g.box_center(5.15, 8.0, 5.0, 8.775, 0.0, 0.0)
+    # Keep the shell-backed foot inside the same r=25.35 inner-wall land after
+    # the coordinated reservoir package moves outward by 1.5 mm.
+    foot = g.box_center(4.15, 8.0, 5.0, 7.775, 0.0, 0.0)
+    screw_x = repack.BOOSTER_BAND_SCREW_LOCAL_X_MM
     clearance_half = cq.Solid.makeCylinder(
-        1.65, 4.2, cq.Vector(9.0, -4.2, 0.0), cq.Vector(0, 1, 0)
+        1.65, 4.2, cq.Vector(screw_x, -4.2, 0.0), cq.Vector(0, 1, 0)
     )
     tapped_half = cq.Solid.makeCylinder(
-        1.25, 4.3, cq.Vector(9.0, 0.0, 0.0), cq.Vector(0, 1, 0)
+        1.25, 4.3, cq.Vector(screw_x, 0.0, 0.0), cq.Vector(0, 1, 0)
     )
     reservoir_clearance = g.cyl_z(6.65, 5.8, z0=-2.9)
     out = band.cut(g.box_center(3.0, 8.0, 4.0, 6.8, 0, 0)).fuse(foot).cut(reservoir_clearance)
     out = out.cut(clearance_half.fuse(tapped_half))
-    body_clearance = g.cyl_z(25.35, 6.0, -14.0, 0.0, -3.0)
+    body_clearance = g.cyl_z(
+        25.35, 6.0, -repack.BOOSTER_INSTALL_RADIUS_MM, 0.0, -3.0
+    )
     return out.intersect(body_clearance)
 
 
@@ -1016,11 +1021,70 @@ def build_forward(b: R2Builder) -> None:
         color_key="stainless",
     )
     booster_collection_line_length = repack.BOOSTER_BODY_START_Z_MM - 4.0 - 444.5
-    booster_collection_line_shape = g.tube_z(1.0, 0.65, booster_collection_line_length)
-    booster_collection_line_shape = booster_collection_line_shape.fuse(g.tube_z(1.05, 0.65, 0.30))
-    booster_collection_line_shape = booster_collection_line_shape.fuse(
-        g.tube_z(1.05, 0.65, 0.30, z0=booster_collection_line_length - 0.30)
+    # Preserve the three manifold ports at their controlled clocks, transition
+    # into a clear r=18 inter-arm corridor, then use a localized tangent tail
+    # to reach each reservoir valve 22 degrees clockwise and at r=15.5.
+    booster_collection_main = g.planar_tangent_routed_round(
+        [(14.0, 0.0), (14.0, 8.0),
+         (repack.BOOSTER_COLLECTION_CORRIDOR_RADIUS_MM, 35.0),
+         (repack.BOOSTER_COLLECTION_CORRIDOR_RADIUS_MM, 475.0)],
+        1.0, 0.65, bend_radius=6.0, clock_deg=0.0,
     )
+    clock_delta = (
+        repack.BOOSTER_INSTALL_CLOCKS_DEG[0]
+        - repack.BOOSTER_MANIFOLD_CLOCKS_DEG[0]
+    )
+    def booster_tail_point(radius: float, clock_deg: float, z: float) -> tuple[float, float, float]:
+        angle = math.radians(clock_deg)
+        return radius * math.cos(angle), radius * math.sin(angle), z
+    booster_tail_points = [
+        booster_tail_point(repack.BOOSTER_COLLECTION_CORRIDOR_RADIUS_MM, 0.0, 450.0),
+        booster_tail_point(repack.BOOSTER_COLLECTION_CORRIDOR_RADIUS_MM, 0.0, 475.0),
+        booster_tail_point(17.5, 8.0, 485.0),
+        booster_tail_point(16.5, 16.0, 493.0),
+        booster_tail_point(repack.BOOSTER_INSTALL_RADIUS_MM, clock_delta, 496.0),
+        booster_tail_point(
+            repack.BOOSTER_INSTALL_RADIUS_MM, clock_delta,
+            booster_collection_line_length,
+        ),
+    ]
+    booster_tail_origin = booster_tail_points[0]
+    booster_tail_local = [
+        tuple(point[index] - booster_tail_origin[index] for index in range(3))
+        for point in booster_tail_points
+    ]
+    booster_collection_tail = g.moved(
+        g.tangent_routed_round(
+            booster_tail_local, 1.0, 0.65, bend_radius=3.0,
+        ),
+        g.translation_loc(*booster_tail_origin),
+    )
+    booster_collection_line_shape = booster_collection_main.fuse(
+        booster_collection_tail
+    )
+    end_x, end_y, _ = booster_tail_point(
+        repack.BOOSTER_INSTALL_RADIUS_MM, clock_delta,
+        booster_collection_line_length,
+    )
+    booster_collection_line_shape = booster_collection_line_shape.fuse(
+        g.tube_z(1.05, 0.65, 0.30, 14.0, 0.0, 0.0)
+    ).fuse(
+        g.tube_z(
+            1.05, 0.65, 0.30, end_x, end_y,
+            booster_collection_line_length - 0.30,
+        )
+    ).clean()
+    booster_collection_solids = booster_collection_line_shape.Solids()
+    if (
+        len(booster_collection_solids) != 1
+        or not booster_collection_line_shape.isValid()
+    ):
+        raise ValueError(
+            "Repacked booster collection line must remain one valid tangent-routed solid; "
+            f"found {len(booster_collection_solids)} solids "
+            f"(valid={booster_collection_line_shape.isValid()})"
+        )
+    booster_collection_line_shape = booster_collection_solids[0]
     booster_collection_line = b.define(
         "DF8-R2-BOOSTER-COLLECTION-LINE-001", "A",
         "LONG 316L BOOSTER COLLECTION LINE WITH INTEGRAL FERRULE ENDS",
@@ -1029,8 +1093,11 @@ def build_forward(b: R2Builder) -> None:
         notes="Occurrence-specific line bridges one dedicated manifold port to one SS-CHS2-1 inlet with 0.10 mm manifold-bore clearance.",
         color_key="route",
     )
-    for idx, phi in enumerate((30.0, 150.0, 270.0), 1):
-        x, y = radial_xy(14.0, phi)
+    for idx, (manifold_phi, phi) in enumerate(zip(
+        repack.BOOSTER_MANIFOLD_CLOCKS_DEG,
+        repack.BOOSTER_INSTALL_CLOCKS_DEG,
+    ), 1):
+        x, y = radial_xy(repack.BOOSTER_INSTALL_RADIUS_MM, phi)
         booster_z = repack.BOOSTER_BODY_START_Z_MM
         b.add(b.forward, path, booster, f"BOOSTER-{idx}", g.translation_loc(x, y, booster_z), "FIXED", "THREE_SPACED_PEEK_BANDS")
         b.add(b.forward, path, booster_fwd_closure, f"BOOSTER-FWD-CLOSURE-{idx}",
@@ -1041,12 +1108,14 @@ def build_forward(b: R2Builder) -> None:
               g.translation_loc(x, y, booster_z - 4.0), "FIXED", "TUBE_FITTED_TO_PORTED_CLOSURE")
         collection_oid = b.add(
             b.forward, path, booster_collection_line, f"BOOSTER-COLLECTION-LINE-{idx}",
-            g.translation_loc(x, y, 444.5), "FIXED", "FORMED_ROUTE_WITH_CAPTURED_FERRULES",
+            g.rotation_loc((0, 0, 1), manifold_phi)
+            * g.translation_loc(0.0, 0.0, 444.5),
+            "FIXED", "FORMED_ROUTE_WITH_CAPTURED_FERRULES",
         )
         b.add_route_record(
             collection_oid, "COLLECTION-MANIFOLD-001", f"BOOSTER-ISOLATION-VALVE-{idx}",
             "Integral occurrence-matched 1/8-in ferrule ends",
-            f"Dedicated axial manifold port at booster clock {phi:.0f} degrees",
+            f"Dedicated axial manifold port at {manifold_phi:.0f} degrees; tangent route to reservoir clock {phi:.0f} degrees",
             "Continuous exact manifold bore plus valve inlet pilot",
             2.0, 0.0, "34.5 MPa proof / 41.3 MPa valve catalog rating", "COMPLETE",
             maximum_endpoint_gap_mm=0.11,
@@ -1055,7 +1124,9 @@ def build_forward(b: R2Builder) -> None:
             penetration_occurrence_ids=[], integral_penetrations=True,
         )
         for bi, z in enumerate((1230.0, 1295.0, 1360.0), 1):
-            loc = g.rotation_loc((0, 0, 1), phi) * g.translation_loc(14.0, 0, z)
+            loc = g.rotation_loc((0, 0, 1), phi) * g.translation_loc(
+                repack.BOOSTER_INSTALL_RADIUS_MM, 0, z
+            )
             b.add(b.forward, path, band, f"BOOSTER-BAND-{idx}-{bi}", loc, "FIXED", "M3_BOLTED_CLAMP")
 
     trigger = b.define("DF8-R2-WATER-TRIGGER-HSG-001", "A", "CENTRAL WATER-SENSITIVE TRIGGER HOUSING", water_trigger_housing_shape(),
@@ -1091,14 +1162,45 @@ def build_forward(b: R2Builder) -> None:
     # central port collar, follows the clear inter-booster corridor, and
     # terminates on the valve's axial inlet shoulder.  Three spring clips are
     # real separate occurrences laser-welded to the shell inner land.
-    feed_phi = 70.0
-    feed_radius = 21.0
+    # Keep the supported run on the existing sector-1 land, then apply a
+    # localized tangent twist aft of the last mechanism corridor.  This clears
+    # ARM-2 at 80 degrees without moving the arm station or disturbing the
+    # manifold/valve endpoints.
+    feed_phi = 81.0
+    feed_tail_phi = 90.0
+    feed_radius = 23.0
     feed_length = repack.FULLFLOW_VALVE_Z_MM - 447.0
-    feed_shape = g.planar_tangent_routed_round(
+    feed_main = g.planar_tangent_routed_round(
         [(0.0, 0.0), (0.0, 12.0), (feed_radius, 33.0),
-         (feed_radius, feed_length - 33.0), (0.0, feed_length - 12.0), (0.0, feed_length)],
+         (feed_radius, 670.0)],
         1.00, 0.65, bend_radius=6.0, clock_deg=feed_phi,
     )
+
+    def feed_tail_point(radius: float, clock_deg: float, z: float) -> tuple[float, float, float]:
+        clock_rad = math.radians(clock_deg)
+        return radius * math.cos(clock_rad), radius * math.sin(clock_rad), z
+
+    feed_tail_points = [
+        feed_tail_point(feed_radius, feed_phi, 640.0),
+        feed_tail_point(feed_radius, feed_phi, 670.0),
+        feed_tail_point(feed_radius, 85.0, 690.0),
+        feed_tail_point(feed_radius, feed_tail_phi, 710.0),
+        feed_tail_point(feed_radius, feed_tail_phi, 730.0),
+    ]
+    tail_origin = feed_tail_points[0]
+    feed_tail = g.tangent_routed_round(
+        [
+            (point[0] - tail_origin[0], point[1] - tail_origin[1], point[2] - tail_origin[2])
+            for point in feed_tail_points
+        ],
+        1.00, 0.65, bend_radius=3.0,
+    ).moved(g.translation_loc(*tail_origin))
+    feed_final = g.planar_tangent_routed_round(
+        [(feed_radius, 700.0), (feed_radius, feed_length - 33.0),
+         (0.0, feed_length - 12.0), (0.0, feed_length)],
+        1.00, 0.65, bend_radius=6.0, clock_deg=feed_tail_phi,
+    )
+    feed_shape = feed_main.fuse(feed_tail).fuse(feed_final).clean()
     feed_solids = feed_shape.Solids()
     if len(feed_solids) != 1 or not feed_shape.isValid():
         raise ValueError(
@@ -1304,8 +1406,8 @@ def build_arm_module(b: R2Builder) -> None:
             )
         )
     termination_ring_shape = termination_ring_shape.fuse(termination_cage)
-    for phi in (30.0, 150.0, 270.0):
-        x, y = radial_xy(14.0, phi)
+    for phi in repack.BOOSTER_INSTALL_CLOCKS_DEG:
+        x, y = radial_xy(repack.BOOSTER_INSTALL_RADIUS_MM, phi)
         termination_ring_shape = termination_ring_shape.cut(g.cyl_z(6.8, 9.0, x, y, -4.5))
     termination_ring = b.define(
         "DF8-FORWARD-ARM-TERMINATION-RING-001", "A",
@@ -2475,13 +2577,17 @@ def add_mandatory_hardware_occurrences(b: R2Builder) -> None:
             g.translation_loc(x, y, 433.0),
         )
 
-    for booster, phi in enumerate((30.0, 150.0, 270.0), start=1):
+    for booster, phi in enumerate(repack.BOOSTER_INSTALL_CLOCKS_DEG, start=1):
         for band, z in enumerate((1230.0, 1295.0, 1360.0), start=1):
-            band_loc = g.rotation_loc((0, 0, 1), phi) * g.translation_loc(14.0, 0.0, z)
+            band_loc = g.rotation_loc((0, 0, 1), phi) * g.translation_loc(
+                repack.BOOSTER_INSTALL_RADIUS_MM, 0.0, z
+            )
             add(
                 b.forward, forward_path, "SSCF-M3-10-A4",
                 f"BOOSTER-CLAMP-SCREW-{booster}-{band}",
-                band_loc * g.translation_loc(9.0, -4.0, 0.0)
+                band_loc * g.translation_loc(
+                    repack.BOOSTER_BAND_SCREW_LOCAL_X_MM, -4.0, 0.0
+                )
                 * g.rotation_loc((1, 0, 0), -90.0),
             )
     for index, phi in enumerate((90.0, 210.0, 330.0), start=1):

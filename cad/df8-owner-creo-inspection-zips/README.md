@@ -2,13 +2,16 @@
 
 > **THESE ARE ENGINEERING INSPECTION PACKAGES FOR OWNER CREO REVIEW. NONE SHALL BE TREATED AS FORMAL RELEASE CAD.**
 
-These packages preserve six existing STOWED/DEPLOYED AP242 models for owner Creo inspection from the NASA computer. No CAD geometry or STEP file was regenerated for this transfer.
+These four packages preserve eight existing STOWED/DEPLOYED AP242 models for owner Creo inspection from the NASA computer. Package 04 also exposes both STEP files individually for direct download. No CAD geometry or STEP file was regenerated for this transfer.
 
-| Package | Arm station | Architecture | Status | Owner Creo purpose |
-|---|---|---|---|---|
-| 480 mm Forward Arm | 480 mm | mixed/original pressure architecture | preferred forward-arm geometric reference | inspect arm placement and repack |
-| Architecture C Forward-Packed | forward-packed developmental | COTS-heavy | NOT RELEASED; known interference | inspect COTS-heavy packaging |
-| Architecture C 889 mm Fallback | 889 mm | COTS-heavy | measured fallback | compare aft-arm packaging |
+| Package | Arm station | Arm length | Body length | Buoy architecture | Status | Creo purpose |
+|---|---:|---:|---:|---|---|---|
+| 480 mm Forward Arm Repack | 480 mm | — | — | mixed/original pressure architecture | preferred forward-arm geometric reference | inspect arm placement and repack |
+| Architecture C Forward-Packed | forward-packed developmental | — | — | COTS-heavy | NOT RELEASED; known interference | inspect COTS-heavy packaging |
+| Architecture C 889 mm Fallback | 889 mm | — | — | COTS-heavy | measured fallback | compare aft-arm packaging |
+| 14-in Short-Arm / External-Buoy | 480 mm | 14.890 in | 1675.4 mm | External Cordura breakaway buoy pack / UML MK5 proxy | Developmental CAD complete | Inspect compact short-arm / short-body architecture |
+
+**PACKAGE 04 IS CURRENTLY THE MOST AGGRESSIVE COMPACT-BODY DEVELOPMENTAL VARIANT.**
 
 ## Source, integrity, and limitation record
 
@@ -39,5 +42,15 @@ These packages preserve six existing STOWED/DEPLOYED AP242 models for owner Creo
 - Contained STOWED SHA-256: `084ae63e055ecaa4844cb8b548846b27d49ace38b07e4a5bfab8ffa98c460e93`
 - Contained DEPLOYED SHA-256: `564529496792f792d640eb193d924df5ea2d5802f36c2ab5605ae64d2cc95f30`
 - Known validation limitation: measured non-pass checkpoint; retained aft recovery/service hard geometry exceeds the `57.15 mm` keep-in, and the architecture is not owner-accepted.
+
+### 04 — 14-Inch Short-Arm / External-Buoy
+
+- Local source branch: `design/df8-14in-short-arm-external-buoy-pack`
+- Completed source commits: `0f21a655a3a8e0f98faba950a233ee0636a7626d`, `3ffc5c8dbc31381c2272141fa1ec827ed9532f9c`, `34f1b9e85906cd70af42219936921b145d318315`, `0431fe05465ba59a1714f110a07c73f146131c96`
+- ZIP SHA-256: `fe8254034291853678ae5a1f5b3d1bb8cb9d88eacafe12676dfb89f4afa92ff2`
+- STOWED AP242 SHA-256: `0e24135f35f86e5ec727bfcffa0f6d9c55195c44ab8af90c7a29b5a95cb505c7`
+- DEPLOYED AP242 SHA-256: `dda7dde5140ff6a108f4e501f4a1e1d974a533b93403cc6ac13beb64f398d244`
+- Known validation limitation: physical wet inflation/peel, fabric engagement, snag/retention/extraction, recovery proof-load, controlled vendor geometry/material evidence, procurement identity/CoC, and quantitative fall/orientation verification remain downstream gates.
+- Status: developmental engineering inspection model; not formal release CAD.
 
 Each package directory includes `SHA256SUMS.txt` with the ZIP hash and hashes for every contained entry.

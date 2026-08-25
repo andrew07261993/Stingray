@@ -1,0 +1,3722 @@
+{
+  "schema": "STINGRAY_SHORT14_EXACT_OCCURRENCE_MASS_PROPERTIES_V1",
+  "source_baseline": {
+    "state": "STOWED",
+    "total_mass_kg": 12.187491463640375,
+    "cg_mm": {
+      "x": -0.09152993986412701,
+      "y": 0.09387669169472074,
+      "z": 581.8378948899694
+    },
+    "radial_cg_mm": 0.13111278783961677,
+    "tip_to_cg_mm": 581.8378948899694,
+    "inertia_tensor_kg_mm2": [
+      [
+        3610888.134191418,
+        -5.284312268632413,
+        -430.64166362484053
+      ],
+      [
+        -5.284312268632413,
+        3610832.8869744893,
+        -245.27418613035573
+      ],
+      [
+        -430.64166362484053,
+        -245.27418613035573,
+        4464.634937335891
+      ]
+    ],
+    "principal_moments_kg_mm2": [
+      4464.566833050456,
+      3610832.408555005,
+      3610888.680715189
+    ],
+    "occurrence_count": 282
+  },
+  "short14_stowed": {
+    "state": "STOWED",
+    "total_mass_kg": 10.583165211312703,
+    "mass_reserve_to_18_14_kg": 7.556834788687297,
+    "cg_mm": {
+      "x": 2.4561318621297814,
+      "y": 0.24363010277655583,
+      "z": 474.1129157055563
+    },
+    "radial_cg_mm": 2.46818543694513,
+    "tip_to_cg_mm": 474.1129157055563,
+    "inertia_tensor_kg_mm2": [
+      [
+        2304741.7839161153,
+        -4.242270358325894,
+        -28321.22757823959
+      ],
+      [
+        -4.242270358325894,
+        2306236.412954019,
+        -2258.9004081899016
+      ],
+      [
+        -28321.22757823959,
+        -2258.9004081899016,
+        6308.445220403733
+      ]
+    ],
+    "products_of_inertia_kg_mm2": {
+      "Ixy": -4.242270358325894,
+      "Ixz": -28321.22757823959,
+      "Iyz": -2258.9004081899016
+    },
+    "principal_moments_kg_mm2": [
+      5957.306829168183,
+      2305090.219875331,
+      2306239.115386039
+    ],
+    "occurrence_count": 180,
+    "resolved_occurrences": [
+      {
+        "occurrence_id": "NOSE-001",
+        "part_number": "DF8-R2-NOSE-001",
+        "mass_kg": 2.2173158326782247,
+        "centroid_mm": {
+          "x": -0.0009302129491746598,
+          "y": 6.29054929656666e-15,
+          "z": 124.9087713694092
+        }
+      },
+      {
+        "occurrence_id": "BALLAST-001",
+        "part_number": "DF8-R2-BALLAST-001",
+        "mass_kg": 4.884227629259874,
+        "centroid_mm": {
+          "x": -0.00036266307920799953,
+          "y": -1.8600010414089896e-10,
+          "z": 253.01783491014314
+        }
+      },
+      {
+        "occurrence_id": "FWD-RING-02",
+        "part_number": "DF8-SHORT14-BALLAST-CARRIER-TRANSITION-RING-001",
+        "mass_kg": 0.025715400129644583,
+        "centroid_mm": {
+          "x": 1.375698846370988e-08,
+          "y": 2.380185706031802e-08,
+          "z": 339.69480493954813
+        }
+      },
+      {
+        "occurrence_id": "FIXED-SECTOR-1",
+        "part_number": "DF8-SHORT14-FIXED-SECTOR-001",
+        "mass_kg": 0.17781369911265105,
+        "centroid_mm": {
+          "x": 12.734745402855678,
+          "y": 22.05722605920021,
+          "z": 538.7
+        }
+      },
+      {
+        "occurrence_id": "ARM-LONGERON-1",
+        "part_number": "DF8-SHORT14-ARM-LONGERON-001",
+        "mass_kg": 0.02557947017485575,
+        "centroid_mm": {
+          "x": 11.66818139802051,
+          "y": 20.20988301330157,
+          "z": 538.7
+        }
+      },
+      {
+        "occurrence_id": "FIXED-SECTOR-2",
+        "part_number": "DF8-SHORT14-FIXED-SECTOR-001",
+        "mass_kg": 0.17781369911265105,
+        "centroid_mm": {
+          "x": -25.46949080571134,
+          "y": 4.686896164736298e-15,
+          "z": 538.7
+        }
+      },
+      {
+        "occurrence_id": "ARM-LONGERON-2",
+        "part_number": "DF8-SHORT14-ARM-LONGERON-001",
+        "mass_kg": 0.02557947017485575,
+        "centroid_mm": {
+          "x": -23.336362796041012,
+          "y": 2.172567773836231e-15,
+          "z": 538.7
+        }
+      },
+      {
+        "occurrence_id": "FIXED-SECTOR-3",
+        "part_number": "DF8-SHORT14-BACKUP-ACCESS-FIXED-SECTOR-003",
+        "mass_kg": 0.17708072899000055,
+        "centroid_mm": {
+          "x": 12.734105431127603,
+          "y": -22.056117544613024,
+          "z": 539.0805416023757
+        }
+      },
+      {
+        "occurrence_id": "ARM-LONGERON-3",
+        "part_number": "DF8-SHORT14-BACKUP-GUIDE-LONGERON-003",
+        "mass_kg": 0.02536196076122347,
+        "centroid_mm": {
+          "x": 11.667199341671388,
+          "y": -20.208182038768992,
+          "z": 539.4884724642895
+        }
+      },
+      {
+        "occurrence_id": "ARM-TERMINATION-RING-001",
+        "part_number": "DF8-SHORT14-ARM-TERMINATION-RING-001",
+        "mass_kg": 0.028944490434771264,
+        "centroid_mm": {
+          "x": 6.959980065867603e-16,
+          "y": -1.3397961626795137e-15,
+          "z": 737.3985061224813
+        }
+      },
+      {
+        "occurrence_id": "ARM-1",
+        "part_number": "DF8-SHORT14-ARM-BLADE-001",
+        "mass_kg": 0.06444988175252296,
+        "centroid_mm": {
+          "x": 24.28591055989539,
+          "y": 0.0044161837447853946,
+          "z": 524.1008640264138
+        }
+      },
+      {
+        "occurrence_id": "PIVOT-CARRIER-1",
+        "part_number": "DF8-SHORT14-PIVOT-CARRIER-PRIMARY-LUG-001",
+        "mass_kg": 0.0013538421744136802,
+        "centroid_mm": {
+          "x": 18.1533345927473,
+          "y": -8.0056494545492,
+          "z": 353.4514239465534
+        }
+      },
+      {
+        "occurrence_id": "PIVOT-PIN-1",
+        "part_number": "DF8-R2-PIVOT-PIN-008",
+        "mass_kg": 0.008671747528307096,
+        "centroid_mm": {
+          "x": 18.0,
+          "y": -0.9205635417964455,
+          "z": 355.0
+        }
+      },
+      {
+        "occurrence_id": "PIVOT-BUSH-1-1",
+        "part_number": "DF8-R2-PIVOT-BUSH-008",
+        "mass_kg": 8.808849871477256e-06,
+        "centroid_mm": {
+          "x": 17.999999999999993,
+          "y": -4.749999999999998,
+          "z": 354.9999999999999
+        }
+      },
+      {
+        "occurrence_id": "PIVOT-BUSH-1-2",
+        "part_number": "DF8-R2-PIVOT-BUSH-008",
+        "mass_kg": 8.808849871477256e-06,
+        "centroid_mm": {
+          "x": 17.999999999999993,
+          "y": 4.750000000000002,
+          "z": 354.9999999999999
+        }
+      },
+      {
+        "occurrence_id": "PIVOT-WASHER-1-1",
+        "part_number": "DF8-R2-PIVOT-WASHER-008",
+        "mass_kg": 1.4016322438141084e-05,
+        "centroid_mm": {
+          "x": 18.0,
+          "y": -5.9,
+          "z": 355.0
+        }
+      },
+      {
+        "occurrence_id": "PIVOT-WASHER-1-2",
+        "part_number": "DF8-R2-PIVOT-WASHER-008",
+        "mass_kg": 1.4016322438141084e-05,
+        "centroid_mm": {
+          "x": 18.0,
+          "y": 5.9,
+          "z": 355.0
+        }
+      },
+      {
+        "occurrence_id": "PIVOT-CLIP-1",
+        "part_number": "DF8-R2-PIVOT-SPIRAL-RING-008",
+        "mass_kg": 9.513648371968046e-05,
+        "centroid_mm": {
+          "x": 17.16058870763709,
+          "y": 9.45,
+          "z": 355.0
+        }
+      },
+      {
+        "occurrence_id": "LINK-1-1",
+        "part_number": "DF8-R2-SHORT-LINK-001",
+        "mass_kg": 0.0008587191047231816,
+        "centroid_mm": {
+          "x": 21.69298412990903,
+          "y": -1.75,
+          "z": 373.7317155132733
+        }
+      },
+      {
+        "occurrence_id": "LINK-1-2",
+        "part_number": "DF8-R2-SHORT-LINK-001",
+        "mass_kg": 0.0008587191047231816,
+        "centroid_mm": {
+          "x": 21.69298412990903,
+          "y": 1.75,
+          "z": 373.7317155132733
+        }
+      },
+      {
+        "occurrence_id": "LINK-PIN-1-BELL",
+        "part_number": "DF8-R2-LINK-PIN-004",
+        "mass_kg": 0.001443346409243244,
+        "centroid_mm": {
+          "x": 24.0,
+          "y": -1.135531367514047,
+          "z": 364.0
+        }
+      },
+      {
+        "occurrence_id": "LINK-CLIP-1-BELL",
+        "part_number": "ROTOR-CLIP-DC-4SS",
+        "mass_kg": 2.94216e-05,
+        "centroid_mm": {
+          "x": 23.619429644747665,
+          "y": 5.6,
+          "z": 364.0
+        }
+      },
+      {
+        "occurrence_id": "LINK-PIN-1-CROSSHEAD",
+        "part_number": "DF8-R2-LINK-PIN-004",
+        "mass_kg": 0.001443346409243244,
+        "centroid_mm": {
+          "x": 18.0,
+          "y": -1.135531367514047,
+          "z": 383.0263632888684
+        }
+      },
+      {
+        "occurrence_id": "LINK-CLIP-1-CROSSHEAD",
+        "part_number": "ROTOR-CLIP-DC-4SS",
+        "mass_kg": 2.94216e-05,
+        "centroid_mm": {
+          "x": 17.61942964474766,
+          "y": 5.6,
+          "z": 383.0263632888684
+        }
+      },
+      {
+        "occurrence_id": "ARM-STOP-PAD-1",
+        "part_number": "DF8-R2-ARM-STOP-PAD-001",
+        "mass_kg": 0.0011774163151587191,
+        "centroid_mm": {
+          "x": 22.0,
+          "y": 0.902614066968633,
+          "z": 346.5
+        }
+      },
+      {
+        "occurrence_id": "FIXED-STOP-1",
+        "part_number": "DF8-R2-FIXED-STOP-001",
+        "mass_kg": 0.0023936337070524028,
+        "centroid_mm": {
+          "x": 8.268797173245064,
+          "y": -0.031056704431969655,
+          "z": 347.6608216822818
+        }
+      },
+      {
+        "occurrence_id": "STOW-DOG-1",
+        "part_number": "DF8-R2-STOW-DOG-001",
+        "mass_kg": 0.0007049382892415685,
+        "centroid_mm": {
+          "x": 17.0,
+          "y": 7.384416886067822e-18,
+          "z": 729.706
+        }
+      },
+      {
+        "occurrence_id": "STOW-DOG-GUIDE-1",
+        "part_number": "DF8-SHORT14-STOW-DOG-GUIDE-001",
+        "mass_kg": 0.000530677401823469,
+        "centroid_mm": {
+          "x": 15.384303654529408,
+          "y": 1.1771147855411908,
+          "z": 729.9551182504111
+        }
+      },
+      {
+        "occurrence_id": "STOW-DOG-SPRING-1",
+        "part_number": "DF8-R2-STOW-DOG-RETURN-SPRING-001",
+        "mass_kg": 3.195904507999331e-07,
+        "centroid_mm": {
+          "x": 13.059999999992062,
+          "y": 0.11695446758268069,
+          "z": 729.7060000018779
+        }
+      },
+      {
+        "occurrence_id": "STOW-DOG-INHIBIT-PIN-1",
+        "part_number": "DF8-R2-STOW-DOG-INHIBIT-PIN-001",
+        "mass_kg": 5.93375184680702e-05,
+        "centroid_mm": {
+          "x": 17.0,
+          "y": -0.6263002000307725,
+          "z": 729.706
+        }
+      },
+      {
+        "occurrence_id": "STOW-DOG-INHIBIT-KEEPER-1",
+        "part_number": "DF8-R2-STOW-DOG-INHIBIT-KEEPER-001",
+        "mass_kg": 3.948942128413097e-06,
+        "centroid_mm": {
+          "x": 16.906490406668464,
+          "y": 2.425,
+          "z": 729.706
+        }
+      },
+      {
+        "occurrence_id": "LOCK-DOG-1",
+        "part_number": "DF8-R2-AUTO-LOCK-DOG-001",
+        "mass_kg": 8.408963611185206e-06,
+        "centroid_mm": {
+          "x": 10.323726810063954,
+          "y": 7.744869706840391,
+          "z": 349.58475947778226
+        }
+      },
+      {
+        "occurrence_id": "LOCK-SPRING-1",
+        "part_number": "DF8-R2-AUTO-LOCK-SPRING-001",
+        "mass_kg": 2.8560892651638403e-06,
+        "centroid_mm": {
+          "x": 10.323726839974043,
+          "y": 9.074999999672759,
+          "z": 349.58475931625736
+        }
+      },
+      {
+        "occurrence_id": "LOCK-BUSHING-1",
+        "part_number": "DF8-R2-AUTO-LOCK-BUSHING-001",
+        "mass_kg": 3.094528181635134e-07,
+        "centroid_mm": {
+          "x": 10.622942275837621,
+          "y": 10.146408920258994,
+          "z": 349.9033939836245
+        }
+      },
+      {
+        "occurrence_id": "ARM-2",
+        "part_number": "DF8-SHORT14-ARM-BLADE-001",
+        "mass_kg": 0.06444988175252296,
+        "centroid_mm": {
+          "x": -12.146779807258458,
+          "y": 21.030007407033786,
+          "z": 524.1008640264139
+        }
+      },
+      {
+        "occurrence_id": "PIVOT-CARRIER-2",
+        "part_number": "DF8-SHORT14-PIVOT-CARRIER-PRIMARY-LUG-001",
+        "mass_kg": 0.0013538421744136802,
+        "centroid_mm": {
+          "x": -2.1435714949410096,
+          "y": 19.724073647992594,
+          "z": 353.4514239465534
+        }
+      },
+      {
+        "occurrence_id": "PIVOT-PIN-2",
+        "part_number": "DF8-R2-PIVOT-PIN-008",
+        "mass_kg": 0.008671747528307096,
+        "centroid_mm": {
+          "x": -8.202768587006496,
+          "y": 16.04873903901812,
+          "z": 355.0
+        }
+      },
+      {
+        "occurrence_id": "PIVOT-BUSH-2-1",
+        "part_number": "DF8-R2-PIVOT-BUSH-008",
+        "mass_kg": 8.808849871477256e-06,
+        "centroid_mm": {
+          "x": -4.886379332023917,
+          "y": 17.963457268119896,
+          "z": 354.9999999999999
+        }
+      },
+      {
+        "occurrence_id": "PIVOT-BUSH-2-2",
+        "part_number": "DF8-R2-PIVOT-BUSH-008",
+        "mass_kg": 8.808849871477256e-06,
+        "centroid_mm": {
+          "x": -13.11362066797608,
+          "y": 13.213457268119894,
+          "z": 354.9999999999999
+        }
+      },
+      {
+        "occurrence_id": "PIVOT-WASHER-2-1",
+        "part_number": "DF8-R2-PIVOT-WASHER-008",
+        "mass_kg": 1.4016322438141084e-05,
+        "centroid_mm": {
+          "x": -3.8904501176718074,
+          "y": 18.538457268119895,
+          "z": 355.0
+        }
+      },
+      {
+        "occurrence_id": "PIVOT-WASHER-2-2",
+        "part_number": "DF8-R2-PIVOT-WASHER-008",
+        "mass_kg": 1.4016322438141084e-05,
+        "centroid_mm": {
+          "x": -14.109549882328183,
+          "y": 12.638457268119895,
+          "z": 355.0
+        }
+      },
+      {
+        "occurrence_id": "PIVOT-CLIP-2",
+        "part_number": "DF8-R2-PIVOT-SPIRAL-RING-008",
+        "mass_kg": 9.513648371968046e-05,
+        "centroid_mm": {
+          "x": -16.764234419581484,
+          "y": 10.13650576471009,
+          "z": 355.0
+        }
+      },
+      {
+        "occurrence_id": "LINK-2-1",
+        "part_number": "DF8-R2-SHORT-LINK-001",
+        "mass_kg": 0.0008587191047231816,
+        "centroid_mm": {
+          "x": -9.330947608331742,
+          "y": 19.661675340393884,
+          "z": 373.7317155132733
+        }
+      },
+      {
+        "occurrence_id": "LINK-2-2",
+        "part_number": "DF8-R2-SHORT-LINK-001",
+        "mass_kg": 0.0008587191047231816,
+        "centroid_mm": {
+          "x": -12.362036521577279,
+          "y": 17.911675340393884,
+          "z": 373.7317155132733
+        }
+      },
+      {
+        "occurrence_id": "LINK-PIN-2-BELL",
+        "part_number": "DF8-R2-LINK-PIN-004",
+        "mass_kg": 0.001443346409243244,
+        "centroid_mm": {
+          "x": -11.016600988938745,
+          "y": 21.352375374583552,
+          "z": 364.0
+        }
+      },
+      {
+        "occurrence_id": "LINK-CLIP-2-BELL",
+        "part_number": "ROTOR-CLIP-DC-4SS",
+        "mass_kg": 2.94216e-05,
+        "centroid_mm": {
+          "x": -16.659457083566682,
+          "y": 17.655026095250737,
+          "z": 364.0
+        }
+      },
+      {
+        "occurrence_id": "LINK-PIN-2-CROSSHEAD",
+        "part_number": "DF8-R2-LINK-PIN-004",
+        "mass_kg": 0.001443346409243244,
+        "centroid_mm": {
+          "x": -8.016600988938748,
+          "y": 16.15622295187692,
+          "z": 383.0263632888684
+        }
+      },
+      {
+        "occurrence_id": "LINK-CLIP-2-CROSSHEAD",
+        "part_number": "ROTOR-CLIP-DC-4SS",
+        "mass_kg": 2.94216e-05,
+        "centroid_mm": {
+          "x": -13.659457083566682,
+          "y": 12.458873672544106,
+          "z": 383.0263632888684
+        }
+      },
+      {
+        "occurrence_id": "ARM-STOP-PAD-2",
+        "part_number": "DF8-R2-ARM-STOP-PAD-001",
+        "mass_kg": 0.0011774163151587191,
+        "centroid_mm": {
+          "x": -11.781686711808021,
+          "y": 18.601251849773334,
+          "z": 346.5
+        }
+      },
+      {
+        "occurrence_id": "FIXED-STOP-2",
+        "part_number": "DF8-R2-FIXED-STOP-001",
+        "mass_kg": 0.0023936337070524028,
+        "centroid_mm": {
+          "x": -4.107502691626616,
+          "y": 7.176516762987167,
+          "z": 347.6608216822818
+        }
+      },
+      {
+        "occurrence_id": "STOW-DOG-2",
+        "part_number": "DF8-R2-STOW-DOG-001",
+        "mass_kg": 0.0007049382892415685,
+        "centroid_mm": {
+          "x": -8.499999999999996,
+          "y": 14.722431864335459,
+          "z": 729.706
+        }
+      },
+      {
+        "occurrence_id": "STOW-DOG-GUIDE-2",
+        "part_number": "DF8-SHORT14-STOW-DOG-GUIDE-001",
+        "mass_kg": 0.000530677401823469,
+        "centroid_mm": {
+          "x": -8.711563134713646,
+          "y": 12.734640391585652,
+          "z": 729.9551182504111
+        }
+      },
+      {
+        "occurrence_id": "STOW-DOG-SPRING-2",
+        "part_number": "DF8-R2-STOW-DOG-RETURN-SPRING-001",
+        "mass_kg": 3.195904507999331e-07,
+        "centroid_mm": {
+          "x": -6.631285540008713,
+          "y": 11.251814539626555,
+          "z": 729.7060000018779
+        }
+      },
+      {
+        "occurrence_id": "STOW-DOG-INHIBIT-PIN-2",
+        "part_number": "DF8-R2-STOW-DOG-INHIBIT-PIN-001",
+        "mass_kg": 5.93375184680702e-05,
+        "centroid_mm": {
+          "x": -7.957608116378073,
+          "y": 15.035581964350845,
+          "z": 729.706
+        }
+      },
+      {
+        "occurrence_id": "STOW-DOG-INHIBIT-KEEPER-2",
+        "part_number": "DF8-R2-STOW-DOG-INHIBIT-KEEPER-001",
+        "mass_kg": 3.948942128413097e-06,
+        "centroid_mm": {
+          "x": -10.553356807511493,
+          "y": 13.428950181012798,
+          "z": 729.706
+        }
+      },
+      {
+        "occurrence_id": "LOCK-DOG-2",
+        "part_number": "DF8-R2-AUTO-LOCK-DOG-001",
+        "mass_kg": 8.408963611185206e-06,
+        "centroid_mm": {
+          "x": -11.869117320156292,
+          "y": 5.068174825825677,
+          "z": 349.58475947778226
+        }
+      },
+      {
+        "occurrence_id": "LOCK-SPRING-2",
+        "part_number": "DF8-R2-AUTO-LOCK-SPRING-001",
+        "mass_kg": 2.8560892651638403e-06,
+        "centroid_mm": {
+          "x": -13.0210439590474,
+          "y": 4.403109705312389,
+          "z": 349.58475931625736
+        }
+      },
+      {
+        "occurrence_id": "LOCK-BUSHING-2",
+        "part_number": "DF8-R2-AUTO-LOCK-BUSHING-001",
+        "mass_kg": 3.094528181635134e-07,
+        "centroid_mm": {
+          "x": -14.098519020048133,
+          "y": 4.126533413681564,
+          "z": 349.9033939836245
+        }
+      },
+      {
+        "occurrence_id": "ARM-3",
+        "part_number": "DF8-SHORT14-ARM-BLADE-001",
+        "mass_kg": 0.06444988175252296,
+        "centroid_mm": {
+          "x": -12.139130752636946,
+          "y": -21.034423590778562,
+          "z": 524.1008640264138
+        }
+      },
+      {
+        "occurrence_id": "PIVOT-CARRIER-3",
+        "part_number": "DF8-SHORT14-PIVOT-CARRIER-PRIMARY-LUG-001",
+        "mass_kg": 0.0013538421744136802,
+        "centroid_mm": {
+          "x": -16.00976309780629,
+          "y": -11.718424193443393,
+          "z": 353.4514239465534
+        }
+      },
+      {
+        "occurrence_id": "PIVOT-PIN-3",
+        "part_number": "DF8-R2-PIVOT-PIN-008",
+        "mass_kg": 0.008671747528307096,
+        "centroid_mm": {
+          "x": -9.797231412993504,
+          "y": -15.128175497221669,
+          "z": 355.0
+        }
+      },
+      {
+        "occurrence_id": "PIVOT-BUSH-3-1",
+        "part_number": "DF8-R2-PIVOT-BUSH-008",
+        "mass_kg": 8.808849871477256e-06,
+        "centroid_mm": {
+          "x": -13.113620667976088,
+          "y": -13.213457268119889,
+          "z": 354.9999999999999
+        }
+      },
+      {
+        "occurrence_id": "PIVOT-BUSH-3-2",
+        "part_number": "DF8-R2-PIVOT-BUSH-008",
+        "mass_kg": 8.808849871477256e-06,
+        "centroid_mm": {
+          "x": -4.886379332023923,
+          "y": -17.963457268119896,
+          "z": 354.9999999999999
+        }
+      },
+      {
+        "occurrence_id": "PIVOT-WASHER-3-1",
+        "part_number": "DF8-R2-PIVOT-WASHER-008",
+        "mass_kg": 1.4016322438141084e-05,
+        "centroid_mm": {
+          "x": -14.109549882328194,
+          "y": -12.638457268119888,
+          "z": 355.0
+        }
+      },
+      {
+        "occurrence_id": "PIVOT-WASHER-3-2",
+        "part_number": "DF8-R2-PIVOT-WASHER-008",
+        "mass_kg": 1.4016322438141084e-05,
+        "centroid_mm": {
+          "x": -3.890450117671818,
+          "y": -18.538457268119892,
+          "z": 355.0
+        }
+      },
+      {
+        "occurrence_id": "PIVOT-CLIP-3",
+        "part_number": "DF8-R2-PIVOT-SPIRAL-RING-008",
+        "mass_kg": 9.513648371968046e-05,
+        "centroid_mm": {
+          "x": -0.3963542880556092,
+          "y": -19.586505764710093,
+          "z": 355.0
+        }
+      },
+      {
+        "occurrence_id": "LINK-3-1",
+        "part_number": "DF8-R2-SHORT-LINK-001",
+        "mass_kg": 0.0008587191047231816,
+        "centroid_mm": {
+          "x": -12.362036521577288,
+          "y": -17.911675340393877,
+          "z": 373.7317155132733
+        }
+      },
+      {
+        "occurrence_id": "LINK-3-2",
+        "part_number": "DF8-R2-SHORT-LINK-001",
+        "mass_kg": 0.0008587191047231816,
+        "centroid_mm": {
+          "x": -9.330947608331757,
+          "y": -19.66167534039388,
+          "z": 373.7317155132733
+        }
+      },
+      {
+        "occurrence_id": "LINK-PIN-3-BELL",
+        "part_number": "DF8-R2-LINK-PIN-004",
+        "mass_kg": 0.001443346409243244,
+        "centroid_mm": {
+          "x": -12.983399011061259,
+          "y": -20.2168440070695,
+          "z": 364.0
+        }
+      },
+      {
+        "occurrence_id": "LINK-CLIP-3-BELL",
+        "part_number": "ROTOR-CLIP-DC-4SS",
+        "mass_kg": 2.94216e-05,
+        "centroid_mm": {
+          "x": -6.959972561180985,
+          "y": -23.25502609525073,
+          "z": 364.0
+        }
+      },
+      {
+        "occurrence_id": "LINK-PIN-3-CROSSHEAD",
+        "part_number": "DF8-R2-LINK-PIN-004",
+        "mass_kg": 0.001443346409243244,
+        "centroid_mm": {
+          "x": -9.983399011061255,
+          "y": -15.020691584362869,
+          "z": 383.0263632888684
+        }
+      },
+      {
+        "occurrence_id": "LINK-CLIP-3-CROSSHEAD",
+        "part_number": "ROTOR-CLIP-DC-4SS",
+        "mass_kg": 2.94216e-05,
+        "centroid_mm": {
+          "x": -3.9599725611809813,
+          "y": -18.0588736725441,
+          "z": 383.0263632888684
+        }
+      },
+      {
+        "occurrence_id": "ARM-STOP-PAD-3",
+        "part_number": "DF8-R2-ARM-STOP-PAD-001",
+        "mass_kg": 0.0011774163151587191,
+        "centroid_mm": {
+          "x": -10.218313288191982,
+          "y": -19.50386591674196,
+          "z": 346.5
+        }
+      },
+      {
+        "occurrence_id": "FIXED-STOP-3",
+        "part_number": "DF8-R2-FIXED-STOP-001",
+        "mass_kg": 0.0023936337070524028,
+        "centroid_mm": {
+          "x": -4.161294481618445,
+          "y": -7.145460058555191,
+          "z": 347.6608216822818
+        }
+      },
+      {
+        "occurrence_id": "STOW-DOG-3",
+        "part_number": "DF8-R2-STOW-DOG-001",
+        "mass_kg": 0.0007049382892415685,
+        "centroid_mm": {
+          "x": -8.500000000000007,
+          "y": -14.722431864335455,
+          "z": 729.706
+        }
+      },
+      {
+        "occurrence_id": "STOW-DOG-GUIDE-3",
+        "part_number": "DF8-SHORT14-STOW-DOG-GUIDE-001",
+        "mass_kg": 0.000530677401823469,
+        "centroid_mm": {
+          "x": -6.672740519815765,
+          "y": -13.911755177126839,
+          "z": 729.9551182504111
+        }
+      },
+      {
+        "occurrence_id": "STOW-DOG-SPRING-3",
+        "part_number": "DF8-R2-STOW-DOG-RETURN-SPRING-001",
+        "mass_kg": 3.195904507999331e-07,
+        "centroid_mm": {
+          "x": -6.428714459983352,
+          "y": -11.368769007209233,
+          "z": 729.7060000018779
+        }
+      },
+      {
+        "occurrence_id": "STOW-DOG-INHIBIT-PIN-3",
+        "part_number": "DF8-R2-STOW-DOG-INHIBIT-PIN-001",
+        "mass_kg": 5.93375184680702e-05,
+        "centroid_mm": {
+          "x": -9.042391883621931,
+          "y": -14.409281764320069,
+          "z": 729.706
+        }
+      },
+      {
+        "occurrence_id": "STOW-DOG-INHIBIT-KEEPER-3",
+        "part_number": "DF8-R2-STOW-DOG-INHIBIT-KEEPER-001",
+        "mass_kg": 3.948942128413097e-06,
+        "centroid_mm": {
+          "x": -6.353133599156976,
+          "y": -15.853950181012793,
+          "z": 729.706
+        }
+      },
+      {
+        "occurrence_id": "LOCK-DOG-3",
+        "part_number": "DF8-R2-AUTO-LOCK-DOG-001",
+        "mass_kg": 8.408963611185206e-06,
+        "centroid_mm": {
+          "x": 1.5453905100923335,
+          "y": -12.813044532666066,
+          "z": 349.58475947778226
+        }
+      },
+      {
+        "occurrence_id": "LOCK-SPRING-3",
+        "part_number": "DF8-R2-AUTO-LOCK-SPRING-001",
+        "mass_kg": 2.8560892651638403e-06,
+        "centroid_mm": {
+          "x": 2.6973171190733547,
+          "y": -13.478109704985146,
+          "z": 349.58475931625736
+        }
+      },
+      {
+        "occurrence_id": "LOCK-BUSHING-3",
+        "part_number": "DF8-R2-AUTO-LOCK-BUSHING-001",
+        "mass_kg": 3.094528181635134e-07,
+        "centroid_mm": {
+          "x": 3.475576744210509,
+          "y": -14.272942333940556,
+          "z": 349.9033939836245
+        }
+      },
+      {
+        "occurrence_id": "CROSSHEAD-001",
+        "part_number": "DF8-SHORT14-CROSSHEAD-001",
+        "mass_kg": 0.01232918785989715,
+        "centroid_mm": {
+          "x": -0.9078357526527477,
+          "y": 1.0598550073160098,
+          "z": 383.0263632888684
+        }
+      },
+      {
+        "occurrence_id": "CROSSHEAD-GUIDE-001",
+        "part_number": "DF8-R2-CROSSHEAD-GUIDE-001",
+        "mass_kg": 0.01153710148317413,
+        "centroid_mm": {
+          "x": -1.1242003869555404e-15,
+          "y": 1.0679960401047445e-17,
+          "z": 367.7678881317908
+        }
+      },
+      {
+        "occurrence_id": "CROSSHEAD-GUIDE-SPIDER",
+        "part_number": "DF8-R2-CROSSHEAD-GUIDE-SPIDER-001",
+        "mass_kg": 0.0012339130177071314,
+        "centroid_mm": {
+          "x": 2.4897698392549137e-14,
+          "y": -1.1512921404413513e-14,
+          "z": 343.0
+        }
+      },
+      {
+        "occurrence_id": "BACKUP-SPRING-001",
+        "part_number": "DF8-R2-BACKUP-SPRING-16N-001",
+        "mass_kg": 0.092,
+        "centroid_mm": {
+          "x": 5.915684976942702,
+          "y": -10.383442911766306,
+          "z": 462.77636387808917
+        }
+      },
+      {
+        "occurrence_id": "BACKUP-SPRING-FIXED-SEAT",
+        "part_number": "DF8-R2-BACKUP-SPRING-FIXED-SEAT-001",
+        "mass_kg": 0.0042064835579726225,
+        "centroid_mm": {
+          "x": 6.07237221563444,
+          "y": -10.517657203026776,
+          "z": 537.7763630455687
+        }
+      },
+      {
+        "occurrence_id": "BACKUP-SPRING-MOVING-SEAT",
+        "part_number": "DF8-R2-BACKUP-SPRING-MOVING-SEAT-001",
+        "mass_kg": 0.0073882012531716265,
+        "centroid_mm": {
+          "x": 6.000000000000002,
+          "y": -10.392304845413264,
+          "z": 387.7763632888684
+        }
+      },
+      {
+        "occurrence_id": "BACKUP-SPRING-GUIDE",
+        "part_number": "DF8-R2-BACKUP-SPRING-GUIDE-001",
+        "mass_kg": 0.029068956937486064,
+        "centroid_mm": {
+          "x": 6.0574383435614445,
+          "y": -10.483136836549034,
+          "z": 448.12412708859983
+        }
+      },
+      {
+        "occurrence_id": "GS19-BODY-001",
+        "part_number": "GS-19-50-V4A-B8-B8",
+        "mass_kg": 0.124,
+        "centroid_mm": {
+          "x": 6.750000000000002,
+          "y": 11.69134295108992,
+          "z": 468.8643611097075
+        }
+      },
+      {
+        "occurrence_id": "GS19-ROD-001",
+        "part_number": "GS-19-50-V4A-B8-B8-ROD-CHILD",
+        "mass_kg": 0.02,
+        "centroid_mm": {
+          "x": 6.750000000000002,
+          "y": 11.69134295108992,
+          "z": 417.89601166468515
+        }
+      },
+      {
+        "occurrence_id": "HBD-BODY-001",
+        "part_number": "HBD-15-25-AA-P",
+        "mass_kg": 0.19,
+        "centroid_mm": {
+          "x": -14.5,
+          "y": 2.0005193981215574e-15,
+          "z": 464.27852119688663
+        }
+      },
+      {
+        "occurrence_id": "HBD-ROD-001",
+        "part_number": "HBD-15-25-AA-P-ROD-CHILD",
+        "mass_kg": 0.03,
+        "centroid_mm": {
+          "x": -14.5,
+          "y": 1.7903158165750395e-15,
+          "z": 411.77891426389175
+        }
+      },
+      {
+        "occurrence_id": "GS19-FIXED-YOKE",
+        "part_number": "DF8-R2-ACTUATOR-FIXED-YOKE-GS19-001",
+        "mass_kg": 0.0031335454005427285,
+        "centroid_mm": {
+          "x": 7.447128850412989,
+          "y": 12.898805539427297,
+          "z": 529.1813745404135
+        }
+      },
+      {
+        "occurrence_id": "GS19-PIN-FIXED",
+        "part_number": "DF8-R2-ACTUATOR-PIN-004",
+        "mass_kg": 0.001280137647106325,
+        "centroid_mm": {
+          "x": 7.673668209077944,
+          "y": 11.158062861936873,
+          "z": 527.0
+        }
+      },
+      {
+        "occurrence_id": "GS19-CLIP-FIXED",
+        "part_number": "DF8-R2-ACTUATOR-E-RING-004",
+        "mass_kg": 4.345508650541629e-05,
+        "centroid_mm": {
+          "x": 2.4736794805404374,
+          "y": 13.68453854193662,
+          "z": 527.0
+        }
+      },
+      {
+        "occurrence_id": "GS19-PIN-MOVING",
+        "part_number": "DF8-R2-ACTUATOR-PIN-004",
+        "mass_kg": 0.001280137647106325,
+        "centroid_mm": {
+          "x": 7.673668209077938,
+          "y": 11.158062861936877,
+          "z": 383.0263632888684
+        }
+      },
+      {
+        "occurrence_id": "GS19-CLIP-MOVING",
+        "part_number": "DF8-R2-ACTUATOR-E-RING-004",
+        "mass_kg": 4.345508650541629e-05,
+        "centroid_mm": {
+          "x": 2.4736794805404387,
+          "y": 13.684538541936623,
+          "z": 383.0263632888684
+        }
+      },
+      {
+        "occurrence_id": "HBD-FIXED-YOKE",
+        "part_number": "DF8-R2-ACTUATOR-FIXED-YOKE-HBD-001",
+        "mass_kg": 0.003098105400542728,
+        "centroid_mm": {
+          "x": -15.807585668175932,
+          "y": 2.6596660677307517e-15,
+          "z": 519.1148138332626
+        }
+      },
+      {
+        "occurrence_id": "HBD-PIN-FIXED",
+        "part_number": "DF8-R2-ACTUATOR-PIN-004",
+        "mass_kg": 0.001280137647106325,
+        "centroid_mm": {
+          "x": -14.5,
+          "y": 1.0665601783060978,
+          "z": 517.0
+        }
+      },
+      {
+        "occurrence_id": "HBD-CLIP-FIXED",
+        "part_number": "DF8-R2-ACTUATOR-E-RING-004",
+        "mass_kg": 4.345508650541629e-05,
+        "centroid_mm": {
+          "x": -14.087997756654595,
+          "y": -4.699999999999998,
+          "z": 517.0
+        }
+      },
+      {
+        "occurrence_id": "HBD-PIN-MOVING",
+        "part_number": "DF8-R2-ACTUATOR-PIN-004",
+        "mass_kg": 0.001280137647106325,
+        "centroid_mm": {
+          "x": -14.5,
+          "y": 1.0665601783060916,
+          "z": 383.0263632888684
+        }
+      },
+      {
+        "occurrence_id": "HBD-CLIP-MOVING",
+        "part_number": "DF8-R2-ACTUATOR-E-RING-004",
+        "mass_kg": 4.345508650541629e-05,
+        "centroid_mm": {
+          "x": -14.087997756654596,
+          "y": -4.699999999999998,
+          "z": 383.0263632888684
+        }
+      },
+      {
+        "occurrence_id": "NOSE-BALLAST-TAPER-PIN-001",
+        "part_number": "HTP-3-30-A1",
+        "mass_kg": 0.002032641862799132,
+        "centroid_mm": {
+          "x": 0.9065934065934069,
+          "y": 7.364266779748809e-17,
+          "z": 170.0
+        }
+      },
+      {
+        "occurrence_id": "ARM-STOP-SCREW-1-1",
+        "part_number": "SSCA-M3-8-A4-BL",
+        "mass_kg": 0.0008,
+        "centroid_mm": {
+          "x": 19.2,
+          "y": -0.889347928006699,
+          "z": 346.5
+        }
+      },
+      {
+        "occurrence_id": "ARM-STOP-SCREW-1-2",
+        "part_number": "SSCA-M3-8-A4-BL",
+        "mass_kg": 0.0008,
+        "centroid_mm": {
+          "x": 24.8,
+          "y": -0.8893479280066993,
+          "z": 346.5
+        }
+      },
+      {
+        "occurrence_id": "FIXED-STOP-SCREW-1-1",
+        "part_number": "SSCA-M3-8-A4-BL",
+        "mass_kg": 0.0008,
+        "centroid_mm": {
+          "x": 10.021169485608366,
+          "y": -7.8,
+          "z": 347.90672787925257
+        }
+      },
+      {
+        "occurrence_id": "FIXED-STOP-SCREW-1-2",
+        "part_number": "SSCA-M3-8-A4-BL",
+        "mass_kg": 0.0008,
+        "centroid_mm": {
+          "x": 10.064581530025098,
+          "y": 7.8,
+          "z": 347.66052594099955
+        }
+      },
+      {
+        "occurrence_id": "FIXED-STOP-DOWEL-1-1",
+        "part_number": "HDP-3-8-A1",
+        "mass_kg": 0.00047,
+        "centroid_mm": {
+          "x": 14.47346842935293,
+          "y": -8.0,
+          "z": 343.61465524978587
+        }
+      },
+      {
+        "occurrence_id": "FIXED-STOP-DOWEL-1-2",
+        "part_number": "HDP-3-8-A1",
+        "mass_kg": 0.00047,
+        "centroid_mm": {
+          "x": 14.47346842935293,
+          "y": 8.0,
+          "z": 343.61465524978587
+        }
+      },
+      {
+        "occurrence_id": "ARM-STOP-SCREW-2-1",
+        "part_number": "SSCA-M3-8-A4-BL",
+        "mass_kg": 0.0008,
+        "centroid_mm": {
+          "x": -8.829802101543141,
+          "y": 17.072361716664574,
+          "z": 346.5
+        }
+      },
+      {
+        "occurrence_id": "ARM-STOP-SCREW-2-2",
+        "part_number": "SSCA-M3-8-A4-BL",
+        "mass_kg": 0.0008,
+        "centroid_mm": {
+          "x": -11.62980210154314,
+          "y": 21.922103977857425,
+          "z": 346.5
+        }
+      },
+      {
+        "occurrence_id": "FIXED-STOP-SCREW-2-1",
+        "part_number": "SSCA-M3-8-A4-BL",
+        "mass_kg": 0.0008,
+        "centroid_mm": {
+          "x": 1.744413406714442,
+          "y": 12.578587350166277,
+          "z": 347.90672787925257
+        }
+      },
+      {
+        "occurrence_id": "FIXED-STOP-SCREW-2-2",
+        "part_number": "SSCA-M3-8-A4-BL",
+        "mass_kg": 0.0008,
+        "centroid_mm": {
+          "x": -11.787288914531167,
+          "y": 4.816183283461391,
+          "z": 347.66052594099955
+        }
+      },
+      {
+        "occurrence_id": "FIXED-STOP-DOWEL-2-1",
+        "part_number": "HDP-3-8-A1",
+        "mass_kg": 0.00047,
+        "centroid_mm": {
+          "x": -0.30853098440095184,
+          "y": 16.534391340691695,
+          "z": 343.61465524978587
+        }
+      },
+      {
+        "occurrence_id": "FIXED-STOP-DOWEL-2-2",
+        "part_number": "HDP-3-8-A1",
+        "mass_kg": 0.00047,
+        "centroid_mm": {
+          "x": -14.16493744495197,
+          "y": 8.534391340691698,
+          "z": 343.61465524978587
+        }
+      },
+      {
+        "occurrence_id": "ARM-STOP-SCREW-3-1",
+        "part_number": "SSCA-M3-8-A4-BL",
+        "mass_kg": 0.0008,
+        "centroid_mm": {
+          "x": -10.370197898456864,
+          "y": -16.183013788657867,
+          "z": 346.5
+        }
+      },
+      {
+        "occurrence_id": "ARM-STOP-SCREW-3-2",
+        "part_number": "SSCA-M3-8-A4-BL",
+        "mass_kg": 0.0008,
+        "centroid_mm": {
+          "x": -13.170197898456864,
+          "y": -21.032756049850725,
+          "z": 346.5
+        }
+      },
+      {
+        "occurrence_id": "FIXED-STOP-SCREW-3-1",
+        "part_number": "SSCA-M3-8-A4-BL",
+        "mass_kg": 0.0008,
+        "centroid_mm": {
+          "x": -11.765582892322808,
+          "y": -4.778587350166273,
+          "z": 347.90672787925257
+        }
+      },
+      {
+        "occurrence_id": "FIXED-STOP-SCREW-3-2",
+        "part_number": "SSCA-M3-8-A4-BL",
+        "mass_kg": 0.0008,
+        "centroid_mm": {
+          "x": 1.7227073845060674,
+          "y": -12.616183283461389,
+          "z": 347.66052594099955
+        }
+      },
+      {
+        "occurrence_id": "FIXED-STOP-DOWEL-3-1",
+        "part_number": "HDP-3-8-A1",
+        "mass_kg": 0.00047,
+        "centroid_mm": {
+          "x": -14.16493744495198,
+          "y": -8.534391340691688,
+          "z": 343.61465524978587
+        }
+      },
+      {
+        "occurrence_id": "FIXED-STOP-DOWEL-3-2",
+        "part_number": "HDP-3-8-A1",
+        "mass_kg": 0.00047,
+        "centroid_mm": {
+          "x": -0.3085309844009625,
+          "y": -16.534391340691695,
+          "z": 343.61465524978587
+        }
+      },
+      {
+        "occurrence_id": "BACKUP-GUIDE-SCREW-1",
+        "part_number": "SSCF-M3-10-A4",
+        "mass_kg": 0.00088,
+        "centroid_mm": {
+          "x": 11.124453169054535,
+          "y": -19.26811809522306,
+          "z": 355.75
+        }
+      },
+      {
+        "occurrence_id": "BACKUP-GUIDE-SCREW-2",
+        "part_number": "SSCF-M3-10-A4",
+        "mass_kg": 0.00088,
+        "centroid_mm": {
+          "x": 11.12445316905453,
+          "y": -19.26811809522305,
+          "z": 537.7763633888684
+        }
+      },
+      {
+        "occurrence_id": "CROSSHEAD-GUIDE-LOCK-SCREW-001",
+        "part_number": "SSCL-M4-8-A4",
+        "mass_kg": 0.00112,
+        "centroid_mm": {
+          "x": 5.4012867967142785e-17,
+          "y": -2.2352227639250912e-17,
+          "z": 343.38842768342994
+        }
+      },
+      {
+        "occurrence_id": "PIVOT-CARRIER-1-SECONDARY",
+        "part_number": "DF8-SHORT14-PIVOT-CARRIER-SECONDARY-LUG-001",
+        "mass_kg": 0.0013531087490951286,
+        "centroid_mm": {
+          "x": 18.15355748451342,
+          "y": 8.005706673606072,
+          "z": 353.47196030432855
+        }
+      },
+      {
+        "occurrence_id": "PIVOT-CARRIER-2-SECONDARY",
+        "part_number": "DF8-SHORT14-PIVOT-CARRIER-SECONDARY-LUG-001",
+        "mass_kg": 0.0013531087490951286,
+        "centroid_mm": {
+          "x": -16.009924096846184,
+          "y": 11.718588613846718,
+          "z": 353.47196030432855
+        }
+      },
+      {
+        "occurrence_id": "PIVOT-CARRIER-3-SECONDARY",
+        "part_number": "DF8-SHORT14-PIVOT-CARRIER-SECONDARY-LUG-001",
+        "mass_kg": 0.0013531087490951286,
+        "centroid_mm": {
+          "x": -2.1436333876672418,
+          "y": -19.72429528745279,
+          "z": 353.47196030432855
+        }
+      },
+      {
+        "occurrence_id": "SHORT-AFT-SHELL-FWD",
+        "part_number": "DF8-SHORT14-AFT-SHELL-FORWARD-001",
+        "mass_kg": 0.7273446071334247,
+        "centroid_mm": {
+          "x": -0.026663486226631342,
+          "y": 3.2974556781914166e-08,
+          "z": 1174.750942095941
+        }
+      },
+      {
+        "occurrence_id": "SHORT-AFT-SHELL-AFT",
+        "part_number": "DF8-SHORT14-AFT-SHELL-CLOSURE-001",
+        "mass_kg": 0.03782690138875042,
+        "centroid_mm": {
+          "x": -0.74984896359026,
+          "y": -1.1193743458837797e-07,
+          "z": 1640.6970374135947
+        }
+      },
+      {
+        "occurrence_id": "RECOVERY-HARDPOINT-RING",
+        "part_number": "DF8-SHORT14-RECOVERY-HARDPOINT-RING-001",
+        "mass_kg": 0.03021004481956056,
+        "centroid_mm": {
+          "x": -0.6353635710483899,
+          "y": 1.9540181194955026e-15,
+          "z": 1613.0000000233017
+        }
+      },
+      {
+        "occurrence_id": "AFT-CLOSURE-RING",
+        "part_number": "DF8-SHORT14-AFT-CLOSURE-RING-001",
+        "mass_kg": 0.03107333460038692,
+        "centroid_mm": {
+          "x": 6.223823605419785e-15,
+          "y": 5.4922310733604376e-17,
+          "z": 1667.4
+        }
+      },
+      {
+        "occurrence_id": "AFT-CLOSURE-CAP",
+        "part_number": "DF8-SHORT14-AFT-CAP-001",
+        "mass_kg": 0.03852351979077313,
+        "centroid_mm": {
+          "x": -0.32554442854871785,
+          "y": 4.453092956965676e-17,
+          "z": 1673.4
+        }
+      },
+      {
+        "occurrence_id": "AFT-LONGERON-FWD-1",
+        "part_number": "DF8-SHORT14-AFT-LONGERON-FWD-001",
+        "mass_kg": 0.02667675634914794,
+        "centroid_mm": {
+          "x": 12.089496208063238,
+          "y": 20.939621670276804,
+          "z": 1175.2
+        }
+      },
+      {
+        "occurrence_id": "AFT-LONGERON-FWD-2",
+        "part_number": "DF8-SHORT14-AFT-LONGERON-FWD-001",
+        "mass_kg": 0.02667675634914794,
+        "centroid_mm": {
+          "x": -24.178992416126466,
+          "y": 2.987614848091913e-15,
+          "z": 1175.1999999999998
+        }
+      },
+      {
+        "occurrence_id": "AFT-LONGERON-FWD-3",
+        "part_number": "DF8-SHORT14-AFT-LONGERON-FWD-001",
+        "mass_kg": 0.02667675634914794,
+        "centroid_mm": {
+          "x": 12.089496208063238,
+          "y": -20.939621670276804,
+          "z": 1175.2
+        }
+      },
+      {
+        "occurrence_id": "AFT-LONGERON-AFT-1",
+        "part_number": "DF8-SHORT14-AFT-LONGERON-AFT-001",
+        "mass_kg": 0.0014266960518677578,
+        "centroid_mm": {
+          "x": 12.089496208063238,
+          "y": 20.939621670276804,
+          "z": 1640.2
+        }
+      },
+      {
+        "occurrence_id": "AFT-LONGERON-AFT-2",
+        "part_number": "DF8-SHORT14-AFT-LONGERON-AFT-001",
+        "mass_kg": 0.0014266960518677578,
+        "centroid_mm": {
+          "x": -24.178992416126466,
+          "y": 2.989522083015974e-15,
+          "z": 1640.2
+        }
+      },
+      {
+        "occurrence_id": "AFT-LONGERON-AFT-3",
+        "part_number": "DF8-SHORT14-AFT-LONGERON-AFT-001",
+        "mass_kg": 0.0014266960518677578,
+        "centroid_mm": {
+          "x": 12.089496208063236,
+          "y": -20.939621670276804,
+          "z": 1640.2
+        }
+      },
+      {
+        "occurrence_id": "PACK-ATTACHMENT-COLLAR-1",
+        "part_number": "DF8-SHORT14-PACK-ATTACHMENT-COLLAR-001",
+        "mass_kg": 0.005333788153283115,
+        "centroid_mm": {
+          "x": 4.230153863102853e-14,
+          "y": -6.964500215563768e-15,
+          "z": 1382.0
+        }
+      },
+      {
+        "occurrence_id": "PACK-ATTACHMENT-COLLAR-2",
+        "part_number": "DF8-SHORT14-PACK-ATTACHMENT-COLLAR-001",
+        "mass_kg": 0.005333788153283115,
+        "centroid_mm": {
+          "x": 4.230153863102853e-14,
+          "y": -6.964500215563768e-15,
+          "z": 1592.0
+        }
+      },
+      {
+        "occurrence_id": "CORDURA-CRADLE-LEFT",
+        "part_number": "DF8-SHORT14-CORDURA-CRADLE-LEFT-001",
+        "mass_kg": 0.0575,
+        "centroid_mm": {
+          "x": -25.453124916612833,
+          "y": -33.17115820942656,
+          "z": 1487.0
+        }
+      },
+      {
+        "occurrence_id": "CORDURA-CRADLE-RIGHT",
+        "part_number": "DF8-SHORT14-CORDURA-CRADLE-RIGHT-001",
+        "mass_kg": 0.0575,
+        "centroid_mm": {
+          "x": 25.45312491661284,
+          "y": -33.17115820942665,
+          "z": 1487.0
+        }
+      },
+      {
+        "occurrence_id": "CORDURA-FLAP-LEFT",
+        "part_number": "DF8-SHORT14-CORDURA-BREAKAWAY-FLAP-LEFT-001",
+        "mass_kg": 0.065,
+        "centroid_mm": {
+          "x": 22.692604206062146,
+          "y": 35.723263822948155,
+          "z": 1486.9313304298414
+        }
+      },
+      {
+        "occurrence_id": "CORDURA-FLAP-RIGHT",
+        "part_number": "DF8-SHORT14-CORDURA-BREAKAWAY-FLAP-RIGHT-001",
+        "mass_kg": 0.065,
+        "centroid_mm": {
+          "x": -24.814320430462693,
+          "y": 35.438522261425426,
+          "z": 1487.0
+        }
+      },
+      {
+        "occurrence_id": "HOOK-STRIP",
+        "part_number": "DF8-SHORT14-HOOK-STRIP-001",
+        "mass_kg": 0.012,
+        "centroid_mm": {
+          "x": -1.6453901802965425,
+          "y": 47.117809952193035,
+          "z": 1487.0
+        }
+      },
+      {
+        "occurrence_id": "LOOP-STRIP",
+        "part_number": "DF8-SHORT14-LOOP-STRIP-001",
+        "mass_kg": 0.012,
+        "centroid_mm": {
+          "x": -1.6497360600881017,
+          "y": 47.242259666653496,
+          "z": 1487.0000000000002
+        }
+      },
+      {
+        "occurrence_id": "PACK-EDGE-BAND-1",
+        "part_number": "DF8-SHORT14-PACK-EDGE-BAND-001",
+        "mass_kg": 0.02,
+        "centroid_mm": {
+          "x": 4.5170392979675356e-14,
+          "y": 1.4078515689010843e-15,
+          "z": 1371.0
+        }
+      },
+      {
+        "occurrence_id": "PACK-EDGE-BAND-2",
+        "part_number": "DF8-SHORT14-PACK-EDGE-BAND-001",
+        "mass_kg": 0.02,
+        "centroid_mm": {
+          "x": 4.5170392979675356e-14,
+          "y": 1.4078515689010843e-15,
+          "z": 1603.0
+        }
+      },
+      {
+        "occurrence_id": "EXT-BUOY-PANEL-01",
+        "part_number": "DF8-SHORT14-BUOY-PANEL-01",
+        "mass_kg": 0.02375,
+        "centroid_mm": {
+          "x": 42.200822481472734,
+          "y": 1.3831074111343549e-14,
+          "z": 1487.0
+        }
+      },
+      {
+        "occurrence_id": "EXT-BUOY-PANEL-02",
+        "part_number": "DF8-SHORT14-BUOY-PANEL-02",
+        "mass_kg": 0.02375,
+        "centroid_mm": {
+          "x": 29.84048774829908,
+          "y": 29.84048774829907,
+          "z": 1487.0
+        }
+      },
+      {
+        "occurrence_id": "EXT-BUOY-PANEL-03",
+        "part_number": "DF8-SHORT14-BUOY-PANEL-03",
+        "mass_kg": 0.02375,
+        "centroid_mm": {
+          "x": 1.9321092343402517e-14,
+          "y": 42.20082248147274,
+          "z": 1487.0
+        }
+      },
+      {
+        "occurrence_id": "EXT-BUOY-PANEL-04",
+        "part_number": "DF8-SHORT14-BUOY-PANEL-04",
+        "mass_kg": 0.02375,
+        "centroid_mm": {
+          "x": -29.840487748299083,
+          "y": 29.840487748299086,
+          "z": 1487.0
+        }
+      },
+      {
+        "occurrence_id": "EXT-BUOY-PANEL-05",
+        "part_number": "DF8-SHORT14-BUOY-PANEL-05",
+        "mass_kg": 0.02375,
+        "centroid_mm": {
+          "x": -42.20082248147275,
+          "y": -6.43723607877842e-15,
+          "z": 1487.0
+        }
+      },
+      {
+        "occurrence_id": "EXT-BUOY-PANEL-06",
+        "part_number": "DF8-SHORT14-BUOY-PANEL-06",
+        "mass_kg": 0.02375,
+        "centroid_mm": {
+          "x": -29.84048774829909,
+          "y": -29.84048774829908,
+          "z": 1487.0
+        }
+      },
+      {
+        "occurrence_id": "EXT-BUOY-PANEL-07",
+        "part_number": "DF8-SHORT14-BUOY-PANEL-07",
+        "mass_kg": 0.02375,
+        "centroid_mm": {
+          "x": -7.23068540717828e-15,
+          "y": -42.20082248147273,
+          "z": 1487.0
+        }
+      },
+      {
+        "occurrence_id": "EXT-BUOY-PANEL-08",
+        "part_number": "DF8-SHORT14-BUOY-PANEL-08",
+        "mass_kg": 0.02375,
+        "centroid_mm": {
+          "x": 29.840487748299076,
+          "y": -29.840487748299115,
+          "z": 1487.0
+        }
+      },
+      {
+        "occurrence_id": "PACK-ATTACHMENT-WEBBING-1",
+        "part_number": "DF8-SHORT14-PACK-ATTACHMENT-WEBBING-001",
+        "mass_kg": 0.028,
+        "centroid_mm": {
+          "x": -1.1437082666907755e-13,
+          "y": 8.644183997100717e-16,
+          "z": 1382.0
+        }
+      },
+      {
+        "occurrence_id": "PACK-RADIAL-TIE-1-1",
+        "part_number": "DF8-SHORT14-PACK-RADIAL-TIE-1-1",
+        "mass_kg": 0.004,
+        "centroid_mm": {
+          "x": 18.300000000000008,
+          "y": 31.69652977851046,
+          "z": 1382.0
+        }
+      },
+      {
+        "occurrence_id": "PACK-RADIAL-TIE-1-2",
+        "part_number": "DF8-SHORT14-PACK-RADIAL-TIE-1-2",
+        "mass_kg": 0.004,
+        "centroid_mm": {
+          "x": -36.6,
+          "y": 4.551340642294085e-15,
+          "z": 1382.0
+        }
+      },
+      {
+        "occurrence_id": "PACK-RADIAL-TIE-1-3",
+        "part_number": "DF8-SHORT14-PACK-RADIAL-TIE-1-3",
+        "mass_kg": 0.004,
+        "centroid_mm": {
+          "x": 18.300000000000004,
+          "y": -31.696529778510453,
+          "z": 1382.0
+        }
+      },
+      {
+        "occurrence_id": "PACK-ATTACHMENT-WEBBING-2",
+        "part_number": "DF8-SHORT14-PACK-ATTACHMENT-WEBBING-001",
+        "mass_kg": 0.028,
+        "centroid_mm": {
+          "x": -1.1437082666907755e-13,
+          "y": 8.644183997100717e-16,
+          "z": 1592.0
+        }
+      },
+      {
+        "occurrence_id": "PACK-RADIAL-TIE-2-1",
+        "part_number": "DF8-SHORT14-PACK-RADIAL-TIE-2-1",
+        "mass_kg": 0.004,
+        "centroid_mm": {
+          "x": 18.300000000000008,
+          "y": 31.69652977851046,
+          "z": 1592.0
+        }
+      },
+      {
+        "occurrence_id": "PACK-RADIAL-TIE-2-2",
+        "part_number": "DF8-SHORT14-PACK-RADIAL-TIE-2-2",
+        "mass_kg": 0.004,
+        "centroid_mm": {
+          "x": -36.6,
+          "y": 4.551340642294085e-15,
+          "z": 1592.0
+        }
+      },
+      {
+        "occurrence_id": "PACK-RADIAL-TIE-2-3",
+        "part_number": "DF8-SHORT14-PACK-RADIAL-TIE-2-3",
+        "mass_kg": 0.004,
+        "centroid_mm": {
+          "x": 18.300000000000004,
+          "y": -31.696529778510453,
+          "z": 1592.0
+        }
+      },
+      {
+        "occurrence_id": "WATER-ENTRY-MESH",
+        "part_number": "DF8-SHORT14-WATER-ENTRY-MESH-001",
+        "mass_kg": 0.012,
+        "centroid_mm": {
+          "x": 78.0,
+          "y": 7.822337750758251e-16,
+          "z": 1488.0
+        }
+      },
+      {
+        "occurrence_id": "BUOY-INLET-PATCH",
+        "part_number": "DF8-SHORT14-BUOY-INLET-REINFORCEMENT-PATCH-001",
+        "mass_kg": 0.026,
+        "centroid_mm": {
+          "x": 45.0,
+          "y": 0.0,
+          "z": 1488.0
+        }
+      },
+      {
+        "occurrence_id": "BUOY-INLET-MANIFOLD",
+        "part_number": "DF8-SHORT14-BUOY-INLET-MANIFOLD-001",
+        "mass_kg": 0.004987341169426868,
+        "centroid_mm": {
+          "x": 49.5,
+          "y": 1.7609059298497067e-16,
+          "z": 1488.0
+        }
+      },
+      {
+        "occurrence_id": "HYDRO-1F-INFLATOR-PROXY",
+        "part_number": "HALKEY-ROBERTS-HYDRO-1F-V95000XXB_PROXY",
+        "mass_kg": 0.18,
+        "centroid_mm": {
+          "x": 63.297612729492315,
+          "y": 2.4592380593024087e-16,
+          "z": 1488.280092016837
+        }
+      },
+      {
+        "occurrence_id": "INFLATOR-GUARD",
+        "part_number": "DF8-SHORT14-INFLATOR-GUARD-001",
+        "mass_kg": 0.055,
+        "centroid_mm": {
+          "x": 76.0,
+          "y": 7.284002912884625e-17,
+          "z": 1488.0
+        }
+      },
+      {
+        "occurrence_id": "BUOY-CO2-CARTRIDGE-81121",
+        "part_number": "LELAND-81121",
+        "mass_kg": 0.045,
+        "centroid_mm": {
+          "x": 57.0,
+          "y": 2.89381383641003e-17,
+          "z": 1424.1484492287632
+        }
+      },
+      {
+        "occurrence_id": "HYDRO-1F-WATER-BOBBIN-V80040",
+        "part_number": "V80040",
+        "mass_kg": 0.00169646,
+        "centroid_mm": {
+          "x": 76.0,
+          "y": -1.4625016789478483e-16,
+          "z": 1497.0
+        }
+      },
+      {
+        "occurrence_id": "MANUAL-PULL-LANYARD",
+        "part_number": "DF8-SHORT14-MANUAL-PULL-LANYARD-001",
+        "mass_kg": 0.008,
+        "centroid_mm": {
+          "x": 68.74006298197123,
+          "y": 2.016956602460785,
+          "z": 1525.4513680694317
+        }
+      },
+      {
+        "occurrence_id": "MANUAL-PULL-TAB",
+        "part_number": "DF8-SHORT14-MANUAL-PULL-TAB-001",
+        "mass_kg": 0.018,
+        "centroid_mm": {
+          "x": 84.0,
+          "y": -2.3517781569287e-16,
+          "z": 1543.0
+        }
+      },
+      {
+        "occurrence_id": "PULL-TAB-KEEPER",
+        "part_number": "DF8-SHORT14-PULL-TAB-KEEPER-001",
+        "mass_kg": 0.01,
+        "centroid_mm": {
+          "x": 82.0,
+          "y": -4.559996484284168e-16,
+          "z": 1543.0
+        }
+      },
+      {
+        "occurrence_id": "TETHER-THIMBLE-BODY-SHORT14",
+        "part_number": "DF8-R2-TETHER-THIMBLE-001",
+        "mass_kg": 0.0028967149754297837,
+        "centroid_mm": {
+          "x": 21.49271067462733,
+          "y": -1.3243859734844238e-08,
+          "z": 1612.9999999113404
+        }
+      },
+      {
+        "occurrence_id": "TETHER-THIMBLE-BUOY-SHORT14",
+        "part_number": "DF8-R2-TETHER-THIMBLE-001",
+        "mass_kg": 0.0028967149754297837,
+        "centroid_mm": {
+          "x": 39.492710674627325,
+          "y": -1.3243859700503277e-08,
+          "z": 1587.9999999113404
+        }
+      },
+      {
+        "occurrence_id": "STRUCTURAL-RECOVERY-TETHER",
+        "part_number": "AMSTEEL-BLUE-SHORT14-STRUCTURAL-TETHER-001",
+        "mass_kg": 0.09,
+        "centroid_mm": {
+          "x": 40.00291844122069,
+          "y": 2.764576850303553,
+          "z": 1595.3336631563295
+        }
+      },
+      {
+        "occurrence_id": "TETHER-EXIT-CHAFE-SLEEVE",
+        "part_number": "DF8-SHORT14-TETHER-EXIT-CHAFE-SLEEVE-001",
+        "mass_kg": 0.012,
+        "centroid_mm": {
+          "x": 31.664100588675694,
+          "y": -1.758145954655826e-16,
+          "z": 1615.4961508830138
+        }
+      },
+      {
+        "occurrence_id": "RECOVERY-PIN-BODY-SHORT14",
+        "part_number": "DF8-R2-RECOVERY-PIN-006",
+        "mass_kg": 0.003134187821530512,
+        "centroid_mm": {
+          "x": 22.0,
+          "y": -1.4995138737164044,
+          "z": 1613.0
+        }
+      }
+    ]
+  },
+  "short14_deployed": {
+    "state": "DEPLOYED",
+    "total_mass_kg": 10.583165211312858,
+    "mass_reserve_to_18_14_kg": 7.5568347886871425,
+    "cg_mm": {
+      "x": 9.210464830828908,
+      "y": -0.21786160934135756,
+      "z": 494.87851076165356
+    },
+    "radial_cg_mm": 9.213041087543298,
+    "tip_to_cg_mm": 494.87851076165356,
+    "inertia_tensor_kg_mm2": [
+      [
+        2925788.628246775,
+        -10.234283783255776,
+        -141131.6201451124
+      ],
+      [
+        -10.234283783255776,
+        2950807.6822025464,
+        2656.3871991698015
+      ],
+      [
+        -141131.6201451124,
+        2656.3871991698015,
+        45717.825613185334
+      ]
+    ],
+    "products_of_inertia_kg_mm2": {
+      "Ixy": -10.234283783255776,
+      "Ixz": -141131.6201451124,
+      "Iyz": 2656.3871991698015
+    },
+    "principal_moments_kg_mm2": [
+      38816.08787321787,
+      2932686.8691054434,
+      2950811.1790838446
+    ],
+    "occurrence_count": 180,
+    "resolved_occurrences": [
+      {
+        "occurrence_id": "NOSE-001",
+        "part_number": "DF8-R2-NOSE-001",
+        "mass_kg": 2.2173158326782247,
+        "centroid_mm": {
+          "x": -0.0009302129491746598,
+          "y": 6.29054929656666e-15,
+          "z": 124.9087713694092
+        }
+      },
+      {
+        "occurrence_id": "BALLAST-001",
+        "part_number": "DF8-R2-BALLAST-001",
+        "mass_kg": 4.884227629259874,
+        "centroid_mm": {
+          "x": -0.00036266307920799953,
+          "y": -1.8600010414089896e-10,
+          "z": 253.01783491014314
+        }
+      },
+      {
+        "occurrence_id": "FWD-RING-02",
+        "part_number": "DF8-SHORT14-BALLAST-CARRIER-TRANSITION-RING-001",
+        "mass_kg": 0.025715400129644583,
+        "centroid_mm": {
+          "x": 1.375698846370988e-08,
+          "y": 2.380185706031802e-08,
+          "z": 339.69480493954813
+        }
+      },
+      {
+        "occurrence_id": "FIXED-SECTOR-1",
+        "part_number": "DF8-SHORT14-FIXED-SECTOR-001",
+        "mass_kg": 0.17781369911265105,
+        "centroid_mm": {
+          "x": 12.734745402855678,
+          "y": 22.05722605920021,
+          "z": 538.7
+        }
+      },
+      {
+        "occurrence_id": "ARM-LONGERON-1",
+        "part_number": "DF8-SHORT14-ARM-LONGERON-001",
+        "mass_kg": 0.02557947017485575,
+        "centroid_mm": {
+          "x": 11.66818139802051,
+          "y": 20.20988301330157,
+          "z": 538.7
+        }
+      },
+      {
+        "occurrence_id": "FIXED-SECTOR-2",
+        "part_number": "DF8-SHORT14-FIXED-SECTOR-001",
+        "mass_kg": 0.17781369911265105,
+        "centroid_mm": {
+          "x": -25.46949080571134,
+          "y": 4.686896164736298e-15,
+          "z": 538.7
+        }
+      },
+      {
+        "occurrence_id": "ARM-LONGERON-2",
+        "part_number": "DF8-SHORT14-ARM-LONGERON-001",
+        "mass_kg": 0.02557947017485575,
+        "centroid_mm": {
+          "x": -23.336362796041012,
+          "y": 2.172567773836231e-15,
+          "z": 538.7
+        }
+      },
+      {
+        "occurrence_id": "FIXED-SECTOR-3",
+        "part_number": "DF8-SHORT14-BACKUP-ACCESS-FIXED-SECTOR-003",
+        "mass_kg": 0.17708072899000055,
+        "centroid_mm": {
+          "x": 12.734105431127603,
+          "y": -22.056117544613024,
+          "z": 539.0805416023757
+        }
+      },
+      {
+        "occurrence_id": "ARM-LONGERON-3",
+        "part_number": "DF8-SHORT14-BACKUP-GUIDE-LONGERON-003",
+        "mass_kg": 0.02536196076122347,
+        "centroid_mm": {
+          "x": 11.667199341671388,
+          "y": -20.208182038768992,
+          "z": 539.4884724642895
+        }
+      },
+      {
+        "occurrence_id": "ARM-TERMINATION-RING-001",
+        "part_number": "DF8-SHORT14-ARM-TERMINATION-RING-001",
+        "mass_kg": 0.028944490434771264,
+        "centroid_mm": {
+          "x": 6.959980065867603e-16,
+          "y": -1.3397961626795137e-15,
+          "z": 737.3985061224813
+        }
+      },
+      {
+        "occurrence_id": "ARM-1",
+        "part_number": "DF8-SHORT14-ARM-BLADE-001",
+        "mass_kg": 0.06444988175252296,
+        "centroid_mm": {
+          "x": 185.6233788479785,
+          "y": 0.004416183744785584,
+          "z": 378.17364342596386
+        }
+      },
+      {
+        "occurrence_id": "PIVOT-CARRIER-1",
+        "part_number": "DF8-SHORT14-PIVOT-CARRIER-PRIMARY-LUG-001",
+        "mass_kg": 0.0013538421744136802,
+        "centroid_mm": {
+          "x": 18.1533345927473,
+          "y": -8.0056494545492,
+          "z": 353.4514239465534
+        }
+      },
+      {
+        "occurrence_id": "PIVOT-PIN-1",
+        "part_number": "DF8-R2-PIVOT-PIN-008",
+        "mass_kg": 0.008671747528307096,
+        "centroid_mm": {
+          "x": 18.0,
+          "y": -0.9205635417964455,
+          "z": 355.0
+        }
+      },
+      {
+        "occurrence_id": "PIVOT-BUSH-1-1",
+        "part_number": "DF8-R2-PIVOT-BUSH-008",
+        "mass_kg": 8.808849871477256e-06,
+        "centroid_mm": {
+          "x": 17.999999999999993,
+          "y": -4.749999999999998,
+          "z": 354.9999999999999
+        }
+      },
+      {
+        "occurrence_id": "PIVOT-BUSH-1-2",
+        "part_number": "DF8-R2-PIVOT-BUSH-008",
+        "mass_kg": 8.808849871477256e-06,
+        "centroid_mm": {
+          "x": 17.999999999999993,
+          "y": 4.750000000000002,
+          "z": 354.9999999999999
+        }
+      },
+      {
+        "occurrence_id": "PIVOT-WASHER-1-1",
+        "part_number": "DF8-R2-PIVOT-WASHER-008",
+        "mass_kg": 1.4016322438141084e-05,
+        "centroid_mm": {
+          "x": 18.0,
+          "y": -5.9,
+          "z": 355.0
+        }
+      },
+      {
+        "occurrence_id": "PIVOT-WASHER-1-2",
+        "part_number": "DF8-R2-PIVOT-WASHER-008",
+        "mass_kg": 1.4016322438141084e-05,
+        "centroid_mm": {
+          "x": 18.0,
+          "y": 5.9,
+          "z": 355.0
+        }
+      },
+      {
+        "occurrence_id": "PIVOT-CLIP-1",
+        "part_number": "DF8-R2-PIVOT-SPIRAL-RING-008",
+        "mass_kg": 9.513648371968046e-05,
+        "centroid_mm": {
+          "x": 17.16058870763709,
+          "y": 9.45,
+          "z": 355.0
+        }
+      },
+      {
+        "occurrence_id": "LINK-1-1",
+        "part_number": "DF8-R2-SHORT-LINK-001",
+        "mass_kg": 0.0008587191047231816,
+        "centroid_mm": {
+          "x": 23.583317039823335,
+          "y": -1.75,
+          "z": 359.6734267799064
+        }
+      },
+      {
+        "occurrence_id": "LINK-1-2",
+        "part_number": "DF8-R2-SHORT-LINK-001",
+        "mass_kg": 0.0008587191047231816,
+        "centroid_mm": {
+          "x": 23.583317039823335,
+          "y": 1.75,
+          "z": 359.6734267799064
+        }
+      },
+      {
+        "occurrence_id": "LINK-PIN-1-BELL",
+        "part_number": "DF8-R2-LINK-PIN-004",
+        "mass_kg": 0.001443346409243244,
+        "centroid_mm": {
+          "x": 27.905158843111455,
+          "y": -1.1355313675140488,
+          "z": 350.65398708092914
+        }
+      },
+      {
+        "occurrence_id": "LINK-CLIP-1-BELL",
+        "part_number": "ROTOR-CLIP-DC-4SS",
+        "mass_kg": 2.94216e-05,
+        "centroid_mm": {
+          "x": 27.839073494447828,
+          "y": 5.6,
+          "z": 351.02877571734825
+        }
+      },
+      {
+        "occurrence_id": "LINK-PIN-1-CROSSHEAD",
+        "part_number": "DF8-R2-LINK-PIN-004",
+        "mass_kg": 0.001443346409243244,
+        "centroid_mm": {
+          "x": 18.0,
+          "y": -1.135531367514047,
+          "z": 367.9713289177334
+        }
+      },
+      {
+        "occurrence_id": "LINK-CLIP-1-CROSSHEAD",
+        "part_number": "ROTOR-CLIP-DC-4SS",
+        "mass_kg": 2.94216e-05,
+        "centroid_mm": {
+          "x": 17.61942964474766,
+          "y": 5.6,
+          "z": 367.9713289177334
+        }
+      },
+      {
+        "occurrence_id": "ARM-STOP-PAD-1",
+        "part_number": "DF8-R2-ARM-STOP-PAD-001",
+        "mass_kg": 0.0011774163151587191,
+        "centroid_mm": {
+          "x": 10.323726810063956,
+          "y": 0.9026140669686282,
+          "z": 349.58475947778226
+        }
+      },
+      {
+        "occurrence_id": "FIXED-STOP-1",
+        "part_number": "DF8-R2-FIXED-STOP-001",
+        "mass_kg": 0.0023936337070524028,
+        "centroid_mm": {
+          "x": 8.268797173245064,
+          "y": -0.031056704431969655,
+          "z": 347.6608216822818
+        }
+      },
+      {
+        "occurrence_id": "STOW-DOG-1",
+        "part_number": "DF8-R2-STOW-DOG-001",
+        "mass_kg": 0.0007049382892415685,
+        "centroid_mm": {
+          "x": 13.5,
+          "y": 3.860036099535451e-18,
+          "z": 729.706
+        }
+      },
+      {
+        "occurrence_id": "STOW-DOG-GUIDE-1",
+        "part_number": "DF8-SHORT14-STOW-DOG-GUIDE-001",
+        "mass_kg": 0.000530677401823469,
+        "centroid_mm": {
+          "x": 15.384303654529408,
+          "y": 1.1771147855411908,
+          "z": 729.9551182504111
+        }
+      },
+      {
+        "occurrence_id": "STOW-DOG-SPRING-1",
+        "part_number": "DF8-R2-STOW-DOG-RETURN-SPRING-001",
+        "mass_kg": 3.19590502277079e-07,
+        "centroid_mm": {
+          "x": 11.309999999999997,
+          "y": 0.11695387432751458,
+          "z": 729.7060000000067
+        }
+      },
+      {
+        "occurrence_id": "STOW-DOG-INHIBIT-PIN-1",
+        "part_number": "DF8-R2-STOW-DOG-INHIBIT-PIN-001",
+        "mass_kg": 5.93375184680702e-05,
+        "centroid_mm": {
+          "x": 17.0,
+          "y": 5.773699799969227,
+          "z": 729.706
+        }
+      },
+      {
+        "occurrence_id": "STOW-DOG-INHIBIT-KEEPER-1",
+        "part_number": "DF8-R2-STOW-DOG-INHIBIT-KEEPER-001",
+        "mass_kg": 3.948942128413097e-06,
+        "centroid_mm": {
+          "x": 16.906490406668464,
+          "y": 8.825,
+          "z": 729.706
+        }
+      },
+      {
+        "occurrence_id": "LOCK-DOG-1",
+        "part_number": "DF8-R2-AUTO-LOCK-DOG-001",
+        "mass_kg": 8.408963611185206e-06,
+        "centroid_mm": {
+          "x": 10.323726810063954,
+          "y": 4.44486970684039,
+          "z": 349.58475947778226
+        }
+      },
+      {
+        "occurrence_id": "LOCK-SPRING-1",
+        "part_number": "DF8-R2-AUTO-LOCK-SPRING-001",
+        "mass_kg": 2.8560892651638403e-06,
+        "centroid_mm": {
+          "x": 10.32372678596978,
+          "y": 7.425000013488358,
+          "z": 349.58475953562737
+        }
+      },
+      {
+        "occurrence_id": "LOCK-BUSHING-1",
+        "part_number": "DF8-R2-AUTO-LOCK-BUSHING-001",
+        "mass_kg": 3.094528181635134e-07,
+        "centroid_mm": {
+          "x": 10.622942275837621,
+          "y": 10.146408920258994,
+          "z": 349.9033939836245
+        }
+      },
+      {
+        "occurrence_id": "ARM-2",
+        "part_number": "DF8-SHORT14-ARM-BLADE-001",
+        "mass_kg": 0.06444988175252296,
+        "centroid_mm": {
+          "x": -92.81551395130008,
+          "y": 160.75235352678015,
+          "z": 378.17364342596386
+        }
+      },
+      {
+        "occurrence_id": "PIVOT-CARRIER-2",
+        "part_number": "DF8-SHORT14-PIVOT-CARRIER-PRIMARY-LUG-001",
+        "mass_kg": 0.0013538421744136802,
+        "centroid_mm": {
+          "x": -2.1435714949410096,
+          "y": 19.724073647992594,
+          "z": 353.4514239465534
+        }
+      },
+      {
+        "occurrence_id": "PIVOT-PIN-2",
+        "part_number": "DF8-R2-PIVOT-PIN-008",
+        "mass_kg": 0.008671747528307096,
+        "centroid_mm": {
+          "x": -8.202768587006496,
+          "y": 16.04873903901812,
+          "z": 355.0
+        }
+      },
+      {
+        "occurrence_id": "PIVOT-BUSH-2-1",
+        "part_number": "DF8-R2-PIVOT-BUSH-008",
+        "mass_kg": 8.808849871477256e-06,
+        "centroid_mm": {
+          "x": -4.886379332023917,
+          "y": 17.963457268119896,
+          "z": 354.9999999999999
+        }
+      },
+      {
+        "occurrence_id": "PIVOT-BUSH-2-2",
+        "part_number": "DF8-R2-PIVOT-BUSH-008",
+        "mass_kg": 8.808849871477256e-06,
+        "centroid_mm": {
+          "x": -13.11362066797608,
+          "y": 13.213457268119894,
+          "z": 354.9999999999999
+        }
+      },
+      {
+        "occurrence_id": "PIVOT-WASHER-2-1",
+        "part_number": "DF8-R2-PIVOT-WASHER-008",
+        "mass_kg": 1.4016322438141084e-05,
+        "centroid_mm": {
+          "x": -3.8904501176718074,
+          "y": 18.538457268119895,
+          "z": 355.0
+        }
+      },
+      {
+        "occurrence_id": "PIVOT-WASHER-2-2",
+        "part_number": "DF8-R2-PIVOT-WASHER-008",
+        "mass_kg": 1.4016322438141084e-05,
+        "centroid_mm": {
+          "x": -14.109549882328183,
+          "y": 12.638457268119895,
+          "z": 355.0
+        }
+      },
+      {
+        "occurrence_id": "PIVOT-CLIP-2",
+        "part_number": "DF8-R2-PIVOT-SPIRAL-RING-008",
+        "mass_kg": 9.513648371968046e-05,
+        "centroid_mm": {
+          "x": -16.764234419581484,
+          "y": 10.13650576471009,
+          "z": 355.0
+        }
+      },
+      {
+        "occurrence_id": "LINK-2-1",
+        "part_number": "DF8-R2-SHORT-LINK-001",
+        "mass_kg": 0.0008587191047231816,
+        "centroid_mm": {
+          "x": -10.27611406328889,
+          "y": 21.29875166198943,
+          "z": 359.6734267799064
+        }
+      },
+      {
+        "occurrence_id": "LINK-2-2",
+        "part_number": "DF8-R2-SHORT-LINK-001",
+        "mass_kg": 0.0008587191047231816,
+        "centroid_mm": {
+          "x": -13.307202976534429,
+          "y": 19.548751661989435,
+          "z": 359.6734267799064
+        }
+      },
+      {
+        "occurrence_id": "LINK-PIN-2-BELL",
+        "part_number": "DF8-R2-LINK-PIN-004",
+        "mass_kg": 0.001443346409243244,
+        "centroid_mm": {
+          "x": -12.96918041049447,
+          "y": 24.734342138531527,
+          "z": 350.65398708092914
+        }
+      },
+      {
+        "occurrence_id": "LINK-CLIP-2-BELL",
+        "part_number": "ROTOR-CLIP-DC-4SS",
+        "mass_kg": 2.94216e-05,
+        "centroid_mm": {
+          "x": -18.769279008416763,
+          "y": 21.309344864013852,
+          "z": 351.02877571734825
+        }
+      },
+      {
+        "occurrence_id": "LINK-PIN-2-CROSSHEAD",
+        "part_number": "DF8-R2-LINK-PIN-004",
+        "mass_kg": 0.001443346409243244,
+        "centroid_mm": {
+          "x": -8.016600988938748,
+          "y": 16.15622295187692,
+          "z": 367.9713289177334
+        }
+      },
+      {
+        "occurrence_id": "LINK-CLIP-2-CROSSHEAD",
+        "part_number": "ROTOR-CLIP-DC-4SS",
+        "mass_kg": 2.94216e-05,
+        "centroid_mm": {
+          "x": -13.659457083566682,
+          "y": 12.458873672544106,
+          "z": 367.9713289177334
+        }
+      },
+      {
+        "occurrence_id": "ARM-STOP-PAD-2",
+        "part_number": "DF8-R2-ARM-STOP-PAD-001",
+        "mass_kg": 0.0011774163151587191,
+        "centroid_mm": {
+          "x": -5.943550116839997,
+          "y": 8.489302645761557,
+          "z": 349.58475947778226
+        }
+      },
+      {
+        "occurrence_id": "FIXED-STOP-2",
+        "part_number": "DF8-R2-FIXED-STOP-001",
+        "mass_kg": 0.0023936337070524028,
+        "centroid_mm": {
+          "x": -4.107502691626616,
+          "y": 7.176516762987167,
+          "z": 347.6608216822818
+        }
+      },
+      {
+        "occurrence_id": "STOW-DOG-2",
+        "part_number": "DF8-R2-STOW-DOG-001",
+        "mass_kg": 0.0007049382892415685,
+        "centroid_mm": {
+          "x": -6.749999999999997,
+          "y": 11.691342951089922,
+          "z": 729.706
+        }
+      },
+      {
+        "occurrence_id": "STOW-DOG-GUIDE-2",
+        "part_number": "DF8-SHORT14-STOW-DOG-GUIDE-001",
+        "mass_kg": 0.000530677401823469,
+        "centroid_mm": {
+          "x": -8.711563134713646,
+          "y": 12.734640391585652,
+          "z": 729.9551182504111
+        }
+      },
+      {
+        "occurrence_id": "STOW-DOG-SPRING-2",
+        "part_number": "DF8-R2-STOW-DOG-RETURN-SPRING-001",
+        "mass_kg": 3.19590502277079e-07,
+        "centroid_mm": {
+          "x": -5.756285026238635,
+          "y": 9.73627037963824,
+          "z": 729.7060000000067
+        }
+      },
+      {
+        "occurrence_id": "STOW-DOG-INHIBIT-PIN-2",
+        "part_number": "DF8-R2-STOW-DOG-INHIBIT-PIN-001",
+        "mass_kg": 5.93375184680702e-05,
+        "centroid_mm": {
+          "x": -13.50017070059848,
+          "y": 11.835581964350846,
+          "z": 729.706
+        }
+      },
+      {
+        "occurrence_id": "STOW-DOG-INHIBIT-KEEPER-2",
+        "part_number": "DF8-R2-STOW-DOG-INHIBIT-KEEPER-001",
+        "mass_kg": 3.948942128413097e-06,
+        "centroid_mm": {
+          "x": -16.0959193917319,
+          "y": 10.228950181012799,
+          "z": 729.706
+        }
+      },
+      {
+        "occurrence_id": "LOCK-DOG-2",
+        "part_number": "DF8-R2-AUTO-LOCK-DOG-001",
+        "mass_kg": 8.408963611185206e-06,
+        "centroid_mm": {
+          "x": -9.011233487667644,
+          "y": 6.718174825825677,
+          "z": 349.58475947778226
+        }
+      },
+      {
+        "occurrence_id": "LOCK-SPRING-2",
+        "part_number": "DF8-R2-AUTO-LOCK-SPRING-001",
+        "mass_kg": 2.8560892651638403e-06,
+        "centroid_mm": {
+          "x": -11.592102027765605,
+          "y": 5.228109651635526,
+          "z": 349.58475953562737
+        }
+      },
+      {
+        "occurrence_id": "LOCK-BUSHING-2",
+        "part_number": "DF8-R2-AUTO-LOCK-BUSHING-001",
+        "mass_kg": 3.094528181635134e-07,
+        "centroid_mm": {
+          "x": -14.098519020048133,
+          "y": 4.126533413681564,
+          "z": 349.9033939836245
+        }
+      },
+      {
+        "occurrence_id": "ARM-3",
+        "part_number": "DF8-SHORT14-ARM-BLADE-001",
+        "mass_kg": 0.06444988175252296,
+        "centroid_mm": {
+          "x": -92.80786489667864,
+          "y": -160.75676971052485,
+          "z": 378.17364342596386
+        }
+      },
+      {
+        "occurrence_id": "PIVOT-CARRIER-3",
+        "part_number": "DF8-SHORT14-PIVOT-CARRIER-PRIMARY-LUG-001",
+        "mass_kg": 0.0013538421744136802,
+        "centroid_mm": {
+          "x": -16.00976309780629,
+          "y": -11.718424193443393,
+          "z": 353.4514239465534
+        }
+      },
+      {
+        "occurrence_id": "PIVOT-PIN-3",
+        "part_number": "DF8-R2-PIVOT-PIN-008",
+        "mass_kg": 0.008671747528307096,
+        "centroid_mm": {
+          "x": -9.797231412993504,
+          "y": -15.128175497221669,
+          "z": 355.0
+        }
+      },
+      {
+        "occurrence_id": "PIVOT-BUSH-3-1",
+        "part_number": "DF8-R2-PIVOT-BUSH-008",
+        "mass_kg": 8.808849871477256e-06,
+        "centroid_mm": {
+          "x": -13.113620667976088,
+          "y": -13.213457268119889,
+          "z": 354.9999999999999
+        }
+      },
+      {
+        "occurrence_id": "PIVOT-BUSH-3-2",
+        "part_number": "DF8-R2-PIVOT-BUSH-008",
+        "mass_kg": 8.808849871477256e-06,
+        "centroid_mm": {
+          "x": -4.886379332023923,
+          "y": -17.963457268119896,
+          "z": 354.9999999999999
+        }
+      },
+      {
+        "occurrence_id": "PIVOT-WASHER-3-1",
+        "part_number": "DF8-R2-PIVOT-WASHER-008",
+        "mass_kg": 1.4016322438141084e-05,
+        "centroid_mm": {
+          "x": -14.109549882328194,
+          "y": -12.638457268119888,
+          "z": 355.0
+        }
+      },
+      {
+        "occurrence_id": "PIVOT-WASHER-3-2",
+        "part_number": "DF8-R2-PIVOT-WASHER-008",
+        "mass_kg": 1.4016322438141084e-05,
+        "centroid_mm": {
+          "x": -3.890450117671818,
+          "y": -18.538457268119892,
+          "z": 355.0
+        }
+      },
+      {
+        "occurrence_id": "PIVOT-CLIP-3",
+        "part_number": "DF8-R2-PIVOT-SPIRAL-RING-008",
+        "mass_kg": 9.513648371968046e-05,
+        "centroid_mm": {
+          "x": -0.3963542880556092,
+          "y": -19.586505764710093,
+          "z": 355.0
+        }
+      },
+      {
+        "occurrence_id": "LINK-3-1",
+        "part_number": "DF8-R2-SHORT-LINK-001",
+        "mass_kg": 0.0008587191047231816,
+        "centroid_mm": {
+          "x": -13.307202976534443,
+          "y": -19.548751661989428,
+          "z": 359.6734267799064
+        }
+      },
+      {
+        "occurrence_id": "LINK-3-2",
+        "part_number": "DF8-R2-SHORT-LINK-001",
+        "mass_kg": 0.0008587191047231816,
+        "centroid_mm": {
+          "x": -10.276114063288908,
+          "y": -21.29875166198943,
+          "z": 359.6734267799064
+        }
+      },
+      {
+        "occurrence_id": "LINK-PIN-3-BELL",
+        "part_number": "DF8-R2-LINK-PIN-004",
+        "mass_kg": 0.001443346409243244,
+        "centroid_mm": {
+          "x": -14.935978432616992,
+          "y": -23.598810771017465,
+          "z": 350.65398708092914
+        }
+      },
+      {
+        "occurrence_id": "LINK-CLIP-3-BELL",
+        "part_number": "ROTOR-CLIP-DC-4SS",
+        "mass_kg": 2.94216e-05,
+        "centroid_mm": {
+          "x": -9.06979448603107,
+          "y": -26.909344864013846,
+          "z": 351.02877571734825
+        }
+      },
+      {
+        "occurrence_id": "LINK-PIN-3-CROSSHEAD",
+        "part_number": "DF8-R2-LINK-PIN-004",
+        "mass_kg": 0.001443346409243244,
+        "centroid_mm": {
+          "x": -9.983399011061255,
+          "y": -15.020691584362869,
+          "z": 367.9713289177334
+        }
+      },
+      {
+        "occurrence_id": "LINK-CLIP-3-CROSSHEAD",
+        "part_number": "ROTOR-CLIP-DC-4SS",
+        "mass_kg": 2.94216e-05,
+        "centroid_mm": {
+          "x": -3.9599725611809813,
+          "y": -18.0588736725441,
+          "z": 367.9713289177334
+        }
+      },
+      {
+        "occurrence_id": "ARM-STOP-PAD-3",
+        "part_number": "DF8-R2-ARM-STOP-PAD-001",
+        "mass_kg": 0.0011774163151587191,
+        "centroid_mm": {
+          "x": -4.38017669322396,
+          "y": -9.391916712730183,
+          "z": 349.58475947778226
+        }
+      },
+      {
+        "occurrence_id": "FIXED-STOP-3",
+        "part_number": "DF8-R2-FIXED-STOP-001",
+        "mass_kg": 0.0023936337070524028,
+        "centroid_mm": {
+          "x": -4.161294481618445,
+          "y": -7.145460058555191,
+          "z": 347.6608216822818
+        }
+      },
+      {
+        "occurrence_id": "STOW-DOG-3",
+        "part_number": "DF8-R2-STOW-DOG-001",
+        "mass_kg": 0.0007049382892415685,
+        "centroid_mm": {
+          "x": -6.750000000000006,
+          "y": -11.69134295108992,
+          "z": 729.706
+        }
+      },
+      {
+        "occurrence_id": "STOW-DOG-GUIDE-3",
+        "part_number": "DF8-SHORT14-STOW-DOG-GUIDE-001",
+        "mass_kg": 0.000530677401823469,
+        "centroid_mm": {
+          "x": -6.672740519815765,
+          "y": -13.911755177126839,
+          "z": 729.9551182504111
+        }
+      },
+      {
+        "occurrence_id": "STOW-DOG-SPRING-3",
+        "part_number": "DF8-R2-STOW-DOG-RETURN-SPRING-001",
+        "mass_kg": 3.19590502277079e-07,
+        "centroid_mm": {
+          "x": -5.553714973761363,
+          "y": -9.853224253965754,
+          "z": 729.7060000000067
+        }
+      },
+      {
+        "occurrence_id": "STOW-DOG-INHIBIT-PIN-3",
+        "part_number": "DF8-R2-STOW-DOG-INHIBIT-PIN-001",
+        "mass_kg": 5.93375184680702e-05,
+        "centroid_mm": {
+          "x": -3.4998292994015245,
+          "y": -17.609281764320073,
+          "z": 729.706
+        }
+      },
+      {
+        "occurrence_id": "STOW-DOG-INHIBIT-KEEPER-3",
+        "part_number": "DF8-R2-STOW-DOG-INHIBIT-KEEPER-001",
+        "mass_kg": 3.948942128413097e-06,
+        "centroid_mm": {
+          "x": -0.8105710149365697,
+          "y": -19.053950181012794,
+          "z": 729.706
+        }
+      },
+      {
+        "occurrence_id": "LOCK-DOG-3",
+        "part_number": "DF8-R2-AUTO-LOCK-DOG-001",
+        "mass_kg": 8.408963611185206e-06,
+        "centroid_mm": {
+          "x": -1.3124933223963131,
+          "y": -11.163044532666063,
+          "z": 349.58475947778226
+        }
+      },
+      {
+        "occurrence_id": "LOCK-SPRING-3",
+        "part_number": "DF8-R2-AUTO-LOCK-SPRING-001",
+        "mass_kg": 2.8560892651638403e-06,
+        "centroid_mm": {
+          "x": 1.2683752417958218,
+          "y": -12.653109665123884,
+          "z": 349.58475953562737
+        }
+      },
+      {
+        "occurrence_id": "LOCK-BUSHING-3",
+        "part_number": "DF8-R2-AUTO-LOCK-BUSHING-001",
+        "mass_kg": 3.094528181635134e-07,
+        "centroid_mm": {
+          "x": 3.475576744210509,
+          "y": -14.272942333940556,
+          "z": 349.9033939836245
+        }
+      },
+      {
+        "occurrence_id": "CROSSHEAD-001",
+        "part_number": "DF8-SHORT14-CROSSHEAD-001",
+        "mass_kg": 0.01232918785989715,
+        "centroid_mm": {
+          "x": -0.9078357526527437,
+          "y": 1.0598550073160082,
+          "z": 367.9713289177334
+        }
+      },
+      {
+        "occurrence_id": "CROSSHEAD-GUIDE-001",
+        "part_number": "DF8-R2-CROSSHEAD-GUIDE-001",
+        "mass_kg": 0.01153710148317413,
+        "centroid_mm": {
+          "x": -1.1242003869555404e-15,
+          "y": 1.0679960401047445e-17,
+          "z": 367.7678881317908
+        }
+      },
+      {
+        "occurrence_id": "CROSSHEAD-GUIDE-SPIDER",
+        "part_number": "DF8-R2-CROSSHEAD-GUIDE-SPIDER-001",
+        "mass_kg": 0.0012339130177071314,
+        "centroid_mm": {
+          "x": 2.4897698392549137e-14,
+          "y": -1.1512921404413513e-14,
+          "z": 343.0
+        }
+      },
+      {
+        "occurrence_id": "BACKUP-SPRING-001",
+        "part_number": "DF8-R2-BACKUP-SPRING-16N-001",
+        "mass_kg": 0.092,
+        "centroid_mm": {
+          "x": 5.915685489481086,
+          "y": -10.383443016774024,
+          "z": 455.2488489189849
+        }
+      },
+      {
+        "occurrence_id": "BACKUP-SPRING-FIXED-SEAT",
+        "part_number": "DF8-R2-BACKUP-SPRING-FIXED-SEAT-001",
+        "mass_kg": 0.0042064835579726225,
+        "centroid_mm": {
+          "x": 6.07237221563444,
+          "y": -10.517657203026776,
+          "z": 537.7763630455687
+        }
+      },
+      {
+        "occurrence_id": "BACKUP-SPRING-MOVING-SEAT",
+        "part_number": "DF8-R2-BACKUP-SPRING-MOVING-SEAT-001",
+        "mass_kg": 0.0073882012531716265,
+        "centroid_mm": {
+          "x": 6.000000000000002,
+          "y": -10.392304845413264,
+          "z": 372.7213289177334
+        }
+      },
+      {
+        "occurrence_id": "BACKUP-SPRING-GUIDE",
+        "part_number": "DF8-R2-BACKUP-SPRING-GUIDE-001",
+        "mass_kg": 0.029068956937486064,
+        "centroid_mm": {
+          "x": 6.0574383435614445,
+          "y": -10.483136836549034,
+          "z": 448.12412708859983
+        }
+      },
+      {
+        "occurrence_id": "GS19-BODY-001",
+        "part_number": "GS-19-50-V4A-B8-B8",
+        "mass_kg": 0.124,
+        "centroid_mm": {
+          "x": 6.750000000000002,
+          "y": 11.69134295108992,
+          "z": 468.8643611097075
+        }
+      },
+      {
+        "occurrence_id": "GS19-ROD-001",
+        "part_number": "GS-19-50-V4A-B8-B8-ROD-CHILD",
+        "mass_kg": 0.02,
+        "centroid_mm": {
+          "x": 6.750000000000002,
+          "y": 11.69134295108992,
+          "z": 402.8409772935501
+        }
+      },
+      {
+        "occurrence_id": "HBD-BODY-001",
+        "part_number": "HBD-15-25-AA-P",
+        "mass_kg": 0.19,
+        "centroid_mm": {
+          "x": -14.5,
+          "y": 2.0005193981215574e-15,
+          "z": 464.27852119688663
+        }
+      },
+      {
+        "occurrence_id": "HBD-ROD-001",
+        "part_number": "HBD-15-25-AA-P-ROD-CHILD",
+        "mass_kg": 0.03,
+        "centroid_mm": {
+          "x": -14.5,
+          "y": 1.7640446738854154e-15,
+          "z": 396.7238798927567
+        }
+      },
+      {
+        "occurrence_id": "GS19-FIXED-YOKE",
+        "part_number": "DF8-R2-ACTUATOR-FIXED-YOKE-GS19-001",
+        "mass_kg": 0.0031335454005427285,
+        "centroid_mm": {
+          "x": 7.447128850412989,
+          "y": 12.898805539427297,
+          "z": 529.1813745404135
+        }
+      },
+      {
+        "occurrence_id": "GS19-PIN-FIXED",
+        "part_number": "DF8-R2-ACTUATOR-PIN-004",
+        "mass_kg": 0.001280137647106325,
+        "centroid_mm": {
+          "x": 7.673668209077944,
+          "y": 11.158062861936873,
+          "z": 527.0
+        }
+      },
+      {
+        "occurrence_id": "GS19-CLIP-FIXED",
+        "part_number": "DF8-R2-ACTUATOR-E-RING-004",
+        "mass_kg": 4.345508650541629e-05,
+        "centroid_mm": {
+          "x": 2.4736794805404374,
+          "y": 13.68453854193662,
+          "z": 527.0
+        }
+      },
+      {
+        "occurrence_id": "GS19-PIN-MOVING",
+        "part_number": "DF8-R2-ACTUATOR-PIN-004",
+        "mass_kg": 0.001280137647106325,
+        "centroid_mm": {
+          "x": 7.673668209077938,
+          "y": 11.158062861936877,
+          "z": 367.9713289177334
+        }
+      },
+      {
+        "occurrence_id": "GS19-CLIP-MOVING",
+        "part_number": "DF8-R2-ACTUATOR-E-RING-004",
+        "mass_kg": 4.345508650541629e-05,
+        "centroid_mm": {
+          "x": 2.4736794805404387,
+          "y": 13.684538541936623,
+          "z": 367.9713289177334
+        }
+      },
+      {
+        "occurrence_id": "HBD-FIXED-YOKE",
+        "part_number": "DF8-R2-ACTUATOR-FIXED-YOKE-HBD-001",
+        "mass_kg": 0.003098105400542728,
+        "centroid_mm": {
+          "x": -15.807585668175932,
+          "y": 2.6596660677307517e-15,
+          "z": 519.1148138332626
+        }
+      },
+      {
+        "occurrence_id": "HBD-PIN-FIXED",
+        "part_number": "DF8-R2-ACTUATOR-PIN-004",
+        "mass_kg": 0.001280137647106325,
+        "centroid_mm": {
+          "x": -14.5,
+          "y": 1.0665601783060978,
+          "z": 517.0
+        }
+      },
+      {
+        "occurrence_id": "HBD-CLIP-FIXED",
+        "part_number": "DF8-R2-ACTUATOR-E-RING-004",
+        "mass_kg": 4.345508650541629e-05,
+        "centroid_mm": {
+          "x": -14.087997756654595,
+          "y": -4.699999999999998,
+          "z": 517.0
+        }
+      },
+      {
+        "occurrence_id": "HBD-PIN-MOVING",
+        "part_number": "DF8-R2-ACTUATOR-PIN-004",
+        "mass_kg": 0.001280137647106325,
+        "centroid_mm": {
+          "x": -14.5,
+          "y": 1.0665601783060907,
+          "z": 367.9713289177334
+        }
+      },
+      {
+        "occurrence_id": "HBD-CLIP-MOVING",
+        "part_number": "DF8-R2-ACTUATOR-E-RING-004",
+        "mass_kg": 4.345508650541629e-05,
+        "centroid_mm": {
+          "x": -14.087997756654596,
+          "y": -4.699999999999998,
+          "z": 367.9713289177334
+        }
+      },
+      {
+        "occurrence_id": "NOSE-BALLAST-TAPER-PIN-001",
+        "part_number": "HTP-3-30-A1",
+        "mass_kg": 0.002032641862799132,
+        "centroid_mm": {
+          "x": 0.9065934065934069,
+          "y": 7.364266779748809e-17,
+          "z": 170.0
+        }
+      },
+      {
+        "occurrence_id": "ARM-STOP-SCREW-1-1",
+        "part_number": "SSCA-M3-8-A4-BL",
+        "mass_kg": 0.0008,
+        "centroid_mm": {
+          "x": 9.837511912596549,
+          "y": -0.8893479280066938,
+          "z": 352.3422211862164
+        }
+      },
+      {
+        "occurrence_id": "ARM-STOP-SCREW-1-2",
+        "part_number": "SSCA-M3-8-A4-BL",
+        "mass_kg": 0.0008,
+        "centroid_mm": {
+          "x": 10.80994170753136,
+          "y": -0.8893479280066937,
+          "z": 346.8272977693481
+        }
+      },
+      {
+        "occurrence_id": "FIXED-STOP-SCREW-1-1",
+        "part_number": "SSCA-M3-8-A4-BL",
+        "mass_kg": 0.0008,
+        "centroid_mm": {
+          "x": 10.021169485608366,
+          "y": -7.8,
+          "z": 347.90672787925257
+        }
+      },
+      {
+        "occurrence_id": "FIXED-STOP-SCREW-1-2",
+        "part_number": "SSCA-M3-8-A4-BL",
+        "mass_kg": 0.0008,
+        "centroid_mm": {
+          "x": 10.064581530025098,
+          "y": 7.8,
+          "z": 347.66052594099955
+        }
+      },
+      {
+        "occurrence_id": "FIXED-STOP-DOWEL-1-1",
+        "part_number": "HDP-3-8-A1",
+        "mass_kg": 0.00047,
+        "centroid_mm": {
+          "x": 14.47346842935293,
+          "y": -8.0,
+          "z": 343.61465524978587
+        }
+      },
+      {
+        "occurrence_id": "FIXED-STOP-DOWEL-1-2",
+        "part_number": "HDP-3-8-A1",
+        "mass_kg": 0.00047,
+        "centroid_mm": {
+          "x": 14.47346842935293,
+          "y": 8.0,
+          "z": 343.61465524978587
+        }
+      },
+      {
+        "occurrence_id": "ARM-STOP-SCREW-2-1",
+        "part_number": "SSCA-M3-8-A4-BL",
+        "mass_kg": 0.0008,
+        "centroid_mm": {
+          "x": -4.148558057841421,
+          "y": 8.964209190343999,
+          "z": 352.3422211862164
+        }
+      },
+      {
+        "occurrence_id": "ARM-STOP-SCREW-2-2",
+        "part_number": "SSCA-M3-8-A4-BL",
+        "mass_kg": 0.0008,
+        "centroid_mm": {
+          "x": -4.634772955308827,
+          "y": 9.806358096154437,
+          "z": 346.8272977693481
+        }
+      },
+      {
+        "occurrence_id": "FIXED-STOP-SCREW-2-1",
+        "part_number": "SSCA-M3-8-A4-BL",
+        "mass_kg": 0.0008,
+        "centroid_mm": {
+          "x": 1.744413406714442,
+          "y": 12.578587350166277,
+          "z": 347.90672787925257
+        }
+      },
+      {
+        "occurrence_id": "FIXED-STOP-SCREW-2-2",
+        "part_number": "SSCA-M3-8-A4-BL",
+        "mass_kg": 0.0008,
+        "centroid_mm": {
+          "x": -11.787288914531167,
+          "y": 4.816183283461391,
+          "z": 347.66052594099955
+        }
+      },
+      {
+        "occurrence_id": "FIXED-STOP-DOWEL-2-1",
+        "part_number": "HDP-3-8-A1",
+        "mass_kg": 0.00047,
+        "centroid_mm": {
+          "x": -0.30853098440095184,
+          "y": 16.534391340691695,
+          "z": 343.61465524978587
+        }
+      },
+      {
+        "occurrence_id": "FIXED-STOP-DOWEL-2-2",
+        "part_number": "HDP-3-8-A1",
+        "mass_kg": 0.00047,
+        "centroid_mm": {
+          "x": -14.16493744495197,
+          "y": 8.534391340691698,
+          "z": 343.61465524978587
+        }
+      },
+      {
+        "occurrence_id": "ARM-STOP-SCREW-3-1",
+        "part_number": "SSCA-M3-8-A4-BL",
+        "mass_kg": 0.0008,
+        "centroid_mm": {
+          "x": -5.688953854755129,
+          "y": -8.0748612623373,
+          "z": 352.3422211862164
+        }
+      },
+      {
+        "occurrence_id": "ARM-STOP-SCREW-3-2",
+        "part_number": "SSCA-M3-8-A4-BL",
+        "mass_kg": 0.0008,
+        "centroid_mm": {
+          "x": -6.175168752222534,
+          "y": -8.917010168147739,
+          "z": 346.8272977693481
+        }
+      },
+      {
+        "occurrence_id": "FIXED-STOP-SCREW-3-1",
+        "part_number": "SSCA-M3-8-A4-BL",
+        "mass_kg": 0.0008,
+        "centroid_mm": {
+          "x": -11.765582892322808,
+          "y": -4.778587350166273,
+          "z": 347.90672787925257
+        }
+      },
+      {
+        "occurrence_id": "FIXED-STOP-SCREW-3-2",
+        "part_number": "SSCA-M3-8-A4-BL",
+        "mass_kg": 0.0008,
+        "centroid_mm": {
+          "x": 1.7227073845060674,
+          "y": -12.616183283461389,
+          "z": 347.66052594099955
+        }
+      },
+      {
+        "occurrence_id": "FIXED-STOP-DOWEL-3-1",
+        "part_number": "HDP-3-8-A1",
+        "mass_kg": 0.00047,
+        "centroid_mm": {
+          "x": -14.16493744495198,
+          "y": -8.534391340691688,
+          "z": 343.61465524978587
+        }
+      },
+      {
+        "occurrence_id": "FIXED-STOP-DOWEL-3-2",
+        "part_number": "HDP-3-8-A1",
+        "mass_kg": 0.00047,
+        "centroid_mm": {
+          "x": -0.3085309844009625,
+          "y": -16.534391340691695,
+          "z": 343.61465524978587
+        }
+      },
+      {
+        "occurrence_id": "BACKUP-GUIDE-SCREW-1",
+        "part_number": "SSCF-M3-10-A4",
+        "mass_kg": 0.00088,
+        "centroid_mm": {
+          "x": 11.124453169054535,
+          "y": -19.26811809522306,
+          "z": 355.75
+        }
+      },
+      {
+        "occurrence_id": "BACKUP-GUIDE-SCREW-2",
+        "part_number": "SSCF-M3-10-A4",
+        "mass_kg": 0.00088,
+        "centroid_mm": {
+          "x": 11.12445316905453,
+          "y": -19.26811809522305,
+          "z": 537.7763633888684
+        }
+      },
+      {
+        "occurrence_id": "CROSSHEAD-GUIDE-LOCK-SCREW-001",
+        "part_number": "SSCL-M4-8-A4",
+        "mass_kg": 0.00112,
+        "centroid_mm": {
+          "x": 5.4012867967142785e-17,
+          "y": -2.2352227639250912e-17,
+          "z": 343.38842768342994
+        }
+      },
+      {
+        "occurrence_id": "PIVOT-CARRIER-1-SECONDARY",
+        "part_number": "DF8-SHORT14-PIVOT-CARRIER-SECONDARY-LUG-001",
+        "mass_kg": 0.0013531087490951286,
+        "centroid_mm": {
+          "x": 18.15355748451342,
+          "y": 8.005706673606072,
+          "z": 353.47196030432855
+        }
+      },
+      {
+        "occurrence_id": "PIVOT-CARRIER-2-SECONDARY",
+        "part_number": "DF8-SHORT14-PIVOT-CARRIER-SECONDARY-LUG-001",
+        "mass_kg": 0.0013531087490951286,
+        "centroid_mm": {
+          "x": -16.009924096846184,
+          "y": 11.718588613846718,
+          "z": 353.47196030432855
+        }
+      },
+      {
+        "occurrence_id": "PIVOT-CARRIER-3-SECONDARY",
+        "part_number": "DF8-SHORT14-PIVOT-CARRIER-SECONDARY-LUG-001",
+        "mass_kg": 0.0013531087490951286,
+        "centroid_mm": {
+          "x": -2.1436333876672418,
+          "y": -19.72429528745279,
+          "z": 353.47196030432855
+        }
+      },
+      {
+        "occurrence_id": "SHORT-AFT-SHELL-FWD",
+        "part_number": "DF8-SHORT14-AFT-SHELL-FORWARD-001",
+        "mass_kg": 0.7273446071334247,
+        "centroid_mm": {
+          "x": -0.026663486226631342,
+          "y": 3.2974556781914166e-08,
+          "z": 1174.750942095941
+        }
+      },
+      {
+        "occurrence_id": "SHORT-AFT-SHELL-AFT",
+        "part_number": "DF8-SHORT14-AFT-SHELL-CLOSURE-001",
+        "mass_kg": 0.03782690138875042,
+        "centroid_mm": {
+          "x": -0.74984896359026,
+          "y": -1.1193743458837797e-07,
+          "z": 1640.6970374135947
+        }
+      },
+      {
+        "occurrence_id": "RECOVERY-HARDPOINT-RING",
+        "part_number": "DF8-SHORT14-RECOVERY-HARDPOINT-RING-001",
+        "mass_kg": 0.03021004481956056,
+        "centroid_mm": {
+          "x": -0.6353635710483899,
+          "y": 1.9540181194955026e-15,
+          "z": 1613.0000000233017
+        }
+      },
+      {
+        "occurrence_id": "AFT-CLOSURE-RING",
+        "part_number": "DF8-SHORT14-AFT-CLOSURE-RING-001",
+        "mass_kg": 0.03107333460038692,
+        "centroid_mm": {
+          "x": 6.223823605419785e-15,
+          "y": 5.4922310733604376e-17,
+          "z": 1667.4
+        }
+      },
+      {
+        "occurrence_id": "AFT-CLOSURE-CAP",
+        "part_number": "DF8-SHORT14-AFT-CAP-001",
+        "mass_kg": 0.03852351979077313,
+        "centroid_mm": {
+          "x": -0.32554442854871785,
+          "y": 4.453092956965676e-17,
+          "z": 1673.4
+        }
+      },
+      {
+        "occurrence_id": "AFT-LONGERON-FWD-1",
+        "part_number": "DF8-SHORT14-AFT-LONGERON-FWD-001",
+        "mass_kg": 0.02667675634914794,
+        "centroid_mm": {
+          "x": 12.089496208063238,
+          "y": 20.939621670276804,
+          "z": 1175.2
+        }
+      },
+      {
+        "occurrence_id": "AFT-LONGERON-FWD-2",
+        "part_number": "DF8-SHORT14-AFT-LONGERON-FWD-001",
+        "mass_kg": 0.02667675634914794,
+        "centroid_mm": {
+          "x": -24.178992416126466,
+          "y": 2.987614848091913e-15,
+          "z": 1175.1999999999998
+        }
+      },
+      {
+        "occurrence_id": "AFT-LONGERON-FWD-3",
+        "part_number": "DF8-SHORT14-AFT-LONGERON-FWD-001",
+        "mass_kg": 0.02667675634914794,
+        "centroid_mm": {
+          "x": 12.089496208063238,
+          "y": -20.939621670276804,
+          "z": 1175.2
+        }
+      },
+      {
+        "occurrence_id": "AFT-LONGERON-AFT-1",
+        "part_number": "DF8-SHORT14-AFT-LONGERON-AFT-001",
+        "mass_kg": 0.0014266960518677578,
+        "centroid_mm": {
+          "x": 12.089496208063238,
+          "y": 20.939621670276804,
+          "z": 1640.2
+        }
+      },
+      {
+        "occurrence_id": "AFT-LONGERON-AFT-2",
+        "part_number": "DF8-SHORT14-AFT-LONGERON-AFT-001",
+        "mass_kg": 0.0014266960518677578,
+        "centroid_mm": {
+          "x": -24.178992416126466,
+          "y": 2.989522083015974e-15,
+          "z": 1640.2
+        }
+      },
+      {
+        "occurrence_id": "AFT-LONGERON-AFT-3",
+        "part_number": "DF8-SHORT14-AFT-LONGERON-AFT-001",
+        "mass_kg": 0.0014266960518677578,
+        "centroid_mm": {
+          "x": 12.089496208063236,
+          "y": -20.939621670276804,
+          "z": 1640.2
+        }
+      },
+      {
+        "occurrence_id": "PACK-ATTACHMENT-COLLAR-1",
+        "part_number": "DF8-SHORT14-PACK-ATTACHMENT-COLLAR-001",
+        "mass_kg": 0.005333788153283115,
+        "centroid_mm": {
+          "x": 4.230153863102853e-14,
+          "y": -6.964500215563768e-15,
+          "z": 1382.0
+        }
+      },
+      {
+        "occurrence_id": "PACK-ATTACHMENT-COLLAR-2",
+        "part_number": "DF8-SHORT14-PACK-ATTACHMENT-COLLAR-001",
+        "mass_kg": 0.005333788153283115,
+        "centroid_mm": {
+          "x": 4.230153863102853e-14,
+          "y": -6.964500215563768e-15,
+          "z": 1592.0
+        }
+      },
+      {
+        "occurrence_id": "CORDURA-CRADLE-LEFT",
+        "part_number": "DF8-SHORT14-CORDURA-CRADLE-LEFT-001",
+        "mass_kg": 0.0575,
+        "centroid_mm": {
+          "x": -25.453124916612833,
+          "y": -33.17115820942656,
+          "z": 1487.0
+        }
+      },
+      {
+        "occurrence_id": "CORDURA-CRADLE-RIGHT",
+        "part_number": "DF8-SHORT14-CORDURA-CRADLE-RIGHT-001",
+        "mass_kg": 0.0575,
+        "centroid_mm": {
+          "x": 25.45312491661284,
+          "y": -33.17115820942665,
+          "z": 1487.0
+        }
+      },
+      {
+        "occurrence_id": "CORDURA-FLAP-LEFT",
+        "part_number": "DF8-SHORT14-CORDURA-BREAKAWAY-FLAP-LEFT-001",
+        "mass_kg": 0.065,
+        "centroid_mm": {
+          "x": -47.99999999999999,
+          "y": 3.400000000000001,
+          "z": 1487.0
+        }
+      },
+      {
+        "occurrence_id": "CORDURA-FLAP-RIGHT",
+        "part_number": "DF8-SHORT14-CORDURA-BREAKAWAY-FLAP-RIGHT-001",
+        "mass_kg": 0.065,
+        "centroid_mm": {
+          "x": 48.00000000000001,
+          "y": -3.400000000000002,
+          "z": 1487.0
+        }
+      },
+      {
+        "occurrence_id": "HOOK-STRIP",
+        "part_number": "DF8-SHORT14-HOOK-STRIP-001",
+        "mass_kg": 0.012,
+        "centroid_mm": {
+          "x": -49.645390180296545,
+          "y": 47.117809952193056,
+          "z": 1487.0
+        }
+      },
+      {
+        "occurrence_id": "LOOP-STRIP",
+        "part_number": "DF8-SHORT14-LOOP-STRIP-001",
+        "mass_kg": 0.012,
+        "centroid_mm": {
+          "x": 46.3502639399119,
+          "y": 47.2422596666536,
+          "z": 1487.0
+        }
+      },
+      {
+        "occurrence_id": "PACK-EDGE-BAND-1",
+        "part_number": "DF8-SHORT14-PACK-EDGE-BAND-001",
+        "mass_kg": 0.02,
+        "centroid_mm": {
+          "x": 4.5170392979675356e-14,
+          "y": 1.4078515689010843e-15,
+          "z": 1371.0
+        }
+      },
+      {
+        "occurrence_id": "PACK-EDGE-BAND-2",
+        "part_number": "DF8-SHORT14-PACK-EDGE-BAND-001",
+        "mass_kg": 0.02,
+        "centroid_mm": {
+          "x": 4.5170392979675356e-14,
+          "y": 1.4078515689010843e-15,
+          "z": 1603.0
+        }
+      },
+      {
+        "occurrence_id": "EXT-BUOY-PANEL-01",
+        "part_number": "DF8-SHORT14-BUOY-PANEL-01",
+        "mass_kg": 0.02375,
+        "centroid_mm": {
+          "x": 185.9643801708923,
+          "y": -1.0608081707141518e-12,
+          "z": 1929.9999999999955
+        }
+      },
+      {
+        "occurrence_id": "EXT-BUOY-PANEL-02",
+        "part_number": "DF8-SHORT14-BUOY-PANEL-02",
+        "mass_kg": 0.02375,
+        "centroid_mm": {
+          "x": 131.495187760607,
+          "y": 131.495187760607,
+          "z": 1930.0
+        }
+      },
+      {
+        "occurrence_id": "EXT-BUOY-PANEL-03",
+        "part_number": "DF8-SHORT14-BUOY-PANEL-03",
+        "mass_kg": 0.02375,
+        "centroid_mm": {
+          "x": 4.7067195368417886e-14,
+          "y": 185.96227791785117,
+          "z": 1930.000000000001
+        }
+      },
+      {
+        "occurrence_id": "EXT-BUOY-PANEL-04",
+        "part_number": "DF8-SHORT14-BUOY-PANEL-04",
+        "mass_kg": 0.02375,
+        "centroid_mm": {
+          "x": -131.4951877605955,
+          "y": 131.495187760604,
+          "z": 1930.0000000000005
+        }
+      },
+      {
+        "occurrence_id": "EXT-BUOY-PANEL-05",
+        "part_number": "DF8-SHORT14-BUOY-PANEL-05",
+        "mass_kg": 0.02375,
+        "centroid_mm": {
+          "x": -185.7977783541092,
+          "y": -0.7054190558844945,
+          "z": 1930.0000002898516
+        }
+      },
+      {
+        "occurrence_id": "EXT-BUOY-PANEL-06",
+        "part_number": "DF8-SHORT14-BUOY-PANEL-06",
+        "mass_kg": 0.02375,
+        "centroid_mm": {
+          "x": -131.49518776060415,
+          "y": -131.4951877606098,
+          "z": 1930.0000000000016
+        }
+      },
+      {
+        "occurrence_id": "EXT-BUOY-PANEL-07",
+        "part_number": "DF8-SHORT14-BUOY-PANEL-07",
+        "mass_kg": 0.02375,
+        "centroid_mm": {
+          "x": 2.039731383579251e-13,
+          "y": -185.96227791785145,
+          "z": 1930.0000000000016
+        }
+      },
+      {
+        "occurrence_id": "EXT-BUOY-PANEL-08",
+        "part_number": "DF8-SHORT14-BUOY-PANEL-08",
+        "mass_kg": 0.02375,
+        "centroid_mm": {
+          "x": 131.49518776059836,
+          "y": -131.495187760604,
+          "z": 1930.0000000000036
+        }
+      },
+      {
+        "occurrence_id": "PACK-ATTACHMENT-WEBBING-1",
+        "part_number": "DF8-SHORT14-PACK-ATTACHMENT-WEBBING-001",
+        "mass_kg": 0.028,
+        "centroid_mm": {
+          "x": -1.1437082666907755e-13,
+          "y": 8.644183997100717e-16,
+          "z": 1382.0
+        }
+      },
+      {
+        "occurrence_id": "PACK-RADIAL-TIE-1-1",
+        "part_number": "DF8-SHORT14-PACK-RADIAL-TIE-1-1",
+        "mass_kg": 0.004,
+        "centroid_mm": {
+          "x": 18.300000000000008,
+          "y": 31.69652977851046,
+          "z": 1382.0
+        }
+      },
+      {
+        "occurrence_id": "PACK-RADIAL-TIE-1-2",
+        "part_number": "DF8-SHORT14-PACK-RADIAL-TIE-1-2",
+        "mass_kg": 0.004,
+        "centroid_mm": {
+          "x": -36.6,
+          "y": 4.551340642294085e-15,
+          "z": 1382.0
+        }
+      },
+      {
+        "occurrence_id": "PACK-RADIAL-TIE-1-3",
+        "part_number": "DF8-SHORT14-PACK-RADIAL-TIE-1-3",
+        "mass_kg": 0.004,
+        "centroid_mm": {
+          "x": 18.300000000000004,
+          "y": -31.696529778510453,
+          "z": 1382.0
+        }
+      },
+      {
+        "occurrence_id": "PACK-ATTACHMENT-WEBBING-2",
+        "part_number": "DF8-SHORT14-PACK-ATTACHMENT-WEBBING-001",
+        "mass_kg": 0.028,
+        "centroid_mm": {
+          "x": -1.1437082666907755e-13,
+          "y": 8.644183997100717e-16,
+          "z": 1592.0
+        }
+      },
+      {
+        "occurrence_id": "PACK-RADIAL-TIE-2-1",
+        "part_number": "DF8-SHORT14-PACK-RADIAL-TIE-2-1",
+        "mass_kg": 0.004,
+        "centroid_mm": {
+          "x": 18.300000000000008,
+          "y": 31.69652977851046,
+          "z": 1592.0
+        }
+      },
+      {
+        "occurrence_id": "PACK-RADIAL-TIE-2-2",
+        "part_number": "DF8-SHORT14-PACK-RADIAL-TIE-2-2",
+        "mass_kg": 0.004,
+        "centroid_mm": {
+          "x": -36.6,
+          "y": 4.551340642294085e-15,
+          "z": 1592.0
+        }
+      },
+      {
+        "occurrence_id": "PACK-RADIAL-TIE-2-3",
+        "part_number": "DF8-SHORT14-PACK-RADIAL-TIE-2-3",
+        "mass_kg": 0.004,
+        "centroid_mm": {
+          "x": 18.300000000000004,
+          "y": -31.696529778510453,
+          "z": 1592.0
+        }
+      },
+      {
+        "occurrence_id": "WATER-ENTRY-MESH",
+        "part_number": "DF8-SHORT14-WATER-ENTRY-MESH-001",
+        "mass_kg": 0.012,
+        "centroid_mm": {
+          "x": 276.85900000000004,
+          "y": 1.2591219098808241e-15,
+          "z": 1930.0
+        }
+      },
+      {
+        "occurrence_id": "BUOY-INLET-PATCH",
+        "part_number": "DF8-SHORT14-BUOY-INLET-REINFORCEMENT-PATCH-001",
+        "mass_kg": 0.026,
+        "centroid_mm": {
+          "x": 243.859,
+          "y": 0.0,
+          "z": 1930.0
+        }
+      },
+      {
+        "occurrence_id": "BUOY-INLET-MANIFOLD",
+        "part_number": "DF8-SHORT14-BUOY-INLET-MANIFOLD-001",
+        "mass_kg": 0.004987341169426868,
+        "centroid_mm": {
+          "x": 248.359,
+          "y": 1.2042278863594667e-16,
+          "z": 1930.0
+        }
+      },
+      {
+        "occurrence_id": "HYDRO-1F-INFLATOR-PROXY",
+        "part_number": "HALKEY-ROBERTS-HYDRO-1F-V95000XXB_PROXY",
+        "mass_kg": 0.18,
+        "centroid_mm": {
+          "x": 262.15661272949234,
+          "y": 1.5405386071236574e-17,
+          "z": 1930.280092016837
+        }
+      },
+      {
+        "occurrence_id": "INFLATOR-GUARD",
+        "part_number": "DF8-SHORT14-INFLATOR-GUARD-001",
+        "mass_kg": 0.055,
+        "centroid_mm": {
+          "x": 274.85900000000004,
+          "y": 7.284002912884627e-17,
+          "z": 1930.0
+        }
+      },
+      {
+        "occurrence_id": "BUOY-CO2-CARTRIDGE-81121",
+        "part_number": "LELAND-81121",
+        "mass_kg": 0.045,
+        "centroid_mm": {
+          "x": 260.85900000000004,
+          "y": 2.1855189961104587e-16,
+          "z": 1866.1484492287632
+        }
+      },
+      {
+        "occurrence_id": "HYDRO-1F-WATER-BOBBIN-V80040",
+        "part_number": "V80040",
+        "mass_kg": 0.00169646,
+        "centroid_mm": {
+          "x": 274.85900000000004,
+          "y": -1.5013594848097284e-16,
+          "z": 1939.0
+        }
+      },
+      {
+        "occurrence_id": "MANUAL-PULL-LANYARD",
+        "part_number": "DF8-SHORT14-MANUAL-PULL-LANYARD-001",
+        "mass_kg": 0.008,
+        "centroid_mm": {
+          "x": 276.07551667828466,
+          "y": 2.896792982197637,
+          "z": 1971.7589527435455
+        }
+      },
+      {
+        "occurrence_id": "MANUAL-PULL-TAB",
+        "part_number": "DF8-SHORT14-MANUAL-PULL-TAB-001",
+        "mass_kg": 0.018,
+        "centroid_mm": {
+          "x": 298.85900000000004,
+          "y": -1.6851465785878316e-18,
+          "z": 1994.0
+        }
+      },
+      {
+        "occurrence_id": "PULL-TAB-KEEPER",
+        "part_number": "DF8-SHORT14-PULL-TAB-KEEPER-001",
+        "mass_kg": 0.01,
+        "centroid_mm": {
+          "x": 296.85900000000004,
+          "y": 2.2459684176325003e-16,
+          "z": 1994.0
+        }
+      },
+      {
+        "occurrence_id": "TETHER-THIMBLE-BODY-SHORT14",
+        "part_number": "DF8-R2-TETHER-THIMBLE-001",
+        "mass_kg": 0.0028967149754297837,
+        "centroid_mm": {
+          "x": 21.49271067462733,
+          "y": -1.3243859734844238e-08,
+          "z": 1612.9999999113404
+        }
+      },
+      {
+        "occurrence_id": "TETHER-THIMBLE-BUOY-SHORT14",
+        "part_number": "DF8-R2-TETHER-THIMBLE-001",
+        "mass_kg": 0.0028967149754297837,
+        "centroid_mm": {
+          "x": -0.5072893253726719,
+          "y": -1.3243859778996907e-08,
+          "z": 1690.1409999113405
+        }
+      },
+      {
+        "occurrence_id": "STRUCTURAL-RECOVERY-TETHER",
+        "part_number": "AMSTEEL-BLUE-SHORT14-STRUCTURAL-TETHER-001",
+        "mass_kg": 0.09,
+        "centroid_mm": {
+          "x": 28.816454978568476,
+          "y": 2.403287433307078e-09,
+          "z": 1659.2671587244643
+        }
+      },
+      {
+        "occurrence_id": "TETHER-EXIT-CHAFE-SLEEVE",
+        "part_number": "DF8-SHORT14-TETHER-EXIT-CHAFE-SLEEVE-001",
+        "mass_kg": 0.012,
+        "centroid_mm": {
+          "x": 31.411764705882334,
+          "y": -2.8271329475659693e-16,
+          "z": 1615.64705882353
+        }
+      },
+      {
+        "occurrence_id": "RECOVERY-PIN-BODY-SHORT14",
+        "part_number": "DF8-R2-RECOVERY-PIN-006",
+        "mass_kg": 0.003134187821530512,
+        "centroid_mm": {
+          "x": 22.0,
+          "y": -1.4995138737164044,
+          "z": 1613.0
+        }
+      }
+    ]
+  },
+  "fall_orientation_disposition": "QUANTITATIVE FALL/ORIENTATION EQUIVALENCE REMAINS A SEPARATE VERIFICATION ITEM"
+}

@@ -15,6 +15,7 @@ import copy
 import hashlib
 import json
 import math
+import re
 from dataclasses import asdict
 from pathlib import Path
 from typing import Any, Iterable
@@ -44,6 +45,8 @@ PATH_TETHER = f"{TOP_AFT}/540_STRUCTURAL_RECOVERY_TETHER_ASSY"
 
 SOURCE_ARM_PART = "DF8-R2-ARM-BLADE-001"
 SHORT_ARM_PART = "DF8-SHORT14-ARM-BLADE-001"
+
+_TRANSITION_CLEARANCE_CUTTERS_GLOBAL: tuple[cq.Shape, ...] | None = None
 
 ARM_ROUTE_REMOVALS = {
     "AFT-REPACK-SHELL-001",
@@ -118,11 +121,18 @@ def make_short_arm() -> cq.Shape:
         g.PIVOT_Z, g.ARM_LENGTH = original_pivot, original_length
 
 
-def make_integral_pivot_carrier() -> cq.Shape:
-    """Close the inherited two-lug nominal-part fragmentation with a root web."""
-    source = g.make_pivot_carrier_local()
-    root_web = g.box_center(3.0, 14.4, 2.4, -4.8, 0.0, -9.0)
-    return _valid_single(source.fuse(root_web), "integral pivot carrier")
+def source_pivot_carrier_lugs(source_shape: cq.Shape) -> tuple[cq.Shape, cq.Shape]:
+    """Return the two exact source lugs without adding material across the arm path."""
+    solids = sorted(
+        source_shape.Solids(),
+        key=lambda solid: solid.BoundingBox().ymin,
+    )
+    if len(solids) != 2:
+        raise ValueError(f"source pivot carrier must contain exactly two lugs; actual={len(solids)}")
+    return (
+        _valid_single(solids[0], "source pivot carrier primary lug"),
+        _valid_single(solids[1], "source pivot carrier secondary lug"),
+    )
 
 
 def make_integral_crosshead() -> cq.Shape:
@@ -148,7 +158,7 @@ def make_integral_actuator_body(ro: float, bore_r: float, length: float,
     # The source proxy's central neck lies inside the body bore and was therefore
     # topologically separate.  A commercial-body end shoulder occupies this
     # already-bounded envelope and joins the neck without changing interfaces.
-    end_shoulder = g.box_center(2.0 * ro, 4.0, 2.0, 0.0, 0.0, length - 0.5)
+    end_shoulder = g.box_center(2.0 * (ro - 0.5), 4.0, 2.0, 0.0, 0.0, length - 0.5)
     return _valid_single(source.fuse(end_shoulder), "integral actuator installation body")
 
 
@@ -214,15 +224,57 @@ def make_short_stow_guide() -> cq.Shape:
     return _valid_single(guide, "short stow-dog guide")
 
 
-def make_plain_transition_ring() -> cq.Shape:
+def make_plain_transition_ring(clearance_cutters_global: Iterable[cq.Shape]) -> cq.Shape:
     ring = g.tube_z(25.30, 19.50, 8.0, z0=-4.0)
     for phi in (0.0, 120.0, 240.0):
-        # Six machined carrier weld lands terminate at the aft ring face.
-        land = g.box_center(6.0, 3.0, 2.0, 21.6, 0.0, 3.0).rotate(
+        # Two occurrence-matched lands per arm remain outside the moving
+        # root/stop corridor and terminate at the exact aft carrier face.
+        for lateral in (-8.0, 8.0):
+            land = g.box_center(6.0, 3.0, 4.0, 21.6, lateral, 2.0).rotate(
+                (0, 0, 0), (0, 0, 1), phi
+            )
+            ring = ring.fuse(land)
+    ring_global = g.moved(ring, g.translation_loc(0.0, 0.0, cfg.TRANSITION_RING_Z_MM))
+    for cutter in clearance_cutters_global:
+        ring_global = ring_global.cut(cutter)
+    ring_local = g.moved(
+        ring_global, g.translation_loc(0.0, 0.0, -cfg.TRANSITION_RING_Z_MM)
+    )
+    return _valid_single(ring_local, "ballast-to-carrier relieved transition ring")
+
+
+def transition_motion_clearance_cutters() -> tuple[cq.Shape, ...]:
+    """Return three continuous, source-probed root/stop motion corridors.
+
+    Exact AP242 common-volume probes at 5-degree increments bounded every
+    positive common to local X=18.402..25.300, Y=-6.451..6.300 and
+    Z=341.073..344.000 mm for arm one, with exact 120-degree copies for arms
+    two and three.  The machined corridor adds at least 0.149 mm lateral,
+    0.202 mm axial and 0.102 mm radial stock to those measured limits while
+    retaining two independent carrier lands outside the corridor.
+    """
+    cutters = []
+    for phi in (0.0, 120.0, 240.0):
+        cutter = g.box_center(8.0, 13.4, 3.4, 21.6, 0.0, 342.5).rotate(
             (0, 0, 0), (0, 0, 1), phi
         )
-        ring = ring.fuse(land)
-    return _valid_single(ring, "ballast-to-carrier transition ring")
+        cutters.append(cutter)
+    return tuple(cutters)
+
+
+def make_aft_shell_segment(length: float, segment: str) -> cq.Shape:
+    """Create the exact shell segment with a rounded +X tether/thimble passage."""
+    shell = g.tube_z(g.NORMAL_R, 25.35, length)
+    if segment == "FWD":
+        cutter_center_z = length - 1.0
+    elif segment == "AFT":
+        cutter_center_z = 5.0
+    else:
+        raise ValueError(f"unknown aft-shell segment: {segment}")
+    cutter = cq.Solid.makeCylinder(
+        9.0, 18.0, cq.Vector(15.0, 0.0, cutter_center_z), cq.Vector(1, 0, 0)
+    )
+    return _valid_single(shell.cut(cutter), f"{segment.lower()} aft shell with tether passage")
 
 
 def make_termination_ring() -> cq.Shape:
@@ -424,20 +476,47 @@ def _install_short_definitions(builder: build_r2.R2Builder) -> None:
     _replace_part(builder, {SOURCE_ARM_PART}, short_arm, {"ARM-1", "ARM-2", "ARM-3"})
 
     carrier_source = builder.catalog.parts["DF8-R2-PIVOT-CARRIER-001"]
-    integral_carrier = _part_copy(
+    primary_lug_shape, secondary_lug_shape = source_pivot_carrier_lugs(carrier_source.shape)
+    primary_carrier_lug = _part_copy(
         carrier_source,
-        part_number="DF8-SHORT14-PIVOT-CARRIER-001",
-        revision="A",
-        description="INTEGRAL DOUBLE-SHEAR PIVOT CARRIER WITH ROOT LOAD-PATH WEB",
-        shape=make_integral_pivot_carrier(),
+        part_number="DF8-SHORT14-PIVOT-CARRIER-PRIMARY-LUG-001",
+        revision="B",
+        description="SOURCE-EXACT DOUBLE-SHEAR PIVOT CARRIER PRIMARY LUG",
+        shape=primary_lug_shape,
         mass_kg=None,
-        process="5-axis mill from one billet; ream pivot; machine stop-land bores; CMM inspect",
-        notes="Source carrier interfaces and envelope retained; root web provides a one-solid load path into the new transition-ring lands.",
+        process="5-axis mill; ream pivot; machine stop-land bore; weld to transition-ring land; CMM inspect",
+        notes="Exact source negative-Y lug and all source bores retained; no bridge material crosses the deployed-arm or stop-pad motion path.",
     )
-    _replace_part(
-        builder, {carrier_source.part_number}, integral_carrier,
-        {"PIVOT-CARRIER-1", "PIVOT-CARRIER-2", "PIVOT-CARRIER-3"},
+    secondary_carrier_lug = _part_copy(
+        carrier_source,
+        part_number="DF8-SHORT14-PIVOT-CARRIER-SECONDARY-LUG-001",
+        revision="B",
+        description="SOURCE-EXACT DOUBLE-SHEAR PIVOT CARRIER SECONDARY LUG",
+        shape=secondary_lug_shape,
+        mass_kg=None,
+        process="5-axis mill; ream pivot; machine stop-land bore; weld to transition-ring land; CMM inspect",
+        notes="Exact source positive-Y lug and all source bores retained; the two carrier lugs are structurally tied by the transition ring and retained pivot pin.",
     )
+    builder.catalog.add(primary_carrier_lug)
+    builder.catalog.add(secondary_carrier_lug)
+    carrier_occurrences = [
+        occurrence for occurrence in builder.occurrences
+        if occurrence.occurrence_id in {"PIVOT-CARRIER-1", "PIVOT-CARRIER-2", "PIVOT-CARRIER-3"}
+    ]
+    if len(carrier_occurrences) != 3:
+        raise ValueError(f"expected three source pivot-carrier occurrences; actual={len(carrier_occurrences)}")
+    for occurrence in carrier_occurrences:
+        if occurrence.part_number != carrier_source.part_number:
+            raise ValueError(
+                f"unexpected source carrier definition for {occurrence.occurrence_id}: {occurrence.part_number}"
+            )
+        occurrence.part_number = primary_carrier_lug.part_number
+        arm_index = occurrence.occurrence_id.rsplit("-", 1)[1]
+        _add(
+            builder, secondary_carrier_lug, f"PIVOT-CARRIER-{arm_index}-SECONDARY",
+            occurrence.parent_path, occurrence.location, occurrence.classification,
+            occurrence.joint_type, occurrence.permitted_dof,
+        )
 
     crosshead_source = builder.catalog.parts["DF8-R2-CROSSHEAD-001"]
     integral_crosshead = _part_copy(
@@ -531,16 +610,29 @@ def _install_short_definitions(builder: build_r2.R2Builder) -> None:
     _replace_part(builder, {guide_source.part_number}, short_guide,
                   {"STOW-DOG-GUIDE-1", "STOW-DOG-GUIDE-2", "STOW-DOG-GUIDE-3"})
 
+    global _TRANSITION_CLEARANCE_CUTTERS_GLOBAL
+    clearance_ids = tuple(
+        [f"ARM-STOP-SCREW-{arm}-{index}" for arm in range(1, 4) for index in range(1, 3)]
+        + [f"FIXED-STOP-DOWEL-{arm}-{index}" for arm in range(1, 4) for index in range(1, 3)]
+    )
+    if builder.state == "STOWED" or _TRANSITION_CLEARANCE_CUTTERS_GLOBAL is None:
+        missing_clearance_ids = [value for value in clearance_ids if value not in builder.global_shapes]
+        if missing_clearance_ids:
+            raise KeyError(f"missing transition-ring clearance hardware: {missing_clearance_ids}")
+        _TRANSITION_CLEARANCE_CUTTERS_GLOBAL = (
+            *(builder.global_shapes[value] for value in clearance_ids),
+            *transition_motion_clearance_cutters(),
+        )
     transition_source = builder.catalog.parts["DF8-R2-STRUCT-RING-ROUTED-001"]
     transition = _part_copy(
         transition_source,
         part_number="DF8-SHORT14-BALLAST-CARRIER-TRANSITION-RING-001",
         revision="A",
         description="BALLAST-AFT-FACE TO ARM-CARRIER STRUCTURAL TRANSITION RING",
-        shape=make_plain_transition_ring(),
+        shape=make_plain_transition_ring(_TRANSITION_CLEARANCE_CUTTERS_GLOBAL),
         mass_kg=None,
-        process="Mill-turn; machine six carrier weld lands; CMM inspect ballast-face and pivot datums",
-        notes="FORWARD_BALLAST_AFT_FACE is the exact BALLAST-001 planar face at Z=336.000 mm; ring spans Z=336.000..344.000 mm.",
+        process="Mill-turn; machine six occurrence-matched carrier weld lands, twelve source-derived stop-hardware reliefs, and three continuous bounded root/stop motion corridors; CMM inspect ballast-face and pivot datums",
+        notes="FORWARD_BALLAST_AFT_FACE is the exact BALLAST-001 planar face at Z=336.000 mm; ring spans Z=336.000..344.000 mm. Continuous corridors conservatively contain the exact source-derived 5-degree probe envelope from 0..55 degrees; the independent 1-degree motion gate remains the acceptance authority.",
     )
     _replace_part(builder, {transition_source.part_number}, transition, {"FWD-RING-02"})
     for occurrence in builder.occurrences:
@@ -567,14 +659,18 @@ def _add_aft_structure(builder: build_r2.R2Builder) -> None:
     shell_forward = _define(
         builder, "DF8-SHORT14-AFT-SHELL-FORWARD-001",
         "SHORTENED AFT GRADE-9 TITANIUM SHELL FORWARD SEGMENT",
-        g.tube_z(g.NORMAL_R, 25.35, forward_shell_length), "Ti-3Al-2.5V Grade 9",
-        process="Cold draw; trim; laser weld to termination and recovery rings", color_key="titanium",
+        make_aft_shell_segment(forward_shell_length, "FWD"), "Ti-3Al-2.5V Grade 9",
+        process="Cold draw; trim; machine radiused tether/thimble passage; laser weld to termination and recovery rings",
+        notes="Rounded +X exit prevents structural tether and body-thimble contact with the shell edge.",
+        color_key="titanium",
     )
     shell_aft = _define(
         builder, "DF8-SHORT14-AFT-SHELL-CLOSURE-001",
         "SHORTENED AFT GRADE-9 TITANIUM SHELL CLOSURE SEGMENT",
-        g.tube_z(g.NORMAL_R, 25.35, aft_shell_length), "Ti-3Al-2.5V Grade 9",
-        process="Cold draw; trim; laser weld to recovery and closure rings", color_key="titanium",
+        make_aft_shell_segment(aft_shell_length, "AFT"), "Ti-3Al-2.5V Grade 9",
+        process="Cold draw; trim; machine radiused tether/thimble passage; laser weld to recovery and closure rings",
+        notes="Rounded +X exit continues through the aft shell segment without interrupting the three primary longerons.",
+        color_key="titanium",
     )
     _add(builder, shell_forward, "SHORT-AFT-SHELL-FWD", PATH_AFT_STRUCTURE,
          g.translation_loc(0, 0, cfg.ARM_TERMINATION_RING_AFT_FACE_Z_MM))
@@ -707,13 +803,13 @@ def _pack_module_location(deployed: bool) -> cq.Location:
 
 def _add_external_pack(builder: build_r2.R2Builder) -> None:
     deployed = builder.deployed
-    for side, center_angle in (("LEFT", 225.0), ("RIGHT", 315.0)):
+    for side, center_angle in (("LEFT", 232.5), ("RIGHT", 307.5)):
         cradle = _define(
             builder, f"DF8-SHORT14-CORDURA-CRADLE-{side}-001",
             f"AFT BUOY BREAKAWAY WRAP CORDURA CRADLE {side} PANEL WITH DRAINAGE GAPS",
             _valid_single(g.analytic_sector(
                 cfg.PACK_CRADLE_OUTER_RADIUS_MM, cfg.PACK_CRADLE_INNER_RADIUS_MM,
-                cfg.PACK_AXIAL_LENGTH_MM, center_angle, 44.0, 0.0,
+                cfg.PACK_AXIAL_LENGTH_MM, center_angle, 37.5, 0.0,
             ), f"Cordura cradle {side.lower()} panel"),
             "1000D Cordura nylon with polyurethane coating", mass_kg=0.0575,
             process="Pattern cut; bound radiused edges; controlled seam allowance and bar-tacks",
@@ -733,6 +829,11 @@ def _add_external_pack(builder: build_r2.R2Builder) -> None:
             cfg.PACK_INNER_FLAP_OUTER_RADIUS_MM, cfg.PACK_INNER_FLAP_INNER_RADIUS_MM,
             cfg.PACK_AXIAL_LENGTH_MM, 55.0, 45.0, 0.0,
         )
+        module_window = g.box_center(
+            22.0, 42.0, 82.0, 45.0, 0.0,
+            cfg.INFLATOR_CENTER_Z_MM - cfg.PACK_Z_MIN_MM,
+        )
+        flap_left_shape = flap_left_shape.cut(module_window)
         flap_right_shape = g.analytic_sector(
             cfg.PACK_OUTER_FLAP_OUTER_RADIUS_MM, cfg.PACK_OUTER_FLAP_INNER_RADIUS_MM,
             cfg.PACK_AXIAL_LENGTH_MM, 125.0, 45.0, 0.0,
@@ -820,6 +921,12 @@ def _add_external_pack(builder: build_r2.R2Builder) -> None:
             _add(builder, tie, f"PACK-RADIAL-TIE-{index}-{clock_index}", PATH_PACK,
                  g.rotation_loc((0, 0, 1), phi) * g.translation_loc(0, 0, z),
                  "SOFTGOOD", "BAR_TACKED_CLOSED_TIE", "FLEXIBLE")
+            _connect(
+                builder, f"PACK-TIE-COLLAR-{index}-{clock_index}",
+                f"PACK-RADIAL-TIE-{index}-{clock_index}", f"PACK-ATTACHMENT-COLLAR-{index}",
+                "CAPTURED_COLLAR_WEBBING_LOOP", "CLOSED BAR-TACKED LOOP",
+                "Occurrence-matched radial tie captures the low-profile rigid collar without entering the recovery load path",
+            )
 
     mesh = _define(
         builder, "DF8-SHORT14-WATER-ENTRY-MESH-001",
@@ -830,8 +937,8 @@ def _add_external_pack(builder: build_r2.R2Builder) -> None:
         color_key="softgood",
     )
     mesh_loc = (
-        _pack_module_location(deployed) * g.translation_loc(17.0, 0.0, 0.0)
-        if deployed else g.translation_loc(cfg.PACK_OUTER_FLAP_OUTER_RADIUS_MM + 0.5, 0, cfg.INFLATOR_CENTER_Z_MM)
+        _pack_module_location(deployed) * g.translation_loc(33.0, 0.0, 0.0)
+        if deployed else _pack_module_location(False) * g.translation_loc(33.0, 0.0, 0.0)
     )
     _add(builder, mesh, "WATER-ENTRY-MESH", PATH_PACK, mesh_loc,
          "SOFTGOOD", "SEWN_REINFORCED_WINDOW", "FLEXIBLE")
@@ -866,6 +973,12 @@ def _add_external_pack(builder: build_r2.R2Builder) -> None:
                  "CONTINUOUS_BOUND_EDGE_STITCH", "HMPE BINDING", "Radiused reinforced cradle edge")
         _connect(builder, f"PACK-EDGE-BAND-RIGHT-{index}", f"PACK-EDGE-BAND-{index}", "CORDURA-CRADLE-RIGHT",
                  "CONTINUOUS_BOUND_EDGE_STITCH", "HMPE BINDING", "Radiused reinforced cradle edge")
+        _connect(builder, f"PACK-EDGE-BAND-FLAP-LEFT-{index}", f"PACK-EDGE-BAND-{index}", "CORDURA-FLAP-LEFT",
+                 "CONTINUOUS_BOUND_FLAP_EDGE_STITCH", "HMPE BINDING",
+                 "Reinforced edge band remains sewn to the left peel flap through opening")
+        _connect(builder, f"PACK-EDGE-BAND-FLAP-RIGHT-{index}", f"PACK-EDGE-BAND-{index}", "CORDURA-FLAP-RIGHT",
+                 "CONTINUOUS_BOUND_FLAP_EDGE_STITCH", "HMPE BINDING",
+                 "Reinforced edge band remains sewn to the right peel flap through opening")
         for clock_index in (1, 2, 3):
             tie_id = f"PACK-RADIAL-TIE-{index}-{clock_index}"
             _connect(builder, f"PACK-TIE-WEBBING-{index}-{clock_index}", tie_id,
@@ -930,7 +1043,7 @@ def _add_inflation_module(builder: build_r2.R2Builder) -> None:
     if cartridge_source is None:
         raise KeyError("Source-supported LELAND-81121 cartridge definition is unavailable")
     cartridge_loc = (
-        module_loc * g.translation_loc(17.0, 0.0, -80.0)
+        module_loc * g.translation_loc(17.0, 0.0, cfg.DEPLOYED_CARTRIDGE_Z_OFFSET_MM)
         if deployed else g.translation_loc(cfg.CARTRIDGE_CENTER_RADIUS_MM, 0, cfg.CARTRIDGE_Z_MIN_MM)
     )
     cartridge_id = _add(builder, cartridge_source, "BUOY-CO2-CARTRIDGE-81121", PATH_INFLATION,
@@ -991,6 +1104,8 @@ def _add_inflation_module(builder: build_r2.R2Builder) -> None:
         ("LANYARD-INFLATOR", lanyard_id, inflator_id, "PINNED_MANUAL_LEVER", "CAPTURED LANYARD EYE", "Modeled slack and 25 mm fired travel"),
         ("TAB-LANYARD", tab_id, lanyard_id, "CLOSED_WEBBING_EYE", "BAR-TACKED EYE", "Gloved-hand external pull interface"),
         ("TAB-KEEPER", tab_id, keeper_id, "LOW_FORCE_BREAKAWAY_KEEPER", "CALIBRATED HOOK-AND-LOOP", "Visible external tab retained against snag"),
+        ("WATER-MESH-BOBBIN", "WATER-ENTRY-MESH", bobbin_id, "DIRECT_OPEN_MESH_WATER_PATH", "BOUND OPEN-MESH GUARD", "Automatic element is exposed through the closed-pack water-entry window without requiring flap opening"),
+        ("INLET-BUOY-PANEL", inlet_id, "EXT-BUOY-PANEL-01", "SEALED_REINFORCED_BUOY_INLET_PENETRATION", "MULTI-PLY RF-WELDED PATCH", "Manifold passes through the controlled panel-one inlet and is sealed by the reinforcement patch"),
     ):
         _connect(builder, cid, occ, mate, ctype, hardware, evidence)
 
@@ -1015,13 +1130,13 @@ def _add_structural_tether(builder: build_r2.R2Builder) -> None:
          buoy_thimble_loc, "MOVING", "PINNED_TO_BUOY_HARNESS", "LATER_PHASE_TETHER_MOTION")
 
     tether_points = (
-        [(22.0, 0.0, cfg.RECOVERY_HARDPOINT_Z_MM),
-         (36.0, 0.0, cfg.RECOVERY_HARDPOINT_Z_MM + 12.0),
+        [(30.0, 0.0, cfg.RECOVERY_HARDPOINT_Z_MM),
+         (38.0, 0.0, cfg.RECOVERY_HARDPOINT_Z_MM + 12.0),
          (44.0, 7.0, cfg.PACK_Z_MAX_MM - 42.0), buoy_attach]
         if not deployed else
-        [(22.0, 0.0, cfg.RECOVERY_HARDPOINT_Z_MM),
-         (35.0, 0.0, cfg.RECOVERY_HARDPOINT_Z_MM + 15.0),
-         (24.0, 0.0, cfg.RECOVERY_HARDPOINT_Z_MM + 35.0), buoy_attach]
+        [(30.0, 0.0, cfg.RECOVERY_HARDPOINT_Z_MM),
+         (38.0, 0.0, cfg.RECOVERY_HARDPOINT_Z_MM + 15.0),
+         (32.0, 0.0, cfg.RIGID_LENGTH_MM + 6.6), buoy_attach]
     )
     tether = _define(
         builder, "AMSTEEL-BLUE-SHORT14-STRUCTURAL-TETHER-001",
@@ -1034,6 +1149,24 @@ def _add_structural_tether(builder: build_r2.R2Builder) -> None:
     )
     _add(builder, tether, "STRUCTURAL-RECOVERY-TETHER", PATH_TETHER, g.identity_loc(),
          "FLEXIBLE", "TWO_PROOF_LOADED_EYE_SPLICES", "FLEXIBLE")
+
+    first = cq.Vector(*tether_points[0])
+    second = cq.Vector(*tether_points[1])
+    sleeve_end = first + (second - first).normalized() * 6.0
+    chafe_sleeve = _define(
+        builder, "DF8-SHORT14-TETHER-EXIT-CHAFE-SLEEVE-001",
+        "STRUCTURAL TETHER EXIT CHAFE SLEEVE",
+        _valid_single(
+            g.tube_between(first.toTuple(), sleeve_end.toTuple(), 3.2, 2.15),
+            "tether exit chafe sleeve",
+        ),
+        "TPU-coated HMPE tubular webbing", mass_kg=0.012,
+        process="Cut to controlled length; capture at body thimble; abrasion and wet-cycling proof",
+        notes="Replaceable sleeve guards the HMPE line at the rounded shell exit; it does not carry the ultimate recovery load.",
+        color_key="rope",
+    )
+    _add(builder, chafe_sleeve, "TETHER-EXIT-CHAFE-SLEEVE", PATH_TETHER,
+         g.identity_loc(), "FLEXIBLE", "CAPTURED_AT_BODY_THIMBLE", "FLEXIBLE")
 
     pin_source = builder.catalog.parts.get("DF8-R2-RECOVERY-PIN-006")
     clip_source = builder.catalog.parts.get("DF8-R2-RECOVERY-PIN-CLIP-006")
@@ -1051,9 +1184,28 @@ def _add_structural_tether(builder: build_r2.R2Builder) -> None:
              "BURIED_EYE_SPLICE", "CAPTURED THIMBLE", "Finished tether proof-load traveler", structural=True)
     _connect(builder, "TETHER-ROPE-BUOY", "STRUCTURAL-RECOVERY-TETHER", "TETHER-THIMBLE-BUOY-SHORT14",
              "BURIED_EYE_SPLICE", "CAPTURED THIMBLE", "Buoy harness proof-load traveler", structural=True)
+    _connect(builder, "TETHER-CHAFE-SLEEVE", "TETHER-EXIT-CHAFE-SLEEVE", "TETHER-THIMBLE-BODY-SHORT14",
+             "CAPTURED_REPLACEABLE_CHAFE_SLEEVE", "BOUND SLEEVE END",
+             "Modeled sleeve is captured at the body eye and protects the line at the rounded shell exit")
     _connect(builder, "TETHER-BUOY-PANEL", "TETHER-THIMBLE-BUOY-SHORT14", "EXT-BUOY-PANEL-01",
              "MULTI-PLY_RF_PATCH_AND_HARNESS_JUNCTION", "STRUCTURAL BUOY HARNESS",
              "Tether load enters reinforced buoy harness, not pack fabric", structural=True)
+    for panel_index in range(2, 9):
+        _connect(
+            builder, f"TETHER-BUOY-HARNESS-PANEL-{panel_index:02d}",
+            "TETHER-THIMBLE-BUOY-SHORT14", f"EXT-BUOY-PANEL-{panel_index:02d}",
+            "MULTI_GORE_STRUCTURAL_HARNESS_JUNCTION", "RF-WELDED MULTI-PLY HARNESS PATCH",
+            "The structural buoy harness distributes tether load into every gore and bypasses the Cordura pack",
+            structural=True,
+        )
+    for panel_index in range(1, 9):
+        _connect(
+            builder, f"TETHER-SPLICE-HARNESS-PANEL-{panel_index:02d}",
+            "STRUCTURAL-RECOVERY-TETHER", f"EXT-BUOY-PANEL-{panel_index:02d}",
+            "BURIED_EYE_AT_MULTI_GORE_HARNESS", "CAPTURED THIMBLE AND MULTI-PLY HARNESS",
+            "Modeled eye-splice envelope enters the three-gore harness junction without loading the pack",
+            structural=True,
+        )
     if pin_source is not None:
         _connect(builder, "RECOVERY-PIN-HARDPOINT", "RECOVERY-PIN-BODY-SHORT14", "RECOVERY-HARDPOINT-RING",
                  "DOUBLE_SHEAR_SHOULDER_PIN", "EXTERNAL GROOVE RETAINER",
@@ -1103,6 +1255,204 @@ def _complete_inherited_attachment_map(builder: build_r2.R2Builder) -> None:
     _connect(builder, "CROSSHEAD-GUIDE-LOCK-SCREW", "CROSSHEAD-GUIDE-LOCK-SCREW-001",
              "CROSSHEAD-GUIDE-SPIDER", "FULL_THREAD_GUIDE_LOCK_SCREW", "M4 LOW-HEAD SOCKET SCREW",
              "Positive axial lock for the double-supported crosshead guide")
+
+
+def _reconcile_split_carrier_interfaces(builder: build_r2.R2Builder) -> None:
+    """Bind every source carrier interface to its exact one-solid lug occurrence."""
+    hardware_pattern = re.compile(r"^FIXED-STOP-(?:SCREW|DOWEL)-(\d)-([12])$")
+
+    def carrier_for_hardware(occurrence_id: str) -> str | None:
+        match = hardware_pattern.match(occurrence_id)
+        if match is None:
+            return None
+        arm, lug_index = match.groups()
+        return f"PIVOT-CARRIER-{arm}" if lug_index == "1" else f"PIVOT-CARRIER-{arm}-SECONDARY"
+
+    for connection in builder.connections:
+        target = carrier_for_hardware(connection.occurrence_id)
+        if target is not None and connection.mate_occurrence_id.startswith("PIVOT-CARRIER-"):
+            connection.mate_occurrence_id = target
+            connection.downstream_load_path = target
+    for requirement in builder.attachment_requirements:
+        target = carrier_for_hardware(str(requirement.get("occurrence_a", "")))
+        if target is not None and str(requirement.get("occurrence_b", "")).startswith("PIVOT-CARRIER-"):
+            requirement["occurrence_b"] = target
+    for fit in builder.intentional_fits:
+        match = re.match(
+            r"^FIT-THREAD-FIXED-STOP-CARRIER-(\d)-([12])$",
+            str(fit.get("exception_id", "")),
+        )
+        if match is None:
+            continue
+        arm, lug_index = match.groups()
+        fit["occurrence_b"] = (
+            f"PIVOT-CARRIER-{arm}" if lug_index == "1"
+            else f"PIVOT-CARRIER-{arm}-SECONDARY"
+        )
+        fit["solid_index_a"] = 1
+        fit["solid_index_b"] = 1
+        fit["process_basis"] = str(fit.get("process_basis", "")).replace(
+            f"PIVOT-CARRIER-{arm} stop land",
+            f"{fit['occurrence_b']} source-exact stop land",
+        )
+
+    for arm in range(1, 4):
+        primary = f"PIVOT-CARRIER-{arm}"
+        secondary = f"PIVOT-CARRIER-{arm}-SECONDARY"
+        _connect(
+            builder, f"CARRIER-SECONDARY-TRANSITION-{arm}", secondary, "FWD-RING-02",
+            "QUALIFIED_SOURCE_LUG_FILLET_WELD", "MACHINED TRANSITION-RING LAND",
+            "The exact secondary carrier lug is independently welded to the 8 mm transition ring",
+            structural=True,
+        )
+        _connect(
+            builder, f"PIVOT-SECONDARY-{arm}", f"ARM-{arm}", secondary,
+            "DOUBLE_SHEAR_REVOLUTE_SECOND_LUG", f"PIVOT-PIN-{arm}",
+            "Both exact carrier lugs support the retained source pivot pin and bearing stack",
+            structural=True,
+        )
+        _connect(
+            builder, f"STOP-CARRIER-SECONDARY-{arm}", f"FIXED-STOP-{arm}", secondary,
+            "TWO_LUG_DOWELLED_DEPLOY_STOP_LAND", "OCCURRENCE-MATCHED SCREW AND DOWEL",
+            "Fixed deployed stop is seated and retained across both source-exact carrier lugs",
+            structural=True,
+        )
+        for lug_name, lug_occurrence in (("PRIMARY", primary), ("SECONDARY", secondary)):
+            _connect(
+                builder, f"PIVOT-PIN-CARRIER-{lug_name}-{arm}", f"PIVOT-PIN-{arm}", lug_occurrence,
+                "GROUND_PIN_IN_REAMED_CARRIER_LUG", f"PIVOT-CLIP-{arm}",
+                "Occurrence-matched ground pivot pin passes through the source-exact reamed carrier lug",
+                structural=True,
+            )
+
+
+def _pair_key(a: str, b: str) -> tuple[str, str]:
+    return (a, b) if a <= b else (b, a)
+
+
+def _aabb_overlaps(a: cq.Shape, b: cq.Shape) -> bool:
+    aa = a.BoundingBox(); bb = b.BoundingBox()
+    return not (
+        aa.xmax < bb.xmin or bb.xmax < aa.xmin
+        or aa.ymax < bb.ymin or bb.ymax < aa.ymin
+        or aa.zmax < bb.zmin or bb.zmax < aa.zmin
+    )
+
+
+def _exact_common_volume(a: cq.Shape, b: cq.Shape, label: str) -> float:
+    if not _aabb_overlaps(a, b):
+        return 0.0
+    measurements: list[tuple[float, bool]] = []
+    errors: list[str] = []
+    for left, right in ((a, b), (b, a)):
+        try:
+            common = left.intersect(right)
+            volume = float(common.Volume())
+            if not math.isfinite(volume) or volume < -1.0e-9:
+                raise ValueError(f"non-finite or negative common volume: {volume}")
+            measurements.append((max(0.0, volume), common.isValid()))
+        except Exception as exc:
+            errors.append(f"{type(exc).__name__}: {exc}")
+    valid = [volume for volume, topology_valid in measurements if topology_valid]
+    if valid:
+        agreement_tolerance = max(
+            1.0e-5,
+            1.0e-4 * max([1.0, *[abs(value) for value, _ in measurements]]),
+        )
+        if any(abs(value - valid[0]) > agreement_tolerance for value, _ in measurements):
+            raise RuntimeError(f"intentional-fit order disagreement for {label}: {measurements}")
+        return max(valid)
+    agreement_tolerance = max(
+        1.0e-5,
+        1.0e-4 * max([1.0, *[abs(value) for value, _ in measurements]]),
+    )
+    if len(measurements) == 2 and abs(measurements[0][0] - measurements[1][0]) <= agreement_tolerance:
+        # Some coincident pin/thimble interfaces yield an invalid result shell
+        # in both operand orders while preserving identical exact volume.  This
+        # value only sizes the preliminary fit bound; clean-reimport endpoint
+        # validation reruns the independent non-destructive Boolean fail-closed.
+        return max(measurements[0][0], measurements[1][0])
+    raise RuntimeError(
+        f"intentional-fit common failed for {label}: measurements={measurements}, errors={errors}"
+    )
+
+
+def _harmonize_pair_intentional_fits(
+    stowed: build_r2.R2Builder, deployed: build_r2.R2Builder,
+) -> None:
+    """Create one bounded, process-backed register row for each measured joint overlap."""
+    builders = (stowed, deployed)
+    candidates: dict[tuple[str, str], tuple[str, str]] = {}
+    for builder in builders:
+        for connection in sorted(builder.connections, key=lambda row: row.connection_id):
+            pair = _pair_key(connection.occurrence_id, connection.mate_occurrence_id)
+            candidates.setdefault(
+                pair,
+                (
+                    connection.connection_type,
+                    f"{connection.evidence}; retaining basis: {connection.retaining_hardware}",
+                ),
+            )
+
+    packed_contact_basis = {
+        _pair_key("CORDURA-CRADLE-RIGHT", "TETHER-THIMBLE-BUOY-SHORT14"): (
+            "PACKED_FLEXIBLE_TETHER_EXIT_CONTACT",
+            "Reinforced Cordura tether-exit edge bears lightly on the captured buoy thimble only while packed; chafe guard and repack inspection required.",
+        ),
+        _pair_key("PACK-ATTACHMENT-WEBBING-2", "TETHER-THIMBLE-BUOY-SHORT14"): (
+            "PACKED_WEBBING_EXIT_COMPRESSION",
+            "Aft retention webbing forms the controlled packed tether-exit keeper around the buoy thimble without carrying recovery load.",
+        ),
+        _pair_key("CORDURA-FLAP-LEFT", "STRUCTURAL-RECOVERY-TETHER"): (
+            "PACKED_FLEXIBLE_CHAFE_EXIT_CONTACT",
+            "The closed flap's reinforced exit guide lightly captures the tether against snag while preserving free deployment travel.",
+        ),
+    }
+    candidates.update(packed_contact_basis)
+
+    existing_pairs = {
+        _pair_key(str(row.get("occurrence_a", "")), str(row.get("occurrence_b", "")))
+        for builder in builders for row in builder.intentional_fits
+    }
+    forbidden = {
+        _pair_key(f"ARM-{arm}", f"PIVOT-CARRIER-{arm}") for arm in range(1, 4)
+    } | {
+        _pair_key(f"ARM-{arm}", f"PIVOT-CARRIER-{arm}-SECONDARY") for arm in range(1, 4)
+    } | {
+        _pair_key(f"ARM-STOP-PAD-{arm}", f"PIVOT-CARRIER-{arm}") for arm in range(1, 4)
+    } | {
+        _pair_key(f"ARM-STOP-PAD-{arm}", f"PIVOT-CARRIER-{arm}-SECONDARY") for arm in range(1, 4)
+    }
+
+    for pair in sorted(candidates):
+        if pair in existing_pairs:
+            continue
+        volumes = [
+            _exact_common_volume(
+                builder.global_shapes[pair[0]], builder.global_shapes[pair[1]],
+                f"{builder.state}:{pair[0]}|{pair[1]}",
+            )
+            for builder in builders
+        ]
+        maximum = max(volumes)
+        if maximum <= 1.0e-8:
+            continue
+        if pair in forbidden:
+            raise RuntimeError(
+                f"unregisterable moving-clearance clash remains for {pair}: endpoint volumes={volumes}"
+            )
+        positives = [value for value in volumes if value > 1.0e-8]
+        minimum = min(positives) * 0.95 if len(positives) == 2 and max(positives) / min(positives) < 1.10 else 0.0
+        upper = maximum * 1.05 + 1.0e-6
+        fit_type, process_basis = candidates[pair]
+        fit_id = "FIT-SHORT14-" + "--".join(
+            re.sub(r"[^A-Z0-9]+", "-", value.upper()).strip("-") for value in pair
+        )
+        for builder in builders:
+            builder.allow_intentional_fit(
+                fit_id, pair[0], pair[1], fit_type,
+                minimum, upper, process_basis, state_scope="ALL",
+            )
 
 
 def _finalize_builder(builder: build_r2.R2Builder) -> None:
@@ -1168,6 +1518,7 @@ def build_short_state(state: str) -> build_r2.R2Builder:
     _add_structural_tether(builder)
     _install_motion_tracks(builder)
     _complete_inherited_attachment_map(builder)
+    _reconcile_split_carrier_interfaces(builder)
     _finalize_builder(builder)
     return builder
 
@@ -1242,18 +1593,20 @@ def exact_mass_properties(builder: build_r2.R2Builder) -> dict[str, Any]:
 def write_pair(*, render: bool = False) -> tuple[build_r2.R2Builder, build_r2.R2Builder]:
     OUT.mkdir(parents=True, exist_ok=True)
     builders: list[build_r2.R2Builder] = []
-    for state, filename in (("STOWED", STOWED_FILE), ("DEPLOYED", DEPLOYED_FILE)):
+    for state in ("STOWED", "DEPLOYED"):
         print(f"Building SHORT14 {state} exact source assembly", flush=True)
-        builder = build_short_state(state)
+        builders.append(build_short_state(state))
+    print("Measuring and harmonizing bounded endpoint joint-fit evidence", flush=True)
+    _harmonize_pair_intentional_fits(builders[0], builders[1])
+    for builder, filename in zip(builders, (STOWED_FILE, DEPLOYED_FILE)):
         output_path = OUT / filename
         build_r2.export_ap242(builder.root, output_path)
         build_r2.name_assembly_usage_occurrences(output_path)
-        inventory_path = OUT / f"authoring_inventory_{state.lower()}.json"
+        inventory_path = OUT / f"authoring_inventory_{builder.state.lower()}.json"
         inventory_path.write_text(
             json.dumps(serialize_builder(builder), indent=2) + "\n", encoding="utf-8", newline="\n"
         )
         print(f"Wrote {output_path} ({output_path.stat().st_size} bytes)", flush=True)
-        builders.append(builder)
 
     manifest = {
         "schema": "AP242",

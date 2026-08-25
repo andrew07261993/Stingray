@@ -2,7 +2,7 @@
 
 > **THESE ARE ENGINEERING INSPECTION PACKAGES FOR OWNER CREO REVIEW. NONE SHALL BE TREATED AS FORMAL RELEASE CAD.**
 
-These four packages preserve eight existing STOWED/DEPLOYED AP242 models for owner Creo inspection from the NASA computer. Package 04 also exposes both STEP files individually for direct download. No CAD geometry or STEP file was regenerated for this transfer.
+These five packages preserve ten existing STOWED/DEPLOYED AP242 models for owner Creo inspection from the NASA computer. Packages 04 and 05 also expose both STEP files individually for direct download. No CAD geometry or STEP file was regenerated for this transfer.
 
 | Package | Arm station | Arm length | Body length | Buoy architecture | Status | Creo purpose |
 |---|---:|---:|---:|---|---|---|
@@ -10,8 +10,9 @@ These four packages preserve eight existing STOWED/DEPLOYED AP242 models for own
 | Architecture C Forward-Packed | forward-packed developmental | — | — | COTS-heavy | NOT RELEASED; known interference | inspect COTS-heavy packaging |
 | Architecture C 889 mm Fallback | 889 mm | — | — | COTS-heavy | measured fallback | compare aft-arm packaging |
 | 14-in Short-Arm / External-Buoy | 480 mm | 14.890 in | 1675.4 mm | External Cordura breakaway buoy pack / UML MK5 proxy | Developmental CAD complete | Inspect compact short-arm / short-body architecture |
+| True Forward-Powertrain Short14 External-Buoy | 355 mm | 14.890 in | 1675.4 mm | External Cordura breakaway buoy / Hydro 1F proxy | Developmental CAD complete | Inspect most-forward compact powertrain architecture |
 
-**PACKAGE 04 IS CURRENTLY THE MOST AGGRESSIVE COMPACT-BODY DEVELOPMENTAL VARIANT.**
+**PACKAGE 05 IS THE MOST FORWARD ARM-POWERTRAIN / COMPACT-BODY DEVELOPMENTAL VARIANT CURRENTLY COMPLETED.**
 
 ## Source, integrity, and limitation record
 
@@ -51,6 +52,16 @@ These four packages preserve eight existing STOWED/DEPLOYED AP242 models for own
 - STOWED AP242 SHA-256: `0e24135f35f86e5ec727bfcffa0f6d9c55195c44ab8af90c7a29b5a95cb505c7`
 - DEPLOYED AP242 SHA-256: `dda7dde5140ff6a108f4e501f4a1e1d974a533b93403cc6ac13beb64f398d244`
 - Known validation limitation: physical wet inflation/peel, fabric engagement, snag/retention/extraction, recovery proof-load, controlled vendor geometry/material evidence, procurement identity/CoC, and quantitative fall/orientation verification remain downstream gates.
+- Status: developmental engineering inspection model; not formal release CAD.
+
+### 05 — True Forward-Powertrain / Short14 / External-Buoy
+
+- Local source branch: `design/df8-14in-short-forward-powertrain-external-buoy`
+- Completed source commits: `a55e925db67b2720c98af5e7694c16c142a07144`, `59db97570d175adff550e1cd25451708ea3e114a`, `0f5be86cc42147cf7f9dc502c2f562d86811b206`, `66ee53955d3ce7945e12949ecbc3e99d591fd5b1`, `aa186c9c1c311c510ac34e48bd4170ef7636b7bf`
+- ZIP SHA-256: `4d124b4bb410689071545a41c9c17c31e9393eadbf41ae6a800c5cd458b52a6c`
+- STOWED AP242 SHA-256: `87a6d6f2f234fe955ef6a87aa9f7ac242d28ee10e23b9b60aca94e90e68a02c0`
+- DEPLOYED AP242 SHA-256: `fbb716986ce6913715a78468b29fec8ae0a1eb45f64b9a6f825407655d68d1de`
+- Known validation limitation: fabric engagement/retention, physical wet inflation/breakaway, finished-article inflator/cartridge/buoy compatibility, leak testing, recovery proof-load, gloved pull, snag, drainage, repack, and quantitative fall/orientation verification remain downstream physical-test gates.
 - Status: developmental engineering inspection model; not formal release CAD.
 
 Each package directory includes `SHA256SUMS.txt` with the ZIP hash and hashes for every contained entry.

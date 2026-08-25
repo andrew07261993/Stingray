@@ -1,0 +1,1165 @@
+{
+  "schema": "STINGRAY_SHORT14_FORWARD_POWERTRAIN_EXTERNAL_BUOY_VALIDATION_V1",
+  "source_baseline_commit": "a31fce0e768f354b1831331bc2ed145223c8b2c4",
+  "input_sha256": {
+    "STINGRAY_I5S_DF8_SHORT14_FORWARD_POWERTRAIN_EXTERNAL_BUOY_STOWED_AP242.step": "87a6d6f2f234fe955ef6a87aa9f7ac242d28ee10e23b9b60aca94e90e68a02c0",
+    "STINGRAY_I5S_DF8_SHORT14_FORWARD_POWERTRAIN_EXTERNAL_BUOY_DEPLOYED_AP242.step": "fbb716986ce6913715a78468b29fec8ae0a1eb45f64b9a6f825407655d68d1de"
+  },
+  "dimensions": {
+    "source_rigid_length_mm": 2031.0,
+    "new_rigid_length_mm": 1675.4,
+    "body_reduction_mm": 355.5999999999999,
+    "forward_ballast_aft_face_z_mm": 336.0000001,
+    "arm_carrier_forward_face_z_mm": 344.0,
+    "ballast_aft_face_to_carrier_forward_face_mm": 7.9999998999999775,
+    "arm_pivot_axis_z_mm": 355.0,
+    "ballast_aft_face_to_pivot_axis_mm": 18.999999899999978,
+    "source_arm_pivot_axis_z_mm": 480.0,
+    "actual_forward_movement_mm": 125.0,
+    "arm_pivot_to_tip_lengths_mm": {
+      "ARM-1": 378.2060001,
+      "ARM-2": 378.2060001,
+      "ARM-3": 378.2060001
+    },
+    "maximum_arm_length_error_mm": 9.999996564147295e-08,
+    "closed_cordura_pack_bbox_mm": {
+      "xmin": -49.0,
+      "ymin": -49.0,
+      "zmin": 1368.0,
+      "xmax": 49.0,
+      "ymax": 49.0,
+      "zmax": 1606.0
+    },
+    "closed_cordura_pack_maximum_od_mm": 98.0,
+    "closed_pack_axial_length_mm": 238.0,
+    "ready_to_throw_total_length_mm": 1675.4,
+    "deployed_overall_bbox_mm": {
+      "xmin": -243.309,
+      "ymin": -342.72027610497787,
+      "zmin": 0.0,
+      "xmax": 391.93621064589814,
+      "ymax": 342.72027610497236,
+      "zmax": 2173.309
+    },
+    "deployed_overall_axial_length_mm": 2173.309
+  },
+  "gate_1_placement": {
+    "carrier_directly_aft_of_ballast": true,
+    "ballast_aft_face_to_carrier_forward_face_mm": 7.9999998999999775,
+    "ballast_aft_face_to_pivot_mm": 18.999999899999978,
+    "prohibited_interval_component_count": 0,
+    "actual_forward_movement_mm": 125.0,
+    "disposition": "PASS"
+  },
+  "gate_2_changed_part_quality": {
+    "STOWED": {
+      "state": "STOWED",
+      "changed_occurrence_count": 70,
+      "invalid_changed_occurrence_count": 0,
+      "invalid_changed_occurrences": [],
+      "disconnected_changed_nominal_body_count": 0,
+      "disconnected_changed_nominal_bodies": [],
+      "open_or_invalid_shell_count": 0,
+      "open_or_invalid_shells": [],
+      "tiny_unintended_edge_count": 0,
+      "tiny_unintended_edges": [],
+      "sliver_face_count": 0,
+      "sliver_faces": [],
+      "nonmanifold_topology_count": 0,
+      "abrupt_unintended_surface_normal_discontinuity_count": 0,
+      "broken_radius_or_fillet_count": 0,
+      "blocked_boolean_count": 0,
+      "accepted": true
+    },
+    "DEPLOYED": {
+      "state": "DEPLOYED",
+      "changed_occurrence_count": 70,
+      "invalid_changed_occurrence_count": 0,
+      "invalid_changed_occurrences": [],
+      "disconnected_changed_nominal_body_count": 0,
+      "disconnected_changed_nominal_bodies": [],
+      "open_or_invalid_shell_count": 0,
+      "open_or_invalid_shells": [],
+      "tiny_unintended_edge_count": 0,
+      "tiny_unintended_edges": [],
+      "sliver_face_count": 0,
+      "sliver_faces": [],
+      "nonmanifold_topology_count": 0,
+      "abrupt_unintended_surface_normal_discontinuity_count": 0,
+      "broken_radius_or_fillet_count": 0,
+      "blocked_boolean_count": 0,
+      "accepted": true
+    }
+  },
+  "gate_3_endpoints": {
+    "STOWED": {
+      "inventory_occurrence_count": 180,
+      "imported_occurrence_count": 180,
+      "imported_solid_count": 180,
+      "invalid_solid_count": 0,
+      "faceted_or_tessellated_rigid_geometry_count": 0,
+      "flattened_or_missing_named_subassembly_tree": false,
+      "unauthorized_rigid_interference_count": 0,
+      "blocked_boolean_count": 0,
+      "floating_part_count": 0,
+      "disconnected_attachment_count": 0,
+      "disposition": "PASS"
+    },
+    "DEPLOYED": {
+      "inventory_occurrence_count": 180,
+      "imported_occurrence_count": 180,
+      "imported_solid_count": 180,
+      "invalid_solid_count": 0,
+      "faceted_or_tessellated_rigid_geometry_count": 0,
+      "flattened_or_missing_named_subassembly_tree": false,
+      "unauthorized_rigid_interference_count": 0,
+      "blocked_boolean_count": 0,
+      "floating_part_count": 0,
+      "disconnected_attachment_count": 0,
+      "disposition": "PASS"
+    }
+  },
+  "gate_4_buoy_pack_function": {
+    "automatic_water_access": "CAD PASS \u2014 direct open mesh path while closed; physical wet activation open",
+    "manual_pull_access": "CAD PASS \u2014 external tab, 18.0 mm slack, 25.0 mm fired travel; physical pull/snag test open",
+    "pack_flap_opening_direction": "CAD PASS \u2014 peel-dominant",
+    "buoy_expansion_clearance": "CAD PASS",
+    "tether_exit": "CAD PASS \u2014 radiused chafe-protected exit",
+    "deployed_buoy_clearance": "CAD PASS",
+    "pack_retention": "CAD PASS \u2014 two collar/webbing systems; proof test open",
+    "opening_force_screen": {
+      "status": "PROVISIONAL CAD SENSITIVITY SCREEN \u2014 NOT A PHYSICAL PASS",
+      "hook_and_loop_overlap_angle_deg": 16.0,
+      "mean_overlap_radius_mm": 47.32,
+      "estimated_overlap_arc_width_mm": 13.214236832699468,
+      "active_axial_strip_length_mm": 214.0,
+      "estimated_overlap_area_mm2": 2827.8466821976863,
+      "assumed_wet_peel_line_load_range_n_per_cm": [
+        1.5,
+        3.5
+      ],
+      "estimated_total_wet_peel_force_range_n": [
+        32.099999999999994,
+        74.89999999999999
+      ],
+      "initial_inflated_projected_area_mm2": 6137.541071759165,
+      "provisional_opening_pressure_range_kpa": [
+        5.230107566644661,
+        12.203584322170876
+      ],
+      "opening_force_margin": "NOT CALCULABLE \u2014 no source-supported wet delivered-pressure curve is available for the packed finished assembly",
+      "required_test": "WET INFLATION / BREAKAWAY TEST REQUIRED",
+      "maximum_rigid_span_mm": 56.5
+    },
+    "disposition": "CAD_PASS_PHYSICAL_TESTS_OPEN"
+  },
+  "gate_5_five_angle": {
+    "gate": "SHORT14 FIVE-ANGLE EXACT BOOLEAN GATE",
+    "angles_deg": [
+      0,
+      20,
+      40,
+      55,
+      80
+    ],
+    "worker_count": 2,
+    "input_sha256": {
+      "STEP:STOWED": "87a6d6f2f234fe955ef6a87aa9f7ac242d28ee10e23b9b60aca94e90e68a02c0",
+      "STEP:DEPLOYED": "fbb716986ce6913715a78468b29fec8ae0a1eb45f64b9a6f825407655d68d1de",
+      "INVENTORY:STOWED": "67ae4314d128993d6ab0de761645717f704cbec47b14f33848999025a9f83765",
+      "INVENTORY:DEPLOYED": "7cebfb5c59d25ac148cda125ddce6094558b6fdfebc29c65f6243a1973d50498"
+    },
+    "geometry_modified": false,
+    "common_volume_epsilon_mm3": 1e-06,
+    "pair_register": "C:\\Users\\ANDRE.ANDREWSPC\\Documents\\Codex\\2026-08-25\\stingray-i5-s-df8-14in-short-forward-powertrain-buoy\\work\\short14_external_buoy\\validation\\five_angle_gate_attempt_2\\five_motion_exact_boolean_pairs.csv.gz",
+    "kinematics_register": "C:\\Users\\ANDRE.ANDREWSPC\\Documents\\Codex\\2026-08-25\\stingray-i5-s-df8-14in-short-forward-powertrain-buoy\\work\\short14_external_buoy\\validation\\five_angle_gate_attempt_2\\five_motion_kinematics.csv",
+    "pair_row_count": 43035,
+    "unauthorized_positive_volume_pair_count": 0,
+    "documented_positive_volume_pair_count": 55,
+    "boolean_blocked_pair_count": 0,
+    "track_validation_error_count": 0,
+    "track_validation_errors": [],
+    "intentional_fit_register_error_count": 0,
+    "per_angle": {
+      "0": {
+        "pair_row_count": 8607,
+        "broadphase_candidate_count": 284,
+        "unauthorized_positive_volume_pair_count": 0,
+        "documented_positive_volume_pair_count": 11,
+        "boolean_blocked_pair_count": 0,
+        "track_validation_error_count": 0,
+        "intentional_fit_register_error_count": 0,
+        "elapsed_seconds": 34.952943563461304
+      },
+      "20": {
+        "pair_row_count": 8607,
+        "broadphase_candidate_count": 303,
+        "unauthorized_positive_volume_pair_count": 0,
+        "documented_positive_volume_pair_count": 11,
+        "boolean_blocked_pair_count": 0,
+        "track_validation_error_count": 0,
+        "intentional_fit_register_error_count": 0,
+        "elapsed_seconds": 27.1106059551239
+      },
+      "40": {
+        "pair_row_count": 8607,
+        "broadphase_candidate_count": 310,
+        "unauthorized_positive_volume_pair_count": 0,
+        "documented_positive_volume_pair_count": 11,
+        "boolean_blocked_pair_count": 0,
+        "track_validation_error_count": 0,
+        "intentional_fit_register_error_count": 0,
+        "elapsed_seconds": 29.656473636627197
+      },
+      "55": {
+        "pair_row_count": 8607,
+        "broadphase_candidate_count": 338,
+        "unauthorized_positive_volume_pair_count": 0,
+        "documented_positive_volume_pair_count": 11,
+        "boolean_blocked_pair_count": 0,
+        "track_validation_error_count": 0,
+        "intentional_fit_register_error_count": 0,
+        "elapsed_seconds": 29.698349714279175
+      },
+      "80": {
+        "pair_row_count": 8607,
+        "broadphase_candidate_count": 331,
+        "unauthorized_positive_volume_pair_count": 0,
+        "documented_positive_volume_pair_count": 11,
+        "boolean_blocked_pair_count": 0,
+        "track_validation_error_count": 0,
+        "intentional_fit_register_error_count": 0,
+        "elapsed_seconds": 50.904505491256714
+      }
+    },
+    "crosshead_travel_0_to_80_mm": 15.055034371135037,
+    "maximum_closure_residual_abs_mm": 1.7763568394002505e-14,
+    "elapsed_seconds": 133.13019251823425,
+    "disposition": "PASS"
+  },
+  "gate_6_full_motion": {
+    "gate": "SHORT14 FULL 0..80 ONE-DEGREE EXACT BOOLEAN SWEEP 1",
+    "angles_deg": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60,
+      61,
+      62,
+      63,
+      64,
+      65,
+      66,
+      67,
+      68,
+      69,
+      70,
+      71,
+      72,
+      73,
+      74,
+      75,
+      76,
+      77,
+      78,
+      79,
+      80
+    ],
+    "angle_increment_deg": 1,
+    "execution_topology": {
+      "mode": "TWO_BOUNDED_STAGES_FOUR_CONTIGUOUS_HASHED_SHARDS",
+      "stage_1_batches": [
+        "0..20",
+        "21..40"
+      ],
+      "stage_2_batches": [
+        "41..60",
+        "61..80"
+      ],
+      "workers_per_stage": 2,
+      "complete_sweep_count": 1,
+      "second_sweep_used": false
+    },
+    "input_sha256": {
+      "STEP:STOWED": "87a6d6f2f234fe955ef6a87aa9f7ac242d28ee10e23b9b60aca94e90e68a02c0",
+      "STEP:DEPLOYED": "fbb716986ce6913715a78468b29fec8ae0a1eb45f64b9a6f825407655d68d1de",
+      "INVENTORY:STOWED": "67ae4314d128993d6ab0de761645717f704cbec47b14f33848999025a9f83765",
+      "INVENTORY:DEPLOYED": "7cebfb5c59d25ac148cda125ddce6094558b6fdfebc29c65f6243a1973d50498"
+    },
+    "geometry_modified": false,
+    "common_volume_epsilon_mm3": 1e-06,
+    "pair_register": "C:\\Users\\ANDRE.ANDREWSPC\\Documents\\Codex\\2026-08-25\\stingray-i5-s-df8-14in-short-forward-powertrain-buoy\\work\\short14_external_buoy\\validation\\full_motion_sweep_1\\full_motion_exact_boolean_pairs.csv.gz",
+    "kinematics_register": "C:\\Users\\ANDRE.ANDREWSPC\\Documents\\Codex\\2026-08-25\\stingray-i5-s-df8-14in-short-forward-powertrain-buoy\\work\\short14_external_buoy\\validation\\full_motion_sweep_1\\full_motion_kinematics.csv",
+    "pair_row_count": 697167,
+    "unauthorized_positive_volume_pair_count": 0,
+    "documented_positive_volume_pair_count": 891,
+    "boolean_blocked_pair_count": 0,
+    "track_validation_error_count": 0,
+    "track_validation_errors": [],
+    "intentional_fit_register_error_count": 0,
+    "crosshead_travel_0_to_80_mm": 15.055034371135037,
+    "maximum_closure_residual_abs_mm": 2.4868995751603507e-14,
+    "per_angle": {
+      "0": {
+        "pair_row_count": 8607,
+        "broadphase_candidate_count": 284,
+        "unauthorized_positive_volume_pair_count": 0,
+        "documented_positive_volume_pair_count": 11,
+        "boolean_blocked_pair_count": 0
+      },
+      "1": {
+        "pair_row_count": 8607,
+        "broadphase_candidate_count": 277,
+        "unauthorized_positive_volume_pair_count": 0,
+        "documented_positive_volume_pair_count": 11,
+        "boolean_blocked_pair_count": 0
+      },
+      "2": {
+        "pair_row_count": 8607,
+        "broadphase_candidate_count": 285,
+        "unauthorized_positive_volume_pair_count": 0,
+        "documented_positive_volume_pair_count": 11,
+        "boolean_blocked_pair_count": 0
+      },
+      "3": {
+        "pair_row_count": 8607,
+        "broadphase_candidate_count": 282,
+        "unauthorized_positive_volume_pair_count": 0,
+        "documented_positive_volume_pair_count": 11,
+        "boolean_blocked_pair_count": 0
+      },
+      "4": {
+        "pair_row_count": 8607,
+        "broadphase_candidate_count": 283,
+        "unauthorized_positive_volume_pair_count": 0,
+        "documented_positive_volume_pair_count": 11,
+        "boolean_blocked_pair_count": 0
+      },
+      "5": {
+        "pair_row_count": 8607,
+        "broadphase_candidate_count": 286,
+        "unauthorized_positive_volume_pair_count": 0,
+        "documented_positive_volume_pair_count": 11,
+        "boolean_blocked_pair_count": 0
+      },
+      "6": {
+        "pair_row_count": 8607,
+        "broadphase_candidate_count": 286,
+        "unauthorized_positive_volume_pair_count": 0,
+        "documented_positive_volume_pair_count": 11,
+        "boolean_blocked_pair_count": 0
+      },
+      "7": {
+        "pair_row_count": 8607,
+        "broadphase_candidate_count": 287,
+        "unauthorized_positive_volume_pair_count": 0,
+        "documented_positive_volume_pair_count": 11,
+        "boolean_blocked_pair_count": 0
+      },
+      "8": {
+        "pair_row_count": 8607,
+        "broadphase_candidate_count": 288,
+        "unauthorized_positive_volume_pair_count": 0,
+        "documented_positive_volume_pair_count": 11,
+        "boolean_blocked_pair_count": 0
+      },
+      "9": {
+        "pair_row_count": 8607,
+        "broadphase_candidate_count": 289,
+        "unauthorized_positive_volume_pair_count": 0,
+        "documented_positive_volume_pair_count": 11,
+        "boolean_blocked_pair_count": 0
+      },
+      "10": {
+        "pair_row_count": 8607,
+        "broadphase_candidate_count": 283,
+        "unauthorized_positive_volume_pair_count": 0,
+        "documented_positive_volume_pair_count": 11,
+        "boolean_blocked_pair_count": 0
+      },
+      "11": {
+        "pair_row_count": 8607,
+        "broadphase_candidate_count": 288,
+        "unauthorized_positive_volume_pair_count": 0,
+        "documented_positive_volume_pair_count": 11,
+        "boolean_blocked_pair_count": 0
+      },
+      "12": {
+        "pair_row_count": 8607,
+        "broadphase_candidate_count": 294,
+        "unauthorized_positive_volume_pair_count": 0,
+        "documented_positive_volume_pair_count": 11,
+        "boolean_blocked_pair_count": 0
+      },
+      "13": {
+        "pair_row_count": 8607,
+        "broadphase_candidate_count": 294,
+        "unauthorized_positive_volume_pair_count": 0,
+        "documented_positive_volume_pair_count": 11,
+        "boolean_blocked_pair_count": 0
+      },
+      "14": {
+        "pair_row_count": 8607,
+        "broadphase_candidate_count": 303,
+        "unauthorized_positive_volume_pair_count": 0,
+        "documented_positive_volume_pair_count": 11,
+        "boolean_blocked_pair_count": 0
+      },
+      "15": {
+        "pair_row_count": 8607,
+        "broadphase_candidate_count": 306,
+        "unauthorized_positive_volume_pair_count": 0,
+        "documented_positive_volume_pair_count": 11,
+        "boolean_blocked_pair_count": 0
+      },
+      "16": {
+        "pair_row_count": 8607,
+        "broadphase_candidate_count": 305,
+        "unauthorized_positive_volume_pair_count": 0,
+        "documented_positive_volume_pair_count": 11,
+        "boolean_blocked_pair_count": 0
+      },
+      "17": {
+        "pair_row_count": 8607,
+        "broadphase_candidate_count": 305,
+        "unauthorized_positive_volume_pair_count": 0,
+        "documented_positive_volume_pair_count": 11,
+        "boolean_blocked_pair_count": 0
+      },
+      "18": {
+        "pair_row_count": 8607,
+        "broadphase_candidate_count": 304,
+        "unauthorized_positive_volume_pair_count": 0,
+        "documented_positive_volume_pair_count": 11,
+        "boolean_blocked_pair_count": 0
+      },
+      "19": {
+        "pair_row_count": 8607,
+        "broadphase_candidate_count": 303,
+        "unauthorized_positive_volume_pair_count": 0,
+        "documented_positive_volume_pair_count": 11,
+        "boolean_blocked_pair_count": 0
+      },
+      "20": {
+        "pair_row_count": 8607,
+        "broadphase_candidate_count": 303,
+        "unauthorized_positive_volume_pair_count": 0,
+        "documented_positive_volume_pair_count": 11,
+        "boolean_blocked_pair_count": 0
+      },
+      "21": {
+        "pair_row_count": 8607,
+        "broadphase_candidate_count": 305,
+        "unauthorized_positive_volume_pair_count": 0,
+        "documented_positive_volume_pair_count": 11,
+        "boolean_blocked_pair_count": 0
+      },
+      "22": {
+        "pair_row_count": 8607,
+        "broadphase_candidate_count": 305,
+        "unauthorized_positive_volume_pair_count": 0,
+        "documented_positive_volume_pair_count": 11,
+        "boolean_blocked_pair_count": 0
+      },
+      "23": {
+        "pair_row_count": 8607,
+        "broadphase_candidate_count": 302,
+        "unauthorized_positive_volume_pair_count": 0,
+        "documented_positive_volume_pair_count": 11,
+        "boolean_blocked_pair_count": 0
+      },
+      "24": {
+        "pair_row_count": 8607,
+        "broadphase_candidate_count": 302,
+        "unauthorized_positive_volume_pair_count": 0,
+        "documented_positive_volume_pair_count": 11,
+        "boolean_blocked_pair_count": 0
+      },
+      "25": {
+        "pair_row_count": 8607,
+        "broadphase_candidate_count": 300,
+        "unauthorized_positive_volume_pair_count": 0,
+        "documented_positive_volume_pair_count": 11,
+        "boolean_blocked_pair_count": 0
+      },
+      "26": {
+        "pair_row_count": 8607,
+        "broadphase_candidate_count": 299,
+        "unauthorized_positive_volume_pair_count": 0,
+        "documented_positive_volume_pair_count": 11,
+        "boolean_blocked_pair_count": 0
+      },
+      "27": {
+        "pair_row_count": 8607,
+        "broadphase_candidate_count": 299,
+        "unauthorized_positive_volume_pair_count": 0,
+        "documented_positive_volume_pair_count": 11,
+        "boolean_blocked_pair_count": 0
+      },
+      "28": {
+        "pair_row_count": 8607,
+        "broadphase_candidate_count": 299,
+        "unauthorized_positive_volume_pair_count": 0,
+        "documented_positive_volume_pair_count": 11,
+        "boolean_blocked_pair_count": 0
+      },
+      "29": {
+        "pair_row_count": 8607,
+        "broadphase_candidate_count": 301,
+        "unauthorized_positive_volume_pair_count": 0,
+        "documented_positive_volume_pair_count": 11,
+        "boolean_blocked_pair_count": 0
+      },
+      "30": {
+        "pair_row_count": 8607,
+        "broadphase_candidate_count": 301,
+        "unauthorized_positive_volume_pair_count": 0,
+        "documented_positive_volume_pair_count": 11,
+        "boolean_blocked_pair_count": 0
+      },
+      "31": {
+        "pair_row_count": 8607,
+        "broadphase_candidate_count": 303,
+        "unauthorized_positive_volume_pair_count": 0,
+        "documented_positive_volume_pair_count": 11,
+        "boolean_blocked_pair_count": 0
+      },
+      "32": {
+        "pair_row_count": 8607,
+        "broadphase_candidate_count": 302,
+        "unauthorized_positive_volume_pair_count": 0,
+        "documented_positive_volume_pair_count": 11,
+        "boolean_blocked_pair_count": 0
+      },
+      "33": {
+        "pair_row_count": 8607,
+        "broadphase_candidate_count": 301,
+        "unauthorized_positive_volume_pair_count": 0,
+        "documented_positive_volume_pair_count": 11,
+        "boolean_blocked_pair_count": 0
+      },
+      "34": {
+        "pair_row_count": 8607,
+        "broadphase_candidate_count": 303,
+        "unauthorized_positive_volume_pair_count": 0,
+        "documented_positive_volume_pair_count": 11,
+        "boolean_blocked_pair_count": 0
+      },
+      "35": {
+        "pair_row_count": 8607,
+        "broadphase_candidate_count": 303,
+        "unauthorized_positive_volume_pair_count": 0,
+        "documented_positive_volume_pair_count": 11,
+        "boolean_blocked_pair_count": 0
+      },
+      "36": {
+        "pair_row_count": 8607,
+        "broadphase_candidate_count": 305,
+        "unauthorized_positive_volume_pair_count": 0,
+        "documented_positive_volume_pair_count": 11,
+        "boolean_blocked_pair_count": 0
+      },
+      "37": {
+        "pair_row_count": 8607,
+        "broadphase_candidate_count": 305,
+        "unauthorized_positive_volume_pair_count": 0,
+        "documented_positive_volume_pair_count": 11,
+        "boolean_blocked_pair_count": 0
+      },
+      "38": {
+        "pair_row_count": 8607,
+        "broadphase_candidate_count": 308,
+        "unauthorized_positive_volume_pair_count": 0,
+        "documented_positive_volume_pair_count": 11,
+        "boolean_blocked_pair_count": 0
+      },
+      "39": {
+        "pair_row_count": 8607,
+        "broadphase_candidate_count": 309,
+        "unauthorized_positive_volume_pair_count": 0,
+        "documented_positive_volume_pair_count": 11,
+        "boolean_blocked_pair_count": 0
+      },
+      "40": {
+        "pair_row_count": 8607,
+        "broadphase_candidate_count": 310,
+        "unauthorized_positive_volume_pair_count": 0,
+        "documented_positive_volume_pair_count": 11,
+        "boolean_blocked_pair_count": 0
+      },
+      "41": {
+        "pair_row_count": 8607,
+        "broadphase_candidate_count": 316,
+        "unauthorized_positive_volume_pair_count": 0,
+        "documented_positive_volume_pair_count": 11,
+        "boolean_blocked_pair_count": 0
+      },
+      "42": {
+        "pair_row_count": 8607,
+        "broadphase_candidate_count": 318,
+        "unauthorized_positive_volume_pair_count": 0,
+        "documented_positive_volume_pair_count": 11,
+        "boolean_blocked_pair_count": 0
+      },
+      "43": {
+        "pair_row_count": 8607,
+        "broadphase_candidate_count": 318,
+        "unauthorized_positive_volume_pair_count": 0,
+        "documented_positive_volume_pair_count": 11,
+        "boolean_blocked_pair_count": 0
+      },
+      "44": {
+        "pair_row_count": 8607,
+        "broadphase_candidate_count": 319,
+        "unauthorized_positive_volume_pair_count": 0,
+        "documented_positive_volume_pair_count": 11,
+        "boolean_blocked_pair_count": 0
+      },
+      "45": {
+        "pair_row_count": 8607,
+        "broadphase_candidate_count": 325,
+        "unauthorized_positive_volume_pair_count": 0,
+        "documented_positive_volume_pair_count": 11,
+        "boolean_blocked_pair_count": 0
+      },
+      "46": {
+        "pair_row_count": 8607,
+        "broadphase_candidate_count": 327,
+        "unauthorized_positive_volume_pair_count": 0,
+        "documented_positive_volume_pair_count": 11,
+        "boolean_blocked_pair_count": 0
+      },
+      "47": {
+        "pair_row_count": 8607,
+        "broadphase_candidate_count": 327,
+        "unauthorized_positive_volume_pair_count": 0,
+        "documented_positive_volume_pair_count": 11,
+        "boolean_blocked_pair_count": 0
+      },
+      "48": {
+        "pair_row_count": 8607,
+        "broadphase_candidate_count": 327,
+        "unauthorized_positive_volume_pair_count": 0,
+        "documented_positive_volume_pair_count": 11,
+        "boolean_blocked_pair_count": 0
+      },
+      "49": {
+        "pair_row_count": 8607,
+        "broadphase_candidate_count": 324,
+        "unauthorized_positive_volume_pair_count": 0,
+        "documented_positive_volume_pair_count": 11,
+        "boolean_blocked_pair_count": 0
+      },
+      "50": {
+        "pair_row_count": 8607,
+        "broadphase_candidate_count": 323,
+        "unauthorized_positive_volume_pair_count": 0,
+        "documented_positive_volume_pair_count": 11,
+        "boolean_blocked_pair_count": 0
+      },
+      "51": {
+        "pair_row_count": 8607,
+        "broadphase_candidate_count": 324,
+        "unauthorized_positive_volume_pair_count": 0,
+        "documented_positive_volume_pair_count": 11,
+        "boolean_blocked_pair_count": 0
+      },
+      "52": {
+        "pair_row_count": 8607,
+        "broadphase_candidate_count": 325,
+        "unauthorized_positive_volume_pair_count": 0,
+        "documented_positive_volume_pair_count": 11,
+        "boolean_blocked_pair_count": 0
+      },
+      "53": {
+        "pair_row_count": 8607,
+        "broadphase_candidate_count": 327,
+        "unauthorized_positive_volume_pair_count": 0,
+        "documented_positive_volume_pair_count": 11,
+        "boolean_blocked_pair_count": 0
+      },
+      "54": {
+        "pair_row_count": 8607,
+        "broadphase_candidate_count": 332,
+        "unauthorized_positive_volume_pair_count": 0,
+        "documented_positive_volume_pair_count": 11,
+        "boolean_blocked_pair_count": 0
+      },
+      "55": {
+        "pair_row_count": 8607,
+        "broadphase_candidate_count": 338,
+        "unauthorized_positive_volume_pair_count": 0,
+        "documented_positive_volume_pair_count": 11,
+        "boolean_blocked_pair_count": 0
+      },
+      "56": {
+        "pair_row_count": 8607,
+        "broadphase_candidate_count": 343,
+        "unauthorized_positive_volume_pair_count": 0,
+        "documented_positive_volume_pair_count": 11,
+        "boolean_blocked_pair_count": 0
+      },
+      "57": {
+        "pair_row_count": 8607,
+        "broadphase_candidate_count": 343,
+        "unauthorized_positive_volume_pair_count": 0,
+        "documented_positive_volume_pair_count": 11,
+        "boolean_blocked_pair_count": 0
+      },
+      "58": {
+        "pair_row_count": 8607,
+        "broadphase_candidate_count": 343,
+        "unauthorized_positive_volume_pair_count": 0,
+        "documented_positive_volume_pair_count": 11,
+        "boolean_blocked_pair_count": 0
+      },
+      "59": {
+        "pair_row_count": 8607,
+        "broadphase_candidate_count": 344,
+        "unauthorized_positive_volume_pair_count": 0,
+        "documented_positive_volume_pair_count": 11,
+        "boolean_blocked_pair_count": 0
+      },
+      "60": {
+        "pair_row_count": 8607,
+        "broadphase_candidate_count": 345,
+        "unauthorized_positive_volume_pair_count": 0,
+        "documented_positive_volume_pair_count": 11,
+        "boolean_blocked_pair_count": 0
+      },
+      "61": {
+        "pair_row_count": 8607,
+        "broadphase_candidate_count": 343,
+        "unauthorized_positive_volume_pair_count": 0,
+        "documented_positive_volume_pair_count": 11,
+        "boolean_blocked_pair_count": 0
+      },
+      "62": {
+        "pair_row_count": 8607,
+        "broadphase_candidate_count": 340,
+        "unauthorized_positive_volume_pair_count": 0,
+        "documented_positive_volume_pair_count": 11,
+        "boolean_blocked_pair_count": 0
+      },
+      "63": {
+        "pair_row_count": 8607,
+        "broadphase_candidate_count": 341,
+        "unauthorized_positive_volume_pair_count": 0,
+        "documented_positive_volume_pair_count": 11,
+        "boolean_blocked_pair_count": 0
+      },
+      "64": {
+        "pair_row_count": 8607,
+        "broadphase_candidate_count": 341,
+        "unauthorized_positive_volume_pair_count": 0,
+        "documented_positive_volume_pair_count": 11,
+        "boolean_blocked_pair_count": 0
+      },
+      "65": {
+        "pair_row_count": 8607,
+        "broadphase_candidate_count": 338,
+        "unauthorized_positive_volume_pair_count": 0,
+        "documented_positive_volume_pair_count": 11,
+        "boolean_blocked_pair_count": 0
+      },
+      "66": {
+        "pair_row_count": 8607,
+        "broadphase_candidate_count": 338,
+        "unauthorized_positive_volume_pair_count": 0,
+        "documented_positive_volume_pair_count": 11,
+        "boolean_blocked_pair_count": 0
+      },
+      "67": {
+        "pair_row_count": 8607,
+        "broadphase_candidate_count": 339,
+        "unauthorized_positive_volume_pair_count": 0,
+        "documented_positive_volume_pair_count": 11,
+        "boolean_blocked_pair_count": 0
+      },
+      "68": {
+        "pair_row_count": 8607,
+        "broadphase_candidate_count": 337,
+        "unauthorized_positive_volume_pair_count": 0,
+        "documented_positive_volume_pair_count": 11,
+        "boolean_blocked_pair_count": 0
+      },
+      "69": {
+        "pair_row_count": 8607,
+        "broadphase_candidate_count": 335,
+        "unauthorized_positive_volume_pair_count": 0,
+        "documented_positive_volume_pair_count": 11,
+        "boolean_blocked_pair_count": 0
+      },
+      "70": {
+        "pair_row_count": 8607,
+        "broadphase_candidate_count": 326,
+        "unauthorized_positive_volume_pair_count": 0,
+        "documented_positive_volume_pair_count": 11,
+        "boolean_blocked_pair_count": 0
+      },
+      "71": {
+        "pair_row_count": 8607,
+        "broadphase_candidate_count": 327,
+        "unauthorized_positive_volume_pair_count": 0,
+        "documented_positive_volume_pair_count": 11,
+        "boolean_blocked_pair_count": 0
+      },
+      "72": {
+        "pair_row_count": 8607,
+        "broadphase_candidate_count": 324,
+        "unauthorized_positive_volume_pair_count": 0,
+        "documented_positive_volume_pair_count": 11,
+        "boolean_blocked_pair_count": 0
+      },
+      "73": {
+        "pair_row_count": 8607,
+        "broadphase_candidate_count": 328,
+        "unauthorized_positive_volume_pair_count": 0,
+        "documented_positive_volume_pair_count": 11,
+        "boolean_blocked_pair_count": 0
+      },
+      "74": {
+        "pair_row_count": 8607,
+        "broadphase_candidate_count": 331,
+        "unauthorized_positive_volume_pair_count": 0,
+        "documented_positive_volume_pair_count": 11,
+        "boolean_blocked_pair_count": 0
+      },
+      "75": {
+        "pair_row_count": 8607,
+        "broadphase_candidate_count": 332,
+        "unauthorized_positive_volume_pair_count": 0,
+        "documented_positive_volume_pair_count": 11,
+        "boolean_blocked_pair_count": 0
+      },
+      "76": {
+        "pair_row_count": 8607,
+        "broadphase_candidate_count": 338,
+        "unauthorized_positive_volume_pair_count": 0,
+        "documented_positive_volume_pair_count": 11,
+        "boolean_blocked_pair_count": 0
+      },
+      "77": {
+        "pair_row_count": 8607,
+        "broadphase_candidate_count": 337,
+        "unauthorized_positive_volume_pair_count": 0,
+        "documented_positive_volume_pair_count": 11,
+        "boolean_blocked_pair_count": 0
+      },
+      "78": {
+        "pair_row_count": 8607,
+        "broadphase_candidate_count": 332,
+        "unauthorized_positive_volume_pair_count": 0,
+        "documented_positive_volume_pair_count": 11,
+        "boolean_blocked_pair_count": 0
+      },
+      "79": {
+        "pair_row_count": 8607,
+        "broadphase_candidate_count": 325,
+        "unauthorized_positive_volume_pair_count": 0,
+        "documented_positive_volume_pair_count": 11,
+        "boolean_blocked_pair_count": 0
+      },
+      "80": {
+        "pair_row_count": 8607,
+        "broadphase_candidate_count": 331,
+        "unauthorized_positive_volume_pair_count": 0,
+        "documented_positive_volume_pair_count": 11,
+        "boolean_blocked_pair_count": 0
+      }
+    },
+    "stage_elapsed_seconds": {
+      "stage_1": 594.7181096076965,
+      "stage_2": 785.157872915268
+    },
+    "elapsed_seconds": 1379.8759825229645,
+    "disposition": "PASS"
+  },
+  "gate_7_dimensional_mass": {
+    "arm_length_mm": 378.206,
+    "body_reduction_mm": 355.6,
+    "new_rigid_length_mm": 1675.4,
+    "maximum_rigid_span_mm": 56.5,
+    "maximum_rigid_od_limit_mm": 57.15,
+    "stowed_mass_kg": 10.583165211312703,
+    "mass_reserve_kg": 7.556834788687297,
+    "disposition": "PASS"
+  },
+  "gate_8_ap242": {
+    "STOWED": {
+      "clean_reimport_leaf_identity": {
+        "leaf_row_count": 180,
+        "blank_occurrence_id_count": 0,
+        "blank_occurrence_id_rows": [],
+        "duplicate_occurrence_ids": [],
+        "duplicate_occurrence_id_count": 0,
+        "accepted": true
+      },
+      "assembly_hierarchy": {
+        "state": "STOWED",
+        "expected_root_name": "STINGRAY_I5S_DF8_SHORT14_EXTERNAL_BUOY_STOWED_ASSY",
+        "actual_root_name": "STINGRAY_I5S_DF8_SHORT14_EXTERNAL_BUOY_STOWED_ASSY",
+        "expected_top_level_assembly_names": [
+          "Arm_Activation_Powertrain_Assembly",
+          "Forward_Body_Assembly",
+          "Shortened_Aft_Body_External_Buoy_Assembly"
+        ],
+        "actual_top_level_assembly_names": [
+          "Arm_Activation_Powertrain_Assembly",
+          "Forward_Body_Assembly",
+          "Shortened_Aft_Body_External_Buoy_Assembly"
+        ],
+        "expected_assembly_paths": [
+          "Arm_Activation_Powertrain_Assembly",
+          "Arm_Activation_Powertrain_Assembly/Arm_Deployment_Assembly_01",
+          "Arm_Activation_Powertrain_Assembly/Arm_Deployment_Assembly_02",
+          "Arm_Activation_Powertrain_Assembly/Arm_Deployment_Assembly_03",
+          "Arm_Activation_Powertrain_Assembly/Powertrain_Mandatory_Hardware_Assembly",
+          "Forward_Body_Assembly",
+          "Forward_Body_Assembly/Forward_Mandatory_Hardware_Assembly",
+          "Shortened_Aft_Body_External_Buoy_Assembly",
+          "Shortened_Aft_Body_External_Buoy_Assembly/Aft_Buoy_Breakaway_Wrap_CORDURA",
+          "Shortened_Aft_Body_External_Buoy_Assembly/Buoy_Mounted_Automatic_Manual_Inflation_Assembly",
+          "Shortened_Aft_Body_External_Buoy_Assembly/Shortened_Aft_Structure_Assembly",
+          "Shortened_Aft_Body_External_Buoy_Assembly/Structural_Recovery_Tether_Assembly"
+        ],
+        "actual_assembly_paths": [
+          "Arm_Activation_Powertrain_Assembly",
+          "Arm_Activation_Powertrain_Assembly/Arm_Deployment_Assembly_01",
+          "Arm_Activation_Powertrain_Assembly/Arm_Deployment_Assembly_02",
+          "Arm_Activation_Powertrain_Assembly/Arm_Deployment_Assembly_03",
+          "Arm_Activation_Powertrain_Assembly/Powertrain_Mandatory_Hardware_Assembly",
+          "Forward_Body_Assembly",
+          "Forward_Body_Assembly/Forward_Mandatory_Hardware_Assembly",
+          "Shortened_Aft_Body_External_Buoy_Assembly",
+          "Shortened_Aft_Body_External_Buoy_Assembly/Aft_Buoy_Breakaway_Wrap_CORDURA",
+          "Shortened_Aft_Body_External_Buoy_Assembly/Buoy_Mounted_Automatic_Manual_Inflation_Assembly",
+          "Shortened_Aft_Body_External_Buoy_Assembly/Shortened_Aft_Structure_Assembly",
+          "Shortened_Aft_Body_External_Buoy_Assembly/Structural_Recovery_Tether_Assembly"
+        ],
+        "missing_assembly_paths": [],
+        "unexpected_assembly_paths": [],
+        "leaf_parent_path_mismatch_count": 0,
+        "leaf_parent_path_mismatches": [],
+        "flattened_or_missing_named_subassembly_tree": false,
+        "issue_count": 0,
+        "issues": [],
+        "accepted": true
+      },
+      "inventory_occurrence_count": 180,
+      "imported_occurrence_count": 180,
+      "imported_solid_count": 180,
+      "missing_occurrence_ids": [],
+      "unexpected_occurrence_ids": [],
+      "part_number_mismatch_occurrence_ids": [],
+      "maximum_inventory_to_reimport_bbox_delta_mm": 7.912603905424476e-11,
+      "bbox_mismatch_rows": [],
+      "invalid_solid_count": 0,
+      "invalid_solid_keys": [],
+      "multisolid_nominal_definition_count": 0,
+      "multisolid_nominal_definitions": [],
+      "ap242_schema_detected": true,
+      "millimetre_length_unit_detected": true,
+      "faceted_or_tessellated_rigid_geometry_count": 0,
+      "named_product_count": 105,
+      "unnamed_product_count": 0,
+      "named_assembly_usage_occurrence_count": 192,
+      "unnamed_assembly_usage_occurrence_count": 0,
+      "accepted_before_pair_audit": true
+    },
+    "DEPLOYED": {
+      "clean_reimport_leaf_identity": {
+        "leaf_row_count": 180,
+        "blank_occurrence_id_count": 0,
+        "blank_occurrence_id_rows": [],
+        "duplicate_occurrence_ids": [],
+        "duplicate_occurrence_id_count": 0,
+        "accepted": true
+      },
+      "assembly_hierarchy": {
+        "state": "DEPLOYED",
+        "expected_root_name": "STINGRAY_I5S_DF8_SHORT14_EXTERNAL_BUOY_DEPLOYED_ASSY",
+        "actual_root_name": "STINGRAY_I5S_DF8_SHORT14_EXTERNAL_BUOY_DEPLOYED_ASSY",
+        "expected_top_level_assembly_names": [
+          "Arm_Activation_Powertrain_Assembly",
+          "Forward_Body_Assembly",
+          "Shortened_Aft_Body_External_Buoy_Assembly"
+        ],
+        "actual_top_level_assembly_names": [
+          "Arm_Activation_Powertrain_Assembly",
+          "Forward_Body_Assembly",
+          "Shortened_Aft_Body_External_Buoy_Assembly"
+        ],
+        "expected_assembly_paths": [
+          "Arm_Activation_Powertrain_Assembly",
+          "Arm_Activation_Powertrain_Assembly/Arm_Deployment_Assembly_01",
+          "Arm_Activation_Powertrain_Assembly/Arm_Deployment_Assembly_02",
+          "Arm_Activation_Powertrain_Assembly/Arm_Deployment_Assembly_03",
+          "Arm_Activation_Powertrain_Assembly/Powertrain_Mandatory_Hardware_Assembly",
+          "Forward_Body_Assembly",
+          "Forward_Body_Assembly/Forward_Mandatory_Hardware_Assembly",
+          "Shortened_Aft_Body_External_Buoy_Assembly",
+          "Shortened_Aft_Body_External_Buoy_Assembly/Aft_Buoy_Breakaway_Wrap_CORDURA",
+          "Shortened_Aft_Body_External_Buoy_Assembly/Buoy_Mounted_Automatic_Manual_Inflation_Assembly",
+          "Shortened_Aft_Body_External_Buoy_Assembly/Shortened_Aft_Structure_Assembly",
+          "Shortened_Aft_Body_External_Buoy_Assembly/Structural_Recovery_Tether_Assembly"
+        ],
+        "actual_assembly_paths": [
+          "Arm_Activation_Powertrain_Assembly",
+          "Arm_Activation_Powertrain_Assembly/Arm_Deployment_Assembly_01",
+          "Arm_Activation_Powertrain_Assembly/Arm_Deployment_Assembly_02",
+          "Arm_Activation_Powertrain_Assembly/Arm_Deployment_Assembly_03",
+          "Arm_Activation_Powertrain_Assembly/Powertrain_Mandatory_Hardware_Assembly",
+          "Forward_Body_Assembly",
+          "Forward_Body_Assembly/Forward_Mandatory_Hardware_Assembly",
+          "Shortened_Aft_Body_External_Buoy_Assembly",
+          "Shortened_Aft_Body_External_Buoy_Assembly/Aft_Buoy_Breakaway_Wrap_CORDURA",
+          "Shortened_Aft_Body_External_Buoy_Assembly/Buoy_Mounted_Automatic_Manual_Inflation_Assembly",
+          "Shortened_Aft_Body_External_Buoy_Assembly/Shortened_Aft_Structure_Assembly",
+          "Shortened_Aft_Body_External_Buoy_Assembly/Structural_Recovery_Tether_Assembly"
+        ],
+        "missing_assembly_paths": [],
+        "unexpected_assembly_paths": [],
+        "leaf_parent_path_mismatch_count": 0,
+        "leaf_parent_path_mismatches": [],
+        "flattened_or_missing_named_subassembly_tree": false,
+        "issue_count": 0,
+        "issues": [],
+        "accepted": true
+      },
+      "inventory_occurrence_count": 180,
+      "imported_occurrence_count": 180,
+      "imported_solid_count": 180,
+      "missing_occurrence_ids": [],
+      "unexpected_occurrence_ids": [],
+      "part_number_mismatch_occurrence_ids": [],
+      "maximum_inventory_to_reimport_bbox_delta_mm": 4.1177372622769326e-10,
+      "bbox_mismatch_rows": [],
+      "invalid_solid_count": 0,
+      "invalid_solid_keys": [],
+      "multisolid_nominal_definition_count": 0,
+      "multisolid_nominal_definitions": [],
+      "ap242_schema_detected": true,
+      "millimetre_length_unit_detected": true,
+      "faceted_or_tessellated_rigid_geometry_count": 0,
+      "named_product_count": 105,
+      "unnamed_product_count": 0,
+      "named_assembly_usage_occurrence_count": 192,
+      "unnamed_assembly_usage_occurrence_count": 0,
+      "accepted_before_pair_audit": true
+    },
+    "disposition": "PASS"
+  },
+  "quality_counts": {
+    "floating_part_count": 0,
+    "disconnected_attachment_count": 0,
+    "unsupported_hardware_count": 0,
+    "unretained_pin_count": 0,
+    "broken_radius_or_fillet_count": 0,
+    "broken_route_count": 0,
+    "route_to_nowhere_count": 0,
+    "fragmented_nominal_part_count": 0,
+    "unexplained_rigid_opening_count": 0,
+    "invalid_rigid_solid_count": 0,
+    "faceted_brep_count": 0,
+    "hidden_unauthorized_rigid_interference_count": 0
+  },
+  "removal_summary": {
+    "all_deleted_source_occurrence_count": 157,
+    "all_deleted_unique_definition_count": 79,
+    "all_deleted_source_mass_kg": 2.801502,
+    "dedicated_ejector_occurrence_count": 42,
+    "dedicated_ejector_unique_definition_count": 19,
+    "dedicated_ejector_source_mass_kg": 0.349617,
+    "complete_internal_buoy_architecture_occurrence_count": 145,
+    "complete_internal_buoy_architecture_unique_definition_count": 71,
+    "complete_internal_buoy_architecture_source_mass_kg": 1.645191,
+    "final_deleted_occurrence_residual_count": 0
+  },
+  "register_counts": {
+    "external_pack_component_count": 41,
+    "softgoods_attachment_connection_count": 91,
+    "final_connection_count": 254,
+    "bom_delta_row_count": 337
+  },
+  "inspection_png_names": [
+    "01_BASELINE_AXIAL_SIDE_SECTION.png",
+    "02_CORRECTED_AXIAL_SIDE_SECTION.png",
+    "03_BASELINE_NEW_AXIAL_OVERLAY.png",
+    "04_FORWARD_BALLAST_CARRIER_ADJACENCY.png",
+    "05_AFT_EXTENDING_POWERTRAIN.png",
+    "06_RELOCATED_RETAINED_CYLINDER_LAYOUT.png",
+    "07_SHORTENED_STOWED_SYSTEM.png",
+    "08_SHORTENED_DEPLOYED_SYSTEM.png",
+    "09_CLOSED_CORDURA_BUOY_PACK.png",
+    "10_PACK_SECTION_INFLATOR_WATER_ACCESS.png",
+    "11_EXTERNAL_MANUAL_PULL_ACCESS.png",
+    "12_OPEN_PACK_INFLATED_BUOY_TETHER_LOAD_PATH.png"
+  ],
+  "inspection_png_count": 12,
+  "physical_test_gates": [
+    "PHYSICAL FABRIC-ENGAGEMENT AND RETENTION TEST REQUIRED",
+    "WET INFLATION / BREAKAWAY TEST REQUIRED",
+    "INFLATOR/CARTRIDGE/BUOY-VOLUME COMPATIBILITY, LEAK, PROOF-LOAD, PULL, SNAG, DRAINAGE, AND REPACK TESTS REQUIRED",
+    "QUANTITATIVE FALL/ORIENTATION EQUIVALENCE REMAINS A SEPARATE VERIFICATION ITEM"
+  ],
+  "final_disposition": "14-INCH SHORT-ARM / SHORT-BODY TRUE FORWARD-POWERTRAIN EXTERNAL-BUOY DEVELOPMENTAL CAD COMPLETE \u2014 READY FOR OWNER CREO INSPECTION",
+  "disposition": "PASS"
+}

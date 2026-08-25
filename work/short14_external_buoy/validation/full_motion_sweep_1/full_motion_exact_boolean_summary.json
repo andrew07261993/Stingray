@@ -1,0 +1,695 @@
+{
+  "gate": "SHORT14 FULL 0..80 ONE-DEGREE EXACT BOOLEAN SWEEP 1",
+  "angles_deg": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    72,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80
+  ],
+  "angle_increment_deg": 1,
+  "execution_topology": {
+    "mode": "TWO_BOUNDED_STAGES_FOUR_CONTIGUOUS_HASHED_SHARDS",
+    "stage_1_batches": [
+      "0..20",
+      "21..40"
+    ],
+    "stage_2_batches": [
+      "41..60",
+      "61..80"
+    ],
+    "workers_per_stage": 2,
+    "complete_sweep_count": 1,
+    "second_sweep_used": false
+  },
+  "input_sha256": {
+    "STEP:STOWED": "87a6d6f2f234fe955ef6a87aa9f7ac242d28ee10e23b9b60aca94e90e68a02c0",
+    "STEP:DEPLOYED": "fbb716986ce6913715a78468b29fec8ae0a1eb45f64b9a6f825407655d68d1de",
+    "INVENTORY:STOWED": "67ae4314d128993d6ab0de761645717f704cbec47b14f33848999025a9f83765",
+    "INVENTORY:DEPLOYED": "7cebfb5c59d25ac148cda125ddce6094558b6fdfebc29c65f6243a1973d50498"
+  },
+  "geometry_modified": false,
+  "common_volume_epsilon_mm3": 1e-06,
+  "pair_register": "C:\\Users\\ANDRE.ANDREWSPC\\Documents\\Codex\\2026-08-25\\stingray-i5-s-df8-14in-short-forward-powertrain-buoy\\work\\short14_external_buoy\\validation\\full_motion_sweep_1\\full_motion_exact_boolean_pairs.csv.gz",
+  "kinematics_register": "C:\\Users\\ANDRE.ANDREWSPC\\Documents\\Codex\\2026-08-25\\stingray-i5-s-df8-14in-short-forward-powertrain-buoy\\work\\short14_external_buoy\\validation\\full_motion_sweep_1\\full_motion_kinematics.csv",
+  "pair_row_count": 697167,
+  "unauthorized_positive_volume_pair_count": 0,
+  "documented_positive_volume_pair_count": 891,
+  "boolean_blocked_pair_count": 0,
+  "track_validation_error_count": 0,
+  "track_validation_errors": [],
+  "intentional_fit_register_error_count": 0,
+  "crosshead_travel_0_to_80_mm": 15.055034371135037,
+  "maximum_closure_residual_abs_mm": 2.4868995751603507e-14,
+  "per_angle": {
+    "0": {
+      "pair_row_count": 8607,
+      "broadphase_candidate_count": 284,
+      "unauthorized_positive_volume_pair_count": 0,
+      "documented_positive_volume_pair_count": 11,
+      "boolean_blocked_pair_count": 0
+    },
+    "1": {
+      "pair_row_count": 8607,
+      "broadphase_candidate_count": 277,
+      "unauthorized_positive_volume_pair_count": 0,
+      "documented_positive_volume_pair_count": 11,
+      "boolean_blocked_pair_count": 0
+    },
+    "2": {
+      "pair_row_count": 8607,
+      "broadphase_candidate_count": 285,
+      "unauthorized_positive_volume_pair_count": 0,
+      "documented_positive_volume_pair_count": 11,
+      "boolean_blocked_pair_count": 0
+    },
+    "3": {
+      "pair_row_count": 8607,
+      "broadphase_candidate_count": 282,
+      "unauthorized_positive_volume_pair_count": 0,
+      "documented_positive_volume_pair_count": 11,
+      "boolean_blocked_pair_count": 0
+    },
+    "4": {
+      "pair_row_count": 8607,
+      "broadphase_candidate_count": 283,
+      "unauthorized_positive_volume_pair_count": 0,
+      "documented_positive_volume_pair_count": 11,
+      "boolean_blocked_pair_count": 0
+    },
+    "5": {
+      "pair_row_count": 8607,
+      "broadphase_candidate_count": 286,
+      "unauthorized_positive_volume_pair_count": 0,
+      "documented_positive_volume_pair_count": 11,
+      "boolean_blocked_pair_count": 0
+    },
+    "6": {
+      "pair_row_count": 8607,
+      "broadphase_candidate_count": 286,
+      "unauthorized_positive_volume_pair_count": 0,
+      "documented_positive_volume_pair_count": 11,
+      "boolean_blocked_pair_count": 0
+    },
+    "7": {
+      "pair_row_count": 8607,
+      "broadphase_candidate_count": 287,
+      "unauthorized_positive_volume_pair_count": 0,
+      "documented_positive_volume_pair_count": 11,
+      "boolean_blocked_pair_count": 0
+    },
+    "8": {
+      "pair_row_count": 8607,
+      "broadphase_candidate_count": 288,
+      "unauthorized_positive_volume_pair_count": 0,
+      "documented_positive_volume_pair_count": 11,
+      "boolean_blocked_pair_count": 0
+    },
+    "9": {
+      "pair_row_count": 8607,
+      "broadphase_candidate_count": 289,
+      "unauthorized_positive_volume_pair_count": 0,
+      "documented_positive_volume_pair_count": 11,
+      "boolean_blocked_pair_count": 0
+    },
+    "10": {
+      "pair_row_count": 8607,
+      "broadphase_candidate_count": 283,
+      "unauthorized_positive_volume_pair_count": 0,
+      "documented_positive_volume_pair_count": 11,
+      "boolean_blocked_pair_count": 0
+    },
+    "11": {
+      "pair_row_count": 8607,
+      "broadphase_candidate_count": 288,
+      "unauthorized_positive_volume_pair_count": 0,
+      "documented_positive_volume_pair_count": 11,
+      "boolean_blocked_pair_count": 0
+    },
+    "12": {
+      "pair_row_count": 8607,
+      "broadphase_candidate_count": 294,
+      "unauthorized_positive_volume_pair_count": 0,
+      "documented_positive_volume_pair_count": 11,
+      "boolean_blocked_pair_count": 0
+    },
+    "13": {
+      "pair_row_count": 8607,
+      "broadphase_candidate_count": 294,
+      "unauthorized_positive_volume_pair_count": 0,
+      "documented_positive_volume_pair_count": 11,
+      "boolean_blocked_pair_count": 0
+    },
+    "14": {
+      "pair_row_count": 8607,
+      "broadphase_candidate_count": 303,
+      "unauthorized_positive_volume_pair_count": 0,
+      "documented_positive_volume_pair_count": 11,
+      "boolean_blocked_pair_count": 0
+    },
+    "15": {
+      "pair_row_count": 8607,
+      "broadphase_candidate_count": 306,
+      "unauthorized_positive_volume_pair_count": 0,
+      "documented_positive_volume_pair_count": 11,
+      "boolean_blocked_pair_count": 0
+    },
+    "16": {
+      "pair_row_count": 8607,
+      "broadphase_candidate_count": 305,
+      "unauthorized_positive_volume_pair_count": 0,
+      "documented_positive_volume_pair_count": 11,
+      "boolean_blocked_pair_count": 0
+    },
+    "17": {
+      "pair_row_count": 8607,
+      "broadphase_candidate_count": 305,
+      "unauthorized_positive_volume_pair_count": 0,
+      "documented_positive_volume_pair_count": 11,
+      "boolean_blocked_pair_count": 0
+    },
+    "18": {
+      "pair_row_count": 8607,
+      "broadphase_candidate_count": 304,
+      "unauthorized_positive_volume_pair_count": 0,
+      "documented_positive_volume_pair_count": 11,
+      "boolean_blocked_pair_count": 0
+    },
+    "19": {
+      "pair_row_count": 8607,
+      "broadphase_candidate_count": 303,
+      "unauthorized_positive_volume_pair_count": 0,
+      "documented_positive_volume_pair_count": 11,
+      "boolean_blocked_pair_count": 0
+    },
+    "20": {
+      "pair_row_count": 8607,
+      "broadphase_candidate_count": 303,
+      "unauthorized_positive_volume_pair_count": 0,
+      "documented_positive_volume_pair_count": 11,
+      "boolean_blocked_pair_count": 0
+    },
+    "21": {
+      "pair_row_count": 8607,
+      "broadphase_candidate_count": 305,
+      "unauthorized_positive_volume_pair_count": 0,
+      "documented_positive_volume_pair_count": 11,
+      "boolean_blocked_pair_count": 0
+    },
+    "22": {
+      "pair_row_count": 8607,
+      "broadphase_candidate_count": 305,
+      "unauthorized_positive_volume_pair_count": 0,
+      "documented_positive_volume_pair_count": 11,
+      "boolean_blocked_pair_count": 0
+    },
+    "23": {
+      "pair_row_count": 8607,
+      "broadphase_candidate_count": 302,
+      "unauthorized_positive_volume_pair_count": 0,
+      "documented_positive_volume_pair_count": 11,
+      "boolean_blocked_pair_count": 0
+    },
+    "24": {
+      "pair_row_count": 8607,
+      "broadphase_candidate_count": 302,
+      "unauthorized_positive_volume_pair_count": 0,
+      "documented_positive_volume_pair_count": 11,
+      "boolean_blocked_pair_count": 0
+    },
+    "25": {
+      "pair_row_count": 8607,
+      "broadphase_candidate_count": 300,
+      "unauthorized_positive_volume_pair_count": 0,
+      "documented_positive_volume_pair_count": 11,
+      "boolean_blocked_pair_count": 0
+    },
+    "26": {
+      "pair_row_count": 8607,
+      "broadphase_candidate_count": 299,
+      "unauthorized_positive_volume_pair_count": 0,
+      "documented_positive_volume_pair_count": 11,
+      "boolean_blocked_pair_count": 0
+    },
+    "27": {
+      "pair_row_count": 8607,
+      "broadphase_candidate_count": 299,
+      "unauthorized_positive_volume_pair_count": 0,
+      "documented_positive_volume_pair_count": 11,
+      "boolean_blocked_pair_count": 0
+    },
+    "28": {
+      "pair_row_count": 8607,
+      "broadphase_candidate_count": 299,
+      "unauthorized_positive_volume_pair_count": 0,
+      "documented_positive_volume_pair_count": 11,
+      "boolean_blocked_pair_count": 0
+    },
+    "29": {
+      "pair_row_count": 8607,
+      "broadphase_candidate_count": 301,
+      "unauthorized_positive_volume_pair_count": 0,
+      "documented_positive_volume_pair_count": 11,
+      "boolean_blocked_pair_count": 0
+    },
+    "30": {
+      "pair_row_count": 8607,
+      "broadphase_candidate_count": 301,
+      "unauthorized_positive_volume_pair_count": 0,
+      "documented_positive_volume_pair_count": 11,
+      "boolean_blocked_pair_count": 0
+    },
+    "31": {
+      "pair_row_count": 8607,
+      "broadphase_candidate_count": 303,
+      "unauthorized_positive_volume_pair_count": 0,
+      "documented_positive_volume_pair_count": 11,
+      "boolean_blocked_pair_count": 0
+    },
+    "32": {
+      "pair_row_count": 8607,
+      "broadphase_candidate_count": 302,
+      "unauthorized_positive_volume_pair_count": 0,
+      "documented_positive_volume_pair_count": 11,
+      "boolean_blocked_pair_count": 0
+    },
+    "33": {
+      "pair_row_count": 8607,
+      "broadphase_candidate_count": 301,
+      "unauthorized_positive_volume_pair_count": 0,
+      "documented_positive_volume_pair_count": 11,
+      "boolean_blocked_pair_count": 0
+    },
+    "34": {
+      "pair_row_count": 8607,
+      "broadphase_candidate_count": 303,
+      "unauthorized_positive_volume_pair_count": 0,
+      "documented_positive_volume_pair_count": 11,
+      "boolean_blocked_pair_count": 0
+    },
+    "35": {
+      "pair_row_count": 8607,
+      "broadphase_candidate_count": 303,
+      "unauthorized_positive_volume_pair_count": 0,
+      "documented_positive_volume_pair_count": 11,
+      "boolean_blocked_pair_count": 0
+    },
+    "36": {
+      "pair_row_count": 8607,
+      "broadphase_candidate_count": 305,
+      "unauthorized_positive_volume_pair_count": 0,
+      "documented_positive_volume_pair_count": 11,
+      "boolean_blocked_pair_count": 0
+    },
+    "37": {
+      "pair_row_count": 8607,
+      "broadphase_candidate_count": 305,
+      "unauthorized_positive_volume_pair_count": 0,
+      "documented_positive_volume_pair_count": 11,
+      "boolean_blocked_pair_count": 0
+    },
+    "38": {
+      "pair_row_count": 8607,
+      "broadphase_candidate_count": 308,
+      "unauthorized_positive_volume_pair_count": 0,
+      "documented_positive_volume_pair_count": 11,
+      "boolean_blocked_pair_count": 0
+    },
+    "39": {
+      "pair_row_count": 8607,
+      "broadphase_candidate_count": 309,
+      "unauthorized_positive_volume_pair_count": 0,
+      "documented_positive_volume_pair_count": 11,
+      "boolean_blocked_pair_count": 0
+    },
+    "40": {
+      "pair_row_count": 8607,
+      "broadphase_candidate_count": 310,
+      "unauthorized_positive_volume_pair_count": 0,
+      "documented_positive_volume_pair_count": 11,
+      "boolean_blocked_pair_count": 0
+    },
+    "41": {
+      "pair_row_count": 8607,
+      "broadphase_candidate_count": 316,
+      "unauthorized_positive_volume_pair_count": 0,
+      "documented_positive_volume_pair_count": 11,
+      "boolean_blocked_pair_count": 0
+    },
+    "42": {
+      "pair_row_count": 8607,
+      "broadphase_candidate_count": 318,
+      "unauthorized_positive_volume_pair_count": 0,
+      "documented_positive_volume_pair_count": 11,
+      "boolean_blocked_pair_count": 0
+    },
+    "43": {
+      "pair_row_count": 8607,
+      "broadphase_candidate_count": 318,
+      "unauthorized_positive_volume_pair_count": 0,
+      "documented_positive_volume_pair_count": 11,
+      "boolean_blocked_pair_count": 0
+    },
+    "44": {
+      "pair_row_count": 8607,
+      "broadphase_candidate_count": 319,
+      "unauthorized_positive_volume_pair_count": 0,
+      "documented_positive_volume_pair_count": 11,
+      "boolean_blocked_pair_count": 0
+    },
+    "45": {
+      "pair_row_count": 8607,
+      "broadphase_candidate_count": 325,
+      "unauthorized_positive_volume_pair_count": 0,
+      "documented_positive_volume_pair_count": 11,
+      "boolean_blocked_pair_count": 0
+    },
+    "46": {
+      "pair_row_count": 8607,
+      "broadphase_candidate_count": 327,
+      "unauthorized_positive_volume_pair_count": 0,
+      "documented_positive_volume_pair_count": 11,
+      "boolean_blocked_pair_count": 0
+    },
+    "47": {
+      "pair_row_count": 8607,
+      "broadphase_candidate_count": 327,
+      "unauthorized_positive_volume_pair_count": 0,
+      "documented_positive_volume_pair_count": 11,
+      "boolean_blocked_pair_count": 0
+    },
+    "48": {
+      "pair_row_count": 8607,
+      "broadphase_candidate_count": 327,
+      "unauthorized_positive_volume_pair_count": 0,
+      "documented_positive_volume_pair_count": 11,
+      "boolean_blocked_pair_count": 0
+    },
+    "49": {
+      "pair_row_count": 8607,
+      "broadphase_candidate_count": 324,
+      "unauthorized_positive_volume_pair_count": 0,
+      "documented_positive_volume_pair_count": 11,
+      "boolean_blocked_pair_count": 0
+    },
+    "50": {
+      "pair_row_count": 8607,
+      "broadphase_candidate_count": 323,
+      "unauthorized_positive_volume_pair_count": 0,
+      "documented_positive_volume_pair_count": 11,
+      "boolean_blocked_pair_count": 0
+    },
+    "51": {
+      "pair_row_count": 8607,
+      "broadphase_candidate_count": 324,
+      "unauthorized_positive_volume_pair_count": 0,
+      "documented_positive_volume_pair_count": 11,
+      "boolean_blocked_pair_count": 0
+    },
+    "52": {
+      "pair_row_count": 8607,
+      "broadphase_candidate_count": 325,
+      "unauthorized_positive_volume_pair_count": 0,
+      "documented_positive_volume_pair_count": 11,
+      "boolean_blocked_pair_count": 0
+    },
+    "53": {
+      "pair_row_count": 8607,
+      "broadphase_candidate_count": 327,
+      "unauthorized_positive_volume_pair_count": 0,
+      "documented_positive_volume_pair_count": 11,
+      "boolean_blocked_pair_count": 0
+    },
+    "54": {
+      "pair_row_count": 8607,
+      "broadphase_candidate_count": 332,
+      "unauthorized_positive_volume_pair_count": 0,
+      "documented_positive_volume_pair_count": 11,
+      "boolean_blocked_pair_count": 0
+    },
+    "55": {
+      "pair_row_count": 8607,
+      "broadphase_candidate_count": 338,
+      "unauthorized_positive_volume_pair_count": 0,
+      "documented_positive_volume_pair_count": 11,
+      "boolean_blocked_pair_count": 0
+    },
+    "56": {
+      "pair_row_count": 8607,
+      "broadphase_candidate_count": 343,
+      "unauthorized_positive_volume_pair_count": 0,
+      "documented_positive_volume_pair_count": 11,
+      "boolean_blocked_pair_count": 0
+    },
+    "57": {
+      "pair_row_count": 8607,
+      "broadphase_candidate_count": 343,
+      "unauthorized_positive_volume_pair_count": 0,
+      "documented_positive_volume_pair_count": 11,
+      "boolean_blocked_pair_count": 0
+    },
+    "58": {
+      "pair_row_count": 8607,
+      "broadphase_candidate_count": 343,
+      "unauthorized_positive_volume_pair_count": 0,
+      "documented_positive_volume_pair_count": 11,
+      "boolean_blocked_pair_count": 0
+    },
+    "59": {
+      "pair_row_count": 8607,
+      "broadphase_candidate_count": 344,
+      "unauthorized_positive_volume_pair_count": 0,
+      "documented_positive_volume_pair_count": 11,
+      "boolean_blocked_pair_count": 0
+    },
+    "60": {
+      "pair_row_count": 8607,
+      "broadphase_candidate_count": 345,
+      "unauthorized_positive_volume_pair_count": 0,
+      "documented_positive_volume_pair_count": 11,
+      "boolean_blocked_pair_count": 0
+    },
+    "61": {
+      "pair_row_count": 8607,
+      "broadphase_candidate_count": 343,
+      "unauthorized_positive_volume_pair_count": 0,
+      "documented_positive_volume_pair_count": 11,
+      "boolean_blocked_pair_count": 0
+    },
+    "62": {
+      "pair_row_count": 8607,
+      "broadphase_candidate_count": 340,
+      "unauthorized_positive_volume_pair_count": 0,
+      "documented_positive_volume_pair_count": 11,
+      "boolean_blocked_pair_count": 0
+    },
+    "63": {
+      "pair_row_count": 8607,
+      "broadphase_candidate_count": 341,
+      "unauthorized_positive_volume_pair_count": 0,
+      "documented_positive_volume_pair_count": 11,
+      "boolean_blocked_pair_count": 0
+    },
+    "64": {
+      "pair_row_count": 8607,
+      "broadphase_candidate_count": 341,
+      "unauthorized_positive_volume_pair_count": 0,
+      "documented_positive_volume_pair_count": 11,
+      "boolean_blocked_pair_count": 0
+    },
+    "65": {
+      "pair_row_count": 8607,
+      "broadphase_candidate_count": 338,
+      "unauthorized_positive_volume_pair_count": 0,
+      "documented_positive_volume_pair_count": 11,
+      "boolean_blocked_pair_count": 0
+    },
+    "66": {
+      "pair_row_count": 8607,
+      "broadphase_candidate_count": 338,
+      "unauthorized_positive_volume_pair_count": 0,
+      "documented_positive_volume_pair_count": 11,
+      "boolean_blocked_pair_count": 0
+    },
+    "67": {
+      "pair_row_count": 8607,
+      "broadphase_candidate_count": 339,
+      "unauthorized_positive_volume_pair_count": 0,
+      "documented_positive_volume_pair_count": 11,
+      "boolean_blocked_pair_count": 0
+    },
+    "68": {
+      "pair_row_count": 8607,
+      "broadphase_candidate_count": 337,
+      "unauthorized_positive_volume_pair_count": 0,
+      "documented_positive_volume_pair_count": 11,
+      "boolean_blocked_pair_count": 0
+    },
+    "69": {
+      "pair_row_count": 8607,
+      "broadphase_candidate_count": 335,
+      "unauthorized_positive_volume_pair_count": 0,
+      "documented_positive_volume_pair_count": 11,
+      "boolean_blocked_pair_count": 0
+    },
+    "70": {
+      "pair_row_count": 8607,
+      "broadphase_candidate_count": 326,
+      "unauthorized_positive_volume_pair_count": 0,
+      "documented_positive_volume_pair_count": 11,
+      "boolean_blocked_pair_count": 0
+    },
+    "71": {
+      "pair_row_count": 8607,
+      "broadphase_candidate_count": 327,
+      "unauthorized_positive_volume_pair_count": 0,
+      "documented_positive_volume_pair_count": 11,
+      "boolean_blocked_pair_count": 0
+    },
+    "72": {
+      "pair_row_count": 8607,
+      "broadphase_candidate_count": 324,
+      "unauthorized_positive_volume_pair_count": 0,
+      "documented_positive_volume_pair_count": 11,
+      "boolean_blocked_pair_count": 0
+    },
+    "73": {
+      "pair_row_count": 8607,
+      "broadphase_candidate_count": 328,
+      "unauthorized_positive_volume_pair_count": 0,
+      "documented_positive_volume_pair_count": 11,
+      "boolean_blocked_pair_count": 0
+    },
+    "74": {
+      "pair_row_count": 8607,
+      "broadphase_candidate_count": 331,
+      "unauthorized_positive_volume_pair_count": 0,
+      "documented_positive_volume_pair_count": 11,
+      "boolean_blocked_pair_count": 0
+    },
+    "75": {
+      "pair_row_count": 8607,
+      "broadphase_candidate_count": 332,
+      "unauthorized_positive_volume_pair_count": 0,
+      "documented_positive_volume_pair_count": 11,
+      "boolean_blocked_pair_count": 0
+    },
+    "76": {
+      "pair_row_count": 8607,
+      "broadphase_candidate_count": 338,
+      "unauthorized_positive_volume_pair_count": 0,
+      "documented_positive_volume_pair_count": 11,
+      "boolean_blocked_pair_count": 0
+    },
+    "77": {
+      "pair_row_count": 8607,
+      "broadphase_candidate_count": 337,
+      "unauthorized_positive_volume_pair_count": 0,
+      "documented_positive_volume_pair_count": 11,
+      "boolean_blocked_pair_count": 0
+    },
+    "78": {
+      "pair_row_count": 8607,
+      "broadphase_candidate_count": 332,
+      "unauthorized_positive_volume_pair_count": 0,
+      "documented_positive_volume_pair_count": 11,
+      "boolean_blocked_pair_count": 0
+    },
+    "79": {
+      "pair_row_count": 8607,
+      "broadphase_candidate_count": 325,
+      "unauthorized_positive_volume_pair_count": 0,
+      "documented_positive_volume_pair_count": 11,
+      "boolean_blocked_pair_count": 0
+    },
+    "80": {
+      "pair_row_count": 8607,
+      "broadphase_candidate_count": 331,
+      "unauthorized_positive_volume_pair_count": 0,
+      "documented_positive_volume_pair_count": 11,
+      "boolean_blocked_pair_count": 0
+    }
+  },
+  "stage_elapsed_seconds": {
+    "stage_1": 594.7181096076965,
+    "stage_2": 785.157872915268
+  },
+  "elapsed_seconds": 1379.8759825229645,
+  "disposition": "PASS"
+}

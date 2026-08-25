@@ -1,0 +1,84 @@
+{
+  "gate": "SHORT14 FIVE-ANGLE EXACT BOOLEAN GATE",
+  "angles_deg": [
+    0,
+    20,
+    40,
+    55,
+    80
+  ],
+  "worker_count": 2,
+  "input_sha256": {
+    "STEP:STOWED": "e056424df1062ac34b1d8a53c1911662934fcffaaa06cc75616ca3e6a388609a",
+    "STEP:DEPLOYED": "8c88cd86ec2475a4003bc4c3c36b98fe83c84e7fa0043122784fae810533d6f3",
+    "INVENTORY:STOWED": "426fbf491a57926e58500230b0a34c60deba6471dbe595a7fd506182a2ae1e4c",
+    "INVENTORY:DEPLOYED": "0e7a0110ba51d562ab0a708c44fd7c3e2a720669d7c72854a54e70c25f7396a3"
+  },
+  "geometry_modified": false,
+  "common_volume_epsilon_mm3": 1e-06,
+  "pair_register": "C:\\Users\\ANDRE.ANDREWSPC\\Documents\\Codex\\2026-08-25\\stingray-i5-s-df8-14in-short-forward-powertrain-buoy\\work\\short14_external_buoy\\validation\\five_angle_gate\\five_motion_exact_boolean_pairs.csv.gz",
+  "kinematics_register": "C:\\Users\\ANDRE.ANDREWSPC\\Documents\\Codex\\2026-08-25\\stingray-i5-s-df8-14in-short-forward-powertrain-buoy\\work\\short14_external_buoy\\validation\\five_angle_gate\\five_motion_kinematics.csv",
+  "pair_row_count": 43035,
+  "unauthorized_positive_volume_pair_count": 18,
+  "documented_positive_volume_pair_count": 55,
+  "boolean_blocked_pair_count": 0,
+  "track_validation_error_count": 0,
+  "track_validation_errors": [],
+  "intentional_fit_register_error_count": 0,
+  "per_angle": {
+    "0": {
+      "pair_row_count": 8607,
+      "broadphase_candidate_count": 284,
+      "unauthorized_positive_volume_pair_count": 0,
+      "documented_positive_volume_pair_count": 11,
+      "boolean_blocked_pair_count": 0,
+      "track_validation_error_count": 0,
+      "intentional_fit_register_error_count": 0,
+      "elapsed_seconds": 37.04627704620361
+    },
+    "20": {
+      "pair_row_count": 8607,
+      "broadphase_candidate_count": 303,
+      "unauthorized_positive_volume_pair_count": 9,
+      "documented_positive_volume_pair_count": 11,
+      "boolean_blocked_pair_count": 0,
+      "track_validation_error_count": 0,
+      "intentional_fit_register_error_count": 0,
+      "elapsed_seconds": 29.39522624015808
+    },
+    "40": {
+      "pair_row_count": 8607,
+      "broadphase_candidate_count": 310,
+      "unauthorized_positive_volume_pair_count": 9,
+      "documented_positive_volume_pair_count": 11,
+      "boolean_blocked_pair_count": 0,
+      "track_validation_error_count": 0,
+      "intentional_fit_register_error_count": 0,
+      "elapsed_seconds": 31.208080530166626
+    },
+    "55": {
+      "pair_row_count": 8607,
+      "broadphase_candidate_count": 338,
+      "unauthorized_positive_volume_pair_count": 0,
+      "documented_positive_volume_pair_count": 11,
+      "boolean_blocked_pair_count": 0,
+      "track_validation_error_count": 0,
+      "intentional_fit_register_error_count": 0,
+      "elapsed_seconds": 30.34305739402771
+    },
+    "80": {
+      "pair_row_count": 8607,
+      "broadphase_candidate_count": 331,
+      "unauthorized_positive_volume_pair_count": 0,
+      "documented_positive_volume_pair_count": 11,
+      "boolean_blocked_pair_count": 0,
+      "track_validation_error_count": 0,
+      "intentional_fit_register_error_count": 0,
+      "elapsed_seconds": 52.265952825546265
+    }
+  },
+  "crosshead_travel_0_to_80_mm": 15.055034371135037,
+  "maximum_closure_residual_abs_mm": 1.7763568394002505e-14,
+  "elapsed_seconds": 139.60572695732117,
+  "disposition": "FAIL_OR_BLOCKED"
+}

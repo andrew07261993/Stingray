@@ -135,6 +135,8 @@ def render_views(stowed, deployed, root: Path, output_dir: Path) -> list[Path]:
         FILENAMES[11], "Open pack / inflated buoy / structural tether load path bypassing Cordura and hook-and-loop",
         14, -52, 3.0, ((-310, 310), (-310, 310), (1325, 2180)),
     )
+    import short14_external_buoy_postrender
+    short14_external_buoy_postrender.overwrite_polished_views(root, output_dir)
     paths = [output_dir / name for name in FILENAMES]
     if len(list(output_dir.glob("*.png"))) != 12 or any(not path.is_file() for path in paths):
         raise RuntimeError("inspection render set must contain exactly twelve named PNG files")

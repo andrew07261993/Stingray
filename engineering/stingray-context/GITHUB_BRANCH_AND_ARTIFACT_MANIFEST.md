@@ -33,21 +33,21 @@ Do not rewrite, reorganize or normalize these packages. They are configuration/p
 - directory: `01_FORWARD_ARM_480MM/`
 - ZIP: `STINGRAY_DF8_FORWARD_ARM_480MM_CREO_INSPECTION.zip`
 - Git blob size observed: 10,719,588 bytes
-- classification: historical inspection package
+- classification: **HISTORICAL** — inspection package
 
 ### Package 02 — Architecture C Forward Packed
 
 - directory: `02_ARCH_C_FORWARD_PACKED/`
 - ZIP: `STINGRAY_DF8_ARCH_C_FORWARD_PACKED_CREO_INSPECTION.zip`
 - Git blob size observed: 7,764,201 bytes
-- classification: historical developmental architecture
+- classification: **HISTORICAL** — developmental architecture
 
 ### Package 03 — Architecture C 889 mm Fallback
 
 - directory: `03_ARCH_C_889MM_FALLBACK/`
 - ZIP: `STINGRAY_DF8_ARCH_C_889MM_FALLBACK_CREO_INSPECTION.zip`
 - Git blob size observed: 9,303,212 bytes
-- classification: historical fallback; do not treat the 889 mm geometry as the fixed-480 final configuration
+- classification: **HISTORICAL** — fallback; do not treat the 889 mm geometry as the fixed-480 final configuration
 
 ### Package 04 — 14-in Short Arm External Buoy
 
@@ -55,7 +55,7 @@ Do not rewrite, reorganize or normalize these packages. They are configuration/p
 - ZIP: `STINGRAY_DF8_14IN_SHORT_ARM_EXTERNAL_BUOY_CREO_INSPECTION.zip` — 8,071,643 bytes
 - STOWED STEP: `STINGRAY_DF8_14IN_SHORT_ARM_EXTERNAL_BUOY_STOWED_AP242.step` — 15,415,537 bytes
 - DEPLOYED STEP: `STINGRAY_DF8_14IN_SHORT_ARM_EXTERNAL_BUOY_DEPLOYED_AP242.step` — 16,929,244 bytes
-- classification: immediate historical predecessor to Package 05
+- classification: **HISTORICAL** — immediate predecessor to Package 05
 
 ### Package 05 — True Forward Powertrain / SHORT14 / External Buoy
 
@@ -87,16 +87,16 @@ The source CAD repository holding this branch has **no Git remote**. The exact P
 
 | Configuration/workstream | Local commit | Classification |
 |---|---|---|
-| R2 state-parity/provenance | `61a58cbbccd0aae7a747b2a73046142cf1f44511` | Historical strong validation/provenance reference; older geometry |
-| Final semantic/detail cleanup | `8c594781e27b0597a71957082fb64f152cacfcd9` | Historical correction checkpoint |
-| Targeted COTS local source | `584e673a8b0490bc0b6ec1e508d5fc3426f45f5b` | Historical developmental alternative |
-| Forward-arm repack | `a31fce0e768f354b1831331bc2ed145223c8b2c4` | Historical source baseline for SHORT14 |
-| Architecture C forward packed | `abe9d93d2dada6150daa9a652885c472a6a06464` | Historical interface/proxy CAD |
-| Fixed-480 convergence | `17870c53e3ceecbab88e28d7ccad0ae7047f1db6` | Historical architecture stop |
-| Distributed-pressure development | `7f5d06fdb83dc879b2b98094c1e498c5c9e6ff23` | Historical measured non-pass |
-| Staged-inflation convergence | `dce7a53643a35d80f5cd6f63f09852ab565a4165` | Historical Path B / measured non-pass |
-| Commercial-module closure | `f8c38b16eb3ed80a9180254f9ee8ddad5a40f3da` | Historical terminal module screen |
-| Package 04 short-arm configuration | `0431fe05465ba59a1714f110a07c73f146131c96` | Historical predecessor |
+| R2 state-parity/provenance | `61a58cbbccd0aae7a747b2a73046142cf1f44511` | HISTORICAL — strong validation/provenance reference; older geometry |
+| Final semantic/detail cleanup | `8c594781e27b0597a71957082fb64f152cacfcd9` | HISTORICAL — correction checkpoint |
+| Targeted COTS local source | `584e673a8b0490bc0b6ec1e508d5fc3426f45f5b` | HISTORICAL — developmental alternative |
+| Forward-arm repack | `a31fce0e768f354b1831331bc2ed145223c8b2c4` | HISTORICAL — source baseline for SHORT14 |
+| Architecture C forward packed | `abe9d93d2dada6150daa9a652885c472a6a06464` | HISTORICAL — interface/proxy CAD |
+| Fixed-480 convergence | `17870c53e3ceecbab88e28d7ccad0ae7047f1db6` | HISTORICAL — architecture stop |
+| Distributed-pressure development | `7f5d06fdb83dc879b2b98094c1e498c5c9e6ff23` | HISTORICAL — measured non-pass |
+| Staged-inflation convergence | `dce7a53643a35d80f5cd6f63f09852ab565a4165` | HISTORICAL — Path B / measured non-pass |
+| Commercial-module closure | `f8c38b16eb3ed80a9180254f9ee8ddad5a40f3da` | HISTORICAL — terminal module screen |
+| Package 04 short-arm configuration | `0431fe05465ba59a1714f110a07c73f146131c96` | HISTORICAL — predecessor |
 | Package 05 true-forward SHORT14 | `aa186c9c1c311c510ac34e48bd4170ef7636b7bf` | CURRENT DEVELOPMENTAL |
 
 ## Targeted COTS branch artifact families

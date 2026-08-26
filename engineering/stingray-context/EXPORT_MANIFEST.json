@@ -48,6 +48,7 @@
   },
   "context_files": [
     "engineering/stingray-context/00_READ_ME_FIRST.md",
+    "engineering/stingray-context/CHATGPT_PROJECT_CONTEXT_SNAPSHOT_2026-08-25.md",
     "engineering/stingray-context/SESSION_LEDGER.md",
     "engineering/stingray-context/GITHUB_BRANCH_AND_ARTIFACT_MANIFEST.md",
     "engineering/stingray-context/FILE_LIBRARY_MANIFEST.md",

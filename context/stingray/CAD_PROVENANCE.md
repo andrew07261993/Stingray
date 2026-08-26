@@ -1,114 +1,68 @@
 # STINGRAY CAD Provenance
 
-As of 2026-08-25.
+As of: 2026-08-25.
 
-## Preserved GitHub inspection checkpoint
+## Current developmental master
 
-Source branch:
+| Field | Exact value |
+|---|---|
+| Configuration | `STINGRAY_I5S_DF8_SHORT14_FORWARD_POWERTRAIN_EXTERNAL_BUOY` |
+| Local source path | `C:\Users\ANDRE.ANDREWSPC\Documents\Codex\2026-08-25\stingray-i5-s-df8-14in-short-forward-powertrain-buoy` |
+| Git object database | `C:\Users\ANDRE.ANDREWSPC\Documents\Codex\2026-08-22\stingray-i5-s-df8-codex-one\stingray-i5s-df8-cad` |
+| Branch | `design/df8-14in-short-forward-powertrain-external-buoy` |
+| HEAD | `aa186c9c1c311c510ac34e48bd4170ef7636b7bf` |
+| Commit date | `2026-08-25T16:05:28-05:00` |
+| Source baseline declared by report | `a31fce0e768f354b1831331bc2ed145223c8b2c4` (`design/df8-forward-arm-repack`) |
+| Classification | CURRENT DEVELOPMENTAL |
 
-`cad/df8-owner-creo-inspection-zips`
+The shared CAD repository has no remote. This branch and the other 11 named CAD branches are local-only and are not recoverable from `andrew07261993/Stingray` unless transferred separately.
 
-This branch is a preserved owner-inspection checkpoint. Do not modify the existing CAD package directories.
+## Exact current artifacts
 
-Packages present:
+| Artifact | Absolute path | SHA-256 | Size |
+|---|---|---|---:|
+| STOWED AP242 | `C:\Users\ANDRE.ANDREWSPC\Documents\Codex\2026-08-25\stingray-i5-s-df8-14in-short-forward-powertrain-buoy\work\short14_external_buoy\STINGRAY_I5S_DF8_SHORT14_FORWARD_POWERTRAIN_EXTERNAL_BUOY_STOWED_AP242.step` | `87a6d6f2f234fe955ef6a87aa9f7ac242d28ee10e23b9b60aca94e90e68a02c0` | 9,071,324 |
+| DEPLOYED AP242 | `C:\Users\ANDRE.ANDREWSPC\Documents\Codex\2026-08-25\stingray-i5-s-df8-14in-short-forward-powertrain-buoy\work\short14_external_buoy\STINGRAY_I5S_DF8_SHORT14_FORWARD_POWERTRAIN_EXTERNAL_BUOY_DEPLOYED_AP242.step` | `fbb716986ce6913715a78468b29fec8ae0a1eb45f64b9a6f825407655d68d1de` | 10,575,841 |
+| Inspection ZIP | `C:\Users\ANDRE.ANDREWSPC\Documents\Codex\2026-08-25\stingray-i5-s-df8-14in-short-forward-powertrain-buoy\work\short14_external_buoy\STINGRAY_I5S_DF8_SHORT14_FORWARD_POWERTRAIN_EXTERNAL_BUOY_INSPECTION.zip` | `4d124b4bb410689071545a41c9c17c31e9393eadbf41ae6a800c5cd458b52a6c` | 6,625,392 |
 
-1. `01_FORWARD_ARM_480MM`
-2. `02_ARCH_C_FORWARD_PACKED`
-3. `03_ARCH_C_889MM_FALLBACK`
-4. `04_14IN_SHORT_ARM_EXTERNAL_BUOY`
-5. `05_TRUE_FORWARD_POWERTRAIN_SHORT14_EXTERNAL_BUOY`
+The source tree, validation registers, reports and manifest are indexed separately in `LOCAL_ARTIFACT_INDEX.csv`.
 
-Package 05 is explicitly identified in its README as the most-forward arm-powertrain / compact-body developmental variant currently completed on that checkpoint.
+## Commit chain
 
-## Package 05 known provenance
+| Commit | Role |
+|---|---|
+| `a55e925db67b2720c98af5e7694c16c142a07144` | Lock true-forward arm/powertrain layout |
+| `59db97570d175adff550e1cd25451708ea3e114a` | Shorten arms/body and remove internal buoy ejector |
+| `0f5be86cc42147cf7f9dc502c2f562d86811b206` | Add external automatic-inflation buoy pack |
+| `66ee53955d3ce7945e12949ecbc3e99d591fd5b1` | Complete bounded CAD validation gates |
+| `aa186c9c1c311c510ac34e48bd4170ef7636b7bf` | Create inspection package |
 
-Source branch:
+## Configuration chronology
 
-`design/df8-14in-short-forward-powertrain-external-buoy`
+| Configuration / branch | Commit | Date | Classification / relationship |
+|---|---|---|---|
+| R2 state parity / `audit/state-parity-provenance` | `61a58cbbccd0aae7a747b2a73046142cf1f44511` | 2026-08-23 | HISTORICAL strong provenance reference; 279/279, but older geometry |
+| Final detail cleanup / `fix/final-cad-semantic-cleanup` | `8c594781e27b0597a71957082fb64f152cacfcd9` | 2026-08-23 | HISTORICAL bounded semantic/detail correction |
+| Targeted COTS / `design/df8-targeted-cots-retrofit` | `584e673a8b0490bc0b6ec1e508d5fc3426f45f5b` | 2026-08-24 | HISTORICAL developmental alternative |
+| Forward arm / `design/df8-forward-arm-repack` | `a31fce0e768f354b1831331bc2ed145223c8b2c4` | 2026-08-24 | HISTORICAL 480 mm source baseline for later SHORT14 work |
+| Architecture C / `build/arch-c-forward-packed` | `abe9d93d2dada6150daa9a652885c472a6a06464` | 2026-08-24 | HISTORICAL interface/proxy CAD |
+| Fixed-480 convergence | `17870c53e3ceecbab88e28d7ccad0ae7047f1db6` | 2026-08-24 | HISTORICAL architecture stop; 889 mm fallback is not fixed-480 final |
+| Distributed pressure | `7f5d06fdb83dc879b2b98094c1e498c5c9e6ff23` | 2026-08-25 | HISTORICAL measured non-pass |
+| Staged inflation | `dce7a53643a35d80f5cd6f63f09852ab565a4165` | 2026-08-25 | HISTORICAL Path B / measured non-pass |
+| Commercial module closure | `f8c38b16eb3ed80a9180254f9ee8ddad5a40f3da` | 2026-08-25 | HISTORICAL terminal fixed-480 module screen; no CAD output |
+| Package 04 short arm | `0431fe05465ba59a1714f110a07c73f146131c96` | 2026-08-25 | HISTORICAL immediate predecessor |
+| Package 05 true forward SHORT14 | `aa186c9c1c311c510ac34e48bd4170ef7636b7bf` | 2026-08-25 | CURRENT DEVELOPMENTAL; newest committed CAD |
 
-Recorded completed commits:
+## Protected GitHub inspection checkpoint
 
-- `a55e925db67b2720c98af5e7694c16c142a07144`
-- `59db97570d175adff550e1cd25451708ea3e114a`
-- `0f5be86cc42147cf7f9dc502c2f562d86811b206`
-- `66ee53955d3ce7945e12949ecbc3e99d591fd5b1`
-- `aa186c9c1c311c510ac34e48bd4170ef7636b7bf`
+Remote branch `cad/df8-owner-creo-inspection-zips`, commit `ab33ffd9c3a8cbfa7d43311634db4e465fa8185c`, preserves five owner-inspection packages. This consolidation did not add, delete, rewrite or reorganize anything under `cad/df8-owner-creo-inspection-zips/`.
 
-Package ZIP SHA-256:
+Package 05 is an exact-byte transfer of the newest local inspection package under a GitHub-facing name. The preserved package is still developmental inspection evidence, not a formal release.
 
-`4d124b4bb410689071545a41c9c17c31e9393eadbf41ae6a800c5cd458b52a6c`
+## Dirty/operator evidence
 
-STOWED AP242 SHA-256:
-
-`87a6d6f2f234fe955ef6a87aa9f7ac242d28ee10e23b9b60aca94e90e68a02c0`
-
-DEPLOYED AP242 SHA-256:
-
-`fbb716986ce6913715a78468b29fec8ae0a1eb45f64b9a6f825407655d68d1de`
-
-Status: developmental engineering inspection model; not formal release CAD.
-
-## Validated R2/state-parity source
-
-Previously identified authoritative local source:
-
-`C:\Users\ANDRE.ANDREWSPC\Documents\Codex\2026-08-23\stingray-i5-s-df8-state-parity`
-
-Reference branch:
-
-`audit/state-parity-provenance`
-
-Reference commit:
-
-`61a58cbbccd0aae7a747b2a73046142cf1f44511`
-
-Later audit result: 279/279 occurrences passing after validator correction. This is a strong validation/provenance baseline but should not be assumed to contain the latest shortened/external-buoy geometry.
-
-## Targeted COTS work
-
-Documentation branch:
-
-`design/df8-targeted-cots-retrofit`
-
-Known documentation commit:
-
-`c345782ea3a733ac8338fbd7f206001a18b6f8a8`
-
-Reported status: Phase 1 only / not released; next work was Phase 2.
-
-Earlier baseline documentation commit used for the COTS retrofit:
-
-`95766a1bfc7bcc48416b83c7b25fcbd482ac0608`
-
-## Later staged-inflation development
-
-Local branch reported:
-
-`design/df8-final-staged-inflation-convergence`
-
-HEAD:
-
-`dce7a53643a35d80f5cd6f63f09852ab565a4165`
-
-Status reported: Path B / measured non-pass.
-
-Treat as developmental evidence until local inspection establishes its relationship to the current shortened/external-pack architecture.
-
-## Latest shown physical model — unresolved local provenance
-
-Name reported in the latest ChatGPT review:
-
-`STINGRAY_I5S_DF8_SHORT14_FORWARD`
-
-Reported characteristics:
-
-- shortened approximately 14-in-class arms;
-- arm/deployment assembly shifted forward;
-- external orange buoy pack;
-- newer geometrically than the validated R2 baseline.
-
-The exact source repository, branch, commit, hashes and validation state were not available to this ChatGPT-side harvest. Codex Desktop must resolve these from ANDREWSPC before this model is treated as the definitive current CAD authority.
+Dirty worktrees were recorded but never used to silently supersede committed source. The detached checkpoint reproduction, targeted-COTS untracked audits, main untracked endpoint evidence and the final-converged 889 mm fallback are classified **EVIDENCE HOLD**. See `LOCAL_GIT_HISTORY.md` and `LOCAL_ARTIFACT_INDEX.csv`.
 
 ## Provenance rule
 
-Never select CAD authority because a filename has the highest suffix or latest visible timestamp. Inspect configuration ID, branch/commit, internal manifest, hash record, owner decisions, release classification and actual contents.
+Select CAD authority by exact configuration, branch, commit, internal manifest, hashes, owner decision chronology and validation/release classification. Filename suffixes, timestamps, screenshots, presentation claims and detailed older reports are not enough.

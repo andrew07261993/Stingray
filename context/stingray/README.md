@@ -1,9 +1,9 @@
 # STINGRAY Engineering Context
 
-Purpose: persistent engineering memory for future STINGRAY CAD, COTS sourcing, analysis and validation work.
+Persistent engineering memory for STINGRAY CAD, COTS sourcing, analysis, validation and provenance.
 
 Start with `CONTEXT_INDEX.md`.
 
-This directory was seeded from accessible ChatGPT project/history context, uploaded File Library evidence and the preserved GitHub inspection branch on 2026-08-25. It must be augmented by Codex Desktop with local ANDREWSPC repositories, worktrees, session history and engineering artifacts.
+This directory now reconciles the existing cross-device ChatGPT Project `Stingray` harvest with the separate local Work/Codex project `STINGRAY` history recovered from ANDREWSPC. Large CAD/ZIP/vendor artifacts remain in place and are hash-indexed rather than duplicated.
 
-Do not modify or reorganize `cad/df8-owner-creo-inspection-zips/` while doing context consolidation.
+Do not modify or reorganize `cad/df8-owner-creo-inspection-zips/`. Do not let dirty/EVIDENCE HOLD work or older detailed reports silently supersede the exact current source branch and owner decision chain.

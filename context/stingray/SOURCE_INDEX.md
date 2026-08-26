@@ -1,75 +1,81 @@
 # STINGRAY Source Index
 
-This file records the principal sources used for the ChatGPT-side context harvest on 2026-08-25. It is not a claim that every historical ChatGPT/Codex transcript has been recovered verbatim.
+As of: 2026-08-25.
 
-## GitHub source inspected
+## Project-source separation
 
-Repository: `andrew07261993/Stingray`
+- `Stingray` standard cross-device ChatGPT Project: source of the existing ChatGPT-side context harvest already present on `engineering/stingray-context` before local ingestion.
+- `STINGRAY` local Work/Codex project: source of the ANDREWSPC repositories, worktrees, local session files and engineering artifacts indexed in this consolidation.
 
-Preserved branch: `cad/df8-owner-creo-inspection-zips`
+The distinction is owner-supplied and controlling. The current local Codex state database has no explicit named `projects` row for STINGRAY, so project identity is preserved through the owner statement, workspace paths, session content and repository provenance rather than invented metadata.
 
-Key inspected file:
+## Git sources
 
-- `cad/df8-owner-creo-inspection-zips/README.md` — five preserved inspection packages, exact source branches/commits/hashes/status and package limitations.
+Primary local CAD object database:
 
-## ChatGPT project/history context recovered
+`C:\Users\ANDRE.ANDREWSPC\Documents\Codex\2026-08-22\stingray-i5-s-df8-codex-one\stingray-i5s-df8-cad`
 
-Recovered project/history context included:
+Current CAD worktree:
 
-- DF7/DF8/I5-S architecture evolution;
-- owner decisions and approvals;
-- WP01–WP06 work-package history;
-- 2.250-in arm-module redesign analysis;
-- R1 rejection / R2 mechanical-cohesion correction;
-- bounded correction/validation directives;
-- state-parity/provenance resolution;
-- targeted COTS retrofit work;
-- COTS-heavy architecture studies;
-- staged-inflation/commercial-module studies;
-- shortened-arm/forward-powertrain/external-buoy development;
-- latest CAD-review conversations;
-- COTS buoyancy research;
-- vendor/RFQ context;
-- Creo-facing naming requirements.
+`C:\Users\ANDRE.ANDREWSPC\Documents\Codex\2026-08-25\stingray-i5-s-df8-14in-short-forward-powertrain-buoy`
 
-## File Library sources recovered
+Remote-backed documentation repository:
 
-High-value uploaded/library artifacts found and used as evidence include:
+`C:\Users\ANDRE.ANDREWSPC\Documents\Codex\2026-08-23\stingray-docs`
 
-- `STINGRAY_I5S_DF8_MECHANICAL_BREAKDOWN_REVIEW.pptx`
-- `STINGRAY_I5S_DF8_SUBASSEMBLY_MECHANICAL_BREAKDOWN.pptx`
-- `STINGRAY Iteration-5 Fresh-Thread Engineering Continuation: Evidence Reconciliation and Corrective Work Package`
-- `Pasted markdown (3).md` — targeted COTS retrofit baseline/provenance
-- `Pasted markdown (2).md` — read-only local worktree/branch audit and local state inventory
-- `STINGRAY_CODEX_ANOMALY_REMEDIATION_PROMPT.txt`
-- `build_wp02.py` — WP02 arm/powertrain implementation and COTS identities
-- `WP01_DIGITAL_ACCEPTANCE_SUMMARY.json`
-- `WP03_MODEL_INDEX_AND_MASS_PROPERTIES.json`
-- `STINGRAY_I5S_DF8_WP06_BUILD_AND_VALIDATION_STATUS.md`
-- `CAD_DESIGN_INPUT_REGISTER.csv`
-- `STINGRAY DF8 External Pack Buoyancy Aid Selection and Configuration`
-- historical full-CAD commission text covering AP242 validation, attachment audit and release gates
-- screenshots showing local/remote Codex STINGRAY task names on ANDREWSPC.
+Remote:
 
-## Vendor/COTS evidence represented in recovered work
+`https://github.com/andrew07261993/Stingray`
 
-Recovered research and engineering records reference manufacturer/vendor evidence for, among others:
+Full repository/worktree/branch inventory is in `LOCAL_GIT_HISTORY.md`.
 
-- ACE Controls GS-19-50-V4A-B8-B8
-- ACE Controls HBD-15-25-AA-P
-- SECUMAR Pack Buoyancy Aid with SECUTRONIC
-- PECI Auto-TFSS
-- Lifesaving Systems 470-CG / related inflation consumables
-- Leland Gas Technologies 80121
-- Smalley VSM-6-S16-PA
-- Rotor Clip DC-4SS
-- Swagelok 316L-50DF4-150
-- HIKO FLOATEK FULL TAIL 87640_OLV_ONE
-- BUMAX 14583A40300688
-- Essentra 20828400
-- UML MK5 / UML Pro Sensor Elite
-- V95000 commercial-module candidate.
+## Session sources
+
+Content-scanned stores:
+
+- `C:\Users\ANDRE.ANDREWSPC\.codex\sessions`
+- `C:\Users\ANDRE.ANDREWSPC\.codex\archived_sessions`
+- title metadata: `C:\Users\ANDRE.ANDREWSPC\.codex\session_index.jsonl`
+- read-only structural metadata: `state_5.sqlite` and `thread_history_1.sqlite`
+
+Result: 79 relevant rollout records representing 61 unique session IDs, 78 active-store records and one archived-store record. The scan matched actual message content after excluding app-injected context; it did not rely only on titles. Guardian/subagent and locally synchronized rollout forms were included where their content was STINGRAY-relevant. See `CODEX_SESSION_INDEX.md` for every source path and SHA-256.
+
+## Local engineering artifact sources
+
+High-value source trees include:
+
+- all linked DF8 CAD worktrees from R2/state-parity through Package 05;
+- `C:\Users\ANDRE.ANDREWSPC\CodexProjects\STINGRAY_CODEX_COMMISSION`;
+- `C:\Users\ANDRE.ANDREWSPC\CodexProjects\stingray-cad-transition`;
+- `C:\Users\ANDRE.ANDREWSPC\CodexProjects\stingray-final-delivery-work`;
+- stakeholder/per-part deck clones and `stingray-ppt-build` source-derived images;
+- local state-parity ZIP and dirty operator evidence retained in place.
+
+`LOCAL_ARTIFACT_INDEX.csv` records 110 selected high-value files, 578,759,238 indexed bytes, exact paths, repository/worktree, branch, commit, date/configuration, relevance, classification, SHA-256 and size. The binaries were not duplicated into this context branch.
+
+## COTS/vendor sources
+
+Controlling local registers include:
+
+- current external-pack component register;
+- commercial automatic-module evidence/package screen;
+- COTS-heavy 25-candidate BOM and final pressure-source BOM;
+- targeted-COTS final BOM and technical closure/decision ledger;
+- historical CONFIG-D selected-parts/vendor manifests and authentic vendor STEP files.
+
+The consolidated result is `COTS_MASTER_INDEX.md` with 74 unique exact configurations or explicitly labeled product families.
+
+## Bounded search scope
+
+Searched:
+
+- `C:\Users\ANDRE.ANDREWSPC\Documents\Codex`
+- `C:\Users\ANDRE.ANDREWSPC\CodexProjects`
+- actual `C:\Users\ANDRE.ANDREWSPC\.codex` (the prompt's path without the separator does not exist)
+- Desktop, Documents and Downloads only through STINGRAY/I5-S/DF7/DF8/SHORT14/FORWARD/COTS/buoy/arm/powertrain/Creo/AP242/STEP-relevant names.
+
+No broad crawl of unrelated personal/system content was used. `.venv`, `node_modules`, `.git` internals and credential/browser stores were excluded from artifact ingestion except where Git itself read repository metadata.
 
 ## Source-use rule
 
-Future agents should prefer the exact local/source artifact and current manufacturer evidence over this summary when available. This context directory is an index and control layer, not a substitute for inspecting the controlling CAD/source/vendor data.
+This directory is a control/index layer. For engineering action, open the exact source file at the recorded path and bind claims to the recorded branch/commit/hash. Session prose, screenshots and summary documents cannot substitute for controlling CAD, current vendor evidence or physical qualification.

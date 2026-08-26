@@ -1,64 +1,107 @@
 # STINGRAY COTS Master Index
 
-As of 2026-08-25. Status reflects recovered engineering context, not procurement release.
+As of: 2026-08-25. This is engineering evidence, not procurement release, qualification or acceptance authority.
 
-| Subsystem | Manufacturer | Product / P/N | Status | Notes |
-|---|---|---|---|---|
-| Arm drive | ACE Controls | GS-19-50-V4A-B8-B8 | SELECTED / RETAINED | Authentic vendor BREP used in prior CAD. Configured force still requires supplier/bench evidence. |
-| Damping | ACE Controls | HBD-15-25-AA-P | SELECTED / RETAINED | Direct installation; no bypass. Seizure accepted as single-point deployment failure. Exact configured vendor data still required. |
-| External buoyancy | SECUMAR | Pack Buoyancy Aid with SECUTRONIC, 350 N / 75 g CO2 | PRIMARY CANDIDATE | Best current equipment-oriented match. Pending exact MPN, packed dimensions, mass/CG, activation configuration and rated structural attachment. |
-| External buoyancy benchmark | PECI | Auto-TFSS, NSN 8465-01-696-6409 | ALTERNATE / REFERENCE | ~356 N surface; each pouch approx. 8.5 x 2.5 x 2.25 in. Useful packaging/depth benchmark; two-pouch body-worn architecture is less attractive for DF8. |
-| Inflator technology | Lifesaving Systems | 470-CG | ALTERNATE TECHNOLOGY | Appropriate only for a smaller custom bladder or manufacturer-engineered multi-inflator solution; not an ad-hoc substitute for SECUMAR's 75 g system. |
-| CO2 cartridge | Leland Gas Technologies | 80121 | HISTORICAL COTS / WP03 | Used in prior water-activation/inflation work as manufacturer-web-derived COTS geometry. Relevance to external-pack branch must be re-evaluated. |
-| Retaining ring | Smalley | VSM-6-S16-PA | CANDIDATE / PRIOR WP02 | Drawing-derived COTS geometry used for low axial positioning; not credited as primary structural arm retention. |
-| Retaining ring | Rotor Clip | DC-4SS | CANDIDATE / RFQ | Developmental RFQ issued for PH 15-7 stainless self-finish rings; vendor data/traceability requested. |
-| Pressure cylinder | Swagelok | 316L-50DF4-150 | CANDIDATE / RFQ | Developmental RFQ for two 316L cylinders; exact CAD, pressure/external-collapse, refill and certification data requested. |
-| Flotation article | HIKO FLOATEK | FULL TAIL 87640_OLV_ONE | CANDIDATE / RFQ | Developmental same-lot test article candidate; requested buoyancy, seam/material, valve/inflation, attachment limits and traceability. |
-| Structural fastener | BUMAX | 14583A40300688 | EVIDENCE HOLD | Prior WP01 digital package identified missing authentic CAD/procurement evidence. |
-| Purchased component | Essentra | 20828400 | EVIDENCE HOLD | Prior WP01 digital package identified missing authentic CAD. |
-| Buoy/inflation module | UML | MK5 | CANDIDATE / PROXY HISTORY | Used as a proxy/reference in short-arm/external-buoy development and screened as a possible commercial module. Exact applicability must be resolved locally. |
-| Buoy/inflation module | UML | Pro Sensor Elite | CANDIDATE / SCREENED | Included in commercial-module screening; no supported complete module fit the 50.700 mm bore in the staged-inflation study. |
-| Buoy/inflation module | V95000 complete package | CANDIDATE / SCREENED | Included in commercial-module closure screening; local result/provenance should be ingested. |
+## Current controlling conclusion
 
-## External buoyancy research conclusions
+The newest local CAD (`SHORT14_FORWARD_POWERTRAIN_EXTERNAL_BUOY`, commit `aa186c9c1c311c510ac34e48bd4170ef7636b7bf`) models only three external inflation BUY/proxy identities: Leland `81121`, a Halkey-Roberts `V95000XXB` / Hydro 1F dimension-controlled proxy, and `V80040`. It does **not** establish an orderable, complete, qualified commercial buoy/inflator module. Finished-article compatibility, volume, wet inflation, leak, proof, breakaway, pull, snag, drainage and repack remain open.
 
-Current highest-value candidate is the SECUMAR 350 N Pack Buoyancy Aid with SECUTRONIC because it already combines:
+The fixed-480 commercial closure remains a measured non-pass for an internal complete module: UML MK5 and Pro Sensor Elite lack controlled complete installed dimensions, while the `470-CG` / `V95000-1F` family measures 127.0 mm across and fails the 50.700 mm bore by 76.300 mm. That result is controlling for the fixed-480 internal-module study, but it does not erase the later owner-directed external-pack developmental CAD.
 
-- equipment-oriented flotation/surfacing architecture;
-- approximately 350 N / 35 L / 77 lbf surface buoyancy;
-- 75 g CO2 inventory;
-- automatic water/depth activation logic;
-- manual pull activation;
-- folded protective pack / breakaway-style deployment;
-- field rearmability.
+Unique exact components/configurations or explicitly labeled product families indexed: **74**. Articulation children, repeated quantities, custom STINGRAY parts and duplicate copies are not counted as separate COTS components.
 
-Do not assume its public MOLLE grid, Malice clips, hook-and-loop closure or cover are rated to carry STINGRAY recovery loads.
+Primary local evidence:
 
-Vendor-data gate before CAD freeze:
+- `C:\Users\ANDRE.ANDREWSPC\Documents\Codex\2026-08-25\stingray-i5-s-df8-14in-short-forward-powertrain-buoy\work\short14_external_buoy\EXTERNAL_BUOY_PACK_COMPONENT_REGISTER.csv`
+- `C:\Users\ANDRE.ANDREWSPC\Documents\Codex\2026-08-25\stingray-i5-s-df8-final-commercial-module\COMMERCIAL_AUTOMATIC_MODULE_EVIDENCE.csv`
+- `C:\Users\ANDRE.ANDREWSPC\Documents\Codex\2026-08-24\stingray-i5-s-df8-cots-heavy\docs\engineering\cots\cots-heavy-architecture\COTS_CANDIDATE_BOM.csv`
+- `C:\Users\ANDRE.ANDREWSPC\Documents\Codex\2026-08-23\stingray-i5-s-df8-state-parity-targeted-retrofit\work\targeted_cots_analysis\TARGETED_COTS_FINAL_BOM.csv`
+- `C:\Users\ANDRE.ANDREWSPC\Documents\Codex\2026-08-23\stingray-docs\docs\engineering\cots\targeted-retrofit\SELECTED_COTS_TECHNICAL_CLOSURE.csv`
 
-- exact orderable model/MPN;
-- packed L x W x T;
-- complete packed mass and CG;
-- inflated chamber geometry;
-- chamber material;
-- exact 75 g cartridge P/N;
-- SECUTRONIC activator/rearm P/N;
-- available water-contact delay / critical-depth settings;
-- operating temperature range;
-- buoyancy vs depth at relevant depths;
-- manual pull force/stroke;
-- structural attachment point and allowable load;
-- STEP/IGES or dimensioned envelope drawing;
-- service life/rearm procedure;
-- lead time.
+## Reconciled component register
 
-## COTS accounting rule
+| # | Function | Manufacturer | Exact P/N or controlled family | Vendor / evidence | CAD availability | Key recovered specification or interface | Selection status | Architecture used or considered | Classification |
+|---:|---|---|---|---|---|---|---|---|---|
+| 1 | Closure witness | JW Winco / Ganter | GN-615.3-M3-KN-PFB | JW Winco/Ganter | Drawing-derived catalog envelope | M3; 8.0 mm housing; 1.5 mm travel; 3.0/4.5 N spring load | Retained BUY line; incoming verification open | R2, targeted-COTS, SHORT14 inherited | CURRENT DEVELOPMENTAL |
+| 2 | Arm actuation | ACE Controls | GS-19-50-V4A-B8-B8 | ACE Controls | Controlled ACE vendor STEP used; articulated install BREP drawing-derived | 50 mm stroke; 164.1 mm extended; 7.9 mm rod; 0.144 kg; 300 +/-30 N development setting | Selected/retained; configured force needs supplier or bench evidence | R2 through SHORT14_FORWARD | CURRENT DEVELOPMENTAL |
+| 3 | Damping | ACE Controls | HBD-15-25-AA-P | ACE Controls | Configured drawing-derived AP242; not exact vendor CAD | 24.9/25 mm stroke; 145 mm extended; 15 mm body; 6.1 mm rod; 0.220 kg | Selected/retained; suffix force-speed/environment open | R2 through SHORT14_FORWARD | CURRENT DEVELOPMENTAL |
+| 4 | Pivot dowel | Accu | HDP-3-8-A1 | Accu | Drawing-derived official dimensions | 3 x 8 mm DIN 7; m6 tolerance; 316 stainless | Retained BUY line | Targeted-COTS and later inherited | CURRENT DEVELOPMENTAL |
+| 5 | External circlip | Accu | HEC-10-A4 | Accu | Drawing-derived official dimensions | 10 mm DIN 471; 1.0 mm thick; 1.4310 stainless | Retained BUY line | Targeted-COTS and later inherited | CURRENT DEVELOPMENTAL |
+| 6 | Taper pin | Accu | HTP-3-30-A1 | Accu | Drawing-derived official dimensions | 3 x 30 mm DIN 1B; 316 stainless | Retained BUY line | Targeted-COTS and later inherited | CURRENT DEVELOPMENTAL |
+| 7 | CO2 cartridge | Leland Gas Technologies | 81121 / LELAND-81121 | Leland | Drawing-derived controlled envelope | 12 g CO2; 0.735 in body; 3.250 in OAL; 3/8-24 neck | One external cartridge modeled; compatibility/finished inflation open | Current SHORT14_FORWARD pack; four used in older R2 | CURRENT DEVELOPMENTAL |
+| 8 | Hinge/link retention | Rotor Clip | DC-4SS / ROTOR-CLIP-DC-4SS | Rotor Clip | Official nominal-installed CAD available; authored model drawing-derived | 4 mm shaft; 3.13-3.20 mm groove; PH 15-7; 0.50 kN ring thrust | Accepted for applicable retainer grooves; not accepted for blocked sear/Bowden interface | R2 targeted-COTS and later inherited | CURRENT DEVELOPMENTAL |
+| 9 | Poppet check valve | Swagelok | SS-CHS2-1 | Swagelok | Controlled analytic/drawing-derived installation BREP | 316 SS; 1/8 in tube; 6000 psig / 413 bar catalog rating | Retained BUY line; cracking direction/leak acceptance open | Targeted-COTS/R2 | HISTORICAL |
+| 10 | Captive socket screw | Accu | SSCA-M3-8-A4-BL | Accu | Drawing-derived official dimensions | M3 x 8; DIN 912; A4-80; 2.2 mm captive diameter | Retained BUY line | Targeted-COTS and later inherited | CURRENT DEVELOPMENTAL |
+| 11 | Socket screw | Accu | SSCF-M3-10-A4 | Accu | Drawing-derived official dimensions | M3 x 10; DIN 912 / ISO 4762; A4-80 | Retained BUY line | Targeted-COTS and later inherited | CURRENT DEVELOPMENTAL |
+| 12 | Socket screw | Accu | SSCF-M3-6-A4 | Accu | Drawing-derived official dimensions | M3 x 6; DIN 912 / ISO 4762; A4-80 | Retained BUY line | Targeted-COTS and later inherited | CURRENT DEVELOPMENTAL |
+| 13 | Low-head socket screw | Accu | SSCL-M4-8-A4 | Accu | Drawing-derived official dimensions | M4 x 8; DIN 7984; A4-80 | Retained BUY line | Targeted-COTS and later inherited | CURRENT DEVELOPMENTAL |
+| 14 | Countersunk screw | Accu | SSK-M3-6-A4-P80 | Accu | Drawing-derived official dimensions | M3 x 6; ISO 10642; A4-80; Precote 80 | Retained BUY line | Targeted-COTS and later inherited | CURRENT DEVELOPMENTAL |
+| 15 | Water-sensitive bobbin | Nordson MEDICAL / Halkey-Roberts | V80040 | Nordson / Halkey-Roberts | Drawing-derived service envelope | 10 x 18 mm modeled; water-sensitive consumable; tested family -5 to 70 C | Modeled; lot/expiry and application qualification open | R2 and current SHORT14_FORWARD external pack | CURRENT DEVELOPMENTAL |
+| 16 | Pivot retention | Smalley | VSM-8-S16 | Smalley | Official PDF/CAD form gated; dimensional proxy used | 8 mm shaft; 7.60 +/-0.05 mm groove; 0.46 +0.05/-0.00 mm width; 316 SS | Engineering-accepted and implemented; procurement/receiving gate open | Targeted-COTS developmental delta | HISTORICAL |
+| 17 | Automatic/manual inflator | Nordson MEDICAL / Halkey-Roberts | V95000XXB Alpha / Hydro 1F family proxy | Nordson / Halkey-Roberts | DIMENSION-CONTROLLED PROXY; internals not modeled | 1/2-20 family; external pack occurrence mass basis 0.180 kg | Modeled proxy only; exact suffix, cartridge, manifold, bladder and application qualification open | Current SHORT14_FORWARD external pack | CURRENT DEVELOPMENTAL |
+| 18 | CO2 storage | Leland Gas Technologies | 89070 | Leland | Catalog/drawing family; exact installed CAD not controlled | 70 g CO2; 1/2-20 | Provisional COTS-heavy candidate | Architectures A/C | HISTORICAL |
+| 19 | Pilot check valve | Swagelok | SS-4C-1/3 | Swagelok | Manufacturer catalog/CAD family | 316 SS; 1/4 in tube; selected cracking pressure needs test | Candidate; CO2 cold-flow open | Architecture C | HISTORICAL |
+| 20 | Pressure-bus union tee | Swagelok | SS-400-3 | Swagelok | Catalog family; exact suffix/drawing not frozen | 1/4 in tube union tee | Candidate | Architecture C | HISTORICAL |
+| 21 | Adjustable relief | Swagelok | KVV11DE1 | Swagelok | Manufacturer catalog/CAD family | 0-100 psig adjustable family | Candidate; set point blocked by buoy MAWP | Architectures B/C | HISTORICAL |
+| 22 | DOT cylinder | Swagelok | 316L-HDF4-300 | Swagelok | Official 2D/3D offered; exact local binary not controlled | 300 cm3; DOT-3E; 1800 psig | Candidate; CO2 fill/recharge approval open | Architecture B | HISTORICAL |
+| 23 | High-pressure relief | Swagelok | SS-4R3A1 | Swagelok | Manufacturer catalog/CAD family | High-pressure relief family; range/suffix unfrozen | Candidate | Architecture B | HISTORICAL |
+| 24 | Release actuator | Clippard | SRR-14-4 | Clippard | Product page; exact configuration CAD not controlled | 7/8 in bore stainless cylinder family | Candidate; stroke/force/seal/seawater fit unverified | Architectures A/B/C | HISTORICAL |
+| 25 | Backup spring | Lee Spring | LHL 625D 12 | Lee Spring | Catalog family | 15.24 mm OD; rate differs from legacy target | Candidate; recalculation required | Architectures A/B/C | HISTORICAL |
+| 26 | Buoy ejector spring | Gutekunst Federn | VD-244 | Gutekunst | Official datasheet and STEP/STL/IGES portal | 2 mm wire; 22 mm OD; 200 mm free; dynamic stroke limit 31.82 mm | Rejected; cannot meet 85 mm installed stroke | Targeted-COTS / COTS-heavy screen | REJECTED |
+| 27 | Transport inhibit / lock | JW Winco / Ganter | GN 817-4-6-M8x1-BK-NI-RT | JW Winco/Ganter | Catalog CAD family | Stainless non-lock-out indexing plunger | Candidate; load/contamination fit open | Architectures A/B/C | HISTORICAL |
+| 28 | Shaft retention | Smalley | VSM-6-S16-PA | Smalley | Catalog/dimensional candidate | 6 mm stainless retaining-ring family | Candidate; groove/load/service open | Architectures A/B/C | HISTORICAL |
+| 29 | Recovery tether raw line | Samson Rope Technologies | AmSteel Blue code 872, 7/64 in | Samson | No rigid CAD required | Manufacturer minimum strength historically recorded 1400 lbf | Raw COTS line retained; finished splices remain custom/proof-tested | R2/COTS-heavy/current tether basis | CURRENT DEVELOPMENTAL |
+| 30 | Buoy harness webbing | Sturges Manufacturing | X-6292 UHMWPE engineered webbing | Sturges | No exact installed CAD; material family | UHMWPE engineered webbing; public exact MBS/weave not established | Candidate/raw material only | COTS-heavy and R2 harness | HISTORICAL |
+| 31 | Buoy bladder fabric | Eastex Products | 22035 Tek Air 70D | Eastex | No rigid CAD; material data | TPU/nylon air-holding fabric candidate | Candidate raw material; does not make the buoy COTS | Architectures A/B/C | HISTORICAL |
+| 32 | Service seal | Parker Hannifin | E0540 2-030 | Parker | Catalog geometry family | EPDM 80-durometer O-ring/wiper candidate | Candidate; squeeze/friction/salt aging open | Architectures A/B/C | HISTORICAL |
+| 33 | Reset collar | JW Winco / Ganter | GN 706.3-20-M8X1-NI | JW Winco/Ganter | Catalog CAD family | Stainless threaded set collar | Candidate with small custom adapter | Architectures A/B/C | HISTORICAL |
+| 34 | CO2 storage | Leland Gas Technologies | 89150 | Leland | Catalog/drawing family | 150 g CO2; 1/2-20; near 50 mm diameter | Deferred sizing alternative | COTS-heavy | HISTORICAL |
+| 35 | DOT cylinder | Swagelok | 316L-HDF4-150 | Swagelok | Official 2D/3D offered; exact local binary not controlled | 150 cm3; DOT-3E; 1800 psig | Alternate; likely gas-margin constraint | Architecture B alternate | HISTORICAL |
+| 36 | Automatic inflator module | United Moulders Limited | UMA4012/D160 (UML MK5 D) | UML | No complete installed CAD/envelope recovered | Automatic within ~3 s; UML D-manifold/lifejacket use; component certificate to 2028-08-08 | Class C: controlled complete dimensions required | Fixed-480 commercial-module closure | EVIDENCE HOLD |
+| 37 | Water cartridge | United Moulders Limited | UMA5000_1 | UML | No exact installed CAD recovered | Cellulose-paper water cartridge for MK5 | Required MK5 consumable; complete module still blocked | UML MK5 | EVIDENCE HOLD |
+| 38 | D manifold | United Moulders Limited | UMS1672 | UML | No standalone DF8 installed CAD recovered | Welded polyurethane chamber manifold interface | Required by UML D configurations; not a rated DF8 standalone interface | UML MK5 / Pro Sensor Elite | EVIDENCE HOLD |
+| 39 | CO2 cylinder | Spinlock | DW-CYD60 | Spinlock | Exact cylinder dimensions/sub-MPN unpublished in recovered evidence | 60 g; 1/2-20 UNF | Required UML rearm cylinder; fit not determinable | UML MK5 / Pro Sensor Elite | EVIDENCE HOLD |
+| 40 | Rearm kit | Spinlock | DW-RAK/275 | Spinlock | No CAD needed/located | MK5 system rearm kit | Service consumable; module fit unresolved | UML MK5 | EVIDENCE HOLD |
+| 41 | Automatic inflator module | United Moulders Limited | UMA8000-8050 (Pro Sensor Elite D) | UML | No complete installed CAD/envelope recovered | Automatic ~3 s; recovered certificate expired 2026-04-14 | Class C: dimensions and current certificate required | Fixed-480 commercial-module closure | EVIDENCE HOLD |
+| 42 | Water capsule | United Moulders Limited | UMA8050 | UML | No exact installed CAD recovered | Paper water-sensitive capsule for Pro Sensor Elite | Required consumable; module fit unresolved | UML Pro Sensor Elite | EVIDENCE HOLD |
+| 43 | Rearm kit | Spinlock | DW-RAK/E275 | Spinlock | No CAD needed/located | Pro Sensor Elite system rearm kit | Service consumable; module fit unresolved | UML Pro Sensor Elite | EVIDENCE HOLD |
+| 44 | Retainer system | Spinlock | DW-CYD/RET | Spinlock | Standalone DF8 holder/support geometry/rating uncontrolled | Commercial lifejacket cylinder-retainer system | Support interface not established | UML module families | EVIDENCE HOLD |
+| 45 | Complete automatic inflator | Lifesaving Systems / Halkey-Roberts | 470-CG | Lifesaving Systems | Complete family dimensions recovered; no exact vendor solid | 228.6 x 127.0 x 50.8 mm complete family; 33 g cartridge | Class D: fails 50.7 mm bore by 76.3 mm | Fixed-480 commercial-module closure | REJECTED |
+| 46 | Automatic/manual inflator | Nordson MEDICAL / Halkey-Roberts | V95000-1F | Nordson / Halkey-Roberts | Official drawing/tech sheet; no exact vendor solid recovered | 1/2-20; V80040; UL1191/CEN/ISO12402-7 life-vest component | Part of physically failing 470-CG assembly; multi-module use unqualified | Fixed-480 closure and external-pack proxy ancestry | REJECTED |
+| 47 | Full-flow manifold | Nordson MEDICAL / Halkey-Roberts | 830011001 | Nordson / Halkey-Roberts | Official drawing recovered | Two-O-ring V95000 engagement; welded urethane chamber flange | Commercial interface, but complete module does not fit fixed-480 bore | 470-CG/V95000 family | REJECTED |
+| 48 | Cylinder holder | Nordson MEDICAL / Halkey-Roberts | V90139UCH / V90139UCH2 | Nordson / Halkey-Roberts | Official instructions; handed geometry | Universal cylinder holder family | Handed configuration and service envelope controlled; complete module fails fit | 470-CG/V95000 family | REJECTED |
+| 49 | CO2 cartridge | Lifesaving Systems | #484 | Lifesaving Systems | Catalog family evidence | 33 g CO2; 1/2-20 UNF | Seven-cartridge inventory could meet mass but assembly geometry fails | 470-CG module screen | REJECTED |
+| 50 | DOT cylinder | Swagelok | 316L-50DF4-150 | Swagelok | Official 2D/3D offered; binary not retrieved in targeted work | 150 cm3; 48.2 x 203 mm; 5000 psig through 37 C | Rejected installed fit; physical development article only | Targeted-COTS retrofit | REJECTED |
+| 51 | Flotation article | HIKO Sport | 87640_OLV_ONE (FLOATEK FULL TAIL) | HIKO | No official rigid CAD or dimensioned drawing | Manufacturer did not publish required volume/packed envelope | Rejected for CAD substitution; RFQ/test-article evidence only | Targeted-COTS retrofit | REJECTED |
+| 52 | Flange bearing | igus | GFM-081013-08 | igus | Official catalog/CAD portal | 8 ID x 10 housing OD x 13 flange OD x 8 long; iglide G | Rejected: manufacturer says not for underwater use and envelope mismatch | Targeted-COTS retrofit | REJECTED |
+| 53 | Thrust washer | igus | GTM-0815-005 | igus | Official catalog/CAD portal | 8 ID x 15 OD x 0.5 mm; iglide G | Rejected: underwater guidance and 0.5 versus 0.18 mm stack | Targeted-COTS retrofit | REJECTED |
+| 54 | Charged CO2 cylinder | Leland Limited | 89200 | Leland | Catalog/drawing controlled; exact allowable pressure not public | 200 g CO2; 1/2-20; 50.038 OD x 234.95 mm; ~0.300 kg | Selected developmental source; procurement held | Architecture C / fixed-480 pressure study | HISTORICAL |
+| 55 | Mountable puncture device | Leland Limited | 65026-18Y12 | Leland | Mountable-family dimensional proxy; interface drawing required | 1/2-20 inlet; 1/8 NPT outlet; 206 bar maximum inlet | Selected HP boundary in study; exact suffix/orderability gate open | Architecture C | EVIDENCE HOLD |
+| 56 | Puncture-device bracket | Leland Limited | 65027 | Leland | Drawing-controlled family | Mounting support for 65026 family | Selected support; compatibility/CoC gate open | Architecture C | EVIDENCE HOLD |
+| 57 | Puncture-device nut | Leland Limited | 65028 | Leland | Drawing-controlled family | 1-12 retaining nut for mountable family | Selected support; compatibility/CoC gate open | Architecture C | EVIDENCE HOLD |
+| 58 | Fixed-jet inlet | Leafield Marine | B9116042.2 | Leafield | Interface drawing evidence | G3/8 male; 2.2 mm development jet | Retained development component; final jet is a test variable | Architecture C custom 60 L buoy | HISTORICAL |
+| 59 | Differential relief | Leafield Marine | B10 Yellow 1.75 psi | Leafield | Interface/drawing evidence | Nominal 1.75 psi; opening max 2.13; sealing min 1.48; 39-39.5 mm hole | Retained buoy relief; flow accumulation test open | Architecture C custom 60 L buoy | HISTORICAL |
+| 60 | Pressure vessel | eurocylinder systems AG | 130522277 | eurocylinder | Catalog envelope | 1.00 L; 25E; 200 bar WP; 82.5 OD x 280 mm; 1.7 kg | Rejected: exceeds controlling DF8 diameter | Architecture C screen | REJECTED |
+| 61 | Trigger valve | Clippard | MJV-3 | Clippard | Authentic OEM STEP present; SHA indexed locally | Three-way NC; 1/8-27 NPT; 300 psig max; 46 x 22.25 x 15.9 mm | Historical CAD-verified selection; adapters/testing unresolved | STG-REALITY-CAD-001 / CONFIG-D | HISTORICAL |
+| 62 | Pressure receiver | Clippard | AVT-12-1 | Clippard | Exact CAD not acquired | 83.34 long x 20.62 OD; 250 psig; 0.11 lb | Historical unresolved selection | CONFIG-D | HISTORICAL |
+| 63 | Actuator | SMC | NCJ2B10-050S | SMC | Exact model CAD page found; binary not acquired | 10 mm bore; 12.7 mm stroke; ~45.5 mm long; 100 psig | Historical unresolved selection | CONFIG-D | HISTORICAL |
+| 64 | Fill/check valve | Beswick Engineering | CKV-M3F-M3M-316-VIX | Beswick | OEM configurator/STEP family; local historical STEP present | M3 female to M3 male; 316 SS; 250 psig back-pressure family | Historical unresolved configured selection | CONFIG-D | HISTORICAL |
+| 65 | Regulator | Beswick Engineering | PR-MLS-10-1-HP-3 | Beswick | OEM STEP family and normalized local STEP present | 303 SS; 500 psig inlet; up to 100 psig outlet; ~6.2 g | Historical unresolved configured selection | CONFIG-D | HISTORICAL |
+| 66 | Relief valve | Beswick Engineering | RV-MLS-10-1-LP-3V | Beswick | OEM STEP family/local historical STEP present | 303 SS; configurable crack range; ~6.2 g | Historical unresolved configured selection | CONFIG-D | HISTORICAL |
+| 67 | Flow control | Beswick Engineering | NV3I-M3-1-3 | Beswick | OEM CAD advertised; exact binary not established | M3 inline; 0-0.028 in adjustable orifice; 1000 psig max | Historical unresolved configured selection | CONFIG-D | HISTORICAL |
+| 68 | Tubing | Beswick Engineering | MUT-1012 | Beswick | No rigid CAD required | 3.175 OD x 1.588 ID polyurethane; 135 psig at 75 F | Historical engineering-analysis item | CONFIG-D | HISTORICAL |
+| 69 | Actuator | AutomationDirect | A12005SN | AutomationDirect | Original and normalized vendor STEP present locally | Exact rating/interface must be read from historical source package | Historical selected/reference item only | STINGRAY_FINAL_DELIVERY CONFIG-D | HISTORICAL |
+| 70 | Relief valve | Generant | VRV-125SS-V-75 | Generant | Vendor family STEP and normalized selected STEP present | Exact historical configured interface; current DF8 applicability not established | Historical selected/reference item only | STINGRAY_FINAL_DELIVERY CONFIG-D | HISTORICAL |
+| 71 | Receiver | Swagelok | SS-4CD-TW-10 | Swagelok | Original and normalized vendor STEP present | Historical receiver configuration; current DF8 applicability not established | Historical selected/reference item only | STINGRAY_FINAL_DELIVERY CONFIG-D | HISTORICAL |
+| 72 | Receiver adapter | Swagelok | SS-600-1-2 | Swagelok | Original and two normalized adapter STEP states present | Historical adapter configuration; current DF8 applicability not established | Historical selected/reference item only | STINGRAY_FINAL_DELIVERY CONFIG-D | HISTORICAL |
+| 73 | External buoyancy system | SECUMAR | UNKNOWN exact MPN; 350 N Pack Buoyancy Aid with SECUTRONIC family | SECUMAR research | No exact local CAD/dimensioned envelope indexed | ~350 N / 35 L / 75 g CO2 research basis; packed dimensions and load path unknown | Primary research candidate only; not owner-selected or implemented | External-pack future COTS study | UNCERTAIN |
+| 74 | External buoyancy benchmark | PECI | Auto-TFSS; NSN 8465-01-696-6409 | PECI research | No exact local CAD indexed | ~356 N; each pouch about 8.5 x 2.5 x 2.25 in research benchmark | Alternate/reference only | External-pack future COTS study | UNCERTAIN |
 
-For future COTS-percentage reporting, distinguish:
+## COTS accounting and authority rules
 
-- independently orderable functional COTS lines;
-- standard fasteners/raw stock/consumables;
-- child geometry inherited from purchased assemblies;
-- custom fabricated parts.
-
-Do not inflate the COTS percentage by manipulating the denominator or counting child geometry as separately purchased components.
+- Count an independently orderable functional line once. Do not count purchased-assembly child geometry as separate purchases.
+- Separate exact vendor CAD, manufacturer drawing-derived geometry, controlled dimensional proxies and custom analytic geometry.
+- A catalog family, shared thread or inflator-only length is not a complete installed commercial module.
+- An authorized RFQ or technical-information inquiry is not purchase, supplier qualification, CAD acceptance or release.
+- Do not infer holder/manifold/adapter/service-envelope geometry, pressure ratings, CoC, mass/CG or application approval from adjacent parts.
+- Current manufacturer evidence and the exact controlling CAD configuration outrank older detailed trade documents.

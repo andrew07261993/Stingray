@@ -1,67 +1,84 @@
 # STINGRAY Current State
 
-As of: 2026-08-25
+As of: 2026-08-25.
 
-## Current developmental direction
+## Current developmental CAD baseline
 
-- The latest physically shown developmental CAD direction is a shortened-arm, forward-shifted deployment architecture with an external buoyancy pack. The model name reported in the latest review was `STINGRAY_I5S_DF8_SHORT14_FORWARD`. Its exact Git provenance still needs to be resolved locally on ANDREWSPC.
-- Within the preserved GitHub inspection-package branch, Package 05 — `05_TRUE_FORWARD_POWERTRAIN_SHORT14_EXTERNAL_BUOY` — is the most-forward compact developmental variant currently completed there. It uses a true forward powertrain, approximately 14.890-in arms and an external buoy architecture. It is developmental engineering inspection CAD, not a released design.
-- The validated DF8 R2 state-parity baseline remains an important geometric/provenance reference but is no longer assumed to be the newest geometry.
+The newest committed local CAD baseline is the exact configuration:
 
-## Validated baseline reference
+`STINGRAY_I5S_DF8_SHORT14_FORWARD_POWERTRAIN_EXTERNAL_BUOY`
 
-Local authoritative source previously identified:
+Source authority:
 
-`C:\Users\ANDRE.ANDREWSPC\Documents\Codex\2026-08-23\stingray-i5-s-df8-state-parity`
+- path: `C:\Users\ANDRE.ANDREWSPC\Documents\Codex\2026-08-25\stingray-i5-s-df8-14in-short-forward-powertrain-buoy`
+- repository: `C:\Users\ANDRE.ANDREWSPC\Documents\Codex\2026-08-22\stingray-i5-s-df8-codex-one\stingray-i5s-df8-cad`
+- branch: `design/df8-14in-short-forward-powertrain-external-buoy`
+- HEAD: `aa186c9c1c311c510ac34e48bd4170ef7636b7bf`
+- commit date: `2026-08-25T16:05:28-05:00`
+- status at inventory: clean
+- classification: **CURRENT DEVELOPMENTAL**
 
-Known reference commit:
+This resolves the previously abbreviated name `STINGRAY_I5S_DF8_SHORT14_FORWARD`. It is newer than Package 04, commercial-module closure, staged/distributed pressure convergence, the fixed-480 Architecture C non-pass, the forward-arm repack, targeted COTS, final detail cleanup and R2/state-parity work.
 
-`61a58cbbccd0aae7a747b2a73046142cf1f44511`
+It is the current engineering CAD baseline, not a fabrication release, procurement release, qualified product or operational article.
 
-State-parity audit was later resolved with 279/279 occurrences passing and zero unresolved parity issues after correcting a non-semantic OCCT local-BREP digest check.
+## Exact geometry and mass
 
-## Later staged-inflation development
+- source branch baseline: forward-arm commit `a31fce0e768f354b1831331bc2ed145223c8b2c4`
+- source arm length: 733.806 mm
+- current arm length: 378.206 mm
+- exact arm/body reduction: 355.600 mm
+- source nose-tip-to-pivot station: 480.000 mm
+- current true-forward-powertrain pivot station: 355.000 mm
+- actual pivot movement: 125.000 mm forward
+- current rigid-body length: 1675.400 mm
+- maximum rigid span: 56.500 mm, within the 57.150 mm rigid limit
+- STOWED mass: 10.583165211 kg
+- reserve to 18.14 kg: 7.556834789 kg
+- STOWED CG: X 2.456132, Y 0.243630, Z 474.112916 mm
+- STOWED radial CG: 2.468185 mm
+- modeled occurrences: 180 per endpoint
 
-A later local developmental branch was reported as:
+The prior 480.000 mm station remains controlling for the pressure-packaging studies performed under that locked architecture. It must not be replaced by the 889 mm fallback. The later true-forward-powertrain/SHORT14 owner commission is a different, newer configuration and explicitly moved the pivot to 355.000 mm.
 
-`design/df8-final-staged-inflation-convergence`
+## Current CAD validation state
 
-HEAD:
+The branch reports CAD PASS for its bounded developmental gates:
 
-`dce7a53643a35d80f5cd6f63f09852ab565a4165`
+- placement: PASS; 8.000 mm ballast-face-to-carrier-face transition; prohibited interval count 0;
+- changed-part quality: PASS; 70 changed occurrences per endpoint and zero reported invalid/open/nonmanifold/sliver/tiny-edge/broken-fillet/blocked-Boolean defects;
+- endpoint assemblies: PASS; 180 named occurrences and 180 exact solids per state, with zero reported unauthorized rigid intersections or floating/disconnected parts;
+- external-pack function: CAD PASS with physical tests open;
+- five-angle exact Boolean: 43,035 pairs, zero unauthorized/blocked/track/fit errors;
+- full motion: one complete 0-80 degree sweep, 697,167 pairs, zero unauthorized/blocked/track/fit errors;
+- dimensions/mass: PASS against the CAD inputs above;
+- AP242: clean OCP/XCAF reimport, millimetres, named non-flattened hierarchy, exact BREP and zero `FACETED_BREP`.
 
-Reported status: measured non-pass / Path B, not a released configuration.
+These results apply to the exact branch/commit and do not close owner Creo, physical wet/fabric, structural, fall/orientation, vendor, procurement or qualification gates.
 
-Key recorded constraints/results for that development included:
+## Current external buoy/COTS truth
 
-- nose-tip to pivot: 480.000 mm
-- rigid OD hard limit: 57.150 mm
-- rigid length limit: 2032 mm
-- ready-to-throw mass limit: 18.14 kg
-- staged buoyancy requirement: 15.925970 L initial at 5 m / 0 °C
-- nominal surface buoyancy volume: 60 L
-- CO2 qualification quantity: 229.627609 g
-- no supported complete commercial automatic module was found that fit the 50.700 mm bore in that study
+The current CAD models a custom 60 L external softgoods pack and three external inflation BUY/proxy identities:
 
-Treat this as developmental analysis/history unless local source inspection establishes it as controlling for the current shortened/external-buoy model.
+- Leland `81121`, one 12 g CO2 cartridge;
+- Halkey-Roberts `V95000XXB` / Hydro 1F, dimension-controlled commercial-interface proxy with internals not modeled;
+- Halkey-Roberts `V80040` water-sensitive bobbin.
 
-## COTS objective
+This is not an installed, orderable, qualified commercial buoy module. The `SECUMAR` 350 N pack remains an **UNCERTAIN research candidate**, not an owner-selected or implemented component. The `470-CG` / `V95000-1F` complete family was measured at 127.000 mm across and rejected for the 50.700 mm fixed-480 bore; UML MK5 and Pro Sensor Elite remain on evidence hold because controlled complete installed dimensions are missing.
 
-Primary design objective: maximize genuinely orderable COTS components and minimize fabricated components while preserving the required function, structural load paths, serviceability, envelope, deployment reliability and qualification evidence.
+`COTS_MASTER_INDEX.md` reconciles 74 exact configurations/product families across current, developmental, rejected and historical architectures.
 
-The prior documented COTS baseline contained 121 PartDefs, 104 MAKE definitions, 17 COTS-related definitions and 15 independently purchasable COTS lines. A targeted COTS retrofit was started but only Phase 1 was documented as complete. Further COTS convergence remains active work.
+## Context recovery completed
 
-## External buoyancy direction
+- two separate project authorities retained: standard cross-device ChatGPT Project `Stingray` (the pre-existing harvest) and local Work/Codex project `STINGRAY` (the newly recovered local side);
+- 79 relevant Codex rollout records / 61 unique session IDs content-indexed, including 78 active-store and one archived-store record;
+- 19 Git worktrees/checkouts indexed;
+- all 12 shared-CAD repository branches identified as local-only because that repository has no remote;
+- 110 high-value local artifacts indexed by exact path, configuration, status, size and SHA-256 without copying the large binaries into Git;
+- no native Creo `.prt`/`.asm` sources found in the bounded STINGRAY search roots; AP242/STEP and inspection packages are the recoverable CAD authorities.
 
-Current engineering recommendation from the 2026-08-25 external-pack study:
+## Release boundary and next gate
 
-- Primary COTS candidate: SECUMAR Pack Buoyancy Aid with SECUTRONIC, approximately 350 N / 35 L / 77 lbf, using a 75 g CO2 system.
-- Integration concept: retain the commercial bladder/inflator/rearm architecture and design only the STINGRAY structural saddle/cradle and independent structural recovery load path.
-- Selection remains pending packed dimensions, total mass/CG, exact orderable MPN, activation configuration and a rated structural attachment/load path from SECUMAR.
-- The external softgoods pack should not be assumed to fit inside the 57.15 mm rigid-body OD. A 115–120 mm local softgoods envelope is a provisional early CAD keep-out only, pending actual vendor dimensions.
+The exact next engineering gate is owner Creo visual/mechanical inspection of the Package 05 AP242 pair, followed by physical fabric engagement/retention and wet inflation/breakaway testing. Vendor-exact complete module/interface data and procurement/receiving evidence remain separate COTS gates.
 
-## Release status
-
-No current shortened/external-buoy configuration in this context should be called fabrication released, procurement released, qualified, operationally ready or flight ready.
-
-The current task is engineering convergence: reconcile the latest local CAD, COTS sourcing, analyses and validation into one controlled source of truth.
+Do not call this baseline released, qualified, flight ready or operationally ready.

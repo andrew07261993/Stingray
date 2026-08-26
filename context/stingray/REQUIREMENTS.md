@@ -1,83 +1,72 @@
 # STINGRAY Requirements Snapshot
 
-Status: consolidated current/historical control summary as of 2026-08-25. Local-source reconciliation is still required for the newest SHORT14/FORWARD configuration.
+As of: 2026-08-25. Use with the exact current configuration and `DECISION_REGISTER.md`.
 
-## System-level controls
+## Current SHORT14 true-forward configuration
+
+- exact configuration: `STINGRAY_I5S_DF8_SHORT14_FORWARD_POWERTRAIN_EXTERNAL_BUOY`;
+- branch/commit: `design/df8-14in-short-forward-powertrain-external-buoy` at `aa186c9c1c311c510ac34e48bd4170ef7636b7bf`;
+- three arms clocked 0/120/240 degrees;
+- arm pivot-to-tip length: 378.206 mm;
+- arm/body reduction from source: 355.600 mm;
+- current pivot station: 355.000 mm from nose tip;
+- rigid-body length: 1675.400 mm;
+- reported maximum rigid span: 56.500 mm;
+- ready-to-throw mass: 10.583165211 kg;
+- reported reserve to 18.14 kg: 7.556834789 kg;
+- deployed arm angle: approximately 80 degrees with stops/locks.
+
+The 733.806 mm arm and 480.000 mm pivot are historical/source values for prior configurations. Do not reimpose them on current SHORT14 geometry without a newer owner reversal. Conversely, pressure-packaging outputs commissioned under fixed 480 mm must not use the 889 mm fallback as a final fixed-480 geometry.
+
+## System controls
 
 - Ready-to-throw mass hard maximum: 18.14 kg / 40.0 lb.
 - Rigid length hard maximum: 2032 mm.
-- Rigid-body / arm-module OD hard maximum: 57.15 mm; nominal diameter near 53 mm where feasible.
-- Three arms clocked 0° / 120° / 240°.
-- Deployed arm angle approximately 80° with structural hard stops and positive deployed locks.
-- Exterior in the fabric-contact/penetration region must be smooth, snag-resistant and free of forward-facing lips, exposed loose retainers and impossible discontinuities.
-- Water is the sole deployment authorization in the established DF8 architecture; transport/rain/spray must not cause unintended deployment.
+- Rigid-body/arm-module hard maximum span/OD: 57.150 mm.
+- Exterior in fabric-contact/penetration regions must be smooth, snag-resistant and free of exposed loose retainers, impossible discontinuities and forward-facing lips.
+- Water is the established deployment authorization; transport/rain/spray must not cause unintended deployment.
 - Manual reset/serviceability is required.
-- Recovery load must bypass trigger/inflator linkage, release cam/sear, GS-19, HBD-15 and nonstructural softgoods/cover hardware unless a specific rated load path is established.
-- No unsupported qualification claims: physical wet/fabric/saltwater/shock/proof testing remains required.
-
-## Arm length/configuration control
-
-Historical full-length DF8/R2 requirement:
-
-- arm pivot-centerline-to-tip: 733.806 mm / 28.89 in.
-
-Current shortened developmental direction:
-
-- recent Package 04/05 inspection variants use approximately 14.890-in arms.
-- latest shown `SHORT14_FORWARD` model is a shortened-arm configuration.
-
-Therefore, do not force the 733.806 mm full-length requirement back into the current short-arm branch without first proving that the short-arm owner decision was superseded.
+- Recovery load must bypass trigger/inflator linkage, release cam/sear, GS-19, HBD-15 and nonstructural cover/softgoods hardware unless an exact rated path is established.
+- No physical qualification claim may be inferred from CAD, OCP/XCAF, AP242, presentation or owner visual inspection alone.
 
 ## Arm powertrain controls
 
-- Common centered crosshead and three links.
-- Prior 2.250-in redesign analysis: crosshead travel >=15.050 mm; design target approximately 16 mm.
-- GS-19 retained as primary actuation component: ACE Controls `GS-19-50-V4A-B8-B8`.
-- HBD-15 retained as damping component: ACE Controls `HBD-15-25-AA-P`.
-- Direct HBD installation: no bypass, fuse, overload release or lost-motion device required solely to survive HBD seizure.
-- HBD mechanical seizure is an owner-accepted single-point deployment failure.
-- Reduced/lost damping without seizure still requires stops/locks to survive.
-- Independent backup deployment capability was required in the pre-short-arm architecture; local latest-model reconciliation must confirm how that requirement is implemented in SHORT14/FORWARD.
-- Initial stowed-retention design load used in the 2.250-in analysis: 0.8 kN per arm pending controlled shock spectrum.
+- Centered crosshead with three links.
+- ACE `GS-19-50-V4A-B8-B8`: 50 mm stroke, about 164.1 mm extended length, 7.9 mm rod and 0.144 kg catalog assembly basis.
+- GS-19 force must come from the exact supplied configuration or measured force curve; 330/300/270/230 N remain development cases, not certified values.
+- ACE `HBD-15-25-AA-P`: 24.9/25 mm stroke, 145.0 mm extended length, 15 mm body, 6.1 mm rod and 0.220 kg catalog assembly basis.
+- HBD remains direct; no bypass/fuse/overload-release is required solely for seizure. Seizure remains an accepted single-point failure.
+- The current source preserves the backup spring, fixed/moving seat sense and aft-trailing guide arrangement.
+- Stops/locks must remain effective under reduced/lost damping.
+- Structural pins/retainers and load paths must remain captive/positive and marine-compatible.
 
-## GS-19 controlled data from design input register
+## External buoy controls
 
-- stroke: 50 mm
-- cylinder diameter: 19 mm
-- rod diameter: 8 mm
-- extended length: 164 mm
-- vendor mass basis: 0.144 kg in the independent input register
-- configured force must not be assumed from the vendor maximum; supplier configuration or measured force curve is required.
-- provisional force cases previously used: 330 N best, 300 N nominal, 270 N tolerance-low, 230 N provisional environmental-low.
+- The current pack is external softgoods; the 57.150 mm limit applies to rigid geometry, not to an invented softgoods OD.
+- The source pack spans an axial region around Z 1368-1606 mm and includes custom Cordura/flaps/webbing/tether, a custom 60 L buoy definition, a Hydro 1F/V95000XXB dimensional proxy, one Leland 81121 and V80040.
+- A dimension-controlled proxy does not establish vendor-exact internal geometry, rating, application approval or procurement identity.
+- Automatic water access, manual pull access, peel direction and tether bypass must be physically verified on the finished article.
+- The structural recovery path must not depend on hook-and-loop, pack cover, inflator body or unrated commercial holder hardware.
+- Exact finished packed dimensions, mass/CG, buoy volume, cartridge inventory, relief, leak and proof evidence are required before release.
 
-## HBD-15 controlled data from design input register
+## COTS controls
 
-- stroke: 25 mm
-- body diameter: 15 mm
-- rod diameter: 6 mm
-- extended length: 145 mm
-- initial damping test target previously used: approximately 100–150 N over expected speed range; final setting is test-derived.
+- Prefer complete, orderable, manufacturer-supported modules only when installed envelope, service/removal envelope, rated interfaces, application approval and exact suffix/MPN are controlled.
+- A shared thread, inflator-only length, public product family or dimensional proxy is not a complete installed module.
+- Separate exact vendor CAD, manufacturer drawing-derived geometry, controlled proxy geometry and custom analytic geometry.
+- An RFQ/technical-information inquiry is not purchase or qualification authority.
+- Require exact order suffix, current certificate/CoC/lot/expiry data and received-item verification as applicable.
+- Count independently orderable functional COTS lines; do not inflate COTS percentage with purchased-assembly child geometry.
 
-## Structural/detail controls retained from analysis
+## Physical/release gates
 
-- Primary arm/root loads must enter direct structural metal load paths, not fairings, softgoods, actuator rods or seam features.
-- Captive double-shear pivot/link hardware preferred; no exposed loose cotter pins/E-clips in fabric-contact regions.
-- Structural fasteners: use controlled marine-compatible high-strength hardware; commercial 18-8 is not automatically acceptable for primary stop/lock loads.
-- Avoid uncoated 316-on-316 loaded oscillating sliding pairs because of galling risk.
-- Preferred structural materials historically include Ti-6Al-4V and 17-4 PH with condition-specific allowables and corrosion review.
-- Service retainers should be captive or positively controlled.
+- owner Creo inspection of exact current STOWED/DEPLOYED AP242;
+- fabric engagement, retention, snag and extraction;
+- wet automatic activation, inflation and breakaway/peel;
+- manual gloved pull force/stroke and snag retention;
+- leak, relief, structural proof and recovery-load verification;
+- drainage, saltwater/fouling/wear, drying and repack/service cycles;
+- quantitative fall/orientation equivalence;
+- vendor exactness, application approval, procurement/receiving evidence.
 
-## External buoyancy controls
-
-Current engineering direction is external equipment-oriented buoyancy rather than a tightly packed internal buoy.
-
-- Rigid-body 57.15 mm limit remains a rigid geometry control.
-- Do not assume the external soft buoy pack must remain within 57.15 mm overall.
-- Current provisional external softgoods keep-out: approximately 115–120 mm local envelope, pending exact vendor drawing/physical measurement.
-- Structural recovery load should use an independent rated tether/bridle path, not MOLLE, breakaway cover or hook-and-loop unless specifically load-rated.
-
-## Naming control for final Creo-facing parts
-
-- COTS: use product/component name + actual part number.
-- Custom: use descriptive functional name + material initials.
-- Do not use DF8 administrative/work-package titles as final Creo component names.
+Until those gates close, status remains CURRENT DEVELOPMENTAL—not released or qualified.

@@ -1,0 +1,98 @@
+{
+  "snapshot_date": "2026-08-25",
+  "repository": "andrew07261993/Stingray",
+  "branch": "engineering/stingray-context",
+  "canonical_path": "engineering/stingray-context",
+  "classification": "MAXIMUM_FIDELITY_CONSOLIDATED_CONTEXT_WITH_EXPLICIT_RETRIEVAL_GAPS",
+  "current_developmental_configuration": {
+    "configuration_id": "STINGRAY_I5S_DF8_SHORT14_FORWARD_POWERTRAIN_EXTERNAL_BUOY",
+    "local_source_branch": "design/df8-14in-short-forward-powertrain-external-buoy",
+    "local_source_commit": "aa186c9c1c311c510ac34e48bd4170ef7636b7bf",
+    "classification": "CURRENT DEVELOPMENTAL",
+    "current_arm_length_mm": 378.206,
+    "pivot_station_mm": 355.0,
+    "rigid_body_length_mm": 1675.4,
+    "max_rigid_span_mm": 56.5,
+    "stowed_mass_kg": 10.583165211,
+    "release_authority": false
+  },
+  "coverage_counts": {
+    "relevant_codex_rollout_records": 79,
+    "unique_codex_session_ids": 61,
+    "git_repository_or_clone_roots_indexed": 4,
+    "git_worktrees_or_checkouts_indexed": 19,
+    "local_shared_cad_branches_without_remote": 12,
+    "high_value_local_artifacts_indexed": 110,
+    "cots_exact_configurations_or_product_families_reconciled": 74,
+    "github_owner_inspection_packages": 5
+  },
+  "current_exact_artifacts": {
+    "inspection_zip": {
+      "name": "STINGRAY_DF8_TRUE_FORWARD_POWERTRAIN_SHORT14_EXTERNAL_BUOY_CREO_INSPECTION.zip",
+      "sha256_local_source": "4d124b4bb410689071545a41c9c17c31e9393eadbf41ae6a800c5cd458b52a6c",
+      "bytes": 6625392,
+      "github_directory": "cad/df8-owner-creo-inspection-zips/05_TRUE_FORWARD_POWERTRAIN_SHORT14_EXTERNAL_BUOY"
+    },
+    "stowed_ap242": {
+      "name": "STINGRAY_DF8_TRUE_FORWARD_POWERTRAIN_SHORT14_EXTERNAL_BUOY_STOWED_AP242.step",
+      "sha256_local_source": "87a6d6f2f234fe955ef6a87aa9f7ac242d28ee10e23b9b60aca94e90e68a02c0",
+      "bytes": 9071324,
+      "github_directory": "cad/df8-owner-creo-inspection-zips/05_TRUE_FORWARD_POWERTRAIN_SHORT14_EXTERNAL_BUOY"
+    },
+    "deployed_ap242": {
+      "name": "STINGRAY_DF8_TRUE_FORWARD_POWERTRAIN_SHORT14_EXTERNAL_BUOY_DEPLOYED_AP242.step",
+      "sha256_local_source": "fbb716986ce6913715a78468b29fec8ae0a1eb45f64b9a6f825407655d68d1de",
+      "bytes": 10575841,
+      "github_directory": "cad/df8-owner-creo-inspection-zips/05_TRUE_FORWARD_POWERTRAIN_SHORT14_EXTERNAL_BUOY"
+    }
+  },
+  "context_files": [
+    "engineering/stingray-context/00_READ_ME_FIRST.md",
+    "engineering/stingray-context/SESSION_LEDGER.md",
+    "engineering/stingray-context/GITHUB_BRANCH_AND_ARTIFACT_MANIFEST.md",
+    "engineering/stingray-context/FILE_LIBRARY_MANIFEST.md",
+    "engineering/stingray-context/SOURCE_COVERAGE_AND_GAPS.md",
+    "engineering/stingray-context/EXPORT_MANIFEST.json",
+    "context/stingray/CONTEXT_INDEX.md",
+    "context/stingray/CURRENT_STATE.md",
+    "context/stingray/CAD_PROVENANCE.md",
+    "context/stingray/VALIDATION_STATUS.md",
+    "context/stingray/REQUIREMENTS.md",
+    "context/stingray/DECISION_REGISTER.md",
+    "context/stingray/COTS_MASTER_INDEX.md",
+    "context/stingray/LOCAL_GIT_HISTORY.md",
+    "context/stingray/LOCAL_ARTIFACT_INDEX.csv",
+    "context/stingray/CODEX_SESSION_INDEX.md",
+    "context/stingray/OPEN_ITEMS.md",
+    "context/stingray/RETRIEVAL_GAPS.md",
+    "context/stingray/SOURCE_INDEX.md"
+  ],
+  "non_byte_exportable_or_intentionally_excluded": [
+    {
+      "id": "G-001",
+      "source": "cloud ChatGPT raw historical transcripts",
+      "reason": "not exposed as a byte-export source by the available connector"
+    },
+    {
+      "id": "G-002",
+      "source": "local shared-CAD Git object database and all 12 local-only branch objects",
+      "reason": "local repository has no remote and is not directly mounted to this ChatGPT tool environment"
+    },
+    {
+      "id": "G-003",
+      "source": "all local large engineering/vendor binaries",
+      "reason": "indexed by path/size/SHA-256 but not all duplicated into GitHub"
+    },
+    {
+      "id": "G-004",
+      "source": "File Library-only raw binary bytes",
+      "reason": "File Library search exposes references/previews, not a general raw binary transfer to GitHub"
+    },
+    {
+      "id": "SECURITY",
+      "source": "passwords, passkeys, API keys, tokens, cookies, credential databases and unrelated personal data",
+      "reason": "intentionally excluded from engineering context"
+    }
+  ],
+  "authority_rule": "Never infer artifact contents. Resolve the exact configuration, source artifact, branch/commit/hash, and validation evidence before making a configuration-specific claim."
+}

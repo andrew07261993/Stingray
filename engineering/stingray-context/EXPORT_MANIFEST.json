@@ -37,6 +37,12 @@
     "indexed_doc_or_docx_files": 0,
     "indexed_native_creo_files": 0
   },
+  "repository_instruction_bootstrap": {
+    "codex_instruction_file": "AGENTS.md",
+    "human_landing_page": "README.md",
+    "mandatory_context_entry": "engineering/stingray-context/00_READ_ME_FIRST.md",
+    "automatic_user_reminder_required": false
+  },
   "current_exact_artifacts": {
     "inspection_zip": {
       "name": "STINGRAY_DF8_TRUE_FORWARD_POWERTRAIN_SHORT14_EXTERNAL_BUOY_CREO_INSPECTION.zip",
@@ -58,6 +64,8 @@
     }
   },
   "context_files": [
+    "AGENTS.md",
+    "README.md",
     "engineering/stingray-context/00_READ_ME_FIRST.md",
     "engineering/stingray-context/CHATGPT_PROJECT_CONTEXT_SNAPSHOT_2026-08-25.md",
     "engineering/stingray-context/SESSION_LEDGER.md",

@@ -1,0 +1,31 @@
+{
+  "schema": "AP242",
+  "source_baseline_commit": "a31fce0e768f354b1831331bc2ed145223c8b2c4",
+  "files": {
+    "STINGRAY_I5S_DF8_SHORT14_FORWARD_POWERTRAIN_EXTERNAL_BUOY_STOWED_AP242.step": {
+      "sha256": "7f06bb6f69268fa9fd1cdb7fb6e43c4ad61ba89622bbf7df264693cac1bd1ebb",
+      "size_bytes": 9071324
+    },
+    "STINGRAY_I5S_DF8_SHORT14_FORWARD_POWERTRAIN_EXTERNAL_BUOY_DEPLOYED_AP242.step": {
+      "sha256": "8f6b31b79b14ab438a7b85325fd918d3c0b142df3d540284138398a6adf31ed0",
+      "size_bytes": 10575841
+    },
+    "authoring_inventory_stowed.json": {
+      "sha256": "67ae4314d128993d6ab0de761645717f704cbec47b14f33848999025a9f83765",
+      "size_bytes": 1709783
+    },
+    "authoring_inventory_deployed.json": {
+      "sha256": "7cebfb5c59d25ac148cda125ddce6094558b6fdfebc29c65f6243a1973d50498",
+      "size_bytes": 1712173
+    }
+  },
+  "hard_requirements": {
+    "forward_ballast_aft_face_z_mm": 336.0,
+    "arm_pivot_z_mm": 355.0,
+    "arm_length_mm": 378.206,
+    "rigid_length_mm": 1675.4,
+    "body_reduction_mm": 355.6,
+    "maximum_rigid_od_mm": 57.15,
+    "maximum_mass_kg": 18.14
+  }
+}

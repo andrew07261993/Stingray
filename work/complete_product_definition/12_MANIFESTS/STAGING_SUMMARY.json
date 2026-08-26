@@ -1,7 +1,7 @@
 {
   "status": "MAXIMUM-COMPLETE DIGITAL DEVELOPMENT PACKAGE - NOT RELEASED FOR FABRICATION, PROCUREMENT, QUALIFICATION, OR FIELD USE",
-  "file_count_excluding_12_MANIFESTS": 676,
-  "total_bytes_excluding_12_MANIFESTS": 114977621,
+  "file_count_excluding_12_MANIFESTS": 688,
+  "total_bytes_excluding_12_MANIFESTS": 117124671,
   "category_counts": {
     "00_RELEASE_INDEX": 8,
     "01_CAD_MASTERS": 6,
@@ -12,9 +12,9 @@
     "06_MANUFACTURING_AND_SERVICE": 4,
     "07_RENDERING_AND_SCREENSHOTS": 16,
     "08_EXECUTIVE": 60,
-    "09_VALIDATION": 11,
+    "09_VALIDATION": 20,
     "10_REVIEWS": 8,
-    "11_BUILD_AND_REPRODUCIBILITY": 166
+    "11_BUILD_AND_REPRODUCIBILITY": 169
   },
-  "evidence_register_sha256": "d4c720d8412d9e333e3da9d5a67ef6edb224e3e003b412ef29be96f424baf157"
+  "evidence_register_sha256": "f18e817dc83ea65d326c0c103c05637d3ce1af5bbf0091b890ca66b2da5eda1b"
 }

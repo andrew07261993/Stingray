@@ -23,7 +23,7 @@ commission_section,status,evidence,release_effect
 21,FAIL,Objective gate table contains open failures,BLOCKS RELEASE
 22,PARTIAL,Clean semantic build/reimport pass; AP242 bytes nondeterministic,BLOCKS RELEASE
 23,PASS FOR NON-RELEASE PACKAGE,Current internal artifact audit passed; see 10_REVIEWS/INTERNAL_AUDIT_RESULTS.json,SEE EVIDENCE
-24,PENDING CLOSURE VERIFICATION,Initial fresh-context review returned five corrections; corrected candidate must be re-reviewed,SEE EVIDENCE
+24,PASS - INDEPENDENT CLOSURE VERIFIED,"684-file immutable review passed exact set, size, and hash equality; all package-review findings closed",SEE EVIDENCE
 25,PASS,Dedicated branch; protected packages preserved,SEE EVIDENCE
-26,PENDING,Final ZIP assembly/extraction test,SEE EVIDENCE
-27,PARTIAL,Terminal exception path invoked; delivery pending,BLOCKS RELEASE
+26,PASS - CLEAN EXTRACTION AND REBUILD,"680-file integrity audit, PAIR build, 12 renders, endpoint, five-angle, and 81-position full sweep passed from delivered source",SEE EVIDENCE
+27,PARTIAL,Maximum-complete non-release artifacts and independent closure complete; branch push pending,BLOCKS RELEASE

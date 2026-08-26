@@ -357,6 +357,92 @@ def main() -> None:
         "extracted-package stale/transient scan iterates all_files with an AST-confirmed comprehension filter",
     )
 
+    verifier_source = extracted_verifier.read_text(encoding="utf-8")
+    schema_scope_ok = (
+        'relative_path.startswith("01_CAD_MASTERS/")' in verifier_source
+        and 'relative_path.startswith("02_PART_DEFINITIONS/neutral_ap242/")' in verifier_source
+        and '"AP242" in path.name.upper()' in verifier_source
+        and 'b"FILE_SCHEMA" in first' in verifier_source
+    )
+    check(
+        "AUD-025",
+        schema_scope_ok,
+        "STEP syntax is universal while AP242 is mandatory only for controlled masters, neutral part exports, and AP242-named sources",
+    )
+
+    build_r2_source = (staged_source_root / "build_r2.py").read_text(encoding="utf-8")
+    short14_source = (staged_source_root / "short14_external_buoy_build.py").read_text(encoding="utf-8")
+    windows_path_control_ok = (
+        "def windows_extended_path" in build_r2_source
+        and "open(windows_extended_path(path)" in build_r2_source
+        and "def _windows_extended_path" in short14_source
+        and "open(_windows_extended_path(path)" in short14_source
+        and "extract the ZIP to a short absolute root" in build_instructions
+    )
+    check(
+        "AUD-026",
+        windows_path_control_ok,
+        "critical AP242 post-processing and SHORT14 output I/O use extended paths; third-party CAD/render APIs have a documented short-root constraint",
+    )
+
+    baseline_register_path = build_root / "REBUILD_REQUIRED_BASELINE_FILE_REGISTER.csv"
+    with baseline_register_path.open(encoding="utf-8-sig", newline="") as stream:
+        baseline_rows = list(csv.DictReader(stream))
+    baseline_errors = []
+    for row in baseline_rows:
+        artifact = PACKAGE / row["staged_file"]
+        if (
+            not os.path.isfile(windows_extended_path(artifact))
+            or os.stat(windows_extended_path(artifact)).st_size != int(row["bytes"])
+            or sha256(artifact) != row["sha256"]
+        ):
+            baseline_errors.append(row["staged_file"])
+    dependency_baselines = {
+        row["path"] for row in dependency.get("required_baseline_files", [])
+    }
+    baseline_ok = (
+        len(baseline_rows) == 1
+        and not baseline_errors
+        and baseline_rows[0]["source_file"] == "work/final_analysis/authoring_inventory_stowed.json"
+        and dependency_baselines == {"work/final_analysis/authoring_inventory_stowed.json"}
+        and "work/final_analysis/authoring_inventory_stowed.json" in build_instructions
+    )
+    check(
+        "AUD-027",
+        baseline_ok,
+        f"required baseline rows={len(baseline_rows)}; hash/size errors={baseline_errors}; dependency entries={sorted(dependency_baselines)}",
+    )
+
+    extraction_root = PACKAGE / "09_VALIDATION" / "extraction_rebuild"
+    extraction_report_path = extraction_root / "EXTRACTION_AND_CLEAN_REBUILD_AUDIT.json"
+    extraction_report = json.loads(extraction_report_path.read_text(encoding="utf-8"))
+    extraction_evidence_errors = []
+    for name, expected in extraction_report["evidence_files"].items():
+        artifact = extraction_root / name
+        if (
+            not os.path.isfile(windows_extended_path(artifact))
+            or os.stat(windows_extended_path(artifact)).st_size != int(expected["bytes"])
+            or sha256(artifact) != expected["sha256"]
+        ):
+            extraction_evidence_errors.append(name)
+    extraction_ok = (
+        extraction_report["status"] == "PASS FOR MAXIMUM-COMPLETE NON-RELEASE PACKAGE"
+        and all(extraction_report["checks"].values())
+        and extraction_report["extracted_integrity"]["manifested_files"] == 680
+        and extraction_report["rebuild"]["endpoint_pair_rows_per_state"] == {"STOWED": 16110, "DEPLOYED": 16110}
+        and extraction_report["rebuild"]["five_angle_pair_rows"] == 43035
+        and extraction_report["rebuild"]["full_motion_pair_rows"] == 697167
+        and extraction_report["rebuild"]["motion_positions"] == 81
+        and not extraction_evidence_errors
+        and extraction_report["bounded_trial_history"][-1]["result"] == "PASS"
+    )
+    check(
+        "AUD-028",
+        extraction_ok,
+        f"clean extraction/rebuild status={extraction_report['status']}; evidence errors={extraction_evidence_errors}; "
+        f"full rows={extraction_report['rebuild']['full_motion_pair_rows']}",
+    )
+
     failed = [row for row in checks if not row["accepted"]]
     result = {
         "schema": "STINGRAY_COMPLETE_PRODUCT_DEFINITION_INTERNAL_AUDIT_V1",

@@ -9,6 +9,13 @@ The extracted handoff is self-contained under:
 - `11_BUILD_AND_REPRODUCIBILITY/rebuild_source/work/r2_source/`
 - `11_BUILD_AND_REPRODUCIBILITY/rebuild_source/work/input/`
 - `11_BUILD_AND_REPRODUCIBILITY/rebuild_source/work/forward_arm_repack/`
+- `11_BUILD_AND_REPRODUCIBILITY/rebuild_source/work/final_analysis/authoring_inventory_stowed.json`
+  (the exact source-state inventory required by the post-render comparison)
+
+On Windows, extract the ZIP to a short absolute root (for example `C:\STINGRAY_CPD`) so that CadQuery,
+OCCT, rendering, and legacy support-source paths remain within native tool limits. Package enumeration,
+hashing, and ZIP verification are long-path safe, but not every third-party CAD/rendering API accepts
+extended-path prefixes.
 
 The pinned CadQuery/OCP runtime itself is not embedded; use the exact runtime described in
 `DEPENDENCY_AND_ENVIRONMENT_MANIFEST.json`.

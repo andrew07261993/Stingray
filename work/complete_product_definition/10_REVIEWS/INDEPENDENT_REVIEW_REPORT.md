@@ -60,3 +60,70 @@ Three new package defects prevented overall closure:
 No new CRITICAL defect was found.  The known gas, vendor, drawing, qualification, naming,
 reproducibility, screenshot, and attachment limitations remained explicit product-release blockers and
 were not package defects.  The controlling decision remained **NO RELEASE**.
+
+## Post-review correction and clean extraction/rebuild evidence
+
+Candidate status: **CORRECTED AND RE-FROZEN FOR FINAL CLOSURE REVIEW**
+
+- IR-CL-001: the stale-file comprehension is corrected and EXT-009 passed in the final clean extraction.
+- IR-CL-002: all delivered Python/Node pipeline sources are byte/hash-bound after staging; runtime
+  scopes, the exact render baseline, and the controlled post-generation evidence transitions are documented.
+- IR-CL-003: count-neutral release-index references bind directly to the machine-readable current audit.
+- IR-EX-001: STEP syntax is universal; AP242 is enforced for the controlled 166-file AP242 scope while
+  the preserved vendor AP214 file remains valid source evidence.
+- IR-EX-002: critical AP242/output I/O is extended-path safe and the third-party Windows short-root
+  constraint is explicit.
+- IR-EX-003: the exact source-state inventory required by the renderer is now hash-bound and delivered.
+
+Clean run X04 passed 680-file extraction integrity, the PAIR CAD build, 12 regenerated renders,
+16,110 endpoint pairs per state, the 43,035-row five-angle audit, and the 697,167-row/81-position full
+motion audit.  Inventories and mass/CG/inertia reproduced byte-for-byte.  AP242 bytes differed while
+sizes and all semantic gates passed, consistent with the disclosed OCCT presentation-order exception.
+
+Final independent closure has not yet been claimed in this report; it is appended only after the same
+fresh-context reviewer verifies the new manifest-bound candidate.
+
+## Second closure re-review
+
+Review decision: **RETURN FOR ONE MINOR CORRECTION - CLOSURE NOT YET GRANTED**
+
+Reviewed manifest SHA-256:
+`789fd4b0528520b9512d2cc4aea45b4fea8275633b5289d2523fe7f2d7a062e0`
+
+The same independent reviewer re-enumerated and rehashed all 684 eligible files totaling 116,999,925
+bytes using extended-path traversal.  Duplicate, missing, extra, size-mismatched, and hash-mismatched
+counts were all zero.  The delivered verifier and clean-run X04 evidence independently supported
+closure of IR-CL-001 through IR-CL-003 and IR-EX-001 through IR-EX-003.
+
+One new minor reference defect prevented overall closure:
+
+| ID | Class | Finding | Corrective state |
+|---|---|---|---|
+| IR-FC-001 | MINOR | The unreleased pressure/inflation assembly-drawing row referenced nonexistent `PORT_TO_PORT_TABLE.csv` instead of delivered `PORT_TO_PORT_CONNECTION_TABLE.csv`; the generator carried the same typo. | CORRECTED IN CANDIDATE; new manifest-bound recheck pending. |
+
+All eight drawing rows otherwise remained explicitly **NOT RELEASED** and **PROHIBITED**.  This typo
+did not change geometry, validation, vendor, procurement, manufacturing, qualification, or product-
+release status.  The controlling decision remained **NO RELEASE**.
+
+## Final immutable closure recheck
+
+Review decision: **ACCEPT - PACKAGE-REVIEW CLOSURE GRANTED FOR MAXIMUM-COMPLETE NON-RELEASE HANDOFF**
+
+Accepted manifest SHA-256:
+`9e6abbc4ed1a78e0b637bc8fb59344da3a87b089102944e3e10955ea66074a90`
+
+The same independent reviewer independently enumerated and hashed the complete eligible set using
+extended Windows paths: 684 manifest rows and 684 actual files totaling 117,001,345 bytes.  Duplicate
+manifest paths, duplicate actual paths, missing files, extra files, size mismatches, and SHA-256
+mismatches were all zero.  The manifest hash remained exact before and after review.
+
+IR-FC-001 is **CLOSED**.  The assembly-drawing register, authoritative generator, and delivered
+generator all reference the existing `04_INTERFACES/PORT_TO_PORT_CONNECTION_TABLE.csv`; both generator
+copies are byte-identical.  No new CRITICAL, MAJOR, or MINOR package-review defect was found.  All
+IR-FR, IR-CL, IR-EX, and IR-FC package-review findings are closed.
+
+This closure accepts only a truthful, maximum-complete **NON-RELEASE** handoff.  It does not waive the
+12 g / 60 L gas-capacity failure, incomplete exact vendor/interface/rating/flow/leak evidence, absent
+governing loads and released drawings/process controls, physical qualification not run, disclosed AP242
+byte non-reproducibility, missing source/decision attachments, or root naming nonconformance.  It does
+not authorize fabrication, procurement, qualification acceptance, field use, or product release.

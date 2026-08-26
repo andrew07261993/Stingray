@@ -119,6 +119,39 @@ def stage_source_and_build_inputs() -> None:
         writer.writerows(rows)
 
 
+def stage_required_baseline_files() -> None:
+    """Stage narrowly required historical inputs without duplicating large evidence trees."""
+    rebuild = OUT / "11_BUILD_AND_REPRODUCIBILITY" / "rebuild_source"
+    mappings = [
+        (
+            ROOT / "work" / "final_analysis" / "authoring_inventory_stowed.json",
+            rebuild / "work" / "final_analysis" / "authoring_inventory_stowed.json",
+            "Required by short14_external_buoy_postrender.py for the source-versus-short comparison panels",
+        ),
+    ]
+    rows = []
+    for source, destination, purpose in mappings:
+        copy_verified(source, destination)
+        rows.append(
+            {
+                "source_file": source.relative_to(ROOT).as_posix(),
+                "staged_file": relative(destination),
+                "bytes": os.stat(windows_extended_path(source)).st_size,
+                "sha256": sha256(source),
+                "purpose": purpose,
+            }
+        )
+    register = (
+        OUT
+        / "11_BUILD_AND_REPRODUCIBILITY"
+        / "REBUILD_REQUIRED_BASELINE_FILE_REGISTER.csv"
+    )
+    with register.open("w", encoding="utf-8", newline="") as stream:
+        writer = csv.DictWriter(stream, fieldnames=list(rows[0]), lineterminator="\n")
+        writer.writeheader()
+        writer.writerows(rows)
+
+
 def stage_source_package_registers() -> None:
     target = OUT / "03_BOM_AND_REGISTERS" / "SOURCE_PACKAGE05_REGISTERS"
     names = [
@@ -233,6 +266,12 @@ def refresh_dependency_manifest() -> None:
     data["reviewed_status_transition_procedure"] = (
         "11_BUILD_AND_REPRODUCIBILITY/CONTROLLED_STATUS_TRANSITION_PROCEDURE.md"
     )
+    data["required_baseline_files"] = [
+        {
+            "path": "work/final_analysis/authoring_inventory_stowed.json",
+            "purpose": "SHORT14 source-versus-short post-render comparison panels",
+        }
+    ]
     data["manifest_refresh_status"] = "PASS - ALL DELIVERED PIPELINE SOURCES HASH-BOUND"
     manifest.write_text(json.dumps(data, indent=2) + "\n", encoding="utf-8", newline="\n")
 
@@ -279,6 +318,7 @@ def main() -> None:
         raise FileNotFoundError(OUT)
     stage_cad_masters()
     stage_source_and_build_inputs()
+    stage_required_baseline_files()
     stage_source_package_registers()
     stage_validation()
     stage_system_views()

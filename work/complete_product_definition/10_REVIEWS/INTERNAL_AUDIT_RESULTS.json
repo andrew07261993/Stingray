@@ -2,7 +2,7 @@
   "schema": "STINGRAY_COMPLETE_PRODUCT_DEFINITION_INTERNAL_AUDIT_V1",
   "status": "PASS",
   "scope": "artifact presence, frozen hashes, internal consistency, and presentation/PDF openability; not physical qualification",
-  "check_count": 24,
+  "check_count": 28,
   "failed_check_count": 0,
   "checks": [
     {
@@ -103,7 +103,7 @@
     {
       "check_id": "AUD-020",
       "accepted": true,
-      "detail": "traceability status state: section 20=PASS - EXECUTIVE ARTIFACTS, section 23=PASS FOR NON-RELEASE PACKAGE, section 24=PENDING CLOSURE VERIFICATION, section 26=PENDING"
+      "detail": "traceability status state: section 20=PASS - EXECUTIVE ARTIFACTS, section 23=PASS FOR NON-RELEASE PACKAGE, section 24=PASS - INDEPENDENT CLOSURE VERIFIED, section 26=PASS - CLEAN EXTRACTION AND REBUILD"
     },
     {
       "check_id": "AUD-021",
@@ -113,7 +113,7 @@
     {
       "check_id": "AUD-022",
       "accepted": true,
-      "detail": "delivered sources=42; dependency rows=42; missing=[]; extra=[]; hash/size errors=[]; controlled status procedure=True"
+      "detail": "delivered sources=43; dependency rows=43; missing=[]; extra=[]; hash/size errors=[]; controlled status procedure=True"
     },
     {
       "check_id": "AUD-023",
@@ -124,6 +124,26 @@
       "check_id": "AUD-024",
       "accepted": true,
       "detail": "extracted-package stale/transient scan iterates all_files with an AST-confirmed comprehension filter"
+    },
+    {
+      "check_id": "AUD-025",
+      "accepted": true,
+      "detail": "STEP syntax is universal while AP242 is mandatory only for controlled masters, neutral part exports, and AP242-named sources"
+    },
+    {
+      "check_id": "AUD-026",
+      "accepted": true,
+      "detail": "critical AP242 post-processing and SHORT14 output I/O use extended paths; third-party CAD/render APIs have a documented short-root constraint"
+    },
+    {
+      "check_id": "AUD-027",
+      "accepted": true,
+      "detail": "required baseline rows=1; hash/size errors=[]; dependency entries=['work/final_analysis/authoring_inventory_stowed.json']"
+    },
+    {
+      "check_id": "AUD-028",
+      "accepted": true,
+      "detail": "clean extraction/rebuild status=PASS FOR MAXIMUM-COMPLETE NON-RELEASE PACKAGE; evidence errors=[]; full rows=697167"
     }
   ]
 }

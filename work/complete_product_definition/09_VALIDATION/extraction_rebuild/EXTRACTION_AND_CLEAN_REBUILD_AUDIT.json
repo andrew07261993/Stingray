@@ -1,0 +1,117 @@
+{
+  "schema": "STINGRAY_COMPLETE_PRODUCT_DEFINITION_EXTRACTION_REBUILD_AUDIT_V1",
+  "status": "PASS FOR MAXIMUM-COMPLETE NON-RELEASE PACKAGE",
+  "release_effect": "NO PRODUCT RELEASE; OPEN EXTERNAL/MANUFACTURING/PHYSICAL GATES REMAIN",
+  "extraction_root_used": "C:/STINGRAY_CPD_X04",
+  "windows_short_root_constraint": "The successful CAD/render rebuild used a short Windows extraction root because third-party CadQuery/OCCT/rendering APIs are not uniformly extended-path aware.",
+  "pythonhashseed": "0",
+  "cad_python": "C:\\Users\\ANDRE.ANDREWSPC\\Documents\\Codex\\2026-08-22\\stingray-i5-s-df8-codex-one\\stingray-i5s-df8-cad\\work\\cadenv\\Scripts\\python.exe",
+  "preliminary_zip_sha256": "0707f682a45a81f2515a92002df7fd1b874a8105d960d8426f5aa9d49ba2b82d",
+  "preliminary_zip_note": "This hash precedes report/review-only finalization; the final delivery ZIP is regenerated afterward.",
+  "checks": {
+    "extracted_package_integrity": true,
+    "inventory_and_mass_exact_bytes": true,
+    "ap242_sizes_reproduced": true,
+    "ap242_byte_nondeterminism_observed_as_disclosed": true,
+    "render_set_complete": true,
+    "endpoint_pass": true,
+    "five_angle_pass": true,
+    "full_motion_pass": true
+  },
+  "extracted_integrity": {
+    "manifested_files": 680,
+    "check_count": 9,
+    "failed_check_count": 0,
+    "step_files": 167,
+    "ap242_required_files": 166,
+    "brep_files": 123,
+    "png_files": 184
+  },
+  "rebuild": {
+    "authoring_manifest_files": {
+      "STINGRAY_I5S_DF8_SHORT14_FORWARD_POWERTRAIN_EXTERNAL_BUOY_STOWED_AP242.step": {
+        "sha256": "7f06bb6f69268fa9fd1cdb7fb6e43c4ad61ba89622bbf7df264693cac1bd1ebb",
+        "size_bytes": 9071324
+      },
+      "STINGRAY_I5S_DF8_SHORT14_FORWARD_POWERTRAIN_EXTERNAL_BUOY_DEPLOYED_AP242.step": {
+        "sha256": "8f6b31b79b14ab438a7b85325fd918d3c0b142df3d540284138398a6adf31ed0",
+        "size_bytes": 10575841
+      },
+      "authoring_inventory_stowed.json": {
+        "sha256": "67ae4314d128993d6ab0de761645717f704cbec47b14f33848999025a9f83765",
+        "size_bytes": 1709783
+      },
+      "authoring_inventory_deployed.json": {
+        "sha256": "7cebfb5c59d25ac148cda125ddce6094558b6fdfebc29c65f6243a1973d50498",
+        "size_bytes": 1712173
+      }
+    },
+    "render_count": 12,
+    "endpoint_pair_rows_per_state": {
+      "STOWED": 16110,
+      "DEPLOYED": 16110
+    },
+    "five_angle_pair_rows": 43035,
+    "full_motion_pair_rows": 697167,
+    "motion_positions": 81,
+    "crosshead_travel_mm": 15.055034371135037,
+    "maximum_closure_residual_abs_mm": 2.4868995751603507e-14,
+    "full_motion_elapsed_seconds": 1310.587815284729
+  },
+  "bounded_trial_history": [
+    {
+      "trial": "X01",
+      "result": "FAIL",
+      "finding": "Extraction verifier incorrectly required preserved vendor STEP AP214 to declare AP242",
+      "correction": "Scoped AP242 enforcement to controlled masters/neutral exports/AP242-named sources"
+    },
+    {
+      "trial": "X02",
+      "result": "INTEGRITY PASS; BUILD FAIL",
+      "finding": "Long extraction root exceeded a legacy normal-path AP242 post-processing call",
+      "correction": "Extended-path critical I/O plus documented short-root requirement for third-party CAD/render APIs"
+    },
+    {
+      "trial": "X03",
+      "result": "INTEGRITY PASS; CAD PAIR AUTHORED; RENDER FAIL",
+      "finding": "Required historical source-state inventory was absent from delivered rebuild inputs",
+      "correction": "Added the exact 2 MB baseline inventory as a hash-bound required file"
+    },
+    {
+      "trial": "X04",
+      "result": "PASS",
+      "finding": "NONE",
+      "correction": "N/A"
+    }
+  ],
+  "evidence_files": {
+    "extracted_package_integrity_audit.json": {
+      "bytes": 1368,
+      "sha256": "a9a6dcc386e599a4a198158e34742eaf00297ec06589791057b0897a2654ffc7"
+    },
+    "rebuilt_endpoint_validation_summary.json": {
+      "bytes": 76408,
+      "sha256": "f34e7a616b0a431b6bfbec46ea019284126c34960072a9b64acdbc9690364e02"
+    },
+    "rebuilt_five_angle_summary.json": {
+      "bytes": 3386,
+      "sha256": "3e6791fe146679dadeea035129aca1b216bc65c9dc251da6fcba7dbe95e20792"
+    },
+    "rebuilt_full_motion_summary.json": {
+      "bytes": 31581,
+      "sha256": "be6c3771de36e30853b47e3f4d9120b82ee20e7e734fc041b1aacad492686b97"
+    },
+    "rebuilt_authoring_manifest.json": {
+      "bytes": 1105,
+      "sha256": "7aaebdfc868a66b76f5b638844f66b83cde851ed00c2192356d130623188329a"
+    },
+    "REBUILD_RECONCILIATION.csv": {
+      "bytes": 1290,
+      "sha256": "33807c4c24283495132770d9bd8ddf3c2d80f9a2e2729b2dc96cd18ee1ed623a"
+    },
+    "REBUILT_RENDER_REGISTER.csv": {
+      "bytes": 1320,
+      "sha256": "c05ecf1170715512fa4fe506464f66563d66d069f36adaa0f1da4bac7a6a04d3"
+    }
+  }
+}

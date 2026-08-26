@@ -129,16 +129,36 @@ def main() -> None:
 
     cad_errors = []
     step_files = matching_files(package, ".step") + matching_files(package, ".stp")
+    ap242_required_count = 0
     for path in step_files:
         first, last = read_head_tail(path)
-        if not first.startswith(b"ISO-10303-21;") or b"AP242" not in first or not last.rstrip().endswith(b"END-ISO-10303-21;"):
+        relative_path = path.relative_to(package).as_posix()
+        ap242_required = (
+            relative_path.startswith("01_CAD_MASTERS/")
+            or relative_path.startswith("02_PART_DEFINITIONS/neutral_ap242/")
+            or "AP242" in path.name.upper()
+        )
+        ap242_required_count += int(ap242_required)
+        valid_exchange = (
+            first.startswith(b"ISO-10303-21;")
+            and b"FILE_SCHEMA" in first
+            and last.rstrip().endswith(b"END-ISO-10303-21;")
+        )
+        if not valid_exchange or (ap242_required and b"AP242" not in first):
             cad_errors.append(path.relative_to(package).as_posix())
     brep_files = matching_files(package, ".brep")
     for path in brep_files:
         first, _ = read_head_tail(path, head=128, tail=8)
         if b"DBRep_DrawableShape" not in first:
             cad_errors.append(path.relative_to(package).as_posix())
-    check("EXT-005", len(step_files) >= 125 and len(brep_files) == 123 and not cad_errors, f"STEP={len(step_files)}; BREP={len(brep_files)}; syntax errors={cad_errors}")
+    check(
+        "EXT-005",
+        len(step_files) >= 125
+        and ap242_required_count >= 125
+        and len(brep_files) == 123
+        and not cad_errors,
+        f"STEP={len(step_files)}; AP242-required={ap242_required_count}; BREP={len(brep_files)}; syntax/schema errors={cad_errors}",
+    )
 
     image_errors = []
     png_files = matching_files(package, ".png")

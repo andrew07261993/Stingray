@@ -15,6 +15,7 @@ import copy
 import hashlib
 import json
 import math
+import os
 import re
 from dataclasses import asdict
 from pathlib import Path
@@ -64,6 +65,27 @@ ARM_ROUTE_REMOVALS = {
 FORWARD_KEEP = {
     "NOSE-001", "BALLAST-001", "NOSE-BALLAST-TAPER-PIN-001", "FWD-RING-02",
 }
+
+
+def _windows_extended_path(path: Path) -> str:
+    resolved = str(path.resolve())
+    if os.name == "nt" and not resolved.startswith("\\\\?\\"):
+        return "\\\\?\\" + resolved
+    return resolved
+
+
+def _write_text(path: Path, text: str, *, encoding: str = "utf-8") -> None:
+    with open(_windows_extended_path(path), "w", encoding=encoding, newline="\n") as stream:
+        stream.write(text)
+
+
+def _read_bytes(path: Path) -> bytes:
+    with open(_windows_extended_path(path), "rb") as stream:
+        return stream.read()
+
+
+def _size(path: Path) -> int:
+    return os.stat(_windows_extended_path(path)).st_size
 
 
 def _world_z_shift(location: cq.Location, dz: float) -> cq.Location:
@@ -1603,10 +1625,8 @@ def write_pair(*, render: bool = False) -> tuple[build_r2.R2Builder, build_r2.R2
         build_r2.export_ap242(builder.root, output_path)
         build_r2.name_assembly_usage_occurrences(output_path)
         inventory_path = OUT / f"authoring_inventory_{builder.state.lower()}.json"
-        inventory_path.write_text(
-            json.dumps(serialize_builder(builder), indent=2) + "\n", encoding="utf-8", newline="\n"
-        )
-        print(f"Wrote {output_path} ({output_path.stat().st_size} bytes)", flush=True)
+        _write_text(inventory_path, json.dumps(serialize_builder(builder), indent=2) + "\n")
+        print(f"Wrote {output_path} ({_size(output_path)} bytes)", flush=True)
 
     manifest = {
         "schema": "AP242",
@@ -1625,12 +1645,10 @@ def write_pair(*, render: bool = False) -> tuple[build_r2.R2Builder, build_r2.R2
     for path in (OUT / STOWED_FILE, OUT / DEPLOYED_FILE,
                  OUT / "authoring_inventory_stowed.json", OUT / "authoring_inventory_deployed.json"):
         manifest["files"][path.name] = {
-            "sha256": hashlib.sha256(path.read_bytes()).hexdigest(),
-            "size_bytes": path.stat().st_size,
+            "sha256": hashlib.sha256(_read_bytes(path)).hexdigest(),
+            "size_bytes": _size(path),
         }
-    (OUT / "authoring_manifest.json").write_text(
-        json.dumps(manifest, indent=2) + "\n", encoding="utf-8", newline="\n"
-    )
+    _write_text(OUT / "authoring_manifest.json", json.dumps(manifest, indent=2) + "\n")
     baseline_path = ROOT / "work" / "forward_arm_repack" / "updated_mass_properties.json"
     baseline = json.loads(baseline_path.read_text(encoding="utf-8"))
     mass_result = {
@@ -1640,9 +1658,7 @@ def write_pair(*, render: bool = False) -> tuple[build_r2.R2Builder, build_r2.R2
         "short14_deployed": exact_mass_properties(builders[1]),
         "fall_orientation_disposition": "QUANTITATIVE FALL/ORIENTATION EQUIVALENCE REMAINS A SEPARATE VERIFICATION ITEM",
     }
-    (OUT / "FINAL_MASS_CG_INERTIA.json").write_text(
-        json.dumps(mass_result, indent=2) + "\n", encoding="utf-8", newline="\n"
-    )
+    _write_text(OUT / "FINAL_MASS_CG_INERTIA.json", json.dumps(mass_result, indent=2) + "\n")
     if render:
         import short14_external_buoy_render
         short14_external_buoy_render.render_views(
@@ -1665,8 +1681,9 @@ def main() -> None:
     output_path = OUT / filename
     build_r2.export_ap242(builder.root, output_path)
     build_r2.name_assembly_usage_occurrences(output_path)
-    (OUT / f"authoring_inventory_{args.state.lower()}.json").write_text(
-        json.dumps(serialize_builder(builder), indent=2) + "\n", encoding="utf-8", newline="\n"
+    _write_text(
+        OUT / f"authoring_inventory_{args.state.lower()}.json",
+        json.dumps(serialize_builder(builder), indent=2) + "\n",
     )
 
 

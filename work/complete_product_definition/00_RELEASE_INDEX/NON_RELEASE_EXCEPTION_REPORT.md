@@ -39,8 +39,14 @@ required gauge pressure.  The current inflation architecture therefore **FAILS**
   physical-verification, manufacturing-readiness, and screenshot exception records.
 - Per-part neutral/native exports and CAD-derived render catalogs (generated separately).
 - Executive PPTX/PDF and internal review are complete.  The initial fresh-context review returned one
-  critical, one major, and three minor package findings; the corrected manifest-bound candidate is
-  pending closure verification.  Final ZIP extraction/rebuild evidence is added only after it exists.
+  critical, one major, and three minor package findings; the first closure review closed those and found
+  two new major plus one minor reproducibility defect.  Subsequent clean extraction trials found and
+  corrected STEP-schema scoping, Windows path, and required render-baseline defects.  Final short-root
+  extraction, 680-file integrity, PAIR build, 12 renders, endpoint, five-angle, and 81-position full
+  sweep all passed.  The second manifest-bound review independently closed all prior closure and
+  extraction findings, then found one minor filename-reference typo in the unreleased drawing register.
+  The register and delivered generator were corrected.  The final independent 684-file immutable
+  set/size/hash recheck passed with zero mismatches and closed all package-review findings.
 
 ## Required path to release
 

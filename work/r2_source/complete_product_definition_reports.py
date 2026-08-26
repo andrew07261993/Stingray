@@ -924,7 +924,7 @@ def make_manufacturing_and_verification(stowed: dict[str, Any]) -> None:
                 "PRESSURE-INFLATION-TOPOLOGY",
                 "CARTRIDGE, INFLATOR, PATCH, AND BUOY INFLATION ASSEMBLY",
                 "STOWED/DEPLOYED",
-                "04_INTERFACES/PRESSURE_TOPOLOGY.md; 04_INTERFACES/PORT_TO_PORT_TABLE.csv",
+                "04_INTERFACES/PRESSURE_TOPOLOGY.md; 04_INTERFACES/PORT_TO_PORT_CONNECTION_TABLE.csv",
                 "12 g/60 L capacity fails; exact suffix, installed thread, geometry, ratings, flow, and leak evidence absent",
             ),
             (
@@ -1343,6 +1343,12 @@ def make_build_records() -> None:
             "pdf_inspection_and_render_qa": ["Poppler pdfinfo", "Poppler pdftoppm"],
         },
         "required_source_trees": ["work/r2_source", "work/input", "work/forward_arm_repack"],
+        "required_baseline_files": [
+            {
+                "path": "work/final_analysis/authoring_inventory_stowed.json",
+                "purpose": "SHORT14 source-versus-short post-render comparison panels",
+            }
+        ],
         "reviewed_status_transition_procedure": "11_BUILD_AND_REPRODUCIBILITY/CONTROLLED_STATUS_TRANSITION_PROCEDURE.md",
         "manifest_refresh_status": "PASS - ALL DELIVERED PIPELINE SOURCES HASH-BOUND",
         "reproducibility_exception": (
@@ -1376,6 +1382,13 @@ The extracted handoff is self-contained under:
 - `11_BUILD_AND_REPRODUCIBILITY/rebuild_source/work/r2_source/`
 - `11_BUILD_AND_REPRODUCIBILITY/rebuild_source/work/input/`
 - `11_BUILD_AND_REPRODUCIBILITY/rebuild_source/work/forward_arm_repack/`
+- `11_BUILD_AND_REPRODUCIBILITY/rebuild_source/work/final_analysis/authoring_inventory_stowed.json`
+  (the exact source-state inventory required by the post-render comparison)
+
+On Windows, extract the ZIP to a short absolute root (for example `C:\\STINGRAY_CPD`) so that CadQuery,
+OCCT, rendering, and legacy support-source paths remain within native tool limits. Package enumeration,
+hashing, and ZIP verification are long-path safe, but not every third-party CAD/rendering API accepts
+extended-path prefixes.
 
 The pinned CadQuery/OCP runtime itself is not embedded; use the exact runtime described in
 `DEPENDENCY_AND_ENVIRONMENT_MANIFEST.json`.

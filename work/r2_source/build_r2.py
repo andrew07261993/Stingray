@@ -11,6 +11,7 @@ from __future__ import annotations
 import hashlib
 import json
 import math
+import os
 import re
 import shutil
 import sys
@@ -129,6 +130,13 @@ def slug(value: str, limit: int = 72) -> str:
     return re.sub(r"[^A-Za-z0-9_+.-]+", "_", value.upper()).strip("_")[:limit]
 
 
+def windows_extended_path(path: Path) -> str:
+    resolved = str(path.resolve())
+    if os.name == "nt" and not resolved.startswith("\\\\?\\"):
+        return "\\\\?\\" + resolved
+    return resolved
+
+
 def export_ap242(assembly: cq.Assembly, path: Path) -> None:
     STEPCAFControl_Controller.Init_s()
     Interface_Static.SetIVal_s("write.step.schema", 5)
@@ -137,7 +145,8 @@ def export_ap242(assembly: cq.Assembly, path: Path) -> None:
 
 def name_assembly_usage_occurrences(path: Path) -> None:
     """Mirror child product identity into any empty AP242 NAUO name field."""
-    text = path.read_text(encoding="latin-1")
+    with open(windows_extended_path(path), "r", encoding="latin-1") as stream:
+        text = stream.read()
     entities = {int(m.group(1)): m.group(2) for m in re.finditer(r"#(\d+)\s*=\s*(.*?);", text, re.S)}
 
     def child_product(pd_id: int) -> str:
@@ -167,7 +176,8 @@ def name_assembly_usage_occurrences(path: Path) -> None:
     updated, count = pattern.subn(repl, text)
     if count == 0:
         raise RuntimeError(f"No NAUO entities found in {path}")
-    path.write_text(updated, encoding="latin-1", newline="\n")
+    with open(windows_extended_path(path), "w", encoding="latin-1", newline="\n") as stream:
+        stream.write(updated)
 
 
 def complete_make_definition(material: str, make_buy: str, process: str,

@@ -1,0 +1,9 @@
+{
+  "schema": "STINGRAY_COMPLETE_PRODUCT_DEFINITION_FINAL_PACKAGE_V1",
+  "status": "MAXIMUM-COMPLETE DIGITAL DEVELOPMENT PACKAGE - NOT RELEASED FOR FABRICATION, PROCUREMENT, QUALIFICATION, OR FIELD USE",
+  "manifest_scope": "all package files except the three self-referential FINAL_* manifest files",
+  "manifested_file_count": 690,
+  "manifested_total_bytes": 117334980,
+  "final_package_manifest_sha256": "147bfbdd0ae01765f0665b231e2edc34d103dfb45107ffafc5efd6da7e80c47e",
+  "final_sha256sums_sha256": "6250bef2418415cd0b11f09f308c4586a5c1ac353ad0eaaa0266aefd994f0b0f"
+}

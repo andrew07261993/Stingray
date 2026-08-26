@@ -1,0 +1,2 @@
+source_file,staged_file,bytes,sha256,purpose
+work/final_analysis/authoring_inventory_stowed.json,11_BUILD_AND_REPRODUCIBILITY/rebuild_source/work/final_analysis/authoring_inventory_stowed.json,1990376,e016bf3ddd4861e1c8f137b68e05bba7524431657abd37c991aabe6e714a80f3,Required by short14_external_buoy_postrender.py for the source-versus-short comparison panels

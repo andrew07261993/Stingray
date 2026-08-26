@@ -14,21 +14,22 @@ The 2026-08-25 local consolidation also recovered and indexed local Codex/Work h
 ## Read in this order
 
 1. `../../context/stingray/CONTEXT_INDEX.md`
-2. `../../context/stingray/CURRENT_STATE.md`
-3. `../../context/stingray/CAD_PROVENANCE.md`
-4. `../../context/stingray/VALIDATION_STATUS.md`
-5. `../../context/stingray/REQUIREMENTS.md`
-6. `../../context/stingray/DECISION_REGISTER.md`
-7. `../../context/stingray/COTS_MASTER_INDEX.md`
-8. `CHATGPT_PROJECT_CONTEXT_SNAPSHOT_2026-08-25.md` — recovered cross-session engineering narrative and failure-prevention rules
-9. `../../context/stingray/LOCAL_GIT_HISTORY.md`
-10. `../../context/stingray/LOCAL_ARTIFACT_INDEX.csv`
-11. `../../context/stingray/CODEX_SESSION_INDEX.md`
-12. `SESSION_LEDGER.md` — additional cross-device ChatGPT session chronology
-13. `GITHUB_BRANCH_AND_ARTIFACT_MANIFEST.md`
-14. `FILE_LIBRARY_MANIFEST.md`
-15. `SOURCE_COVERAGE_AND_GAPS.md`
-16. `EXPORT_MANIFEST.json` — machine-readable snapshot/coverage manifest
+2. `navigation/README.md` — browse by iteration, analysis, validation, CAD/3D, renders/photos, PowerPoint, documents/PDFs, ZIPs and COTS/vendor/BOM
+3. `../../context/stingray/CURRENT_STATE.md`
+4. `../../context/stingray/CAD_PROVENANCE.md`
+5. `../../context/stingray/VALIDATION_STATUS.md`
+6. `../../context/stingray/REQUIREMENTS.md`
+7. `../../context/stingray/DECISION_REGISTER.md`
+8. `../../context/stingray/COTS_MASTER_INDEX.md`
+9. `CHATGPT_PROJECT_CONTEXT_SNAPSHOT_2026-08-25.md` — recovered cross-session engineering narrative and failure-prevention rules
+10. `../../context/stingray/LOCAL_GIT_HISTORY.md`
+11. `../../context/stingray/LOCAL_ARTIFACT_INDEX.csv`
+12. `../../context/stingray/CODEX_SESSION_INDEX.md`
+13. `SESSION_LEDGER.md` — additional cross-device ChatGPT session chronology
+14. `GITHUB_BRANCH_AND_ARTIFACT_MANIFEST.md`
+15. `FILE_LIBRARY_MANIFEST.md`
+16. `SOURCE_COVERAGE_AND_GAPS.md`
+17. `EXPORT_MANIFEST.json` — machine-readable snapshot/coverage manifest
 
 ## Current developmental anchor
 

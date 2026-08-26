@@ -26,6 +26,17 @@
     "cots_exact_configurations_or_product_families_reconciled": 74,
     "github_owner_inspection_packages": 5
   },
+  "navigation_counts": {
+    "ordered_iteration_stages": 18,
+    "categorized_local_artifact_rows": 110,
+    "github_per_part_render_pngs": 116,
+    "github_context_view_pngs": 9,
+    "github_mechanical_breakdown_powerpoints": 1,
+    "indexed_stl_files": 0,
+    "indexed_pdf_files": 0,
+    "indexed_doc_or_docx_files": 0,
+    "indexed_native_creo_files": 0
+  },
   "current_exact_artifacts": {
     "inspection_zip": {
       "name": "STINGRAY_DF8_TRUE_FORWARD_POWERTRAIN_SHORT14_EXTERNAL_BUOY_CREO_INSPECTION.zip",
@@ -54,6 +65,16 @@
     "engineering/stingray-context/FILE_LIBRARY_MANIFEST.md",
     "engineering/stingray-context/SOURCE_COVERAGE_AND_GAPS.md",
     "engineering/stingray-context/EXPORT_MANIFEST.json",
+    "engineering/stingray-context/navigation/README.md",
+    "engineering/stingray-context/navigation/01_ITERATION_TIMELINE.md",
+    "engineering/stingray-context/navigation/02_CAD_AND_3D_FILES.md",
+    "engineering/stingray-context/navigation/03_ANALYSES_AND_VALIDATION.md",
+    "engineering/stingray-context/navigation/04_RENDERS_IMAGES_AND_PHOTOS.md",
+    "engineering/stingray-context/navigation/05_POWERPOINTS_AND_PRESENTATIONS.md",
+    "engineering/stingray-context/navigation/06_DOCUMENTS_PDFS_AND_PROMPTS.md",
+    "engineering/stingray-context/navigation/07_ZIPS_AND_PACKAGES.md",
+    "engineering/stingray-context/navigation/08_COTS_VENDOR_AND_BOMS.md",
+    "engineering/stingray-context/navigation/ARTIFACT_CATALOG_BY_TYPE.csv",
     "context/stingray/CONTEXT_INDEX.md",
     "context/stingray/CURRENT_STATE.md",
     "context/stingray/CAD_PROVENANCE.md",

@@ -12,15 +12,16 @@ They are intentionally kept distinct and reconciled here. Neither source is an e
 ## Read first
 
 1. `CONTEXT_INDEX.md` — authority, scope and routing.
-2. `CURRENT_STATE.md` — exact newest CAD baseline and current engineering truth.
-3. `CAD_PROVENANCE.md` — branch/commit/artifact chain and hashes.
-4. `VALIDATION_STATUS.md` — what passed, what did not run and what remains physical.
-5. `COTS_MASTER_INDEX.md` — 74 reconciled components/families and selection states.
-6. `LOCAL_GIT_HISTORY.md` — all repositories, 19 worktrees/checkouts, 12 local-only CAD branches and dirty-state protections.
-7. `LOCAL_ARTIFACT_INDEX.csv` — 110 exact local artifact paths, hashes and classifications.
-8. `CODEX_SESSION_INDEX.md` — 79 content-indexed rollout records / 61 unique sessions, including archived history.
-9. `DECISION_REGISTER.md` and `REQUIREMENTS.md` — current owner/configuration controls.
-10. `RETRIEVAL_GAPS.md` — focused remaining evidence gates.
+2. `../../engineering/stingray-context/navigation/README.md` — browse by iteration and artifact type.
+3. `CURRENT_STATE.md` — exact newest CAD baseline and current engineering truth.
+4. `CAD_PROVENANCE.md` — branch/commit/artifact chain and hashes.
+5. `VALIDATION_STATUS.md` — what passed, what did not run and what remains physical.
+6. `COTS_MASTER_INDEX.md` — 74 reconciled components/families and selection states.
+7. `LOCAL_GIT_HISTORY.md` — all repositories, 19 worktrees/checkouts, 12 local-only CAD branches and dirty-state protections.
+8. `LOCAL_ARTIFACT_INDEX.csv` — 110 exact local artifact paths, hashes and classifications.
+9. `CODEX_SESSION_INDEX.md` — 79 content-indexed rollout records / 61 unique sessions, including archived history.
+10. `DECISION_REGISTER.md` and `REQUIREMENTS.md` — current owner/configuration controls.
+11. `RETRIEVAL_GAPS.md` — focused remaining evidence gates.
 
 ## Current anchor
 

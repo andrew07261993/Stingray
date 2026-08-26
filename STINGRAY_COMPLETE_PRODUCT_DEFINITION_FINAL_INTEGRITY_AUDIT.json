@@ -1,0 +1,54 @@
+{
+  "schema": "STINGRAY_COMPLETE_PRODUCT_DEFINITION_EXTRACTION_AUDIT_V1",
+  "status": "PASS",
+  "package_root": "C:/STINGRAY_CPD_FINAL_01/STINGRAY_COMPLETE_PRODUCT_DEFINITION",
+  "check_count": 9,
+  "failed_check_count": 0,
+  "checks": [
+    {
+      "check_id": "EXT-001",
+      "accepted": true,
+      "detail": "manifested files=690; byte/hash errors=[]"
+    },
+    {
+      "check_id": "EXT-002",
+      "accepted": true,
+      "detail": "self-excluded final manifest and checksum hashes agree with FINAL_PACKAGE_SUMMARY.json"
+    },
+    {
+      "check_id": "EXT-003",
+      "accepted": true,
+      "detail": "missing=[]; unexpected=[]"
+    },
+    {
+      "check_id": "EXT-004",
+      "accepted": true,
+      "detail": "JSON/CSV parse errors=[]"
+    },
+    {
+      "check_id": "EXT-005",
+      "accepted": true,
+      "detail": "STEP=167; AP242-required=166; BREP=123; syntax/schema errors=[]"
+    },
+    {
+      "check_id": "EXT-006",
+      "accepted": true,
+      "detail": "PNG files=184; verification errors=[]"
+    },
+    {
+      "check_id": "EXT-007",
+      "accepted": true,
+      "detail": "PPTX corrupt=None; slides=13; PDF pages=13"
+    },
+    {
+      "check_id": "EXT-008",
+      "accepted": true,
+      "detail": "gzip files=8; errors=[]"
+    },
+    {
+      "check_id": "EXT-009",
+      "accepted": true,
+      "detail": "stale/transient files=[]"
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "schema": "STINGRAY_COMPLETE_PRODUCT_DEFINITION_PROVENANCE_V1",
+  "date": "2026-08-26",
+  "status": "MAXIMUM-COMPLETE DIGITAL DEVELOPMENT PACKAGE - NOT RELEASED FOR FABRICATION, PROCUREMENT, QUALIFICATION, OR FIELD USE",
+  "repository": "https://github.com/andrew07261993/Stingray",
+  "context_authority": {
+    "branch": "engineering/stingray-context",
+    "commit": "8a63fd3c36866c1edffa245da06d8c7af2d90ee1"
+  },
+  "source_baseline": {
+    "branch": "design/df8-14in-short-forward-powertrain-external-buoy",
+    "commit": "aa186c9c1c311c510ac34e48bd4170ef7636b7bf",
+    "configuration": "STINGRAY_I5S_DF8_SHORT14_FORWARD_POWERTRAIN_EXTERNAL_BUOY"
+  },
+  "delivery": {
+    "branch": "design/stingray-complete-product-definition",
+    "commit_binding": "The Git commit containing this record is the exact delivery-tree binding; resolve it with git rev-parse design/stingray-complete-product-definition.",
+    "archive_path": "STINGRAY_COMPLETE_PRODUCT_DEFINITION.zip",
+    "archive_bytes": 64266528,
+    "archive_sha256": "2fc9995735a6335161d18d92b32ac2ab65d517c38ed2a992e0d6ba6cb7667d49",
+    "zip_member_count": 693,
+    "final_package_manifest_path": "work/complete_product_definition/12_MANIFESTS/FINAL_PACKAGE_MANIFEST.csv",
+    "final_package_manifest_sha256": "147bfbdd0ae01765f0665b231e2edc34d103dfb45107ffafc5efd6da7e80c47e",
+    "final_integrity_audit_path": "STINGRAY_COMPLETE_PRODUCT_DEFINITION_FINAL_INTEGRITY_AUDIT.json",
+    "final_integrity_audit_sha256": "03fa57e92d8594da928a9c69d1aaac4f6922c477da3ab41bb83ee2e7f543faf7"
+  },
+  "review": {
+    "accepted_engineering_candidate_manifest_sha256": "9e6abbc4ed1a78e0b637bc8fb59344da3a87b089102944e3e10955ea66074a90",
+    "accepted_final_status_freeze_manifest_sha256": "8d65653317d245a59f71eb75650b997b31f64d74c0e7b3b8ef314a099478dad8",
+    "eligible_files": 684,
+    "eligible_bytes": 117001942,
+    "independent_disposition": "PACKAGE-REVIEW CLOSURE GRANTED FOR MAXIMUM-COMPLETE NON-RELEASE HANDOFF",
+    "product_release_disposition": "FAIL - NOT RELEASED"
+  },
+  "clean_rebuild": {
+    "evidence_path": "work/complete_product_definition/09_VALIDATION/extraction_rebuild/EXTRACTION_AND_CLEAN_REBUILD_AUDIT.json",
+    "trial": "X04",
+    "status": "PASS FOR MAXIMUM-COMPLETE NON-RELEASE PACKAGE",
+    "windows_constraint": "Third-party CadQuery/OCCT/render APIs require a short Windows extraction root.",
+    "ap242_reproducibility": "semantic and size parity passed; bytes varied due disclosed OCCT presentation/style ordering"
+  },
+  "protected_checkpoint": {
+    "path": "cad/df8-owner-creo-inspection-zips/",
+    "diff_against_source_base": "NONE"
+  },
+  "merge_authority": "NO MERGE TO MAIN AUTHORIZED"
+}

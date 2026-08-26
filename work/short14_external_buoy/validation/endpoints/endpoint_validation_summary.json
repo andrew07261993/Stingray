@@ -2,15 +2,15 @@
   "schema": "STINGRAY_SHORT14_CLEAN_REIMPORT_VALIDATION_V1",
   "inputs": {
     "STOWED": {
-      "step": "C:\\Users\\ANDRE.ANDREWSPC\\Documents\\Codex\\2026-08-25\\stingray-i5-s-df8-14in-short-forward-powertrain-buoy\\work\\short14_external_buoy\\STINGRAY_I5S_DF8_SHORT14_FORWARD_POWERTRAIN_EXTERNAL_BUOY_STOWED_AP242.step",
-      "step_sha256": "87a6d6f2f234fe955ef6a87aa9f7ac242d28ee10e23b9b60aca94e90e68a02c0",
-      "inventory": "C:\\Users\\ANDRE.ANDREWSPC\\Documents\\Codex\\2026-08-25\\stingray-i5-s-df8-14in-short-forward-powertrain-buoy\\work\\short14_external_buoy\\authoring_inventory_stowed.json",
+      "step": "C:\\Users\\ANDRE.ANDREWSPC\\Documents\\Codex\\2026-08-26\\stingray-complete-product-definition\\work\\short14_external_buoy\\STINGRAY_I5S_DF8_SHORT14_FORWARD_POWERTRAIN_EXTERNAL_BUOY_STOWED_AP242.step",
+      "step_sha256": "22342157b2ac96870bbf7cd227e729342b357fd241787be8dc03cf16a92ce7fd",
+      "inventory": "C:\\Users\\ANDRE.ANDREWSPC\\Documents\\Codex\\2026-08-26\\stingray-complete-product-definition\\work\\short14_external_buoy\\authoring_inventory_stowed.json",
       "inventory_sha256": "67ae4314d128993d6ab0de761645717f704cbec47b14f33848999025a9f83765"
     },
     "DEPLOYED": {
-      "step": "C:\\Users\\ANDRE.ANDREWSPC\\Documents\\Codex\\2026-08-25\\stingray-i5-s-df8-14in-short-forward-powertrain-buoy\\work\\short14_external_buoy\\STINGRAY_I5S_DF8_SHORT14_FORWARD_POWERTRAIN_EXTERNAL_BUOY_DEPLOYED_AP242.step",
-      "step_sha256": "fbb716986ce6913715a78468b29fec8ae0a1eb45f64b9a6f825407655d68d1de",
-      "inventory": "C:\\Users\\ANDRE.ANDREWSPC\\Documents\\Codex\\2026-08-25\\stingray-i5-s-df8-14in-short-forward-powertrain-buoy\\work\\short14_external_buoy\\authoring_inventory_deployed.json",
+      "step": "C:\\Users\\ANDRE.ANDREWSPC\\Documents\\Codex\\2026-08-26\\stingray-complete-product-definition\\work\\short14_external_buoy\\STINGRAY_I5S_DF8_SHORT14_FORWARD_POWERTRAIN_EXTERNAL_BUOY_DEPLOYED_AP242.step",
+      "step_sha256": "3f33da7fc6c658c84bfad075ed9c28c9dd96087e675fc9f5d3de7562b19ee045",
+      "inventory": "C:\\Users\\ANDRE.ANDREWSPC\\Documents\\Codex\\2026-08-26\\stingray-complete-product-definition\\work\\short14_external_buoy\\authoring_inventory_deployed.json",
       "inventory_sha256": "7cebfb5c59d25ac148cda125ddce6094558b6fdfebc29c65f6243a1973d50498"
     }
   },
@@ -261,7 +261,7 @@
       "state": "STOWED",
       "solid_count": 180,
       "unordered_pair_count": 16110,
-      "pair_register": "C:\\Users\\ANDRE.ANDREWSPC\\Documents\\Codex\\2026-08-25\\stingray-i5-s-df8-14in-short-forward-powertrain-buoy\\work\\short14_external_buoy\\validation\\endpoints\\endpoint_pair_audit_stowed.csv.gz",
+      "pair_register": "C:\\Users\\ANDRE.ANDREWSPC\\Documents\\Codex\\2026-08-26\\stingray-complete-product-definition\\work\\short14_external_buoy\\validation\\endpoints\\endpoint_pair_audit_stowed.csv.gz",
       "broadphase_candidate_count": 685,
       "unauthorized_positive_volume_pair_count": 0,
       "documented_positive_volume_pair_count": 71,
@@ -911,13 +911,13 @@
           "intentional_fit_exception_id": "FIT-SHORT14-TETHER-EXIT-CHAFE-SLEEVE--TETHER-THIMBLE-BODY-SHORT14"
         }
       ],
-      "elapsed_seconds": 42.76929831504822
+      "elapsed_seconds": 45.098689556121826
     },
     "DEPLOYED": {
       "state": "DEPLOYED",
       "solid_count": 180,
       "unordered_pair_count": 16110,
-      "pair_register": "C:\\Users\\ANDRE.ANDREWSPC\\Documents\\Codex\\2026-08-25\\stingray-i5-s-df8-14in-short-forward-powertrain-buoy\\work\\short14_external_buoy\\validation\\endpoints\\endpoint_pair_audit_deployed.csv.gz",
+      "pair_register": "C:\\Users\\ANDRE.ANDREWSPC\\Documents\\Codex\\2026-08-26\\stingray-complete-product-definition\\work\\short14_external_buoy\\validation\\endpoints\\endpoint_pair_audit_deployed.csv.gz",
       "broadphase_candidate_count": 725,
       "unauthorized_positive_volume_pair_count": 0,
       "documented_positive_volume_pair_count": 85,
@@ -1693,7 +1693,7 @@
           "intentional_fit_exception_id": "FIT-SHORT14-TETHER-EXIT-CHAFE-SLEEVE--TETHER-THIMBLE-BODY-SHORT14"
         }
       ],
-      "elapsed_seconds": 63.39945030212402
+      "elapsed_seconds": 64.38894200325012
     }
   },
   "connectivity": {

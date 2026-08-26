@@ -9,6 +9,7 @@ import csv
 import gzip
 import json
 import multiprocessing
+import re
 import tempfile
 import time
 from collections import Counter
@@ -111,11 +112,20 @@ def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--mode", choices=("five", "full"), required=True)
     parser.add_argument("--workers", type=int, default=2)
+    parser.add_argument(
+        "--output-name",
+        help="Fresh directory name under work/short14_external_buoy/validation.",
+    )
     args = parser.parse_args()
     if not 1 <= args.workers <= 2:
         raise ValueError("SHORT14 governance permits at most two independent workers")
     angles = list(cfg.MOTION_ANGLES_FIVE if args.mode == "five" else cfg.MOTION_ANGLES_FULL)
-    if args.mode == "five":
+    if args.output_name:
+        safe_output_name = re.fullmatch(r"[A-Za-z0-9][A-Za-z0-9_.-]*", args.output_name)
+        if len(args.output_name) > 96 or not safe_output_name:
+            raise ValueError("--output-name must be a safe single directory name")
+        directory_name = args.output_name
+    elif args.mode == "five":
         first_attempt = SOURCE / "validation" / "five_angle_gate"
         directory_name = "five_angle_gate_attempt_2" if first_attempt.exists() else "five_angle_gate"
     else:

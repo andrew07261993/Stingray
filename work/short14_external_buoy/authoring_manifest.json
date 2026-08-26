@@ -3,11 +3,11 @@
   "source_baseline_commit": "a31fce0e768f354b1831331bc2ed145223c8b2c4",
   "files": {
     "STINGRAY_I5S_DF8_SHORT14_FORWARD_POWERTRAIN_EXTERNAL_BUOY_STOWED_AP242.step": {
-      "sha256": "87a6d6f2f234fe955ef6a87aa9f7ac242d28ee10e23b9b60aca94e90e68a02c0",
+      "sha256": "22342157b2ac96870bbf7cd227e729342b357fd241787be8dc03cf16a92ce7fd",
       "size_bytes": 9071324
     },
     "STINGRAY_I5S_DF8_SHORT14_FORWARD_POWERTRAIN_EXTERNAL_BUOY_DEPLOYED_AP242.step": {
-      "sha256": "fbb716986ce6913715a78468b29fec8ae0a1eb45f64b9a6f825407655d68d1de",
+      "sha256": "3f33da7fc6c658c84bfad075ed9c28c9dd96087e675fc9f5d3de7562b19ee045",
       "size_bytes": 10575841
     },
     "authoring_inventory_stowed.json": {

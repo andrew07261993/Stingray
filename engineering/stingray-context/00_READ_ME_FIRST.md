@@ -20,13 +20,15 @@ The 2026-08-25 local consolidation also recovered and indexed local Codex/Work h
 5. `../../context/stingray/REQUIREMENTS.md`
 6. `../../context/stingray/DECISION_REGISTER.md`
 7. `../../context/stingray/COTS_MASTER_INDEX.md`
-8. `../../context/stingray/LOCAL_GIT_HISTORY.md`
-9. `../../context/stingray/LOCAL_ARTIFACT_INDEX.csv`
-10. `../../context/stingray/CODEX_SESSION_INDEX.md`
-11. `SESSION_LEDGER.md` — additional cross-device ChatGPT session chronology
-12. `GITHUB_BRANCH_AND_ARTIFACT_MANIFEST.md`
-13. `FILE_LIBRARY_MANIFEST.md`
-14. `SOURCE_COVERAGE_AND_GAPS.md`
+8. `CHATGPT_PROJECT_CONTEXT_SNAPSHOT_2026-08-25.md` — recovered cross-session engineering narrative and failure-prevention rules
+9. `../../context/stingray/LOCAL_GIT_HISTORY.md`
+10. `../../context/stingray/LOCAL_ARTIFACT_INDEX.csv`
+11. `../../context/stingray/CODEX_SESSION_INDEX.md`
+12. `SESSION_LEDGER.md` — additional cross-device ChatGPT session chronology
+13. `GITHUB_BRANCH_AND_ARTIFACT_MANIFEST.md`
+14. `FILE_LIBRARY_MANIFEST.md`
+15. `SOURCE_COVERAGE_AND_GAPS.md`
+16. `EXPORT_MANIFEST.json` — machine-readable snapshot/coverage manifest
 
 ## Current developmental anchor
 
@@ -63,6 +65,9 @@ Do **not** select authority from filename suffix, timestamp, presentation qualit
 - 74 COTS exact configurations/product families reconciled.
 - Five owner-inspection CAD packages preserved in GitHub, including current Package 05 STEP endpoints and ZIP.
 - Cross-device ChatGPT STINGRAY workstreams summarized in `SESSION_LEDGER.md`.
+- A configuration-scoped recovered ChatGPT project narrative in `CHATGPT_PROJECT_CONTEXT_SNAPSHOT_2026-08-25.md`.
+- GitHub branch/artifact and File Library manifests.
+- Explicit retrieval/security gaps plus a machine-readable `EXPORT_MANIFEST.json`.
 
 ## What cannot truthfully be called a 100% byte export from this interface
 

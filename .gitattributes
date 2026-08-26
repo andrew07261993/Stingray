@@ -7,3 +7,21 @@
 *.png filter=lfs diff=lfs merge=lfs -text
 *.pptx filter=lfs diff=lfs merge=lfs -text
 *.pdf filter=lfs diff=lfs merge=lfs -text
+
+# Complete-product-definition delivery fallback: this branch must remain byte-complete when the
+# repository LFS budget is unavailable.  These scoped overrides store only the new delivery binaries
+# as ordinary Git blobs; historical/protected paths retain the global LFS rules above.
+/STINGRAY_COMPLETE_PRODUCT_DEFINITION.zip -filter -diff -merge -text
+work/complete_product_definition/**/*.step -filter -diff -merge -text
+work/complete_product_definition/**/*.stp -filter -diff -merge -text
+work/complete_product_definition/**/*.brep -filter -diff -merge -text
+work/complete_product_definition/**/*.zip -filter -diff -merge -text
+work/complete_product_definition/**/*.xlsx -filter -diff -merge -text
+work/complete_product_definition/**/*.gz -filter -diff -merge -text
+work/complete_product_definition/**/*.png -filter -diff -merge -text
+work/complete_product_definition/**/*.pptx -filter -diff -merge -text
+work/complete_product_definition/**/*.pdf -filter -diff -merge -text
+/work/short14_external_buoy/*.step -filter -diff -merge -text
+/work/short14_external_buoy/validation/complete_product_definition_five_angle/*.gz -filter -diff -merge -text
+/work/short14_external_buoy/validation/complete_product_definition_full_motion/*.gz -filter -diff -merge -text
+/work/short14_external_buoy/validation/endpoints/*.gz -filter -diff -merge -text

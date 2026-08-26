@@ -1,0 +1,12 @@
+
+# WP02 Digital Tool-Access Review
+
+| Service operation | Controlled access route | Digital result | Remaining physical proof |
+|---|---|---|---|
+| GS-19 removal/installation | Open the associated WP01 arm-bay cover, mechanically control stored energy, remove the cartridge-side support and M8 adapter connection, then withdraw the GS axially through the service bay. | No rigid part blocks the modeled withdrawal corridor. | Verify exact purchased B8 thread length, wrench/driver head envelope, hand clearance, anti-rotation method, and torque access in a representative assembly. |
+| HBD-15 removal/installation | Open the arm-bay cover, unload the crosshead, release the moving lost-motion coupler, remove the captive bypass carriage shoulders, and withdraw the HBD cartridge. | Rails, carriage, body and rod are digitally separable without shell removal. | Verify exact configured HBD suffix geometry, adjustment access, fitting clearance, drainage, and post-saltwater removal force. |
+| Backup spring replacement | Install the guarded reset fixture, engage the positive sear, unload the moving seat, remove the fixed-seat retainer, and withdraw spring/guide through the opened module bay. | The selected 15.24 mm OD spring and 6 mm guide fit the controlled core and modeled service corridor. | Conduct a guarded assembly trial; verify fixture reaction path, capture during seat removal, glove/tool clearance, and no uncontrolled release. |
+| Arm/link/pin/bushing service | Open all covers, control the crosshead, remove the applicable captive ring/headed pin, and withdraw the arm or link in its radial plane. | Pin axes and withdrawal paths are exposed with covers open; no custom cross-component positive common volume remains. | Verify ring plier access, pin extraction force, field-loss prevention, corrosion product allowance, and bushing replacement tooling. |
+| Stop-pad and lock service | Open the matching cover, support the arm at the stop, retract the lock plunger, and remove the local pad/lock hardware. | Witness and lock features remain directly visible in the deployed state. | Verify sight line, gauge access, reverse-load release, pad replacement, fastener torque access, and wear limits. |
+
+The review is a geometry-based access screen, not an ergonomic, maintainability, or human-factors qualification. Exact tools, torque values, fastener procurement identities, and representative gloved-service trials remain open.

@@ -1,0 +1,225 @@
+{"kind":"slide","id":"sl/n9iavx","slide":1,"title":"EXECUTIVE RELEASE STATUS | 26 AUGUST 2026","textShapes":7}
+{"kind":"textbox","id":"sh/t8ny5cnu","slide":1,"name":"cover-eyebrow","text":"EXECUTIVE RELEASE STATUS | 26 AUGUST 2026","textPreview":"EXECUTIVE RELEASE STATUS | 26 AUGUST 2026","textChars":41,"textLines":1,"bbox":[42,38,570,28]}
+{"kind":"textbox","id":"sh/65czah43","slide":1,"name":"cover-title","text":"STINGRAY digital product definition","textPreview":"STINGRAY digital product definition","textChars":35,"textLines":1,"bbox":[42,105,550,154]}
+{"kind":"textbox","id":"sh/r6lg3m5o","slide":1,"name":"cover-claim","text":"The mechanism is digitally coherent. The inflation architecture is not releaseable.","textPreview":"The mechanism is digitally coherent. The inflation architecture is not releaseable.","textChars":83,"textLines":1,"bbox":[42,287,540,108]}
+{"kind":"shape","id":"sh/gbehgrml","slide":1,"name":"cover-status-panel","bbox":[42,462,540,44]}
+{"kind":"textbox","id":"sh/1cni9wnq","slide":1,"name":"cover-status-text","text":"NOT RELEASED FOR FABRICATION OR FIELD USE","textPreview":"NOT RELEASED FOR FABRICATION OR FIELD USE","textChars":41,"textLines":1,"bbox":[56,472,512,24]}
+{"kind":"textbox","id":"sh/e9wzeh4f","slide":1,"name":"cover-config","text":"Frozen configuration: 1,675.4 mm rigid body | 355 mm arm pivot | external 60 L buoy pack","textPreview":"Frozen configuration: 1,675.4 mm rigid body | 355 mm arm pivot | external 60 L buoy pack","textChars":88,"textLines":1,"bbox":[42,544,545,78]}
+{"kind":"shape","id":"sh/fa5g7m50","slide":1,"name":"cover-image-backing","bbox":[650,42,588,588]}
+{"kind":"textbox","id":"sh/pg7idwn2","slide":1,"name":"evidence-1","text":"Evidence: Release Index; Non-Release Exception Report","textPreview":"Evidence: Release Index; Non-Release Exception Report","textChars":53,"textLines":1,"bbox":[42,669,1090,24]}
+{"kind":"textbox","id":"sh/tsjmhwfi","slide":1,"name":"page-1","text":"1","textPreview":"1","textChars":1,"textLines":1,"bbox":[1182,669,56,24]}
+{"kind":"image","id":"im/x8rqp8ni","slide":1,"name":"","geometry":"roundRect","alt":"CAD-derived deployed system with extended arms and inflated external buoy","bbox":[650,42,588,588]}
+{"kind":"slide","id":"sl/3ow1of","slide":2,"title":"STINGRAY DIGITAL PRODUCT DEFINITION","textShapes":7}
+{"kind":"textbox","id":"sh/ridsbmlc","slide":2,"name":"eyebrow-2","text":"STINGRAY DIGITAL PRODUCT DEFINITION","textPreview":"STINGRAY DIGITAL PRODUCT DEFINITION","textChars":35,"textLines":1,"bbox":[42,28,750,22]}
+{"kind":"textbox","id":"sh/cjm94r2x","slide":2,"name":"title-2","text":"A compact body deploys arms and an external recovery buoy","textPreview":"A compact body deploys arms and an external recovery buoy","textChars":57,"textLines":1,"bbox":[42,58,1160,88]}
+{"kind":"shape","id":"sh/dkfadwj2","slide":2,"name":"title-rule-2","bbox":[42,153,1196,1]}
+{"kind":"textbox","id":"sh/2d4ryhkf","slide":2,"name":"purpose-copy","text":"The system is intended to remain compact before use, deploy three arms, open an aft softgoods pack, and transfer recovery load through a dedicated tether path.","textPreview":"The system is intended to remain compact before use, deploy three arms, open an aft softgoods pack, and transfer recovery load through a ...","textChars":159,"textLines":1,"bbox":[42,178,1196,66]}
+{"kind":"shape","id":"sh/3eds7ml0","slide":2,"name":"purpose-stowed-backing","bbox":[42,274,570,318]}
+{"kind":"shape","id":"sh/pgva9c36","slide":2,"name":"purpose-deployed-backing","bbox":[668,274,570,318]}
+{"kind":"textbox","id":"sh/naxsj61k","slide":2,"name":"purpose-stowed-label","text":"STOWED - 1,675.4 mm rigid length","textPreview":"STOWED - 1,675.4 mm rigid length","textChars":32,"textLines":1,"bbox":[58,605,510,30]}
+{"kind":"textbox","id":"sh/rapcbm9w","slide":2,"name":"purpose-deployed-label","text":"DEPLOYED - 80 degree arms, open pack","textPreview":"DEPLOYED - 80 degree arms, open pack","textChars":36,"textLines":1,"bbox":[684,605,510,30]}
+{"kind":"textbox","id":"sh/69gvihsb","slide":2,"name":"evidence-2","text":"Evidence: Technical Analysis Report sections 5-6; CAD views 07-08","textPreview":"Evidence: Technical Analysis Report sections 5-6; CAD views 07-08","textChars":65,"textLines":1,"bbox":[42,669,1090,24]}
+{"kind":"textbox","id":"sh/twredcr2","slide":2,"name":"page-2","text":"2","textPreview":"2","textChars":1,"textLines":1,"bbox":[1182,669,56,24]}
+{"kind":"image","id":"im/d0ze1k7u","slide":2,"name":"","geometry":"roundRect","alt":"CAD-derived shortened STOWED system with closed external Cordura pack","bbox":[42,274,570,318]}
+{"kind":"image","id":"im/bu1gbep8","slide":2,"name":"","geometry":"roundRect","alt":"CAD-derived DEPLOYED system with arms and inflated buoy","bbox":[668,274,570,318]}
+{"kind":"slide","id":"sl/2861m2","slide":3,"title":"STINGRAY DIGITAL PRODUCT DEFINITION","textShapes":24}
+{"kind":"textbox","id":"sh/atsryhkv","slide":3,"name":"eyebrow-3","text":"STINGRAY DIGITAL PRODUCT DEFINITION","textPreview":"STINGRAY DIGITAL PRODUCT DEFINITION","textChars":35,"textLines":1,"bbox":[42,28,750,22]}
+{"kind":"textbox","id":"sh/xgjatwj6","slide":3,"name":"title-3","text":"Operation is a five-step chain - and every link must work","textPreview":"Operation is a five-step chain - and every link must work","textChars":57,"textLines":1,"bbox":[42,58,1160,88]}
+{"kind":"shape","id":"sh/wva90r2l","slide":3,"name":"title-rule-3","bbox":[42,153,1196,1]}
+{"kind":"shape","id":"sh/nqhsnm14","slide":3,"name":"sequence-panel-0","bbox":[42,246,212,264]}
+{"kind":"textbox","id":"sh/mp8ruhkj","slide":3,"name":"sequence-number-0","text":"1","textPreview":"1","textChars":1,"textLines":1,"bbox":[60,265,48,48]}
+{"kind":"textbox","id":"sh/9sjapwja","slide":3,"name":"sequence-label-0","text":"STOWED","textPreview":"STOWED","textChars":6,"textLines":1,"bbox":[60,332,176,34]}
+{"kind":"textbox","id":"sh/8ra9wr2p","slide":3,"name":"sequence-copy-0","text":"Arms retained; pack closed","textPreview":"Arms retained; pack closed","textChars":26,"textLines":1,"bbox":[60,390,176,92]}
+{"kind":"textbox","id":"sh/zmhsj218","slide":3,"name":"sequence-arrow-0","text":">","textPreview":">","textChars":1,"textLines":1,"bbox":[258,352,26,40]}
+{"kind":"shape","id":"sh/yl8rqxkn","slide":3,"name":"sequence-panel-1","bbox":[288,246,212,264]}
+{"kind":"textbox","id":"sh/83ed0jut","slide":3,"name":"sequence-number-1","text":"2","textPreview":"2","textChars":1,"textLines":1,"bbox":[306,265,48,48]}
+{"kind":"textbox","id":"sh/94nutobe","slide":3,"name":"sequence-label-1","text":"TRIGGER","textPreview":"TRIGGER","textChars":7,"textLines":1,"bbox":[306,332,176,34]}
+{"kind":"textbox","id":"sh/m1wbytcn","slide":3,"name":"sequence-copy-1","text":"Water bobbin or manual pull","textPreview":"Water bobbin or manual pull","textChars":27,"textLines":1,"bbox":[306,390,176,92]}
+{"kind":"textbox","id":"sh/n25cret8","slide":3,"name":"sequence-arrow-1","text":">","textPreview":">","textChars":1,"textLines":1,"bbox":[504,352,26,40]}
+{"kind":"shape","id":"sh/0zetwjuh","slide":3,"name":"sequence-panel-2","bbox":[534,246,212,264]}
+{"kind":"textbox","id":"sh/10nupob2","slide":3,"name":"sequence-number-2","text":"3","textPreview":"3","textChars":1,"textLines":1,"bbox":[552,265,48,48]}
+{"kind":"textbox","id":"sh/excbu9cr","slide":3,"name":"sequence-label-2","text":"DEPLOY","textPreview":"DEPLOY","textChars":6,"textLines":1,"bbox":[552,332,176,34]}
+{"kind":"textbox","id":"sh/zy5cnetc","slide":3,"name":"sequence-copy-2","text":"Crosshead moves; three arms rotate","textPreview":"Crosshead moves; three arms rotate","textChars":34,"textLines":1,"bbox":[552,390,176,92]}
+{"kind":"textbox","id":"sh/kvyd83a1","slide":3,"name":"sequence-arrow-2","text":">","textPreview":">","textChars":1,"textLines":1,"bbox":[750,352,26,40]}
+{"kind":"shape","id":"sh/5w7u18bm","slide":3,"name":"sequence-panel-3","bbox":[780,246,212,264]}
+{"kind":"textbox","id":"sh/t03mp4ze","slide":3,"name":"sequence-number-3","text":"4","textPreview":"4","textChars":1,"textLines":1,"bbox":[798,265,48,48]}
+{"kind":"textbox","id":"sh/sfulwjyt","slide":3,"name":"sequence-label-3","text":"OPEN","textPreview":"OPEN","textChars":4,"textLines":1,"bbox":[798,332,176,34]}
+{"kind":"textbox","id":"sh/7elkneh8","slide":3,"name":"sequence-copy-3","text":"Cordura flaps peel; buoy unfolds","textPreview":"Cordura flaps peel; buoy unfolds","textChars":32,"textLines":1,"bbox":[798,390,176,92]}
+{"kind":"textbox","id":"sh/6ds3u9gn","slide":3,"name":"sequence-arrow-3","text":">","textPreview":">","textChars":1,"textLines":1,"bbox":[996,352,26,40]}
+{"kind":"shape","id":"sh/5cj2l4zi","slide":3,"name":"sequence-panel-4","bbox":[1026,246,212,264]}
+{"kind":"textbox","id":"sh/kbalszyx","slide":3,"name":"sequence-number-4","text":"5","textPreview":"5","textChars":1,"textLines":1,"bbox":[1044,265,48,48]}
+{"kind":"textbox","id":"sh/ja1kzuhc","slide":3,"name":"sequence-label-4","text":"RECOVER","textPreview":"RECOVER","textChars":7,"textLines":1,"bbox":[1044,332,176,34]}
+{"kind":"textbox","id":"sh/i9s3qpgr","slide":3,"name":"sequence-copy-4","text":"Buoy inflates; tether carries load","textPreview":"Buoy inflates; tether carries load","textChars":34,"textLines":1,"bbox":[1044,390,176,92]}
+{"kind":"shape","id":"sh/x8j2xkz6","slide":3,"name":"sequence-failure-panel","bbox":[210,553,860,44]}
+{"kind":"textbox","id":"sh/w7alozyl","slide":3,"name":"sequence-failure-text","text":"The chain stops at step 5: the selected cartridge cannot supply the modeled buoy volume.","textPreview":"The chain stops at step 5: the selected cartridge cannot supply the modeled buoy volume.","textChars":88,"textLines":1,"bbox":[224,563,832,24]}
+{"kind":"textbox","id":"sh/mdojylwj","slide":3,"name":"evidence-3","text":"Evidence: Technical Analysis Report sections 2, 7-8; Pressure Topology","textPreview":"Evidence: Technical Analysis Report sections 2, 7-8; Pressure Topology","textChars":70,"textLines":1,"bbox":[42,669,1090,24]}
+{"kind":"textbox","id":"sh/nex0rqx4","slide":3,"name":"page-3","text":"3","textPreview":"3","textChars":1,"textLines":1,"bbox":[1182,669,56,24]}
+{"kind":"slide","id":"sl/lu00sd","slide":4,"title":"STINGRAY DIGITAL PRODUCT DEFINITION","textShapes":10}
+{"kind":"textbox","id":"sh/i1cn29o7","slide":4,"name":"eyebrow-4","text":"STINGRAY DIGITAL PRODUCT DEFINITION","textPreview":"STINGRAY DIGITAL PRODUCT DEFINITION","textChars":35,"textLines":1,"bbox":[42,28,750,22]}
+{"kind":"textbox","id":"sh/543mdoni","slide":4,"name":"title-4","text":"Three subsystems share one continuous mechanical load path","textPreview":"Three subsystems share one continuous mechanical load path","textChars":58,"textLines":1,"bbox":[42,58,1160,88]}
+{"kind":"shape","id":"sh/43u54j6d","slide":4,"name":"title-rule-4","bbox":[42,153,1196,1]}
+{"kind":"shape","id":"sh/vy147e5g","slide":4,"name":"architecture-image-backing","bbox":[42,180,780,430]}
+{"kind":"textbox","id":"sh/h03m94nm","slide":4,"name":"architecture-label-0","text":"FORWARD BODY","textPreview":"FORWARD BODY","textChars":12,"textLines":1,"bbox":[864,184,340,30]}
+{"kind":"textbox","id":"sh/wzu50j61","slide":4,"name":"architecture-copy-0","text":"Penetrator and ballast establish the nose-side structural datum.","textPreview":"Penetrator and ballast establish the nose-side structural datum.","textChars":64,"textLines":1,"bbox":[864,222,340,82]}
+{"kind":"textbox","id":"sh/7a143u5k","slide":4,"name":"architecture-label-1","text":"ARM POWERTRAIN","textPreview":"ARM POWERTRAIN","textChars":14,"textLines":1,"bbox":[864,326,340,30]}
+{"kind":"textbox","id":"sh/m9snupoz","slide":4,"name":"architecture-copy-1","text":"Gas springs, dampers, common crosshead, links, and stops rotate three arms.","textPreview":"Gas springs, dampers, common crosshead, links, and stops rotate three arms.","textChars":75,"textLines":1,"bbox":[864,364,340,82]}
+{"kind":"textbox","id":"sh/4vahcj65","slide":4,"name":"architecture-label-2","text":"AFT RECOVERY","textPreview":"AFT RECOVERY","textChars":12,"textLines":1,"bbox":[864,468,340,30]}
+{"kind":"textbox","id":"sh/5wji5onq","slide":4,"name":"architecture-copy-2","text":"Closed/open softgoods, inflator, buoy harness, hardpoint, and HMPE tether.","textPreview":"Closed/open softgoods, inflator, buoy harness, hardpoint, and HMPE tether.","textChars":74,"textLines":1,"bbox":[864,506,340,82]}
+{"kind":"textbox","id":"sh/i98za9oz","slide":4,"name":"evidence-4","text":"Evidence: Component Design-Basis Matrix; Source Package 05 design report","textPreview":"Evidence: Component Design-Basis Matrix; Source Package 05 design report","textChars":72,"textLines":1,"bbox":[42,669,1090,24]}
+{"kind":"textbox","id":"sh/jahg3e5k","slide":4,"name":"page-4","text":"4","textPreview":"4","textChars":1,"textLines":1,"bbox":[1182,669,56,24]}
+{"kind":"image","id":"im/jmxczmt0","slide":4,"name":"","geometry":"roundRect","alt":"CAD-derived corrected axial side section showing forward ballast, arm module, shortened aft body, and external buoy pack","bbox":[42,180,780,430]}
+{"kind":"slide","id":"sl/pbfmb1","slide":5,"title":"STINGRAY DIGITAL PRODUCT DEFINITION","textShapes":15}
+{"kind":"textbox","id":"sh/ojql8zm5","slide":5,"name":"eyebrow-5","text":"STINGRAY DIGITAL PRODUCT DEFINITION","textPreview":"STINGRAY DIGITAL PRODUCT DEFINITION","textChars":35,"textLines":1,"bbox":[42,28,750,22]}
+{"kind":"textbox","id":"sh/nyhkfu50","slide":5,"name":"title-5","text":"The frozen digital assembly is complete enough to audit rigorously","textPreview":"The frozen digital assembly is complete enough to audit rigorously","textChars":66,"textLines":1,"bbox":[42,58,1160,88]}
+{"kind":"shape","id":"sh/2x836p4f","slide":5,"name":"title-rule-5","bbox":[42,153,1196,1]}
+{"kind":"textbox","id":"sh/1wz2dknu","slide":5,"name":"metrics-intro","text":"Every claim below is tied to the frozen AP242 masters and their authoring inventories.","textPreview":"Every claim below is tied to the frozen AP242 masters and their authoring inventories.","textChars":86,"textLines":1,"bbox":[42,174,1196,44]}
+{"kind":"shape","id":"sh/0v614fm9","slide":5,"name":"metric-occ-panel","bbox":[42,252,278,178]}
+{"kind":"textbox","id":"sh/fuxkba5o","slide":5,"name":"metric-occ-value","text":"180","textPreview":"180","textChars":3,"textLines":1,"bbox":[62,280,238,74]}
+{"kind":"textbox","id":"sh/etoj2p43","slide":5,"name":"metric-occ-label","text":"named occurrences in each endpoint state","textPreview":"named occurrences in each endpoint state","textChars":40,"textLines":1,"bbox":[62,360,238,54]}
+{"kind":"shape","id":"sh/lsj2po3y","slide":5,"name":"metric-parts-panel","bbox":[346,252,278,178]}
+{"kind":"textbox","id":"sh/kralgjmd","slide":5,"name":"metric-parts-value","text":"92","textPreview":"92","textChars":2,"textLines":1,"bbox":[366,280,238,74]}
+{"kind":"textbox","id":"sh/ah036lgr","slide":5,"name":"metric-parts-label","text":"unique part definitions","textPreview":"unique part definitions","textChars":23,"textLines":1,"bbox":[366,360,238,54]}
+{"kind":"shape","id":"sh/bi94fqhc","slide":5,"name":"metric-angles-panel","bbox":[650,252,278,178]}
+{"kind":"textbox","id":"sh/wjil8vyx","slide":5,"name":"metric-angles-value","text":"81","textPreview":"81","textChars":2,"textLines":1,"bbox":[670,280,238,74]}
+{"kind":"textbox","id":"sh/xkrmh0zi","slide":5,"name":"metric-angles-label","text":"modeled arm positions from 0 to 80 degrees","textPreview":"modeled arm positions from 0 to 80 degrees","textChars":42,"textLines":1,"bbox":[670,360,238,54]}
+{"kind":"shape","id":"sh/mtg32lgv","slide":5,"name":"metric-pairs-panel","bbox":[954,252,284,178]}
+{"kind":"textbox","id":"sh/nu94b6hg","slide":5,"name":"metric-pairs-value","text":"697,167","textPreview":"697,167","textChars":7,"textLines":1,"bbox":[974,280,244,74]}
+{"kind":"textbox","id":"sh/ofil4byl","slide":5,"name":"metric-pairs-label","text":"full-motion exact pair rows","textPreview":"full-motion exact pair rows","textChars":27,"textLines":1,"bbox":[974,360,244,54]}
+{"kind":"shape","id":"sh/9grmdgz6","slide":5,"name":"metrics-result-panel","bbox":[126,493,1028,44]}
+{"kind":"textbox","id":"sh/6pk3e5gz","slide":5,"name":"metrics-result-text","text":"ZERO unauthorized rigid overlaps | ZERO blocked Booleans | ZERO track/fit-register errors","textPreview":"ZERO unauthorized rigid overlaps | ZERO blocked Booleans | ZERO track/fit-register errors","textChars":89,"textLines":1,"bbox":[140,503,1000,24]}
+{"kind":"textbox","id":"sh/7qt4nahk","slide":5,"name":"metrics-mass","text":"Mass: 10.583 kg | reserve to 18.14 kg limit: 7.557 kg | rigid length: 1,675.4 mm","textPreview":"Mass: 10.583 kg | reserve to 18.14 kg limit: 7.557 kg | rigid length: 1,675.4 mm","textChars":80,"textLines":1,"bbox":[160,566,960,42]}
+{"kind":"textbox","id":"sh/3u50z2xw","slide":5,"name":"evidence-5","text":"Evidence: Endpoint Validation Summary; Full Motion Exact Boolean Summary; Mass/CG/Inertia Report","textPreview":"Evidence: Endpoint Validation Summary; Full Motion Exact Boolean Summary; Mass/CG/Inertia Report","textChars":96,"textLines":1,"bbox":[42,669,1090,24]}
+{"kind":"textbox","id":"sh/itcj6xwb","slide":5,"name":"page-5","text":"5","textPreview":"5","textChars":1,"textLines":1,"bbox":[1182,669,56,24]}
+{"kind":"slide","id":"sl/hc5jw3","slide":6,"title":"STINGRAY DIGITAL PRODUCT DEFINITION","textShapes":6}
+{"kind":"textbox","id":"sh/i9svadk7","slide":6,"name":"eyebrow-6","text":"STINGRAY DIGITAL PRODUCT DEFINITION","textPreview":"STINGRAY DIGITAL PRODUCT DEFINITION","textChars":35,"textLines":1,"bbox":[42,28,750,22]}
+{"kind":"textbox","id":"sh/5cju583y","slide":6,"name":"title-6","text":"The open DEPLOYED pack is controlling intent, not a cleanup defect","textPreview":"The open DEPLOYED pack is controlling intent, not a cleanup defect","textChars":66,"textLines":1,"bbox":[42,58,1160,88]}
+{"kind":"shape","id":"sh/4badcn2d","slide":6,"name":"title-rule-6","bbox":[42,153,1196,1]}
+{"kind":"shape","id":"sh/v61czylw","slide":6,"name":"state-closed-backing","bbox":[42,182,540,430]}
+{"kind":"shape","id":"sh/h8ju1832","slide":6,"name":"state-open-backing","bbox":[698,182,540,430]}
+{"kind":"textbox","id":"sh/f2lcb2l0","slide":6,"name":"state-left","text":"STOWED - separate panels form the closed pack.","textPreview":"STOWED - separate panels form the closed pack.","textChars":46,"textLines":1,"bbox":[62,622,500,30]}
+{"kind":"textbox","id":"sh/e1cvixkf","slide":6,"name":"state-right","text":"DEPLOYED - flaps remain attached; tether bypasses Cordura and hook-and-loop.","textPreview":"DEPLOYED - flaps remain attached; tether bypasses Cordura and hook-and-loop.","textChars":76,"textLines":1,"bbox":[718,622,500,36]}
+{"kind":"textbox","id":"sh/4baxg7up","slide":6,"name":"evidence-6","text":"Evidence: Screenshot Closure Report images 10-11; CAD views 09 and 12","textPreview":"Evidence: Screenshot Closure Report images 10-11; CAD views 09 and 12","textChars":69,"textLines":1,"bbox":[42,669,1090,24]}
+{"kind":"textbox","id":"sh/pcjypcba","slide":6,"name":"page-6","text":"6","textPreview":"6","textChars":1,"textLines":1,"bbox":[1182,669,56,24]}
+{"kind":"image","id":"im/fehwny58","slide":6,"name":"","geometry":"roundRect","alt":"CAD-derived closed Cordura buoy pack in STOWED state","bbox":[42,182,540,430]}
+{"kind":"image","id":"im/hgzepone","slide":6,"name":"","geometry":"roundRect","alt":"CAD-derived owner-intent open pack with inflated buoy and structural tether load path","bbox":[698,182,540,430]}
+{"kind":"slide","id":"sl/hmeakn","slide":7,"title":"STINGRAY DIGITAL PRODUCT DEFINITION","textShapes":10}
+{"kind":"textbox","id":"sh/id0b69wr","slide":7,"name":"eyebrow-7","text":"STINGRAY DIGITAL PRODUCT DEFINITION","textPreview":"STINGRAY DIGITAL PRODUCT DEFINITION","textChars":35,"textLines":1,"bbox":[42,28,750,22]}
+{"kind":"textbox","id":"sh/5gra1ovi","slide":7,"name":"title-7","text":"Digital mechanism motion passed every modeled position","textPreview":"Digital mechanism motion passed every modeled position","textChars":54,"textLines":1,"bbox":[42,58,1160,88]}
+{"kind":"shape","id":"sh/4fit8jex","slide":7,"name":"title-rule-7","bbox":[42,153,1196,1]}
+{"kind":"shape","id":"sh/vqpsvudg","slide":7,"name":"motion-image-backing","bbox":[42,182,640,438]}
+{"kind":"shape","id":"sh/hc7ax4vm","slide":7,"name":"motion-angle-panel","bbox":[724,190,230,178]}
+{"kind":"textbox","id":"sh/gryt4ze1","slide":7,"name":"motion-angle-value","text":"0-80°","textPreview":"0-80°","textChars":5,"textLines":1,"bbox":[744,218,190,74]}
+{"kind":"textbox","id":"sh/7mpsrux4","slide":7,"name":"motion-angle-label","text":"one-degree audit coverage","textPreview":"one-degree audit coverage","textChars":25,"textLines":1,"bbox":[744,298,190,54]}
+{"kind":"shape","id":"sh/6lwrypwz","slide":7,"name":"motion-travel-panel","bbox":[976,190,262,178]}
+{"kind":"textbox","id":"sh/gnyx8na5","slide":7,"name":"motion-travel-value","text":"15.055","textPreview":"15.055","textChars":6,"textLines":1,"bbox":[996,218,222,74]}
+{"kind":"textbox","id":"sh/ho7ehsbq","slide":7,"name":"motion-travel-label","text":"mm crosshead travel","textPreview":"mm crosshead travel","textChars":19,"textLines":1,"bbox":[996,298,222,54]}
+{"kind":"textbox","id":"sh/ulwf6dsz","slide":7,"name":"motion-proof","text":"- 43,035 rows in the five-angle gate\n- 697,167 rows in the full sweep\n- closure residual: 2.49e-14 mm\n- no invalid or unclassified rigid interference","textPreview":"- 43,035 rows in the five-angle gate | - 697,167 rows in the full sweep | - closure residual: 2.49e-14 mm | - no invalid or unclassified ...","textChars":149,"textLines":4,"bbox":[740,405,470,176]}
+{"kind":"shape","id":"sh/vm5wfitk","slide":7,"name":"motion-limit-panel","bbox":[724,574,514,62]}
+{"kind":"textbox","id":"sh/8jex43at","slide":7,"name":"motion-limit-text","text":"Digital PASS does not prove deployment time, loads,\nfatigue, or physical lock capacity.","textPreview":"Digital PASS does not prove deployment time, loads, | fatigue, or physical lock capacity.","textChars":87,"textLines":2,"bbox":[738,586,486,38]}
+{"kind":"textbox","id":"sh/tkned8be","slide":7,"name":"evidence-7","text":"Evidence: Technical Analysis Report section 5; validation/full_motion","textPreview":"Evidence: Technical Analysis Report section 5; validation/full_motion","textChars":69,"textLines":1,"bbox":[42,669,1090,24]}
+{"kind":"textbox","id":"sh/6hwf2ts3","slide":7,"name":"page-7","text":"7","textPreview":"7","textChars":1,"textLines":1,"bbox":[1182,669,56,24]}
+{"kind":"image","id":"im/naxcradk","slide":7,"name":"","geometry":"roundRect","alt":"CAD-derived detail of forward ballast, transition, carrier, and pivot adjacency","bbox":[42,182,640,438]}
+{"kind":"slide","id":"sl/cdv0x9","slide":8,"title":"CONTROLLING RELEASE FAILURE","textShapes":10}
+{"kind":"textbox","id":"sh/07ehcf25","slide":8,"name":"eyebrow-8","text":"CONTROLLING RELEASE FAILURE","textPreview":"CONTROLLING RELEASE FAILURE","textChars":27,"textLines":1,"bbox":[42,28,750,22]}
+{"kind":"textbox","id":"sh/z650ja1k","slide":8,"name":"title-8","text":"The selected 12 g cartridge can supply only about 11% of the modeled buoy","textPreview":"The selected 12 g cartridge can supply only about 11% of the modeled buoy","textChars":73,"textLines":1,"bbox":[42,58,1160,88]}
+{"kind":"shape","id":"sh/y5wza5kz","slide":8,"name":"title-rule-8","bbox":[42,153,1196,1]}
+{"kind":"textbox","id":"sh/9wnip4jm","slide":8,"name":"gas-explain","text":"An optimistic ideal-gas calculation already proves the mismatch. Real delivery would be lower because of cooling, residual gas, pressure drop, leakage, and required buoy pressure.","textPreview":"An optimistic ideal-gas calculation already proves the mismatch. Real delivery would be lower because of cooling, residual gas, pressure ...","textChars":179,"textLines":1,"bbox":[42,176,1196,66]}
+{"kind":"textbox","id":"sh/8be1gz21","slide":8,"name":"gas-label-a","text":"Selected cartridge at 20 C","textPreview":"Selected cartridge at 20 C","textChars":26,"textLines":1,"bbox":[90,298,290,32]}
+{"kind":"shape","id":"sh/na50nu1g","slide":8,"name":"gas-bar-a-bg","bbox":[90,342,1020,64]}
+{"kind":"shape","id":"sh/m9wjepkb","slide":8,"name":"gas-bar-a","bbox":[90,342,111.5,64]}
+{"kind":"textbox","id":"sh/x07it4jy","slide":8,"name":"gas-value-a","text":"6.56 L","textPreview":"6.56 L","textChars":6,"textLines":1,"bbox":[216,354,180,36]}
+{"kind":"textbox","id":"sh/wzy1kzid","slide":8,"name":"gas-label-b","text":"Modeled buoy nominal volume","textPreview":"Modeled buoy nominal volume","textChars":27,"textLines":1,"bbox":[90,446,330,32]}
+{"kind":"shape","id":"sh/ux43alwv","slide":8,"name":"gas-bar-b","bbox":[90,490,1020,64]}
+{"kind":"textbox","id":"sh/fyd4jqdg","slide":8,"name":"gas-value-b","text":"60.0 L","textPreview":"60.0 L","textChars":6,"textLines":1,"bbox":[1120,502,100,36]}
+{"kind":"shape","id":"sh/gz6lcvel","slide":8,"name":"gas-fail-panel","bbox":[188,594,904,44]}
+{"kind":"textbox","id":"sh/h0fml0v6","slide":8,"name":"gas-fail-text","text":"FAIL: ideal lower-bound CO2 mass is 109.8 g, before real losses and overpressure.","textPreview":"FAIL: ideal lower-bound CO2 mass is 109.8 g, before real losses and overpressure.","textChars":81,"textLines":1,"bbox":[202,604,876,24]}
+{"kind":"textbox","id":"sh/21o3e5wr","slide":8,"name":"evidence-8","text":"Evidence: Technical Analysis Report section 2; Stored Gas Independent Calculation","textPreview":"Evidence: Technical Analysis Report section 2; Stored Gas Independent Calculation","textChars":81,"textLines":1,"bbox":[42,669,1090,24]}
+{"kind":"textbox","id":"sh/32x4nadc","slide":8,"name":"page-8","text":"8","textPreview":"8","textChars":1,"textLines":1,"bbox":[1182,669,56,24]}
+{"kind":"slide","id":"sl/e1q36c","slide":9,"title":"STINGRAY DIGITAL PRODUCT DEFINITION","textShapes":13}
+{"kind":"textbox","id":"sh/d4julcva","slide":9,"name":"eyebrow-9","text":"STINGRAY DIGITAL PRODUCT DEFINITION","textPreview":"STINGRAY DIGITAL PRODUCT DEFINITION","textChars":35,"textLines":1,"bbox":[42,28,750,22]}
+{"kind":"textbox","id":"sh/q1sbaxwj","slide":9,"name":"title-9","text":"The pressure path is compact, but its exact installed interfaces are unresolved","textPreview":"The pressure path is compact, but its exact installed interfaces are unresolved","textChars":79,"textLines":1,"bbox":[42,58,1160,88]}
+{"kind":"shape","id":"sh/r21cj2d4","slide":9,"name":"title-rule-9","bbox":[42,153,1196,1]}
+{"kind":"shape","id":"sh/4zat87ed","slide":9,"name":"pressure-image-backing","bbox":[42,180,610,450]}
+{"kind":"shape","id":"sh/ix8b6xwn","slide":9,"name":"pressure-status-0-panel","bbox":[698,190,112,44]}
+{"kind":"textbox","id":"sh/3y1cf2d8","slide":9,"name":"pressure-status-0-text","text":"KNOWN","textPreview":"KNOWN","textChars":5,"textLines":1,"bbox":[712,200,84,24]}
+{"kind":"textbox","id":"sh/gvqt4neh","slide":9,"name":"pressure-copy-0","text":"Leland 81121: 12 g CO2, 3/8-24 puncture cartridge","textPreview":"Leland 81121: 12 g CO2, 3/8-24 puncture cartridge","textChars":49,"textLines":1,"bbox":[836,198,386,70]}
+{"kind":"shape","id":"sh/hwzudsv2","slide":9,"name":"pressure-status-1-panel","bbox":[698,294,112,44]}
+{"kind":"textbox","id":"sh/987mtcve","slide":9,"name":"pressure-status-1-text","text":"KNOWN","textPreview":"KNOWN","textChars":5,"textLines":1,"bbox":[712,304,84,24]}
+{"kind":"textbox","id":"sh/87y5k7ut","slide":9,"name":"pressure-copy-1","text":"Hydro 1F family uses V80040 water-sensitive bobbin","textPreview":"Hydro 1F family uses V80040 water-sensitive bobbin","textChars":50,"textLines":1,"bbox":[836,302,386,70]}
+{"kind":"shape","id":"sh/76p4r2d8","slide":9,"name":"pressure-status-2-panel","bbox":[698,398,112,44]}
+{"kind":"textbox","id":"sh/m5w3ixwn","slide":9,"name":"pressure-status-2-text","text":"OPEN","textPreview":"OPEN","textChars":4,"textLines":1,"bbox":[712,408,84,24]}
+{"kind":"textbox","id":"sh/l4nmpsv2","slide":9,"name":"pressure-copy-2","text":"Exact Hydro suffix and matching thread configuration","textPreview":"Exact Hydro suffix and matching thread configuration","textChars":52,"textLines":1,"bbox":[836,406,386,70]}
+{"kind":"shape","id":"sh/k3elgnex","slide":9,"name":"pressure-status-3-panel","bbox":[698,502,112,44]}
+{"kind":"textbox","id":"sh/z254nidc","slide":9,"name":"pressure-status-3-text","text":"OPEN","textPreview":"OPEN","textChars":4,"textLines":1,"bbox":[712,512,84,24]}
+{"kind":"textbox","id":"sh/y1w3exwr","slide":9,"name":"pressure-copy-3","text":"Vendor-exact geometry, flow curve, patch interface, leak result","textPreview":"Vendor-exact geometry, flow curve, patch interface, leak result","textChars":63,"textLines":1,"bbox":[836,510,386,70]}
+{"kind":"textbox","id":"sh/x0nmlsv6","slide":9,"name":"pressure-topology","text":"Topology: cartridge -> Hydro 1F family inflator -> custom 60 L buoy patch. No separate hose, tube, regulator, gauge, or pneumatic cylinder remains in this configuration.","textPreview":"Topology: cartridge -> Hydro 1F family inflator -> custom 60 L buoy patch. No separate hose, tube, regulator, gauge, or pneumatic cylinde...","textChars":169,"textLines":1,"bbox":[698,604,524,54]}
+{"kind":"textbox","id":"sh/czelcnel","slide":9,"name":"evidence-9","text":"Evidence: Pressure Topology; Port-to-Port Table; Pressure Ratings Matrix","textPreview":"Evidence: Pressure Topology; Port-to-Port Table; Pressure Ratings Matrix","textChars":72,"textLines":1,"bbox":[42,669,1090,24]}
+{"kind":"textbox","id":"sh/ojy58nmh","slide":9,"name":"page-9","text":"9","textPreview":"9","textChars":1,"textLines":1,"bbox":[1182,669,56,24]}
+{"kind":"image","id":"im/sj69o3u5","slide":9,"name":"","geometry":"roundRect","alt":"CAD-derived pack section showing Hydro 1F proxy and direct water-entry access","bbox":[42,180,610,450]}
+{"kind":"slide","id":"sl/o88psn","slide":10,"title":"STINGRAY DIGITAL PRODUCT DEFINITION","textShapes":14}
+{"kind":"textbox","id":"sh/kvqxsvmt","slide":10,"name":"eyebrow-10","text":"STINGRAY DIGITAL PRODUCT DEFINITION","textPreview":"STINGRAY DIGITAL PRODUCT DEFINITION","textChars":35,"textLines":1,"bbox":[42,28,750,22]}
+{"kind":"textbox","id":"sh/juhwzq58","slide":10,"name":"title-10","text":"The current configuration is custom-heavy and not fabrication-ready","textPreview":"The current configuration is custom-heavy and not fabrication-ready","textChars":67,"textLines":1,"bbox":[42,58,1160,88]}
+{"kind":"shape","id":"sh/it8fql4n","slide":10,"name":"title-rule-10","bbox":[42,153,1196,1]}
+{"kind":"shape","id":"sh/t0jy5kna","slide":10,"name":"make-buy-panel","bbox":[42,190,352,178]}
+{"kind":"textbox","id":"sh/szaxwfmp","slide":10,"name":"make-buy-value","text":"79 MAKE","textPreview":"79 MAKE","textChars":7,"textLines":1,"bbox":[62,218,312,74]}
+{"kind":"textbox","id":"sh/7y1w3a54","slide":10,"name":"make-buy-label","text":"custom definitions requiring released manufacturing control","textPreview":"custom definitions requiring released manufacturing control","textChars":59,"textLines":1,"bbox":[62,298,312,54]}
+{"kind":"shape","id":"sh/6x8fu54j","slide":10,"name":"buy-count-panel","bbox":[430,190,352,178]}
+{"kind":"textbox","id":"sh/hojy9kn6","slide":10,"name":"buy-count-value","text":"13 BUY","textPreview":"13 BUY","textChars":6,"textLines":1,"bbox":[450,218,312,74]}
+{"kind":"textbox","id":"sh/gnax0fml","slide":10,"name":"buy-count-label","text":"catalog or supplier-derived definitions","textPreview":"catalog or supplier-derived definitions","textChars":39,"textLines":1,"bbox":[450,298,312,54]}
+{"kind":"shape","id":"sh/mp0ryx4f","slide":10,"name":"part-export-panel","bbox":[818,190,420,178]}
+{"kind":"textbox","id":"sh/7q9sri50","slide":10,"name":"part-export-value","text":"123","textPreview":"123","textChars":3,"textLines":1,"bbox":[838,218,380,74]}
+{"kind":"textbox","id":"sh/8ri90nml","slide":10,"name":"part-export-label","text":"AP242/BREP/render state definitions delivered","textPreview":"AP242/BREP/render state definitions delivered","textChars":45,"textLines":1,"bbox":[838,298,380,54]}
+{"kind":"textbox","id":"sh/9sratsn6","slide":10,"name":"manufacturing-open","text":"Fabrication remains prohibited because the package does not contain approved dimensioned drawings, GD&T, tolerance stacks, process capability, torque/locking data, or validated tool access.","textPreview":"Fabrication remains prohibited because the package does not contain approved dimensioned drawings, GD&T, tolerance stacks, process capabi...","textChars":189,"textLines":1,"bbox":[42,424,740,118]}
+{"kind":"shape","id":"sh/utkr2x4r","slide":10,"name":"manufacturing-panel","bbox":[836,424,402,174]}
+{"kind":"textbox","id":"sh/vutsv25c","slide":10,"name":"manufacturing-panel-title","text":"COTS-first objective","textPreview":"COTS-first objective","textChars":20,"textLines":1,"bbox":[858,446,354,30]}
+{"kind":"textbox","id":"sh/wv2947mh","slide":10,"name":"manufacturing-panel-copy","text":"No complete, orderable commercial inflation module has passed geometry, interface, gas-capacity, and application gates.","textPreview":"No complete, orderable commercial inflation module has passed geometry, interface, gas-capacity, and application gates.","textChars":119,"textLines":1,"bbox":[858,494,354,86]}
+{"kind":"shape","id":"sh/hwbaxcn2","slide":10,"name":"manufacturing-status-panel","bbox":[180,592,920,44]}
+{"kind":"textbox","id":"sh/axgrqt47","slide":10,"name":"manufacturing-status-text","text":"NO PURCHASE OR FABRICATION AUTHORIZED","textPreview":"NO PURCHASE OR FABRICATION AUTHORIZED","textChars":37,"textLines":1,"bbox":[194,602,892,24]}
+{"kind":"textbox","id":"sh/byp8jy5s","slide":10,"name":"evidence-10","text":"Evidence: Full BOM; Make/Buy Trade Study; Manufactured-Part Drawing Register","textPreview":"Evidence: Full BOM; Make/Buy Trade Study; Manufactured-Part Drawing Register","textChars":76,"textLines":1,"bbox":[42,669,1090,24]}
+{"kind":"textbox","id":"sh/f25orulk","slide":10,"name":"page-10","text":"10","textPreview":"10","textChars":2,"textLines":1,"bbox":[1182,669,56,24]}
+{"kind":"slide","id":"sl/pnisnf","slide":11,"title":"STINGRAY DIGITAL PRODUCT DEFINITION","textShapes":15}
+{"kind":"textbox","id":"sh/krih87yx","slide":11,"name":"eyebrow-11","text":"STINGRAY DIGITAL PRODUCT DEFINITION","textPreview":"STINGRAY DIGITAL PRODUCT DEFINITION","textChars":35,"textLines":1,"bbox":[42,28,750,22]}
+{"kind":"textbox","id":"sh/zq9gzmxc","slide":11,"name":"title-11","text":"Release now depends on physical evidence and an architecture correction","textPreview":"Release now depends on physical evidence and an architecture correction","textChars":71,"textLines":1,"bbox":[42,58,1160,88]}
+{"kind":"shape","id":"sh/ypgz6hgr","slide":11,"name":"title-rule-11","bbox":[42,153,1196,1]}
+{"kind":"textbox","id":"sh/xo7yxcf6","slide":11,"name":"risk-number-0","text":"1","textPreview":"1","textChars":1,"textLines":1,"bbox":[66,190,58,64]}
+{"kind":"textbox","id":"sh/cnyh47yl","slide":11,"name":"risk-title-0","text":"Correct inflation architecture","textPreview":"Correct inflation architecture","textChars":30,"textLines":1,"bbox":[150,192,390,38]}
+{"kind":"textbox","id":"sh/bmpgv2h0","slide":11,"name":"risk-copy-0","text":"Select a complete cartridge/inflator/buoy combination that passes capacity and rated-interface gates.","textPreview":"Select a complete cartridge/inflator/buoy combination that passes capacity and rated-interface gates.","textChars":101,"textLines":1,"bbox":[150,238,470,76]}
+{"kind":"shape","id":"sh/algz2xgf","slide":11,"name":"risk-rule-0","bbox":[66,318,554,1]}
+{"kind":"textbox","id":"sh/hkbi9wfa","slide":11,"name":"risk-number-1","text":"2","textPreview":"2","textChars":1,"textLines":1,"bbox":[66,332,58,64]}
+{"kind":"textbox","id":"sh/wj2hgbyp","slide":11,"name":"risk-title-1","text":"Define loads and release drawings","textPreview":"Define loads and release drawings","textChars":33,"textLines":1,"bbox":[150,334,390,38]}
+{"kind":"textbox","id":"sh/yl8j6xwf","slide":11,"name":"risk-copy-1","text":"Control mission, impact, proof, life, tolerance, torque, material, finish, and inspection requirements.","textPreview":"Control mission, impact, proof, life, tolerance, torque, material, finish, and inspection requirements.","textChars":103,"textLines":1,"bbox":[150,380,470,76]}
+{"kind":"shape","id":"sh/z6hkfid0","slide":11,"name":"risk-rule-1","bbox":[66,460,554,1]}
+{"kind":"textbox","id":"sh/k7a18nel","slide":11,"name":"risk-number-2","text":"3","textPreview":"3","textChars":1,"textLines":1,"bbox":[66,474,58,64]}
+{"kind":"textbox","id":"sh/l8j2hsvq","slide":11,"name":"risk-title-2","text":"Qualify the physical product","textPreview":"Qualify the physical product","textChars":28,"textLines":1,"bbox":[150,476,390,38]}
+{"kind":"textbox","id":"sh/ah8j2dw3","slide":11,"name":"risk-copy-2","text":"Wet opening, inflation, leak, proof/burst, buoyancy/stability, dynamic, fatigue, corrosion, and assembly trials.","textPreview":"Wet opening, inflation, leak, proof/burst, buoyancy/stability, dynamic, fatigue, corrosion, and assembly trials.","textChars":112,"textLines":1,"bbox":[150,522,470,76]}
+{"kind":"shape","id":"sh/bihkbido","slide":11,"name":"risk-rule-2","bbox":[66,602,554,1]}
+{"kind":"shape","id":"sh/cjq14ne9","slide":11,"name":"risk-test-panel","bbox":[688,190,550,410]}
+{"kind":"textbox","id":"sh/xkz2dsvu","slide":11,"name":"risk-test-title","text":"Minimum physical test families","textPreview":"Minimum physical test families","textChars":30,"textLines":1,"bbox":[716,216,494,36]}
+{"kind":"textbox","id":"sh/udsjehwn","slide":11,"name":"risk-test-list","text":"- inflation architecture and cold/hot delivery\n- wet pack opening and extraction\n- buoy proof, burst, leak, lift, and stability\n- arm/lock/hardpoint/tether structural proof\n- dynamic deployment and handling/drop\n- fatigue, wear, corrosion, UV, humidity, storage\n- realistic assembly, service, reset, and inspection","textPreview":"- inflation architecture and cold/hot delivery | - wet pack opening and extraction | - buoy proof, burst, leak, lift, and stability | - a...","textChars":314,"textLines":7,"bbox":[716,282,472,270]}
+{"kind":"textbox","id":"sh/velkn2d8","slide":11,"name":"evidence-11","text":"Evidence: Risk Register/FMEA; Physical Verification Plan","textPreview":"Evidence: Risk Register/FMEA; Physical Verification Plan","textChars":56,"textLines":1,"bbox":[42,669,1090,24]}
+{"kind":"textbox","id":"sh/ridgfetk","slide":11,"name":"page-11","text":"11","textPreview":"11","textChars":2,"textLines":1,"bbox":[1182,669,56,24]}
+{"kind":"slide","id":"sl/mzkckg","slide":12,"title":"STINGRAY DIGITAL PRODUCT DEFINITION","textShapes":8}
+{"kind":"textbox","id":"sh/vixgra58","slide":12,"name":"eyebrow-12","text":"STINGRAY DIGITAL PRODUCT DEFINITION","textPreview":"STINGRAY DIGITAL PRODUCT DEFINITION","textChars":35,"textLines":1,"bbox":[42,28,750,22]}
+{"kind":"textbox","id":"sh/wj6xkfmt","slide":12,"name":"title-12","text":"Digital pass; production release fails","textPreview":"Digital pass; production release fails","textChars":38,"textLines":1,"bbox":[42,58,1160,88]}
+{"kind":"shape","id":"sh/hkzytkne","slide":12,"name":"title-rule-12","bbox":[42,153,1196,1]}
+{"kind":"shape","id":"sh/il8fmp4z","slide":12,"name":"gate-pass-panel","bbox":[42,186,552,422]}
+{"kind":"textbox","id":"sh/jmhgvu5k","slide":12,"name":"gate-pass-title","text":"DIGITAL PASS","textPreview":"DIGITAL PASS","textChars":12,"textLines":1,"bbox":[70,214,496,44]}
+{"kind":"textbox","id":"sh/4nqxozm5","slide":12,"name":"gate-pass-list","text":"- clean procedural build\n- 180 occurrences per state\n- hierarchy, occurrence identities, transforms, and valid solids preserved on reimport\n- nominal envelope and mass properties\n- endpoint exact-Boolean audit\n- five-angle audit\n- full 0-80 degree one-degree sweep","textPreview":"- clean procedural build | - 180 occurrences per state | - hierarchy, occurrence identities, transforms, and valid solids preserved on re...","textChars":264,"textLines":7,"bbox":[70,286,480,286]}
+{"kind":"shape","id":"sh/5ozyx4na","slide":12,"name":"gate-fail-panel","bbox":[644,186,594,422]}
+{"kind":"textbox","id":"sh/yp4fa54f","slide":12,"name":"gate-fail-title","text":"RELEASE FAIL","textPreview":"RELEASE FAIL","textChars":12,"textLines":1,"bbox":[674,214,534,44]}
+{"kind":"textbox","id":"sh/zqdgjq50","slide":12,"name":"gate-fail-list","text":"- 12 g / 60 L gas-capacity mismatch\n- inflator suffix, exact geometry, ratings, and leak/flow unknown\n- proxy and developmental softgood envelopes\n- required load/strength/tolerance analyses incomplete\n- manufacturing drawings and work instructions absent\n- physical qualification absent\n- AP242 bytes not reproducible across identical builds\n- root assembly naming nonconformance remains open\n- required screenshots and newer attachment placeholders absent","textPreview":"- 12 g / 60 L gas-capacity mismatch | - inflator suffix, exact geometry, ratings, and leak/flow unknown | - proxy and developmental softg...","textChars":457,"textLines":9,"bbox":[674,286,520,306]}
+{"kind":"textbox","id":"sh/velczq1c","slide":12,"name":"evidence-12","text":"Evidence: Objective Release Gate Table; Non-Release Exception Report","textPreview":"Evidence: Objective Release Gate Table; Non-Release Exception Report","textChars":68,"textLines":1,"bbox":[42,669,1090,24]}
+{"kind":"textbox","id":"sh/udcbqlkr","slide":12,"name":"page-12","text":"12","textPreview":"12","textChars":2,"textLines":1,"bbox":[1182,669,56,24]}
+{"kind":"slide","id":"sl/ehoena","slide":13,"title":"DECISION","textShapes":10}
+{"kind":"textbox","id":"sh/adgfu1sr","slide":13,"name":"close-eyebrow","text":"DECISION","textPreview":"DECISION","textChars":8,"textLines":1,"bbox":[42,42,280,28]}
+{"kind":"textbox","id":"sh/xgrypgbi","slide":13,"name":"close-title","text":"Do not release this configuration","textPreview":"Do not release this configuration","textChars":33,"textLines":1,"bbox":[42,114,850,92]}
+{"kind":"textbox","id":"sh/cfixwbax","slide":13,"name":"close-copy","text":"Use the frozen digital package as a controlled engineering baseline. Correct the inflation architecture first; then define loads, complete manufacturing definition, qualify the physical product, and rerun independent review.","textPreview":"Use the frozen digital package as a controlled engineering baseline. Correct the inflation architecture first; then define loads, complet...","textChars":224,"textLines":1,"bbox":[42,242,810,134]}
+{"kind":"shape","id":"sh/nqpwjmtg","slide":13,"name":"close-status-panel","bbox":[42,426,630,44]}
+{"kind":"textbox","id":"sh/2pgfq1sv","slide":13,"name":"close-status-text","text":"AUTHORIZATION: ENGINEERING REVIEW ONLY","textPreview":"AUTHORIZATION: ENGINEERING REVIEW ONLY","textChars":38,"textLines":1,"bbox":[56,436,602,24]}
+{"kind":"textbox","id":"sh/pc7ylwbm","slide":13,"name":"close-prohibitions","text":"No fabrication. No purchase. No qualification acceptance. No field use. No merge to main.","textPreview":"No fabrication. No purchase. No qualification acceptance. No field use. No merge to main.","textChars":89,"textLines":1,"bbox":[42,514,760,78]}
+{"kind":"shape","id":"sh/oryxsra1","slide":13,"name":"close-panel","bbox":[900,114,338,478]}
+{"kind":"textbox","id":"sh/7m9gvqtk","slide":13,"name":"close-panel-title","text":"Next gate","textPreview":"Next gate","textChars":9,"textLines":1,"bbox":[930,150,278,36]}
+{"kind":"textbox","id":"sh/6l0f2lsz","slide":13,"name":"close-panel-copy","text":"Bring back one complete, orderable, source-supported inflation module and a controlled 60 L requirement. If none passes, stop with a measured architecture decision.","textPreview":"Bring back one complete, orderable, source-supported inflation module and a controlled 60 L requirement. If none passes, stop with a meas...","textChars":164,"textLines":1,"bbox":[930,218,278,222]}
+{"kind":"textbox","id":"sh/8jyh0765","slide":13,"name":"close-panel-proof","text":"Digital baseline retained:\n- STOWED / DEPLOYED AP242\n- 92 unique parts\n- 123 state definitions\n- full 81-position audit","textPreview":"Digital baseline retained: | - STOWED / DEPLOYED AP242 | - 92 unique parts | - 123 state definitions | - full 81-position audit","textChars":119,"textLines":5,"bbox":[930,462,278,110]}
+{"kind":"textbox","id":"sh/9k7i9cnq","slide":13,"name":"evidence-13","text":"Evidence: Release Index; Make/Buy Trade Study; Physical Verification Plan","textPreview":"Evidence: Release Index; Make/Buy Trade Study; Physical Verification Plan","textChars":73,"textLines":1,"bbox":[42,669,1090,24]}
+{"kind":"textbox","id":"sh/mhgzyhoz","slide":13,"name":"page-13","text":"13","textPreview":"13","textChars":2,"textLines":1,"bbox":[1182,669,56,24]}

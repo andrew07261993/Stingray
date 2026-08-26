@@ -1,0 +1,45 @@
+{
+  "crosshead_stroke_mm": 23.074390560079223,
+  "gs_development_force_specification_n": {
+    "maximum": 330.0,
+    "minimum": 270.0,
+    "nominal": 300.0
+  },
+  "hbd": {
+    "external_stop_allowance_mm": 1.5,
+    "lost_motion_mm": 1.2,
+    "stroke_mm": 25.0
+  },
+  "mass": {
+    "integrated_wp01_plus_wp02_nominal_mass_kg": 17.330175014794566,
+    "limitation": "Mixed-material subsystem mass uses nominal densities and vendor/drawing mass overrides; fastener and lubricant micro-masses are screening values.",
+    "wp01_reported_body_mass_kg": 13.837336,
+    "wp02_nominal_mass_kg": 3.4928390147945643
+  },
+  "rejected_spring": {
+    "basis": "Inherited rate was read as N/mm although manufacturer table value 8.7504 was kg/mm; corrected SI rate is 85.815 N/mm. Excess force and only 3.51 mm solid-height margin make the inherited installation unsuitable.",
+    "deployed_force_n": "not credited",
+    "disposition": "REJECTED_CONFIGURATION_DEFICIENCY",
+    "free_length_mm": 177.8,
+    "installed_stowed_mm": 130.0,
+    "od_mm": 30.48,
+    "part_number": "LHL 1250D 09",
+    "rate_n_per_mm": 85.815,
+    "released_energy_j": "not credited",
+    "solid_height_margin_mm": 3.510000000000005,
+    "stowed_force_n": 4101.957000000001
+  },
+  "selected_spring": {
+    "basis": "Manufacturer-catalog dimensions; configuration selected to fit the r=18 core and provide zero-GS completion margin. Procurement certificate and incoming rate/length inspection remain required.",
+    "deployed_force_n": 323.0660084294563,
+    "disposition": "SELECTED_CONTROLLED_COTS_CANDIDATE",
+    "free_length_mm": 203.2,
+    "installed_stowed_mm": 153.0,
+    "od_mm": 15.24,
+    "part_number": "LHL 625D 12",
+    "rate_n_per_mm": 11.91,
+    "released_energy_j": 10.625157016014203,
+    "solid_height_margin_mm": 13.300000000000011,
+    "stowed_force_n": 597.8819999999998
+  }
+}

@@ -1,0 +1,32 @@
+release_gate,disposition,evidence_or_reason
+Zero invalid solids,PASS - DIGITAL,Endpoint and motion validators reimport valid solids
+Zero failed modeling features,PASS - PROCEDURAL BUILD,Clean procedural build exited zero; native feature-tree audit not applicable
+Zero broken references,PASS - DELIVERED SOURCE,Clean build resolved delivered source dependencies
+Zero missing dependencies,PASS - CURRENT ENVIRONMENT,Build completed; clean extracted rebuild must reconfirm
+Zero missing BOM parts,NOT DETERMINABLE,"Authoring BOM reconciles, but physical completeness/vendor internals are not qualified"
+Zero unmatched CAD occurrences,PASS - DIGITAL,180 named occurrences in each state
+Zero unintended duplicate occurrences,PASS - DIGITAL,Inventory and endpoint validator found no uncontrolled duplicate occurrences
+Zero floating components,PASS - DIGITAL NOMINAL,Attachment/connection registers and endpoint distances pass; physical proof remains open
+Zero omitted hardware,NOT DETERMINABLE,No released assembly drawing or physical build review
+Zero placeholder components,FAIL,Hydro 1F is a dimension-controlled proxy; packed softgoods include developmental envelopes
+Zero unexplained line breaks,PASS - CURRENT TOPOLOGY,No pressure route objects; historical broken route architecture removed
+Zero open required ports,NOT DETERMINABLE,Exact inflator/manifold internal and installed interfaces absent
+Zero incompatible pressure connections,FAIL,3/8-24 cartridge known; exact matching Hydro suffix not completed
+Zero unsupported cylinder configurations,FAIL,12 g ideal volume 6.559 L vs 60 L
+Zero invalid rigid interferences,PASS - DIGITAL,Full sweep 697167 rows; zero unauthorized overlaps
+Zero unclassified collision pairs,PASS - DIGITAL,Intentional-fit register errors zero
+Zero unexplained state-parity mismatches,PASS - DIGITAL,180 occurrences per endpoint; fixed/moving/flexible records controlled
+Zero naming violations,FAIL,Root assembly retains administrative I5S/DF8/SHORT14 configuration tokens
+Zero unresolved controlling requirements,FAIL,"Gas, loads, ratings, drawings, physical tests, and attachments remain open"
+Zero untraced attached decisions,FAIL,Required decision filenames remained placeholders and were not attached
+Zero unreviewed COTS components,FAIL,Family-level/drawing-derived definitions are not application-qualified; one explicit proxy
+Zero unresolved arithmetic discrepancies,PASS FOR COMPLETED CALCULATIONS,Independent gas and mass checks reconcile; unavailable calculations remain marked
+Zero cross-document contradictions,PASS - INTERNAL PACKAGE REVIEW,Current internal consistency audit passed; see 10_REVIEWS/INTERNAL_AUDIT_RESULTS.json
+Zero unresolved internal-review findings,PASS FOR NON-RELEASE PACKET,"Package-review defects closed; product-release blockers remain explicitly OPEN and prohibit release"
+Zero unresolved independent-review findings,PENDING CLOSURE VERIFICATION,Initial review corrections incorporated; final manifest-bound closure review required
+100% BOM-to-CAD reconciliation,PASS - AUTHORED INVENTORY,92 unique definitions and 180 occurrences per state
+100% requirement-to-evidence traceability,FAIL,Traceability identifies external evidence and physical-test gaps
+100% applicable-analysis completion,FAIL,Required safety/manufacturing analyses remain NOT CALCULABLE or physical
+Clean build,PASS WITH REPRODUCIBILITY EXCEPTION,Build exits zero; inventories/mass repeat; AP242 bytes vary
+Export/reimport,PASS - DIGITAL SEMANTIC,Endpoint/motion validators use clean OCP reimport; byte reproduction fails
+Fabrication/production release,FAIL - NOT RELEASED,Multiple critical gates remain open

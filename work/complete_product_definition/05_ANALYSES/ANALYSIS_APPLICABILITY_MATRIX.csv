@@ -1,0 +1,35 @@
+analysis,classification,completion_status,justification,evidence
+Stored-gas sizing,REQUIRED,FAIL,12 g CO2 ideal-gas upper bound is far below the modeled 60 L buoy.,05_ANALYSES/TECHNICAL_ANALYSIS_REPORT.md
+CO2 phase and temperature behavior,REQUIRED,NOT CALCULABLE,Ideal-gas bounding screen completed; two-phase blowdown and delivered mass require vendor/test data.,05_ANALYSES/TECHNICAL_ANALYSIS_REPORT.md
+Required inflation volume,REQUIRED,FAIL,Modeled nominal volume is 60 L; cartridge supports only a small fraction at ambient pressure.,05_ANALYSES/TECHNICAL_ANALYSIS_REPORT.md
+Regulator behavior,NOT REQUIRED,NOT APPLICABLE,Current compact inflator topology has no separate regulator.,05_ANALYSES/TECHNICAL_ANALYSIS_REPORT.md
+Pressure loss and flow,REQUIRED,NOT CALCULABLE,Hydro 1F internal flow path/orifice and buoy back-pressure curve are not controlled.,05_ANALYSES/TECHNICAL_ANALYSIS_REPORT.md
+Cylinder force and travel,NOT REQUIRED,NOT APPLICABLE,No pneumatic deployment cylinder remains in the current architecture.,05_ANALYSES/TECHNICAL_ANALYSIS_REPORT.md
+Mechanical spring force and energy,REQUIRED,PARTIAL,Gas-spring family and motion geometry are known; delivered force tolerance and mission loads remain uncontrolled.,05_ANALYSES/TECHNICAL_ANALYSIS_REPORT.md
+Gas-spring or damper behavior,REQUIRED,PARTIAL,"Stroke/envelope are controlled; damping setting, thermal behavior, and cycle verification require supplier/test evidence.",05_ANALYSES/TECHNICAL_ANALYSIS_REPORT.md
+Mechanism kinematics,REQUIRED,PASS - DIGITAL,0-80 degree one-degree kinematics completed with exact closure residual reporting.,05_ANALYSES/TECHNICAL_ANALYSIS_REPORT.md
+Mechanical advantage,REQUIRED,NOT CALCULABLE,Input/output load requirements are not supplied; geometry alone is insufficient.,05_ANALYSES/TECHNICAL_ANALYSIS_REPORT.md
+Deployment time and dynamics,REQUIRED,DEFERRED TO PHYSICAL VERIFICATION,"Static kinematics cannot establish dynamic deployment time, damping, or water loads.",05_ANALYSES/TECHNICAL_ANALYSIS_REPORT.md
+Arm strength and stiffness,REQUIRED,NOT CALCULABLE,Material/geometry exist but controlling arm loads and duty spectrum are absent.,05_ANALYSES/TECHNICAL_ANALYSIS_REPORT.md
+"Pin, latch, lock, stop, and retainer loads",REQUIRED,NOT CALCULABLE,Connection inventory exists; controlling load cases are absent.,05_ANALYSES/TECHNICAL_ANALYSIS_REPORT.md
+Fastener strength and thread engagement,REQUIRED,NOT CALCULABLE,"Fastener identities exist; complete joint loads, preload, and release drawings are absent.",05_ANALYSES/TECHNICAL_ANALYSIS_REPORT.md
+Impact and handling loads,REQUIRED,DEFERRED TO PHYSICAL VERIFICATION,No controlled drop/impact requirement or qualification result is available.,05_ANALYSES/TECHNICAL_ANALYSIS_REPORT.md
+Stowed retention,REQUIRED,DEFERRED TO PHYSICAL VERIFICATION,Digital attachment continuity exists; retention force and environmental tests remain open.,05_ANALYSES/TECHNICAL_ANALYSIS_REPORT.md
+Deployed locking,REQUIRED,PARTIAL,Digital stop/contact registry passes; physical engagement and load retention remain open.,05_ANALYSES/TECHNICAL_ANALYSIS_REPORT.md
+Buoyancy and reserve buoyancy,REQUIRED,PARTIAL,Gross 60 L displacement is calculable; delivered gas and mission load requirements fail/remain unknown.,05_ANALYSES/TECHNICAL_ANALYSIS_REPORT.md
+Flotation orientation and stability,REQUIRED,DEFERRED TO PHYSICAL VERIFICATION,Hydrostatic orientation and sea-state stability have no controlled acceptance evidence.,05_ANALYSES/TECHNICAL_ANALYSIS_REPORT.md
+"Mass, center of gravity, and inertia",REQUIRED,PASS - DIGITAL,Exact occurrence-weighted report generated for both states.,05_ANALYSES/TECHNICAL_ANALYSIS_REPORT.md
+Softgood extraction and inflation,REQUIRED,DEFERRED TO PHYSICAL VERIFICATION,"Open/closed states modeled; folds, seams, breakaway, and wet inflation require tests.",05_ANALYSES/TECHNICAL_ANALYSIS_REPORT.md
+Pressure ratings and margins,REQUIRED,NOT CALCULABLE,Exact installed inflator suffix and application rating are not controlled.,05_ANALYSES/TECHNICAL_ANALYSIS_REPORT.md
+Hose and tubing motion,NOT REQUIRED,NOT APPLICABLE,Current compact direct inflator topology contains no hose/tube route objects.,05_ANALYSES/TECHNICAL_ANALYSIS_REPORT.md
+Fitting compatibility,REQUIRED,FAIL,"Cartridge is 3/8-24; Hydro family supports variants, but installed suffix is incomplete.",05_ANALYSES/TECHNICAL_ANALYSIS_REPORT.md
+Leakage and sealing,REQUIRED,DEFERRED TO PHYSICAL VERIFICATION,O-rings/gaskets are supplier service items; installed leak result is unavailable.,05_ANALYSES/TECHNICAL_ANALYSIS_REPORT.md
+Tolerance stacks,REQUIRED,NOT CALCULABLE,Digital nominal geometry passes; release drawing tolerances and supplier distributions are absent.,05_ANALYSES/TECHNICAL_ANALYSIS_REPORT.md
+Wear and fatigue,REQUIRED,DEFERRED TO PHYSICAL VERIFICATION,"Duty spectrum, cycle target, and physical endurance data are absent.",05_ANALYSES/TECHNICAL_ANALYSIS_REPORT.md
+Corrosion and galvanic compatibility,REQUIRED,PARTIAL,Materials/finishes are registered; installed mixed-material qualification is absent.,05_ANALYSES/TECHNICAL_ANALYSIS_REPORT.md
+Environmental exposure,REQUIRED,DEFERRED TO PHYSICAL VERIFICATION,"Temperature, salt, UV, humidity, contamination, and storage tests remain open.",05_ANALYSES/TECHNICAL_ANALYSIS_REPORT.md
+Assembly and tool access,REQUIRED,PARTIAL,Digital access is reviewable; physical assembly trial and released tooling/torque data are absent.,05_ANALYSES/TECHNICAL_ANALYSIS_REPORT.md
+Service and reset,REQUIRED,PARTIAL,Supplier rearm sequence and digital access are documented; installed reset demonstration is absent.,05_ANALYSES/TECHNICAL_ANALYSIS_REPORT.md
+Manufacturability,REQUIRED,NOT CALCULABLE,"No released drawings, GD&T, process capability, or supplier review exists.",05_ANALYSES/TECHNICAL_ANALYSIS_REPORT.md
+Failure modes and single-point failures,REQUIRED,PARTIAL,FMEA generated; critical gas-capacity and activation-chain findings remain open.,05_ANALYSES/TECHNICAL_ANALYSIS_REPORT.md
+Complete motion and interference,REQUIRED,PASS - DIGITAL,"Endpoint, five-angle, and full one-degree exact-Boolean gates pass.",05_ANALYSES/TECHNICAL_ANALYSIS_REPORT.md

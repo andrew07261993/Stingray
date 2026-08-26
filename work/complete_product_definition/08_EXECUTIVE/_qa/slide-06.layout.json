@@ -1,0 +1,556 @@
+{
+  "schema": "openai.presentation.layout/v4",
+  "unit": "px",
+  "slide": {
+    "aid": "sl/hc5jw3",
+    "id": "hc5jw3",
+    "slide": 6,
+    "layoutId": "905fba19-f87c-4793-9ddb-b1482b9c138a",
+    "layoutName": "Title Slide",
+    "layoutType": "title",
+    "masterLayoutId": "f49804d5-2f04-4d6f-a50f-a5f20d73a9aa",
+    "masterLayoutName": "Master",
+    "backgroundColor": "#FFFFFF",
+    "frame": {
+      "left": 0,
+      "top": 0,
+      "width": 1280,
+      "height": 720
+    }
+  },
+  "theme": {
+    "colorSchemeName": "ChatGPT",
+    "colors": {
+      "accent1": "#156082",
+      "accent2": "#E97132",
+      "accent3": "#196B24",
+      "accent4": "#0F9ED5",
+      "accent5": "#A02B93",
+      "accent6": "#4EA72E",
+      "bg1": "#FFFFFF",
+      "bg2": "#000000",
+      "tx1": "#1F1F1F",
+      "tx2": "#FFFFFF",
+      "dk1": "#000000",
+      "lt1": "#FFFFFF",
+      "dk2": "#0E2841",
+      "lt2": "#E8E8E8",
+      "hlink": "#467886",
+      "folHlink": "#96607D"
+    },
+    "typefaces": [
+      "+mn-lt"
+    ]
+  },
+  "inheritedLayers": [
+    {
+      "scope": "layout",
+      "id": "905fba19-f87c-4793-9ddb-b1482b9c138a",
+      "name": "Title Slide",
+      "type": "title",
+      "parentLayoutId": "f49804d5-2f04-4d6f-a50f-a5f20d73a9aa",
+      "elements": []
+    },
+    {
+      "scope": "master",
+      "id": "f49804d5-2f04-4d6f-a50f-a5f20d73a9aa",
+      "name": "Master",
+      "type": "master",
+      "elements": []
+    }
+  ],
+  "elements": [
+    {
+      "order": 1,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/i9svadk7",
+      "id": "1",
+      "name": "eyebrow-6",
+      "bbox": [
+        42,
+        28,
+        750,
+        22
+      ],
+      "geometry": "rect",
+      "text": "STINGRAY DIGITAL PRODUCT DEFINITION",
+      "textPreview": "STINGRAY DIGITAL PRODUCT DEFINITION",
+      "resolvedFontSize": 12,
+      "resolvedTextStyle": {
+        "fontSize": 12,
+        "typeface": "+mn-lt",
+        "color": "#475569",
+        "bold": true,
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "STINGRAY DIGITAL PRODUCT DEFINITION"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "STINGRAY DIGITAL PRODUCT DEFINITION",
+          "resolvedTextStyle": {
+            "fontSize": 12,
+            "color": "#475569",
+            "bold": true
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "STINGRAY DIGITAL PRODUCT DEFINITION",
+              "fontSize": 12,
+              "color": "#475569",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 2,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/5cju583y",
+      "id": "2",
+      "name": "title-6",
+      "bbox": [
+        42,
+        58,
+        1160,
+        88
+      ],
+      "geometry": "rect",
+      "text": "The open DEPLOYED pack is controlling intent, not a cleanup defect",
+      "textPreview": "The open DEPLOYED pack is controlling intent, not a cleanup defect",
+      "resolvedFontSize": 39,
+      "resolvedTextStyle": {
+        "fontSize": 39,
+        "typeface": "+mn-lt",
+        "color": "#000000",
+        "bold": true,
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "The open DEPLOYED pack is controlling intent, not a cleanup defect"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "The open DEPLOYED pack is controlling intent, not a cleanup defect",
+          "resolvedTextStyle": {
+            "fontSize": 39,
+            "color": "#000000",
+            "bold": true
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "The open DEPLOYED pack is controlling intent, not a cleanup defect",
+              "fontSize": 39,
+              "color": "#000000",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 3,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/4badcn2d",
+      "id": "3",
+      "name": "title-rule-6",
+      "bbox": [
+        42,
+        153,
+        1196,
+        1
+      ],
+      "geometry": "rect",
+      "fillColor": "#B8BCC4",
+      "lineColor": "#B8BCC4",
+      "lineWidth": 0
+    },
+    {
+      "order": 4,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/v61czylw",
+      "id": "4",
+      "name": "state-closed-backing",
+      "bbox": [
+        42,
+        182,
+        540,
+        430
+      ],
+      "geometry": "roundRect",
+      "fillColor": "#FFFFFF",
+      "lineColor": "#B8BCC4",
+      "lineWidth": 1
+    },
+    {
+      "order": 5,
+      "kind": "image",
+      "scope": "slide",
+      "aid": "im/fehwny58",
+      "id": "5",
+      "bbox": [
+        42,
+        182,
+        540,
+        430
+      ],
+      "geometry": "roundRect",
+      "alt": "CAD-derived closed Cordura buoy pack in STOWED state",
+      "contentType": "image/png",
+      "imageFit": "contain",
+      "imageMask": {
+        "geometry": "roundRect",
+        "adjustmentList": [
+          {
+            "name": "adj",
+            "formula": "val 2791"
+          }
+        ]
+      },
+      "asset": {
+        "assetId": "f33fbd15-e259-4e92-be8e-bbbd870f10c8",
+        "contentType": "image/png",
+        "byteLength": 399581
+      }
+    },
+    {
+      "order": 6,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/h8ju1832",
+      "id": "6",
+      "name": "state-open-backing",
+      "bbox": [
+        698,
+        182,
+        540,
+        430
+      ],
+      "geometry": "roundRect",
+      "fillColor": "#FFFFFF",
+      "lineColor": "#B8BCC4",
+      "lineWidth": 1
+    },
+    {
+      "order": 7,
+      "kind": "image",
+      "scope": "slide",
+      "aid": "im/hgzepone",
+      "id": "7",
+      "bbox": [
+        698,
+        182,
+        540,
+        430
+      ],
+      "geometry": "roundRect",
+      "alt": "CAD-derived owner-intent open pack with inflated buoy and structural tether load path",
+      "contentType": "image/png",
+      "imageFit": "contain",
+      "imageMask": {
+        "geometry": "roundRect",
+        "adjustmentList": [
+          {
+            "name": "adj",
+            "formula": "val 2791"
+          }
+        ]
+      },
+      "asset": {
+        "assetId": "bd78bd29-1f54-4dac-90bf-edc44e82c252",
+        "contentType": "image/png",
+        "byteLength": 521143
+      }
+    },
+    {
+      "order": 8,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/f2lcb2l0",
+      "id": "8",
+      "name": "state-left",
+      "bbox": [
+        62,
+        622,
+        500,
+        30
+      ],
+      "geometry": "rect",
+      "text": "STOWED - separate panels form the closed pack.",
+      "textPreview": "STOWED - separate panels form the closed pack.",
+      "resolvedFontSize": 17,
+      "resolvedTextStyle": {
+        "fontSize": 17,
+        "typeface": "+mn-lt",
+        "color": "#000000",
+        "bold": true,
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "STOWED - separate panels form the closed pack."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "STOWED - separate panels form the closed pack.",
+          "resolvedTextStyle": {
+            "fontSize": 17,
+            "color": "#000000",
+            "bold": true
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "STOWED - separate panels form the closed pack.",
+              "fontSize": 17,
+              "color": "#000000",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 9,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/e1cvixkf",
+      "id": "9",
+      "name": "state-right",
+      "bbox": [
+        718,
+        622,
+        500,
+        36
+      ],
+      "geometry": "rect",
+      "text": "DEPLOYED - flaps remain attached; tether bypasses Cordura and hook-and-loop.",
+      "textPreview": "DEPLOYED - flaps remain attached; tether bypasses Cordura and hook-and-loop.",
+      "resolvedFontSize": 17,
+      "resolvedTextStyle": {
+        "fontSize": 17,
+        "typeface": "+mn-lt",
+        "color": "#000000",
+        "bold": true,
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "DEPLOYED - flaps remain attached; tether bypasses Cordura and"
+          },
+          {
+            "index": 2,
+            "text": "hook-and-loop."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "DEPLOYED - flaps remain attached; tether bypasses Cordura and hook-and-loop.",
+          "resolvedTextStyle": {
+            "fontSize": 17,
+            "color": "#000000",
+            "bold": true
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "DEPLOYED - flaps remain attached; tether bypasses Cordura and hook-and-loop.",
+              "fontSize": 17,
+              "color": "#000000",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 10,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/4baxg7up",
+      "id": "10",
+      "name": "evidence-6",
+      "bbox": [
+        42,
+        669,
+        1090,
+        24
+      ],
+      "geometry": "rect",
+      "text": "Evidence: Screenshot Closure Report images 10-11; CAD views 09 and 12",
+      "textPreview": "Evidence: Screenshot Closure Report images 10-11; CAD views 09 and 12",
+      "resolvedFontSize": 11,
+      "resolvedTextStyle": {
+        "fontSize": 11,
+        "typeface": "+mn-lt",
+        "color": "#475569",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Evidence: Screenshot Closure Report images 10-11; CAD views 09 and 12"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Evidence: Screenshot Closure Report images 10-11; CAD views 09 and 12",
+          "resolvedTextStyle": {
+            "fontSize": 11,
+            "color": "#475569"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Evidence: Screenshot Closure Report images 10-11; CAD views 09 and 12",
+              "fontSize": 11,
+              "color": "#475569"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 11,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/pcjypcba",
+      "id": "11",
+      "name": "page-6",
+      "bbox": [
+        1182,
+        669,
+        56,
+        24
+      ],
+      "geometry": "rect",
+      "text": "6",
+      "textPreview": "6",
+      "resolvedFontSize": 11,
+      "resolvedTextStyle": {
+        "fontSize": 11,
+        "typeface": "+mn-lt",
+        "color": "#475569",
+        "bold": true,
+        "alignment": "right",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "6"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "6",
+          "resolvedTextStyle": {
+            "fontSize": 11,
+            "color": "#475569",
+            "bold": true,
+            "alignment": "right"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "6",
+              "fontSize": 11,
+              "color": "#475569",
+              "bold": true,
+              "alignment": "right"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    }
+  ],
+  "composeRuns": []
+}

@@ -1,0 +1,129 @@
+{
+  "schema": "STINGRAY_COMPLETE_PRODUCT_DEFINITION_INTERNAL_AUDIT_V1",
+  "status": "PASS",
+  "scope": "artifact presence, frozen hashes, internal consistency, and presentation/PDF openability; not physical qualification",
+  "check_count": 24,
+  "failed_check_count": 0,
+  "checks": [
+    {
+      "check_id": "AUD-001",
+      "accepted": true,
+      "detail": "required top-level directories; missing=[]"
+    },
+    {
+      "check_id": "AUD-002",
+      "accepted": true,
+      "detail": "zero-byte files=[]"
+    },
+    {
+      "check_id": "AUD-003",
+      "accepted": true,
+      "detail": "frozen master hash mismatches={}"
+    },
+    {
+      "check_id": "AUD-004",
+      "accepted": true,
+      "detail": "master AP242 syntax errors=[]"
+    },
+    {
+      "check_id": "AUD-005",
+      "accepted": true,
+      "detail": "inventory reconciliation={'STOWED': {'state': 'STOWED', 'occurrences': 180, 'unique_occurrence_ids': 180, 'part_definitions': 92}, 'DEPLOYED': {'state': 'DEPLOYED', 'occurrences': 180, 'unique_occurrence_ids': 180, 'part_definitions': 92}}"
+    },
+    {
+      "check_id": "AUD-006",
+      "accepted": true,
+      "detail": "part rows=123; file/hash errors=[]"
+    },
+    {
+      "check_id": "AUD-007",
+      "accepted": true,
+      "detail": "123 neutral AP242, 123 native BREP, and 123 render artifacts required"
+    },
+    {
+      "check_id": "AUD-008",
+      "accepted": true,
+      "detail": "BOM rows=92, MAKE=79, BUY=13"
+    },
+    {
+      "check_id": "AUD-009",
+      "accepted": true,
+      "detail": "endpoint disposition=PASS"
+    },
+    {
+      "check_id": "AUD-010",
+      "accepted": true,
+      "detail": "five_angle={'disposition': 'PASS', 'rows': 43035, 'angles': 5, 'unauthorized': 0, 'blocked': 0, 'track_errors': 0, 'fit_errors': 0}"
+    },
+    {
+      "check_id": "AUD-011",
+      "accepted": true,
+      "detail": "full_motion={'disposition': 'PASS', 'rows': 697167, 'angles': 81, 'unauthorized': 0, 'blocked': 0, 'track_errors': 0, 'fit_errors': 0}"
+    },
+    {
+      "check_id": "AUD-012",
+      "accepted": true,
+      "detail": "stored-gas JSON contains the independently reported capacity, required mass, deficit, and 60 L basis"
+    },
+    {
+      "check_id": "AUD-013",
+      "accepted": true,
+      "detail": "screenshot rows=11; missing inputs=11"
+    },
+    {
+      "check_id": "AUD-014",
+      "accepted": true,
+      "detail": "PPTX slides=13; corrupt entry=None"
+    },
+    {
+      "check_id": "AUD-015",
+      "accepted": true,
+      "detail": "PDF pages=13; encrypted=False"
+    },
+    {
+      "check_id": "AUD-016",
+      "accepted": true,
+      "detail": "13 verified PPTX renders and 13 PDF page renders required"
+    },
+    {
+      "check_id": "AUD-017",
+      "accepted": true,
+      "detail": "release index and exception report preserve no-release/procurement boundaries"
+    },
+    {
+      "check_id": "AUD-018",
+      "accepted": true,
+      "detail": "commission source is byte-preserved"
+    },
+    {
+      "check_id": "AUD-019",
+      "accepted": true,
+      "detail": "absolute run-time validation paths have a package-relative relocation map"
+    },
+    {
+      "check_id": "AUD-020",
+      "accepted": true,
+      "detail": "traceability status state: section 20=PASS - EXECUTIVE ARTIFACTS, section 23=PASS FOR NON-RELEASE PACKAGE, section 24=PENDING CLOSURE VERIFICATION, section 26=PENDING"
+    },
+    {
+      "check_id": "AUD-021",
+      "accepted": true,
+      "detail": "articulation children are non-separately-orderable and controlled with parent assemblies"
+    },
+    {
+      "check_id": "AUD-022",
+      "accepted": true,
+      "detail": "delivered sources=42; dependency rows=42; missing=[]; extra=[]; hash/size errors=[]; controlled status procedure=True"
+    },
+    {
+      "check_id": "AUD-023",
+      "accepted": true,
+      "detail": "assembly drawing rows=8; all drawings unreleased and fabrication prohibited"
+    },
+    {
+      "check_id": "AUD-024",
+      "accepted": true,
+      "detail": "extracted-package stale/transient scan iterates all_files with an AST-confirmed comprehension filter"
+    }
+  ]
+}

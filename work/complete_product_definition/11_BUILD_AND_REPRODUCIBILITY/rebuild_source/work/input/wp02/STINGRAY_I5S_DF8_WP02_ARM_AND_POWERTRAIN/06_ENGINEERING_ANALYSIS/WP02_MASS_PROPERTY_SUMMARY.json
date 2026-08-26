@@ -1,0 +1,6 @@
+{
+  "integrated_wp01_plus_wp02_nominal_mass_kg": 17.330175014794566,
+  "limitation": "Mixed-material subsystem mass uses nominal densities and vendor/drawing mass overrides; fastener and lubricant micro-masses are screening values.",
+  "wp01_reported_body_mass_kg": 13.837336,
+  "wp02_nominal_mass_kg": 3.4928390147945643
+}

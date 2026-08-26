@@ -1,0 +1,7 @@
+ctq_id,feature,control,verification
+CTQ-001,All six primary pin axes,"6.00 mm shafts, modeled 6.30 mm clearance bores/bushings; final fits by drawing",CMM + go/no-go
+CTQ-002,Crosshead guides,"Two guide axes at r=16 mm, clocking 122/288 degrees; parallelism and straightness required",CMM + free-slide force
+CTQ-003,HBD bypass rails/detents,"Captive travel, end shoulders, 450 +/- 30 N release calibration",Bench calibration every lot/after event
+CTQ-004,Positive lock engagement,All three plungers fully traverse deployed arm root bores; witness extension visible,100% functional gauge
+CTQ-005,Spring seats/guide,Concentric seats; no coil contact with guide; installed length 153.0 mm,Assembly fixture + force/length test
+CTQ-006,WP01 containment,No WP02 exterior relief; arm/cover clearance per audit,Integrated CMM and motion sweep

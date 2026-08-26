@@ -1,0 +1,17 @@
+{
+  "schema": "STINGRAY_INDEPENDENT_REVIEW_PACKET_V1",
+  "status": "FROZEN FOR READ-ONLY FRESH-CONTEXT REVIEW",
+  "package_root": "C:/Users/ANDRE.ANDREWSPC/Documents/Codex/2026-08-26/stingray-complete-product-definition/work/complete_product_definition",
+  "file_count": 669,
+  "total_bytes": 114822975,
+  "manifest_sha256": "e5a428fa34d4b658b526f7a524e9fb096f92fd3122a8c50854ee7618de61a573",
+  "eligible_set_equality": "PASS",
+  "unmanifested_eligible_file_count": 0,
+  "extra_manifest_path_count": 0,
+  "duplicate_manifest_path_count": 0,
+  "excluded": [
+    "10_REVIEWS/independent_review_packet/** (self-referential packet files)",
+    "10_REVIEWS/INDEPENDENT_REVIEW_REPORT.md (review output)",
+    "12_MANIFESTS/** (regenerated only after review closure)"
+  ]
+}

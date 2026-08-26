@@ -1,0 +1,833 @@
+{
+  "schema": "openai.presentation.layout/v4",
+  "unit": "px",
+  "slide": {
+    "aid": "sl/ehoena",
+    "id": "ehoena",
+    "slide": 13,
+    "layoutId": "905fba19-f87c-4793-9ddb-b1482b9c138a",
+    "layoutName": "Title Slide",
+    "layoutType": "title",
+    "masterLayoutId": "f49804d5-2f04-4d6f-a50f-a5f20d73a9aa",
+    "masterLayoutName": "Master",
+    "backgroundColor": "#FFFFFF",
+    "frame": {
+      "left": 0,
+      "top": 0,
+      "width": 1280,
+      "height": 720
+    }
+  },
+  "theme": {
+    "colorSchemeName": "ChatGPT",
+    "colors": {
+      "accent1": "#156082",
+      "accent2": "#E97132",
+      "accent3": "#196B24",
+      "accent4": "#0F9ED5",
+      "accent5": "#A02B93",
+      "accent6": "#4EA72E",
+      "bg1": "#FFFFFF",
+      "bg2": "#000000",
+      "tx1": "#1F1F1F",
+      "tx2": "#FFFFFF",
+      "dk1": "#000000",
+      "lt1": "#FFFFFF",
+      "dk2": "#0E2841",
+      "lt2": "#E8E8E8",
+      "hlink": "#467886",
+      "folHlink": "#96607D"
+    },
+    "typefaces": [
+      "+mn-lt"
+    ]
+  },
+  "inheritedLayers": [
+    {
+      "scope": "layout",
+      "id": "905fba19-f87c-4793-9ddb-b1482b9c138a",
+      "name": "Title Slide",
+      "type": "title",
+      "parentLayoutId": "f49804d5-2f04-4d6f-a50f-a5f20d73a9aa",
+      "elements": []
+    },
+    {
+      "scope": "master",
+      "id": "f49804d5-2f04-4d6f-a50f-a5f20d73a9aa",
+      "name": "Master",
+      "type": "master",
+      "elements": []
+    }
+  ],
+  "elements": [
+    {
+      "order": 1,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/adgfu1sr",
+      "id": "1",
+      "name": "close-eyebrow",
+      "bbox": [
+        42,
+        42,
+        280,
+        28
+      ],
+      "geometry": "rect",
+      "text": "DECISION",
+      "textPreview": "DECISION",
+      "resolvedFontSize": 13,
+      "resolvedTextStyle": {
+        "fontSize": 13,
+        "typeface": "+mn-lt",
+        "color": "#475569",
+        "bold": true,
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "DECISION"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "DECISION",
+          "resolvedTextStyle": {
+            "fontSize": 13,
+            "color": "#475569",
+            "bold": true
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "DECISION",
+              "fontSize": 13,
+              "color": "#475569",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 2,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/xgrypgbi",
+      "id": "2",
+      "name": "close-title",
+      "bbox": [
+        42,
+        114,
+        850,
+        92
+      ],
+      "geometry": "rect",
+      "text": "Do not release this configuration",
+      "textPreview": "Do not release this configuration",
+      "resolvedFontSize": 50,
+      "resolvedTextStyle": {
+        "fontSize": 50,
+        "typeface": "+mn-lt",
+        "color": "#000000",
+        "bold": true,
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Do not release this configuration"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Do not release this configuration",
+          "resolvedTextStyle": {
+            "fontSize": 50,
+            "color": "#000000",
+            "bold": true
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Do not release this configuration",
+              "fontSize": 50,
+              "color": "#000000",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 3,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/cfixwbax",
+      "id": "3",
+      "name": "close-copy",
+      "bbox": [
+        42,
+        242,
+        810,
+        134
+      ],
+      "geometry": "rect",
+      "text": "Use the frozen digital package as a controlled engineering baseline. Correct the inflation architecture first; then define loads, complete manufacturing definition, qualify the physical product, and rerun independent review.",
+      "textPreview": "Use the frozen digital package as a controlled engineering baseline. Correct the inflation architecture first; then define loads, complet...",
+      "resolvedFontSize": 25,
+      "resolvedTextStyle": {
+        "fontSize": 25,
+        "typeface": "+mn-lt",
+        "color": "#000000",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 3,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Use the frozen digital package as a controlled engineering baseline. Correct"
+          },
+          {
+            "index": 2,
+            "text": "the inflation architecture first; then define loads, complete manufacturing"
+          },
+          {
+            "index": 3,
+            "text": "definition, qualify the physical product, and rerun independent review."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Use the frozen digital package as a controlled engineering baseline. Correct the inflation architecture first; then define loads, complete manufacturing definition, qualify the physical product, and rerun independent review.",
+          "resolvedTextStyle": {
+            "fontSize": 25,
+            "color": "#000000"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Use the frozen digital package as a controlled engineering baseline. Correct the inflation architecture first; then define loads, complete manufacturing definition, qualify the physical product, and rerun independent review.",
+              "fontSize": 25,
+              "color": "#000000"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 4,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/nqpwjmtg",
+      "id": "4",
+      "name": "close-status-panel",
+      "bbox": [
+        42,
+        426,
+        630,
+        44
+      ],
+      "geometry": "roundRect",
+      "fillColor": "#EAF5FB",
+      "lineColor": "#3D8DFF",
+      "lineWidth": 1
+    },
+    {
+      "order": 5,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/2pgfq1sv",
+      "id": "5",
+      "name": "close-status-text",
+      "bbox": [
+        56,
+        436,
+        602,
+        24
+      ],
+      "geometry": "rect",
+      "text": "AUTHORIZATION: ENGINEERING REVIEW ONLY",
+      "textPreview": "AUTHORIZATION: ENGINEERING REVIEW ONLY",
+      "resolvedFontSize": 16,
+      "resolvedTextStyle": {
+        "fontSize": 16,
+        "typeface": "+mn-lt",
+        "color": "#3D8DFF",
+        "bold": true,
+        "alignment": "center",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "AUTHORIZATION: ENGINEERING REVIEW ONLY"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "AUTHORIZATION: ENGINEERING REVIEW ONLY",
+          "resolvedTextStyle": {
+            "fontSize": 16,
+            "color": "#3D8DFF",
+            "bold": true,
+            "alignment": "center"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "AUTHORIZATION: ENGINEERING REVIEW ONLY",
+              "fontSize": 16,
+              "color": "#3D8DFF",
+              "bold": true,
+              "alignment": "center"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 6,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/pc7ylwbm",
+      "id": "6",
+      "name": "close-prohibitions",
+      "bbox": [
+        42,
+        514,
+        760,
+        78
+      ],
+      "geometry": "rect",
+      "text": "No fabrication. No purchase. No qualification acceptance. No field use. No merge to main.",
+      "textPreview": "No fabrication. No purchase. No qualification acceptance. No field use. No merge to main.",
+      "resolvedFontSize": 22,
+      "resolvedTextStyle": {
+        "fontSize": 22,
+        "typeface": "+mn-lt",
+        "color": "#B42318",
+        "bold": true,
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "No fabrication. No purchase. No qualification acceptance. No field use. No merge"
+          },
+          {
+            "index": 2,
+            "text": "to main."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "No fabrication. No purchase. No qualification acceptance. No field use. No merge to main.",
+          "resolvedTextStyle": {
+            "fontSize": 22,
+            "color": "#B42318",
+            "bold": true
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "No fabrication. No purchase. No qualification acceptance. No field use. No merge to main.",
+              "fontSize": 22,
+              "color": "#B42318",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 7,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/oryxsra1",
+      "id": "7",
+      "name": "close-panel",
+      "bbox": [
+        900,
+        114,
+        338,
+        478
+      ],
+      "geometry": "roundRect",
+      "fillColor": "#EDEDED",
+      "lineColor": "#B8BCC4",
+      "lineWidth": 1
+    },
+    {
+      "order": 8,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/7m9gvqtk",
+      "id": "8",
+      "name": "close-panel-title",
+      "bbox": [
+        930,
+        150,
+        278,
+        36
+      ],
+      "geometry": "rect",
+      "text": "Next gate",
+      "textPreview": "Next gate",
+      "resolvedFontSize": 23,
+      "resolvedTextStyle": {
+        "fontSize": 23,
+        "typeface": "+mn-lt",
+        "color": "#3D8DFF",
+        "bold": true,
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Next gate"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Next gate",
+          "resolvedTextStyle": {
+            "fontSize": 23,
+            "color": "#3D8DFF",
+            "bold": true
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Next gate",
+              "fontSize": 23,
+              "color": "#3D8DFF",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 9,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/6l0f2lsz",
+      "id": "9",
+      "name": "close-panel-copy",
+      "bbox": [
+        930,
+        218,
+        278,
+        222
+      ],
+      "geometry": "rect",
+      "text": "Bring back one complete, orderable, source-supported inflation module and a controlled 60 L requirement. If none passes, stop with a measured architecture decision.",
+      "textPreview": "Bring back one complete, orderable, source-supported inflation module and a controlled 60 L requirement. If none passes, stop with a meas...",
+      "resolvedFontSize": 21,
+      "resolvedTextStyle": {
+        "fontSize": 21,
+        "typeface": "+mn-lt",
+        "color": "#000000",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 7,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Bring back one complete,"
+          },
+          {
+            "index": 2,
+            "text": "orderable, source-supported"
+          },
+          {
+            "index": 3,
+            "text": "inflation module and a"
+          },
+          {
+            "index": 4,
+            "text": "controlled 60 L requirement."
+          },
+          {
+            "index": 5,
+            "text": "If none passes, stop with a"
+          },
+          {
+            "index": 6,
+            "text": "measured architecture"
+          },
+          {
+            "index": 7,
+            "text": "decision."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Bring back one complete, orderable, source-supported inflation module and a controlled 60 L requirement. If none passes, stop with a measured architecture decision.",
+          "resolvedTextStyle": {
+            "fontSize": 21,
+            "color": "#000000"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Bring back one complete, orderable, source-supported inflation module and a controlled 60 L requirement. If none passes, stop with a measured architecture decision.",
+              "fontSize": 21,
+              "color": "#000000"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 10,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/8jyh0765",
+      "id": "10",
+      "name": "close-panel-proof",
+      "bbox": [
+        930,
+        462,
+        278,
+        110
+      ],
+      "geometry": "rect",
+      "text": "Digital baseline retained:\n- STOWED / DEPLOYED AP242\n- 92 unique parts\n- 123 state definitions\n- full 81-position audit",
+      "textPreview": "Digital baseline retained: | - STOWED / DEPLOYED AP242 | - 92 unique parts | - 123 state definitions | - full 81-position audit",
+      "resolvedFontSize": 17,
+      "resolvedTextStyle": {
+        "fontSize": 17,
+        "typeface": "+mn-lt",
+        "color": "#475569",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 5,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Digital baseline retained:"
+          },
+          {
+            "index": 2,
+            "text": "- STOWED / DEPLOYED AP242"
+          },
+          {
+            "index": 3,
+            "text": "- 92 unique parts"
+          },
+          {
+            "index": 4,
+            "text": "- 123 state definitions"
+          },
+          {
+            "index": 5,
+            "text": "- full 81-position audit"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Digital baseline retained:",
+          "resolvedTextStyle": {
+            "fontSize": 17,
+            "color": "#475569"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Digital baseline retained:",
+              "fontSize": 17,
+              "color": "#475569"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 2,
+          "text": "- STOWED / DEPLOYED AP242",
+          "resolvedTextStyle": {
+            "fontSize": 17,
+            "color": "#475569"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "- STOWED / DEPLOYED AP242",
+              "fontSize": 17,
+              "color": "#475569"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 3,
+          "text": "- 92 unique parts",
+          "resolvedTextStyle": {
+            "fontSize": 17,
+            "color": "#475569"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "- 92 unique parts",
+              "fontSize": 17,
+              "color": "#475569"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 4,
+          "text": "- 123 state definitions",
+          "resolvedTextStyle": {
+            "fontSize": 17,
+            "color": "#475569"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "- 123 state definitions",
+              "fontSize": 17,
+              "color": "#475569"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 5,
+          "text": "- full 81-position audit",
+          "resolvedTextStyle": {
+            "fontSize": 17,
+            "color": "#475569"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "- full 81-position audit",
+              "fontSize": 17,
+              "color": "#475569"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 11,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/9k7i9cnq",
+      "id": "11",
+      "name": "evidence-13",
+      "bbox": [
+        42,
+        669,
+        1090,
+        24
+      ],
+      "geometry": "rect",
+      "text": "Evidence: Release Index; Make/Buy Trade Study; Physical Verification Plan",
+      "textPreview": "Evidence: Release Index; Make/Buy Trade Study; Physical Verification Plan",
+      "resolvedFontSize": 11,
+      "resolvedTextStyle": {
+        "fontSize": 11,
+        "typeface": "+mn-lt",
+        "color": "#475569",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Evidence: Release Index; Make/Buy Trade Study; Physical Verification Plan"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Evidence: Release Index; Make/Buy Trade Study; Physical Verification Plan",
+          "resolvedTextStyle": {
+            "fontSize": 11,
+            "color": "#475569"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Evidence: Release Index; Make/Buy Trade Study; Physical Verification Plan",
+              "fontSize": 11,
+              "color": "#475569"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 12,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/mhgzyhoz",
+      "id": "12",
+      "name": "page-13",
+      "bbox": [
+        1182,
+        669,
+        56,
+        24
+      ],
+      "geometry": "rect",
+      "text": "13",
+      "textPreview": "13",
+      "resolvedFontSize": 11,
+      "resolvedTextStyle": {
+        "fontSize": 11,
+        "typeface": "+mn-lt",
+        "color": "#475569",
+        "bold": true,
+        "alignment": "right",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "13"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "13",
+          "resolvedTextStyle": {
+            "fontSize": 11,
+            "color": "#475569",
+            "bold": true,
+            "alignment": "right"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "13",
+              "fontSize": 11,
+              "color": "#475569",
+              "bold": true,
+              "alignment": "right"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    }
+  ],
+  "composeRuns": []
+}

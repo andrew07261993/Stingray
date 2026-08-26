@@ -1,0 +1,9 @@
+finding_id,severity,review_cycle,summary,disposition,evidence,reviewed_manifest_sha256
+IR-FR-001,CRITICAL,INITIAL,"Long-path traversal omitted 93 eligible files from freeze and evidence registers",CLOSED,"Long-path-safe re-enumeration: 669 files; zero missing/extra/duplicate/size/hash mismatches",e5a428fa34d4b658b526f7a524e9fb096f92fd3122a8c50854ee7618de61a573
+IR-FR-002,MAJOR,INITIAL,"Evidence-state sequencing was premature or inconsistent",CLOSED,"Traceability sections 20/23/24/26 and AUD-020 follow actual evidence states",e5a428fa34d4b658b526f7a524e9fb096f92fd3122a8c50854ee7618de61a573
+IR-FR-003,MINOR,INITIAL,"Slide/page 7 limitation banner crossed its border",CLOSED,"Corrected two-line textbox; actual PPTX/PDF page 7 visually verified",e5a428fa34d4b658b526f7a524e9fb096f92fd3122a8c50854ee7618de61a573
+IR-FR-004,MINOR,INITIAL,"Slide/page 12 obscured open root naming nonconformance",CLOSED,"Slide/page 12 explicitly lists root assembly naming nonconformance under RELEASE FAIL",e5a428fa34d4b658b526f7a524e9fb096f92fd3122a8c50854ee7618de61a573
+IR-FR-005,MINOR,INITIAL,"GS/HBD articulation children appeared separately orderable",CLOSED,"Procurement and COTS quantities zero; configuration included in parent; no separate purchase",e5a428fa34d4b658b526f7a524e9fb096f92fd3122a8c50854ee7618de61a573
+IR-CL-001,MAJOR,CLOSURE-1,"Extracted-package verifier stale-file comprehension malformed","CORRECTED; CLOSURE PENDING","Delivered verifier uses an if filter; actual clean extraction audit pending",PENDING
+IR-CL-002,MAJOR,CLOSURE-1,"Dependency provenance stale/incomplete and reviewed-status transition undocumented","CORRECTED; CLOSURE PENDING","All delivered Python/Node sources hash-bound after staging; runtime scopes and controlled transition documented",PENDING
+IR-CL-003,MINOR,CLOSURE-1,"Release-index audit count stale","CORRECTED; CLOSURE PENDING","Count-neutral references bind to machine-readable internal audit result",PENDING

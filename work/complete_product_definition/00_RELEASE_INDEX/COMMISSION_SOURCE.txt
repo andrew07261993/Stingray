@@ -1,0 +1,1429 @@
+# STINGRAY — COMPREHENSIVE FINAL PRODUCTION-INTENT CAD BUILD AND EXECUTIVE STAKEHOLDER RELEASE COMMISSION
+
+## 0. COMMISSION, ROLE, AND TERMINAL OBJECTIVE
+
+You are the lead mechanical design, CAD, COTS-integration, pressure-system, verification, manufacturing-definition, configuration-control, and executive-delivery engineer for STINGRAY.
+
+Execute the single final production-intent digital CAD build and complete executive stakeholder package.
+
+This commission is not:
+
+* a concept study;
+* an architecture proposal;
+* a simplified assembly;
+* an envelope model;
+* a representative visualization;
+* a placeholder model;
+* a partially detailed prototype;
+* a documentation-only exercise;
+* a preliminary review;
+* another intermediate CAD iteration.
+
+The required result is an industry-leading, fully detailed, mechanically coherent, physically assemblable, COTS-based digital product definition of STINGRAY in both STOWED and DEPLOYED configurations.
+
+There is no planned later CAD cleanup, detail-completion phase, missing-hardware phase, analysis phase, or subsequent “more final” model.
+
+“No imperfections” is an objective release requirement. It means:
+
+* zero known CAD defects;
+* zero knowingly omitted parts;
+* zero unresolved release findings;
+* zero broken functional interfaces;
+* zero unsupported claims of exactness;
+* zero unexplained pressure-line discontinuities;
+* zero invalid rigid interferences;
+* zero missing analyses required to support the design;
+* zero inconsistencies among CAD, BOM, analysis, drawings, renderings, and presentation.
+
+Do not claim perfection from appearance, filenames, prior agent reports, intended work, or previous PASS statements. Prove the result by inspecting the authoritative source, rebuilding it cleanly, validating it, exporting and reimporting it, and subjecting it to an independent fresh-context review.
+
+The final deliverable is a complete digital product definition and executive stakeholder package. Do not falsely represent digital validation as physical qualification, fabrication release, pressure-charging authorization, flight release, or operational approval where physical testing remains required.
+
+Execute internally:
+
+> **connect → inventory repository → read controlling context → inspect attachments → establish source authority → freeze baseline → reconcile decisions → plan analyses → research COTS → calculate → design → model every part → assemble → validate → correct → clean rebuild → export → reimport → conduct internal review → freeze and hash candidate → conduct independent third-party review → correct findings → obtain closure verification → package → test package → deliver**
+
+---
+
+## 1. AUTHORITATIVE GITHUB REPOSITORY
+
+The authoritative STINGRAY context and engineering-evidence repository is:
+
+> **Repository:** `andrew07261993/Stingray`
+> **URL:** `https://github.com/andrew07261993/Stingray`
+
+The repository is private. Use the authorized GitHub connection.
+
+Do not treat the default `main` branch as the complete source of truth. At commission issuance, `main` contains only a minimal README, while the actual engineering context, CAD checkpoints, analyses, trade studies, COTS records, and presentations are distributed across non-main branches.
+
+At startup, re-enumerate all current branches and record their exact HEAD commit SHAs. The presently known branches include:
+
+* `engineering/stingray-context`
+* `cad/df8-owner-creo-inspection-zips`
+* `design/df8-cots-heavy-architecture`
+* `design/df8-targeted-cots-retrofit`
+* `docs/df8-per-part-mechanical-breakdown`
+* `docs/stakeholder-powerpoint`
+* `main`
+
+Do not assume this list remains complete. Search for any branches added before execution begins.
+
+Create a repository-ingestion manifest containing:
+
+* every branch;
+* branch HEAD SHA;
+* complete tree inventory;
+* important directories;
+* CAD and ZIP artifacts;
+* analysis documents;
+* validation records;
+* COTS records;
+* BOMs;
+* presentations;
+* current-developmental classifications;
+* historical, rejected, superseded, uncertain, and evidence-hold records.
+
+The repository is the required source for all available:
+
+* design history;
+* owner decisions;
+* requirements;
+* CAD provenance;
+* prior analyses;
+* COTS research;
+* vendor information;
+* BOMs;
+* failure registers;
+* validation evidence;
+* source indexes;
+* previous presentation work;
+* known gaps;
+* protected CAD checkpoints.
+
+Do not ask the owner to restate information that exists in the repository.
+
+---
+
+## 2. MANDATORY REPOSITORY READING ORDER
+
+Before making any engineering or CAD decision, completely read the following from `engineering/stingray-context`:
+
+1. `AGENTS.md`
+2. `engineering/stingray-context/00_READ_ME_FIRST.md`
+3. `context/stingray/CONTEXT_INDEX.md`
+4. `context/stingray/CURRENT_STATE.md`
+5. `context/stingray/CAD_PROVENANCE.md`
+6. `context/stingray/VALIDATION_STATUS.md`
+7. `context/stingray/REQUIREMENTS.md`
+8. `context/stingray/DECISION_REGISTER.md`
+9. `context/stingray/COTS_MASTER_INDEX.md`
+10. `context/stingray/SOURCE_INDEX.md`
+11. `context/stingray/OPEN_ITEMS.md`
+12. `context/stingray/RETRIEVAL_GAPS.md`
+13. `context/stingray/LOCAL_GIT_HISTORY.md`
+14. `context/stingray/LOCAL_ARTIFACT_INDEX.csv`
+15. `context/stingray/CODEX_SESSION_INDEX.md`
+16. `engineering/stingray-context/CHATGPT_PROJECT_CONTEXT_SNAPSHOT_2026-08-25.md`
+17. `engineering/stingray-context/SESSION_LEDGER.md`
+18. `engineering/stingray-context/GITHUB_BRANCH_AND_ARTIFACT_MANIFEST.md`
+19. `engineering/stingray-context/FILE_LIBRARY_MANIFEST.md`
+20. `engineering/stingray-context/SOURCE_COVERAGE_AND_GAPS.md`
+21. `engineering/stingray-context/EXPORT_MANIFEST.json`
+22. Every file under `engineering/stingray-context/navigation/`
+
+Then inspect all relevant artifacts identified by those indexes on every repository branch.
+
+At minimum, inspect the following evidence families:
+
+### Current and historical CAD
+
+`cad/df8-owner-creo-inspection-zips/`
+
+This protected directory contains five exact-byte inspection checkpoints. Do not modify, rename, reorganize, regenerate, or replace any file in it.
+
+### COTS-heavy architecture
+
+`design/df8-cots-heavy-architecture`
+
+Use its gas-source, CO₂-sizing, buoyancy, pressure architecture, cartridge, COTS BOM, failure-mode, field-reset, procurement, and architecture trade documents as engineering evidence according to their recorded status.
+
+### Targeted COTS retrofit
+
+`design/df8-targeted-cots-retrofit`
+
+Use its COTS conversion, procurement, fit, certification, adapter, technical-closure, rejected-candidate, pressure-system, and RFQ records according to their recorded classification.
+
+### Per-part mechanical breakdown
+
+`docs/df8-per-part-mechanical-breakdown`
+
+Use its component inventories, part renderings, source notes, before-and-after evidence, and mechanical breakdown as supporting evidence only after reconciling each item against the current configuration.
+
+### Stakeholder presentation
+
+`docs/stakeholder-powerpoint`
+
+Use prior presentation sources as reference material. Do not assume that previous slides represent the current design or contain verified technical conclusions.
+
+Historical information may explain design intent but shall not silently replace newer owner decisions or current geometry.
+
+---
+
+## 3. CURRENT DEVELOPMENTAL CAD ANCHOR
+
+The repository presently identifies the following as the newest indexed developmental CAD anchor:
+
+* **Configuration:** `STINGRAY_I5S_DF8_SHORT14_FORWARD_POWERTRAIN_EXTERNAL_BUOY`
+* **Local source branch:** `design/df8-14in-short-forward-powertrain-external-buoy`
+* **Local source commit:** `aa186c9c1c311c510ac34e48bd4170ef7636b7bf`
+* **GitHub checkpoint:** `cad/df8-owner-creo-inspection-zips/05_TRUE_FORWARD_POWERTRAIN_SHORT14_EXTERNAL_BUOY/`
+* **Classification:** `CURRENT DEVELOPMENTAL`
+
+Package 05 includes the indexed current inspection ZIP and STOWED/DEPLOYED AP242 endpoints.
+
+Treat Package 05 as the starting developmental configuration unless direct inspection of newer attached source or newer repository evidence establishes a successor.
+
+Package 05 is not automatically:
+
+* complete editable source;
+* error-free geometry;
+* mechanically complete;
+* physically qualified;
+* final release authority.
+
+The repository records that the local editable CAD repository had no remote and that not all source Git objects, scripts, vendor binaries, and local-only artifacts were backed up into GitHub. Therefore, inspect the attached editable source ZIP and reconcile it against Package 05, its hashes, manifests, and provenance.
+
+Packages 01–04 are historical evidence. Do not use them as the primary baseline merely because a component appears more complete in an older model.
+
+---
+
+## 4. REQUIRED ATTACHMENTS
+
+The following shall be attached when this commission is launched:
+
+### Primary editable source
+
+**[INSERT EXACT NEWEST EDITABLE SOURCE ZIP FILENAME]**
+
+This shall contain the newest available:
+
+* editable CAD source;
+* CadQuery/Python/OCP/OCCT/XCAF scripts;
+* part definitions;
+* assembly definitions;
+* configurations;
+* imported vendor CAD;
+* BOM data;
+* validators;
+* build scripts;
+* dependency information;
+* STOWED and DEPLOYED inputs.
+
+If two source ZIPs may be authoritative, attach both and list them here:
+
+* **Candidate A:** `[INSERT FILENAME]`
+* **Candidate B:** `[INSERT FILENAME]`
+
+Inspect their actual contents and select the authoritative baseline. Do not ask the owner and do not indiscriminately combine them.
+
+### Controlling owner-decision files
+
+* **[INSERT EXACT DECISION FILE 1 FILENAME]**
+* **[INSERT EXACT DECISION FILE 2 FILENAME]**
+
+These newer attached owner decisions override conflicting historical repository material.
+
+### Visual-reference files
+
+* `96caba30-c2bd-4a17-b248-81ee3559dc4b.png`
+* `b802781b-9a00-4332-8f65-b17b5ecf0d56.png`
+* `8f568847-8298-4476-9075-19cdddbffe68.png`
+* `faecb194-4586-4b54-8db3-35a258be47d1.png`
+* `903443cc-222f-4c0b-816d-e5d2dc8afc1b.png`
+* `1580eb42-bd8c-4640-a70e-e86d40090dd9.png`
+* `27ea92db-2d39-41af-80eb-56af5a3498ee.png`
+* `31a1a846-287b-442a-af1b-061c9d5c3e0b.png`
+* `098fa2cc-0d1f-48f1-b46c-45b246bc5795.png`
+* `07f8923d-f301-46ff-a68a-02ac5f0fb590.png`
+* `555709a4-6918-4673-920b-2ef43ce1e828.png`
+
+Also ingest any newly attached manufacturer CAD, drawings, datasheets, specifications, and COTS evidence not already present in the repository.
+
+---
+
+## 5. SOURCE AUTHORITY AND EVIDENCE DISCIPLINE
+
+Do not determine authority from:
+
+* filenames;
+* timestamps;
+* revision suffixes;
+* renders;
+* screenshots;
+* previous presentation quality;
+* previous agent reports;
+* narrative confidence;
+* the presence of “final” in a filename.
+
+Use this precedence:
+
+1. Newest direct owner decision tied to the applicable configuration.
+2. This commission.
+3. The attached decision files.
+4. Exact source artifact with branch, commit, configuration, and hash.
+5. Validation evidence generated from that exact source.
+6. Current manufacturer evidence for the exact COTS configuration.
+7. Engineering calculations tied to that configuration.
+8. Repository-indexed session provenance.
+9. Historical or superseded evidence for background only.
+
+Classify configuration evidence as:
+
+* CURRENT;
+* CURRENT DEVELOPMENTAL;
+* HISTORICAL;
+* SUPERSEDED;
+* REJECTED;
+* UNCERTAIN;
+* EVIDENCE HOLD.
+
+Separately classify material conclusions as:
+
+* VERIFIED;
+* SUPPORTED;
+* ASSUMED;
+* UNRESOLVED.
+
+Do not turn an ASSUMED or UNRESOLVED item into VERIFIED fact.
+
+Create a source-authority matrix and conflict register before final modeling begins.
+
+---
+
+## 6. OWNER UNAVAILABLE — AUTONOMOUS EXECUTION AUTHORITY
+
+After this commission is submitted, the owner will be unavailable until the complete deliverable package is returned.
+
+Do not stop for owner input because of:
+
+* an engineering decision;
+* a source conflict that can be resolved from evidence;
+* incomplete but recoverable data;
+* unavailable vendor CAD;
+* a build or dependency failure;
+* a failed command or script;
+* a geometry problem;
+* a reasonable choice between compliant alternatives;
+* a documentation question;
+* a COTS selection within the controlled requirements.
+
+Make necessary decisions on the owner’s behalf using:
+
+1. controlling requirements;
+2. newer owner decisions;
+3. verified baseline architecture;
+4. manufacturer evidence;
+5. engineering standards;
+6. conservative engineering judgment.
+
+Autonomous authority does not permit silently changing a controlling requirement. If an implementation cannot satisfy the requirement, develop another compliant implementation.
+
+Record every consequential decision with:
+
+* issue;
+* requirements;
+* evidence;
+* alternatives;
+* selection;
+* calculation or reasoning;
+* downstream effects;
+* validation;
+* confidence classification.
+
+A status update, blocker report, open-question list, WIP package, or request for owner action is not an acceptable terminal response.
+
+---
+
+## 7. BLOCKER RECOVERY AND ANTI-LOOP CONTROL
+
+A blocker is a problem to solve, not a terminal state.
+
+Maintain:
+
+* task dependency map;
+* critical-path list;
+* active work queue;
+* progress ledger;
+* milestone checkpoints;
+* defect register;
+* correction register.
+
+When a blocker occurs:
+
+1. Preserve the latest valid checkpoint.
+2. inspect source, logs, process state, geometry, and dependencies;
+3. identify the exact failure;
+4. form a testable root-cause hypothesis;
+5. apply the smallest sound correction;
+6. rerun the affected operation;
+7. conduct regression testing;
+8. continue.
+
+Do not repeat an identical failed command, correction, or reasoning path more than twice.
+
+After two unsuccessful attempts in one defect family:
+
+* stop repeating the method;
+* perform root-cause review;
+* change tool, algorithm, decomposition, implementation, or modeling method;
+* establish a new exit criterion;
+* continue.
+
+If no meaningful artifact, log, or process-state change occurs across two checks or approximately 15 minutes, inspect the task immediately. Recover or terminate it safely, restore the checkpoint, change approach, and continue.
+
+Do not leave an inactive process running for hours. Do not enter an open-ended correction loop.
+
+Continue unaffected work while resolving localized problems.
+
+---
+
+## 8. PRESERVE VALIDATED ARCHITECTURE
+
+Previously modeled components and architecture that have undergone critical analysis shall remain the starting design unless:
+
+* this commission requires redesign;
+* an attached decision file requires redesign;
+* direct inspection proves a defect;
+* integration of a new decision requires an interface change;
+* a controlling requirement cannot otherwise be met.
+
+Do not unnecessarily regenerate or replace proven parts.
+
+Before reusing a prior component:
+
+* inspect its authoritative geometry;
+* confirm its configuration;
+* inspect its validation evidence;
+* verify its interfaces against the current model.
+
+Before changing it:
+
+* identify why;
+* identify invariant interfaces;
+* document the exact change;
+* perform change-impact analysis;
+* repeat affected validations.
+
+Create a baseline-preservation matrix classifying every part as:
+
+* reused unchanged;
+* reused with verified interface change;
+* redesigned by owner instruction;
+* corrected because of verified defect;
+* replaced with justified COTS alternative.
+
+---
+
+## 9. COTS-FIRST DESIGN
+
+The completed design shall be predominantly COTS-based.
+
+Selection hierarchy:
+
+1. Exact compliant catalog component.
+2. Configurable catalog component.
+3. Standard commercial hardware.
+4. Minor modification of commercial hardware where appropriate.
+5. Custom fabrication only when no acceptable BUY solution exists.
+
+Do not fabricate a part merely because it is easier to model.
+
+Every MAKE component shall have a documented search and trade study proving why an acceptable COTS substitute cannot be procured or integrated.
+
+Use:
+
+* `context/stingray/COTS_MASTER_INDEX.md`;
+* the targeted-COTS branch;
+* the COTS-heavy architecture branch;
+* current manufacturer sources;
+* exact vendor CAD and drawings.
+
+For every COTS component, record:
+
+* manufacturer;
+* exact product name;
+* exact part number and suffix;
+* revision;
+* source date;
+* procurement source;
+* material;
+* finish;
+* mass;
+* ratings;
+* dimensions;
+* interface;
+* CAD availability;
+* installed location;
+* adequacy;
+* current availability or evidence gap.
+
+Do not invent COTS geometry, part numbers, ratings, interfaces, availability, certificates, or application approvals.
+
+If exact data are unavailable:
+
+1. search alternate authoritative sources;
+2. inspect distributor drawings;
+3. seek a better-documented compliant alternative;
+4. create only source-supported geometry;
+5. classify the remaining uncertainty honestly.
+
+---
+
+## 10. ANALYSIS-APPLICABILITY REVIEW
+
+Before final design freeze, conduct a complete Analysis Applicability Review.
+
+Evaluate the need for:
+
+* stored-gas sizing;
+* CO₂ phase and temperature behavior;
+* required inflation volume;
+* regulator behavior;
+* pressure loss and flow;
+* cylinder force and travel;
+* mechanical spring force and energy;
+* gas-spring or damper behavior;
+* mechanism kinematics;
+* mechanical advantage;
+* deployment time and dynamics;
+* arm strength and stiffness;
+* pin, latch, lock, stop, and retainer loads;
+* fastener strength and thread engagement;
+* impact and handling loads;
+* stowed retention;
+* deployed locking;
+* buoyancy and reserve buoyancy;
+* flotation orientation and stability;
+* mass, center of gravity, and inertia;
+* softgood extraction and inflation;
+* pressure ratings and margins;
+* hose and tubing motion;
+* fitting compatibility;
+* leakage and sealing;
+* tolerance stacks;
+* wear and fatigue;
+* corrosion and galvanic compatibility;
+* environmental exposure;
+* assembly and tool access;
+* service and reset;
+* manufacturability;
+* failure modes and single-point failures;
+* complete motion and interference.
+
+Classify each as:
+
+* REQUIRED;
+* NOT REQUIRED;
+* DEFERRED TO PHYSICAL VERIFICATION.
+
+Provide justification for every classification and complete every REQUIRED analysis.
+
+---
+
+## 11. COMPONENT ENGINEERING AND LOCATION BASIS
+
+Every BOM item shall have a documented engineering basis.
+
+Create a component design-basis matrix containing:
+
+* component name;
+* function;
+* quantity;
+* exact location;
+* why it was selected;
+* why it is located and oriented as modeled;
+* load, pressure, travel, or environmental requirement;
+* rating or calculated capacity;
+* interface and attachment;
+* clearances;
+* tolerance requirements;
+* assembly access;
+* service and reset access;
+* material compatibility;
+* mass and CG effect;
+* applicable analysis;
+* evidence;
+* verification status.
+
+Every custom part shall be supported by analysis.
+
+Every load-carrying or pressure-containing component and connection shall be supported by:
+
+* dedicated calculation;
+* applicable grouped calculation;
+* or directly applicable manufacturer rating.
+
+---
+
+## 12. FULL-FIDELITY CAD REQUIREMENTS
+
+The final editable master shall contain no:
+
+* placeholder solids;
+* envelope-only COTS parts;
+* generic cylinders;
+* unexplained blocks;
+* decorative geometry;
+* knowingly inaccurate substitutes;
+* omitted small hardware;
+* suppressed required components;
+* disconnected functional geometry.
+
+Model every physical item required to assemble and operate the system, including:
+
+* structural parts;
+* COTS components;
+* cylinders;
+* actuators;
+* gas springs;
+* mechanical springs;
+* dampers;
+* valves;
+* regulators;
+* manifolds;
+* fittings;
+* adapters;
+* rigid tubing;
+* flexible hoses;
+* bearings;
+* bushings;
+* spacers;
+* shims;
+* seals;
+* O-rings;
+* backup rings;
+* glands;
+* latches;
+* locks;
+* hard stops;
+* guides;
+* pivot pins;
+* clevis pins;
+* shear pins;
+* dowels;
+* screws;
+* bolts;
+* studs;
+* nuts;
+* washers;
+* rivets;
+* inserts;
+* snap rings;
+* retaining rings;
+* cotter pins;
+* clips;
+* tether hardware;
+* softgoods;
+* seams;
+* Velcro fields;
+* reinforcements;
+* straps;
+* cords;
+* every other assembly component.
+
+Include accurate:
+
+* holes;
+* counterbores;
+* countersinks;
+* slots;
+* grooves;
+* threads;
+* thread engagement;
+* seal grooves;
+* spring helices;
+* mounting features;
+* cylinder rods and glands;
+* actual ports;
+* fitting geometry;
+* wrench flats;
+* tube and hose wall thickness;
+* realistic bends;
+* fastener retention;
+* chamfers;
+* fillets;
+* edge conditions;
+* softgood thickness and folds;
+* moving-component travel.
+
+Relevant COTS internal geometry shall be included when necessary for operation, analysis, or stakeholder explanation and authoritative evidence exists. Do not invent unsupported proprietary internals.
+
+Every unique component shall have:
+
+* editable master;
+* individual neutral CAD export;
+* material;
+* finish;
+* mass;
+* source;
+* COTS or MAKE classification;
+* individual rendering;
+* installed-location reference.
+
+---
+
+## 13. PROFESSIONAL NAMING
+
+Do not use administrative, workflow, revision, work-package, or AI-generated labels in new CAD part titles, assembly-tree names, or drawing titles.
+
+Prohibited in physical CAD titles include:
+
+* DF8;
+* I5-S or S5S;
+* WP identifiers;
+* R1, R2, or similar revision labels;
+* “final-final” wording;
+* “generated”;
+* “corrected”;
+* “AI model.”
+
+COTS masters shall be named:
+
+> **Exact COTS Given Name_Exact Manufacturer Part Number**
+
+Manufactured parts shall be named:
+
+> **Functional Part Name_Controlled Drawing Number**
+
+Assemblies shall use their actual mechanical function.
+
+Revision and configuration information shall reside in metadata, manifests, and controlled repository paths, not in physical component titles.
+
+Do not rename protected historical repository evidence merely because it contains administrative names.
+
+---
+
+## 14. HIGH-PRESSURE SYSTEM AND CYLINDER ACCURACY
+
+Previous models visibly contained broken, malformed, open-ended, overlapping, or unsupported high-pressure routing. Treat this as a mandatory global defect family.
+
+Build a complete pressure-system topology containing:
+
+* gas source;
+* fill/service interface;
+* activation device;
+* regulator;
+* valves;
+* manifolds;
+* tees;
+* adapters;
+* gauges or sensors;
+* required protection devices;
+* tubes;
+* hoses;
+* actuators;
+* inflation consumers;
+* vents and exhausts;
+* plugs and caps.
+
+For every connection, verify:
+
+* source;
+* destination;
+* thread standard;
+* size;
+* gender;
+* sealing method;
+* pressure rating;
+* material compatibility;
+* orientation;
+* engagement;
+* ID;
+* length;
+* bend radius;
+* support;
+* abrasion protection;
+* installation access.
+
+Provide:
+
+* topology diagram;
+* port-to-port connection table;
+* CAD routing report;
+* gas-capacity analysis;
+* pressure-drop analysis;
+* swept-routing audit;
+* pressure-component ratings matrix.
+
+Determine every cylinder-like component’s actual operating principle from authoritative evidence.
+
+* Pneumatic cylinders shall have their real ports and exhaust arrangement.
+* Gas springs shall reflect their actual sealed configuration.
+* Mechanical spring plungers shall not have invented pressure ports.
+* Dampers shall include documented adjustment and mounting features.
+* Combination devices shall include all controlling features.
+
+Final acceptance requires:
+
+* zero unexplained line breaks;
+* zero open required ports;
+* zero incompatible connections;
+* zero missing consumers;
+* zero fictional ports;
+* zero omitted real ports.
+
+---
+
+## 15. SCREENSHOT DEFECT AND DESIGN-INTENT REGISTER
+
+The attached screenshots are mandatory inspection references.
+
+They do not prove exact geometry defects by themselves. Locate the corresponding authoritative CAD occurrences and determine the actual root cause.
+
+### Images 1–2: Mechanism interfaces
+
+Files:
+
+* `96caba30-c2bd-4a17-b248-81ee3559dc4b.png`
+* `b802781b-9a00-4332-8f65-b17b5ecf0d56.png`
+
+Inspect for:
+
+* links penetrating pivots or structure;
+* geometry overlap used instead of real joints;
+* missing pins;
+* missing clevises;
+* missing bushings;
+* missing washers or retainers;
+* impossible load transfer;
+* inadequate rotation clearance;
+* motion interference;
+* impossible assembly.
+
+Correct verified defects using mechanically valid joint geometry supported by kinematic, load, fit, and motion analysis.
+
+### Images 3–5: Broken and malformed pressure routing
+
+Files:
+
+* `8f568847-8298-4476-9075-19cdddbffe68.png`
+* `faecb194-4586-4b54-8db3-35a258be47d1.png`
+* `903443cc-222f-4c0b-816d-e5d2dc8afc1b.png`
+
+Inspect for:
+
+* open tube ends;
+* fused or overlapping lines;
+* branches without fittings;
+* disconnected consumers;
+* floating tube fragments;
+* lines passing through structure;
+* missing cylinder connections;
+* duplicate coincident lines;
+* missing manifolds;
+* missing bulkhead fittings.
+
+Image 5 is a mandatory regression case because it visibly shows an open line and an apparent branch or intersection without a proper fitting.
+
+### Image 6: External routing loop
+
+File:
+
+* `1580eb42-bd8c-4640-a70e-e86d40090dd9.png`
+
+Inspect the large external loop and laterally projecting geometry for:
+
+* incorrect routing;
+* incorrect transform;
+* unrestrained flexible line;
+* obsolete geometry;
+* envelope violation;
+* snag hazard;
+* invalid state representation.
+
+Any required flexible line shall have realistic length, restraint, bend radius, motion allowance, and snag protection.
+
+### Images 7–8: Distorted line geometry
+
+Files:
+
+* `27ea92db-2d39-41af-80eb-56af5a3498ee.png`
+* `31a1a846-287b-442a-af1b-061c9d5c3e0b.png`
+
+Inspect for:
+
+* flattened tubing;
+* tapering;
+* failed sweeps;
+* kinks;
+* abrupt diameter changes;
+* disconnected segments;
+* Boolean damage;
+* structural penetration;
+* overlapping routes.
+
+Replace malformed geometry with manufacturable tube or hose definitions having correct OD, ID, wall thickness, bend radius, and fittings.
+
+### Image 9: Unconnected stubs and bulkhead penetrations
+
+File:
+
+* `098fa2cc-0d1f-48f1-b46c-45b246bc5795.png`
+
+Inspect for:
+
+* short open stubs;
+* missing fittings;
+* missing manifold connections;
+* missing bulkhead unions;
+* lines terminating inside solids;
+* port misalignment;
+* incomplete routing.
+
+Every plate or bulkhead penetration shall use an identified physical interface.
+
+### Images 10–11: Owner-approved open Velcro pack
+
+Files:
+
+* `07f8923d-f301-46ff-a68a-02ac5f0fb590.png`
+* `555709a4-6918-4673-920b-2ef43ce1e828.png`
+
+These are not defect examples.
+
+> **The open pack shown in Images 10–11 is intentional and owner-approved. Do not close it as a correction or cleanup action.**
+
+The final product definition shall include this open-pack configuration with:
+
+* individual opened panels;
+* visible central assembly;
+* correct Velcro fields;
+* realistic panel thickness;
+* seams;
+* reinforcements;
+* attachment points;
+* physically credible folds and restraints;
+* no floating panels;
+* no fabric passing through rigid geometry.
+
+If the actual STOWED state requires a closed pack, model that as a separate physically accurate STOWED configuration. It shall not replace or suppress the mandatory open configuration.
+
+The open configuration shall appear in:
+
+* the applicable DEPLOYED/open master;
+* renderings;
+* cutaways;
+* stakeholder presentation;
+* third-party review packet.
+
+Tell the independent reviewer that the open configuration is controlling owner intent so it is not incorrectly flagged merely for being open. The reviewer shall still assess its mechanical credibility.
+
+Acceptance of the open pack does not validate unrelated geometry visible in Images 10–11.
+
+For Images 1–9, search the entire model for the same defect family rather than correcting only the pictured location.
+
+Provide a screenshot-closure report containing:
+
+* image number;
+* filename;
+* affected occurrences;
+* actual inspection result;
+* root cause;
+* correction;
+* before and after renderings;
+* STOWED result;
+* DEPLOYED result;
+* motion result;
+* validator evidence;
+* independent-review disposition.
+
+---
+
+## 16. COMPLETE ASSEMBLY AND STATE INTEGRITY
+
+The STOWED and DEPLOYED masters shall represent two physical states of the same product.
+
+Fixed components shall retain invariant transforms. Moving components shall follow valid mechanisms. Flexible components may use documented state-specific shapes.
+
+Verify:
+
+* occurrence parity;
+* transform parity;
+* component identity;
+* arm angles;
+* crosshead travel;
+* linkage geometry;
+* actuator travel;
+* hard-stop engagement;
+* deployed locks;
+* stowed retention;
+* hose motion;
+* tube clearance;
+* softgood movement;
+* tether routing;
+* attachment continuity.
+
+Conduct a complete deployment motion audit at increments no greater than 1 degree or an equivalently conservative displacement increment.
+
+Check:
+
+* rigid interference;
+* swept-volume interference;
+* hose extension;
+* hose pinching;
+* bend radius;
+* snagging;
+* softgood conflicts;
+* latch release;
+* stop engagement;
+* lock engagement;
+* unintended overtravel;
+* component separation.
+
+Classify every contact as:
+
+* authorized fit;
+* bearing or guide contact;
+* stop or locking contact;
+* invalid interference;
+* erroneous audit pair.
+
+No invalid or unclassified rigid interference may remain.
+
+---
+
+## 17. ENGINEERING ANALYSIS DOCUMENTS
+
+Produce a titled technical document for every required analysis or related analysis family.
+
+Each shall include:
+
+* purpose;
+* configuration;
+* requirements;
+* acceptance criteria;
+* source-backed inputs;
+* units;
+* conversions;
+* assumptions;
+* uncertainties;
+* governing equations;
+* substituted values;
+* step-by-step calculations;
+* intermediate results;
+* worst-case conditions;
+* sensitivity analysis where applicable;
+* margin or factor of safety;
+* pass/fail result;
+* limitations;
+* physical-test requirements;
+* CAD renderings and diagrams;
+* component and requirement references.
+
+A summary result is insufficient.
+
+A spreadsheet or script does not replace the readable calculation document. Include computational sources, but show enough mathematics for an independent engineer to reproduce the result.
+
+Independently check all safety-, pressure-, structural-, buoyancy-, and deployment-critical calculations.
+
+---
+
+## 18. MANUFACTURING AND ASSEMBLY DEFINITION
+
+For each fabricated component, provide:
+
+* dimensioned drawing;
+* datums;
+* tolerances;
+* GD&T;
+* materials;
+* heat treatment;
+* finish;
+* coating or passivation;
+* surface finish;
+* threads;
+* fits;
+* edge conditions;
+* seal surfaces;
+* inspection characteristics;
+* critical dimensions;
+* process notes;
+* mass;
+* drawing-to-CAD verification.
+
+Provide complete assembly information:
+
+* exploded views;
+* assembly order;
+* installation direction;
+* tool access;
+* torque values;
+* locking methods;
+* lubrication;
+* seal installation;
+* adhesive instructions;
+* retention instructions;
+* service sequence;
+* reset sequence;
+* removal and replacement sequence.
+
+Verify that the product can actually be assembled with realistic tools and access.
+
+---
+
+## 19. RENDERING PACKAGE
+
+Generate every rendering directly from the final validated CAD.
+
+Do not substitute image-generation artwork or separately recreated geometry.
+
+For every unique part, provide:
+
+* isometric view;
+* orthographic views;
+* section or cutaway where relevant;
+* material and finish;
+* manufacturer and part number;
+* scale or dimension reference;
+* installed-location view.
+
+Provide system renderings of:
+
+* complete STOWED state;
+* complete DEPLOYED state;
+* open pack;
+* exploded assembly;
+* subsystem explosions;
+* cutaways;
+* pressure routing;
+* cylinder and port details;
+* arm mechanism;
+* actuation system;
+* buoyancy system;
+* water trigger;
+* tether load path;
+* deployment sequence;
+* service/reset state;
+* critical clearances;
+* small-hardware details.
+
+---
+
+## 20. EXECUTIVE STAKEHOLDER POWERPOINT
+
+Produce both PPTX and PDF.
+
+Assume the audience has:
+
+* no STINGRAY background;
+* no knowledge of prior iterations;
+* no mechanical-engineering education.
+
+Use concise, plain macro-level language while retaining the important technical data.
+
+Explain:
+
+* operational purpose;
+* mission need;
+* system architecture;
+* operating sequence;
+* STOWED and DEPLOYED states;
+* each subsystem;
+* arm deployment;
+* primary and backup actuation;
+* high-pressure system;
+* buoyancy system;
+* water activation;
+* locks and stops;
+* structural and tether load paths;
+* major COTS components;
+* unavoidable custom components;
+* analyses;
+* margins;
+* mass and envelope;
+* risks;
+* physical-verification needs;
+* manufacturing and procurement status;
+* digital-release status.
+
+Every technical conclusion shall reference the detailed report and section containing its evidence and mathematics.
+
+---
+
+## 21. OBJECTIVE RELEASE GATES
+
+The release candidate shall have:
+
+* zero invalid solids;
+* zero failed modeling features;
+* zero broken references;
+* zero missing dependencies;
+* zero missing BOM parts;
+* zero unmatched CAD occurrences;
+* zero unintended duplicate occurrences;
+* zero floating components;
+* zero omitted hardware;
+* zero placeholder components;
+* zero unexplained line breaks;
+* zero open required ports;
+* zero incompatible pressure connections;
+* zero unsupported cylinder configurations;
+* zero invalid rigid interferences;
+* zero unclassified collision pairs;
+* zero unexplained state-parity mismatches;
+* zero naming violations;
+* zero unresolved controlling requirements;
+* zero untraced attached decisions;
+* zero unreviewed COTS components;
+* zero unresolved arithmetic discrepancies;
+* zero cross-document contradictions;
+* zero unresolved internal-review findings;
+* zero unresolved independent-review findings;
+* 100% BOM-to-CAD reconciliation;
+* 100% requirement-to-evidence traceability;
+* 100% applicable-analysis completion.
+
+Do not reclassify a defect as acceptable merely to obtain a PASS.
+
+---
+
+## 22. CLEAN BUILD AND EXPORT/REIMPORT
+
+Rebuild from a clean environment using only delivered source and dependency information.
+
+Export:
+
+* STOWED AP242 master;
+* DEPLOYED AP242 master;
+* individual neutral CAD file for every unique part;
+* required drawings and manufacturing formats.
+
+Reimport into a clean OCP/XCAF-compatible environment and repeat:
+
+* solid validity;
+* hierarchy;
+* occurrence counts;
+* naming;
+* transforms;
+* mass properties;
+* state parity;
+* interference;
+* pressure continuity;
+* assembly completeness.
+
+A correct-looking render is not sufficient.
+
+---
+
+## 23. INTERNAL OVERALL REVIEW
+
+After completing CAD, analyses, drawings, renderings, and presentation, commission a separate internal release-review pass.
+
+It shall inspect the actual artifacts for:
+
+* omissions;
+* inaccurate COTS geometry;
+* unsupported claims;
+* broken mechanisms;
+* misplaced components;
+* incomplete joints;
+* broken load paths;
+* pressure-routing defects;
+* missing ports;
+* invalid interference;
+* missing hardware;
+* assembly impossibility;
+* tool-access problems;
+* servicing problems;
+* tolerance conflicts;
+* calculation errors;
+* COTS/custom-selection errors;
+* naming violations;
+* cross-document inconsistencies.
+
+Correct every verified finding and rerun the affected validations.
+
+Freeze the passing candidate and calculate SHA-256 hashes.
+
+---
+
+## 24. INDEPENDENT FRESH-CONTEXT THIRD-PARTY REVIEW
+
+Commission a separate agent that had no involvement in the model’s development.
+
+Provide only a neutral review packet containing:
+
+* purpose;
+* mission;
+* requirements;
+* operating sequence;
+* frozen CAD;
+* BOM;
+* COTS evidence;
+* analysis reports;
+* drawings;
+* validation evidence;
+* screenshot requirements.
+
+Do not provide prior conversations, desired conclusions, excuses, or statements that the model is correct.
+
+Require the independent reviewer to:
+
+* inspect authoritative CAD;
+* reconstruct operation;
+* review all interfaces;
+* examine component choices and locations;
+* inspect the pressure system;
+* verify cylinder types and ports;
+* check assembly feasibility;
+* check critical calculations;
+* inspect COTS accuracy;
+* review both states and full motion;
+* search for missing hardware;
+* identify overlooked failure modes;
+* review service, reset, manufacturing, and procurement;
+* challenge normalized assumptions.
+
+Classify findings:
+
+* CRITICAL;
+* MAJOR;
+* MINOR;
+* OBSERVATION.
+
+Correct every CRITICAL, MAJOR, and MINOR finding. Resolve or formally disposition observations with evidence.
+
+Rebuild, revalidate, generate new hashes, and return the corrected candidate to the independent reviewer for closure verification.
+
+Any subsequent CAD change shall trigger targeted regression and re-review.
+
+---
+
+## 25. GITHUB WORKING AND PRESERVATION RULES
+
+Create a new dedicated working branch:
+
+> `design/stingray-complete-product-definition`
+
+If that branch already exists, inspect it before use and create a nonconflicting successor branch when necessary.
+
+Do not:
+
+* work directly on `main`;
+* modify protected historical CAD packages;
+* rewrite branch history;
+* merge historical branches together indiscriminately;
+* overwrite repository evidence;
+* delete prior artifacts;
+* merge the final branch into `main` without owner authorization.
+
+Use historical branches as evidence sources while creating new work on the dedicated branch.
+
+Commit reproducible checkpoints at logical milestones.
+
+If final work changes current state, provenance, validation, COTS selection, or evidence gaps, update the corresponding `context/stingray/` records in the same final branch.
+
+Do not duplicate large historical binary collections unnecessarily. Store new source and release artifacts once, then index them with exact path, configuration, size, and SHA-256.
+
+Push the final working branch, but do not merge it.
+
+---
+
+## 26. FINAL DELIVERABLE PACKAGE
+
+Create:
+
+> `STINGRAY_COMPLETE_PRODUCT_DEFINITION.zip`
+
+Include:
+
+* complete editable CAD source;
+* complete source tree;
+* STOWED master;
+* DEPLOYED master;
+* individual part masters;
+* individual neutral exports;
+* AP242 masters;
+* full BOM;
+* occurrence manifest;
+* materials and finishes register;
+* COTS provenance register;
+* procurement register;
+* MAKE/BUY trade studies;
+* component design-basis matrix;
+* autonomous decision register;
+* evidence register;
+* traceability matrix;
+* interface-control documents;
+* pressure topology;
+* port-to-port table;
+* pressure ratings matrix;
+* all analysis reports;
+* analysis applicability matrix;
+* independent calculation checks;
+* risk register and FMEA;
+* physical-verification plan;
+* manufactured-part drawings;
+* assembly drawings;
+* assembly/service/reset instructions;
+* individual-part render catalog;
+* system-rendering package;
+* stakeholder PPTX;
+* stakeholder PDF;
+* screenshot-closure report;
+* internal-review report;
+* independent-review report;
+* finding-closure evidence;
+* validators;
+* validation logs;
+* dependency manifest;
+* environment versions;
+* build instructions;
+* release index;
+* SHA-256 manifest.
+
+Extract the ZIP into a clean location and verify:
+
+* every manifest entry;
+* every hash;
+* every file opens;
+* clean rebuild succeeds;
+* expected masters are reproduced;
+* no source is missing;
+* no stale artifact is included.
+
+---
+
+## 27. TERMINAL DELIVERY CONDITION
+
+Do not deliver until:
+
+* modeling is complete;
+* analyses are complete;
+* documentation is complete;
+* presentation is complete;
+* all release gates pass;
+* clean build passes;
+* export/reimport passes;
+* internal review passes;
+* independent review passes;
+* all findings are verified closed;
+* package extraction and rebuild pass;
+* final branch is pushed.
+
+The terminal response shall provide:
+
+1. Downloadable ZIP.
+2. ZIP SHA-256.
+3. GitHub branch.
+4. Exact final commit SHA.
+5. Source configuration.
+6. Release-gate table.
+7. Independent-review result.
+8. Physical-verification limitations.
+9. Evidence locations.
+10. Confirmation that protected CAD packages were not modified.
+
+If an irreducible external evidence limitation remains after all reasonable research, recovery, and compliant substitution paths have been exhausted, do not invent the missing evidence or call the affected claim verified. Complete all unaffected work and deliver the maximum-complete package with a precise non-release exception report. Do not stop mid-commission for owner input.
+
+The intended outcome is a mechanically complete, evidence-backed, COTS-first, production-intent digital product definition with no known imperfections and no CAD work deliberately deferred to a later phase.

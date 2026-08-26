@@ -1,0 +1,8 @@
+{
+  "finalizer_sha256": "352794cfaa5426ba121aaa1f43f952d56a7d1ee88937910f8f1574442846643d",
+  "geometry_audit_cache_sha256": "797fe5e84f3309f723c949ca3b2f942d56c0ae115683dd6c10dfc3b93843077f",
+  "note": "Post-export reimport/finalization; native Creo unavailable.",
+  "occt": "7.9.3.1",
+  "platform": "Linux-6.18.35-x86_64-with-glibc2.41",
+  "python": "3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]"
+}

@@ -1,0 +1,1214 @@
+{
+  "schema": "openai.presentation.layout/v4",
+  "unit": "px",
+  "slide": {
+    "aid": "sl/pnisnf",
+    "id": "pnisnf",
+    "slide": 11,
+    "layoutId": "905fba19-f87c-4793-9ddb-b1482b9c138a",
+    "layoutName": "Title Slide",
+    "layoutType": "title",
+    "masterLayoutId": "f49804d5-2f04-4d6f-a50f-a5f20d73a9aa",
+    "masterLayoutName": "Master",
+    "backgroundColor": "#FFFFFF",
+    "frame": {
+      "left": 0,
+      "top": 0,
+      "width": 1280,
+      "height": 720
+    }
+  },
+  "theme": {
+    "colorSchemeName": "ChatGPT",
+    "colors": {
+      "accent1": "#156082",
+      "accent2": "#E97132",
+      "accent3": "#196B24",
+      "accent4": "#0F9ED5",
+      "accent5": "#A02B93",
+      "accent6": "#4EA72E",
+      "bg1": "#FFFFFF",
+      "bg2": "#000000",
+      "tx1": "#1F1F1F",
+      "tx2": "#FFFFFF",
+      "dk1": "#000000",
+      "lt1": "#FFFFFF",
+      "dk2": "#0E2841",
+      "lt2": "#E8E8E8",
+      "hlink": "#467886",
+      "folHlink": "#96607D"
+    },
+    "typefaces": [
+      "+mn-lt"
+    ]
+  },
+  "inheritedLayers": [
+    {
+      "scope": "layout",
+      "id": "905fba19-f87c-4793-9ddb-b1482b9c138a",
+      "name": "Title Slide",
+      "type": "title",
+      "parentLayoutId": "f49804d5-2f04-4d6f-a50f-a5f20d73a9aa",
+      "elements": []
+    },
+    {
+      "scope": "master",
+      "id": "f49804d5-2f04-4d6f-a50f-a5f20d73a9aa",
+      "name": "Master",
+      "type": "master",
+      "elements": []
+    }
+  ],
+  "elements": [
+    {
+      "order": 1,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/krih87yx",
+      "id": "1",
+      "name": "eyebrow-11",
+      "bbox": [
+        42,
+        28,
+        750,
+        22
+      ],
+      "geometry": "rect",
+      "text": "STINGRAY DIGITAL PRODUCT DEFINITION",
+      "textPreview": "STINGRAY DIGITAL PRODUCT DEFINITION",
+      "resolvedFontSize": 12,
+      "resolvedTextStyle": {
+        "fontSize": 12,
+        "typeface": "+mn-lt",
+        "color": "#475569",
+        "bold": true,
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "STINGRAY DIGITAL PRODUCT DEFINITION"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "STINGRAY DIGITAL PRODUCT DEFINITION",
+          "resolvedTextStyle": {
+            "fontSize": 12,
+            "color": "#475569",
+            "bold": true
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "STINGRAY DIGITAL PRODUCT DEFINITION",
+              "fontSize": 12,
+              "color": "#475569",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 2,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/zq9gzmxc",
+      "id": "2",
+      "name": "title-11",
+      "bbox": [
+        42,
+        58,
+        1160,
+        88
+      ],
+      "geometry": "rect",
+      "text": "Release now depends on physical evidence and an architecture correction",
+      "textPreview": "Release now depends on physical evidence and an architecture correction",
+      "resolvedFontSize": 39,
+      "resolvedTextStyle": {
+        "fontSize": 39,
+        "typeface": "+mn-lt",
+        "color": "#000000",
+        "bold": true,
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Release now depends on physical evidence and an architecture"
+          },
+          {
+            "index": 2,
+            "text": "correction"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Release now depends on physical evidence and an architecture correction",
+          "resolvedTextStyle": {
+            "fontSize": 39,
+            "color": "#000000",
+            "bold": true
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Release now depends on physical evidence and an architecture correction",
+              "fontSize": 39,
+              "color": "#000000",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 3,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/ypgz6hgr",
+      "id": "3",
+      "name": "title-rule-11",
+      "bbox": [
+        42,
+        153,
+        1196,
+        1
+      ],
+      "geometry": "rect",
+      "fillColor": "#B8BCC4",
+      "lineColor": "#B8BCC4",
+      "lineWidth": 0
+    },
+    {
+      "order": 4,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/xo7yxcf6",
+      "id": "4",
+      "name": "risk-number-0",
+      "bbox": [
+        66,
+        190,
+        58,
+        64
+      ],
+      "geometry": "rect",
+      "text": "1",
+      "textPreview": "1",
+      "resolvedFontSize": 42,
+      "resolvedTextStyle": {
+        "fontSize": 42,
+        "typeface": "+mn-lt",
+        "color": "#B42318",
+        "bold": true,
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "1"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "1",
+          "resolvedTextStyle": {
+            "fontSize": 42,
+            "color": "#B42318",
+            "bold": true
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "1",
+              "fontSize": 42,
+              "color": "#B42318",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 5,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/cnyh47yl",
+      "id": "5",
+      "name": "risk-title-0",
+      "bbox": [
+        150,
+        192,
+        390,
+        38
+      ],
+      "geometry": "rect",
+      "text": "Correct inflation architecture",
+      "textPreview": "Correct inflation architecture",
+      "resolvedFontSize": 22,
+      "resolvedTextStyle": {
+        "fontSize": 22,
+        "typeface": "+mn-lt",
+        "color": "#000000",
+        "bold": true,
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Correct inflation architecture"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Correct inflation architecture",
+          "resolvedTextStyle": {
+            "fontSize": 22,
+            "color": "#000000",
+            "bold": true
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Correct inflation architecture",
+              "fontSize": 22,
+              "color": "#000000",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 6,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/bmpgv2h0",
+      "id": "6",
+      "name": "risk-copy-0",
+      "bbox": [
+        150,
+        238,
+        470,
+        76
+      ],
+      "geometry": "rect",
+      "text": "Select a complete cartridge/inflator/buoy combination that passes capacity and rated-interface gates.",
+      "textPreview": "Select a complete cartridge/inflator/buoy combination that passes capacity and rated-interface gates.",
+      "resolvedFontSize": 18,
+      "resolvedTextStyle": {
+        "fontSize": 18,
+        "typeface": "+mn-lt",
+        "color": "#475569",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Select a complete cartridge/inflator/buoy combination that"
+          },
+          {
+            "index": 2,
+            "text": "passes capacity and rated-interface gates."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Select a complete cartridge/inflator/buoy combination that passes capacity and rated-interface gates.",
+          "resolvedTextStyle": {
+            "fontSize": 18,
+            "color": "#475569"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Select a complete cartridge/inflator/buoy combination that passes capacity and rated-interface gates.",
+              "fontSize": 18,
+              "color": "#475569"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 7,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/algz2xgf",
+      "id": "7",
+      "name": "risk-rule-0",
+      "bbox": [
+        66,
+        318,
+        554,
+        1
+      ],
+      "geometry": "rect",
+      "fillColor": "#B8BCC4",
+      "lineColor": "#B8BCC4",
+      "lineWidth": 0
+    },
+    {
+      "order": 8,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/hkbi9wfa",
+      "id": "8",
+      "name": "risk-number-1",
+      "bbox": [
+        66,
+        332,
+        58,
+        64
+      ],
+      "geometry": "rect",
+      "text": "2",
+      "textPreview": "2",
+      "resolvedFontSize": 42,
+      "resolvedTextStyle": {
+        "fontSize": 42,
+        "typeface": "+mn-lt",
+        "color": "#B42318",
+        "bold": true,
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "2"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "2",
+          "resolvedTextStyle": {
+            "fontSize": 42,
+            "color": "#B42318",
+            "bold": true
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "2",
+              "fontSize": 42,
+              "color": "#B42318",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 9,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/wj2hgbyp",
+      "id": "9",
+      "name": "risk-title-1",
+      "bbox": [
+        150,
+        334,
+        390,
+        38
+      ],
+      "geometry": "rect",
+      "text": "Define loads and release drawings",
+      "textPreview": "Define loads and release drawings",
+      "resolvedFontSize": 22,
+      "resolvedTextStyle": {
+        "fontSize": 22,
+        "typeface": "+mn-lt",
+        "color": "#000000",
+        "bold": true,
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Define loads and release drawings"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Define loads and release drawings",
+          "resolvedTextStyle": {
+            "fontSize": 22,
+            "color": "#000000",
+            "bold": true
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Define loads and release drawings",
+              "fontSize": 22,
+              "color": "#000000",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 10,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/yl8j6xwf",
+      "id": "10",
+      "name": "risk-copy-1",
+      "bbox": [
+        150,
+        380,
+        470,
+        76
+      ],
+      "geometry": "rect",
+      "text": "Control mission, impact, proof, life, tolerance, torque, material, finish, and inspection requirements.",
+      "textPreview": "Control mission, impact, proof, life, tolerance, torque, material, finish, and inspection requirements.",
+      "resolvedFontSize": 18,
+      "resolvedTextStyle": {
+        "fontSize": 18,
+        "typeface": "+mn-lt",
+        "color": "#475569",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Control mission, impact, proof, life, tolerance, torque,"
+          },
+          {
+            "index": 2,
+            "text": "material, finish, and inspection requirements."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Control mission, impact, proof, life, tolerance, torque, material, finish, and inspection requirements.",
+          "resolvedTextStyle": {
+            "fontSize": 18,
+            "color": "#475569"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Control mission, impact, proof, life, tolerance, torque, material, finish, and inspection requirements.",
+              "fontSize": 18,
+              "color": "#475569"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 11,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/z6hkfid0",
+      "id": "11",
+      "name": "risk-rule-1",
+      "bbox": [
+        66,
+        460,
+        554,
+        1
+      ],
+      "geometry": "rect",
+      "fillColor": "#B8BCC4",
+      "lineColor": "#B8BCC4",
+      "lineWidth": 0
+    },
+    {
+      "order": 12,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/k7a18nel",
+      "id": "12",
+      "name": "risk-number-2",
+      "bbox": [
+        66,
+        474,
+        58,
+        64
+      ],
+      "geometry": "rect",
+      "text": "3",
+      "textPreview": "3",
+      "resolvedFontSize": 42,
+      "resolvedTextStyle": {
+        "fontSize": 42,
+        "typeface": "+mn-lt",
+        "color": "#B42318",
+        "bold": true,
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "3"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "3",
+          "resolvedTextStyle": {
+            "fontSize": 42,
+            "color": "#B42318",
+            "bold": true
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "3",
+              "fontSize": 42,
+              "color": "#B42318",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 13,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/l8j2hsvq",
+      "id": "13",
+      "name": "risk-title-2",
+      "bbox": [
+        150,
+        476,
+        390,
+        38
+      ],
+      "geometry": "rect",
+      "text": "Qualify the physical product",
+      "textPreview": "Qualify the physical product",
+      "resolvedFontSize": 22,
+      "resolvedTextStyle": {
+        "fontSize": 22,
+        "typeface": "+mn-lt",
+        "color": "#000000",
+        "bold": true,
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Qualify the physical product"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Qualify the physical product",
+          "resolvedTextStyle": {
+            "fontSize": 22,
+            "color": "#000000",
+            "bold": true
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Qualify the physical product",
+              "fontSize": 22,
+              "color": "#000000",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 14,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/ah8j2dw3",
+      "id": "14",
+      "name": "risk-copy-2",
+      "bbox": [
+        150,
+        522,
+        470,
+        76
+      ],
+      "geometry": "rect",
+      "text": "Wet opening, inflation, leak, proof/burst, buoyancy/stability, dynamic, fatigue, corrosion, and assembly trials.",
+      "textPreview": "Wet opening, inflation, leak, proof/burst, buoyancy/stability, dynamic, fatigue, corrosion, and assembly trials.",
+      "resolvedFontSize": 18,
+      "resolvedTextStyle": {
+        "fontSize": 18,
+        "typeface": "+mn-lt",
+        "color": "#475569",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Wet opening, inflation, leak, proof/burst, buoyancy/stability,"
+          },
+          {
+            "index": 2,
+            "text": "dynamic, fatigue, corrosion, and assembly trials."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Wet opening, inflation, leak, proof/burst, buoyancy/stability, dynamic, fatigue, corrosion, and assembly trials.",
+          "resolvedTextStyle": {
+            "fontSize": 18,
+            "color": "#475569"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Wet opening, inflation, leak, proof/burst, buoyancy/stability, dynamic, fatigue, corrosion, and assembly trials.",
+              "fontSize": 18,
+              "color": "#475569"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 15,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/bihkbido",
+      "id": "15",
+      "name": "risk-rule-2",
+      "bbox": [
+        66,
+        602,
+        554,
+        1
+      ],
+      "geometry": "rect",
+      "fillColor": "#B8BCC4",
+      "lineColor": "#B8BCC4",
+      "lineWidth": 0
+    },
+    {
+      "order": 16,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/cjq14ne9",
+      "id": "16",
+      "name": "risk-test-panel",
+      "bbox": [
+        688,
+        190,
+        550,
+        410
+      ],
+      "geometry": "roundRect",
+      "fillColor": "#EDEDED",
+      "lineColor": "#B8BCC4",
+      "lineWidth": 1
+    },
+    {
+      "order": 17,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/xkz2dsvu",
+      "id": "17",
+      "name": "risk-test-title",
+      "bbox": [
+        716,
+        216,
+        494,
+        36
+      ],
+      "geometry": "rect",
+      "text": "Minimum physical test families",
+      "textPreview": "Minimum physical test families",
+      "resolvedFontSize": 23,
+      "resolvedTextStyle": {
+        "fontSize": 23,
+        "typeface": "+mn-lt",
+        "color": "#000000",
+        "bold": true,
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Minimum physical test families"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Minimum physical test families",
+          "resolvedTextStyle": {
+            "fontSize": 23,
+            "color": "#000000",
+            "bold": true
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Minimum physical test families",
+              "fontSize": 23,
+              "color": "#000000",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 18,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/udsjehwn",
+      "id": "18",
+      "name": "risk-test-list",
+      "bbox": [
+        716,
+        282,
+        472,
+        270
+      ],
+      "geometry": "rect",
+      "text": "- inflation architecture and cold/hot delivery\n- wet pack opening and extraction\n- buoy proof, burst, leak, lift, and stability\n- arm/lock/hardpoint/tether structural proof\n- dynamic deployment and handling/drop\n- fatigue, wear, corrosion, UV, humidity, storage\n- realistic assembly, service, reset, and inspection",
+      "textPreview": "- inflation architecture and cold/hot delivery | - wet pack opening and extraction | - buoy proof, burst, leak, lift, and stability | - a...",
+      "resolvedFontSize": 20,
+      "resolvedTextStyle": {
+        "fontSize": 20,
+        "typeface": "+mn-lt",
+        "color": "#000000",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 7,
+        "lines": [
+          {
+            "index": 1,
+            "text": "- inflation architecture and cold/hot delivery"
+          },
+          {
+            "index": 2,
+            "text": "- wet pack opening and extraction"
+          },
+          {
+            "index": 3,
+            "text": "- buoy proof, burst, leak, lift, and stability"
+          },
+          {
+            "index": 4,
+            "text": "- arm/lock/hardpoint/tether structural proof"
+          },
+          {
+            "index": 5,
+            "text": "- dynamic deployment and handling/drop"
+          },
+          {
+            "index": 6,
+            "text": "- fatigue, wear, corrosion, UV, humidity, storage"
+          },
+          {
+            "index": 7,
+            "text": "- realistic assembly, service, reset, and inspection"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "- inflation architecture and cold/hot delivery",
+          "resolvedTextStyle": {
+            "fontSize": 20,
+            "color": "#000000"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "- inflation architecture and cold/hot delivery",
+              "fontSize": 20,
+              "color": "#000000"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 2,
+          "text": "- wet pack opening and extraction",
+          "resolvedTextStyle": {
+            "fontSize": 20,
+            "color": "#000000"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "- wet pack opening and extraction",
+              "fontSize": 20,
+              "color": "#000000"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 3,
+          "text": "- buoy proof, burst, leak, lift, and stability",
+          "resolvedTextStyle": {
+            "fontSize": 20,
+            "color": "#000000"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "- buoy proof, burst, leak, lift, and stability",
+              "fontSize": 20,
+              "color": "#000000"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 4,
+          "text": "- arm/lock/hardpoint/tether structural proof",
+          "resolvedTextStyle": {
+            "fontSize": 20,
+            "color": "#000000"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "- arm/lock/hardpoint/tether structural proof",
+              "fontSize": 20,
+              "color": "#000000"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 5,
+          "text": "- dynamic deployment and handling/drop",
+          "resolvedTextStyle": {
+            "fontSize": 20,
+            "color": "#000000"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "- dynamic deployment and handling/drop",
+              "fontSize": 20,
+              "color": "#000000"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 6,
+          "text": "- fatigue, wear, corrosion, UV, humidity, storage",
+          "resolvedTextStyle": {
+            "fontSize": 20,
+            "color": "#000000"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "- fatigue, wear, corrosion, UV, humidity, storage",
+              "fontSize": 20,
+              "color": "#000000"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 7,
+          "text": "- realistic assembly, service, reset, and inspection",
+          "resolvedTextStyle": {
+            "fontSize": 20,
+            "color": "#000000"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "- realistic assembly, service, reset, and inspection",
+              "fontSize": 20,
+              "color": "#000000"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 19,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/velkn2d8",
+      "id": "19",
+      "name": "evidence-11",
+      "bbox": [
+        42,
+        669,
+        1090,
+        24
+      ],
+      "geometry": "rect",
+      "text": "Evidence: Risk Register/FMEA; Physical Verification Plan",
+      "textPreview": "Evidence: Risk Register/FMEA; Physical Verification Plan",
+      "resolvedFontSize": 11,
+      "resolvedTextStyle": {
+        "fontSize": 11,
+        "typeface": "+mn-lt",
+        "color": "#475569",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Evidence: Risk Register/FMEA; Physical Verification Plan"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Evidence: Risk Register/FMEA; Physical Verification Plan",
+          "resolvedTextStyle": {
+            "fontSize": 11,
+            "color": "#475569"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Evidence: Risk Register/FMEA; Physical Verification Plan",
+              "fontSize": 11,
+              "color": "#475569"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 20,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/ridgfetk",
+      "id": "20",
+      "name": "page-11",
+      "bbox": [
+        1182,
+        669,
+        56,
+        24
+      ],
+      "geometry": "rect",
+      "text": "11",
+      "textPreview": "11",
+      "resolvedFontSize": 11,
+      "resolvedTextStyle": {
+        "fontSize": 11,
+        "typeface": "+mn-lt",
+        "color": "#475569",
+        "bold": true,
+        "alignment": "right",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "11"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "11",
+          "resolvedTextStyle": {
+            "fontSize": 11,
+            "color": "#475569",
+            "bold": true,
+            "alignment": "right"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "11",
+              "fontSize": 11,
+              "color": "#475569",
+              "bold": true,
+              "alignment": "right"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    }
+  ],
+  "composeRuns": []
+}

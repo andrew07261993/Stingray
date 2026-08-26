@@ -1,0 +1,1099 @@
+{
+  "schema": "openai.presentation.layout/v4",
+  "unit": "px",
+  "slide": {
+    "aid": "sl/pbfmb1",
+    "id": "pbfmb1",
+    "slide": 5,
+    "layoutId": "905fba19-f87c-4793-9ddb-b1482b9c138a",
+    "layoutName": "Title Slide",
+    "layoutType": "title",
+    "masterLayoutId": "f49804d5-2f04-4d6f-a50f-a5f20d73a9aa",
+    "masterLayoutName": "Master",
+    "backgroundColor": "#FFFFFF",
+    "frame": {
+      "left": 0,
+      "top": 0,
+      "width": 1280,
+      "height": 720
+    }
+  },
+  "theme": {
+    "colorSchemeName": "ChatGPT",
+    "colors": {
+      "accent1": "#156082",
+      "accent2": "#E97132",
+      "accent3": "#196B24",
+      "accent4": "#0F9ED5",
+      "accent5": "#A02B93",
+      "accent6": "#4EA72E",
+      "bg1": "#FFFFFF",
+      "bg2": "#000000",
+      "tx1": "#1F1F1F",
+      "tx2": "#FFFFFF",
+      "dk1": "#000000",
+      "lt1": "#FFFFFF",
+      "dk2": "#0E2841",
+      "lt2": "#E8E8E8",
+      "hlink": "#467886",
+      "folHlink": "#96607D"
+    },
+    "typefaces": [
+      "+mn-lt"
+    ]
+  },
+  "inheritedLayers": [
+    {
+      "scope": "layout",
+      "id": "905fba19-f87c-4793-9ddb-b1482b9c138a",
+      "name": "Title Slide",
+      "type": "title",
+      "parentLayoutId": "f49804d5-2f04-4d6f-a50f-a5f20d73a9aa",
+      "elements": []
+    },
+    {
+      "scope": "master",
+      "id": "f49804d5-2f04-4d6f-a50f-a5f20d73a9aa",
+      "name": "Master",
+      "type": "master",
+      "elements": []
+    }
+  ],
+  "elements": [
+    {
+      "order": 1,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/ojql8zm5",
+      "id": "1",
+      "name": "eyebrow-5",
+      "bbox": [
+        42,
+        28,
+        750,
+        22
+      ],
+      "geometry": "rect",
+      "text": "STINGRAY DIGITAL PRODUCT DEFINITION",
+      "textPreview": "STINGRAY DIGITAL PRODUCT DEFINITION",
+      "resolvedFontSize": 12,
+      "resolvedTextStyle": {
+        "fontSize": 12,
+        "typeface": "+mn-lt",
+        "color": "#475569",
+        "bold": true,
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "STINGRAY DIGITAL PRODUCT DEFINITION"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "STINGRAY DIGITAL PRODUCT DEFINITION",
+          "resolvedTextStyle": {
+            "fontSize": 12,
+            "color": "#475569",
+            "bold": true
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "STINGRAY DIGITAL PRODUCT DEFINITION",
+              "fontSize": 12,
+              "color": "#475569",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 2,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/nyhkfu50",
+      "id": "2",
+      "name": "title-5",
+      "bbox": [
+        42,
+        58,
+        1160,
+        88
+      ],
+      "geometry": "rect",
+      "text": "The frozen digital assembly is complete enough to audit rigorously",
+      "textPreview": "The frozen digital assembly is complete enough to audit rigorously",
+      "resolvedFontSize": 39,
+      "resolvedTextStyle": {
+        "fontSize": 39,
+        "typeface": "+mn-lt",
+        "color": "#000000",
+        "bold": true,
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "The frozen digital assembly is complete enough to audit rigorously"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "The frozen digital assembly is complete enough to audit rigorously",
+          "resolvedTextStyle": {
+            "fontSize": 39,
+            "color": "#000000",
+            "bold": true
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "The frozen digital assembly is complete enough to audit rigorously",
+              "fontSize": 39,
+              "color": "#000000",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 3,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/2x836p4f",
+      "id": "3",
+      "name": "title-rule-5",
+      "bbox": [
+        42,
+        153,
+        1196,
+        1
+      ],
+      "geometry": "rect",
+      "fillColor": "#B8BCC4",
+      "lineColor": "#B8BCC4",
+      "lineWidth": 0
+    },
+    {
+      "order": 4,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/1wz2dknu",
+      "id": "4",
+      "name": "metrics-intro",
+      "bbox": [
+        42,
+        174,
+        1196,
+        44
+      ],
+      "geometry": "rect",
+      "text": "Every claim below is tied to the frozen AP242 masters and their authoring inventories.",
+      "textPreview": "Every claim below is tied to the frozen AP242 masters and their authoring inventories.",
+      "resolvedFontSize": 21,
+      "resolvedTextStyle": {
+        "fontSize": 21,
+        "typeface": "+mn-lt",
+        "color": "#000000",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Every claim below is tied to the frozen AP242 masters and their authoring inventories."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Every claim below is tied to the frozen AP242 masters and their authoring inventories.",
+          "resolvedTextStyle": {
+            "fontSize": 21,
+            "color": "#000000"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Every claim below is tied to the frozen AP242 masters and their authoring inventories.",
+              "fontSize": 21,
+              "color": "#000000"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 5,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/0v614fm9",
+      "id": "5",
+      "name": "metric-occ-panel",
+      "bbox": [
+        42,
+        252,
+        278,
+        178
+      ],
+      "geometry": "roundRect",
+      "fillColor": "#E8F7EF",
+      "lineColor": "#E8F7EF",
+      "lineWidth": 1
+    },
+    {
+      "order": 6,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/fuxkba5o",
+      "id": "6",
+      "name": "metric-occ-value",
+      "bbox": [
+        62,
+        280,
+        238,
+        74
+      ],
+      "geometry": "rect",
+      "text": "180",
+      "textPreview": "180",
+      "resolvedFontSize": 48,
+      "resolvedTextStyle": {
+        "fontSize": 48,
+        "typeface": "+mn-lt",
+        "color": "#137A4B",
+        "bold": true,
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "180"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "180",
+          "resolvedTextStyle": {
+            "fontSize": 48,
+            "color": "#137A4B",
+            "bold": true
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "180",
+              "fontSize": 48,
+              "color": "#137A4B",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 7,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/etoj2p43",
+      "id": "7",
+      "name": "metric-occ-label",
+      "bbox": [
+        62,
+        360,
+        238,
+        54
+      ],
+      "geometry": "rect",
+      "text": "named occurrences in each endpoint state",
+      "textPreview": "named occurrences in each endpoint state",
+      "resolvedFontSize": 18,
+      "resolvedTextStyle": {
+        "fontSize": 18,
+        "typeface": "+mn-lt",
+        "color": "#000000",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "named occurrences in each"
+          },
+          {
+            "index": 2,
+            "text": "endpoint state"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "named occurrences in each endpoint state",
+          "resolvedTextStyle": {
+            "fontSize": 18,
+            "color": "#000000"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "named occurrences in each endpoint state",
+              "fontSize": 18,
+              "color": "#000000"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 8,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/lsj2po3y",
+      "id": "8",
+      "name": "metric-parts-panel",
+      "bbox": [
+        346,
+        252,
+        278,
+        178
+      ],
+      "geometry": "roundRect",
+      "fillColor": "#EDEDED",
+      "lineColor": "#EDEDED",
+      "lineWidth": 1
+    },
+    {
+      "order": 9,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/kralgjmd",
+      "id": "9",
+      "name": "metric-parts-value",
+      "bbox": [
+        366,
+        280,
+        238,
+        74
+      ],
+      "geometry": "rect",
+      "text": "92",
+      "textPreview": "92",
+      "resolvedFontSize": 48,
+      "resolvedTextStyle": {
+        "fontSize": 48,
+        "typeface": "+mn-lt",
+        "color": "#3D8DFF",
+        "bold": true,
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "92"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "92",
+          "resolvedTextStyle": {
+            "fontSize": 48,
+            "color": "#3D8DFF",
+            "bold": true
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "92",
+              "fontSize": 48,
+              "color": "#3D8DFF",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 10,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/ah036lgr",
+      "id": "10",
+      "name": "metric-parts-label",
+      "bbox": [
+        366,
+        360,
+        238,
+        54
+      ],
+      "geometry": "rect",
+      "text": "unique part definitions",
+      "textPreview": "unique part definitions",
+      "resolvedFontSize": 18,
+      "resolvedTextStyle": {
+        "fontSize": 18,
+        "typeface": "+mn-lt",
+        "color": "#000000",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "unique part definitions"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "unique part definitions",
+          "resolvedTextStyle": {
+            "fontSize": 18,
+            "color": "#000000"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "unique part definitions",
+              "fontSize": 18,
+              "color": "#000000"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 11,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/bi94fqhc",
+      "id": "11",
+      "name": "metric-angles-panel",
+      "bbox": [
+        650,
+        252,
+        278,
+        178
+      ],
+      "geometry": "roundRect",
+      "fillColor": "#E8F7EF",
+      "lineColor": "#E8F7EF",
+      "lineWidth": 1
+    },
+    {
+      "order": 12,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/wjil8vyx",
+      "id": "12",
+      "name": "metric-angles-value",
+      "bbox": [
+        670,
+        280,
+        238,
+        74
+      ],
+      "geometry": "rect",
+      "text": "81",
+      "textPreview": "81",
+      "resolvedFontSize": 48,
+      "resolvedTextStyle": {
+        "fontSize": 48,
+        "typeface": "+mn-lt",
+        "color": "#137A4B",
+        "bold": true,
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "81"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "81",
+          "resolvedTextStyle": {
+            "fontSize": 48,
+            "color": "#137A4B",
+            "bold": true
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "81",
+              "fontSize": 48,
+              "color": "#137A4B",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 13,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/xkrmh0zi",
+      "id": "13",
+      "name": "metric-angles-label",
+      "bbox": [
+        670,
+        360,
+        238,
+        54
+      ],
+      "geometry": "rect",
+      "text": "modeled arm positions from 0 to 80 degrees",
+      "textPreview": "modeled arm positions from 0 to 80 degrees",
+      "resolvedFontSize": 18,
+      "resolvedTextStyle": {
+        "fontSize": 18,
+        "typeface": "+mn-lt",
+        "color": "#000000",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "modeled arm positions from"
+          },
+          {
+            "index": 2,
+            "text": "0 to 80 degrees"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "modeled arm positions from 0 to 80 degrees",
+          "resolvedTextStyle": {
+            "fontSize": 18,
+            "color": "#000000"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "modeled arm positions from 0 to 80 degrees",
+              "fontSize": 18,
+              "color": "#000000"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 14,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/mtg32lgv",
+      "id": "14",
+      "name": "metric-pairs-panel",
+      "bbox": [
+        954,
+        252,
+        284,
+        178
+      ],
+      "geometry": "roundRect",
+      "fillColor": "#E8F7EF",
+      "lineColor": "#E8F7EF",
+      "lineWidth": 1
+    },
+    {
+      "order": 15,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/nu94b6hg",
+      "id": "15",
+      "name": "metric-pairs-value",
+      "bbox": [
+        974,
+        280,
+        244,
+        74
+      ],
+      "geometry": "rect",
+      "text": "697,167",
+      "textPreview": "697,167",
+      "resolvedFontSize": 48,
+      "resolvedTextStyle": {
+        "fontSize": 48,
+        "typeface": "+mn-lt",
+        "color": "#137A4B",
+        "bold": true,
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "697,167"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "697,167",
+          "resolvedTextStyle": {
+            "fontSize": 48,
+            "color": "#137A4B",
+            "bold": true
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "697,167",
+              "fontSize": 48,
+              "color": "#137A4B",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 16,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/ofil4byl",
+      "id": "16",
+      "name": "metric-pairs-label",
+      "bbox": [
+        974,
+        360,
+        244,
+        54
+      ],
+      "geometry": "rect",
+      "text": "full-motion exact pair rows",
+      "textPreview": "full-motion exact pair rows",
+      "resolvedFontSize": 18,
+      "resolvedTextStyle": {
+        "fontSize": 18,
+        "typeface": "+mn-lt",
+        "color": "#000000",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "full-motion exact pair rows"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "full-motion exact pair rows",
+          "resolvedTextStyle": {
+            "fontSize": 18,
+            "color": "#000000"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "full-motion exact pair rows",
+              "fontSize": 18,
+              "color": "#000000"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 17,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/9grmdgz6",
+      "id": "17",
+      "name": "metrics-result-panel",
+      "bbox": [
+        126,
+        493,
+        1028,
+        44
+      ],
+      "geometry": "roundRect",
+      "fillColor": "#E8F7EF",
+      "lineColor": "#137A4B",
+      "lineWidth": 1
+    },
+    {
+      "order": 18,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/6pk3e5gz",
+      "id": "18",
+      "name": "metrics-result-text",
+      "bbox": [
+        140,
+        503,
+        1000,
+        24
+      ],
+      "geometry": "rect",
+      "text": "ZERO unauthorized rigid overlaps | ZERO blocked Booleans | ZERO track/fit-register errors",
+      "textPreview": "ZERO unauthorized rigid overlaps | ZERO blocked Booleans | ZERO track/fit-register errors",
+      "resolvedFontSize": 16,
+      "resolvedTextStyle": {
+        "fontSize": 16,
+        "typeface": "+mn-lt",
+        "color": "#137A4B",
+        "bold": true,
+        "alignment": "center",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "ZERO unauthorized rigid overlaps | ZERO blocked Booleans | ZERO track/fit-register errors"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "ZERO unauthorized rigid overlaps | ZERO blocked Booleans | ZERO track/fit-register errors",
+          "resolvedTextStyle": {
+            "fontSize": 16,
+            "color": "#137A4B",
+            "bold": true,
+            "alignment": "center"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "ZERO unauthorized rigid overlaps | ZERO blocked Booleans | ZERO track/fit-register errors",
+              "fontSize": 16,
+              "color": "#137A4B",
+              "bold": true,
+              "alignment": "center"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 19,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/7qt4nahk",
+      "id": "19",
+      "name": "metrics-mass",
+      "bbox": [
+        160,
+        566,
+        960,
+        42
+      ],
+      "geometry": "rect",
+      "text": "Mass: 10.583 kg | reserve to 18.14 kg limit: 7.557 kg | rigid length: 1,675.4 mm",
+      "textPreview": "Mass: 10.583 kg | reserve to 18.14 kg limit: 7.557 kg | rigid length: 1,675.4 mm",
+      "resolvedFontSize": 21,
+      "resolvedTextStyle": {
+        "fontSize": 21,
+        "typeface": "+mn-lt",
+        "color": "#000000",
+        "bold": true,
+        "alignment": "center",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Mass: 10.583 kg | reserve to 18.14 kg limit: 7.557 kg | rigid length: 1,675.4 mm"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Mass: 10.583 kg | reserve to 18.14 kg limit: 7.557 kg | rigid length: 1,675.4 mm",
+          "resolvedTextStyle": {
+            "fontSize": 21,
+            "color": "#000000",
+            "bold": true,
+            "alignment": "center"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Mass: 10.583 kg | reserve to 18.14 kg limit: 7.557 kg | rigid length: 1,675.4 mm",
+              "fontSize": 21,
+              "color": "#000000",
+              "bold": true,
+              "alignment": "center"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 20,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/3u50z2xw",
+      "id": "20",
+      "name": "evidence-5",
+      "bbox": [
+        42,
+        669,
+        1090,
+        24
+      ],
+      "geometry": "rect",
+      "text": "Evidence: Endpoint Validation Summary; Full Motion Exact Boolean Summary; Mass/CG/Inertia Report",
+      "textPreview": "Evidence: Endpoint Validation Summary; Full Motion Exact Boolean Summary; Mass/CG/Inertia Report",
+      "resolvedFontSize": 11,
+      "resolvedTextStyle": {
+        "fontSize": 11,
+        "typeface": "+mn-lt",
+        "color": "#475569",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Evidence: Endpoint Validation Summary; Full Motion Exact Boolean Summary; Mass/CG/Inertia Report"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Evidence: Endpoint Validation Summary; Full Motion Exact Boolean Summary; Mass/CG/Inertia Report",
+          "resolvedTextStyle": {
+            "fontSize": 11,
+            "color": "#475569"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Evidence: Endpoint Validation Summary; Full Motion Exact Boolean Summary; Mass/CG/Inertia Report",
+              "fontSize": 11,
+              "color": "#475569"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 21,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/itcj6xwb",
+      "id": "21",
+      "name": "page-5",
+      "bbox": [
+        1182,
+        669,
+        56,
+        24
+      ],
+      "geometry": "rect",
+      "text": "5",
+      "textPreview": "5",
+      "resolvedFontSize": 11,
+      "resolvedTextStyle": {
+        "fontSize": 11,
+        "typeface": "+mn-lt",
+        "color": "#475569",
+        "bold": true,
+        "alignment": "right",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "5"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "5",
+          "resolvedTextStyle": {
+            "fontSize": 11,
+            "color": "#475569",
+            "bold": true,
+            "alignment": "right"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "5",
+              "fontSize": 11,
+              "color": "#475569",
+              "bold": true,
+              "alignment": "right"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    }
+  ],
+  "composeRuns": []
+}

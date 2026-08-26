@@ -1,0 +1,1030 @@
+{
+  "schema": "openai.presentation.layout/v4",
+  "unit": "px",
+  "slide": {
+    "aid": "sl/e1q36c",
+    "id": "e1q36c",
+    "slide": 9,
+    "layoutId": "905fba19-f87c-4793-9ddb-b1482b9c138a",
+    "layoutName": "Title Slide",
+    "layoutType": "title",
+    "masterLayoutId": "f49804d5-2f04-4d6f-a50f-a5f20d73a9aa",
+    "masterLayoutName": "Master",
+    "backgroundColor": "#FFFFFF",
+    "frame": {
+      "left": 0,
+      "top": 0,
+      "width": 1280,
+      "height": 720
+    }
+  },
+  "theme": {
+    "colorSchemeName": "ChatGPT",
+    "colors": {
+      "accent1": "#156082",
+      "accent2": "#E97132",
+      "accent3": "#196B24",
+      "accent4": "#0F9ED5",
+      "accent5": "#A02B93",
+      "accent6": "#4EA72E",
+      "bg1": "#FFFFFF",
+      "bg2": "#000000",
+      "tx1": "#1F1F1F",
+      "tx2": "#FFFFFF",
+      "dk1": "#000000",
+      "lt1": "#FFFFFF",
+      "dk2": "#0E2841",
+      "lt2": "#E8E8E8",
+      "hlink": "#467886",
+      "folHlink": "#96607D"
+    },
+    "typefaces": [
+      "+mn-lt"
+    ]
+  },
+  "inheritedLayers": [
+    {
+      "scope": "layout",
+      "id": "905fba19-f87c-4793-9ddb-b1482b9c138a",
+      "name": "Title Slide",
+      "type": "title",
+      "parentLayoutId": "f49804d5-2f04-4d6f-a50f-a5f20d73a9aa",
+      "elements": []
+    },
+    {
+      "scope": "master",
+      "id": "f49804d5-2f04-4d6f-a50f-a5f20d73a9aa",
+      "name": "Master",
+      "type": "master",
+      "elements": []
+    }
+  ],
+  "elements": [
+    {
+      "order": 1,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/d4julcva",
+      "id": "1",
+      "name": "eyebrow-9",
+      "bbox": [
+        42,
+        28,
+        750,
+        22
+      ],
+      "geometry": "rect",
+      "text": "STINGRAY DIGITAL PRODUCT DEFINITION",
+      "textPreview": "STINGRAY DIGITAL PRODUCT DEFINITION",
+      "resolvedFontSize": 12,
+      "resolvedTextStyle": {
+        "fontSize": 12,
+        "typeface": "+mn-lt",
+        "color": "#475569",
+        "bold": true,
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "STINGRAY DIGITAL PRODUCT DEFINITION"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "STINGRAY DIGITAL PRODUCT DEFINITION",
+          "resolvedTextStyle": {
+            "fontSize": 12,
+            "color": "#475569",
+            "bold": true
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "STINGRAY DIGITAL PRODUCT DEFINITION",
+              "fontSize": 12,
+              "color": "#475569",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 2,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/q1sbaxwj",
+      "id": "2",
+      "name": "title-9",
+      "bbox": [
+        42,
+        58,
+        1160,
+        88
+      ],
+      "geometry": "rect",
+      "text": "The pressure path is compact, but its exact installed interfaces are unresolved",
+      "textPreview": "The pressure path is compact, but its exact installed interfaces are unresolved",
+      "resolvedFontSize": 39,
+      "resolvedTextStyle": {
+        "fontSize": 39,
+        "typeface": "+mn-lt",
+        "color": "#000000",
+        "bold": true,
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "The pressure path is compact, but its exact installed interfaces are"
+          },
+          {
+            "index": 2,
+            "text": "unresolved"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "The pressure path is compact, but its exact installed interfaces are unresolved",
+          "resolvedTextStyle": {
+            "fontSize": 39,
+            "color": "#000000",
+            "bold": true
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "The pressure path is compact, but its exact installed interfaces are unresolved",
+              "fontSize": 39,
+              "color": "#000000",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 3,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/r21cj2d4",
+      "id": "3",
+      "name": "title-rule-9",
+      "bbox": [
+        42,
+        153,
+        1196,
+        1
+      ],
+      "geometry": "rect",
+      "fillColor": "#B8BCC4",
+      "lineColor": "#B8BCC4",
+      "lineWidth": 0
+    },
+    {
+      "order": 4,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/4zat87ed",
+      "id": "4",
+      "name": "pressure-image-backing",
+      "bbox": [
+        42,
+        180,
+        610,
+        450
+      ],
+      "geometry": "roundRect",
+      "fillColor": "#FFFFFF",
+      "lineColor": "#B8BCC4",
+      "lineWidth": 1
+    },
+    {
+      "order": 5,
+      "kind": "image",
+      "scope": "slide",
+      "aid": "im/sj69o3u5",
+      "id": "5",
+      "bbox": [
+        42,
+        180,
+        610,
+        450
+      ],
+      "geometry": "roundRect",
+      "alt": "CAD-derived pack section showing Hydro 1F proxy and direct water-entry access",
+      "contentType": "image/png",
+      "imageFit": "contain",
+      "imageMask": {
+        "geometry": "roundRect",
+        "adjustmentList": [
+          {
+            "name": "adj",
+            "formula": "val 2667"
+          }
+        ]
+      },
+      "asset": {
+        "assetId": "75b2d403-db9c-4d32-ad12-5167d0613579",
+        "contentType": "image/png",
+        "byteLength": 313462
+      }
+    },
+    {
+      "order": 6,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/ix8b6xwn",
+      "id": "6",
+      "name": "pressure-status-0-panel",
+      "bbox": [
+        698,
+        190,
+        112,
+        44
+      ],
+      "geometry": "roundRect",
+      "fillColor": "#E8F7EF",
+      "lineColor": "#137A4B",
+      "lineWidth": 1
+    },
+    {
+      "order": 7,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/3y1cf2d8",
+      "id": "7",
+      "name": "pressure-status-0-text",
+      "bbox": [
+        712,
+        200,
+        84,
+        24
+      ],
+      "geometry": "rect",
+      "text": "KNOWN",
+      "textPreview": "KNOWN",
+      "resolvedFontSize": 16,
+      "resolvedTextStyle": {
+        "fontSize": 16,
+        "typeface": "+mn-lt",
+        "color": "#137A4B",
+        "bold": true,
+        "alignment": "center",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "KNOWN"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "KNOWN",
+          "resolvedTextStyle": {
+            "fontSize": 16,
+            "color": "#137A4B",
+            "bold": true,
+            "alignment": "center"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "KNOWN",
+              "fontSize": 16,
+              "color": "#137A4B",
+              "bold": true,
+              "alignment": "center"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 8,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/gvqt4neh",
+      "id": "8",
+      "name": "pressure-copy-0",
+      "bbox": [
+        836,
+        198,
+        386,
+        70
+      ],
+      "geometry": "rect",
+      "text": "Leland 81121: 12 g CO2, 3/8-24 puncture cartridge",
+      "textPreview": "Leland 81121: 12 g CO2, 3/8-24 puncture cartridge",
+      "resolvedFontSize": 18,
+      "resolvedTextStyle": {
+        "fontSize": 18,
+        "typeface": "+mn-lt",
+        "color": "#000000",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Leland 81121: 12 g CO2, 3/8-24 puncture"
+          },
+          {
+            "index": 2,
+            "text": "cartridge"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Leland 81121: 12 g CO2, 3/8-24 puncture cartridge",
+          "resolvedTextStyle": {
+            "fontSize": 18,
+            "color": "#000000"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Leland 81121: 12 g CO2, 3/8-24 puncture cartridge",
+              "fontSize": 18,
+              "color": "#000000"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 9,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/hwzudsv2",
+      "id": "9",
+      "name": "pressure-status-1-panel",
+      "bbox": [
+        698,
+        294,
+        112,
+        44
+      ],
+      "geometry": "roundRect",
+      "fillColor": "#E8F7EF",
+      "lineColor": "#137A4B",
+      "lineWidth": 1
+    },
+    {
+      "order": 10,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/987mtcve",
+      "id": "10",
+      "name": "pressure-status-1-text",
+      "bbox": [
+        712,
+        304,
+        84,
+        24
+      ],
+      "geometry": "rect",
+      "text": "KNOWN",
+      "textPreview": "KNOWN",
+      "resolvedFontSize": 16,
+      "resolvedTextStyle": {
+        "fontSize": 16,
+        "typeface": "+mn-lt",
+        "color": "#137A4B",
+        "bold": true,
+        "alignment": "center",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "KNOWN"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "KNOWN",
+          "resolvedTextStyle": {
+            "fontSize": 16,
+            "color": "#137A4B",
+            "bold": true,
+            "alignment": "center"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "KNOWN",
+              "fontSize": 16,
+              "color": "#137A4B",
+              "bold": true,
+              "alignment": "center"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 11,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/87y5k7ut",
+      "id": "11",
+      "name": "pressure-copy-1",
+      "bbox": [
+        836,
+        302,
+        386,
+        70
+      ],
+      "geometry": "rect",
+      "text": "Hydro 1F family uses V80040 water-sensitive bobbin",
+      "textPreview": "Hydro 1F family uses V80040 water-sensitive bobbin",
+      "resolvedFontSize": 18,
+      "resolvedTextStyle": {
+        "fontSize": 18,
+        "typeface": "+mn-lt",
+        "color": "#000000",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Hydro 1F family uses V80040 water-sensitive"
+          },
+          {
+            "index": 2,
+            "text": "bobbin"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Hydro 1F family uses V80040 water-sensitive bobbin",
+          "resolvedTextStyle": {
+            "fontSize": 18,
+            "color": "#000000"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Hydro 1F family uses V80040 water-sensitive bobbin",
+              "fontSize": 18,
+              "color": "#000000"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 12,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/76p4r2d8",
+      "id": "12",
+      "name": "pressure-status-2-panel",
+      "bbox": [
+        698,
+        398,
+        112,
+        44
+      ],
+      "geometry": "roundRect",
+      "fillColor": "#FEE4E2",
+      "lineColor": "#B42318",
+      "lineWidth": 1
+    },
+    {
+      "order": 13,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/m5w3ixwn",
+      "id": "13",
+      "name": "pressure-status-2-text",
+      "bbox": [
+        712,
+        408,
+        84,
+        24
+      ],
+      "geometry": "rect",
+      "text": "OPEN",
+      "textPreview": "OPEN",
+      "resolvedFontSize": 16,
+      "resolvedTextStyle": {
+        "fontSize": 16,
+        "typeface": "+mn-lt",
+        "color": "#B42318",
+        "bold": true,
+        "alignment": "center",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "OPEN"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "OPEN",
+          "resolvedTextStyle": {
+            "fontSize": 16,
+            "color": "#B42318",
+            "bold": true,
+            "alignment": "center"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "OPEN",
+              "fontSize": 16,
+              "color": "#B42318",
+              "bold": true,
+              "alignment": "center"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 14,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/l4nmpsv2",
+      "id": "14",
+      "name": "pressure-copy-2",
+      "bbox": [
+        836,
+        406,
+        386,
+        70
+      ],
+      "geometry": "rect",
+      "text": "Exact Hydro suffix and matching thread configuration",
+      "textPreview": "Exact Hydro suffix and matching thread configuration",
+      "resolvedFontSize": 18,
+      "resolvedTextStyle": {
+        "fontSize": 18,
+        "typeface": "+mn-lt",
+        "color": "#000000",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Exact Hydro suffix and matching thread"
+          },
+          {
+            "index": 2,
+            "text": "configuration"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Exact Hydro suffix and matching thread configuration",
+          "resolvedTextStyle": {
+            "fontSize": 18,
+            "color": "#000000"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Exact Hydro suffix and matching thread configuration",
+              "fontSize": 18,
+              "color": "#000000"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 15,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/k3elgnex",
+      "id": "15",
+      "name": "pressure-status-3-panel",
+      "bbox": [
+        698,
+        502,
+        112,
+        44
+      ],
+      "geometry": "roundRect",
+      "fillColor": "#FEE4E2",
+      "lineColor": "#B42318",
+      "lineWidth": 1
+    },
+    {
+      "order": 16,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/z254nidc",
+      "id": "16",
+      "name": "pressure-status-3-text",
+      "bbox": [
+        712,
+        512,
+        84,
+        24
+      ],
+      "geometry": "rect",
+      "text": "OPEN",
+      "textPreview": "OPEN",
+      "resolvedFontSize": 16,
+      "resolvedTextStyle": {
+        "fontSize": 16,
+        "typeface": "+mn-lt",
+        "color": "#B42318",
+        "bold": true,
+        "alignment": "center",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "OPEN"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "OPEN",
+          "resolvedTextStyle": {
+            "fontSize": 16,
+            "color": "#B42318",
+            "bold": true,
+            "alignment": "center"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "OPEN",
+              "fontSize": 16,
+              "color": "#B42318",
+              "bold": true,
+              "alignment": "center"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 17,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/y1w3exwr",
+      "id": "17",
+      "name": "pressure-copy-3",
+      "bbox": [
+        836,
+        510,
+        386,
+        70
+      ],
+      "geometry": "rect",
+      "text": "Vendor-exact geometry, flow curve, patch interface, leak result",
+      "textPreview": "Vendor-exact geometry, flow curve, patch interface, leak result",
+      "resolvedFontSize": 18,
+      "resolvedTextStyle": {
+        "fontSize": 18,
+        "typeface": "+mn-lt",
+        "color": "#000000",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Vendor-exact geometry, flow curve, patch"
+          },
+          {
+            "index": 2,
+            "text": "interface, leak result"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Vendor-exact geometry, flow curve, patch interface, leak result",
+          "resolvedTextStyle": {
+            "fontSize": 18,
+            "color": "#000000"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Vendor-exact geometry, flow curve, patch interface, leak result",
+              "fontSize": 18,
+              "color": "#000000"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 18,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/x0nmlsv6",
+      "id": "18",
+      "name": "pressure-topology",
+      "bbox": [
+        698,
+        604,
+        524,
+        54
+      ],
+      "geometry": "rect",
+      "text": "Topology: cartridge -> Hydro 1F family inflator -> custom 60 L buoy patch. No separate hose, tube, regulator, gauge, or pneumatic cylinder remains in this configuration.",
+      "textPreview": "Topology: cartridge -> Hydro 1F family inflator -> custom 60 L buoy patch. No separate hose, tube, regulator, gauge, or pneumatic cylinde...",
+      "resolvedFontSize": 16,
+      "resolvedTextStyle": {
+        "fontSize": 16,
+        "typeface": "+mn-lt",
+        "color": "#475569",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 3,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Topology: cartridge -> Hydro 1F family inflator -> custom 60 L buoy patch. No"
+          },
+          {
+            "index": 2,
+            "text": "separate hose, tube, regulator, gauge, or pneumatic cylinder remains in this"
+          },
+          {
+            "index": 3,
+            "text": "configuration."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Topology: cartridge -> Hydro 1F family inflator -> custom 60 L buoy patch. No separate hose, tube, regulator, gauge, or pneumatic cylinder remains in this configuration.",
+          "resolvedTextStyle": {
+            "fontSize": 16,
+            "color": "#475569"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Topology: cartridge -> Hydro 1F family inflator -> custom 60 L buoy patch. No separate hose, tube, regulator, gauge, or pneumatic cylinder remains in this configuration.",
+              "fontSize": 16,
+              "color": "#475569"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 19,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/czelcnel",
+      "id": "19",
+      "name": "evidence-9",
+      "bbox": [
+        42,
+        669,
+        1090,
+        24
+      ],
+      "geometry": "rect",
+      "text": "Evidence: Pressure Topology; Port-to-Port Table; Pressure Ratings Matrix",
+      "textPreview": "Evidence: Pressure Topology; Port-to-Port Table; Pressure Ratings Matrix",
+      "resolvedFontSize": 11,
+      "resolvedTextStyle": {
+        "fontSize": 11,
+        "typeface": "+mn-lt",
+        "color": "#475569",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Evidence: Pressure Topology; Port-to-Port Table; Pressure Ratings Matrix"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Evidence: Pressure Topology; Port-to-Port Table; Pressure Ratings Matrix",
+          "resolvedTextStyle": {
+            "fontSize": 11,
+            "color": "#475569"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Evidence: Pressure Topology; Port-to-Port Table; Pressure Ratings Matrix",
+              "fontSize": 11,
+              "color": "#475569"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 20,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/ojy58nmh",
+      "id": "20",
+      "name": "page-9",
+      "bbox": [
+        1182,
+        669,
+        56,
+        24
+      ],
+      "geometry": "rect",
+      "text": "9",
+      "textPreview": "9",
+      "resolvedFontSize": 11,
+      "resolvedTextStyle": {
+        "fontSize": 11,
+        "typeface": "+mn-lt",
+        "color": "#475569",
+        "bold": true,
+        "alignment": "right",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "9"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "9",
+          "resolvedTextStyle": {
+            "fontSize": 11,
+            "color": "#475569",
+            "bold": true,
+            "alignment": "right"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "9",
+              "fontSize": 11,
+              "color": "#475569",
+              "bold": true,
+              "alignment": "right"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    }
+  ],
+  "composeRuns": []
+}

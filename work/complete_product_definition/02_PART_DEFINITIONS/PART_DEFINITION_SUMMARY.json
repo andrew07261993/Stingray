@@ -1,0 +1,16 @@
+{
+  "status": "DEVELOPMENTAL PART DEFINITION - NOT RELEASED FOR FABRICATION OR PROCUREMENT",
+  "unique_part_definitions": 92,
+  "flexible_state_variant_definitions": 31,
+  "exported_definition_rows": 123,
+  "neutral_ap242_count": 123,
+  "native_brep_count": 123,
+  "render_count": 123,
+  "manifest_sha256": "c501de20268257f65af4f69f83264c0f9e8cc5e88fd78a753f8bba5b621c4af5",
+  "limitations": [
+    "Installed locations are registered by occurrence and authoring-inventory bounds; per-part installed-location images are not generated.",
+    "Sections/cutaways are not fabricated without approved analysis and drawing relevance.",
+    "Dimension-controlled proxies and developmental softgood envelopes remain explicit and non-release.",
+    "Neutral STEP byte reproducibility is subject to the recorded OCCT presentation-order exception."
+  ]
+}

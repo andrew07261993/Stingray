@@ -1,0 +1,4 @@
+component,manufacturer_part_number,modeled_identity,published_interface,published_pressure_rating,application_rating,evidence_status
+Leland 81121 12 g CO2 cartridge,81121,LELAND-81121,3/8-24 UNF puncture; 12 g CO2; 3.250 x 0.735 in referential dimensions,NOT PUBLISHED IN CONTROLLED PUBLIC SOURCE,FAIL - INSUFFICIENT IDEAL GAS FOR 60 L,OFFICIAL PRODUCT PAGE VERIFIED 2026-08-26
+Halkey-Roberts Hydro 1F inflator family,V95000xxB family; installed suffix incomplete,HALKEY-ROBERTS-HYDRO-1F-V95000XXB_PROXY,3/8 or 1/2 in CO2 threaded family; V90113 O-rings; V80040 bobbin,COMPONENT RECOGNITION DOES NOT ESTABLISH THIS 60 L APPLICATION,NOT DETERMINABLE,DIMENSION-CONTROLLED PROXY; EXACT INSTALLED GEOMETRY/RATING ABSENT
+Custom 60 L buoy and inflation patch,CUSTOM DEVELOPMENTAL,60 L analytic softgood definition,No released drawing or rated patch interface,NOT DETERMINABLE,NOT QUALIFIED,PHYSICAL PROOF/BURST/LEAK/INFLATION TESTS REQUIRED

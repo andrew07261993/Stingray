@@ -1,0 +1,906 @@
+{
+  "schema": "openai.presentation.layout/v4",
+  "unit": "px",
+  "slide": {
+    "aid": "sl/mzkckg",
+    "id": "mzkckg",
+    "slide": 12,
+    "layoutId": "905fba19-f87c-4793-9ddb-b1482b9c138a",
+    "layoutName": "Title Slide",
+    "layoutType": "title",
+    "masterLayoutId": "f49804d5-2f04-4d6f-a50f-a5f20d73a9aa",
+    "masterLayoutName": "Master",
+    "backgroundColor": "#FFFFFF",
+    "frame": {
+      "left": 0,
+      "top": 0,
+      "width": 1280,
+      "height": 720
+    }
+  },
+  "theme": {
+    "colorSchemeName": "ChatGPT",
+    "colors": {
+      "accent1": "#156082",
+      "accent2": "#E97132",
+      "accent3": "#196B24",
+      "accent4": "#0F9ED5",
+      "accent5": "#A02B93",
+      "accent6": "#4EA72E",
+      "bg1": "#FFFFFF",
+      "bg2": "#000000",
+      "tx1": "#1F1F1F",
+      "tx2": "#FFFFFF",
+      "dk1": "#000000",
+      "lt1": "#FFFFFF",
+      "dk2": "#0E2841",
+      "lt2": "#E8E8E8",
+      "hlink": "#467886",
+      "folHlink": "#96607D"
+    },
+    "typefaces": [
+      "+mn-lt"
+    ]
+  },
+  "inheritedLayers": [
+    {
+      "scope": "layout",
+      "id": "905fba19-f87c-4793-9ddb-b1482b9c138a",
+      "name": "Title Slide",
+      "type": "title",
+      "parentLayoutId": "f49804d5-2f04-4d6f-a50f-a5f20d73a9aa",
+      "elements": []
+    },
+    {
+      "scope": "master",
+      "id": "f49804d5-2f04-4d6f-a50f-a5f20d73a9aa",
+      "name": "Master",
+      "type": "master",
+      "elements": []
+    }
+  ],
+  "elements": [
+    {
+      "order": 1,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/vixgra58",
+      "id": "1",
+      "name": "eyebrow-12",
+      "bbox": [
+        42,
+        28,
+        750,
+        22
+      ],
+      "geometry": "rect",
+      "text": "STINGRAY DIGITAL PRODUCT DEFINITION",
+      "textPreview": "STINGRAY DIGITAL PRODUCT DEFINITION",
+      "resolvedFontSize": 12,
+      "resolvedTextStyle": {
+        "fontSize": 12,
+        "typeface": "+mn-lt",
+        "color": "#475569",
+        "bold": true,
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "STINGRAY DIGITAL PRODUCT DEFINITION"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "STINGRAY DIGITAL PRODUCT DEFINITION",
+          "resolvedTextStyle": {
+            "fontSize": 12,
+            "color": "#475569",
+            "bold": true
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "STINGRAY DIGITAL PRODUCT DEFINITION",
+              "fontSize": 12,
+              "color": "#475569",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 2,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/wj6xkfmt",
+      "id": "2",
+      "name": "title-12",
+      "bbox": [
+        42,
+        58,
+        1160,
+        88
+      ],
+      "geometry": "rect",
+      "text": "Digital pass; production release fails",
+      "textPreview": "Digital pass; production release fails",
+      "resolvedFontSize": 39,
+      "resolvedTextStyle": {
+        "fontSize": 39,
+        "typeface": "+mn-lt",
+        "color": "#000000",
+        "bold": true,
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Digital pass; production release fails"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Digital pass; production release fails",
+          "resolvedTextStyle": {
+            "fontSize": 39,
+            "color": "#000000",
+            "bold": true
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Digital pass; production release fails",
+              "fontSize": 39,
+              "color": "#000000",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 3,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/hkzytkne",
+      "id": "3",
+      "name": "title-rule-12",
+      "bbox": [
+        42,
+        153,
+        1196,
+        1
+      ],
+      "geometry": "rect",
+      "fillColor": "#B8BCC4",
+      "lineColor": "#B8BCC4",
+      "lineWidth": 0
+    },
+    {
+      "order": 4,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/il8fmp4z",
+      "id": "4",
+      "name": "gate-pass-panel",
+      "bbox": [
+        42,
+        186,
+        552,
+        422
+      ],
+      "geometry": "roundRect",
+      "fillColor": "#E8F7EF",
+      "lineColor": "#137A4B",
+      "lineWidth": 1
+    },
+    {
+      "order": 5,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/jmhgvu5k",
+      "id": "5",
+      "name": "gate-pass-title",
+      "bbox": [
+        70,
+        214,
+        496,
+        44
+      ],
+      "geometry": "rect",
+      "text": "DIGITAL PASS",
+      "textPreview": "DIGITAL PASS",
+      "resolvedFontSize": 26,
+      "resolvedTextStyle": {
+        "fontSize": 26,
+        "typeface": "+mn-lt",
+        "color": "#137A4B",
+        "bold": true,
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "DIGITAL PASS"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "DIGITAL PASS",
+          "resolvedTextStyle": {
+            "fontSize": 26,
+            "color": "#137A4B",
+            "bold": true
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "DIGITAL PASS",
+              "fontSize": 26,
+              "color": "#137A4B",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 6,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/4nqxozm5",
+      "id": "6",
+      "name": "gate-pass-list",
+      "bbox": [
+        70,
+        286,
+        480,
+        286
+      ],
+      "geometry": "rect",
+      "text": "- clean procedural build\n- 180 occurrences per state\n- hierarchy, occurrence identities, transforms, and valid solids preserved on reimport\n- nominal envelope and mass properties\n- endpoint exact-Boolean audit\n- five-angle audit\n- full 0-80 degree one-degree sweep",
+      "textPreview": "- clean procedural build | - 180 occurrences per state | - hierarchy, occurrence identities, transforms, and valid solids preserved on re...",
+      "resolvedFontSize": 19,
+      "resolvedTextStyle": {
+        "fontSize": 19,
+        "typeface": "+mn-lt",
+        "color": "#000000",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 8,
+        "lines": [
+          {
+            "index": 1,
+            "text": "- clean procedural build"
+          },
+          {
+            "index": 2,
+            "text": "- 180 occurrences per state"
+          },
+          {
+            "index": 3,
+            "text": "- hierarchy, occurrence identities, transforms, and valid"
+          },
+          {
+            "index": 4,
+            "text": "solids preserved on reimport"
+          },
+          {
+            "index": 5,
+            "text": "- nominal envelope and mass properties"
+          },
+          {
+            "index": 6,
+            "text": "- endpoint exact-Boolean audit"
+          },
+          {
+            "index": 7,
+            "text": "- five-angle audit"
+          },
+          {
+            "index": 8,
+            "text": "- full 0-80 degree one-degree sweep"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "- clean procedural build",
+          "resolvedTextStyle": {
+            "fontSize": 19,
+            "color": "#000000"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "- clean procedural build",
+              "fontSize": 19,
+              "color": "#000000"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 2,
+          "text": "- 180 occurrences per state",
+          "resolvedTextStyle": {
+            "fontSize": 19,
+            "color": "#000000"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "- 180 occurrences per state",
+              "fontSize": 19,
+              "color": "#000000"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 3,
+          "text": "- hierarchy, occurrence identities, transforms, and valid solids preserved on reimport",
+          "resolvedTextStyle": {
+            "fontSize": 19,
+            "color": "#000000"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "- hierarchy, occurrence identities, transforms, and valid solids preserved on reimport",
+              "fontSize": 19,
+              "color": "#000000"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 4,
+          "text": "- nominal envelope and mass properties",
+          "resolvedTextStyle": {
+            "fontSize": 19,
+            "color": "#000000"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "- nominal envelope and mass properties",
+              "fontSize": 19,
+              "color": "#000000"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 5,
+          "text": "- endpoint exact-Boolean audit",
+          "resolvedTextStyle": {
+            "fontSize": 19,
+            "color": "#000000"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "- endpoint exact-Boolean audit",
+              "fontSize": 19,
+              "color": "#000000"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 6,
+          "text": "- five-angle audit",
+          "resolvedTextStyle": {
+            "fontSize": 19,
+            "color": "#000000"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "- five-angle audit",
+              "fontSize": 19,
+              "color": "#000000"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 7,
+          "text": "- full 0-80 degree one-degree sweep",
+          "resolvedTextStyle": {
+            "fontSize": 19,
+            "color": "#000000"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "- full 0-80 degree one-degree sweep",
+              "fontSize": 19,
+              "color": "#000000"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 7,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/5ozyx4na",
+      "id": "7",
+      "name": "gate-fail-panel",
+      "bbox": [
+        644,
+        186,
+        594,
+        422
+      ],
+      "geometry": "roundRect",
+      "fillColor": "#FEE4E2",
+      "lineColor": "#B42318",
+      "lineWidth": 1
+    },
+    {
+      "order": 8,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/yp4fa54f",
+      "id": "8",
+      "name": "gate-fail-title",
+      "bbox": [
+        674,
+        214,
+        534,
+        44
+      ],
+      "geometry": "rect",
+      "text": "RELEASE FAIL",
+      "textPreview": "RELEASE FAIL",
+      "resolvedFontSize": 26,
+      "resolvedTextStyle": {
+        "fontSize": 26,
+        "typeface": "+mn-lt",
+        "color": "#B42318",
+        "bold": true,
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "RELEASE FAIL"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "RELEASE FAIL",
+          "resolvedTextStyle": {
+            "fontSize": 26,
+            "color": "#B42318",
+            "bold": true
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "RELEASE FAIL",
+              "fontSize": 26,
+              "color": "#B42318",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 9,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/zqdgjq50",
+      "id": "9",
+      "name": "gate-fail-list",
+      "bbox": [
+        674,
+        286,
+        520,
+        306
+      ],
+      "geometry": "rect",
+      "text": "- 12 g / 60 L gas-capacity mismatch\n- inflator suffix, exact geometry, ratings, and leak/flow unknown\n- proxy and developmental softgood envelopes\n- required load/strength/tolerance analyses incomplete\n- manufacturing drawings and work instructions absent\n- physical qualification absent\n- AP242 bytes not reproducible across identical builds\n- root assembly naming nonconformance remains open\n- required screenshots and newer attachment placeholders absent",
+      "textPreview": "- 12 g / 60 L gas-capacity mismatch | - inflator suffix, exact geometry, ratings, and leak/flow unknown | - proxy and developmental softg...",
+      "resolvedFontSize": 18,
+      "resolvedTextStyle": {
+        "fontSize": 18,
+        "typeface": "+mn-lt",
+        "color": "#000000",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 9,
+        "lines": [
+          {
+            "index": 1,
+            "text": "- 12 g / 60 L gas-capacity mismatch"
+          },
+          {
+            "index": 2,
+            "text": "- inflator suffix, exact geometry, ratings, and leak/flow unknown"
+          },
+          {
+            "index": 3,
+            "text": "- proxy and developmental softgood envelopes"
+          },
+          {
+            "index": 4,
+            "text": "- required load/strength/tolerance analyses incomplete"
+          },
+          {
+            "index": 5,
+            "text": "- manufacturing drawings and work instructions absent"
+          },
+          {
+            "index": 6,
+            "text": "- physical qualification absent"
+          },
+          {
+            "index": 7,
+            "text": "- AP242 bytes not reproducible across identical builds"
+          },
+          {
+            "index": 8,
+            "text": "- root assembly naming nonconformance remains open"
+          },
+          {
+            "index": 9,
+            "text": "- required screenshots and newer attachment placeholders absent"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "- 12 g / 60 L gas-capacity mismatch",
+          "resolvedTextStyle": {
+            "fontSize": 18,
+            "color": "#000000"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "- 12 g / 60 L gas-capacity mismatch",
+              "fontSize": 18,
+              "color": "#000000"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 2,
+          "text": "- inflator suffix, exact geometry, ratings, and leak/flow unknown",
+          "resolvedTextStyle": {
+            "fontSize": 18,
+            "color": "#000000"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "- inflator suffix, exact geometry, ratings, and leak/flow unknown",
+              "fontSize": 18,
+              "color": "#000000"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 3,
+          "text": "- proxy and developmental softgood envelopes",
+          "resolvedTextStyle": {
+            "fontSize": 18,
+            "color": "#000000"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "- proxy and developmental softgood envelopes",
+              "fontSize": 18,
+              "color": "#000000"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 4,
+          "text": "- required load/strength/tolerance analyses incomplete",
+          "resolvedTextStyle": {
+            "fontSize": 18,
+            "color": "#000000"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "- required load/strength/tolerance analyses incomplete",
+              "fontSize": 18,
+              "color": "#000000"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 5,
+          "text": "- manufacturing drawings and work instructions absent",
+          "resolvedTextStyle": {
+            "fontSize": 18,
+            "color": "#000000"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "- manufacturing drawings and work instructions absent",
+              "fontSize": 18,
+              "color": "#000000"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 6,
+          "text": "- physical qualification absent",
+          "resolvedTextStyle": {
+            "fontSize": 18,
+            "color": "#000000"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "- physical qualification absent",
+              "fontSize": 18,
+              "color": "#000000"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 7,
+          "text": "- AP242 bytes not reproducible across identical builds",
+          "resolvedTextStyle": {
+            "fontSize": 18,
+            "color": "#000000"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "- AP242 bytes not reproducible across identical builds",
+              "fontSize": 18,
+              "color": "#000000"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 8,
+          "text": "- root assembly naming nonconformance remains open",
+          "resolvedTextStyle": {
+            "fontSize": 18,
+            "color": "#000000"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "- root assembly naming nonconformance remains open",
+              "fontSize": 18,
+              "color": "#000000"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 9,
+          "text": "- required screenshots and newer attachment placeholders absent",
+          "resolvedTextStyle": {
+            "fontSize": 18,
+            "color": "#000000"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "- required screenshots and newer attachment placeholders absent",
+              "fontSize": 18,
+              "color": "#000000"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 10,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/velczq1c",
+      "id": "10",
+      "name": "evidence-12",
+      "bbox": [
+        42,
+        669,
+        1090,
+        24
+      ],
+      "geometry": "rect",
+      "text": "Evidence: Objective Release Gate Table; Non-Release Exception Report",
+      "textPreview": "Evidence: Objective Release Gate Table; Non-Release Exception Report",
+      "resolvedFontSize": 11,
+      "resolvedTextStyle": {
+        "fontSize": 11,
+        "typeface": "+mn-lt",
+        "color": "#475569",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Evidence: Objective Release Gate Table; Non-Release Exception Report"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Evidence: Objective Release Gate Table; Non-Release Exception Report",
+          "resolvedTextStyle": {
+            "fontSize": 11,
+            "color": "#475569"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Evidence: Objective Release Gate Table; Non-Release Exception Report",
+              "fontSize": 11,
+              "color": "#475569"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 11,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/udcbqlkr",
+      "id": "11",
+      "name": "page-12",
+      "bbox": [
+        1182,
+        669,
+        56,
+        24
+      ],
+      "geometry": "rect",
+      "text": "12",
+      "textPreview": "12",
+      "resolvedFontSize": 11,
+      "resolvedTextStyle": {
+        "fontSize": 11,
+        "typeface": "+mn-lt",
+        "color": "#475569",
+        "bold": true,
+        "alignment": "right",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "12"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "12",
+          "resolvedTextStyle": {
+            "fontSize": 11,
+            "color": "#475569",
+            "bold": true,
+            "alignment": "right"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "12",
+              "fontSize": 11,
+              "color": "#475569",
+              "bold": true,
+              "alignment": "right"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    }
+  ],
+  "composeRuns": []
+}

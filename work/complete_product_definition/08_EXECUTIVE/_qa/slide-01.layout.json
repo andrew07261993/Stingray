@@ -1,0 +1,573 @@
+{
+  "schema": "openai.presentation.layout/v4",
+  "unit": "px",
+  "slide": {
+    "aid": "sl/n9iavx",
+    "id": "n9iavx",
+    "slide": 1,
+    "layoutId": "905fba19-f87c-4793-9ddb-b1482b9c138a",
+    "layoutName": "Title Slide",
+    "layoutType": "title",
+    "masterLayoutId": "f49804d5-2f04-4d6f-a50f-a5f20d73a9aa",
+    "masterLayoutName": "Master",
+    "backgroundColor": "#FFFFFF",
+    "frame": {
+      "left": 0,
+      "top": 0,
+      "width": 1280,
+      "height": 720
+    }
+  },
+  "theme": {
+    "colorSchemeName": "ChatGPT",
+    "colors": {
+      "accent1": "#156082",
+      "accent2": "#E97132",
+      "accent3": "#196B24",
+      "accent4": "#0F9ED5",
+      "accent5": "#A02B93",
+      "accent6": "#4EA72E",
+      "bg1": "#FFFFFF",
+      "bg2": "#000000",
+      "tx1": "#1F1F1F",
+      "tx2": "#FFFFFF",
+      "dk1": "#000000",
+      "lt1": "#FFFFFF",
+      "dk2": "#0E2841",
+      "lt2": "#E8E8E8",
+      "hlink": "#467886",
+      "folHlink": "#96607D"
+    },
+    "typefaces": [
+      "+mn-lt"
+    ]
+  },
+  "inheritedLayers": [
+    {
+      "scope": "layout",
+      "id": "905fba19-f87c-4793-9ddb-b1482b9c138a",
+      "name": "Title Slide",
+      "type": "title",
+      "parentLayoutId": "f49804d5-2f04-4d6f-a50f-a5f20d73a9aa",
+      "elements": []
+    },
+    {
+      "scope": "master",
+      "id": "f49804d5-2f04-4d6f-a50f-a5f20d73a9aa",
+      "name": "Master",
+      "type": "master",
+      "elements": []
+    }
+  ],
+  "elements": [
+    {
+      "order": 1,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/t8ny5cnu",
+      "id": "1",
+      "name": "cover-eyebrow",
+      "bbox": [
+        42,
+        38,
+        570,
+        28
+      ],
+      "geometry": "rect",
+      "text": "EXECUTIVE RELEASE STATUS | 26 AUGUST 2026",
+      "textPreview": "EXECUTIVE RELEASE STATUS | 26 AUGUST 2026",
+      "resolvedFontSize": 13,
+      "resolvedTextStyle": {
+        "fontSize": 13,
+        "typeface": "+mn-lt",
+        "color": "#475569",
+        "bold": true,
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "EXECUTIVE RELEASE STATUS | 26 AUGUST 2026"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "EXECUTIVE RELEASE STATUS | 26 AUGUST 2026",
+          "resolvedTextStyle": {
+            "fontSize": 13,
+            "color": "#475569",
+            "bold": true
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "EXECUTIVE RELEASE STATUS | 26 AUGUST 2026",
+              "fontSize": 13,
+              "color": "#475569",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 2,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/65czah43",
+      "id": "2",
+      "name": "cover-title",
+      "bbox": [
+        42,
+        105,
+        550,
+        154
+      ],
+      "geometry": "rect",
+      "text": "STINGRAY digital product definition",
+      "textPreview": "STINGRAY digital product definition",
+      "resolvedFontSize": 52,
+      "resolvedTextStyle": {
+        "fontSize": 52,
+        "typeface": "+mn-lt",
+        "color": "#000000",
+        "bold": true,
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "STINGRAY digital"
+          },
+          {
+            "index": 2,
+            "text": "product definition"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "STINGRAY digital product definition",
+          "resolvedTextStyle": {
+            "fontSize": 52,
+            "color": "#000000",
+            "bold": true
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "STINGRAY digital product definition",
+              "fontSize": 52,
+              "color": "#000000",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 3,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/r6lg3m5o",
+      "id": "3",
+      "name": "cover-claim",
+      "bbox": [
+        42,
+        287,
+        540,
+        108
+      ],
+      "geometry": "rect",
+      "text": "The mechanism is digitally coherent. The inflation architecture is not releaseable.",
+      "textPreview": "The mechanism is digitally coherent. The inflation architecture is not releaseable.",
+      "resolvedFontSize": 25,
+      "resolvedTextStyle": {
+        "fontSize": 25,
+        "typeface": "+mn-lt",
+        "color": "#000000",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "The mechanism is digitally coherent. The inflation"
+          },
+          {
+            "index": 2,
+            "text": "architecture is not releaseable."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "The mechanism is digitally coherent. The inflation architecture is not releaseable.",
+          "resolvedTextStyle": {
+            "fontSize": 25,
+            "color": "#000000"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "The mechanism is digitally coherent. The inflation architecture is not releaseable.",
+              "fontSize": 25,
+              "color": "#000000"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 4,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/gbehgrml",
+      "id": "4",
+      "name": "cover-status-panel",
+      "bbox": [
+        42,
+        462,
+        540,
+        44
+      ],
+      "geometry": "roundRect",
+      "fillColor": "#FEE4E2",
+      "lineColor": "#B42318",
+      "lineWidth": 1
+    },
+    {
+      "order": 5,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/1cni9wnq",
+      "id": "5",
+      "name": "cover-status-text",
+      "bbox": [
+        56,
+        472,
+        512,
+        24
+      ],
+      "geometry": "rect",
+      "text": "NOT RELEASED FOR FABRICATION OR FIELD USE",
+      "textPreview": "NOT RELEASED FOR FABRICATION OR FIELD USE",
+      "resolvedFontSize": 16,
+      "resolvedTextStyle": {
+        "fontSize": 16,
+        "typeface": "+mn-lt",
+        "color": "#B42318",
+        "bold": true,
+        "alignment": "center",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "NOT RELEASED FOR FABRICATION OR FIELD USE"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "NOT RELEASED FOR FABRICATION OR FIELD USE",
+          "resolvedTextStyle": {
+            "fontSize": 16,
+            "color": "#B42318",
+            "bold": true,
+            "alignment": "center"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "NOT RELEASED FOR FABRICATION OR FIELD USE",
+              "fontSize": 16,
+              "color": "#B42318",
+              "bold": true,
+              "alignment": "center"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 6,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/e9wzeh4f",
+      "id": "6",
+      "name": "cover-config",
+      "bbox": [
+        42,
+        544,
+        545,
+        78
+      ],
+      "geometry": "rect",
+      "text": "Frozen configuration: 1,675.4 mm rigid body | 355 mm arm pivot | external 60 L buoy pack",
+      "textPreview": "Frozen configuration: 1,675.4 mm rigid body | 355 mm arm pivot | external 60 L buoy pack",
+      "resolvedFontSize": 17,
+      "resolvedTextStyle": {
+        "fontSize": 17,
+        "typeface": "+mn-lt",
+        "color": "#475569",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Frozen configuration: 1,675.4 mm rigid body | 355 mm arm pivot | external"
+          },
+          {
+            "index": 2,
+            "text": "60 L buoy pack"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Frozen configuration: 1,675.4 mm rigid body | 355 mm arm pivot | external 60 L buoy pack",
+          "resolvedTextStyle": {
+            "fontSize": 17,
+            "color": "#475569"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Frozen configuration: 1,675.4 mm rigid body | 355 mm arm pivot | external 60 L buoy pack",
+              "fontSize": 17,
+              "color": "#475569"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 7,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/fa5g7m50",
+      "id": "7",
+      "name": "cover-image-backing",
+      "bbox": [
+        650,
+        42,
+        588,
+        588
+      ],
+      "geometry": "roundRect",
+      "fillColor": "#FFFFFF",
+      "lineColor": "#B8BCC4",
+      "lineWidth": 1
+    },
+    {
+      "order": 8,
+      "kind": "image",
+      "scope": "slide",
+      "aid": "im/x8rqp8ni",
+      "id": "8",
+      "bbox": [
+        650,
+        42,
+        588,
+        588
+      ],
+      "geometry": "roundRect",
+      "alt": "CAD-derived deployed system with extended arms and inflated external buoy",
+      "contentType": "image/png",
+      "imageFit": "contain",
+      "imageMask": {
+        "geometry": "roundRect",
+        "adjustmentList": [
+          {
+            "name": "adj",
+            "formula": "val 2041"
+          }
+        ]
+      },
+      "asset": {
+        "assetId": "b48ad55f-6a3d-4bac-b1f8-46565e56e978",
+        "contentType": "image/png",
+        "byteLength": 123619
+      }
+    },
+    {
+      "order": 9,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/pg7idwn2",
+      "id": "9",
+      "name": "evidence-1",
+      "bbox": [
+        42,
+        669,
+        1090,
+        24
+      ],
+      "geometry": "rect",
+      "text": "Evidence: Release Index; Non-Release Exception Report",
+      "textPreview": "Evidence: Release Index; Non-Release Exception Report",
+      "resolvedFontSize": 11,
+      "resolvedTextStyle": {
+        "fontSize": 11,
+        "typeface": "+mn-lt",
+        "color": "#475569",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Evidence: Release Index; Non-Release Exception Report"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Evidence: Release Index; Non-Release Exception Report",
+          "resolvedTextStyle": {
+            "fontSize": 11,
+            "color": "#475569"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Evidence: Release Index; Non-Release Exception Report",
+              "fontSize": 11,
+              "color": "#475569"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 10,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/tsjmhwfi",
+      "id": "10",
+      "name": "page-1",
+      "bbox": [
+        1182,
+        669,
+        56,
+        24
+      ],
+      "geometry": "rect",
+      "text": "1",
+      "textPreview": "1",
+      "resolvedFontSize": 11,
+      "resolvedTextStyle": {
+        "fontSize": 11,
+        "typeface": "+mn-lt",
+        "color": "#475569",
+        "bold": true,
+        "alignment": "right",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "1"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "1",
+          "resolvedTextStyle": {
+            "fontSize": 11,
+            "color": "#475569",
+            "bold": true,
+            "alignment": "right"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "1",
+              "fontSize": 11,
+              "color": "#475569",
+              "bold": true,
+              "alignment": "right"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    }
+  ],
+  "composeRuns": []
+}

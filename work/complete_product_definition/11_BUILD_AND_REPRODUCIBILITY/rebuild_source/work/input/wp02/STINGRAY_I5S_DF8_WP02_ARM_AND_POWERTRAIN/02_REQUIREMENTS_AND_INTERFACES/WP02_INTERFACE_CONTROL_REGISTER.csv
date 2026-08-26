@@ -1,0 +1,7 @@
+interface_id,interface,definition,owner,status
+IF-WP02-001,WP01 core,"r <= 18.0 mm, Z=460-970 for central cartridge hardware",WP01/WP02,PASS; minimum configured radial margin recorded
+IF-WP02-002,WP01 arm bays/covers,Arm planes 0/120/240; covers open 90 degrees before arm motion,WP01/WP02,PASS at sampled motion states
+IF-WP02-003,WP03 release,Radial crosshead sear interface; exact cable/end fitting WP03-owned,WP02/WP03,CONTROLLED ENVELOPE; downstream detail open
+IF-WP02-004,WP04 aft boundary,No WP02 rigid occurrence aft of Z=970 except arm blades in WP02 arm-sweep volume,WP02/WP04,PASS
+IF-WP02-005,GS charge specification,"GS-19-50-V4A-B8-B8, 300 +/- 30 N F1 at 20 C",WP02/procurement,ORDER RECORD/CERTIFICATE REQUIRED
+IF-WP02-006,HBD protected cartridge,Protected/drained module interior; no credit for direct saltwater exposure qualification,WP01/WP02,PHYSICAL ENVIRONMENTAL VERIFICATION OPEN

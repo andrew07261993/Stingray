@@ -1,0 +1,9 @@
+failure_id,failure_mode,effect,digital_control,physical_verification,status
+FM-001,GS loses force,Primary assist unavailable,LHL 625D 12 completes zero-GS case,zero-GS deployments at attitude/temperature extremes,OPEN PHYSICAL VERIFICATION
+FM-002,Backup spring unavailable/broken,Redundant path unavailable,300 N GS-only model reaches locks,spring-removed GS-only deployment,OPEN PHYSICAL VERIFICATION
+FM-003,HBD seizes,Could block both drives,450 N captive detent releases nonfragmenting bypass,"jam fixture, fragment/capture and residual-clearance test",OPEN CALIBRATION/TEST
+FM-004,HBD loses damping,Higher terminal energy,"positive stops, replaceable pads and locks retained; energy case recorded",damping-loss impact and rebound test,OPEN PHYSICAL VERIFICATION
+FM-005,One arm/link binds,Asymmetric deployment/load,150 N extra-bind sensitivity case and independent locks,induced-bind test and link/pin load measurement,OPEN PHYSICAL VERIFICATION
+FM-006,Lock fails to engage,Arm may fold after drive loss,three captive plungers with direct witness features,"engagement gauge, proof and reverse-load test",OPEN PROOF TEST
+FM-007,Cover fails to open first,Arm/cover collision,cover-sequenced stow pawls and 90-degree-open motion audit,cover torque/debris/icing/saltwater sequence tests,OPEN PHYSICAL VERIFICATION
+FM-008,Corrosion/contamination in protected cartridge,"Friction, jam or COTS degradation",protected/drained boundary requirement and corrosion-resistant moving hardware,"saltwater soak, drainage, contamination and post-soak force test",OPEN ENVIRONMENTAL TEST

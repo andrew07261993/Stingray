@@ -1,0 +1,40 @@
+{
+  "STOWED": {
+    "state": "STOWED",
+    "changed_occurrence_count": 70,
+    "invalid_changed_occurrence_count": 0,
+    "invalid_changed_occurrences": [],
+    "disconnected_changed_nominal_body_count": 0,
+    "disconnected_changed_nominal_bodies": [],
+    "open_or_invalid_shell_count": 0,
+    "open_or_invalid_shells": [],
+    "tiny_unintended_edge_count": 0,
+    "tiny_unintended_edges": [],
+    "sliver_face_count": 0,
+    "sliver_faces": [],
+    "nonmanifold_topology_count": 0,
+    "abrupt_unintended_surface_normal_discontinuity_count": 0,
+    "broken_radius_or_fillet_count": 0,
+    "blocked_boolean_count": 0,
+    "accepted": true
+  },
+  "DEPLOYED": {
+    "state": "DEPLOYED",
+    "changed_occurrence_count": 70,
+    "invalid_changed_occurrence_count": 0,
+    "invalid_changed_occurrences": [],
+    "disconnected_changed_nominal_body_count": 0,
+    "disconnected_changed_nominal_bodies": [],
+    "open_or_invalid_shell_count": 0,
+    "open_or_invalid_shells": [],
+    "tiny_unintended_edge_count": 0,
+    "tiny_unintended_edges": [],
+    "sliver_face_count": 0,
+    "sliver_faces": [],
+    "nonmanifold_topology_count": 0,
+    "abrupt_unintended_surface_normal_discontinuity_count": 0,
+    "broken_radius_or_fillet_count": 0,
+    "blocked_boolean_count": 0,
+    "accepted": true
+  }
+}

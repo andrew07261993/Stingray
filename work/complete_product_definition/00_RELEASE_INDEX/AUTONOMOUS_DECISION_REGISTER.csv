@@ -1,0 +1,11 @@
+decision_id,decision,basis,effect,authority
+D-001,Use the newest Package 05 current configuration as the CAD anchor,Context CURRENT_STATE and newest local branch/commit,Preserves newer owner decisions over historical branches,COMMISSION-BOUNDED AUTONOMOUS ENGINEERING JUDGMENT
+D-002,Create isolated design/stingray-complete-product-definition branch,Commission section 25,Protects all occupied/dirty historical worktrees,COMMISSION-BOUNDED AUTONOMOUS ENGINEERING JUDGMENT
+D-003,Preserve protected owner inspection packages unchanged,Repository governance,No transfer package is modified or merged,COMMISSION-BOUNDED AUTONOMOUS ENGINEERING JUDGMENT
+D-004,Preserve owner-approved open DEPLOYED pack and separate closed STOWED state,Commission section 15,"Open pack is controlling intent, not a cleanup defect",COMMISSION-BOUNDED AUTONOMOUS ENGINEERING JUDGMENT
+D-005,"Do not invent Hydro 1F internals, suffix, ratings, or vendor CAD",Evidence discipline,Proxy remains explicit and blocks release,COMMISSION-BOUNDED AUTONOMOUS ENGINEERING JUDGMENT
+D-006,Freeze the second clean-build AP242 pair for validation,First/second rebuild comparison,Prevents later evidence from binding to an intermediate master,COMMISSION-BOUNDED AUTONOMOUS ENGINEERING JUDGMENT
+D-007,Record AP242 byte nondeterminism as a release exception,Identical seeded builds changed only STEP presentation/style ordering and hashes,Inventories/mass are stable; byte PASS is not claimed,COMMISSION-BOUNDED AUTONOMOUS ENGINEERING JUDGMENT
+D-008,Reject the 12 g / 60 L inflation pairing,Independent ideal-gas calculation,Architecture correction is mandatory,COMMISSION-BOUNDED AUTONOMOUS ENGINEERING JUDGMENT
+D-009,Deliver maximum-complete non-release package,Commission terminal exception clause,All unaffected digital/documentary work continues without invented evidence,COMMISSION-BOUNDED AUTONOMOUS ENGINEERING JUDGMENT
+D-010,"No procurement, fabrication, qualification, or main-branch merge",Authority boundary,Final branch is evidence only,COMMISSION-BOUNDED AUTONOMOUS ENGINEERING JUDGMENT

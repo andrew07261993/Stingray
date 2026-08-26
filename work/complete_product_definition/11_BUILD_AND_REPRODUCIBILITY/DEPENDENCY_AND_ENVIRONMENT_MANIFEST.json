@@ -1,0 +1,564 @@
+{
+  "status": "MAXIMUM-COMPLETE DIGITAL DEVELOPMENT PACKAGE - NOT RELEASED FOR FABRICATION, PROCUREMENT, QUALIFICATION, OR FIELD USE",
+  "python_runtime_observed": "3.12.10",
+  "python_executable": "C:\\Users\\ANDRE.ANDREWSPC\\Documents\\Codex\\2026-08-22\\stingray-i5-s-df8-codex-one\\stingray-i5s-df8-cad\\work\\cadenv\\Scripts\\python.exe",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "authoring_sources": [
+    {
+      "path": "work/r2_source/audit_state_parity_provenance.py",
+      "source_kind": "PYTHON",
+      "bytes": 41604,
+      "sha256": "bd63bae4eb5ede8db60b9ae1c7fa6beb77b5d7fbd65f9999558af5b35c9ec931"
+    },
+    {
+      "path": "work/r2_source/authoring_pair_audit.py",
+      "source_kind": "PYTHON",
+      "bytes": 2664,
+      "sha256": "4543423974d08f24c2c9578fbcc0d2488d9694e75b2fbc5a52b29dc7614646f5"
+    },
+    {
+      "path": "work/r2_source/build_complete_product_definition_deck.mjs",
+      "source_kind": "NODE_ESM",
+      "bytes": 25929,
+      "sha256": "6893c816c6ea2871041ae1fd3285c967167b8593d5bde34218bdef156e398b0a"
+    },
+    {
+      "path": "work/r2_source/build_executive_pdf.py",
+      "source_kind": "PYTHON",
+      "bytes": 2102,
+      "sha256": "b22944ec2cc66f5fe4eb0b60a69f9b467f487c945893751c26529f5bf14da756"
+    },
+    {
+      "path": "work/r2_source/build_r2.py",
+      "source_kind": "PYTHON",
+      "bytes": 230698,
+      "sha256": "4eab6b49fbbce5db4f1df9406a7f9b46a450da1b2a8f75326a173d035a437868"
+    },
+    {
+      "path": "work/r2_source/build_workbook.mjs",
+      "source_kind": "NODE_ESM",
+      "bytes": 124758,
+      "sha256": "bad5ff57778c27ee2773e8cde77d437c67bf3de708a8642fcc1fb7683a40564c"
+    },
+    {
+      "path": "work/r2_source/compare_source_reimport.py",
+      "source_kind": "PYTHON",
+      "bytes": 11709,
+      "sha256": "f3a7b6314b7217737e642bf0af71a32eb33e96054762539ff2bde96ae8b50777"
+    },
+    {
+      "path": "work/r2_source/complete_product_definition_reports.py",
+      "source_kind": "PYTHON",
+      "bytes": 85935,
+      "sha256": "8f16756360d692791d904aa0cafd54a6bc3d04e948fa98291d8b4d03b4ad7101"
+    },
+    {
+      "path": "work/r2_source/export_components.py",
+      "source_kind": "PYTHON",
+      "bytes": 14100,
+      "sha256": "deda83d02e741ca8f0a361fc8337834a56e5cabee0779d2390aeed1165de115e"
+    },
+    {
+      "path": "work/r2_source/final_detail_checkpoint.py",
+      "source_kind": "PYTHON",
+      "bytes": 13426,
+      "sha256": "dc8802620c423f69019b9b596b9c4e8853c8cdcdf06f4a1545c102719177d52b"
+    },
+    {
+      "path": "work/r2_source/final_detail_naming.py",
+      "source_kind": "PYTHON",
+      "bytes": 9376,
+      "sha256": "3a63f76404d31a4fe265f82503ff9e72a9d485bbd111858ceb321963e14025c0"
+    },
+    {
+      "path": "work/r2_source/finalize_complete_product_definition.py",
+      "source_kind": "PYTHON",
+      "bytes": 5958,
+      "sha256": "acd4ab90c8b482159c4cd12d0c6e65cb2c0a0ffd3403f9e9cb377afa3c48ccc6"
+    },
+    {
+      "path": "work/r2_source/finalize_forward_arm_boolean_evidence.py",
+      "source_kind": "PYTHON",
+      "bytes": 4143,
+      "sha256": "5308403c429f72abcffa5a6c6587e7995f6828bca9626e49ece7cabd5579295d"
+    },
+    {
+      "path": "work/r2_source/forward_arm_five_angle_boolean.py",
+      "source_kind": "PYTHON",
+      "bytes": 8074,
+      "sha256": "b1415dfb7a5653bc661e96499af4d1c4384dbc296884e456d843339072a02c65"
+    },
+    {
+      "path": "work/r2_source/forward_arm_repack_config.py",
+      "source_kind": "PYTHON",
+      "bytes": 878,
+      "sha256": "a091f0a95c67b3ed8b6922d9db6148a0b6f36b2c3fa3f4b96b2e185ab1adbd97"
+    },
+    {
+      "path": "work/r2_source/forward_arm_repack_mass.py",
+      "source_kind": "PYTHON",
+      "bytes": 2501,
+      "sha256": "fe43f41510006838b9c054e146ff1895e41adb6f9c04c853748f9802a040ddbc"
+    },
+    {
+      "path": "work/r2_source/forward_arm_repack_render.py",
+      "source_kind": "PYTHON",
+      "bytes": 2916,
+      "sha256": "ef0eb0a9ddc9fb0add3c6dc365a1d8ebd878b704109c1b6ca9a71d74d96df1b0"
+    },
+    {
+      "path": "work/r2_source/forward_arm_repack_trim_combine.py",
+      "source_kind": "PYTHON",
+      "bytes": 1191,
+      "sha256": "ef87210c643f2cdc13d4e8059a881ca667f458bfb304154cea24c06dd27e6a4e"
+    },
+    {
+      "path": "work/r2_source/forward_arm_repack_validate.py",
+      "source_kind": "PYTHON",
+      "bytes": 3361,
+      "sha256": "59b40d594bb8c254f6a8eaa103e79b83ca4faa644f95f4753057c8dd2793c170"
+    },
+    {
+      "path": "work/r2_source/freeze_independent_review_packet.py",
+      "source_kind": "PYTHON",
+      "bytes": 5752,
+      "sha256": "f9d4d5f27346166159b264b6eb588bb54d91271f868971589dfa992fec9fe2a8"
+    },
+    {
+      "path": "work/r2_source/package_forward_arm_inspection.py",
+      "source_kind": "PYTHON",
+      "bytes": 2683,
+      "sha256": "b769844efba0b7303bcda90e25f7abc5e52c0e03d84aca69f555e0c5f3871d83"
+    },
+    {
+      "path": "work/r2_source/package_r2.py",
+      "source_kind": "PYTHON",
+      "bytes": 26208,
+      "sha256": "92ea82e14504626ea186c0cea10a7ba78963c7bc0d6c9d26619761f7645ecd36"
+    },
+    {
+      "path": "work/r2_source/per_solid_authoring_audit.py",
+      "source_kind": "PYTHON",
+      "bytes": 8929,
+      "sha256": "1430e9c0a010bf1442c97a572c1ce453b50b8ec9923220349890bd42d42f6b50"
+    },
+    {
+      "path": "work/r2_source/r2_final_scope.py",
+      "source_kind": "PYTHON",
+      "bytes": 43720,
+      "sha256": "3fa506010aaf367f97ea8cd6eeedf193fbaf196b535166d6264d1a42d707c69b"
+    },
+    {
+      "path": "work/r2_source/r2_geometry.py",
+      "source_kind": "PYTHON",
+      "bytes": 79334,
+      "sha256": "204104a3e01c3f8bd598f3bc6e137d0217417d7879167f9f508a49c0f34bf323"
+    },
+    {
+      "path": "work/r2_source/r2_hardware.py",
+      "source_kind": "PYTHON",
+      "bytes": 33516,
+      "sha256": "c6e3211aeb9b19a4a40118c00e38e86be86f411b65df6010737c7641c138dcb8"
+    },
+    {
+      "path": "work/r2_source/r2_hierarchy.py",
+      "source_kind": "PYTHON",
+      "bytes": 4131,
+      "sha256": "efb6d27409fbb6246680d35cdccd0f1f6b855f6ecaa1eae5e8552b232ef92be9"
+    },
+    {
+      "path": "work/r2_source/render_evidence.py",
+      "source_kind": "PYTHON",
+      "bytes": 9659,
+      "sha256": "3a7d03edea7a51c14b604eb30da9f422c4c84ae899f9ba2236279050552454de"
+    },
+    {
+      "path": "work/r2_source/short14_export_part_catalog.py",
+      "source_kind": "PYTHON",
+      "bytes": 11476,
+      "sha256": "14e5e1ad03e2a3b80bad6d365dc5814b4c6161ef81ecf2734f3746093c4873a9"
+    },
+    {
+      "path": "work/r2_source/short14_external_buoy_build.py",
+      "source_kind": "PYTHON",
+      "bytes": 87027,
+      "sha256": "69ed97f9a4afdbe0a682eb7758f11a05a0f486b2bad31d5494d366bf8b3e1246"
+    },
+    {
+      "path": "work/r2_source/short14_external_buoy_config.py",
+      "source_kind": "PYTHON",
+      "bytes": 2632,
+      "sha256": "656271c9cc6abee13dcae631dfd71fe83e7bca848e897e15e27c9c7875763f4f"
+    },
+    {
+      "path": "work/r2_source/short14_external_buoy_postrender.py",
+      "source_kind": "PYTHON",
+      "bytes": 15837,
+      "sha256": "06feb41d3704a16f0cc77594c69a1d60897e639f9dafa40199667cdad44e093a"
+    },
+    {
+      "path": "work/r2_source/short14_external_buoy_render.py",
+      "source_kind": "PYTHON",
+      "bytes": 6923,
+      "sha256": "f9a1ae851fe956a42d6f1dfbe35fa01ca6ba6e2768cd5c8beafd925c7e0473f3"
+    },
+    {
+      "path": "work/r2_source/short14_full_motion_staged.py",
+      "source_kind": "PYTHON",
+      "bytes": 9175,
+      "sha256": "860565c7cdee704667aa49d124e9f1ea1fb1bddc5763feaf9678bfe55c905596"
+    },
+    {
+      "path": "work/r2_source/short14_motion_gate.py",
+      "source_kind": "PYTHON",
+      "bytes": 12615,
+      "sha256": "bf8caf6d36c20e8318878248e7989432644189c3dfd28fc85499d7c351b02e4f"
+    },
+    {
+      "path": "work/r2_source/short14_package_evidence.py",
+      "source_kind": "PYTHON",
+      "bytes": 62108,
+      "sha256": "0b219d538c495948cd545a8b4f88066ec0df6da994df29030ee236fa8d064bde"
+    },
+    {
+      "path": "work/r2_source/short14_validate_endpoints.py",
+      "source_kind": "PYTHON",
+      "bytes": 20286,
+      "sha256": "fe70430f74e1b36b3330336ededbe8b7795a915aca6ecd27a225e45aec19f3e2"
+    },
+    {
+      "path": "work/r2_source/stage_complete_product_definition.py",
+      "source_kind": "PYTHON",
+      "bytes": 10729,
+      "sha256": "d03af43b3d573eadce4fc4e4a7e01397da21f46a4355616245ce476702c9bf1e"
+    },
+    {
+      "path": "work/r2_source/validate_complete_product_definition.py",
+      "source_kind": "PYTHON",
+      "bytes": 17729,
+      "sha256": "07fafc691f027b6e7c9f58d4c87eaeb2930399f7063e0875809c617ca65de57a"
+    },
+    {
+      "path": "work/r2_source/validate_r2.py",
+      "source_kind": "PYTHON",
+      "bytes": 244099,
+      "sha256": "74e7be4a2bce5c273f43b0acdc05c09d739f3ea5ad93d2ffbf7df790634b5e10"
+    },
+    {
+      "path": "work/r2_source/vendor_shapes.py",
+      "source_kind": "PYTHON",
+      "bytes": 3361,
+      "sha256": "544a4a63ffe08056cdb79072b5ec32327aaa763947b3b0fc45e8a4961e4d5431"
+    },
+    {
+      "path": "work/r2_source/verify_extracted_complete_product_definition.py",
+      "source_kind": "PYTHON",
+      "bytes": 8109,
+      "sha256": "bf073920505c79da48806fd83359ce9ad572dd73aa038e2edcd06084e5300dd1"
+    }
+  ],
+  "required_python_modules": [
+    "cadquery",
+    "OCP",
+    "numpy",
+    "matplotlib"
+  ],
+  "required_source_trees": [
+    "work/r2_source",
+    "work/input",
+    "work/forward_arm_repack"
+  ],
+  "reproducibility_exception": "Inventories and mass properties reproduce byte-for-byte; OCCT AP242 presentation-style entity ordering changes file bytes across identical seeded builds.",
+  "cadquery_version": "2.8.0",
+  "ocp_version": "7.9.3.1",
+  "source_inventory_scope": "Every direct .py and .mjs file delivered under work/r2_source; refreshed by stage_complete_product_definition.py after byte-verified staging.",
+  "source_inventory_file_count": 42,
+  "delivered_source_inventory": [
+    {
+      "path": "work/r2_source/audit_state_parity_provenance.py",
+      "source_kind": "PYTHON",
+      "bytes": 41604,
+      "sha256": "bd63bae4eb5ede8db60b9ae1c7fa6beb77b5d7fbd65f9999558af5b35c9ec931"
+    },
+    {
+      "path": "work/r2_source/authoring_pair_audit.py",
+      "source_kind": "PYTHON",
+      "bytes": 2664,
+      "sha256": "4543423974d08f24c2c9578fbcc0d2488d9694e75b2fbc5a52b29dc7614646f5"
+    },
+    {
+      "path": "work/r2_source/build_complete_product_definition_deck.mjs",
+      "source_kind": "NODE_ESM",
+      "bytes": 25929,
+      "sha256": "6893c816c6ea2871041ae1fd3285c967167b8593d5bde34218bdef156e398b0a"
+    },
+    {
+      "path": "work/r2_source/build_executive_pdf.py",
+      "source_kind": "PYTHON",
+      "bytes": 2102,
+      "sha256": "b22944ec2cc66f5fe4eb0b60a69f9b467f487c945893751c26529f5bf14da756"
+    },
+    {
+      "path": "work/r2_source/build_r2.py",
+      "source_kind": "PYTHON",
+      "bytes": 230698,
+      "sha256": "4eab6b49fbbce5db4f1df9406a7f9b46a450da1b2a8f75326a173d035a437868"
+    },
+    {
+      "path": "work/r2_source/build_workbook.mjs",
+      "source_kind": "NODE_ESM",
+      "bytes": 124758,
+      "sha256": "bad5ff57778c27ee2773e8cde77d437c67bf3de708a8642fcc1fb7683a40564c"
+    },
+    {
+      "path": "work/r2_source/compare_source_reimport.py",
+      "source_kind": "PYTHON",
+      "bytes": 11709,
+      "sha256": "f3a7b6314b7217737e642bf0af71a32eb33e96054762539ff2bde96ae8b50777"
+    },
+    {
+      "path": "work/r2_source/complete_product_definition_reports.py",
+      "source_kind": "PYTHON",
+      "bytes": 85935,
+      "sha256": "8f16756360d692791d904aa0cafd54a6bc3d04e948fa98291d8b4d03b4ad7101"
+    },
+    {
+      "path": "work/r2_source/export_components.py",
+      "source_kind": "PYTHON",
+      "bytes": 14100,
+      "sha256": "deda83d02e741ca8f0a361fc8337834a56e5cabee0779d2390aeed1165de115e"
+    },
+    {
+      "path": "work/r2_source/final_detail_checkpoint.py",
+      "source_kind": "PYTHON",
+      "bytes": 13426,
+      "sha256": "dc8802620c423f69019b9b596b9c4e8853c8cdcdf06f4a1545c102719177d52b"
+    },
+    {
+      "path": "work/r2_source/final_detail_naming.py",
+      "source_kind": "PYTHON",
+      "bytes": 9376,
+      "sha256": "3a63f76404d31a4fe265f82503ff9e72a9d485bbd111858ceb321963e14025c0"
+    },
+    {
+      "path": "work/r2_source/finalize_complete_product_definition.py",
+      "source_kind": "PYTHON",
+      "bytes": 5958,
+      "sha256": "acd4ab90c8b482159c4cd12d0c6e65cb2c0a0ffd3403f9e9cb377afa3c48ccc6"
+    },
+    {
+      "path": "work/r2_source/finalize_forward_arm_boolean_evidence.py",
+      "source_kind": "PYTHON",
+      "bytes": 4143,
+      "sha256": "5308403c429f72abcffa5a6c6587e7995f6828bca9626e49ece7cabd5579295d"
+    },
+    {
+      "path": "work/r2_source/forward_arm_five_angle_boolean.py",
+      "source_kind": "PYTHON",
+      "bytes": 8074,
+      "sha256": "b1415dfb7a5653bc661e96499af4d1c4384dbc296884e456d843339072a02c65"
+    },
+    {
+      "path": "work/r2_source/forward_arm_repack_config.py",
+      "source_kind": "PYTHON",
+      "bytes": 878,
+      "sha256": "a091f0a95c67b3ed8b6922d9db6148a0b6f36b2c3fa3f4b96b2e185ab1adbd97"
+    },
+    {
+      "path": "work/r2_source/forward_arm_repack_mass.py",
+      "source_kind": "PYTHON",
+      "bytes": 2501,
+      "sha256": "fe43f41510006838b9c054e146ff1895e41adb6f9c04c853748f9802a040ddbc"
+    },
+    {
+      "path": "work/r2_source/forward_arm_repack_render.py",
+      "source_kind": "PYTHON",
+      "bytes": 2916,
+      "sha256": "ef0eb0a9ddc9fb0add3c6dc365a1d8ebd878b704109c1b6ca9a71d74d96df1b0"
+    },
+    {
+      "path": "work/r2_source/forward_arm_repack_trim_combine.py",
+      "source_kind": "PYTHON",
+      "bytes": 1191,
+      "sha256": "ef87210c643f2cdc13d4e8059a881ca667f458bfb304154cea24c06dd27e6a4e"
+    },
+    {
+      "path": "work/r2_source/forward_arm_repack_validate.py",
+      "source_kind": "PYTHON",
+      "bytes": 3361,
+      "sha256": "59b40d594bb8c254f6a8eaa103e79b83ca4faa644f95f4753057c8dd2793c170"
+    },
+    {
+      "path": "work/r2_source/freeze_independent_review_packet.py",
+      "source_kind": "PYTHON",
+      "bytes": 5752,
+      "sha256": "f9d4d5f27346166159b264b6eb588bb54d91271f868971589dfa992fec9fe2a8"
+    },
+    {
+      "path": "work/r2_source/package_forward_arm_inspection.py",
+      "source_kind": "PYTHON",
+      "bytes": 2683,
+      "sha256": "b769844efba0b7303bcda90e25f7abc5e52c0e03d84aca69f555e0c5f3871d83"
+    },
+    {
+      "path": "work/r2_source/package_r2.py",
+      "source_kind": "PYTHON",
+      "bytes": 26208,
+      "sha256": "92ea82e14504626ea186c0cea10a7ba78963c7bc0d6c9d26619761f7645ecd36"
+    },
+    {
+      "path": "work/r2_source/per_solid_authoring_audit.py",
+      "source_kind": "PYTHON",
+      "bytes": 8929,
+      "sha256": "1430e9c0a010bf1442c97a572c1ce453b50b8ec9923220349890bd42d42f6b50"
+    },
+    {
+      "path": "work/r2_source/r2_final_scope.py",
+      "source_kind": "PYTHON",
+      "bytes": 43720,
+      "sha256": "3fa506010aaf367f97ea8cd6eeedf193fbaf196b535166d6264d1a42d707c69b"
+    },
+    {
+      "path": "work/r2_source/r2_geometry.py",
+      "source_kind": "PYTHON",
+      "bytes": 79334,
+      "sha256": "204104a3e01c3f8bd598f3bc6e137d0217417d7879167f9f508a49c0f34bf323"
+    },
+    {
+      "path": "work/r2_source/r2_hardware.py",
+      "source_kind": "PYTHON",
+      "bytes": 33516,
+      "sha256": "c6e3211aeb9b19a4a40118c00e38e86be86f411b65df6010737c7641c138dcb8"
+    },
+    {
+      "path": "work/r2_source/r2_hierarchy.py",
+      "source_kind": "PYTHON",
+      "bytes": 4131,
+      "sha256": "efb6d27409fbb6246680d35cdccd0f1f6b855f6ecaa1eae5e8552b232ef92be9"
+    },
+    {
+      "path": "work/r2_source/render_evidence.py",
+      "source_kind": "PYTHON",
+      "bytes": 9659,
+      "sha256": "3a7d03edea7a51c14b604eb30da9f422c4c84ae899f9ba2236279050552454de"
+    },
+    {
+      "path": "work/r2_source/short14_export_part_catalog.py",
+      "source_kind": "PYTHON",
+      "bytes": 11476,
+      "sha256": "14e5e1ad03e2a3b80bad6d365dc5814b4c6161ef81ecf2734f3746093c4873a9"
+    },
+    {
+      "path": "work/r2_source/short14_external_buoy_build.py",
+      "source_kind": "PYTHON",
+      "bytes": 87027,
+      "sha256": "69ed97f9a4afdbe0a682eb7758f11a05a0f486b2bad31d5494d366bf8b3e1246"
+    },
+    {
+      "path": "work/r2_source/short14_external_buoy_config.py",
+      "source_kind": "PYTHON",
+      "bytes": 2632,
+      "sha256": "656271c9cc6abee13dcae631dfd71fe83e7bca848e897e15e27c9c7875763f4f"
+    },
+    {
+      "path": "work/r2_source/short14_external_buoy_postrender.py",
+      "source_kind": "PYTHON",
+      "bytes": 15837,
+      "sha256": "06feb41d3704a16f0cc77594c69a1d60897e639f9dafa40199667cdad44e093a"
+    },
+    {
+      "path": "work/r2_source/short14_external_buoy_render.py",
+      "source_kind": "PYTHON",
+      "bytes": 6923,
+      "sha256": "f9a1ae851fe956a42d6f1dfbe35fa01ca6ba6e2768cd5c8beafd925c7e0473f3"
+    },
+    {
+      "path": "work/r2_source/short14_full_motion_staged.py",
+      "source_kind": "PYTHON",
+      "bytes": 9175,
+      "sha256": "860565c7cdee704667aa49d124e9f1ea1fb1bddc5763feaf9678bfe55c905596"
+    },
+    {
+      "path": "work/r2_source/short14_motion_gate.py",
+      "source_kind": "PYTHON",
+      "bytes": 12615,
+      "sha256": "bf8caf6d36c20e8318878248e7989432644189c3dfd28fc85499d7c351b02e4f"
+    },
+    {
+      "path": "work/r2_source/short14_package_evidence.py",
+      "source_kind": "PYTHON",
+      "bytes": 62108,
+      "sha256": "0b219d538c495948cd545a8b4f88066ec0df6da994df29030ee236fa8d064bde"
+    },
+    {
+      "path": "work/r2_source/short14_validate_endpoints.py",
+      "source_kind": "PYTHON",
+      "bytes": 20286,
+      "sha256": "fe70430f74e1b36b3330336ededbe8b7795a915aca6ecd27a225e45aec19f3e2"
+    },
+    {
+      "path": "work/r2_source/stage_complete_product_definition.py",
+      "source_kind": "PYTHON",
+      "bytes": 10729,
+      "sha256": "d03af43b3d573eadce4fc4e4a7e01397da21f46a4355616245ce476702c9bf1e"
+    },
+    {
+      "path": "work/r2_source/validate_complete_product_definition.py",
+      "source_kind": "PYTHON",
+      "bytes": 17729,
+      "sha256": "07fafc691f027b6e7c9f58d4c87eaeb2930399f7063e0875809c617ca65de57a"
+    },
+    {
+      "path": "work/r2_source/validate_r2.py",
+      "source_kind": "PYTHON",
+      "bytes": 244099,
+      "sha256": "74e7be4a2bce5c273f43b0acdc05c09d739f3ea5ad93d2ffbf7df790634b5e10"
+    },
+    {
+      "path": "work/r2_source/vendor_shapes.py",
+      "source_kind": "PYTHON",
+      "bytes": 3361,
+      "sha256": "544a4a63ffe08056cdb79072b5ec32327aaa763947b3b0fc45e8a4961e4d5431"
+    },
+    {
+      "path": "work/r2_source/verify_extracted_complete_product_definition.py",
+      "source_kind": "PYTHON",
+      "bytes": 8109,
+      "sha256": "bf073920505c79da48806fd83359ce9ad572dd73aa038e2edcd06084e5300dd1"
+    }
+  ],
+  "required_python_modules_by_scope": {
+    "cad_build_and_validation": [
+      "cadquery",
+      "OCP",
+      "numpy",
+      "matplotlib"
+    ],
+    "package_audit_and_extraction": [
+      "Pillow",
+      "pypdf"
+    ],
+    "executive_pdf_authoring": [
+      "reportlab"
+    ]
+  },
+  "required_node_modules_by_scope": {
+    "executive_presentation_authoring": [
+      "@oai/artifact-tool"
+    ],
+    "historical_workbook_authoring": [
+      "@oai/artifact-tool"
+    ]
+  },
+  "required_native_tools_by_scope": {
+    "pptx_render_and_overflow_qa": [
+      "LibreOffice-compatible headless renderer"
+    ],
+    "pdf_inspection_and_render_qa": [
+      "Poppler pdfinfo",
+      "Poppler pdftoppm"
+    ]
+  },
+  "reviewed_status_transition_procedure": "11_BUILD_AND_REPRODUCIBILITY/CONTROLLED_STATUS_TRANSITION_PROCEDURE.md",
+  "manifest_refresh_status": "PASS - ALL DELIVERED PIPELINE SOURCES HASH-BOUND"
+}

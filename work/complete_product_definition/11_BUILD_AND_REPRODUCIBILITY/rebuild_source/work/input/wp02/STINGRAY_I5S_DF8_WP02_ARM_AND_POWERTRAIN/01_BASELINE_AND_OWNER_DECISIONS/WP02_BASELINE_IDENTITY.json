@@ -1,0 +1,29 @@
+{
+  "configuration_id": "STINGRAY-I5S-DF8-WP02-ARM-POWERTRAIN-2026-08-18-R1",
+  "df8_archive_sha256": "6da4deb5e920ab819ffc1ce720ef7934c792a539416b51f7b78acf18f76bed60",
+  "df8_master_sha256": "21862439478530435e3d1f55b5358711f2ed3d0799d0dd05e6b0452d5c1fd2d1",
+  "df8_parent_config": "STINGRAY-I5S-DF8-SPRING-EJECTOR-WIP-2026-08-18-R0",
+  "kinematic_solution": {
+    "crosshead_stroke_mm": 23.074390560079223,
+    "deployed": {
+      "attach_r_mm": 70.46827135542728,
+      "attach_z_mm": 631.0776862183426,
+      "crosshead_z_mm": 567.1280378531345,
+      "joint_mismatch_mm": 1.4210854715202004e-14,
+      "link_length_mm": 70.00000000000001,
+      "theta_deg": 80.0
+    },
+    "stowed": {
+      "attach_r_mm": 36.61083422530492,
+      "attach_z_mm": 659.9946693304737,
+      "crosshead_z_mm": 590.2024284132137,
+      "joint_mismatch_mm": 0.0,
+      "link_length_mm": 70.0,
+      "theta_deg": 1.0
+    }
+  },
+  "owner_response": "USE ALL RECOMMENDED DEFAULTS",
+  "revision": "DF8-WP02-R1",
+  "wp01_archive_sha256": "b55f23fb76b01bb8d6d17b6a6f7969f00f835199f762be1b53f80021cfff1685",
+  "wp01_parent_config": "STINGRAY-I5S-DF8-WP01-BODY-ENVELOPE-DATUMS-2026-08-18-R1"
+}

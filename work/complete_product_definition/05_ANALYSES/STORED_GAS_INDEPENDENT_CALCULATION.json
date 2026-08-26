@@ -1,0 +1,13 @@
+{
+  "cartridge_mass_g": 12.0,
+  "molar_mass_g_per_mol": 44.0095,
+  "moles": 0.2726684011406628,
+  "cold_0c_ideal_volume_l": 6.111581239054513,
+  "nominal_20c_ideal_volume_l": 6.5590702552767,
+  "hot_45c_ideal_volume_l": 7.118431525554435,
+  "buoy_nominal_volume_l": 60.0,
+  "nominal_fraction": 0.10931783758794501,
+  "nominal_deficit_l": 53.4409297447233,
+  "ideal_required_mass_g_at_20c": 109.77165542948224,
+  "ideal_mass_deficit_g_at_20c": 97.77165542948224
+}

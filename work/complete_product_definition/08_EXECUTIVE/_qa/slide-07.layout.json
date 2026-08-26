@@ -1,0 +1,890 @@
+{
+  "schema": "openai.presentation.layout/v4",
+  "unit": "px",
+  "slide": {
+    "aid": "sl/hmeakn",
+    "id": "hmeakn",
+    "slide": 7,
+    "layoutId": "905fba19-f87c-4793-9ddb-b1482b9c138a",
+    "layoutName": "Title Slide",
+    "layoutType": "title",
+    "masterLayoutId": "f49804d5-2f04-4d6f-a50f-a5f20d73a9aa",
+    "masterLayoutName": "Master",
+    "backgroundColor": "#FFFFFF",
+    "frame": {
+      "left": 0,
+      "top": 0,
+      "width": 1280,
+      "height": 720
+    }
+  },
+  "theme": {
+    "colorSchemeName": "ChatGPT",
+    "colors": {
+      "accent1": "#156082",
+      "accent2": "#E97132",
+      "accent3": "#196B24",
+      "accent4": "#0F9ED5",
+      "accent5": "#A02B93",
+      "accent6": "#4EA72E",
+      "bg1": "#FFFFFF",
+      "bg2": "#000000",
+      "tx1": "#1F1F1F",
+      "tx2": "#FFFFFF",
+      "dk1": "#000000",
+      "lt1": "#FFFFFF",
+      "dk2": "#0E2841",
+      "lt2": "#E8E8E8",
+      "hlink": "#467886",
+      "folHlink": "#96607D"
+    },
+    "typefaces": [
+      "+mn-lt"
+    ]
+  },
+  "inheritedLayers": [
+    {
+      "scope": "layout",
+      "id": "905fba19-f87c-4793-9ddb-b1482b9c138a",
+      "name": "Title Slide",
+      "type": "title",
+      "parentLayoutId": "f49804d5-2f04-4d6f-a50f-a5f20d73a9aa",
+      "elements": []
+    },
+    {
+      "scope": "master",
+      "id": "f49804d5-2f04-4d6f-a50f-a5f20d73a9aa",
+      "name": "Master",
+      "type": "master",
+      "elements": []
+    }
+  ],
+  "elements": [
+    {
+      "order": 1,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/id0b69wr",
+      "id": "1",
+      "name": "eyebrow-7",
+      "bbox": [
+        42,
+        28,
+        750,
+        22
+      ],
+      "geometry": "rect",
+      "text": "STINGRAY DIGITAL PRODUCT DEFINITION",
+      "textPreview": "STINGRAY DIGITAL PRODUCT DEFINITION",
+      "resolvedFontSize": 12,
+      "resolvedTextStyle": {
+        "fontSize": 12,
+        "typeface": "+mn-lt",
+        "color": "#475569",
+        "bold": true,
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "STINGRAY DIGITAL PRODUCT DEFINITION"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "STINGRAY DIGITAL PRODUCT DEFINITION",
+          "resolvedTextStyle": {
+            "fontSize": 12,
+            "color": "#475569",
+            "bold": true
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "STINGRAY DIGITAL PRODUCT DEFINITION",
+              "fontSize": 12,
+              "color": "#475569",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 2,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/5gra1ovi",
+      "id": "2",
+      "name": "title-7",
+      "bbox": [
+        42,
+        58,
+        1160,
+        88
+      ],
+      "geometry": "rect",
+      "text": "Digital mechanism motion passed every modeled position",
+      "textPreview": "Digital mechanism motion passed every modeled position",
+      "resolvedFontSize": 39,
+      "resolvedTextStyle": {
+        "fontSize": 39,
+        "typeface": "+mn-lt",
+        "color": "#000000",
+        "bold": true,
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Digital mechanism motion passed every modeled position"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Digital mechanism motion passed every modeled position",
+          "resolvedTextStyle": {
+            "fontSize": 39,
+            "color": "#000000",
+            "bold": true
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Digital mechanism motion passed every modeled position",
+              "fontSize": 39,
+              "color": "#000000",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 3,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/4fit8jex",
+      "id": "3",
+      "name": "title-rule-7",
+      "bbox": [
+        42,
+        153,
+        1196,
+        1
+      ],
+      "geometry": "rect",
+      "fillColor": "#B8BCC4",
+      "lineColor": "#B8BCC4",
+      "lineWidth": 0
+    },
+    {
+      "order": 4,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/vqpsvudg",
+      "id": "4",
+      "name": "motion-image-backing",
+      "bbox": [
+        42,
+        182,
+        640,
+        438
+      ],
+      "geometry": "roundRect",
+      "fillColor": "#FFFFFF",
+      "lineColor": "#B8BCC4",
+      "lineWidth": 1
+    },
+    {
+      "order": 5,
+      "kind": "image",
+      "scope": "slide",
+      "aid": "im/naxcradk",
+      "id": "5",
+      "bbox": [
+        42,
+        182,
+        640,
+        438
+      ],
+      "geometry": "roundRect",
+      "alt": "CAD-derived detail of forward ballast, transition, carrier, and pivot adjacency",
+      "contentType": "image/png",
+      "imageFit": "contain",
+      "imageMask": {
+        "geometry": "roundRect",
+        "adjustmentList": [
+          {
+            "name": "adj",
+            "formula": "val 2740"
+          }
+        ]
+      },
+      "asset": {
+        "assetId": "e34ca73d-02e8-46b3-a63d-d930717d17e4",
+        "contentType": "image/png",
+        "byteLength": 520887
+      }
+    },
+    {
+      "order": 6,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/hc7ax4vm",
+      "id": "6",
+      "name": "motion-angle-panel",
+      "bbox": [
+        724,
+        190,
+        230,
+        178
+      ],
+      "geometry": "roundRect",
+      "fillColor": "#E8F7EF",
+      "lineColor": "#E8F7EF",
+      "lineWidth": 1
+    },
+    {
+      "order": 7,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/gryt4ze1",
+      "id": "7",
+      "name": "motion-angle-value",
+      "bbox": [
+        744,
+        218,
+        190,
+        74
+      ],
+      "geometry": "rect",
+      "text": "0-80°",
+      "textPreview": "0-80°",
+      "resolvedFontSize": 48,
+      "resolvedTextStyle": {
+        "fontSize": 48,
+        "typeface": "+mn-lt",
+        "color": "#137A4B",
+        "bold": true,
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "0-80°"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "0-80°",
+          "resolvedTextStyle": {
+            "fontSize": 48,
+            "color": "#137A4B",
+            "bold": true
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "0-80°",
+              "fontSize": 48,
+              "color": "#137A4B",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 8,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/7mpsrux4",
+      "id": "8",
+      "name": "motion-angle-label",
+      "bbox": [
+        744,
+        298,
+        190,
+        54
+      ],
+      "geometry": "rect",
+      "text": "one-degree audit coverage",
+      "textPreview": "one-degree audit coverage",
+      "resolvedFontSize": 18,
+      "resolvedTextStyle": {
+        "fontSize": 18,
+        "typeface": "+mn-lt",
+        "color": "#000000",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "one-degree audit"
+          },
+          {
+            "index": 2,
+            "text": "coverage"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "one-degree audit coverage",
+          "resolvedTextStyle": {
+            "fontSize": 18,
+            "color": "#000000"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "one-degree audit coverage",
+              "fontSize": 18,
+              "color": "#000000"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 9,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/6lwrypwz",
+      "id": "9",
+      "name": "motion-travel-panel",
+      "bbox": [
+        976,
+        190,
+        262,
+        178
+      ],
+      "geometry": "roundRect",
+      "fillColor": "#E8F7EF",
+      "lineColor": "#E8F7EF",
+      "lineWidth": 1
+    },
+    {
+      "order": 10,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/gnyx8na5",
+      "id": "10",
+      "name": "motion-travel-value",
+      "bbox": [
+        996,
+        218,
+        222,
+        74
+      ],
+      "geometry": "rect",
+      "text": "15.055",
+      "textPreview": "15.055",
+      "resolvedFontSize": 48,
+      "resolvedTextStyle": {
+        "fontSize": 48,
+        "typeface": "+mn-lt",
+        "color": "#137A4B",
+        "bold": true,
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "15.055"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "15.055",
+          "resolvedTextStyle": {
+            "fontSize": 48,
+            "color": "#137A4B",
+            "bold": true
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "15.055",
+              "fontSize": 48,
+              "color": "#137A4B",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 11,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/ho7ehsbq",
+      "id": "11",
+      "name": "motion-travel-label",
+      "bbox": [
+        996,
+        298,
+        222,
+        54
+      ],
+      "geometry": "rect",
+      "text": "mm crosshead travel",
+      "textPreview": "mm crosshead travel",
+      "resolvedFontSize": 18,
+      "resolvedTextStyle": {
+        "fontSize": 18,
+        "typeface": "+mn-lt",
+        "color": "#000000",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "mm crosshead travel"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "mm crosshead travel",
+          "resolvedTextStyle": {
+            "fontSize": 18,
+            "color": "#000000"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "mm crosshead travel",
+              "fontSize": 18,
+              "color": "#000000"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 12,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/ulwf6dsz",
+      "id": "12",
+      "name": "motion-proof",
+      "bbox": [
+        740,
+        405,
+        470,
+        176
+      ],
+      "geometry": "rect",
+      "text": "- 43,035 rows in the five-angle gate\n- 697,167 rows in the full sweep\n- closure residual: 2.49e-14 mm\n- no invalid or unclassified rigid interference",
+      "textPreview": "- 43,035 rows in the five-angle gate | - 697,167 rows in the full sweep | - closure residual: 2.49e-14 mm | - no invalid or unclassified ...",
+      "resolvedFontSize": 21,
+      "resolvedTextStyle": {
+        "fontSize": 21,
+        "typeface": "+mn-lt",
+        "color": "#000000",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 4,
+        "lines": [
+          {
+            "index": 1,
+            "text": "- 43,035 rows in the five-angle gate"
+          },
+          {
+            "index": 2,
+            "text": "- 697,167 rows in the full sweep"
+          },
+          {
+            "index": 3,
+            "text": "- closure residual: 2.49e-14 mm"
+          },
+          {
+            "index": 4,
+            "text": "- no invalid or unclassified rigid interference"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "- 43,035 rows in the five-angle gate",
+          "resolvedTextStyle": {
+            "fontSize": 21,
+            "color": "#000000"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "- 43,035 rows in the five-angle gate",
+              "fontSize": 21,
+              "color": "#000000"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 2,
+          "text": "- 697,167 rows in the full sweep",
+          "resolvedTextStyle": {
+            "fontSize": 21,
+            "color": "#000000"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "- 697,167 rows in the full sweep",
+              "fontSize": 21,
+              "color": "#000000"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 3,
+          "text": "- closure residual: 2.49e-14 mm",
+          "resolvedTextStyle": {
+            "fontSize": 21,
+            "color": "#000000"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "- closure residual: 2.49e-14 mm",
+              "fontSize": 21,
+              "color": "#000000"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 4,
+          "text": "- no invalid or unclassified rigid interference",
+          "resolvedTextStyle": {
+            "fontSize": 21,
+            "color": "#000000"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "- no invalid or unclassified rigid interference",
+              "fontSize": 21,
+              "color": "#000000"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 13,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/vm5wfitk",
+      "id": "13",
+      "name": "motion-limit-panel",
+      "bbox": [
+        724,
+        574,
+        514,
+        62
+      ],
+      "geometry": "roundRect",
+      "fillColor": "#EAF5FB",
+      "lineColor": "#3D8DFF",
+      "lineWidth": 1
+    },
+    {
+      "order": 14,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/8jex43at",
+      "id": "14",
+      "name": "motion-limit-text",
+      "bbox": [
+        738,
+        586,
+        486,
+        38
+      ],
+      "geometry": "rect",
+      "text": "Digital PASS does not prove deployment time, loads,\nfatigue, or physical lock capacity.",
+      "textPreview": "Digital PASS does not prove deployment time, loads, | fatigue, or physical lock capacity.",
+      "resolvedFontSize": 15,
+      "resolvedTextStyle": {
+        "fontSize": 15,
+        "typeface": "+mn-lt",
+        "color": "#3D8DFF",
+        "bold": true,
+        "alignment": "center",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Digital PASS does not prove deployment time, loads,"
+          },
+          {
+            "index": 2,
+            "text": "fatigue, or physical lock capacity."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Digital PASS does not prove deployment time, loads,",
+          "resolvedTextStyle": {
+            "fontSize": 15,
+            "color": "#3D8DFF",
+            "bold": true,
+            "alignment": "center"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Digital PASS does not prove deployment time, loads,",
+              "fontSize": 15,
+              "color": "#3D8DFF",
+              "bold": true,
+              "alignment": "center"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 2,
+          "text": "fatigue, or physical lock capacity.",
+          "resolvedTextStyle": {
+            "fontSize": 15,
+            "color": "#3D8DFF",
+            "bold": true,
+            "alignment": "center"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "fatigue, or physical lock capacity.",
+              "fontSize": 15,
+              "color": "#3D8DFF",
+              "bold": true,
+              "alignment": "center"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 15,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/tkned8be",
+      "id": "15",
+      "name": "evidence-7",
+      "bbox": [
+        42,
+        669,
+        1090,
+        24
+      ],
+      "geometry": "rect",
+      "text": "Evidence: Technical Analysis Report section 5; validation/full_motion",
+      "textPreview": "Evidence: Technical Analysis Report section 5; validation/full_motion",
+      "resolvedFontSize": 11,
+      "resolvedTextStyle": {
+        "fontSize": 11,
+        "typeface": "+mn-lt",
+        "color": "#475569",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Evidence: Technical Analysis Report section 5; validation/full_motion"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Evidence: Technical Analysis Report section 5; validation/full_motion",
+          "resolvedTextStyle": {
+            "fontSize": 11,
+            "color": "#475569"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Evidence: Technical Analysis Report section 5; validation/full_motion",
+              "fontSize": 11,
+              "color": "#475569"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 16,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/6hwf2ts3",
+      "id": "16",
+      "name": "page-7",
+      "bbox": [
+        1182,
+        669,
+        56,
+        24
+      ],
+      "geometry": "rect",
+      "text": "7",
+      "textPreview": "7",
+      "resolvedFontSize": 11,
+      "resolvedTextStyle": {
+        "fontSize": 11,
+        "typeface": "+mn-lt",
+        "color": "#475569",
+        "bold": true,
+        "alignment": "right",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "7"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "7",
+          "resolvedTextStyle": {
+            "fontSize": 11,
+            "color": "#475569",
+            "bold": true,
+            "alignment": "right"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "7",
+              "fontSize": 11,
+              "color": "#475569",
+              "bold": true,
+              "alignment": "right"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    }
+  ],
+  "composeRuns": []
+}

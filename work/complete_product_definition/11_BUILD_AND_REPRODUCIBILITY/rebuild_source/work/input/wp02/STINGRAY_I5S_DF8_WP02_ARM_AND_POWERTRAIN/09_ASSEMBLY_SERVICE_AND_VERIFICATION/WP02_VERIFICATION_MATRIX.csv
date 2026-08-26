@@ -1,0 +1,8 @@
+verification_id,requirement,method,result,remaining
+V-WP02-001,Kinematics and two endpoint states,Analysis/CAD/reimport,PASS DIGITAL,Native Creo import optional external evidence
+V-WP02-002,WP01 containment and cover sequence,Exact sampled Boolean motion audit,PASS DIGITAL,Representative tolerance/debris/deflection test
+V-WP02-003,Zero-GS deployment,Nonlinear 1-DOF force/dynamic screen,PASS DIGITAL,Physical deployment series
+V-WP02-004,GS-only deployment,Nonlinear 1-DOF case,PASS DIGITAL,Physical deployment and exact ordered force certificate
+V-WP02-005,HBD jam bypass,Geometry and force-margin screen,PASS DIGITAL,"Detent calibration, jam, capture and reset test"
+V-WP02-006,Positive lock retention,CAD attachment audit,PASS DIGITAL,Proof/reverse-load/fatigue tests
+V-WP02-007,Provisional structural cases,Section screen,DEVELOPMENT SCREEN ONLY,"Approved loads, FEA, proof/ultimate/fatigue"

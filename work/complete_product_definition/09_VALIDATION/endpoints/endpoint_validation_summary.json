@@ -1,0 +1,1735 @@
+{
+  "schema": "STINGRAY_SHORT14_CLEAN_REIMPORT_VALIDATION_V1",
+  "inputs": {
+    "STOWED": {
+      "step": "C:\\Users\\ANDRE.ANDREWSPC\\Documents\\Codex\\2026-08-26\\stingray-complete-product-definition\\work\\short14_external_buoy\\STINGRAY_I5S_DF8_SHORT14_FORWARD_POWERTRAIN_EXTERNAL_BUOY_STOWED_AP242.step",
+      "step_sha256": "22342157b2ac96870bbf7cd227e729342b357fd241787be8dc03cf16a92ce7fd",
+      "inventory": "C:\\Users\\ANDRE.ANDREWSPC\\Documents\\Codex\\2026-08-26\\stingray-complete-product-definition\\work\\short14_external_buoy\\authoring_inventory_stowed.json",
+      "inventory_sha256": "67ae4314d128993d6ab0de761645717f704cbec47b14f33848999025a9f83765"
+    },
+    "DEPLOYED": {
+      "step": "C:\\Users\\ANDRE.ANDREWSPC\\Documents\\Codex\\2026-08-26\\stingray-complete-product-definition\\work\\short14_external_buoy\\STINGRAY_I5S_DF8_SHORT14_FORWARD_POWERTRAIN_EXTERNAL_BUOY_DEPLOYED_AP242.step",
+      "step_sha256": "3f33da7fc6c658c84bfad075ed9c28c9dd96087e675fc9f5d3de7562b19ee045",
+      "inventory": "C:\\Users\\ANDRE.ANDREWSPC\\Documents\\Codex\\2026-08-26\\stingray-complete-product-definition\\work\\short14_external_buoy\\authoring_inventory_deployed.json",
+      "inventory_sha256": "7cebfb5c59d25ac148cda125ddce6094558b6fdfebc29c65f6243a1973d50498"
+    }
+  },
+  "states": {
+    "STOWED": {
+      "clean_reimport_leaf_identity": {
+        "leaf_row_count": 180,
+        "blank_occurrence_id_count": 0,
+        "blank_occurrence_id_rows": [],
+        "duplicate_occurrence_ids": [],
+        "duplicate_occurrence_id_count": 0,
+        "accepted": true
+      },
+      "assembly_hierarchy": {
+        "state": "STOWED",
+        "expected_root_name": "STINGRAY_I5S_DF8_SHORT14_EXTERNAL_BUOY_STOWED_ASSY",
+        "actual_root_name": "STINGRAY_I5S_DF8_SHORT14_EXTERNAL_BUOY_STOWED_ASSY",
+        "expected_top_level_assembly_names": [
+          "Arm_Activation_Powertrain_Assembly",
+          "Forward_Body_Assembly",
+          "Shortened_Aft_Body_External_Buoy_Assembly"
+        ],
+        "actual_top_level_assembly_names": [
+          "Arm_Activation_Powertrain_Assembly",
+          "Forward_Body_Assembly",
+          "Shortened_Aft_Body_External_Buoy_Assembly"
+        ],
+        "expected_assembly_paths": [
+          "Arm_Activation_Powertrain_Assembly",
+          "Arm_Activation_Powertrain_Assembly/Arm_Deployment_Assembly_01",
+          "Arm_Activation_Powertrain_Assembly/Arm_Deployment_Assembly_02",
+          "Arm_Activation_Powertrain_Assembly/Arm_Deployment_Assembly_03",
+          "Arm_Activation_Powertrain_Assembly/Powertrain_Mandatory_Hardware_Assembly",
+          "Forward_Body_Assembly",
+          "Forward_Body_Assembly/Forward_Mandatory_Hardware_Assembly",
+          "Shortened_Aft_Body_External_Buoy_Assembly",
+          "Shortened_Aft_Body_External_Buoy_Assembly/Aft_Buoy_Breakaway_Wrap_CORDURA",
+          "Shortened_Aft_Body_External_Buoy_Assembly/Buoy_Mounted_Automatic_Manual_Inflation_Assembly",
+          "Shortened_Aft_Body_External_Buoy_Assembly/Shortened_Aft_Structure_Assembly",
+          "Shortened_Aft_Body_External_Buoy_Assembly/Structural_Recovery_Tether_Assembly"
+        ],
+        "actual_assembly_paths": [
+          "Arm_Activation_Powertrain_Assembly",
+          "Arm_Activation_Powertrain_Assembly/Arm_Deployment_Assembly_01",
+          "Arm_Activation_Powertrain_Assembly/Arm_Deployment_Assembly_02",
+          "Arm_Activation_Powertrain_Assembly/Arm_Deployment_Assembly_03",
+          "Arm_Activation_Powertrain_Assembly/Powertrain_Mandatory_Hardware_Assembly",
+          "Forward_Body_Assembly",
+          "Forward_Body_Assembly/Forward_Mandatory_Hardware_Assembly",
+          "Shortened_Aft_Body_External_Buoy_Assembly",
+          "Shortened_Aft_Body_External_Buoy_Assembly/Aft_Buoy_Breakaway_Wrap_CORDURA",
+          "Shortened_Aft_Body_External_Buoy_Assembly/Buoy_Mounted_Automatic_Manual_Inflation_Assembly",
+          "Shortened_Aft_Body_External_Buoy_Assembly/Shortened_Aft_Structure_Assembly",
+          "Shortened_Aft_Body_External_Buoy_Assembly/Structural_Recovery_Tether_Assembly"
+        ],
+        "missing_assembly_paths": [],
+        "unexpected_assembly_paths": [],
+        "leaf_parent_path_mismatch_count": 0,
+        "leaf_parent_path_mismatches": [],
+        "flattened_or_missing_named_subassembly_tree": false,
+        "issue_count": 0,
+        "issues": [],
+        "accepted": true
+      },
+      "inventory_occurrence_count": 180,
+      "imported_occurrence_count": 180,
+      "imported_solid_count": 180,
+      "missing_occurrence_ids": [],
+      "unexpected_occurrence_ids": [],
+      "part_number_mismatch_occurrence_ids": [],
+      "maximum_inventory_to_reimport_bbox_delta_mm": 7.912603905424476e-11,
+      "bbox_mismatch_rows": [],
+      "invalid_solid_count": 0,
+      "invalid_solid_keys": [],
+      "multisolid_nominal_definition_count": 0,
+      "multisolid_nominal_definitions": [],
+      "ap242_schema_detected": true,
+      "millimetre_length_unit_detected": true,
+      "faceted_or_tessellated_rigid_geometry_count": 0,
+      "named_product_count": 105,
+      "unnamed_product_count": 0,
+      "named_assembly_usage_occurrence_count": 192,
+      "unnamed_assembly_usage_occurrence_count": 0,
+      "accepted_before_pair_audit": true
+    },
+    "DEPLOYED": {
+      "clean_reimport_leaf_identity": {
+        "leaf_row_count": 180,
+        "blank_occurrence_id_count": 0,
+        "blank_occurrence_id_rows": [],
+        "duplicate_occurrence_ids": [],
+        "duplicate_occurrence_id_count": 0,
+        "accepted": true
+      },
+      "assembly_hierarchy": {
+        "state": "DEPLOYED",
+        "expected_root_name": "STINGRAY_I5S_DF8_SHORT14_EXTERNAL_BUOY_DEPLOYED_ASSY",
+        "actual_root_name": "STINGRAY_I5S_DF8_SHORT14_EXTERNAL_BUOY_DEPLOYED_ASSY",
+        "expected_top_level_assembly_names": [
+          "Arm_Activation_Powertrain_Assembly",
+          "Forward_Body_Assembly",
+          "Shortened_Aft_Body_External_Buoy_Assembly"
+        ],
+        "actual_top_level_assembly_names": [
+          "Arm_Activation_Powertrain_Assembly",
+          "Forward_Body_Assembly",
+          "Shortened_Aft_Body_External_Buoy_Assembly"
+        ],
+        "expected_assembly_paths": [
+          "Arm_Activation_Powertrain_Assembly",
+          "Arm_Activation_Powertrain_Assembly/Arm_Deployment_Assembly_01",
+          "Arm_Activation_Powertrain_Assembly/Arm_Deployment_Assembly_02",
+          "Arm_Activation_Powertrain_Assembly/Arm_Deployment_Assembly_03",
+          "Arm_Activation_Powertrain_Assembly/Powertrain_Mandatory_Hardware_Assembly",
+          "Forward_Body_Assembly",
+          "Forward_Body_Assembly/Forward_Mandatory_Hardware_Assembly",
+          "Shortened_Aft_Body_External_Buoy_Assembly",
+          "Shortened_Aft_Body_External_Buoy_Assembly/Aft_Buoy_Breakaway_Wrap_CORDURA",
+          "Shortened_Aft_Body_External_Buoy_Assembly/Buoy_Mounted_Automatic_Manual_Inflation_Assembly",
+          "Shortened_Aft_Body_External_Buoy_Assembly/Shortened_Aft_Structure_Assembly",
+          "Shortened_Aft_Body_External_Buoy_Assembly/Structural_Recovery_Tether_Assembly"
+        ],
+        "actual_assembly_paths": [
+          "Arm_Activation_Powertrain_Assembly",
+          "Arm_Activation_Powertrain_Assembly/Arm_Deployment_Assembly_01",
+          "Arm_Activation_Powertrain_Assembly/Arm_Deployment_Assembly_02",
+          "Arm_Activation_Powertrain_Assembly/Arm_Deployment_Assembly_03",
+          "Arm_Activation_Powertrain_Assembly/Powertrain_Mandatory_Hardware_Assembly",
+          "Forward_Body_Assembly",
+          "Forward_Body_Assembly/Forward_Mandatory_Hardware_Assembly",
+          "Shortened_Aft_Body_External_Buoy_Assembly",
+          "Shortened_Aft_Body_External_Buoy_Assembly/Aft_Buoy_Breakaway_Wrap_CORDURA",
+          "Shortened_Aft_Body_External_Buoy_Assembly/Buoy_Mounted_Automatic_Manual_Inflation_Assembly",
+          "Shortened_Aft_Body_External_Buoy_Assembly/Shortened_Aft_Structure_Assembly",
+          "Shortened_Aft_Body_External_Buoy_Assembly/Structural_Recovery_Tether_Assembly"
+        ],
+        "missing_assembly_paths": [],
+        "unexpected_assembly_paths": [],
+        "leaf_parent_path_mismatch_count": 0,
+        "leaf_parent_path_mismatches": [],
+        "flattened_or_missing_named_subassembly_tree": false,
+        "issue_count": 0,
+        "issues": [],
+        "accepted": true
+      },
+      "inventory_occurrence_count": 180,
+      "imported_occurrence_count": 180,
+      "imported_solid_count": 180,
+      "missing_occurrence_ids": [],
+      "unexpected_occurrence_ids": [],
+      "part_number_mismatch_occurrence_ids": [],
+      "maximum_inventory_to_reimport_bbox_delta_mm": 4.1177372622769326e-10,
+      "bbox_mismatch_rows": [],
+      "invalid_solid_count": 0,
+      "invalid_solid_keys": [],
+      "multisolid_nominal_definition_count": 0,
+      "multisolid_nominal_definitions": [],
+      "ap242_schema_detected": true,
+      "millimetre_length_unit_detected": true,
+      "faceted_or_tessellated_rigid_geometry_count": 0,
+      "named_product_count": 105,
+      "unnamed_product_count": 0,
+      "named_assembly_usage_occurrence_count": 192,
+      "unnamed_assembly_usage_occurrence_count": 0,
+      "accepted_before_pair_audit": true
+    }
+  },
+  "dimensions": {
+    "source_rigid_length_mm": 2031.0,
+    "new_rigid_length_mm": 1675.4,
+    "body_reduction_mm": 355.5999999999999,
+    "forward_ballast_aft_face_z_mm": 336.0000001,
+    "arm_carrier_forward_face_z_mm": 344.0,
+    "ballast_aft_face_to_carrier_forward_face_mm": 7.9999998999999775,
+    "arm_pivot_axis_z_mm": 355.0,
+    "ballast_aft_face_to_pivot_axis_mm": 18.999999899999978,
+    "source_arm_pivot_axis_z_mm": 480.0,
+    "actual_forward_movement_mm": 125.0,
+    "arm_pivot_to_tip_lengths_mm": {
+      "ARM-1": 378.2060001,
+      "ARM-2": 378.2060001,
+      "ARM-3": 378.2060001
+    },
+    "maximum_arm_length_error_mm": 9.999996564147295e-08,
+    "closed_cordura_pack_bbox_mm": {
+      "xmin": -49.0,
+      "ymin": -49.0,
+      "zmin": 1368.0,
+      "xmax": 49.0,
+      "ymax": 49.0,
+      "zmax": 1606.0
+    },
+    "closed_cordura_pack_maximum_od_mm": 98.0,
+    "closed_pack_axial_length_mm": 238.0,
+    "ready_to_throw_total_length_mm": 1675.4,
+    "deployed_overall_bbox_mm": {
+      "xmin": -243.309,
+      "ymin": -342.72027610497787,
+      "zmin": 0.0,
+      "xmax": 391.93621064589814,
+      "ymax": 342.72027610497236,
+      "zmax": 2173.309
+    },
+    "deployed_overall_axial_length_mm": 2173.309
+  },
+  "changed_part_quality": {
+    "STOWED": {
+      "state": "STOWED",
+      "changed_occurrence_count": 70,
+      "invalid_changed_occurrence_count": 0,
+      "invalid_changed_occurrences": [],
+      "disconnected_changed_nominal_body_count": 0,
+      "disconnected_changed_nominal_bodies": [],
+      "open_or_invalid_shell_count": 0,
+      "open_or_invalid_shells": [],
+      "tiny_unintended_edge_count": 0,
+      "tiny_unintended_edges": [],
+      "sliver_face_count": 0,
+      "sliver_faces": [],
+      "nonmanifold_topology_count": 0,
+      "abrupt_unintended_surface_normal_discontinuity_count": 0,
+      "broken_radius_or_fillet_count": 0,
+      "blocked_boolean_count": 0,
+      "accepted": true
+    },
+    "DEPLOYED": {
+      "state": "DEPLOYED",
+      "changed_occurrence_count": 70,
+      "invalid_changed_occurrence_count": 0,
+      "invalid_changed_occurrences": [],
+      "disconnected_changed_nominal_body_count": 0,
+      "disconnected_changed_nominal_bodies": [],
+      "open_or_invalid_shell_count": 0,
+      "open_or_invalid_shells": [],
+      "tiny_unintended_edge_count": 0,
+      "tiny_unintended_edges": [],
+      "sliver_face_count": 0,
+      "sliver_faces": [],
+      "nonmanifold_topology_count": 0,
+      "abrupt_unintended_surface_normal_discontinuity_count": 0,
+      "broken_radius_or_fillet_count": 0,
+      "blocked_boolean_count": 0,
+      "accepted": true
+    }
+  },
+  "endpoint_pairs": {
+    "STOWED": {
+      "state": "STOWED",
+      "solid_count": 180,
+      "unordered_pair_count": 16110,
+      "pair_register": "C:\\Users\\ANDRE.ANDREWSPC\\Documents\\Codex\\2026-08-26\\stingray-complete-product-definition\\work\\short14_external_buoy\\validation\\endpoints\\endpoint_pair_audit_stowed.csv.gz",
+      "broadphase_candidate_count": 685,
+      "unauthorized_positive_volume_pair_count": 0,
+      "documented_positive_volume_pair_count": 71,
+      "boolean_blocked_pair_count": 0,
+      "distance_blocked_pair_count": 0,
+      "intentional_fit_register_error_count": 0,
+      "intentional_fit_register_errors": [],
+      "unauthorized_positive_rows": [],
+      "documented_positive_rows": [
+        {
+          "occurrence_a": "ARM-1",
+          "solid_index_a": 1,
+          "occurrence_b": "ARM-STOP-SCREW-1-1",
+          "solid_index_b": 1,
+          "common_volume_mm3": 6.479534848029078,
+          "intentional_fit_match_status": "VALID_BOUNDED_MATCH",
+          "intentional_fit_exception_id": "FIT-THREAD-ARM-STOP-1-1"
+        },
+        {
+          "occurrence_a": "ARM-1",
+          "solid_index_a": 1,
+          "occurrence_b": "ARM-STOP-SCREW-1-2",
+          "solid_index_b": 1,
+          "common_volume_mm3": 6.401840877362947,
+          "intentional_fit_match_status": "VALID_BOUNDED_MATCH",
+          "intentional_fit_exception_id": "FIT-THREAD-ARM-STOP-1-2"
+        },
+        {
+          "occurrence_a": "ARM-2",
+          "solid_index_a": 1,
+          "occurrence_b": "ARM-STOP-SCREW-2-1",
+          "solid_index_b": 1,
+          "common_volume_mm3": 6.479534848029356,
+          "intentional_fit_match_status": "VALID_BOUNDED_MATCH",
+          "intentional_fit_exception_id": "FIT-THREAD-ARM-STOP-2-1"
+        },
+        {
+          "occurrence_a": "ARM-2",
+          "solid_index_a": 1,
+          "occurrence_b": "ARM-STOP-SCREW-2-2",
+          "solid_index_b": 1,
+          "common_volume_mm3": 6.401840877385222,
+          "intentional_fit_match_status": "VALID_BOUNDED_MATCH",
+          "intentional_fit_exception_id": "FIT-THREAD-ARM-STOP-2-2"
+        },
+        {
+          "occurrence_a": "ARM-3",
+          "solid_index_a": 1,
+          "occurrence_b": "ARM-STOP-SCREW-3-1",
+          "solid_index_b": 1,
+          "common_volume_mm3": 6.4795348480257005,
+          "intentional_fit_match_status": "VALID_BOUNDED_MATCH",
+          "intentional_fit_exception_id": "FIT-THREAD-ARM-STOP-3-1"
+        },
+        {
+          "occurrence_a": "ARM-3",
+          "solid_index_a": 1,
+          "occurrence_b": "ARM-STOP-SCREW-3-2",
+          "solid_index_b": 1,
+          "common_volume_mm3": 6.401840877358911,
+          "intentional_fit_match_status": "VALID_BOUNDED_MATCH",
+          "intentional_fit_exception_id": "FIT-THREAD-ARM-STOP-3-2"
+        },
+        {
+          "occurrence_a": "BACKUP-GUIDE-SCREW-1",
+          "solid_index_a": 1,
+          "occurrence_b": "BACKUP-SPRING-GUIDE",
+          "solid_index_b": 1,
+          "common_volume_mm3": 6.180153346556105,
+          "intentional_fit_match_status": "VALID_BOUNDED_MATCH",
+          "intentional_fit_exception_id": "FIT-THREAD-BACKUP-GUIDE-1"
+        },
+        {
+          "occurrence_a": "BACKUP-GUIDE-SCREW-2",
+          "solid_index_a": 1,
+          "occurrence_b": "BACKUP-SPRING-FIXED-SEAT",
+          "solid_index_b": 1,
+          "common_volume_mm3": 5.939573610693344,
+          "intentional_fit_match_status": "VALID_BOUNDED_MATCH",
+          "intentional_fit_exception_id": "FIT-THREAD-BACKUP-SEAT-2"
+        },
+        {
+          "occurrence_a": "BUOY-CO2-CARTRIDGE-81121",
+          "solid_index_a": 1,
+          "occurrence_b": "HYDRO-1F-INFLATOR-PROXY",
+          "solid_index_b": 1,
+          "common_volume_mm3": 112.09627077791085,
+          "intentional_fit_match_status": "VALID_BOUNDED_MATCH",
+          "intentional_fit_exception_id": "FIT-SHORT14-BUOY-CO2-CARTRIDGE-81121--HYDRO-1F-INFLATOR-PROXY"
+        },
+        {
+          "occurrence_a": "BUOY-INLET-MANIFOLD",
+          "solid_index_a": 1,
+          "occurrence_b": "BUOY-INLET-PATCH",
+          "solid_index_b": 1,
+          "common_volume_mm3": 68.0091977649133,
+          "intentional_fit_match_status": "VALID_BOUNDED_MATCH",
+          "intentional_fit_exception_id": "FIT-SHORT14-BUOY-INLET-MANIFOLD--BUOY-INLET-PATCH"
+        },
+        {
+          "occurrence_a": "BUOY-INLET-MANIFOLD",
+          "solid_index_a": 1,
+          "occurrence_b": "EXT-BUOY-PANEL-01",
+          "solid_index_b": 1,
+          "common_volume_mm3": 5.891280843677408,
+          "intentional_fit_match_status": "VALID_BOUNDED_MATCH",
+          "intentional_fit_exception_id": "FIT-SHORT14-BUOY-INLET-MANIFOLD--EXT-BUOY-PANEL-01"
+        },
+        {
+          "occurrence_a": "BUOY-INLET-MANIFOLD",
+          "solid_index_a": 1,
+          "occurrence_b": "HYDRO-1F-INFLATOR-PROXY",
+          "solid_index_b": 1,
+          "common_volume_mm3": 201.061929829751,
+          "intentional_fit_match_status": "VALID_BOUNDED_MATCH",
+          "intentional_fit_exception_id": "FIT-SHORT14-BUOY-INLET-MANIFOLD--HYDRO-1F-INFLATOR-PROXY"
+        },
+        {
+          "occurrence_a": "CORDURA-CRADLE-LEFT",
+          "solid_index_a": 1,
+          "occurrence_b": "PACK-ATTACHMENT-WEBBING-1",
+          "solid_index_b": 1,
+          "common_volume_mm3": 812.4354951738192,
+          "intentional_fit_match_status": "VALID_BOUNDED_MATCH",
+          "intentional_fit_exception_id": "FIT-SHORT14-CORDURA-CRADLE-LEFT--PACK-ATTACHMENT-WEBBING-1"
+        },
+        {
+          "occurrence_a": "CORDURA-CRADLE-LEFT",
+          "solid_index_a": 1,
+          "occurrence_b": "PACK-ATTACHMENT-WEBBING-2",
+          "solid_index_b": 1,
+          "common_volume_mm3": 812.4354951738192,
+          "intentional_fit_match_status": "VALID_BOUNDED_MATCH",
+          "intentional_fit_exception_id": "FIT-SHORT14-CORDURA-CRADLE-LEFT--PACK-ATTACHMENT-WEBBING-2"
+        },
+        {
+          "occurrence_a": "CORDURA-CRADLE-LEFT",
+          "solid_index_a": 1,
+          "occurrence_b": "PACK-EDGE-BAND-1",
+          "solid_index_b": 1,
+          "common_volume_mm3": 195.5739601637772,
+          "intentional_fit_match_status": "VALID_BOUNDED_MATCH",
+          "intentional_fit_exception_id": "FIT-SHORT14-CORDURA-CRADLE-LEFT--PACK-EDGE-BAND-1"
+        },
+        {
+          "occurrence_a": "CORDURA-CRADLE-LEFT",
+          "solid_index_a": 1,
+          "occurrence_b": "PACK-EDGE-BAND-2",
+          "solid_index_b": 1,
+          "common_volume_mm3": 195.5739601637772,
+          "intentional_fit_match_status": "VALID_BOUNDED_MATCH",
+          "intentional_fit_exception_id": "FIT-SHORT14-CORDURA-CRADLE-LEFT--PACK-EDGE-BAND-2"
+        },
+        {
+          "occurrence_a": "CORDURA-CRADLE-RIGHT",
+          "solid_index_a": 1,
+          "occurrence_b": "PACK-ATTACHMENT-WEBBING-1",
+          "solid_index_b": 1,
+          "common_volume_mm3": 812.4354951631813,
+          "intentional_fit_match_status": "VALID_BOUNDED_MATCH",
+          "intentional_fit_exception_id": "FIT-SHORT14-CORDURA-CRADLE-RIGHT--PACK-ATTACHMENT-WEBBING-1"
+        },
+        {
+          "occurrence_a": "CORDURA-CRADLE-RIGHT",
+          "solid_index_a": 1,
+          "occurrence_b": "PACK-ATTACHMENT-WEBBING-2",
+          "solid_index_b": 1,
+          "common_volume_mm3": 812.4354951631813,
+          "intentional_fit_match_status": "VALID_BOUNDED_MATCH",
+          "intentional_fit_exception_id": "FIT-SHORT14-CORDURA-CRADLE-RIGHT--PACK-ATTACHMENT-WEBBING-2"
+        },
+        {
+          "occurrence_a": "CORDURA-CRADLE-RIGHT",
+          "solid_index_a": 1,
+          "occurrence_b": "PACK-EDGE-BAND-1",
+          "solid_index_b": 1,
+          "common_volume_mm3": 195.5739601591365,
+          "intentional_fit_match_status": "VALID_BOUNDED_MATCH",
+          "intentional_fit_exception_id": "FIT-SHORT14-CORDURA-CRADLE-RIGHT--PACK-EDGE-BAND-1"
+        },
+        {
+          "occurrence_a": "CORDURA-CRADLE-RIGHT",
+          "solid_index_a": 1,
+          "occurrence_b": "PACK-EDGE-BAND-2",
+          "solid_index_b": 1,
+          "common_volume_mm3": 195.57396015913628,
+          "intentional_fit_match_status": "VALID_BOUNDED_MATCH",
+          "intentional_fit_exception_id": "FIT-SHORT14-CORDURA-CRADLE-RIGHT--PACK-EDGE-BAND-2"
+        },
+        {
+          "occurrence_a": "CORDURA-CRADLE-RIGHT",
+          "solid_index_a": 1,
+          "occurrence_b": "PACK-RADIAL-TIE-1-3",
+          "solid_index_b": 1,
+          "common_volume_mm3": 13.102479275173298,
+          "intentional_fit_match_status": "VALID_BOUNDED_MATCH",
+          "intentional_fit_exception_id": "FIT-SHORT14-CORDURA-CRADLE-RIGHT--PACK-RADIAL-TIE-1-3"
+        },
+        {
+          "occurrence_a": "CORDURA-CRADLE-RIGHT",
+          "solid_index_a": 1,
+          "occurrence_b": "PACK-RADIAL-TIE-2-3",
+          "solid_index_b": 1,
+          "common_volume_mm3": 13.102479275173298,
+          "intentional_fit_match_status": "VALID_BOUNDED_MATCH",
+          "intentional_fit_exception_id": "FIT-SHORT14-CORDURA-CRADLE-RIGHT--PACK-RADIAL-TIE-2-3"
+        },
+        {
+          "occurrence_a": "CORDURA-FLAP-LEFT",
+          "solid_index_a": 1,
+          "occurrence_b": "PACK-EDGE-BAND-1",
+          "solid_index_b": 1,
+          "common_volume_mm3": 527.0335835661463,
+          "intentional_fit_match_status": "VALID_BOUNDED_MATCH",
+          "intentional_fit_exception_id": "FIT-SHORT14-CORDURA-FLAP-LEFT--PACK-EDGE-BAND-1"
+        },
+        {
+          "occurrence_a": "CORDURA-FLAP-LEFT",
+          "solid_index_a": 1,
+          "occurrence_b": "PACK-EDGE-BAND-2",
+          "solid_index_b": 1,
+          "common_volume_mm3": 527.0335835661849,
+          "intentional_fit_match_status": "VALID_BOUNDED_MATCH",
+          "intentional_fit_exception_id": "FIT-SHORT14-CORDURA-FLAP-LEFT--PACK-EDGE-BAND-2"
+        },
+        {
+          "occurrence_a": "CORDURA-FLAP-LEFT",
+          "solid_index_a": 1,
+          "occurrence_b": "STRUCTURAL-RECOVERY-TETHER",
+          "solid_index_b": 1,
+          "common_volume_mm3": 0.14245588325478273,
+          "intentional_fit_match_status": "VALID_BOUNDED_MATCH",
+          "intentional_fit_exception_id": "FIT-SHORT14-CORDURA-FLAP-LEFT--STRUCTURAL-RECOVERY-TETHER"
+        },
+        {
+          "occurrence_a": "CORDURA-FLAP-RIGHT",
+          "solid_index_a": 1,
+          "occurrence_b": "PACK-EDGE-BAND-1",
+          "solid_index_b": 1,
+          "common_volume_mm3": 543.4326972182912,
+          "intentional_fit_match_status": "VALID_BOUNDED_MATCH",
+          "intentional_fit_exception_id": "FIT-SHORT14-CORDURA-FLAP-RIGHT--PACK-EDGE-BAND-1"
+        },
+        {
+          "occurrence_a": "CORDURA-FLAP-RIGHT",
+          "solid_index_a": 1,
+          "occurrence_b": "PACK-EDGE-BAND-2",
+          "solid_index_b": 1,
+          "common_volume_mm3": 543.432697218333,
+          "intentional_fit_match_status": "VALID_BOUNDED_MATCH",
+          "intentional_fit_exception_id": "FIT-SHORT14-CORDURA-FLAP-RIGHT--PACK-EDGE-BAND-2"
+        },
+        {
+          "occurrence_a": "CROSSHEAD-GUIDE-001",
+          "solid_index_a": 1,
+          "occurrence_b": "CROSSHEAD-GUIDE-LOCK-SCREW-001",
+          "solid_index_b": 1,
+          "common_volume_mm3": 23.739884709821887,
+          "intentional_fit_match_status": "VALID_BOUNDED_MATCH",
+          "intentional_fit_exception_id": "FIT-THREAD-CROSSHEAD-GUIDE-LOCK"
+        },
+        {
+          "occurrence_a": "EXT-BUOY-PANEL-01",
+          "solid_index_a": 1,
+          "occurrence_b": "STRUCTURAL-RECOVERY-TETHER",
+          "solid_index_b": 1,
+          "common_volume_mm3": 208.25151397481122,
+          "intentional_fit_match_status": "VALID_BOUNDED_MATCH",
+          "intentional_fit_exception_id": "FIT-SHORT14-EXT-BUOY-PANEL-01--STRUCTURAL-RECOVERY-TETHER"
+        },
+        {
+          "occurrence_a": "EXT-BUOY-PANEL-01",
+          "solid_index_a": 1,
+          "occurrence_b": "TETHER-THIMBLE-BUOY-SHORT14",
+          "solid_index_b": 1,
+          "common_volume_mm3": 32.84327452752309,
+          "intentional_fit_match_status": "VALID_BOUNDED_MATCH",
+          "intentional_fit_exception_id": "FIT-SHORT14-EXT-BUOY-PANEL-01--TETHER-THIMBLE-BUOY-SHORT14"
+        },
+        {
+          "occurrence_a": "FIXED-STOP-1",
+          "solid_index_a": 1,
+          "occurrence_b": "LOCK-BUSHING-1",
+          "solid_index_b": 1,
+          "common_volume_mm3": 0.04861306332143681,
+          "intentional_fit_match_status": "VALID_BOUNDED_MATCH",
+          "intentional_fit_exception_id": "FIT-PRESS-LOCK-BUSHING-1"
+        },
+        {
+          "occurrence_a": "FIXED-STOP-2",
+          "solid_index_a": 1,
+          "occurrence_b": "LOCK-BUSHING-2",
+          "solid_index_b": 1,
+          "common_volume_mm3": 0.04861306332034571,
+          "intentional_fit_match_status": "VALID_BOUNDED_MATCH",
+          "intentional_fit_exception_id": "FIT-PRESS-LOCK-BUSHING-2"
+        },
+        {
+          "occurrence_a": "FIXED-STOP-3",
+          "solid_index_a": 1,
+          "occurrence_b": "LOCK-BUSHING-3",
+          "solid_index_b": 1,
+          "common_volume_mm3": 0.04861306332661047,
+          "intentional_fit_match_status": "VALID_BOUNDED_MATCH",
+          "intentional_fit_exception_id": "FIT-PRESS-LOCK-BUSHING-3"
+        },
+        {
+          "occurrence_a": "FIXED-STOP-SCREW-1-1",
+          "solid_index_a": 1,
+          "occurrence_b": "PIVOT-CARRIER-1",
+          "solid_index_b": 1,
+          "common_volume_mm3": 3.488212741353664,
+          "intentional_fit_match_status": "VALID_BOUNDED_MATCH",
+          "intentional_fit_exception_id": "FIT-THREAD-FIXED-STOP-CARRIER-1-1"
+        },
+        {
+          "occurrence_a": "FIXED-STOP-SCREW-1-2",
+          "solid_index_a": 1,
+          "occurrence_b": "PIVOT-CARRIER-1-SECONDARY",
+          "solid_index_b": 1,
+          "common_volume_mm3": 3.4882127413531583,
+          "intentional_fit_match_status": "VALID_BOUNDED_MATCH",
+          "intentional_fit_exception_id": "FIT-THREAD-FIXED-STOP-CARRIER-1-2"
+        },
+        {
+          "occurrence_a": "FIXED-STOP-SCREW-2-1",
+          "solid_index_a": 1,
+          "occurrence_b": "PIVOT-CARRIER-2",
+          "solid_index_b": 1,
+          "common_volume_mm3": 3.488212741349984,
+          "intentional_fit_match_status": "VALID_BOUNDED_MATCH",
+          "intentional_fit_exception_id": "FIT-THREAD-FIXED-STOP-CARRIER-2-1"
+        },
+        {
+          "occurrence_a": "FIXED-STOP-SCREW-2-2",
+          "solid_index_a": 1,
+          "occurrence_b": "PIVOT-CARRIER-2-SECONDARY",
+          "solid_index_b": 1,
+          "common_volume_mm3": 3.488212741350017,
+          "intentional_fit_match_status": "VALID_BOUNDED_MATCH",
+          "intentional_fit_exception_id": "FIT-THREAD-FIXED-STOP-CARRIER-2-2"
+        },
+        {
+          "occurrence_a": "FIXED-STOP-SCREW-3-1",
+          "solid_index_a": 1,
+          "occurrence_b": "PIVOT-CARRIER-3",
+          "solid_index_b": 1,
+          "common_volume_mm3": 3.4882127413472848,
+          "intentional_fit_match_status": "VALID_BOUNDED_MATCH",
+          "intentional_fit_exception_id": "FIT-THREAD-FIXED-STOP-CARRIER-3-1"
+        },
+        {
+          "occurrence_a": "FIXED-STOP-SCREW-3-2",
+          "solid_index_a": 1,
+          "occurrence_b": "PIVOT-CARRIER-3-SECONDARY",
+          "solid_index_b": 1,
+          "common_volume_mm3": 3.4882127413489887,
+          "intentional_fit_match_status": "VALID_BOUNDED_MATCH",
+          "intentional_fit_exception_id": "FIT-THREAD-FIXED-STOP-CARRIER-3-2"
+        },
+        {
+          "occurrence_a": "GS19-CLIP-FIXED",
+          "solid_index_a": 1,
+          "occurrence_b": "GS19-PIN-FIXED",
+          "solid_index_b": 1,
+          "common_volume_mm3": 0.11335389202608037,
+          "intentional_fit_match_status": "VALID_BOUNDED_MATCH",
+          "intentional_fit_exception_id": "FIT-ACTUATOR-RETAINER-GS19-FIXED"
+        },
+        {
+          "occurrence_a": "GS19-CLIP-MOVING",
+          "solid_index_a": 1,
+          "occurrence_b": "GS19-PIN-MOVING",
+          "solid_index_b": 1,
+          "common_volume_mm3": 0.11335389202609089,
+          "intentional_fit_match_status": "VALID_BOUNDED_MATCH",
+          "intentional_fit_exception_id": "FIT-ACTUATOR-RETAINER-GS19-MOVING"
+        },
+        {
+          "occurrence_a": "HBD-CLIP-FIXED",
+          "solid_index_a": 1,
+          "occurrence_b": "HBD-PIN-FIXED",
+          "solid_index_b": 1,
+          "common_volume_mm3": 0.11335389202696963,
+          "intentional_fit_match_status": "VALID_BOUNDED_MATCH",
+          "intentional_fit_exception_id": "FIT-ACTUATOR-RETAINER-HBD-FIXED"
+        },
+        {
+          "occurrence_a": "HBD-CLIP-MOVING",
+          "solid_index_a": 1,
+          "occurrence_b": "HBD-PIN-MOVING",
+          "solid_index_b": 1,
+          "common_volume_mm3": 0.11335389202738777,
+          "intentional_fit_match_status": "VALID_BOUNDED_MATCH",
+          "intentional_fit_exception_id": "FIT-ACTUATOR-RETAINER-HBD-MOVING"
+        },
+        {
+          "occurrence_a": "HYDRO-1F-INFLATOR-PROXY",
+          "solid_index_a": 1,
+          "occurrence_b": "HYDRO-1F-WATER-BOBBIN-V80040",
+          "solid_index_b": 1,
+          "common_volume_mm3": 350.1553057487798,
+          "intentional_fit_match_status": "VALID_BOUNDED_MATCH",
+          "intentional_fit_exception_id": "FIT-SHORT14-HYDRO-1F-INFLATOR-PROXY--HYDRO-1F-WATER-BOBBIN-V80040"
+        },
+        {
+          "occurrence_a": "HYDRO-1F-INFLATOR-PROXY",
+          "solid_index_a": 1,
+          "occurrence_b": "MANUAL-PULL-LANYARD",
+          "solid_index_b": 1,
+          "common_volume_mm3": 24.0359962568915,
+          "intentional_fit_match_status": "VALID_BOUNDED_MATCH",
+          "intentional_fit_exception_id": "FIT-SHORT14-HYDRO-1F-INFLATOR-PROXY--MANUAL-PULL-LANYARD"
+        },
+        {
+          "occurrence_a": "HYDRO-1F-WATER-BOBBIN-V80040",
+          "solid_index_a": 1,
+          "occurrence_b": "WATER-ENTRY-MESH",
+          "solid_index_b": 1,
+          "common_volume_mm3": 35.898167837250085,
+          "intentional_fit_match_status": "VALID_BOUNDED_MATCH",
+          "intentional_fit_exception_id": "FIT-SHORT14-HYDRO-1F-WATER-BOBBIN-V80040--WATER-ENTRY-MESH"
+        },
+        {
+          "occurrence_a": "MANUAL-PULL-LANYARD",
+          "solid_index_a": 1,
+          "occurrence_b": "MANUAL-PULL-TAB",
+          "solid_index_b": 1,
+          "common_volume_mm3": 0.037003428217394295,
+          "intentional_fit_match_status": "VALID_BOUNDED_MATCH",
+          "intentional_fit_exception_id": "FIT-SHORT14-MANUAL-PULL-LANYARD--MANUAL-PULL-TAB"
+        },
+        {
+          "occurrence_a": "MANUAL-PULL-TAB",
+          "solid_index_a": 1,
+          "occurrence_b": "PULL-TAB-KEEPER",
+          "solid_index_b": 1,
+          "common_volume_mm3": 162.00000000000006,
+          "intentional_fit_match_status": "VALID_BOUNDED_MATCH",
+          "intentional_fit_exception_id": "FIT-SHORT14-MANUAL-PULL-TAB--PULL-TAB-KEEPER"
+        },
+        {
+          "occurrence_a": "PACK-ATTACHMENT-COLLAR-1",
+          "solid_index_a": 1,
+          "occurrence_b": "PACK-RADIAL-TIE-1-1",
+          "solid_index_b": 1,
+          "common_volume_mm3": 3.1962510961140613,
+          "intentional_fit_match_status": "VALID_BOUNDED_MATCH",
+          "intentional_fit_exception_id": "FIT-SHORT14-PACK-ATTACHMENT-COLLAR-1--PACK-RADIAL-TIE-1-1"
+        },
+        {
+          "occurrence_a": "PACK-ATTACHMENT-COLLAR-1",
+          "solid_index_a": 1,
+          "occurrence_b": "PACK-RADIAL-TIE-1-2",
+          "solid_index_b": 1,
+          "common_volume_mm3": 3.196251096114057,
+          "intentional_fit_match_status": "VALID_BOUNDED_MATCH",
+          "intentional_fit_exception_id": "FIT-SHORT14-PACK-ATTACHMENT-COLLAR-1--PACK-RADIAL-TIE-1-2"
+        },
+        {
+          "occurrence_a": "PACK-ATTACHMENT-COLLAR-1",
+          "solid_index_a": 1,
+          "occurrence_b": "PACK-RADIAL-TIE-1-3",
+          "solid_index_b": 1,
+          "common_volume_mm3": 3.19625109611406,
+          "intentional_fit_match_status": "VALID_BOUNDED_MATCH",
+          "intentional_fit_exception_id": "FIT-SHORT14-PACK-ATTACHMENT-COLLAR-1--PACK-RADIAL-TIE-1-3"
+        },
+        {
+          "occurrence_a": "PACK-ATTACHMENT-COLLAR-2",
+          "solid_index_a": 1,
+          "occurrence_b": "PACK-RADIAL-TIE-2-1",
+          "solid_index_b": 1,
+          "common_volume_mm3": 3.1962510961140613,
+          "intentional_fit_match_status": "VALID_BOUNDED_MATCH",
+          "intentional_fit_exception_id": "FIT-SHORT14-PACK-ATTACHMENT-COLLAR-2--PACK-RADIAL-TIE-2-1"
+        },
+        {
+          "occurrence_a": "PACK-ATTACHMENT-COLLAR-2",
+          "solid_index_a": 1,
+          "occurrence_b": "PACK-RADIAL-TIE-2-2",
+          "solid_index_b": 1,
+          "common_volume_mm3": 3.196251096114057,
+          "intentional_fit_match_status": "VALID_BOUNDED_MATCH",
+          "intentional_fit_exception_id": "FIT-SHORT14-PACK-ATTACHMENT-COLLAR-2--PACK-RADIAL-TIE-2-2"
+        },
+        {
+          "occurrence_a": "PACK-ATTACHMENT-COLLAR-2",
+          "solid_index_a": 1,
+          "occurrence_b": "PACK-RADIAL-TIE-2-3",
+          "solid_index_b": 1,
+          "common_volume_mm3": 3.19625109611406,
+          "intentional_fit_match_status": "VALID_BOUNDED_MATCH",
+          "intentional_fit_exception_id": "FIT-SHORT14-PACK-ATTACHMENT-COLLAR-2--PACK-RADIAL-TIE-2-3"
+        },
+        {
+          "occurrence_a": "PACK-ATTACHMENT-WEBBING-1",
+          "solid_index_a": 1,
+          "occurrence_b": "PACK-RADIAL-TIE-1-1",
+          "solid_index_b": 1,
+          "common_volume_mm3": 12.352081960628121,
+          "intentional_fit_match_status": "VALID_BOUNDED_MATCH",
+          "intentional_fit_exception_id": "FIT-SHORT14-PACK-ATTACHMENT-WEBBING-1--PACK-RADIAL-TIE-1-1"
+        },
+        {
+          "occurrence_a": "PACK-ATTACHMENT-WEBBING-1",
+          "solid_index_a": 1,
+          "occurrence_b": "PACK-RADIAL-TIE-1-2",
+          "solid_index_b": 1,
+          "common_volume_mm3": 12.35208196062812,
+          "intentional_fit_match_status": "VALID_BOUNDED_MATCH",
+          "intentional_fit_exception_id": "FIT-SHORT14-PACK-ATTACHMENT-WEBBING-1--PACK-RADIAL-TIE-1-2"
+        },
+        {
+          "occurrence_a": "PACK-ATTACHMENT-WEBBING-1",
+          "solid_index_a": 1,
+          "occurrence_b": "PACK-RADIAL-TIE-1-3",
+          "solid_index_b": 1,
+          "common_volume_mm3": 12.35208196062812,
+          "intentional_fit_match_status": "VALID_BOUNDED_MATCH",
+          "intentional_fit_exception_id": "FIT-SHORT14-PACK-ATTACHMENT-WEBBING-1--PACK-RADIAL-TIE-1-3"
+        },
+        {
+          "occurrence_a": "PACK-ATTACHMENT-WEBBING-2",
+          "solid_index_a": 1,
+          "occurrence_b": "PACK-RADIAL-TIE-2-1",
+          "solid_index_b": 1,
+          "common_volume_mm3": 12.352081960628121,
+          "intentional_fit_match_status": "VALID_BOUNDED_MATCH",
+          "intentional_fit_exception_id": "FIT-SHORT14-PACK-ATTACHMENT-WEBBING-2--PACK-RADIAL-TIE-2-1"
+        },
+        {
+          "occurrence_a": "PACK-ATTACHMENT-WEBBING-2",
+          "solid_index_a": 1,
+          "occurrence_b": "PACK-RADIAL-TIE-2-2",
+          "solid_index_b": 1,
+          "common_volume_mm3": 12.35208196062812,
+          "intentional_fit_match_status": "VALID_BOUNDED_MATCH",
+          "intentional_fit_exception_id": "FIT-SHORT14-PACK-ATTACHMENT-WEBBING-2--PACK-RADIAL-TIE-2-2"
+        },
+        {
+          "occurrence_a": "PACK-ATTACHMENT-WEBBING-2",
+          "solid_index_a": 1,
+          "occurrence_b": "PACK-RADIAL-TIE-2-3",
+          "solid_index_b": 1,
+          "common_volume_mm3": 12.35208196062812,
+          "intentional_fit_match_status": "VALID_BOUNDED_MATCH",
+          "intentional_fit_exception_id": "FIT-SHORT14-PACK-ATTACHMENT-WEBBING-2--PACK-RADIAL-TIE-2-3"
+        },
+        {
+          "occurrence_a": "PACK-ATTACHMENT-WEBBING-2",
+          "solid_index_a": 1,
+          "occurrence_b": "TETHER-THIMBLE-BUOY-SHORT14",
+          "solid_index_b": 1,
+          "common_volume_mm3": 8.84249389019021,
+          "intentional_fit_match_status": "VALID_BOUNDED_MATCH",
+          "intentional_fit_exception_id": "FIT-SHORT14-PACK-ATTACHMENT-WEBBING-2--TETHER-THIMBLE-BUOY-SHORT14"
+        },
+        {
+          "occurrence_a": "PIVOT-CLIP-1",
+          "solid_index_a": 1,
+          "occurrence_b": "PIVOT-PIN-1",
+          "solid_index_b": 1,
+          "common_volume_mm3": 0.279302069214095,
+          "intentional_fit_match_status": "VALID_BOUNDED_MATCH",
+          "intentional_fit_exception_id": "FIT-PIVOT-RETAINER-1"
+        },
+        {
+          "occurrence_a": "PIVOT-CLIP-2",
+          "solid_index_a": 1,
+          "occurrence_b": "PIVOT-PIN-2",
+          "solid_index_b": 1,
+          "common_volume_mm3": 0.2793020692206149,
+          "intentional_fit_match_status": "VALID_BOUNDED_MATCH",
+          "intentional_fit_exception_id": "FIT-PIVOT-RETAINER-2"
+        },
+        {
+          "occurrence_a": "PIVOT-CLIP-3",
+          "solid_index_a": 1,
+          "occurrence_b": "PIVOT-PIN-3",
+          "solid_index_b": 1,
+          "common_volume_mm3": 0.27930206920947176,
+          "intentional_fit_match_status": "VALID_BOUNDED_MATCH",
+          "intentional_fit_exception_id": "FIT-PIVOT-RETAINER-3"
+        },
+        {
+          "occurrence_a": "RECOVERY-HARDPOINT-RING",
+          "solid_index_a": 1,
+          "occurrence_b": "RECOVERY-PIN-BODY-SHORT14",
+          "solid_index_b": 1,
+          "common_volume_mm3": 58.818101270142876,
+          "intentional_fit_match_status": "VALID_BOUNDED_MATCH",
+          "intentional_fit_exception_id": "FIT-SHORT14-RECOVERY-HARDPOINT-RING--RECOVERY-PIN-BODY-SHORT14"
+        },
+        {
+          "occurrence_a": "RECOVERY-HARDPOINT-RING",
+          "solid_index_a": 1,
+          "occurrence_b": "TETHER-THIMBLE-BODY-SHORT14",
+          "solid_index_b": 1,
+          "common_volume_mm3": 77.72381970221633,
+          "intentional_fit_match_status": "VALID_BOUNDED_MATCH",
+          "intentional_fit_exception_id": "FIT-SHORT14-RECOVERY-HARDPOINT-RING--TETHER-THIMBLE-BODY-SHORT14"
+        },
+        {
+          "occurrence_a": "STOW-DOG-INHIBIT-KEEPER-1",
+          "solid_index_a": 1,
+          "occurrence_b": "STOW-DOG-INHIBIT-PIN-1",
+          "solid_index_b": 1,
+          "common_volume_mm3": 0.016171224265221017,
+          "intentional_fit_match_status": "VALID_BOUNDED_MATCH",
+          "intentional_fit_exception_id": "FIT-STOW-INHIBIT-KEEPER-1"
+        },
+        {
+          "occurrence_a": "STOW-DOG-INHIBIT-KEEPER-2",
+          "solid_index_a": 1,
+          "occurrence_b": "STOW-DOG-INHIBIT-PIN-2",
+          "solid_index_b": 1,
+          "common_volume_mm3": 0.016171224267511764,
+          "intentional_fit_match_status": "VALID_BOUNDED_MATCH",
+          "intentional_fit_exception_id": "FIT-STOW-INHIBIT-KEEPER-2"
+        },
+        {
+          "occurrence_a": "STOW-DOG-INHIBIT-KEEPER-3",
+          "solid_index_a": 1,
+          "occurrence_b": "STOW-DOG-INHIBIT-PIN-3",
+          "solid_index_b": 1,
+          "common_volume_mm3": 0.01617122426667651,
+          "intentional_fit_match_status": "VALID_BOUNDED_MATCH",
+          "intentional_fit_exception_id": "FIT-STOW-INHIBIT-KEEPER-3"
+        },
+        {
+          "occurrence_a": "STRUCTURAL-RECOVERY-TETHER",
+          "solid_index_a": 1,
+          "occurrence_b": "TETHER-THIMBLE-BUOY-SHORT14",
+          "solid_index_b": 1,
+          "common_volume_mm3": 33.403525444975955,
+          "intentional_fit_match_status": "VALID_BOUNDED_MATCH",
+          "intentional_fit_exception_id": "FIT-SHORT14-STRUCTURAL-RECOVERY-TETHER--TETHER-THIMBLE-BUOY-SHORT14"
+        },
+        {
+          "occurrence_a": "TETHER-EXIT-CHAFE-SLEEVE",
+          "solid_index_a": 1,
+          "occurrence_b": "TETHER-THIMBLE-BODY-SHORT14",
+          "solid_index_b": 1,
+          "common_volume_mm3": 0.9333731099958265,
+          "intentional_fit_match_status": "VALID_BOUNDED_MATCH",
+          "intentional_fit_exception_id": "FIT-SHORT14-TETHER-EXIT-CHAFE-SLEEVE--TETHER-THIMBLE-BODY-SHORT14"
+        }
+      ],
+      "elapsed_seconds": 45.098689556121826
+    },
+    "DEPLOYED": {
+      "state": "DEPLOYED",
+      "solid_count": 180,
+      "unordered_pair_count": 16110,
+      "pair_register": "C:\\Users\\ANDRE.ANDREWSPC\\Documents\\Codex\\2026-08-26\\stingray-complete-product-definition\\work\\short14_external_buoy\\validation\\endpoints\\endpoint_pair_audit_deployed.csv.gz",
+      "broadphase_candidate_count": 725,
+      "unauthorized_positive_volume_pair_count": 0,
+      "documented_positive_volume_pair_count": 85,
+      "boolean_blocked_pair_count": 0,
+      "distance_blocked_pair_count": 0,
+      "intentional_fit_register_error_count": 0,
+      "intentional_fit_register_errors": [],
+      "unauthorized_positive_rows": [],
+      "documented_positive_rows": [
+        {
+          "occurrence_a": "ARM-1",
+          "solid_index_a": 1,
+          "occurrence_b": "ARM-STOP-SCREW-1-1",
+          "solid_index_b": 1,
+          "common_volume_mm3": 6.4795348480291395,
+          "intentional_fit_match_status": "VALID_BOUNDED_MATCH",
+          "intentional_fit_exception_id": "FIT-THREAD-ARM-STOP-1-1"
+        },
+        {
+          "occurrence_a": "ARM-1",
+          "solid_index_a": 1,
+          "occurrence_b": "ARM-STOP-SCREW-1-2",
+          "solid_index_b": 1,
+          "common_volume_mm3": 6.401840877360147,
+          "intentional_fit_match_status": "VALID_BOUNDED_MATCH",
+          "intentional_fit_exception_id": "FIT-THREAD-ARM-STOP-1-2"
+        },
+        {
+          "occurrence_a": "ARM-2",
+          "solid_index_a": 1,
+          "occurrence_b": "ARM-STOP-SCREW-2-1",
+          "solid_index_b": 1,
+          "common_volume_mm3": 6.4795348480275,
+          "intentional_fit_match_status": "VALID_BOUNDED_MATCH",
+          "intentional_fit_exception_id": "FIT-THREAD-ARM-STOP-2-1"
+        },
+        {
+          "occurrence_a": "ARM-2",
+          "solid_index_a": 1,
+          "occurrence_b": "ARM-STOP-SCREW-2-2",
+          "solid_index_b": 1,
+          "common_volume_mm3": 6.40184087735787,
+          "intentional_fit_match_status": "VALID_BOUNDED_MATCH",
+          "intentional_fit_exception_id": "FIT-THREAD-ARM-STOP-2-2"
+        },
+        {
+          "occurrence_a": "ARM-3",
+          "solid_index_a": 1,
+          "occurrence_b": "ARM-STOP-SCREW-3-1",
+          "solid_index_b": 1,
+          "common_volume_mm3": 6.479534848030829,
+          "intentional_fit_match_status": "VALID_BOUNDED_MATCH",
+          "intentional_fit_exception_id": "FIT-THREAD-ARM-STOP-3-1"
+        },
+        {
+          "occurrence_a": "ARM-3",
+          "solid_index_a": 1,
+          "occurrence_b": "ARM-STOP-SCREW-3-2",
+          "solid_index_b": 1,
+          "common_volume_mm3": 6.401840877361629,
+          "intentional_fit_match_status": "VALID_BOUNDED_MATCH",
+          "intentional_fit_exception_id": "FIT-THREAD-ARM-STOP-3-2"
+        },
+        {
+          "occurrence_a": "BACKUP-GUIDE-SCREW-1",
+          "solid_index_a": 1,
+          "occurrence_b": "BACKUP-SPRING-GUIDE",
+          "solid_index_b": 1,
+          "common_volume_mm3": 6.180153346556105,
+          "intentional_fit_match_status": "VALID_BOUNDED_MATCH",
+          "intentional_fit_exception_id": "FIT-THREAD-BACKUP-GUIDE-1"
+        },
+        {
+          "occurrence_a": "BACKUP-GUIDE-SCREW-2",
+          "solid_index_a": 1,
+          "occurrence_b": "BACKUP-SPRING-FIXED-SEAT",
+          "solid_index_b": 1,
+          "common_volume_mm3": 5.939573610693344,
+          "intentional_fit_match_status": "VALID_BOUNDED_MATCH",
+          "intentional_fit_exception_id": "FIT-THREAD-BACKUP-SEAT-2"
+        },
+        {
+          "occurrence_a": "BUOY-CO2-CARTRIDGE-81121",
+          "solid_index_a": 1,
+          "occurrence_b": "HYDRO-1F-INFLATOR-PROXY",
+          "solid_index_b": 1,
+          "common_volume_mm3": 150.07705253067235,
+          "intentional_fit_match_status": "VALID_BOUNDED_MATCH",
+          "intentional_fit_exception_id": "FIT-SHORT14-BUOY-CO2-CARTRIDGE-81121--HYDRO-1F-INFLATOR-PROXY"
+        },
+        {
+          "occurrence_a": "BUOY-INLET-MANIFOLD",
+          "solid_index_a": 1,
+          "occurrence_b": "BUOY-INLET-PATCH",
+          "solid_index_b": 1,
+          "common_volume_mm3": 68.0091977649125,
+          "intentional_fit_match_status": "VALID_BOUNDED_MATCH",
+          "intentional_fit_exception_id": "FIT-SHORT14-BUOY-INLET-MANIFOLD--BUOY-INLET-PATCH"
+        },
+        {
+          "occurrence_a": "BUOY-INLET-MANIFOLD",
+          "solid_index_a": 1,
+          "occurrence_b": "EXT-BUOY-PANEL-01",
+          "solid_index_b": 1,
+          "common_volume_mm3": 23.404563227963173,
+          "intentional_fit_match_status": "VALID_BOUNDED_MATCH",
+          "intentional_fit_exception_id": "FIT-SHORT14-BUOY-INLET-MANIFOLD--EXT-BUOY-PANEL-01"
+        },
+        {
+          "occurrence_a": "BUOY-INLET-MANIFOLD",
+          "solid_index_a": 1,
+          "occurrence_b": "HYDRO-1F-INFLATOR-PROXY",
+          "solid_index_b": 1,
+          "common_volume_mm3": 201.06192982975074,
+          "intentional_fit_match_status": "VALID_BOUNDED_MATCH",
+          "intentional_fit_exception_id": "FIT-SHORT14-BUOY-INLET-MANIFOLD--HYDRO-1F-INFLATOR-PROXY"
+        },
+        {
+          "occurrence_a": "BUOY-INLET-PATCH",
+          "solid_index_a": 1,
+          "occurrence_b": "EXT-BUOY-PANEL-01",
+          "solid_index_b": 1,
+          "common_volume_mm3": 3.4544949010118398,
+          "intentional_fit_match_status": "VALID_BOUNDED_MATCH",
+          "intentional_fit_exception_id": "FIT-SHORT14-BUOY-INLET-PATCH--EXT-BUOY-PANEL-01"
+        },
+        {
+          "occurrence_a": "CORDURA-CRADLE-LEFT",
+          "solid_index_a": 1,
+          "occurrence_b": "PACK-ATTACHMENT-WEBBING-1",
+          "solid_index_b": 1,
+          "common_volume_mm3": 812.4354951738192,
+          "intentional_fit_match_status": "VALID_BOUNDED_MATCH",
+          "intentional_fit_exception_id": "FIT-SHORT14-CORDURA-CRADLE-LEFT--PACK-ATTACHMENT-WEBBING-1"
+        },
+        {
+          "occurrence_a": "CORDURA-CRADLE-LEFT",
+          "solid_index_a": 1,
+          "occurrence_b": "PACK-ATTACHMENT-WEBBING-2",
+          "solid_index_b": 1,
+          "common_volume_mm3": 812.4354951738192,
+          "intentional_fit_match_status": "VALID_BOUNDED_MATCH",
+          "intentional_fit_exception_id": "FIT-SHORT14-CORDURA-CRADLE-LEFT--PACK-ATTACHMENT-WEBBING-2"
+        },
+        {
+          "occurrence_a": "CORDURA-CRADLE-LEFT",
+          "solid_index_a": 1,
+          "occurrence_b": "PACK-EDGE-BAND-1",
+          "solid_index_b": 1,
+          "common_volume_mm3": 195.5739601637772,
+          "intentional_fit_match_status": "VALID_BOUNDED_MATCH",
+          "intentional_fit_exception_id": "FIT-SHORT14-CORDURA-CRADLE-LEFT--PACK-EDGE-BAND-1"
+        },
+        {
+          "occurrence_a": "CORDURA-CRADLE-LEFT",
+          "solid_index_a": 1,
+          "occurrence_b": "PACK-EDGE-BAND-2",
+          "solid_index_b": 1,
+          "common_volume_mm3": 195.5739601637772,
+          "intentional_fit_match_status": "VALID_BOUNDED_MATCH",
+          "intentional_fit_exception_id": "FIT-SHORT14-CORDURA-CRADLE-LEFT--PACK-EDGE-BAND-2"
+        },
+        {
+          "occurrence_a": "CORDURA-CRADLE-RIGHT",
+          "solid_index_a": 1,
+          "occurrence_b": "PACK-ATTACHMENT-WEBBING-1",
+          "solid_index_b": 1,
+          "common_volume_mm3": 812.4354951631813,
+          "intentional_fit_match_status": "VALID_BOUNDED_MATCH",
+          "intentional_fit_exception_id": "FIT-SHORT14-CORDURA-CRADLE-RIGHT--PACK-ATTACHMENT-WEBBING-1"
+        },
+        {
+          "occurrence_a": "CORDURA-CRADLE-RIGHT",
+          "solid_index_a": 1,
+          "occurrence_b": "PACK-ATTACHMENT-WEBBING-2",
+          "solid_index_b": 1,
+          "common_volume_mm3": 812.4354951631813,
+          "intentional_fit_match_status": "VALID_BOUNDED_MATCH",
+          "intentional_fit_exception_id": "FIT-SHORT14-CORDURA-CRADLE-RIGHT--PACK-ATTACHMENT-WEBBING-2"
+        },
+        {
+          "occurrence_a": "CORDURA-CRADLE-RIGHT",
+          "solid_index_a": 1,
+          "occurrence_b": "PACK-EDGE-BAND-1",
+          "solid_index_b": 1,
+          "common_volume_mm3": 195.5739601591365,
+          "intentional_fit_match_status": "VALID_BOUNDED_MATCH",
+          "intentional_fit_exception_id": "FIT-SHORT14-CORDURA-CRADLE-RIGHT--PACK-EDGE-BAND-1"
+        },
+        {
+          "occurrence_a": "CORDURA-CRADLE-RIGHT",
+          "solid_index_a": 1,
+          "occurrence_b": "PACK-EDGE-BAND-2",
+          "solid_index_b": 1,
+          "common_volume_mm3": 195.57396015913628,
+          "intentional_fit_match_status": "VALID_BOUNDED_MATCH",
+          "intentional_fit_exception_id": "FIT-SHORT14-CORDURA-CRADLE-RIGHT--PACK-EDGE-BAND-2"
+        },
+        {
+          "occurrence_a": "CORDURA-CRADLE-RIGHT",
+          "solid_index_a": 1,
+          "occurrence_b": "PACK-RADIAL-TIE-1-3",
+          "solid_index_b": 1,
+          "common_volume_mm3": 13.102479275173298,
+          "intentional_fit_match_status": "VALID_BOUNDED_MATCH",
+          "intentional_fit_exception_id": "FIT-SHORT14-CORDURA-CRADLE-RIGHT--PACK-RADIAL-TIE-1-3"
+        },
+        {
+          "occurrence_a": "CORDURA-CRADLE-RIGHT",
+          "solid_index_a": 1,
+          "occurrence_b": "PACK-RADIAL-TIE-2-3",
+          "solid_index_b": 1,
+          "common_volume_mm3": 13.102479275173298,
+          "intentional_fit_match_status": "VALID_BOUNDED_MATCH",
+          "intentional_fit_exception_id": "FIT-SHORT14-CORDURA-CRADLE-RIGHT--PACK-RADIAL-TIE-2-3"
+        },
+        {
+          "occurrence_a": "CORDURA-FLAP-LEFT",
+          "solid_index_a": 1,
+          "occurrence_b": "PACK-EDGE-BAND-1",
+          "solid_index_b": 1,
+          "common_volume_mm3": 139.48337936094975,
+          "intentional_fit_match_status": "VALID_BOUNDED_MATCH",
+          "intentional_fit_exception_id": "FIT-SHORT14-CORDURA-FLAP-LEFT--PACK-EDGE-BAND-1"
+        },
+        {
+          "occurrence_a": "CORDURA-FLAP-LEFT",
+          "solid_index_a": 1,
+          "occurrence_b": "PACK-EDGE-BAND-2",
+          "solid_index_b": 1,
+          "common_volume_mm3": 139.4833793609552,
+          "intentional_fit_match_status": "VALID_BOUNDED_MATCH",
+          "intentional_fit_exception_id": "FIT-SHORT14-CORDURA-FLAP-LEFT--PACK-EDGE-BAND-2"
+        },
+        {
+          "occurrence_a": "CORDURA-FLAP-RIGHT",
+          "solid_index_a": 1,
+          "occurrence_b": "PACK-EDGE-BAND-1",
+          "solid_index_b": 1,
+          "common_volume_mm3": 139.48337936094987,
+          "intentional_fit_match_status": "VALID_BOUNDED_MATCH",
+          "intentional_fit_exception_id": "FIT-SHORT14-CORDURA-FLAP-RIGHT--PACK-EDGE-BAND-1"
+        },
+        {
+          "occurrence_a": "CORDURA-FLAP-RIGHT",
+          "solid_index_a": 1,
+          "occurrence_b": "PACK-EDGE-BAND-2",
+          "solid_index_b": 1,
+          "common_volume_mm3": 139.4833793609469,
+          "intentional_fit_match_status": "VALID_BOUNDED_MATCH",
+          "intentional_fit_exception_id": "FIT-SHORT14-CORDURA-FLAP-RIGHT--PACK-EDGE-BAND-2"
+        },
+        {
+          "occurrence_a": "CROSSHEAD-GUIDE-001",
+          "solid_index_a": 1,
+          "occurrence_b": "CROSSHEAD-GUIDE-LOCK-SCREW-001",
+          "solid_index_b": 1,
+          "common_volume_mm3": 23.739884709821887,
+          "intentional_fit_match_status": "VALID_BOUNDED_MATCH",
+          "intentional_fit_exception_id": "FIT-THREAD-CROSSHEAD-GUIDE-LOCK"
+        },
+        {
+          "occurrence_a": "EXT-BUOY-PANEL-01",
+          "solid_index_a": 1,
+          "occurrence_b": "EXT-BUOY-PANEL-02",
+          "solid_index_b": 1,
+          "common_volume_mm3": 371.27246435708366,
+          "intentional_fit_match_status": "VALID_BOUNDED_MATCH",
+          "intentional_fit_exception_id": "FIT-SHORT14-EXT-BUOY-PANEL-01--EXT-BUOY-PANEL-02"
+        },
+        {
+          "occurrence_a": "EXT-BUOY-PANEL-01",
+          "solid_index_a": 1,
+          "occurrence_b": "EXT-BUOY-PANEL-08",
+          "solid_index_b": 1,
+          "common_volume_mm3": 371.27246431913227,
+          "intentional_fit_match_status": "VALID_BOUNDED_MATCH",
+          "intentional_fit_exception_id": "FIT-SHORT14-EXT-BUOY-PANEL-01--EXT-BUOY-PANEL-08"
+        },
+        {
+          "occurrence_a": "EXT-BUOY-PANEL-01",
+          "solid_index_a": 1,
+          "occurrence_b": "STRUCTURAL-RECOVERY-TETHER",
+          "solid_index_b": 1,
+          "common_volume_mm3": 19.401279324992213,
+          "intentional_fit_match_status": "VALID_BOUNDED_MATCH",
+          "intentional_fit_exception_id": "FIT-SHORT14-EXT-BUOY-PANEL-01--STRUCTURAL-RECOVERY-TETHER"
+        },
+        {
+          "occurrence_a": "EXT-BUOY-PANEL-01",
+          "solid_index_a": 1,
+          "occurrence_b": "TETHER-THIMBLE-BUOY-SHORT14",
+          "solid_index_b": 1,
+          "common_volume_mm3": 5.499196970483545,
+          "intentional_fit_match_status": "VALID_BOUNDED_MATCH",
+          "intentional_fit_exception_id": "FIT-SHORT14-EXT-BUOY-PANEL-01--TETHER-THIMBLE-BUOY-SHORT14"
+        },
+        {
+          "occurrence_a": "EXT-BUOY-PANEL-02",
+          "solid_index_a": 1,
+          "occurrence_b": "EXT-BUOY-PANEL-03",
+          "solid_index_b": 1,
+          "common_volume_mm3": 371.27246429891966,
+          "intentional_fit_match_status": "VALID_BOUNDED_MATCH",
+          "intentional_fit_exception_id": "FIT-SHORT14-EXT-BUOY-PANEL-02--EXT-BUOY-PANEL-03"
+        },
+        {
+          "occurrence_a": "EXT-BUOY-PANEL-02",
+          "solid_index_a": 1,
+          "occurrence_b": "TETHER-THIMBLE-BUOY-SHORT14",
+          "solid_index_b": 1,
+          "common_volume_mm3": 1.75221084002219,
+          "intentional_fit_match_status": "VALID_BOUNDED_MATCH",
+          "intentional_fit_exception_id": "FIT-SHORT14-EXT-BUOY-PANEL-02--TETHER-THIMBLE-BUOY-SHORT14"
+        },
+        {
+          "occurrence_a": "EXT-BUOY-PANEL-03",
+          "solid_index_a": 1,
+          "occurrence_b": "EXT-BUOY-PANEL-04",
+          "solid_index_b": 1,
+          "common_volume_mm3": 371.27246436262794,
+          "intentional_fit_match_status": "VALID_BOUNDED_MATCH",
+          "intentional_fit_exception_id": "FIT-SHORT14-EXT-BUOY-PANEL-03--EXT-BUOY-PANEL-04"
+        },
+        {
+          "occurrence_a": "EXT-BUOY-PANEL-03",
+          "solid_index_a": 1,
+          "occurrence_b": "TETHER-THIMBLE-BUOY-SHORT14",
+          "solid_index_b": 1,
+          "common_volume_mm3": 0.5258982183651807,
+          "intentional_fit_match_status": "VALID_BOUNDED_MATCH",
+          "intentional_fit_exception_id": "FIT-SHORT14-EXT-BUOY-PANEL-03--TETHER-THIMBLE-BUOY-SHORT14"
+        },
+        {
+          "occurrence_a": "EXT-BUOY-PANEL-04",
+          "solid_index_a": 1,
+          "occurrence_b": "EXT-BUOY-PANEL-05",
+          "solid_index_b": 1,
+          "common_volume_mm3": 371.27246430315427,
+          "intentional_fit_match_status": "VALID_BOUNDED_MATCH",
+          "intentional_fit_exception_id": "FIT-SHORT14-EXT-BUOY-PANEL-04--EXT-BUOY-PANEL-05"
+        },
+        {
+          "occurrence_a": "EXT-BUOY-PANEL-04",
+          "solid_index_a": 1,
+          "occurrence_b": "TETHER-THIMBLE-BUOY-SHORT14",
+          "solid_index_b": 1,
+          "common_volume_mm3": 1.7522102600206262,
+          "intentional_fit_match_status": "VALID_BOUNDED_MATCH",
+          "intentional_fit_exception_id": "FIT-SHORT14-EXT-BUOY-PANEL-04--TETHER-THIMBLE-BUOY-SHORT14"
+        },
+        {
+          "occurrence_a": "EXT-BUOY-PANEL-05",
+          "solid_index_a": 1,
+          "occurrence_b": "EXT-BUOY-PANEL-06",
+          "solid_index_b": 1,
+          "common_volume_mm3": 371.27246436938003,
+          "intentional_fit_match_status": "VALID_BOUNDED_MATCH",
+          "intentional_fit_exception_id": "FIT-SHORT14-EXT-BUOY-PANEL-05--EXT-BUOY-PANEL-06"
+        },
+        {
+          "occurrence_a": "EXT-BUOY-PANEL-05",
+          "solid_index_a": 1,
+          "occurrence_b": "TETHER-THIMBLE-BUOY-SHORT14",
+          "solid_index_b": 1,
+          "common_volume_mm3": 5.4991894153249845,
+          "intentional_fit_match_status": "VALID_BOUNDED_MATCH",
+          "intentional_fit_exception_id": "FIT-SHORT14-EXT-BUOY-PANEL-05--TETHER-THIMBLE-BUOY-SHORT14"
+        },
+        {
+          "occurrence_a": "EXT-BUOY-PANEL-06",
+          "solid_index_a": 1,
+          "occurrence_b": "EXT-BUOY-PANEL-07",
+          "solid_index_b": 1,
+          "common_volume_mm3": 371.27246431181266,
+          "intentional_fit_match_status": "VALID_BOUNDED_MATCH",
+          "intentional_fit_exception_id": "FIT-SHORT14-EXT-BUOY-PANEL-06--EXT-BUOY-PANEL-07"
+        },
+        {
+          "occurrence_a": "EXT-BUOY-PANEL-06",
+          "solid_index_a": 1,
+          "occurrence_b": "TETHER-THIMBLE-BUOY-SHORT14",
+          "solid_index_b": 1,
+          "common_volume_mm3": 1.752210258672241,
+          "intentional_fit_match_status": "VALID_BOUNDED_MATCH",
+          "intentional_fit_exception_id": "FIT-SHORT14-EXT-BUOY-PANEL-06--TETHER-THIMBLE-BUOY-SHORT14"
+        },
+        {
+          "occurrence_a": "EXT-BUOY-PANEL-07",
+          "solid_index_a": 1,
+          "occurrence_b": "EXT-BUOY-PANEL-08",
+          "solid_index_b": 1,
+          "common_volume_mm3": 371.2724643217516,
+          "intentional_fit_match_status": "VALID_BOUNDED_MATCH",
+          "intentional_fit_exception_id": "FIT-SHORT14-EXT-BUOY-PANEL-07--EXT-BUOY-PANEL-08"
+        },
+        {
+          "occurrence_a": "EXT-BUOY-PANEL-07",
+          "solid_index_a": 1,
+          "occurrence_b": "TETHER-THIMBLE-BUOY-SHORT14",
+          "solid_index_b": 1,
+          "common_volume_mm3": 0.5258982183871936,
+          "intentional_fit_match_status": "VALID_BOUNDED_MATCH",
+          "intentional_fit_exception_id": "FIT-SHORT14-EXT-BUOY-PANEL-07--TETHER-THIMBLE-BUOY-SHORT14"
+        },
+        {
+          "occurrence_a": "EXT-BUOY-PANEL-08",
+          "solid_index_a": 1,
+          "occurrence_b": "TETHER-THIMBLE-BUOY-SHORT14",
+          "solid_index_b": 1,
+          "common_volume_mm3": 1.752210842350726,
+          "intentional_fit_match_status": "VALID_BOUNDED_MATCH",
+          "intentional_fit_exception_id": "FIT-SHORT14-EXT-BUOY-PANEL-08--TETHER-THIMBLE-BUOY-SHORT14"
+        },
+        {
+          "occurrence_a": "FIXED-STOP-1",
+          "solid_index_a": 1,
+          "occurrence_b": "LOCK-BUSHING-1",
+          "solid_index_b": 1,
+          "common_volume_mm3": 0.04861306332143681,
+          "intentional_fit_match_status": "VALID_BOUNDED_MATCH",
+          "intentional_fit_exception_id": "FIT-PRESS-LOCK-BUSHING-1"
+        },
+        {
+          "occurrence_a": "FIXED-STOP-2",
+          "solid_index_a": 1,
+          "occurrence_b": "LOCK-BUSHING-2",
+          "solid_index_b": 1,
+          "common_volume_mm3": 0.04861306332034571,
+          "intentional_fit_match_status": "VALID_BOUNDED_MATCH",
+          "intentional_fit_exception_id": "FIT-PRESS-LOCK-BUSHING-2"
+        },
+        {
+          "occurrence_a": "FIXED-STOP-3",
+          "solid_index_a": 1,
+          "occurrence_b": "LOCK-BUSHING-3",
+          "solid_index_b": 1,
+          "common_volume_mm3": 0.04861306332661047,
+          "intentional_fit_match_status": "VALID_BOUNDED_MATCH",
+          "intentional_fit_exception_id": "FIT-PRESS-LOCK-BUSHING-3"
+        },
+        {
+          "occurrence_a": "FIXED-STOP-SCREW-1-1",
+          "solid_index_a": 1,
+          "occurrence_b": "PIVOT-CARRIER-1",
+          "solid_index_b": 1,
+          "common_volume_mm3": 3.488212741353664,
+          "intentional_fit_match_status": "VALID_BOUNDED_MATCH",
+          "intentional_fit_exception_id": "FIT-THREAD-FIXED-STOP-CARRIER-1-1"
+        },
+        {
+          "occurrence_a": "FIXED-STOP-SCREW-1-2",
+          "solid_index_a": 1,
+          "occurrence_b": "PIVOT-CARRIER-1-SECONDARY",
+          "solid_index_b": 1,
+          "common_volume_mm3": 3.4882127413531583,
+          "intentional_fit_match_status": "VALID_BOUNDED_MATCH",
+          "intentional_fit_exception_id": "FIT-THREAD-FIXED-STOP-CARRIER-1-2"
+        },
+        {
+          "occurrence_a": "FIXED-STOP-SCREW-2-1",
+          "solid_index_a": 1,
+          "occurrence_b": "PIVOT-CARRIER-2",
+          "solid_index_b": 1,
+          "common_volume_mm3": 3.488212741349984,
+          "intentional_fit_match_status": "VALID_BOUNDED_MATCH",
+          "intentional_fit_exception_id": "FIT-THREAD-FIXED-STOP-CARRIER-2-1"
+        },
+        {
+          "occurrence_a": "FIXED-STOP-SCREW-2-2",
+          "solid_index_a": 1,
+          "occurrence_b": "PIVOT-CARRIER-2-SECONDARY",
+          "solid_index_b": 1,
+          "common_volume_mm3": 3.488212741350017,
+          "intentional_fit_match_status": "VALID_BOUNDED_MATCH",
+          "intentional_fit_exception_id": "FIT-THREAD-FIXED-STOP-CARRIER-2-2"
+        },
+        {
+          "occurrence_a": "FIXED-STOP-SCREW-3-1",
+          "solid_index_a": 1,
+          "occurrence_b": "PIVOT-CARRIER-3",
+          "solid_index_b": 1,
+          "common_volume_mm3": 3.4882127413472848,
+          "intentional_fit_match_status": "VALID_BOUNDED_MATCH",
+          "intentional_fit_exception_id": "FIT-THREAD-FIXED-STOP-CARRIER-3-1"
+        },
+        {
+          "occurrence_a": "FIXED-STOP-SCREW-3-2",
+          "solid_index_a": 1,
+          "occurrence_b": "PIVOT-CARRIER-3-SECONDARY",
+          "solid_index_b": 1,
+          "common_volume_mm3": 3.4882127413489887,
+          "intentional_fit_match_status": "VALID_BOUNDED_MATCH",
+          "intentional_fit_exception_id": "FIT-THREAD-FIXED-STOP-CARRIER-3-2"
+        },
+        {
+          "occurrence_a": "GS19-CLIP-FIXED",
+          "solid_index_a": 1,
+          "occurrence_b": "GS19-PIN-FIXED",
+          "solid_index_b": 1,
+          "common_volume_mm3": 0.11335389202608037,
+          "intentional_fit_match_status": "VALID_BOUNDED_MATCH",
+          "intentional_fit_exception_id": "FIT-ACTUATOR-RETAINER-GS19-FIXED"
+        },
+        {
+          "occurrence_a": "GS19-CLIP-MOVING",
+          "solid_index_a": 1,
+          "occurrence_b": "GS19-PIN-MOVING",
+          "solid_index_b": 1,
+          "common_volume_mm3": 0.11335389202426721,
+          "intentional_fit_match_status": "VALID_BOUNDED_MATCH",
+          "intentional_fit_exception_id": "FIT-ACTUATOR-RETAINER-GS19-MOVING"
+        },
+        {
+          "occurrence_a": "HBD-CLIP-FIXED",
+          "solid_index_a": 1,
+          "occurrence_b": "HBD-PIN-FIXED",
+          "solid_index_b": 1,
+          "common_volume_mm3": 0.11335389202696963,
+          "intentional_fit_match_status": "VALID_BOUNDED_MATCH",
+          "intentional_fit_exception_id": "FIT-ACTUATOR-RETAINER-HBD-FIXED"
+        },
+        {
+          "occurrence_a": "HBD-CLIP-MOVING",
+          "solid_index_a": 1,
+          "occurrence_b": "HBD-PIN-MOVING",
+          "solid_index_b": 1,
+          "common_volume_mm3": 0.11335389202597586,
+          "intentional_fit_match_status": "VALID_BOUNDED_MATCH",
+          "intentional_fit_exception_id": "FIT-ACTUATOR-RETAINER-HBD-MOVING"
+        },
+        {
+          "occurrence_a": "HYDRO-1F-INFLATOR-PROXY",
+          "solid_index_a": 1,
+          "occurrence_b": "HYDRO-1F-WATER-BOBBIN-V80040",
+          "solid_index_b": 1,
+          "common_volume_mm3": 350.15530574878375,
+          "intentional_fit_match_status": "VALID_BOUNDED_MATCH",
+          "intentional_fit_exception_id": "FIT-SHORT14-HYDRO-1F-INFLATOR-PROXY--HYDRO-1F-WATER-BOBBIN-V80040"
+        },
+        {
+          "occurrence_a": "HYDRO-1F-INFLATOR-PROXY",
+          "solid_index_a": 1,
+          "occurrence_b": "MANUAL-PULL-LANYARD",
+          "solid_index_b": 1,
+          "common_volume_mm3": 28.44759749204808,
+          "intentional_fit_match_status": "VALID_BOUNDED_MATCH",
+          "intentional_fit_exception_id": "FIT-SHORT14-HYDRO-1F-INFLATOR-PROXY--MANUAL-PULL-LANYARD"
+        },
+        {
+          "occurrence_a": "HYDRO-1F-WATER-BOBBIN-V80040",
+          "solid_index_a": 1,
+          "occurrence_b": "WATER-ENTRY-MESH",
+          "solid_index_b": 1,
+          "common_volume_mm3": 35.8981678372501,
+          "intentional_fit_match_status": "VALID_BOUNDED_MATCH",
+          "intentional_fit_exception_id": "FIT-SHORT14-HYDRO-1F-WATER-BOBBIN-V80040--WATER-ENTRY-MESH"
+        },
+        {
+          "occurrence_a": "MANUAL-PULL-TAB",
+          "solid_index_a": 1,
+          "occurrence_b": "PULL-TAB-KEEPER",
+          "solid_index_b": 1,
+          "common_volume_mm3": 162.00000000000003,
+          "intentional_fit_match_status": "VALID_BOUNDED_MATCH",
+          "intentional_fit_exception_id": "FIT-SHORT14-MANUAL-PULL-TAB--PULL-TAB-KEEPER"
+        },
+        {
+          "occurrence_a": "PACK-ATTACHMENT-COLLAR-1",
+          "solid_index_a": 1,
+          "occurrence_b": "PACK-RADIAL-TIE-1-1",
+          "solid_index_b": 1,
+          "common_volume_mm3": 3.1962510961140613,
+          "intentional_fit_match_status": "VALID_BOUNDED_MATCH",
+          "intentional_fit_exception_id": "FIT-SHORT14-PACK-ATTACHMENT-COLLAR-1--PACK-RADIAL-TIE-1-1"
+        },
+        {
+          "occurrence_a": "PACK-ATTACHMENT-COLLAR-1",
+          "solid_index_a": 1,
+          "occurrence_b": "PACK-RADIAL-TIE-1-2",
+          "solid_index_b": 1,
+          "common_volume_mm3": 3.196251096114057,
+          "intentional_fit_match_status": "VALID_BOUNDED_MATCH",
+          "intentional_fit_exception_id": "FIT-SHORT14-PACK-ATTACHMENT-COLLAR-1--PACK-RADIAL-TIE-1-2"
+        },
+        {
+          "occurrence_a": "PACK-ATTACHMENT-COLLAR-1",
+          "solid_index_a": 1,
+          "occurrence_b": "PACK-RADIAL-TIE-1-3",
+          "solid_index_b": 1,
+          "common_volume_mm3": 3.19625109611406,
+          "intentional_fit_match_status": "VALID_BOUNDED_MATCH",
+          "intentional_fit_exception_id": "FIT-SHORT14-PACK-ATTACHMENT-COLLAR-1--PACK-RADIAL-TIE-1-3"
+        },
+        {
+          "occurrence_a": "PACK-ATTACHMENT-COLLAR-2",
+          "solid_index_a": 1,
+          "occurrence_b": "PACK-RADIAL-TIE-2-1",
+          "solid_index_b": 1,
+          "common_volume_mm3": 3.1962510961140613,
+          "intentional_fit_match_status": "VALID_BOUNDED_MATCH",
+          "intentional_fit_exception_id": "FIT-SHORT14-PACK-ATTACHMENT-COLLAR-2--PACK-RADIAL-TIE-2-1"
+        },
+        {
+          "occurrence_a": "PACK-ATTACHMENT-COLLAR-2",
+          "solid_index_a": 1,
+          "occurrence_b": "PACK-RADIAL-TIE-2-2",
+          "solid_index_b": 1,
+          "common_volume_mm3": 3.196251096114057,
+          "intentional_fit_match_status": "VALID_BOUNDED_MATCH",
+          "intentional_fit_exception_id": "FIT-SHORT14-PACK-ATTACHMENT-COLLAR-2--PACK-RADIAL-TIE-2-2"
+        },
+        {
+          "occurrence_a": "PACK-ATTACHMENT-COLLAR-2",
+          "solid_index_a": 1,
+          "occurrence_b": "PACK-RADIAL-TIE-2-3",
+          "solid_index_b": 1,
+          "common_volume_mm3": 3.19625109611406,
+          "intentional_fit_match_status": "VALID_BOUNDED_MATCH",
+          "intentional_fit_exception_id": "FIT-SHORT14-PACK-ATTACHMENT-COLLAR-2--PACK-RADIAL-TIE-2-3"
+        },
+        {
+          "occurrence_a": "PACK-ATTACHMENT-WEBBING-1",
+          "solid_index_a": 1,
+          "occurrence_b": "PACK-RADIAL-TIE-1-1",
+          "solid_index_b": 1,
+          "common_volume_mm3": 12.352081960628121,
+          "intentional_fit_match_status": "VALID_BOUNDED_MATCH",
+          "intentional_fit_exception_id": "FIT-SHORT14-PACK-ATTACHMENT-WEBBING-1--PACK-RADIAL-TIE-1-1"
+        },
+        {
+          "occurrence_a": "PACK-ATTACHMENT-WEBBING-1",
+          "solid_index_a": 1,
+          "occurrence_b": "PACK-RADIAL-TIE-1-2",
+          "solid_index_b": 1,
+          "common_volume_mm3": 12.35208196062812,
+          "intentional_fit_match_status": "VALID_BOUNDED_MATCH",
+          "intentional_fit_exception_id": "FIT-SHORT14-PACK-ATTACHMENT-WEBBING-1--PACK-RADIAL-TIE-1-2"
+        },
+        {
+          "occurrence_a": "PACK-ATTACHMENT-WEBBING-1",
+          "solid_index_a": 1,
+          "occurrence_b": "PACK-RADIAL-TIE-1-3",
+          "solid_index_b": 1,
+          "common_volume_mm3": 12.35208196062812,
+          "intentional_fit_match_status": "VALID_BOUNDED_MATCH",
+          "intentional_fit_exception_id": "FIT-SHORT14-PACK-ATTACHMENT-WEBBING-1--PACK-RADIAL-TIE-1-3"
+        },
+        {
+          "occurrence_a": "PACK-ATTACHMENT-WEBBING-2",
+          "solid_index_a": 1,
+          "occurrence_b": "PACK-RADIAL-TIE-2-1",
+          "solid_index_b": 1,
+          "common_volume_mm3": 12.352081960628121,
+          "intentional_fit_match_status": "VALID_BOUNDED_MATCH",
+          "intentional_fit_exception_id": "FIT-SHORT14-PACK-ATTACHMENT-WEBBING-2--PACK-RADIAL-TIE-2-1"
+        },
+        {
+          "occurrence_a": "PACK-ATTACHMENT-WEBBING-2",
+          "solid_index_a": 1,
+          "occurrence_b": "PACK-RADIAL-TIE-2-2",
+          "solid_index_b": 1,
+          "common_volume_mm3": 12.35208196062812,
+          "intentional_fit_match_status": "VALID_BOUNDED_MATCH",
+          "intentional_fit_exception_id": "FIT-SHORT14-PACK-ATTACHMENT-WEBBING-2--PACK-RADIAL-TIE-2-2"
+        },
+        {
+          "occurrence_a": "PACK-ATTACHMENT-WEBBING-2",
+          "solid_index_a": 1,
+          "occurrence_b": "PACK-RADIAL-TIE-2-3",
+          "solid_index_b": 1,
+          "common_volume_mm3": 12.35208196062812,
+          "intentional_fit_match_status": "VALID_BOUNDED_MATCH",
+          "intentional_fit_exception_id": "FIT-SHORT14-PACK-ATTACHMENT-WEBBING-2--PACK-RADIAL-TIE-2-3"
+        },
+        {
+          "occurrence_a": "PIVOT-CLIP-1",
+          "solid_index_a": 1,
+          "occurrence_b": "PIVOT-PIN-1",
+          "solid_index_b": 1,
+          "common_volume_mm3": 0.279302069214095,
+          "intentional_fit_match_status": "VALID_BOUNDED_MATCH",
+          "intentional_fit_exception_id": "FIT-PIVOT-RETAINER-1"
+        },
+        {
+          "occurrence_a": "PIVOT-CLIP-2",
+          "solid_index_a": 1,
+          "occurrence_b": "PIVOT-PIN-2",
+          "solid_index_b": 1,
+          "common_volume_mm3": 0.2793020692206149,
+          "intentional_fit_match_status": "VALID_BOUNDED_MATCH",
+          "intentional_fit_exception_id": "FIT-PIVOT-RETAINER-2"
+        },
+        {
+          "occurrence_a": "PIVOT-CLIP-3",
+          "solid_index_a": 1,
+          "occurrence_b": "PIVOT-PIN-3",
+          "solid_index_b": 1,
+          "common_volume_mm3": 0.27930206920947176,
+          "intentional_fit_match_status": "VALID_BOUNDED_MATCH",
+          "intentional_fit_exception_id": "FIT-PIVOT-RETAINER-3"
+        },
+        {
+          "occurrence_a": "RECOVERY-HARDPOINT-RING",
+          "solid_index_a": 1,
+          "occurrence_b": "RECOVERY-PIN-BODY-SHORT14",
+          "solid_index_b": 1,
+          "common_volume_mm3": 58.818101270142876,
+          "intentional_fit_match_status": "VALID_BOUNDED_MATCH",
+          "intentional_fit_exception_id": "FIT-SHORT14-RECOVERY-HARDPOINT-RING--RECOVERY-PIN-BODY-SHORT14"
+        },
+        {
+          "occurrence_a": "RECOVERY-HARDPOINT-RING",
+          "solid_index_a": 1,
+          "occurrence_b": "TETHER-THIMBLE-BODY-SHORT14",
+          "solid_index_b": 1,
+          "common_volume_mm3": 77.72381970221633,
+          "intentional_fit_match_status": "VALID_BOUNDED_MATCH",
+          "intentional_fit_exception_id": "FIT-SHORT14-RECOVERY-HARDPOINT-RING--TETHER-THIMBLE-BODY-SHORT14"
+        },
+        {
+          "occurrence_a": "STOW-DOG-INHIBIT-KEEPER-1",
+          "solid_index_a": 1,
+          "occurrence_b": "STOW-DOG-INHIBIT-PIN-1",
+          "solid_index_b": 1,
+          "common_volume_mm3": 0.016171224265221436,
+          "intentional_fit_match_status": "VALID_BOUNDED_MATCH",
+          "intentional_fit_exception_id": "FIT-STOW-INHIBIT-KEEPER-1"
+        },
+        {
+          "occurrence_a": "STOW-DOG-INHIBIT-KEEPER-2",
+          "solid_index_a": 1,
+          "occurrence_b": "STOW-DOG-INHIBIT-PIN-2",
+          "solid_index_b": 1,
+          "common_volume_mm3": 0.016171224250431056,
+          "intentional_fit_match_status": "VALID_BOUNDED_MATCH",
+          "intentional_fit_exception_id": "FIT-STOW-INHIBIT-KEEPER-2"
+        },
+        {
+          "occurrence_a": "STOW-DOG-INHIBIT-KEEPER-3",
+          "solid_index_a": 1,
+          "occurrence_b": "STOW-DOG-INHIBIT-PIN-3",
+          "solid_index_b": 1,
+          "common_volume_mm3": 0.01617122426770528,
+          "intentional_fit_match_status": "VALID_BOUNDED_MATCH",
+          "intentional_fit_exception_id": "FIT-STOW-INHIBIT-KEEPER-3"
+        },
+        {
+          "occurrence_a": "STRUCTURAL-RECOVERY-TETHER",
+          "solid_index_a": 1,
+          "occurrence_b": "TETHER-THIMBLE-BODY-SHORT14",
+          "solid_index_b": 1,
+          "common_volume_mm3": 0.0014545343781951743,
+          "intentional_fit_match_status": "VALID_BOUNDED_MATCH",
+          "intentional_fit_exception_id": "FIT-SHORT14-STRUCTURAL-RECOVERY-TETHER--TETHER-THIMBLE-BODY-SHORT14"
+        },
+        {
+          "occurrence_a": "STRUCTURAL-RECOVERY-TETHER",
+          "solid_index_a": 1,
+          "occurrence_b": "TETHER-THIMBLE-BUOY-SHORT14",
+          "solid_index_b": 1,
+          "common_volume_mm3": 22.47770779269745,
+          "intentional_fit_match_status": "VALID_BOUNDED_MATCH",
+          "intentional_fit_exception_id": "FIT-SHORT14-STRUCTURAL-RECOVERY-TETHER--TETHER-THIMBLE-BUOY-SHORT14"
+        },
+        {
+          "occurrence_a": "TETHER-EXIT-CHAFE-SLEEVE",
+          "solid_index_a": 1,
+          "occurrence_b": "TETHER-THIMBLE-BODY-SHORT14",
+          "solid_index_b": 1,
+          "common_volume_mm3": 1.2462183176464634,
+          "intentional_fit_match_status": "VALID_BOUNDED_MATCH",
+          "intentional_fit_exception_id": "FIT-SHORT14-TETHER-EXIT-CHAFE-SLEEVE--TETHER-THIMBLE-BODY-SHORT14"
+        }
+      ],
+      "elapsed_seconds": 64.38894200325012
+    }
+  },
+  "connectivity": {
+    "STOWED": {
+      "state": "STOWED",
+      "occurrence_count": 180,
+      "connection_count": 254,
+      "attachment_requirement_count": 306,
+      "floating_occurrence_count": 0,
+      "floating_occurrence_ids": [],
+      "disconnected_occurrence_count": 0,
+      "disconnected_occurrence_ids": [],
+      "dangling_connection_count": 0,
+      "dangling_connection_ids": [],
+      "self_connection_count": 0,
+      "invalid_attachment_requirement_count": 0,
+      "invalid_attachment_requirement_ids": [],
+      "accepted": true
+    },
+    "DEPLOYED": {
+      "state": "DEPLOYED",
+      "occurrence_count": 180,
+      "connection_count": 254,
+      "attachment_requirement_count": 303,
+      "floating_occurrence_count": 0,
+      "floating_occurrence_ids": [],
+      "disconnected_occurrence_count": 0,
+      "disconnected_occurrence_ids": [],
+      "dangling_connection_count": 0,
+      "dangling_connection_ids": [],
+      "self_connection_count": 0,
+      "invalid_attachment_requirement_count": 0,
+      "invalid_attachment_requirement_ids": [],
+      "accepted": true
+    }
+  },
+  "failure_conditions": [],
+  "disposition": "PASS"
+}
